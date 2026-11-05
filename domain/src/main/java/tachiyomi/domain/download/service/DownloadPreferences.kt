@@ -15,6 +15,14 @@ class DownloadPreferences(
 
     fun splitTallImages() = preferenceStore.getBoolean("split_tall_images", true)
 
+    // KMK --> 69 mod: page quality of downloads
+    fun mod69PageQuality() = preferenceStore.getString("mod69_page_quality", "original")
+
+    fun mod69PageMaxWidth() = preferenceStore.getInt("mod69_page_max_width", 1080)
+
+    fun mod69PageWebpQuality() = preferenceStore.getInt("mod69_page_webp_quality", 80)
+    // KMK <--
+
     fun autoDownloadWhileReading() = preferenceStore.getInt("auto_download_while_reading", 0)
 
     fun removeAfterReadSlots() = preferenceStore.getInt("remove_after_read_slots", -1)

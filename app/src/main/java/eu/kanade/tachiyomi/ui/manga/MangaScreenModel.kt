@@ -1331,6 +1331,18 @@ class MangaScreenModel(
             ChapterDownloadAction.DELETE -> {
                 deleteChapters(items.map { it.chapter })
             }
+            // KMK -->
+            ChapterDownloadAction.MOD69_REDOWNLOAD_SMALLER ->
+                eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownload(
+                    items.map { it.chapter },
+                    eu.kanade.tachiyomi.data.download.Mod69PageQuality.SMALLER,
+                )
+            ChapterDownloadAction.MOD69_REDOWNLOAD_ORIGINAL ->
+                eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownload(
+                    items.map { it.chapter },
+                    eu.kanade.tachiyomi.data.download.Mod69PageQuality.ORIGINAL,
+                )
+            // KMK <--
         }
     }
 

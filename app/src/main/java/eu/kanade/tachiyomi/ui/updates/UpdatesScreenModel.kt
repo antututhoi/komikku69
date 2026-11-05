@@ -263,6 +263,18 @@ class UpdatesScreenModel(
                 ChapterDownloadAction.DELETE -> {
                     deleteChapters(items)
                 }
+                // KMK -->
+                ChapterDownloadAction.MOD69_REDOWNLOAD_SMALLER ->
+                    eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownloadIds(
+                        items.map { it.update.chapterId },
+                        eu.kanade.tachiyomi.data.download.Mod69PageQuality.SMALLER,
+                    )
+                ChapterDownloadAction.MOD69_REDOWNLOAD_ORIGINAL ->
+                    eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownloadIds(
+                        items.map { it.update.chapterId },
+                        eu.kanade.tachiyomi.data.download.Mod69PageQuality.ORIGINAL,
+                    )
+                // KMK <--
             }
             toggleAllSelection(false)
         }

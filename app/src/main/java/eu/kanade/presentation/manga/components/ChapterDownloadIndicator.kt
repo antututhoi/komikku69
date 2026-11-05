@@ -35,6 +35,7 @@ import eu.kanade.presentation.components.DropdownMenu
 import eu.kanade.tachiyomi.R
 import eu.kanade.tachiyomi.data.download.model.Download
 import tachiyomi.i18n.MR
+import tachiyomi.i18n.kmk.KMR
 import tachiyomi.presentation.core.components.material.IconButtonTokens
 import tachiyomi.presentation.core.i18n.stringResource
 import tachiyomi.presentation.core.util.secondaryItemAlpha
@@ -44,6 +45,11 @@ enum class ChapterDownloadAction {
     START_NOW,
     CANCEL,
     DELETE,
+
+    // KMK --> 69 mod
+    MOD69_REDOWNLOAD_SMALLER,
+    MOD69_REDOWNLOAD_ORIGINAL,
+    // KMK <--
 }
 
 @Composable
@@ -218,6 +224,22 @@ private fun DownloadedIndicator(
                     isMenuExpanded = false
                 },
             )
+            // KMK -->
+            DropdownMenuItem(
+                text = { Text(text = stringResource(KMR.strings.mod69_redownload_smaller)) },
+                onClick = {
+                    onClick(ChapterDownloadAction.MOD69_REDOWNLOAD_SMALLER)
+                    isMenuExpanded = false
+                },
+            )
+            DropdownMenuItem(
+                text = { Text(text = stringResource(KMR.strings.mod69_redownload_original)) },
+                onClick = {
+                    onClick(ChapterDownloadAction.MOD69_REDOWNLOAD_ORIGINAL)
+                    isMenuExpanded = false
+                },
+            )
+            // KMK <--
         }
     }
 }

@@ -362,6 +362,32 @@ object SettingsAdvancedScreen : SearchableSettings {
         val context = LocalContext.current
         // KMK -->
         val uiPreferences = remember { Injekt.get<UiPreferences>() }
+        val mod69ExportCovers = rememberLauncherForActivityResult(
+            ActivityResultContracts.CreateDocument("application/zip"),
+        ) { uri ->
+            if (uri != null) {
+                scope.launchNonCancellable {
+                    val msg = runCatching {
+                        val r = eu.kanade.tachiyomi.data.cache.Mod69CoverBackup.export(context, uri)
+                        context.stringResource(KMR.strings.mod69_covers_saved, r.normal, r.custom)
+                    }.getOrElse { it.message ?: it.toString() }
+                    withUIContext { context.toast(msg) }
+                }
+            }
+        }
+        val mod69ImportCovers = rememberLauncherForActivityResult(
+            ActivityResultContracts.OpenDocument(),
+        ) { uri ->
+            if (uri != null) {
+                scope.launchNonCancellable {
+                    val msg = runCatching {
+                        val r = eu.kanade.tachiyomi.data.cache.Mod69CoverBackup.import(context, uri)
+                        context.stringResource(KMR.strings.mod69_covers_restored, r.normal, r.custom)
+                    }.getOrElse { it.message ?: it.toString() }
+                    withUIContext { context.toast(msg) }
+                }
+            }
+        }
         // KMK <--
 
         return Preference.PreferenceGroup(
@@ -369,8 +395,22 @@ object SettingsAdvancedScreen : SearchableSettings {
             preferenceItems = persistentListOf(
                 Preference.PreferenceItem.TextPreference(
                     title = stringResource(MR.strings.pref_refresh_library_covers),
+                    // KMK -->
+                    subtitle = stringResource(KMR.strings.mod69_refresh_covers_summary),
+                    // KMK <--
                     onClick = { MetadataUpdateJob.startNow(context) },
                 ),
+                // KMK -->
+                Preference.PreferenceItem.TextPreference(
+                    title = stringResource(KMR.strings.mod69_backup_covers),
+                    subtitle = stringResource(KMR.strings.mod69_backup_covers_summary),
+                    onClick = { mod69ExportCovers.launch("komikku_covers.zip") },
+                ),
+                Preference.PreferenceItem.TextPreference(
+                    title = stringResource(KMR.strings.mod69_restore_covers),
+                    onClick = { mod69ImportCovers.launch(arrayOf("application/zip", "application/octet-stream")) },
+                ),
+                // KMK <--
                 // KMK -->
                 Preference.PreferenceItem.SwitchPreference(
                     preference = uiPreferences.preloadLibraryColor(),

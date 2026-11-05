@@ -240,4 +240,20 @@
     <string name="pref_discord_show_discord_button_summary">Displays a button to join the Discord server</string>
     <!-- 69 mod -->
     <string name="mod69_cover_size">Cover size</string>
+    <string name="mod69_refresh_covers_summary">Downloads the covers again from the sources. Covers you set yourself are kept.</string>
+    <string name="mod69_backup_covers">Back up all covers</string>
+    <string name="mod69_backup_covers_summary">Saves the covers of all library entries (also your own covers) into one ZIP file</string>
+    <string name="mod69_restore_covers">Restore covers from ZIP</string>
+    <string name="mod69_covers_saved">Saved %1$d covers and %2$d own covers</string>
+    <string name="mod69_covers_restored">Restored %1$d covers and %2$d own covers</string>
+    <string name="mod69_redownload_smaller">Redownload smaller</string>
+    <string name="mod69_redownload_original">Redownload in original quality</string>
+    <string name="mod69_page_quality">Page quality of downloads</string>
+    <string name="mod69_page_quality_original">Original (as the source sends it)</string>
+    <string name="mod69_page_quality_smaller">Smaller (resize + WebP)</string>
+    <string name="mod69_page_max_width">Max page width for smaller pages</string>
+    <string name="mod69_page_webp_quality">WebP quality for smaller pages</string>
+    <string name="mod69_redownload_all_smaller">Redownload everything downloaded – smaller</string>
+    <string name="mod69_redownload_all_original">Redownload everything downloaded – original</string>
+    <string name="mod69_redownload_queued">%1$d chapters queued again</string>
 </resources>

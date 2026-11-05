@@ -448,6 +448,9 @@ class Downloader(
             DiskUtil.createNoMediaFile(tmpDir, context)
 
             download.status = Download.State.DOWNLOADED
+            // KMK -->
+            Mod69PageQuality.done(download.chapter.id)
+            // KMK <--
         } catch (error: Throwable) {
             if (error is CancellationException) throw error
             // If the page list threw, it will resume here
@@ -484,12 +487,19 @@ class Downloader(
 
         try {
             // If the image is already downloaded, do nothing. Otherwise download from network
-            val file = when {
+            // KMK -->
+            var file = when {
+                // KMK <--
                 imageFile != null -> imageFile
                 chapterCache.isImageInCache(page.imageUrl!!) ->
                     copyImageFromCache(chapterCache.getImageFile(page.imageUrl!!), tmpDir, filename)
                 else -> downloadImage(page, download.source, tmpDir, filename, dataSaver)
             }
+            // KMK --> 69 mod: smaller pages if chosen
+            if (imageFile == null) {
+                file = Mod69PageQuality.process(file, tmpDir, filename, download.chapter.id)
+            }
+            // KMK <--
 
             // When the page is ready, set page path, progress (just in case) and status
             splitTallImageIfNeeded(page, tmpDir)

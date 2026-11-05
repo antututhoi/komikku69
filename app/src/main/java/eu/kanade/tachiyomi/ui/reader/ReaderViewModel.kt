@@ -180,6 +180,16 @@ class ReaderViewModel @JvmOverloads constructor(
             ChapterDownloadAction.START_NOW -> downloadManager.startDownloadNow(chapter.id)
             ChapterDownloadAction.CANCEL -> cancelDownload(chapter.id)
             ChapterDownloadAction.DELETE -> deleteChapter(chapter)
+            ChapterDownloadAction.MOD69_REDOWNLOAD_SMALLER ->
+                eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownload(
+                    listOf(chapter),
+                    eu.kanade.tachiyomi.data.download.Mod69PageQuality.SMALLER,
+                )
+            ChapterDownloadAction.MOD69_REDOWNLOAD_ORIGINAL ->
+                eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownload(
+                    listOf(chapter),
+                    eu.kanade.tachiyomi.data.download.Mod69PageQuality.ORIGINAL,
+                )
         }
     }
 

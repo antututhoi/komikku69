@@ -15,6 +15,7 @@ import eu.kanade.presentation.more.settings.widget.TriStateListDialog
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.collections.immutable.toImmutableMap
+import kotlinx.coroutines.launch
 import tachiyomi.domain.category.interactor.GetCategories
 import tachiyomi.domain.category.model.Category
 import tachiyomi.domain.download.service.DownloadPreferences
@@ -42,6 +43,21 @@ object SettingsDownloadScreen : SearchableSettings {
         val downloadPreferences = remember { Injekt.get<DownloadPreferences>() }
         val parallelSourceLimit by downloadPreferences.parallelSourceLimit().collectAsState()
         val parallelPageLimit by downloadPreferences.parallelPageLimit().collectAsState()
+        // KMK --> 69 mod
+        val mod69Context = androidx.compose.ui.platform.LocalContext.current
+        val mod69Scope = androidx.compose.runtime.rememberCoroutineScope()
+        val mod69MaxWidth by downloadPreferences.mod69PageMaxWidth().collectAsState()
+        val mod69WebpQuality by downloadPreferences.mod69PageWebpQuality().collectAsState()
+        val mod69Queued = stringResource(KMR.strings.mod69_redownload_queued)
+        fun mod69RedownloadAll(mode: String) {
+            mod69Scope.launch(kotlinx.coroutines.Dispatchers.IO) {
+                val n = eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownloadEverything(mode)
+                kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
+                    android.widget.Toast.makeText(mod69Context, mod69Queued.format(n), android.widget.Toast.LENGTH_LONG).show()
+                }
+            }
+        }
+        // KMK <--
         return listOf(
             Preference.PreferenceItem.SwitchPreference(
                 preference = downloadPreferences.downloadOnlyOverWifi(),
@@ -56,6 +72,40 @@ object SettingsDownloadScreen : SearchableSettings {
                 title = stringResource(MR.strings.split_tall_images),
                 subtitle = stringResource(MR.strings.split_tall_images_summary),
             ),
+            // KMK -->
+            Preference.PreferenceItem.ListPreference(
+                preference = downloadPreferences.mod69PageQuality(),
+                entries = persistentMapOf(
+                    "original" to stringResource(KMR.strings.mod69_page_quality_original),
+                    "smaller" to stringResource(KMR.strings.mod69_page_quality_smaller),
+                ),
+                title = stringResource(KMR.strings.mod69_page_quality),
+            ),
+            Preference.PreferenceItem.SliderPreference(
+                value = mod69MaxWidth,
+                valueRange = 720..2160 step 120,
+                steps = 11,
+                title = stringResource(KMR.strings.mod69_page_max_width),
+                valueString = "$mod69MaxWidth px",
+                onValueChanged = { downloadPreferences.mod69PageMaxWidth().set(it) },
+            ),
+            Preference.PreferenceItem.SliderPreference(
+                value = mod69WebpQuality,
+                valueRange = 50..95 step 5,
+                steps = 8,
+                title = stringResource(KMR.strings.mod69_page_webp_quality),
+                valueString = "$mod69WebpQuality",
+                onValueChanged = { downloadPreferences.mod69PageWebpQuality().set(it) },
+            ),
+            Preference.PreferenceItem.TextPreference(
+                title = stringResource(KMR.strings.mod69_redownload_all_smaller),
+                onClick = { mod69RedownloadAll("smaller") },
+            ),
+            Preference.PreferenceItem.TextPreference(
+                title = stringResource(KMR.strings.mod69_redownload_all_original),
+                onClick = { mod69RedownloadAll("original") },
+            ),
+            // KMK <--
             Preference.PreferenceItem.SliderPreference(
                 value = parallelSourceLimit,
                 valueRange = 1..10,
