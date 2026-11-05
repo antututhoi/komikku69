@@ -256,4 +256,5 @@
     <string name="mod69_redownload_all_smaller">Redownload everything downloaded – smaller</string>
     <string name="mod69_redownload_all_original">Redownload everything downloaded – original</string>
     <string name="mod69_redownload_queued">%1$d chapters queued again</string>
+    <string name="mod69_file_picker">Folder / file picker</string>
 </resources>

@@ -127,8 +127,25 @@ object SettingsDataScreen : SearchableSettings {
         val syncPreferences = remember { Injekt.get<SyncPreferences>() }
         val syncService by syncPreferences.syncService().collectAsState()
 
+        // KMK -->
+        val mod69Context = LocalContext.current
+        var mod69PickerName by remember {
+            mutableStateOf(eu.kanade.tachiyomi.util.system.Mod69Picker.choiceName(mod69Context))
+        }
+        // KMK <--
         return persistentListOf(
             getStorageLocationPref(storagePreferences = storagePreferences),
+            // KMK --> 69 mod
+            Preference.PreferenceItem.TextPreference(
+                title = stringResource(KMR.strings.mod69_file_picker),
+                subtitle = mod69PickerName,
+                onClick = {
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.showSettingDialog(mod69Context) {
+                        mod69PickerName = eu.kanade.tachiyomi.util.system.Mod69Picker.choiceName(mod69Context)
+                    }
+                },
+            ),
+            // KMK <--
             Preference.PreferenceItem.InfoPreference(stringResource(MR.strings.pref_storage_location_info)),
 
             getBackupAndRestoreGroup(backupPreferences = backupPreferences),
@@ -147,7 +164,12 @@ object SettingsDataScreen : SearchableSettings {
         val context = LocalContext.current
 
         return rememberLauncherForActivityResult(
-            contract = ActivityResultContracts.OpenDocumentTree(),
+            // KMK --> 69 mod: the chosen folder picker
+            contract = object : ActivityResultContracts.OpenDocumentTree() {
+                override fun createIntent(context: Context, input: Uri?): Intent =
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+            },
+            // KMK <--
         ) { uri ->
             if (uri != null) {
                 val flags = Intent.FLAG_GRANT_READ_URI_PERMISSION or
@@ -242,7 +264,9 @@ object SettingsDataScreen : SearchableSettings {
             object : ActivityResultContracts.GetContent() {
                 override fun createIntent(context: Context, input: String): Intent {
                     val intent = super.createIntent(context, input)
-                    return Intent.createChooser(intent, context.stringResource(MR.strings.file_select_backup))
+                    // KMK --> 69 mod: the chosen file picker instead of the app chooser
+                    return eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, intent)
+                    // KMK <--
                 }
             },
         ) {
