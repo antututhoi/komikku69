@@ -98,6 +98,7 @@ import tachiyomi.domain.chapter.interactor.GetBookmarkedChaptersByMangaId
 import tachiyomi.domain.chapter.interactor.GetChaptersByMangaId
 import tachiyomi.domain.chapter.interactor.GetMergedChaptersByMangaId
 import tachiyomi.domain.chapter.model.Chapter
+import tachiyomi.domain.chapter.service.getChapterSort
 import tachiyomi.domain.history.interactor.GetNextChapters
 import tachiyomi.domain.library.model.LibraryDisplayMode
 import tachiyomi.domain.library.model.LibraryGroup
@@ -869,11 +870,18 @@ class LibraryScreenModel(
     suspend fun getNextUnreadChapter(manga: Manga): Chapter? {
         // SY -->
         val mergedManga = getMergedMangaById.await(manga.id).associateBy { it.id }
-        return if (manga.id == MERGED_SOURCE_ID) {
+        // KMK -->
+        val chapters = if (manga.id == MERGED_SOURCE_ID) {
+            // KMK <--
             getMergedChaptersByMangaId.await(manga.id, applyFilter = true)
         } else {
             getChaptersByMangaId.await(manga.id, applyFilter = true)
-        }.getNextUnread(manga, downloadManager, mergedManga)
+            // KMK -->
+        }
+        return chapters.getNextUnread(manga, downloadManager, mergedManga)
+            // 69 mod: everything read -> re-read from the first chapter
+            ?: chapters.sortedWith(getChapterSort(manga, sortDescending = false)).firstOrNull()
+        // KMK <--
         // SY <--
     }
 

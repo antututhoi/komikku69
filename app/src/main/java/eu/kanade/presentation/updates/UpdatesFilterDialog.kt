@@ -9,14 +9,17 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import eu.kanade.presentation.components.TabbedDialog
 import eu.kanade.presentation.components.TabbedDialogPaddings
 import eu.kanade.tachiyomi.ui.updates.UpdatesSettingsScreenModel
@@ -134,6 +137,30 @@ private fun ColumnScope.FilterSheet(
             checked = panoramaCover,
             onCheckedChange = { screenModel.toggleSwitch(UpdatesPreferences::usePanoramaCover) },
         )
+    }
+    // KMK <--
+
+    // KMK --> 69 mod: cover size
+    val mod69Scale by screenModel.updatesPreferences.mod69CoverScale().collectAsState()
+    Text(
+        text = stringResource(KMR.strings.mod69_cover_size),
+        color = MaterialTheme.colorScheme.onSurface,
+        style = MaterialTheme.typography.bodyMedium,
+        modifier = Modifier.padding(horizontal = SettingsItemsPaddings.Horizontal, vertical = 4.dp),
+    )
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = SettingsItemsPaddings.Horizontal),
+        horizontalArrangement = Arrangement.spacedBy(6.dp),
+    ) {
+        listOf(75, 100, 125, 150, 200).forEach { v ->
+            FilterChip(
+                selected = mod69Scale == v,
+                onClick = { screenModel.updatesPreferences.mod69CoverScale().set(v) },
+                label = { Text("$v%") },
+            )
+        }
     }
     // KMK <--
 }

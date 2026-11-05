@@ -53,6 +53,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.MutableFloatState
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -247,9 +248,20 @@ fun MangaActionRow(
     // KMK -->
     status: Long,
     interval: Int,
+    mangaId: Long? = null,
     // KMK <--
     modifier: Modifier = Modifier,
 ) {
+    // KMK --> 69 mod: show the manga's category names instead of "In library"
+    val mod69Categories by remember(mangaId, favorite) {
+        if (mangaId == null || !favorite) {
+            kotlinx.coroutines.flow.flowOf(emptyList())
+        } else {
+            Injekt.get<tachiyomi.domain.category.interactor.GetCategories>().subscribe(mangaId)
+        }
+    }.collectAsState(initial = emptyList())
+    val mod69CategoryText = mod69Categories.filterNot { it.isSystemCategory }.joinToString { it.name }
+    // KMK <--
     // KMK -->
     val libraryPreferences: LibraryPreferences = Injekt.get()
     val restrictions = libraryPreferences.autoUpdateMangaRestrictions().get()
@@ -279,7 +291,9 @@ fun MangaActionRow(
     Row(modifier = modifier.padding(start = 16.dp, top = 8.dp, end = 16.dp)) {
         MangaActionButton(
             title = if (favorite) {
-                stringResource(MR.strings.in_library)
+                // KMK -->
+                mod69CategoryText.ifEmpty { stringResource(MR.strings.in_library) }
+                // KMK <--
             } else {
                 stringResource(MR.strings.add_to_library)
             },

@@ -238,4 +238,6 @@
     <string name="pref_discord_show_download_button_summary">Displays a button to download the app</string>
     <string name="pref_discord_show_discord_button">Show Discord Button</string>
     <string name="pref_discord_show_discord_button_summary">Displays a button to join the Discord server</string>
+    <!-- 69 mod -->
+    <string name="mod69_cover_size">Cover size</string>
 </resources>

@@ -145,7 +145,12 @@ class HistoryScreenModel(
 
     fun getNextChapterForManga(mangaId: Long, chapterId: Long) {
         screenModelScope.launchIO {
-            sendNextChapterEvent(getNextChapters.await(mangaId, chapterId, onlyUnread = false))
+            sendNextChapterEvent(
+                getNextChapters.await(mangaId, chapterId, onlyUnread = false)
+                    // KMK --> 69 mod: everything read -> re-read from the first chapter
+                    .ifEmpty { getNextChapters.await(mangaId, onlyUnread = false).take(1) },
+                // KMK <--
+            )
         }
     }
 

@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.Replay
 import androidx.compose.material3.FilledIconButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButtonDefaults
@@ -520,10 +521,19 @@ private fun ContinueReadingButton(
             modifier = Modifier.size(size),
         ) {
             Icon(
-                imageVector = Icons.Filled.PlayArrow,
+                // KMK --> 69 mod: re-read icon when everything is read
+                imageVector = if (onClick is Mod69RereadClick) Icons.Filled.Replay else Icons.Filled.PlayArrow,
+                // KMK <--
                 contentDescription = stringResource(MR.strings.action_resume),
                 modifier = Modifier.size(iconSize),
             )
         }
     }
 }
+
+// KMK -->
+/** 69 mod: continue-reading click for a manga with everything read (shows ↻, opens the first chapter). */
+class Mod69RereadClick(private val action: () -> Unit) : () -> Unit {
+    override fun invoke() = action()
+}
+// KMK <--

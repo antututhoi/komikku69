@@ -66,6 +66,10 @@ internal fun LibraryComfortableGrid(
                 onClick = { onClick(libraryItem.libraryManga) },
                 onClickContinueReading = if (onClickContinueReading != null && libraryItem.unreadCount > 0) {
                     { onClickContinueReading(libraryItem.libraryManga) }
+                    // KMK -->
+                } else if (onClickContinueReading != null) {
+                    Mod69RereadClick { onClickContinueReading(libraryItem.libraryManga) }
+                    // KMK <--
                 } else {
                     null
                 },

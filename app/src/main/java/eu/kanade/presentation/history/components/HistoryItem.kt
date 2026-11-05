@@ -18,6 +18,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableFloatState
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -39,12 +41,15 @@ import eu.kanade.presentation.util.formatChapterNumber
 import eu.kanade.tachiyomi.util.lang.toTimestampString
 import exh.debug.DebugToggles
 import tachiyomi.domain.history.model.HistoryWithRelations
+import tachiyomi.domain.history.service.HistoryPreferences
 import tachiyomi.i18n.MR
 import tachiyomi.i18n.kmk.KMR
 import tachiyomi.presentation.core.components.material.DISABLED_ALPHA
 import tachiyomi.presentation.core.components.material.padding
 import tachiyomi.presentation.core.i18n.stringResource
 import tachiyomi.presentation.core.util.selectedBackground
+import uy.kohesive.injekt.Injekt
+import uy.kohesive.injekt.api.get
 
 private val HistoryItemHeight = 96.dp
 
@@ -67,6 +72,9 @@ fun HistoryItem(
     coverRatio: MutableFloatState = remember { mutableFloatStateOf(1f) },
     // KMK <--
 ) {
+    // KMK --> 69 mod: cover size setting
+    val mod69Scale by remember { Injekt.get<HistoryPreferences>().mod69CoverScale() }.collectAsState()
+    // KMK <--
     // KMK -->
     val haptic = LocalHapticFeedback.current
     val textAlpha = if (history.read) DISABLED_ALPHA else 1f
@@ -83,7 +91,9 @@ fun HistoryItem(
                 },
             )
             // KMK <--
-            .height(HistoryItemHeight)
+            // KMK -->
+            .height(HistoryItemHeight * (mod69Scale / 100f))
+            // KMK <--
             .padding(horizontal = MaterialTheme.padding.medium, vertical = MaterialTheme.padding.small),
         verticalAlignment = Alignment.CenterVertically,
     ) {

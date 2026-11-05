@@ -28,4 +28,8 @@ class HistoryPreferences(
         USE_PANORAMA_COVER_PREF,
         false,
     )
+
+    // KMK --> 69 mod: cover size in percent
+    fun mod69CoverScale() = preferenceStore.getInt("mod69_history_cover_scale", 100)
+    // KMK <--
 }

@@ -30,6 +30,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableFloatState
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
@@ -65,11 +66,14 @@ import me.saket.swipe.SwipeableActionsBox
 import mihon.feature.upcoming.DateHeading
 import tachiyomi.domain.library.service.LibraryPreferences
 import tachiyomi.domain.updates.model.UpdatesWithRelations
+import tachiyomi.domain.updates.service.UpdatesPreferences
 import tachiyomi.i18n.MR
 import tachiyomi.presentation.core.components.material.DISABLED_ALPHA
 import tachiyomi.presentation.core.components.material.padding
 import tachiyomi.presentation.core.i18n.stringResource
 import tachiyomi.presentation.core.util.selectedBackground
+import uy.kohesive.injekt.Injekt
+import uy.kohesive.injekt.api.get
 
 internal fun LazyListScope.updatesLastUpdatedItem(
     lastUpdated: Long,
@@ -246,6 +250,11 @@ private fun UpdatesUiItem(
     coverRatio: MutableFloatState = remember { mutableFloatStateOf(1f) },
     // KMK <--
 ) {
+    // KMK --> 69 mod: cover size setting
+    val mod69Scale by remember { Injekt.get<UpdatesPreferences>().mod69CoverScale() }.collectAsState()
+    val mod69CoverWidth = UpdateItemWidth * (mod69Scale / 100f)
+    val mod69PanoramaWidth = UpdateItemPanoramaWidth * (mod69Scale / 100f)
+    // KMK <--
     val haptic = LocalHapticFeedback.current
     val textAlpha = if (update.read) DISABLED_ALPHA else 1f
 
@@ -308,7 +317,7 @@ private fun UpdatesUiItem(
                 if (DebugToggles.HIDE_COVER_IMAGE_ONLY_SHOW_COLOR.enabled) {
                     MangaCoverHide.Book(
                         modifier = Modifier
-                            .width(UpdateItemWidth),
+                            .width(mod69CoverWidth),
                         bgColor = bgColor ?: MaterialTheme.colorScheme.surface.takeIf { selected },
                         tint = onBgColor,
                         size = MangaCover.Size.Medium,
@@ -317,7 +326,7 @@ private fun UpdatesUiItem(
                     if (usePanoramaCover && coverIsWide) {
                         MangaCover.Panorama(
                             modifier = Modifier
-                                .width(UpdateItemPanoramaWidth),
+                                .width(mod69PanoramaWidth),
                             data = mangaCover,
                             onClick = onClickCover,
                             // KMK -->
@@ -335,7 +344,7 @@ private fun UpdatesUiItem(
                         MangaCover.Book(
                             modifier = Modifier
                                 // KMK -->
-                                .width(UpdateItemWidth),
+                                .width(mod69CoverWidth),
                             // KMK <--
                             data = mangaCover,
                             onClick = onClickCover,
@@ -353,7 +362,7 @@ private fun UpdatesUiItem(
             } else {
                 Box(
                     modifier = Modifier
-                        .width(if (usePanoramaCover && coverIsWide) UpdateItemPanoramaWidth else UpdateItemWidth),
+                        .width(if (usePanoramaCover && coverIsWide) mod69PanoramaWidth else mod69CoverWidth),
                 )
                 // KMK <--
             }

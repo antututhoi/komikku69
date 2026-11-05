@@ -38,6 +38,9 @@ class UpdatesPreferences(
         USE_PANORAMA_COVER_PREF,
         false,
     )
+
+    // 69 mod: cover size in percent
+    fun mod69CoverScale() = preferenceStore.getInt("mod69_updates_cover_scale", 100)
     // KMK <--
 }
 
