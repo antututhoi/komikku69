@@ -26,9 +26,11 @@ android {
     namespace = "eu.kanade.tachiyomi"
 
     defaultConfig {
-        applicationId = "app.komikku"
+        // KMK --> 69 mod: own app id, version from the build number
+        applicationId = "app.komikku.mod69"
 
-        versionCode = 82
+        versionCode = 1000 + (System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull() ?: 0)
+        // KMK <--
         versionName = "1.14.1"
 
         buildConfigField("String", "COMMIT_COUNT", "\"${getCommitCount()}\"")
@@ -39,6 +41,20 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    // KMK --> 69 mod: same signing key for every build
+    val mod69Keystore = System.getenv("MOD69_KEYSTORE")?.let { file(it) }?.takeIf { it.exists() }
+    signingConfigs {
+        if (mod69Keystore != null) {
+            create("mod69") {
+                storeFile = mod69Keystore
+                storePassword = System.getenv("MOD69_KEY_PASSWORD")
+                keyAlias = "key0"
+                keyPassword = System.getenv("MOD69_KEY_PASSWORD")
+            }
+        }
+    }
+    // KMK <--
 
     buildTypes {
         val debug by getting {
@@ -53,6 +69,9 @@ android {
             proguardFiles("proguard-android-optimize.txt", "proguard-rules.pro")
 
             buildConfigField("String", "BUILD_TIME", "\"${getBuildTime(useLastCommitTime = true)}\"")
+            // KMK -->
+            if (mod69Keystore != null) signingConfig = signingConfigs.getByName("mod69")
+            // KMK <--
         }
 
         val commonMatchingFallbacks = listOf(release.name)
@@ -107,9 +126,11 @@ android {
     splits {
         abi {
             isEnable = true
-            isUniversalApk = true
+            // KMK --> 69 mod: arm64 only
+            isUniversalApk = false
             reset()
-            include("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
+            include("arm64-v8a")
+            // KMK <--
         }
     }
 
