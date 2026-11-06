@@ -1342,6 +1342,8 @@ class MangaScreenModel(
                     items.map { it.chapter },
                     eu.kanade.tachiyomi.data.download.Mod69PageQuality.ORIGINAL,
                 )
+            ChapterDownloadAction.MOD69_CONVERT_SMALLER ->
+                eu.kanade.tachiyomi.data.download.Mod69PageQuality.convertLocal(items.map { it.chapter })
             // KMK <--
         }
     }

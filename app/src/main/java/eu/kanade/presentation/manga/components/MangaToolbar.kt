@@ -73,6 +73,9 @@ fun MangaToolbar(
     onPaletteScreenClick: () -> Unit,
     // KMK <--
     modifier: Modifier = Modifier,
+    // KMK --> 69 mod: "smaller" / "original" / "convert" for all downloaded chapters of this entry
+    onMod69Downloads: ((String) -> Unit)? = null,
+    // KMK <--
 ) {
     // KMK -->
     val navigator = LocalNavigator.current
@@ -249,6 +252,26 @@ fun MangaToolbar(
                             onClick = onClearManga,
                         ),
                     )
+                    if (onMod69Downloads != null) {
+                        add(
+                            AppBar.OverflowAction(
+                                title = stringResource(KMR.strings.mod69_redownload_all_entry_smaller),
+                                onClick = { onMod69Downloads("smaller") },
+                            ),
+                        )
+                        add(
+                            AppBar.OverflowAction(
+                                title = stringResource(KMR.strings.mod69_redownload_all_entry_original),
+                                onClick = { onMod69Downloads("original") },
+                            ),
+                        )
+                        add(
+                            AppBar.OverflowAction(
+                                title = stringResource(KMR.strings.mod69_convert_entry),
+                                onClick = { onMod69Downloads("convert") },
+                            ),
+                        )
+                    }
                     if (onClickSourceSettings != null) {
                         add(
                             AppBar.OverflowAction(

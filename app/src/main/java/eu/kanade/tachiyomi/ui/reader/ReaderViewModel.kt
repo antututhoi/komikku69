@@ -190,6 +190,8 @@ class ReaderViewModel @JvmOverloads constructor(
                     listOf(chapter),
                     eu.kanade.tachiyomi.data.download.Mod69PageQuality.ORIGINAL,
                 )
+            ChapterDownloadAction.MOD69_CONVERT_SMALLER ->
+                eu.kanade.tachiyomi.data.download.Mod69PageQuality.convertLocal(listOf(chapter))
         }
     }
 

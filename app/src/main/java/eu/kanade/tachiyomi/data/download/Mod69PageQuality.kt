@@ -44,41 +44,158 @@ object Mod69PageQuality {
     /** Called for every newly downloaded page. Returns the file to use (maybe a new one). */
     fun process(file: UniFile, tmpDir: UniFile, filename: String, chapterId: Long): UniFile {
         if (modeFor(chapterId) != SMALLER) return file
-        val name = file.name.orEmpty().lowercase()
-        if (name.endsWith(".gif") || name.endsWith(".avif") || name.endsWith(".jxl")) return file
-        return try {
-            val before = file.length()
-            val bytes = file.openInputStream().use { it.readBytes() }
-            val opts = BitmapFactory.Options().apply { inJustDecodeBounds = true }
-            BitmapFactory.decodeByteArray(bytes, 0, bytes.size, opts)
-            if (opts.outWidth <= 0) return file
-            val maxW = prefs.mod69PageMaxWidth().get().coerceAtLeast(360)
-            var sample = 1
-            while (opts.outWidth / (sample * 2) >= maxW) sample *= 2
-            val decoded = BitmapFactory.decodeByteArray(bytes, 0, bytes.size, BitmapFactory.Options().apply { inSampleSize = sample })
-                ?: return file
-            val bmp = if (decoded.width > maxW) {
-                val h = (decoded.height.toLong() * maxW / decoded.width).toInt().coerceAtLeast(1)
-                Bitmap.createScaledBitmap(decoded, maxW, h, true).also { if (it !== decoded) decoded.recycle() }
-            } else {
-                decoded
-            }
-            val out = ByteArrayOutputStream()
+        return shrinkFile(file, tmpDir, filename)
+    }
 
-            @Suppress("DEPRECATION")
-            val format = if (android.os.Build.VERSION.SDK_INT >= 30) Bitmap.CompressFormat.WEBP_LOSSY else Bitmap.CompressFormat.WEBP
-            bmp.compress(format, prefs.mod69PageWebpQuality().get().coerceIn(30, 100), out)
-            bmp.recycle()
-            if (out.size() <= 0 || out.size() >= before) return file
-            val newFile = tmpDir.createFile("$filename.webp.tmp") ?: return file
-            newFile.openOutputStream().use { it.write(out.toByteArray()) }
+    private fun isShrinkable(name: String): Boolean {
+        val n = name.lowercase()
+        return n.endsWith(".jpg") || n.endsWith(".jpeg") || n.endsWith(".png") || n.endsWith(".webp") || n.endsWith(".bmp")
+    }
+
+    /**
+     * A smaller WebP of the picture (fits inside max width x max height, keeps its shape),
+     * or null when it would not be smaller.
+     */
+    private fun shrinkBytes(bytes: ByteArray): ByteArray? {
+        val opts = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        BitmapFactory.decodeByteArray(bytes, 0, bytes.size, opts)
+        if (opts.outWidth <= 0 || opts.outHeight <= 0) return null
+        // fit inside max width x max height (0 = no limit), keeping the page's shape
+        val maxW = prefs.mod69PageMaxWidth().let { if (it == 0) Int.MAX_VALUE else it.coerceAtLeast(100) }
+        val maxH = prefs.mod69PageMaxHeight().let { if (it == 0) Int.MAX_VALUE else it.coerceAtLeast(100) }
+        val scale = minOf(1.0, maxW.toDouble() / opts.outWidth, maxH.toDouble() / opts.outHeight)
+        val targetW = (opts.outWidth * scale).toInt().coerceAtLeast(1)
+        val targetH = (opts.outHeight * scale).toInt().coerceAtLeast(1)
+        var sample = 1
+        while (opts.outWidth / (sample * 2) >= targetW && opts.outHeight / (sample * 2) >= targetH) sample *= 2
+        val decoded = BitmapFactory.decodeByteArray(bytes, 0, bytes.size, BitmapFactory.Options().apply { inSampleSize = sample })
+            ?: return null
+        val bmp = if (decoded.width > targetW || decoded.height > targetH) {
+            Bitmap.createScaledBitmap(decoded, targetW, targetH, true).also { if (it !== decoded) decoded.recycle() }
+        } else {
+            decoded
+        }
+        val out = ByteArrayOutputStream()
+
+        @Suppress("DEPRECATION")
+        val format = if (android.os.Build.VERSION.SDK_INT >= 30) Bitmap.CompressFormat.WEBP_LOSSY else Bitmap.CompressFormat.WEBP
+        bmp.compress(format, prefs.mod69PageWebpQuality(), out)
+        bmp.recycle()
+        return if (out.size() <= 0 || out.size() >= bytes.size) null else out.toByteArray()
+    }
+
+    private fun shrinkFile(file: UniFile, dir: UniFile, filename: String): UniFile {
+        val name = file.name.orEmpty()
+        if (!isShrinkable(name)) return file
+        return try {
+            val bytes = file.openInputStream().use { it.readBytes() }
+            val small = shrinkBytes(bytes) ?: return file
+            val newFile = dir.createFile("$filename.webp.tmp") ?: return file
+            newFile.openOutputStream().use { it.write(small) }
             file.delete()
             newFile.renameTo("$filename.webp")
-            tmpDir.findFile("$filename.webp") ?: newFile
+            dir.findFile("$filename.webp") ?: newFile
         } catch (e: Throwable) {
             logcat(LogPriority.ERROR, e) { "69: page shrink failed" }
             file
         }
+    }
+
+    /** Makes already downloaded chapters smaller right on the phone (nothing is downloaded again). */
+    fun convertLocal(chapters: List<Chapter>, onDone: ((Int) -> Unit)? = null) {
+        if (chapters.isEmpty()) return
+        launchIO {
+            val provider = Injekt.get<DownloadProvider>()
+            val sources = Injekt.get<SourceManager>()
+            val getManga = Injekt.get<GetManga>()
+            var done = 0
+            chapters.groupBy { it.mangaId }.forEach { (mangaId, list) ->
+                val manga = getManga.await(mangaId) ?: return@forEach
+                val source = sources.get(manga.source) ?: return@forEach
+                list.forEach { ch ->
+                    val dir = provider.findChapterDir(ch.name, ch.scanlator, ch.url, manga.ogTitle, source) ?: return@forEach
+                    if (convertOne(dir)) done++
+                }
+            }
+            onDone?.invoke(done)
+        }
+    }
+
+    fun convertLocalIds(chapterIds: List<Long>) {
+        launchIO {
+            val getChapter = Injekt.get<GetChapter>()
+            convertLocal(chapterIds.mapNotNull { getChapter.await(it) })
+        }
+    }
+
+    /** Every downloaded chapter of every library entry, made smaller on the phone. */
+    suspend fun convertEverything(): Int {
+        val dm = Injekt.get<DownloadManager>()
+        val getChapters = Injekt.get<GetChaptersByMangaId>()
+        val all = mutableListOf<Chapter>()
+        for (manga in Injekt.get<GetFavorites>().await()) {
+            all += getChapters.await(manga.id).filter {
+                dm.isChapterDownloaded(it.name, it.scanlator, it.url, manga.ogTitle, manga.source)
+            }
+        }
+        convertLocal(all)
+        return all.size
+    }
+
+    private fun convertOne(target: UniFile): Boolean {
+        return try {
+            if (target.isDirectory) {
+                target.listFiles()?.forEach { f ->
+                    val n = f.name ?: return@forEach
+                    if (isShrinkable(n) && !n.endsWith(".webp", ignoreCase = true)) {
+                        shrinkFile(f, target, n.substringBeforeLast('.'))
+                    }
+                }
+                true
+            } else if (target.name.orEmpty().endsWith(".cbz", ignoreCase = true)) {
+                convertCbz(target)
+            } else {
+                false
+            }
+        } catch (e: Throwable) {
+            logcat(LogPriority.ERROR, e) { "69: convert failed" }
+            false
+        }
+    }
+
+    /** Re-packs a CBZ with smaller pages. */
+    private fun convertCbz(cbz: UniFile): Boolean {
+        val parent = cbz.parentFile ?: return false
+        val name = cbz.name ?: return false
+        val tmp = parent.createFile("$name.69tmp") ?: return false
+        var changed = false
+        java.util.zip.ZipInputStream(cbz.openInputStream().buffered()).use { zin ->
+            java.util.zip.ZipOutputStream(tmp.openOutputStream().buffered()).use { zout ->
+                while (true) {
+                    val e = zin.nextEntry ?: break
+                    if (e.isDirectory) continue
+                    val bytes = zin.readBytes()
+                    var entryName = e.name
+                    var data = bytes
+                    if (isShrinkable(entryName) && !entryName.endsWith(".webp", ignoreCase = true)) {
+                        shrinkBytes(bytes)?.let {
+                            data = it
+                            entryName = entryName.substringBeforeLast('.') + ".webp"
+                            changed = true
+                        }
+                    }
+                    zout.putNextEntry(java.util.zip.ZipEntry(entryName))
+                    zout.write(data)
+                    zout.closeEntry()
+                }
+            }
+        }
+        if (!changed) {
+            tmp.delete()
+            return true
+        }
+        cbz.delete()
+        return tmp.renameTo(name)
     }
 
     /** Deletes the given downloaded chapters and downloads them again in [mode]. */

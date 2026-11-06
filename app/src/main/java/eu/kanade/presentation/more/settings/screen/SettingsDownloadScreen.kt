@@ -46,12 +46,14 @@ object SettingsDownloadScreen : SearchableSettings {
         // KMK --> 69 mod
         val mod69Context = androidx.compose.ui.platform.LocalContext.current
         val mod69Scope = androidx.compose.runtime.rememberCoroutineScope()
-        val mod69MaxWidth by downloadPreferences.mod69PageMaxWidth().collectAsState()
-        val mod69WebpQuality by downloadPreferences.mod69PageWebpQuality().collectAsState()
         val mod69Queued = stringResource(KMR.strings.mod69_redownload_queued)
         fun mod69RedownloadAll(mode: String) {
             mod69Scope.launch(kotlinx.coroutines.Dispatchers.IO) {
-                val n = eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownloadEverything(mode)
+                val n = if (mode == "convert") {
+                    eu.kanade.tachiyomi.data.download.Mod69PageQuality.convertEverything()
+                } else {
+                    eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownloadEverything(mode)
+                }
                 kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
                     android.widget.Toast.makeText(mod69Context, mod69Queued.format(n), android.widget.Toast.LENGTH_LONG).show()
                 }
@@ -81,21 +83,23 @@ object SettingsDownloadScreen : SearchableSettings {
                 ),
                 title = stringResource(KMR.strings.mod69_page_quality),
             ),
-            Preference.PreferenceItem.SliderPreference(
-                value = mod69MaxWidth,
-                valueRange = 720..2160 step 120,
-                steps = 11,
+            Preference.PreferenceItem.EditTextPreference(
+                preference = downloadPreferences.mod69PageMaxWidthText(),
                 title = stringResource(KMR.strings.mod69_page_max_width),
-                valueString = "$mod69MaxWidth px",
-                onValueChanged = { downloadPreferences.mod69PageMaxWidth().set(it) },
+                subtitle = "%s px (0 = no limit)",
+                onValueChanged = { it.trim().toIntOrNull()?.let { n -> n >= 0 } ?: false },
             ),
-            Preference.PreferenceItem.SliderPreference(
-                value = mod69WebpQuality,
-                valueRange = 50..95 step 5,
-                steps = 8,
+            Preference.PreferenceItem.EditTextPreference(
+                preference = downloadPreferences.mod69PageMaxHeightText(),
+                title = stringResource(KMR.strings.mod69_page_max_height),
+                subtitle = "%s px (0 = no limit)",
+                onValueChanged = { it.trim().toIntOrNull()?.let { n -> n >= 0 } ?: false },
+            ),
+            Preference.PreferenceItem.EditTextPreference(
+                preference = downloadPreferences.mod69PageWebpQualityText(),
                 title = stringResource(KMR.strings.mod69_page_webp_quality),
-                valueString = "$mod69WebpQuality",
-                onValueChanged = { downloadPreferences.mod69PageWebpQuality().set(it) },
+                subtitle = "%s (1 – 100)",
+                onValueChanged = { it.trim().toIntOrNull()?.let { n -> n in 1..100 } ?: false },
             ),
             Preference.PreferenceItem.TextPreference(
                 title = stringResource(KMR.strings.mod69_redownload_all_smaller),
@@ -104,6 +108,11 @@ object SettingsDownloadScreen : SearchableSettings {
             Preference.PreferenceItem.TextPreference(
                 title = stringResource(KMR.strings.mod69_redownload_all_original),
                 onClick = { mod69RedownloadAll("original") },
+            ),
+            Preference.PreferenceItem.TextPreference(
+                title = stringResource(KMR.strings.mod69_convert_all),
+                subtitle = stringResource(KMR.strings.mod69_convert_all_summary),
+                onClick = { mod69RedownloadAll("convert") },
             ),
             // KMK <--
             Preference.PreferenceItem.SliderPreference(

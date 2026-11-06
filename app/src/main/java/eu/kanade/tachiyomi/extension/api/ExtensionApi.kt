@@ -8,11 +8,13 @@ import eu.kanade.tachiyomi.extension.model.LoadResult
 import eu.kanade.tachiyomi.extension.util.ExtensionLoader
 import exh.source.BlacklistedSources
 import exh.source.ExhPreferences
+import logcat.LogPriority
 import mihon.domain.extension.interactor.UpdateExtensionStores
 import mihon.domain.extension.repository.ExtensionStoreRepository
 import tachiyomi.core.common.preference.Preference
 import tachiyomi.core.common.preference.PreferenceStore
 import tachiyomi.core.common.util.lang.withIOContext
+import tachiyomi.core.common.util.system.logcat
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
@@ -92,6 +94,22 @@ internal class ExtensionApi {
 
         if (extensionsWithUpdate.isNotEmpty()) {
             ExtensionUpdateNotifier(context).promptUpdates(extensionsWithUpdate.map { it.name })
+            // KMK --> 69 mod: update them right away
+            if (sourcePreferences.mod69AutoUpdateExtensions().get()) {
+                try {
+                    if (!fromAvailableExtensionList) extensionManager.findAvailableExtensions()
+                    extensionsWithUpdate.forEach { ext ->
+                        try {
+                            extensionManager.updateExtension(ext).collect { }
+                        } catch (e: Exception) {
+                            logcat(LogPriority.ERROR, e) { "69: auto update of ${ext.name} failed" }
+                        }
+                    }
+                } catch (e: Exception) {
+                    logcat(LogPriority.ERROR, e) { "69: auto update failed" }
+                }
+            }
+            // KMK <--
         }
 
         return extensionsWithUpdate

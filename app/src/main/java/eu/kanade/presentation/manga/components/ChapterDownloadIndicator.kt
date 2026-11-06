@@ -49,6 +49,7 @@ enum class ChapterDownloadAction {
     // KMK --> 69 mod
     MOD69_REDOWNLOAD_SMALLER,
     MOD69_REDOWNLOAD_ORIGINAL,
+    MOD69_CONVERT_SMALLER,
     // KMK <--
 }
 
@@ -236,6 +237,13 @@ private fun DownloadedIndicator(
                 text = { Text(text = stringResource(KMR.strings.mod69_redownload_original)) },
                 onClick = {
                     onClick(ChapterDownloadAction.MOD69_REDOWNLOAD_ORIGINAL)
+                    isMenuExpanded = false
+                },
+            )
+            DropdownMenuItem(
+                text = { Text(text = stringResource(KMR.strings.mod69_convert_here)) },
+                onClick = {
+                    onClick(ChapterDownloadAction.MOD69_CONVERT_SMALLER)
                     isMenuExpanded = false
                 },
             )

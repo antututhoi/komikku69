@@ -83,6 +83,9 @@ fun MangaBottomActionMenu(
     onMarkPreviousAsReadClicked: (() -> Unit)? = null,
     onDownloadClicked: (() -> Unit)? = null,
     onDeleteClicked: (() -> Unit)? = null,
+    // KMK --> 69 mod
+    onMod69RedownloadClicked: ((ChapterDownloadAction) -> Unit)? = null,
+    // KMK <--
 ) {
     AnimatedVisibility(
         visible = visible,
@@ -96,7 +99,7 @@ fun MangaBottomActionMenu(
             color = MaterialTheme.colorScheme.surfaceContainerHigh,
         ) {
             val haptic = LocalHapticFeedback.current
-            val confirm = remember { mutableStateListOf(false, false, false, false, false, false, false) }
+            val confirm = remember { mutableStateListOf(false, false, false, false, false, false, false, /* KMK */ false) }
             var resetJob by remember { mutableStateOf<Job?>(null) }
             val onLongClickItem: (Int) -> Unit = { toConfirmIndex ->
                 haptic.performHapticFeedback(HapticFeedbackType.LongPress)
@@ -179,6 +182,37 @@ fun MangaBottomActionMenu(
                         onClick = onDeleteClicked,
                     )
                 }
+                // KMK --> 69 mod: redownload smaller / original, or make smaller on the phone
+                if (onMod69RedownloadClicked != null) {
+                    var mod69Menu by remember { mutableStateOf(false) }
+                    Button(
+                        title = stringResource(KMR.strings.mod69_redownload),
+                        icon = Icons.Outlined.Refresh,
+                        toConfirm = confirm[7],
+                        onLongClick = { onLongClickItem(7) },
+                        onClick = { mod69Menu = true },
+                    ) {
+                        androidx.compose.material3.DropdownMenu(
+                            expanded = mod69Menu,
+                            onDismissRequest = { mod69Menu = false },
+                        ) {
+                            listOf(
+                                KMR.strings.mod69_redownload_smaller to ChapterDownloadAction.MOD69_REDOWNLOAD_SMALLER,
+                                KMR.strings.mod69_redownload_original to ChapterDownloadAction.MOD69_REDOWNLOAD_ORIGINAL,
+                                KMR.strings.mod69_convert_here to ChapterDownloadAction.MOD69_CONVERT_SMALLER,
+                            ).forEach { (label, action) ->
+                                androidx.compose.material3.DropdownMenuItem(
+                                    text = { Text(text = stringResource(label)) },
+                                    onClick = {
+                                        mod69Menu = false
+                                        onMod69RedownloadClicked(action)
+                                    },
+                                )
+                            }
+                        }
+                    }
+                }
+                // KMK <--
             }
         }
     }

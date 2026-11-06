@@ -18,9 +18,21 @@ class DownloadPreferences(
     // KMK --> 69 mod: page quality of downloads
     fun mod69PageQuality() = preferenceStore.getString("mod69_page_quality", "original")
 
-    fun mod69PageMaxWidth() = preferenceStore.getInt("mod69_page_max_width", 1080)
+    // typed in as numbers (sliders were not exact)
+    fun mod69PageMaxWidthText() = preferenceStore.getString("mod69_page_max_width_txt", "1080")
 
-    fun mod69PageWebpQuality() = preferenceStore.getInt("mod69_page_webp_quality", 80)
+    fun mod69PageMaxHeightText() = preferenceStore.getString("mod69_page_max_height_txt", "0")
+
+    fun mod69PageWebpQualityText() = preferenceStore.getString("mod69_page_webp_quality_txt", "80")
+
+    /** Max page width in px, 0 = no limit. */
+    fun mod69PageMaxWidth(): Int = mod69PageMaxWidthText().get().trim().toIntOrNull()?.coerceAtLeast(0) ?: 1080
+
+    /** Max page height in px, 0 = no limit. */
+    fun mod69PageMaxHeight(): Int = mod69PageMaxHeightText().get().trim().toIntOrNull()?.coerceAtLeast(0) ?: 0
+
+    /** WebP quality 1..100. */
+    fun mod69PageWebpQuality(): Int = mod69PageWebpQualityText().get().trim().toIntOrNull()?.coerceIn(1, 100) ?: 80
     // KMK <--
 
     fun autoDownloadWhileReading() = preferenceStore.getInt("auto_download_while_reading", 0)

@@ -363,7 +363,11 @@ object SettingsAdvancedScreen : SearchableSettings {
         // KMK -->
         val uiPreferences = remember { Injekt.get<UiPreferences>() }
         val mod69ExportCovers = rememberLauncherForActivityResult(
-            ActivityResultContracts.CreateDocument("application/zip"),
+            // 69 mod: the chosen folder / file picker
+            object : ActivityResultContracts.CreateDocument("application/zip") {
+                override fun createIntent(context: android.content.Context, input: String): android.content.Intent =
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+            },
         ) { uri ->
             if (uri != null) {
                 scope.launchNonCancellable {
@@ -376,7 +380,10 @@ object SettingsAdvancedScreen : SearchableSettings {
             }
         }
         val mod69ImportCovers = rememberLauncherForActivityResult(
-            ActivityResultContracts.OpenDocument(),
+            object : ActivityResultContracts.OpenDocument() {
+                override fun createIntent(context: android.content.Context, input: Array<String>): android.content.Intent =
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+            },
         ) { uri ->
             if (uri != null) {
                 scope.launchNonCancellable {
@@ -582,6 +589,11 @@ object SettingsAdvancedScreen : SearchableSettings {
                 ),
                 // KMK -->
                 Preference.PreferenceItem.InfoPreference(stringResource(KMR.strings.pref_private_installer_warning)),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = Injekt.get<eu.kanade.domain.source.service.SourcePreferences>().mod69AutoUpdateExtensions(),
+                    title = stringResource(KMR.strings.mod69_auto_update_extensions),
+                    subtitle = stringResource(KMR.strings.mod69_auto_update_extensions_summary),
+                ),
                 // KMK <--
                 Preference.PreferenceItem.TextPreference(
                     title = stringResource(MR.strings.ext_revoke_trust),

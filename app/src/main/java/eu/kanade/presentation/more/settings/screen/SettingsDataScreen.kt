@@ -164,11 +164,9 @@ object SettingsDataScreen : SearchableSettings {
         val context = LocalContext.current
 
         return rememberLauncherForActivityResult(
-            // KMK --> 69 mod: the chosen folder picker
-            contract = object : ActivityResultContracts.OpenDocumentTree() {
-                override fun createIntent(context: Context, input: Uri?): Intent =
-                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
-            },
+            // KMK --> 69 mod: always the phone's own picker here. A storage folder picked through
+            // 69-Material Files made downloaded chapters fail to open ("open failed: ENOENT").
+            contract = ActivityResultContracts.OpenDocumentTree(),
             // KMK <--
         ) { uri ->
             if (uri != null) {
@@ -219,6 +217,11 @@ object SettingsDataScreen : SearchableSettings {
             return stringResource(MR.strings.no_location_set)
         }
 
+        // KMK --> 69 mod
+        if (storageDir.contains(".mod69documents")) {
+            return stringResource(KMR.strings.mod69_storage_repick)
+        }
+        // KMK <--
         return remember(storageDir) {
             val file = UniFile.fromUri(context, storageDir.toUri())
             file?.displayablePath

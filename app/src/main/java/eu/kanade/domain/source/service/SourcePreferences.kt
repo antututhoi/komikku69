@@ -59,6 +59,10 @@ class SourcePreferences(
 
     fun extensionUpdatesCount() = preferenceStore.getInt("ext_updates_count", 0)
 
+    // KMK --> 69 mod
+    fun mod69AutoUpdateExtensions() = preferenceStore.getBoolean("mod69_auto_update_extensions", false)
+    // KMK <--
+
     fun trustedExtensions() = preferenceStore.getStringSet(
         Preference.appStateKey("trusted_extensions"),
         emptySet(),

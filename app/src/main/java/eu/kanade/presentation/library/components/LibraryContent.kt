@@ -1,9 +1,11 @@
 package eu.kanade.presentation.library.components
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.calculateEndPadding
 import androidx.compose.foundation.layout.calculateStartPadding
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.runtime.Composable
@@ -13,6 +15,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalLayoutDirection
 import eu.kanade.core.preference.PreferenceMutableState
@@ -49,83 +52,105 @@ fun LibraryContent(
     getColumnsForOrientation: (Boolean) -> PreferenceMutableState<Int>,
     getItemsForCategory: (Category) -> List<LibraryItem>,
 ) {
-    Column(
-        modifier = Modifier.padding(
-            top = contentPadding.calculateTopPadding(),
-            start = contentPadding.calculateStartPadding(LocalLayoutDirection.current),
-            end = contentPadding.calculateEndPadding(LocalLayoutDirection.current),
-        ),
-    ) {
-        val pagerState = rememberPagerState(currentPage) { categories.size }
-
-        val scope = rememberCoroutineScope()
-        var isRefreshing by remember(pagerState.currentPage) { mutableStateOf(false) }
-
-        if (showPageTabs && categories.isNotEmpty() && (categories.size > 1 || !categories.first().isSystemCategory)) {
-            LaunchedEffect(categories) {
-                // KMK -->
-                val targetPage = when {
-                    categories.isEmpty() -> 0
-                    activeCategoryIndex != pagerState.currentPage -> activeCategoryIndex.coerceAtMost(categories.size - 1)
-                    pagerState.currentPage >= categories.size -> categories.size - 1
-                    else -> pagerState.currentPage
-                }
-                if (targetPage != pagerState.currentPage) {
-                    pagerState.scrollToPage(targetPage)
-                }
-                // KMK <--
-            }
-            LibraryTabs(
-                categories = categories,
-                pagerState = pagerState,
-                getItemCountForCategory = getItemCountForCategory,
-                onTabItemClick = {
-                    scope.launch {
-                        pagerState.animateScrollToPage(it)
-                    }
-                },
-            )
-        }
-
-        PullRefresh(
-            refreshing = isRefreshing,
-            enabled = selection.isEmpty(),
-            onRefresh = {
-                val started = onRefresh()
-                if (!started) return@PullRefresh
-                scope.launch {
-                    // Fake refresh status but hide it after a second as it's a long running task
-                    isRefreshing = true
-                    delay(1.seconds)
-                    isRefreshing = false
-                }
-            },
+    // KMK --> 69 mod: half-screen category panel over the library
+    var mod69PanelOpen by remember { mutableStateOf(false) }
+    val pagerState = rememberPagerState(currentPage) { categories.size }
+    Box(modifier = Modifier.fillMaxSize()) {
+        // KMK <--
+        Column(
+            modifier = Modifier.padding(
+                top = contentPadding.calculateTopPadding(),
+                start = contentPadding.calculateStartPadding(LocalLayoutDirection.current),
+                end = contentPadding.calculateEndPadding(LocalLayoutDirection.current),
+            ),
         ) {
-            LibraryPager(
-                state = pagerState,
-                contentPadding = PaddingValues(bottom = contentPadding.calculateBottomPadding()),
-                hasActiveFilters = hasActiveFilters,
-                selection = selection,
-                searchQuery = searchQuery,
-                onGlobalSearchClicked = onGlobalSearchClicked,
-                getCategoryForPage = { page -> categories[page] },
-                getDisplayMode = getDisplayMode,
-                getColumnsForOrientation = getColumnsForOrientation,
-                getItemsForCategory = getItemsForCategory,
-                onClickManga = { category, manga ->
-                    if (selection.isNotEmpty()) {
-                        onToggleSelection(category, manga)
-                    } else {
-                        onClickManga(manga.manga.id)
+            val scope = rememberCoroutineScope()
+            var isRefreshing by remember(pagerState.currentPage) { mutableStateOf(false) }
+
+            if (showPageTabs && categories.isNotEmpty() && (categories.size > 1 || !categories.first().isSystemCategory)) {
+                LaunchedEffect(categories) {
+                    // KMK -->
+                    val targetPage = when {
+                        categories.isEmpty() -> 0
+                        activeCategoryIndex != pagerState.currentPage -> activeCategoryIndex.coerceAtMost(categories.size - 1)
+                        pagerState.currentPage >= categories.size -> categories.size - 1
+                        else -> pagerState.currentPage
+                    }
+                    if (targetPage != pagerState.currentPage) {
+                        pagerState.scrollToPage(targetPage)
+                    }
+                    // KMK <--
+                }
+                LibraryTabs(
+                    categories = categories,
+                    pagerState = pagerState,
+                    getItemCountForCategory = getItemCountForCategory,
+                    onTabItemClick = {
+                        scope.launch {
+                            pagerState.animateScrollToPage(it)
+                        }
+                    },
+                    // KMK -->
+                    onOpenCategoryPanel = { mod69PanelOpen = !mod69PanelOpen },
+                    // KMK <--
+                )
+            }
+
+            PullRefresh(
+                refreshing = isRefreshing,
+                enabled = selection.isEmpty(),
+                onRefresh = {
+                    val started = onRefresh()
+                    if (!started) return@PullRefresh
+                    scope.launch {
+                        // Fake refresh status but hide it after a second as it's a long running task
+                        isRefreshing = true
+                        delay(1.seconds)
+                        isRefreshing = false
                     }
                 },
-                onLongClickManga = onToggleRangeSelection,
-                onClickContinueReading = onContinueReadingClicked,
-            )
-        }
+            ) {
+                LibraryPager(
+                    state = pagerState,
+                    contentPadding = PaddingValues(bottom = contentPadding.calculateBottomPadding()),
+                    hasActiveFilters = hasActiveFilters,
+                    selection = selection,
+                    searchQuery = searchQuery,
+                    onGlobalSearchClicked = onGlobalSearchClicked,
+                    getCategoryForPage = { page -> categories[page] },
+                    getDisplayMode = getDisplayMode,
+                    getColumnsForOrientation = getColumnsForOrientation,
+                    getItemsForCategory = getItemsForCategory,
+                    onClickManga = { category, manga ->
+                        if (selection.isNotEmpty()) {
+                            onToggleSelection(category, manga)
+                        } else {
+                            onClickManga(manga.manga.id)
+                        }
+                    },
+                    onLongClickManga = onToggleRangeSelection,
+                    onClickContinueReading = onContinueReadingClicked,
+                )
+            }
 
-        LaunchedEffect(pagerState.currentPage) {
-            onChangeCurrentPage(pagerState.currentPage)
+            LaunchedEffect(pagerState.currentPage) {
+                onChangeCurrentPage(pagerState.currentPage)
+            }
+        }
+        // KMK -->
+        if (mod69PanelOpen && categories.size > 1) {
+            val mod69Scope = rememberCoroutineScope()
+            Mod69CategoryPanel(
+                categories = categories,
+                currentIndex = pagerState.currentPage.coerceAtMost(categories.lastIndex),
+                getItemCountForCategory = getItemCountForCategory,
+                onPick = { mod69Scope.launch { pagerState.scrollToPage(it) } },
+                onDismiss = { mod69PanelOpen = false },
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = contentPadding.calculateBottomPadding()),
+            )
         }
     }
+    // KMK <--
 }

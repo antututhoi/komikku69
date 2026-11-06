@@ -507,6 +507,9 @@ private fun MangaScreenSmallImpl(
                 backgroundAlphaProvider = { backgroundAlpha },
                 // KMK -->
                 onPaletteScreenClick = onPaletteScreenClick,
+                // KMK --> 69 mod
+                onMod69Downloads = { mode -> mod69Downloads(state, mode) },
+                // KMK <--
                 // KMK <--
             )
         },
@@ -959,6 +962,9 @@ private fun MangaScreenLargeImpl(
                 backgroundAlphaProvider = { 1f },
                 // KMK -->
                 onPaletteScreenClick = onPaletteScreenClick,
+                // KMK --> 69 mod
+                onMod69Downloads = { mode -> mod69Downloads(state, mode) },
+                // KMK <--
                 // KMK <--
             )
         },
@@ -1282,6 +1288,13 @@ private fun SharedMangaBottomActionMenu(
         }.takeIf {
             selected.fastAny { it.downloadState == Download.State.DOWNLOADED }
         },
+        // KMK --> 69 mod: redownload / make smaller on the phone
+        onMod69RedownloadClicked = { action: ChapterDownloadAction ->
+            onDownloadChapter!!(selected.filter { it.downloadState == Download.State.DOWNLOADED }, action)
+        }.takeIf {
+            onDownloadChapter != null && selected.fastAny { it.downloadState == Download.State.DOWNLOADED }
+        },
+        // KMK <--
     )
 }
 
@@ -1439,3 +1452,16 @@ fun metadataDescription(source: Source): MetadataDescriptionComposable? {
     }
 }
 // SY <--
+
+// KMK --> 69 mod
+private fun mod69Downloads(state: MangaScreenModel.State.Success, mode: String) {
+    val downloaded = state.chapters
+        .filter { it.downloadState == Download.State.DOWNLOADED }
+        .map { it.chapter }
+    if (downloaded.isEmpty()) return
+    when (mode) {
+        "convert" -> eu.kanade.tachiyomi.data.download.Mod69PageQuality.convertLocal(downloaded)
+        else -> eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownload(downloaded, mode)
+    }
+}
+// KMK <--
