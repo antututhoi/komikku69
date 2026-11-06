@@ -268,4 +268,8 @@
     <string name="mod69_convert_entry">69- Make downloaded chapters smaller (on the phone)</string>
     <string name="mod69_convert_all">69- Make all downloads smaller (on the phone)</string>
     <string name="mod69_convert_all_summary">Resizes and re-saves the downloaded pages as WebP with the settings above. Nothing is downloaded again</string>
+    <string name="mod69_import_cover_folder">69- Import covers from another Komikku folder</string>
+    <string name="mod69_import_cover_folder_summary">Pick the old app\'s folder (e.g. app.komikku.beta or its "covers" folder). Covers of entries in your library are copied over (not your own custom covers)</string>
+    <string name="mod69_keep_tall_pages">69- Keep long webtoon pages readable</string>
+    <string name="mod69_keep_tall_pages_summary">Pages much taller than wide only get the max width, never the max height</string>
 </resources>

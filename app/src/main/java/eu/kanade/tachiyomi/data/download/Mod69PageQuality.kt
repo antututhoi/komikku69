@@ -62,7 +62,8 @@ object Mod69PageQuality {
         if (opts.outWidth <= 0 || opts.outHeight <= 0) return null
         // fit inside max width x max height (0 = no limit), keeping the page's shape
         val maxW = prefs.mod69PageMaxWidth().let { if (it == 0) Int.MAX_VALUE else it.coerceAtLeast(100) }
-        val maxH = prefs.mod69PageMaxHeight().let { if (it == 0) Int.MAX_VALUE else it.coerceAtLeast(100) }
+        val tall = prefs.mod69KeepTallPages().get() && opts.outHeight > opts.outWidth * 2.5
+        val maxH = prefs.mod69PageMaxHeight().let { if (it == 0 || tall) Int.MAX_VALUE else it.coerceAtLeast(100) }
         val scale = minOf(1.0, maxW.toDouble() / opts.outWidth, maxH.toDouble() / opts.outHeight)
         val targetW = (opts.outWidth * scale).toInt().coerceAtLeast(1)
         val targetH = (opts.outHeight * scale).toInt().coerceAtLeast(1)

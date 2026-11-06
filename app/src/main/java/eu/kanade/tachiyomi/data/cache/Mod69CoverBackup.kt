@@ -95,5 +95,37 @@ object Mod69CoverBackup {
         } ?: error("cannot read file")
         return Result(custom, normal)
     }
+
+    /**
+     * Copies covers from another Komikku's "covers" folder (e.g. app.komikku.beta/files/covers).
+     * Both apps name a cover file after its picture address, so each library entry finds its own cover.
+     * Own (custom) covers are named by an internal number that differs between apps, so they are skipped.
+     */
+    suspend fun importFolder(context: Context, tree: Uri): Result {
+        val coverCache = Injekt.get<CoverCache>()
+        var dir = com.hippo.unifile.UniFile.fromUri(context, tree) ?: error("cannot open folder")
+        // picked "app.komikku.beta" or "files": go down to "covers"
+        repeat(3) {
+            if (dir.findFile("covers")?.isDirectory == true) {
+                dir = dir.findFile("covers")!!
+            } else if (dir.findFile("files")?.isDirectory == true) {
+                dir = dir.findFile("files")!!
+            }
+        }
+        val byName = dir.listFiles().orEmpty().filter { it.isFile }.associateBy { it.name.orEmpty() }
+        var normal = 0
+        for (manga in Injekt.get<GetFavorites>().await()) {
+            val dest = coverCache.getCoverFile(manga.thumbnailUrl) ?: continue
+            val src = byName[dest.name] ?: continue
+            runCatching {
+                dest.parentFile?.mkdirs()
+                src.openInputStream().use { input ->
+                    dest.outputStream().use { input.copyTo(it) }
+                }
+                normal++
+            }
+        }
+        return Result(0, normal)
+    }
 }
 // KMK <--

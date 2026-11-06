@@ -95,6 +95,11 @@ object SettingsDownloadScreen : SearchableSettings {
                 subtitle = "%s px (0 = no limit)",
                 onValueChanged = { it.trim().toIntOrNull()?.let { n -> n >= 0 } ?: false },
             ),
+            Preference.PreferenceItem.SwitchPreference(
+                preference = downloadPreferences.mod69KeepTallPages(),
+                title = stringResource(KMR.strings.mod69_keep_tall_pages),
+                subtitle = stringResource(KMR.strings.mod69_keep_tall_pages_summary),
+            ),
             Preference.PreferenceItem.EditTextPreference(
                 preference = downloadPreferences.mod69PageWebpQualityText(),
                 title = stringResource(KMR.strings.mod69_page_webp_quality),

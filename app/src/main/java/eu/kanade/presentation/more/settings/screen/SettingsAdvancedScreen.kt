@@ -395,6 +395,22 @@ object SettingsAdvancedScreen : SearchableSettings {
                 }
             }
         }
+        val mod69ImportCoverFolder = rememberLauncherForActivityResult(
+            object : ActivityResultContracts.OpenDocumentTree() {
+                override fun createIntent(context: android.content.Context, input: android.net.Uri?): android.content.Intent =
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+            },
+        ) { uri ->
+            if (uri != null) {
+                scope.launchNonCancellable {
+                    val msg = runCatching {
+                        val r = eu.kanade.tachiyomi.data.cache.Mod69CoverBackup.importFolder(context, uri)
+                        context.stringResource(KMR.strings.mod69_covers_restored, r.normal, r.custom)
+                    }.getOrElse { it.message ?: it.toString() }
+                    withUIContext { context.toast(msg) }
+                }
+            }
+        }
         // KMK <--
 
         return Preference.PreferenceGroup(
@@ -416,6 +432,11 @@ object SettingsAdvancedScreen : SearchableSettings {
                 Preference.PreferenceItem.TextPreference(
                     title = stringResource(KMR.strings.mod69_restore_covers),
                     onClick = { mod69ImportCovers.launch(arrayOf("application/zip", "application/octet-stream")) },
+                ),
+                Preference.PreferenceItem.TextPreference(
+                    title = stringResource(KMR.strings.mod69_import_cover_folder),
+                    subtitle = stringResource(KMR.strings.mod69_import_cover_folder_summary),
+                    onClick = { mod69ImportCoverFolder.launch(null) },
                 ),
                 // KMK <--
                 // KMK -->

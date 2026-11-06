@@ -31,6 +31,9 @@ class DownloadPreferences(
     /** Max page height in px, 0 = no limit. */
     fun mod69PageMaxHeight(): Int = mod69PageMaxHeightText().get().trim().toIntOrNull()?.coerceAtLeast(0) ?: 0
 
+    /** Long webtoon strips (taller than 2.5x their width) only get the width limit, so they stay readable. */
+    fun mod69KeepTallPages() = preferenceStore.getBoolean("mod69_keep_tall_pages", true)
+
     /** WebP quality 1..100. */
     fun mod69PageWebpQuality(): Int = mod69PageWebpQualityText().get().trim().toIntOrNull()?.coerceIn(1, 100) ?: 80
     // KMK <--
