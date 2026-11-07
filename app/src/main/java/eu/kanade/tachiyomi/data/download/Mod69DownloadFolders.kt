@@ -154,7 +154,7 @@ object Mod69DownloadFolders {
     /** Moves every library entry's downloads into its (first) category folder. Returns how many moved. */
     suspend fun moveAll(context: Context): Int {
         val provider = Injekt.get<DownloadProvider>()
-        val sources = Injekt.get<eu.kanade.tachiyomi.source.SourceManager>()
+        val sources = Injekt.get<tachiyomi.domain.source.service.SourceManager>()
         var moved = 0
         for (manga in Injekt.get<GetFavorites>().await()) {
             val source = sources.get(manga.source) ?: continue

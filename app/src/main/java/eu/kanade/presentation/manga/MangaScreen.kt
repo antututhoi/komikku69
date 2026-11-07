@@ -1482,7 +1482,7 @@ private fun mod69PickDownloadFolder(context: android.content.Context, manga: tac
             .setTitle("Download folder")
             .setSingleChoiceItems(choices.map { it.first }.toTypedArray(), checked) { dialog, which ->
                 dialog.dismiss()
-                val source = uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.source.SourceManager>().get(manga.source)
+                val source = uy.kohesive.injekt.Injekt.get<tachiyomi.domain.source.service.SourceManager>().get(manga.source)
                     ?: return@setSingleChoiceItems
                 kotlinx.coroutines.MainScope().launch {
                     val ok = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
