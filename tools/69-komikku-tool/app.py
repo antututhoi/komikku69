@@ -44,6 +44,7 @@ class App(tk.Tk):
         self.v_sort = tk.BooleanVar(value=True)
         self.v_resize = tk.BooleanVar(value=True)
         self.v_smaller = tk.BooleanVar(value=True)
+        self.v_webtoon = tk.BooleanVar(value=False)
         ttk.Checkbutton(opts, text="Unpack .cbz into folders of pictures (Komikku reads them the same)",
                         variable=self.v_extract).grid(row=0, column=0, columnspan=4, sticky="w", **pad)
         ttk.Checkbutton(opts, text="Sort into folders named after the categories (needs the backup)",
@@ -65,9 +66,11 @@ class App(tk.Tk):
                      values=["WebP (smallest)", "JPEG", "Keep the same"]).grid(row=4, column=1, sticky="w", **pad)
         ttk.Checkbutton(opts, text="Keep the original when the new one isn't smaller",
                         variable=self.v_smaller).grid(row=5, column=0, columnspan=4, sticky="w", **pad)
-        ttk.Label(opts, text="Long webtoon pages are found by themselves: only their width is limited, "
-                             "never cut or squeezed.", foreground="#666", wraplength=640).grid(
-            row=6, column=0, columnspan=4, sticky="w", **pad)
+        ttk.Checkbutton(opts, text="Shrink long webtoon pictures too",
+                        variable=self.v_webtoon).grid(row=6, column=0, columnspan=4, sticky="w", **pad)
+        ttk.Label(opts, text="Long webtoon pictures are found by themselves. With the box above off, they keep "
+                             "their full size: only picture type and quality change, never cut.",
+                  foreground="#666", wraplength=640).grid(row=7, column=0, columnspan=4, sticky="w", **pad)
 
         bar = ttk.Frame(f)
         bar.grid(row=7, column=0, columnspan=3, sticky="ew", padx=8)
@@ -136,6 +139,7 @@ class App(tk.Tk):
                 quality=min(100, max(1, int(self.v_quality.get() or 80))),
                 fmt={"WebP (smallest)": "webp", "JPEG": "jpeg"}.get(self.v_fmt.get(), "keep"),
                 only_smaller=self.v_smaller.get(),
+                shrink_webtoon=self.v_webtoon.get(),
             )
         except ValueError:
             messagebox.showerror("69-Komikku Tool", "Width and quality must be numbers.")

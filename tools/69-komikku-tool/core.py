@@ -152,6 +152,7 @@ class Options:
     quality: int = 80
     webtoon_ratio: float = 2.5
     only_smaller: bool = True
+    shrink_webtoon: bool = False  # long strips keep their full width unless this is on
 
 
 def convert_image(data: bytes, name: str, o: Options):
@@ -168,9 +169,9 @@ def convert_image(data: bytes, name: str, o: Options):
     w, h = im.size
     tall = h > w * o.webtoon_ratio  # long webtoon strip
     scale = 1.0
-    if o.max_width and w > o.max_width:
+    if o.max_width and w > o.max_width and (o.shrink_webtoon or not tall):
         scale = o.max_width / w
-    # a strip stays readable: only the width is limited, never the height
+    # long webtoon strips keep their size (only type + quality change); never cut
     if scale < 1.0:
         im = im.resize((max(1, round(w * scale)), max(1, round(h * scale))), Image.LANCZOS)
     nw, nh = im.size
