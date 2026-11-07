@@ -1,0 +1,27 @@
+name: 69-Komikku Tool (Windows)
+
+on:
+  push:
+    branches: [mod69]
+    paths:
+      - "tools/69-komikku-tool/**"
+      - ".github/workflows/tool_69.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the .exe
+        working-directory: tools/69-komikku-tool
+        run: |
+          python -m pip install -r requirements.txt
+          python -m PyInstaller --onefile --windowed --name "69-Komikku-Tool" app.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: 69-Komikku-Tool
+          path: tools/69-komikku-tool/dist/69-Komikku-Tool.exe
