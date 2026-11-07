@@ -63,11 +63,7 @@ internal fun LibraryTabs(
             categories.forEachIndexed { index, category ->
                 Tab(
                     selected = currentPageIndex == index,
-                    // KMK --> 69 mod: tap the open category again for the category panel
-                    onClick = {
-                        if (currentPageIndex == index) onOpenCategoryPanel() else onTabItemClick(index)
-                    },
-                    // KMK <--
+                    onClick = { onTabItemClick(index) },
                     text = {
                         TabText(
                             text = category.visualName,
@@ -84,6 +80,11 @@ internal fun LibraryTabs(
 }
 
 // KMK -->
+/** 69 mod: open state of the category panel (opened by tapping the "Library" title). */
+object Mod69LibraryPanel {
+    var open by androidx.compose.runtime.mutableStateOf(false)
+}
+
 /**
  * 69 mod: half-screen category panel at the bottom, like the Filter sheet. The library above it
  * stays usable (scroll, open entries). Closes with Back or by sliding it down by its handle.

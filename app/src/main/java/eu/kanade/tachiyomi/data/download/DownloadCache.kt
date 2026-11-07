@@ -433,6 +433,8 @@ class DownloadCache(
                 // KMK --> 69 mod: also entries kept in category folders
                 val topDirs = updatedRootDir.dir?.listFiles().orEmpty()
                     .filter { it.isDirectory && !it.name.isNullOrBlank() }
+                // folders copied back from a PC (named after categories) are recognised here
+                runCatching { Mod69DownloadFolders.learn(provider, topDirs, sourceMap.keys) }
                 val categoryIndex = Mod69DownloadFolders.index(provider)
                 val extraMangaDirs = HashMap<Long, MutableMap<String, MangaDirectory>>()
                 if (categoryIndex.isNotEmpty()) {

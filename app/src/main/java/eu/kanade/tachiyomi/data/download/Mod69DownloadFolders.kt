@@ -253,5 +253,34 @@ object Mod69DownloadFolders {
         }
         if (changed) Injekt.get<DownloadCache>().invalidateCache()
     }
+
+    /**
+     * Downloads put into category folders outside the app (e.g. sorted on a PC) are learned:
+     * a top folder named like a category, holding a folder named like a library entry.
+     */
+    suspend fun learn(provider: DownloadProvider, topDirs: List<UniFile>, sourceDirNames: Set<String>) {
+        val categoryFolders = Injekt.get<GetCategories>().await()
+            .filter { !it.isSystemCategory }
+            .map { folderName(it.name) }
+            .associateBy { it.lowercase() }
+        if (categoryFolders.isEmpty()) return
+        var byDirName: Map<String, List<Manga>>? = null
+        for (top in topDirs) {
+            val topName = top.name?.lowercase() ?: continue
+            if (topName in sourceDirNames) continue
+            val folder = categoryFolders[topName] ?: continue
+            for (child in top.listFiles().orEmpty()) {
+                if (!child.isDirectory) continue
+                val name = child.name ?: continue
+                if (byDirName == null) {
+                    byDirName = Injekt.get<GetFavorites>().await()
+                        .groupBy { provider.getMangaDirName(it.ogTitle).lowercase() }
+                }
+                byDirName[name.lowercase()]?.forEach { manga ->
+                    if (folderOf(manga.source, manga.ogTitle) != folder) remember(manga.source, manga.ogTitle, folder)
+                }
+            }
+        }
+    }
 }
 // KMK <--

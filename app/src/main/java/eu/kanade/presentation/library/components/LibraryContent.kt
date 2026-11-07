@@ -53,7 +53,7 @@ fun LibraryContent(
     getItemsForCategory: (Category) -> List<LibraryItem>,
 ) {
     // KMK --> 69 mod: half-screen category panel over the library
-    var mod69PanelOpen by remember { mutableStateOf(false) }
+    var mod69PanelOpen by Mod69LibraryPanel::open
     val pagerState = rememberPagerState(currentPage) { categories.size }
     Box(modifier = Modifier.fillMaxSize()) {
         // KMK <--

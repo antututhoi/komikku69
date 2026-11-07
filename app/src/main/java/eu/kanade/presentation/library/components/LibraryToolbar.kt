@@ -1,6 +1,7 @@
 package eu.kanade.presentation.library.components
 
 import android.content.Context
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Row
 import androidx.compose.material.icons.Icons
@@ -97,7 +98,12 @@ private fun LibraryRegularToolbar(
     val pillAlpha = if (isSystemInDarkTheme()) 0.12f else 0.08f
     SearchToolbar(
         titleContent = {
-            Row(verticalAlignment = Alignment.CenterVertically) {
+            // KMK --> 69 mod: tap "Library" (with the count) for the category panel
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.clickable { Mod69LibraryPanel.open = !Mod69LibraryPanel.open },
+            ) {
+                // KMK <--
                 Text(
                     text = title.text,
                     maxLines = 1,
