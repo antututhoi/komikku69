@@ -6,6 +6,8 @@ import android.provider.DocumentsContract
 import com.hippo.unifile.UniFile
 import eu.kanade.tachiyomi.source.Source
 import eu.kanade.tachiyomi.util.storage.DiskUtil
+import kotlinx.coroutines.flow.debounce
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import logcat.LogPriority
 import tachiyomi.core.common.util.system.logcat
@@ -175,5 +177,81 @@ object Mod69DownloadFolders {
     /** Folder choice for one entry: its categories + "Source folder". Returns (label, folder or null). */
     suspend fun choices(manga: Manga): List<Pair<String, String?>> =
         categoriesOf(manga).map { it to folderName(it) } + ("Source folder (normal)" to null)
+
+    // ---------------- following the app's categories ----------------
+
+    /**
+     * Renames a category folder when the category is renamed, and moves an entry's folder when the
+     * entry is taken out of the category it is kept in (to its first category, or the source folder).
+     */
+    @OptIn(kotlinx.coroutines.FlowPreview::class)
+    fun watch(scope: kotlinx.coroutines.CoroutineScope) {
+        val context = Injekt.get<Application>()
+        scope.launch(kotlinx.coroutines.Dispatchers.IO) {
+            Injekt.get<GetCategories>().subscribe()
+                .debounce(2_000)
+                .collect { cats -> runCatching { onCategories(context, cats) } }
+        }
+        scope.launch(kotlinx.coroutines.Dispatchers.IO) {
+            Injekt.get<tachiyomi.domain.manga.interactor.GetLibraryManga>().subscribe()
+                .debounce(3_000)
+                .collect { list -> runCatching { onLibrary(context, list) } }
+        }
+    }
+
+    private fun onCategories(context: Context, cats: List<tachiyomi.domain.category.model.Category>) {
+        val known = context.getSharedPreferences("mod69_category_names", Context.MODE_PRIVATE)
+        val renames = mutableListOf<Pair<String, String>>()
+        val edit = known.edit()
+        cats.filter { !it.isSystemCategory }.forEach { c ->
+            val now = folderName(c.name)
+            val before = known.getString(c.id.toString(), null)
+            if (before != null && before != now) renames += before to now
+            edit.putString(c.id.toString(), now)
+        }
+        edit.apply()
+        if (renames.isEmpty() || !enabled()) return
+        val downloads = Injekt.get<StorageManager>().getDownloadsDirectory() ?: return
+        var changed = false
+        renames.forEach { (old, new) ->
+            val dir = downloads.findFile(old)
+            if (dir != null && dir.isDirectory) {
+                if (downloads.findFile(new) == null) {
+                    dir.renameTo(new)
+                } else {
+                    // a folder with the new name already exists: move the entries into it
+                    val target = downloads.findFile(new)!!
+                    dir.listFiles().orEmpty().forEach { move(context, it, target) }
+                    if (dir.listFiles().isNullOrEmpty()) dir.delete()
+                }
+            }
+            // entries kept in the old folder are now in the new one
+            val e = prefs.edit()
+            prefs.all.forEach { (k, v) -> if (v == old) e.putString(k, new) }
+            e.apply()
+            changed = true
+        }
+        if (changed) Injekt.get<DownloadCache>().invalidateCache()
+    }
+
+    private suspend fun onLibrary(context: Context, list: List<tachiyomi.domain.library.model.LibraryManga>) {
+        if (!enabled()) return
+        val catNames = Injekt.get<GetCategories>().await()
+            .filter { !it.isSystemCategory }
+            .associate { it.id to (it.order to folderName(it.name)) }
+        val sources = Injekt.get<tachiyomi.domain.source.service.SourceManager>()
+        var changed = false
+        for (item in list) {
+            val manga = item.manga
+            if (!isDecided(manga.source, manga.ogTitle)) continue
+            val current = folderOf(manga.source, manga.ogTitle) ?: continue // kept in the source folder by choice
+            val folders = item.categories.mapNotNull { catNames[it] }.sortedBy { it.first }.map { it.second }
+            if (current in folders) continue
+            // taken out of that category: follow it to its (first) category, or back to the source folder
+            val source = sources.get(manga.source) ?: continue
+            if (moveEntry(context, manga, source, folders.firstOrNull())) changed = true
+        }
+        if (changed) Injekt.get<DownloadCache>().invalidateCache()
+    }
 }
 // KMK <--

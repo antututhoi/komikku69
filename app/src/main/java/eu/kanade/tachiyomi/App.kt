@@ -167,6 +167,10 @@ class App : Application(), DefaultLifecycleObserver, SingletonImageLoader.Factor
 
         val scope = ProcessLifecycleOwner.get().lifecycleScope
 
+        // KMK --> 69 mod: category download folders follow category renames and category changes
+        eu.kanade.tachiyomi.data.download.Mod69DownloadFolders.watch(scope)
+        // KMK <--
+
         // Show notification to disable Incognito Mode when it's enabled
         basePreferences.incognitoMode().changes()
             .onEach { enabled ->
