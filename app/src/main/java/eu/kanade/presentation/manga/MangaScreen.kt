@@ -110,6 +110,7 @@ import exh.ui.metadata.adapters.LanraragiDescription
 import exh.ui.metadata.adapters.MangaDexDescription
 import exh.ui.metadata.adapters.NHentaiDescription
 import exh.ui.metadata.adapters.PururinDescription
+import kotlinx.coroutines.launch
 import tachiyomi.domain.chapter.model.Chapter
 import tachiyomi.domain.chapter.service.missingChaptersCount
 import tachiyomi.domain.library.service.LibraryPreferences
@@ -508,7 +509,7 @@ private fun MangaScreenSmallImpl(
                 // KMK -->
                 onPaletteScreenClick = onPaletteScreenClick,
                 // KMK --> 69 mod
-                onMod69Downloads = { mode -> mod69Downloads(state, mode) },
+                onMod69Downloads = LocalContext.current.let { ctx -> { mode -> mod69Downloads(ctx, state, mode) } },
                 // KMK <--
                 // KMK <--
             )
@@ -963,7 +964,7 @@ private fun MangaScreenLargeImpl(
                 // KMK -->
                 onPaletteScreenClick = onPaletteScreenClick,
                 // KMK --> 69 mod
-                onMod69Downloads = { mode -> mod69Downloads(state, mode) },
+                onMod69Downloads = LocalContext.current.let { ctx -> { mode -> mod69Downloads(ctx, state, mode) } },
                 // KMK <--
                 // KMK <--
             )
@@ -1454,7 +1455,11 @@ fun metadataDescription(source: Source): MetadataDescriptionComposable? {
 // SY <--
 
 // KMK --> 69 mod
-private fun mod69Downloads(state: MangaScreenModel.State.Success, mode: String) {
+private fun mod69Downloads(context: android.content.Context, state: MangaScreenModel.State.Success, mode: String) {
+    if (mode == "folder") {
+        mod69PickDownloadFolder(context, state.manga)
+        return
+    }
     val downloaded = state.chapters
         .filter { it.downloadState == Download.State.DOWNLOADED }
         .map { it.chapter }
@@ -1462,6 +1467,37 @@ private fun mod69Downloads(state: MangaScreenModel.State.Success, mode: String) 
     when (mode) {
         "convert" -> eu.kanade.tachiyomi.data.download.Mod69PageQuality.convertLocal(downloaded)
         else -> eu.kanade.tachiyomi.data.download.Mod69PageQuality.redownload(downloaded, mode)
+    }
+}
+// KMK <--
+
+// KMK --> 69 mod: choose the entry's download folder (one of its categories or the source folder)
+private fun mod69PickDownloadFolder(context: android.content.Context, manga: tachiyomi.domain.manga.model.Manga) {
+    val folders = eu.kanade.tachiyomi.data.download.Mod69DownloadFolders
+    kotlinx.coroutines.MainScope().launch {
+        val choices = folders.choices(manga)
+        val current = folders.folderOf(manga.source, manga.ogTitle)
+        val checked = choices.indexOfFirst { it.second == current }.coerceAtLeast(0)
+        com.google.android.material.dialog.MaterialAlertDialogBuilder(context)
+            .setTitle("Download folder")
+            .setSingleChoiceItems(choices.map { it.first }.toTypedArray(), checked) { dialog, which ->
+                dialog.dismiss()
+                val source = uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.source.SourceManager>().get(manga.source)
+                    ?: return@setSingleChoiceItems
+                kotlinx.coroutines.MainScope().launch {
+                    val ok = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+                        runCatching { folders.moveEntry(context, manga, source, choices[which].second) }.getOrDefault(false)
+                    }
+                    uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.data.download.DownloadCache>().invalidateCache()
+                    android.widget.Toast.makeText(
+                        context,
+                        if (ok) "Downloads are now in: " + choices[which].first else "Moving failed",
+                        android.widget.Toast.LENGTH_SHORT,
+                    ).show()
+                }
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
     }
 }
 // KMK <--

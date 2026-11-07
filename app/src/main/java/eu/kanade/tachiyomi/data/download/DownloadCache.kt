@@ -219,7 +219,10 @@ class DownloadCache(
             var sourceDir = rootDownloadsDir.sourceDirs[manga.source]
             if (sourceDir == null) {
                 val source = sourceManager.get(manga.source) ?: return
-                val sourceUniFile = provider.findSourceDir(source) ?: return
+                // KMK --> 69 mod: with category folders the source folder may not exist
+                val sourceUniFile = provider.findSourceDir(source)
+                if (sourceUniFile == null && Mod69DownloadFolders.folderOf(manga.source, manga.ogTitle) == null) return
+                // KMK <--
                 sourceDir = SourceDirectory(sourceUniFile)
                 rootDownloadsDir.sourceDirs += manga.source to sourceDir
             }
@@ -427,19 +430,43 @@ class DownloadCache(
             rootDownloadsDirMutex.withLock {
                 val updatedRootDir = RootDirectory(storageManager.getDownloadsDirectory())
 
-                updatedRootDir.sourceDirs = updatedRootDir.dir?.listFiles().orEmpty()
+                // KMK --> 69 mod: also entries kept in category folders
+                val topDirs = updatedRootDir.dir?.listFiles().orEmpty()
                     .filter { it.isDirectory && !it.name.isNullOrBlank() }
+                val categoryIndex = Mod69DownloadFolders.index(provider)
+                val extraMangaDirs = HashMap<Long, MutableMap<String, MangaDirectory>>()
+                if (categoryIndex.isNotEmpty()) {
+                    val folders = categoryIndex.keys.map { it.first }.toSet()
+                    topDirs.filter { sourceMap[it.name!!.lowercase()] == null && it.name!!.lowercase() in folders }
+                        .forEach { catDir ->
+                            catDir.listFiles().orEmpty()
+                                .filter { it.isDirectory && !it.name.isNullOrBlank() }
+                                .forEach { mangaDir ->
+                                    categoryIndex[catDir.name!!.lowercase() to mangaDir.name!!.lowercase()]?.forEach { sourceId ->
+                                        extraMangaDirs.getOrPut(sourceId) { mutableMapOf() }[mangaDir.name!!] = MangaDirectory(mangaDir)
+                                    }
+                                }
+                        }
+                }
+                // KMK <--
+                updatedRootDir.sourceDirs = topDirs
                     .mapNotNull { dir ->
                         val sourceId = sourceMap[dir.name!!.lowercase()]
                         sourceId?.let { it to SourceDirectory(dir) }
                     }
                     .toMap()
+                    // KMK -->
+                    .let { map -> map + (extraMangaDirs.keys - map.keys).associateWith { SourceDirectory(null) } }
+                // KMK <--
 
-                updatedRootDir.sourceDirs.values.map { sourceDir ->
+                updatedRootDir.sourceDirs.entries.map { (sourceId, sourceDir) ->
                     async {
                         sourceDir.mangaDirs = sourceDir.dir?.listFiles().orEmpty()
                             .filter { it.isDirectory && !it.name.isNullOrBlank() }
                             .associate { it.name!! to MangaDirectory(it) }
+                            // KMK -->
+                            .plus(extraMangaDirs[sourceId].orEmpty())
+                        // KMK <--
 
                         sourceDir.mangaDirs.values.forEach { mangaDir ->
                             val chapterDirs = mangaDir.dir?.listFiles().orEmpty()

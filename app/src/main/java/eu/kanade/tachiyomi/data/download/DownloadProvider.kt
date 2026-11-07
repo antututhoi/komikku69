@@ -53,7 +53,14 @@ class DownloadProvider(
             )
         }
 
-        val sourceDirName = getSourceDirName(source)
+        // KMK --> 69 mod: category folder (downloads/<category>/<entry>) when chosen / turned on
+        val mod69Folder = Mod69DownloadFolders.folderForNewDownload(
+            source,
+            mangaTitle,
+            hasSourceFolderDownloads = downloadsDir.findFile(getSourceDirName(source))?.findFile(getMangaDirName(mangaTitle)) != null,
+        )
+        val sourceDirName = mod69Folder ?: getSourceDirName(source)
+        // KMK <--
         val sourceDir = downloadsDir.createDirectory(sourceDirName)
         if (sourceDir == null) {
             val displayablePath = downloadsDir.displayablePath + "/$sourceDirName"
@@ -98,6 +105,11 @@ class DownloadProvider(
      * @param source the source of the manga.
      */
     fun findMangaDir(mangaTitle: String, source: Source): UniFile? {
+        // KMK --> 69 mod: entry kept in a category folder
+        Mod69DownloadFolders.folderOf(source.id, mangaTitle)?.let { folder ->
+            downloadsDir?.findFile(folder)?.findFile(getMangaDirName(mangaTitle))?.let { return it }
+        }
+        // KMK <--
         val sourceDir = findSourceDir(source)
         return sourceDir?.findFile(getMangaDirName(mangaTitle))
     }

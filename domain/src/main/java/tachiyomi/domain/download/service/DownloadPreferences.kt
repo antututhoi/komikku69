@@ -34,6 +34,9 @@ class DownloadPreferences(
     /** Long webtoon strips (taller than 2.5x their width) only get the width limit, so they stay readable. */
     fun mod69KeepTallPages() = preferenceStore.getBoolean("mod69_keep_tall_pages", true)
 
+    /** New downloads go into a folder named after the entry's category instead of the source. */
+    fun mod69CategoryFolders() = preferenceStore.getBoolean("mod69_category_folders", false)
+
     /** WebP quality 1..100. */
     fun mod69PageWebpQuality(): Int = mod69PageWebpQualityText().get().trim().toIntOrNull()?.coerceIn(1, 100) ?: 80
     // KMK <--

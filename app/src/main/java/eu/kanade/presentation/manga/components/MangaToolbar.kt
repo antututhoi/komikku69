@@ -271,6 +271,12 @@ fun MangaToolbar(
                                 onClick = { onMod69Downloads("convert") },
                             ),
                         )
+                        add(
+                            AppBar.OverflowAction(
+                                title = stringResource(KMR.strings.mod69_download_folder),
+                                onClick = { onMod69Downloads("folder") },
+                            ),
+                        )
                     }
                     if (onClickSourceSettings != null) {
                         add(

@@ -114,6 +114,23 @@ object SettingsDownloadScreen : SearchableSettings {
                 title = stringResource(KMR.strings.mod69_redownload_all_original),
                 onClick = { mod69RedownloadAll("original") },
             ),
+            Preference.PreferenceItem.SwitchPreference(
+                preference = downloadPreferences.mod69CategoryFolders(),
+                title = stringResource(KMR.strings.mod69_category_folders),
+                subtitle = stringResource(KMR.strings.mod69_category_folders_summary),
+            ),
+            Preference.PreferenceItem.TextPreference(
+                title = stringResource(KMR.strings.mod69_move_to_category_folders),
+                subtitle = stringResource(KMR.strings.mod69_move_to_category_folders_summary),
+                onClick = {
+                    mod69Scope.launch(kotlinx.coroutines.Dispatchers.IO) {
+                        val n = runCatching { eu.kanade.tachiyomi.data.download.Mod69DownloadFolders.moveAll(mod69Context) }.getOrDefault(0)
+                        kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
+                            android.widget.Toast.makeText(mod69Context, "Moved $n entries", android.widget.Toast.LENGTH_LONG).show()
+                        }
+                    }
+                },
+            ),
             Preference.PreferenceItem.TextPreference(
                 title = stringResource(KMR.strings.mod69_convert_all),
                 subtitle = stringResource(KMR.strings.mod69_convert_all_summary),
