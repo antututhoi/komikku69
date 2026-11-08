@@ -789,6 +789,11 @@ private fun MangaScreenSmallImpl(
                             missingChapterCount = missingChapterCount,
                             onClick = onFilterClicked,
                         )
+                        // KMK --> 69 mod D5
+                        if (chapters.size >= 10) {
+                            eu.kanade.presentation.manga.components.Mod69ChapterSearchField()
+                        }
+                        // KMK <--
                     }
 
                     sharedChapterItems(
@@ -1231,6 +1236,11 @@ private fun MangaScreenLargeImpl(
                                     missingChapterCount = missingChapterCount,
                                     onClick = onFilterButtonClicked,
                                 )
+                                // KMK --> 69 mod D5
+                                if (chapters.size >= 10) {
+                                    eu.kanade.presentation.manga.components.Mod69ChapterSearchField()
+                                }
+                                // KMK <--
                             }
 
                             sharedChapterItems(
@@ -1321,7 +1331,9 @@ private fun LazyListScope.sharedChapterItems(
     onChapterSwipe: (ChapterList.Item, LibraryPreferences.ChapterSwipeAction) -> Unit,
 ) {
     items(
-        items = chapters,
+        // KMK --> 69 mod D5
+        items = eu.kanade.presentation.manga.components.Mod69ChapterSearch.filter(chapters),
+        // KMK <--
         key = { item ->
             when (item) {
                 // KMK: using hashcode to prevent edge-cases where the missing count might duplicate,

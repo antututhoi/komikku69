@@ -390,4 +390,5 @@
     <string name="mod69_pin_use_phone_lock">Use phone lock</string>
     <string name="mod69_discord_hide_nsfw">69- Hide 18+ entries</string>
     <string name="mod69_discord_hide_nsfw_summary">Discord does not show the name of 18+ entries you read</string>
+    <string name="mod69_search_chapters">Search chapters (number or name)</string>
 </resources>
