@@ -1,13 +1,18 @@
 package eu.kanade.presentation.library.components
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material.icons.outlined.Folder
 import androidx.compose.material.icons.outlined.LocalLibrary
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
@@ -22,6 +27,8 @@ import tachiyomi.domain.source.model.Source
 import tachiyomi.presentation.core.components.Badge
 import tachiyomi.presentation.core.components.BadgeGroup
 import tachiyomi.source.local.isLocal
+import uy.kohesive.injekt.Injekt
+import uy.kohesive.injekt.api.get
 
 @Composable
 internal fun DownloadsBadge(count: Long) {
@@ -35,10 +42,32 @@ internal fun DownloadsBadge(count: Long) {
 }
 
 @Composable
-internal fun UnreadBadge(count: Long) {
-    if (count > 0) {
-        Badge(text = "$count")
+internal fun UnreadBadge(
+    count: Long,
+    // KMK -->
+    readCount: Long = 0,
+    totalChapters: Long = 0,
+    // KMK <--
+) {
+    // KMK --> 69 mod L8 / P8: number, dot, read/total or percent
+    // (count is -1 when the unread badge is switched off)
+    if (count < 0) return
+    val style = remember {
+        Injekt.get<tachiyomi.domain.library.service.LibraryPreferences>().mod69BadgeStyle().get()
     }
+    when {
+        style == "progress" && totalChapters > 0 -> Badge(text = "$readCount/$totalChapters")
+        style == "percent" && totalChapters > 0 -> Badge(text = "${readCount * 100 / totalChapters}%")
+        style == "dot" -> if (count > 0) {
+            Box(
+                modifier = Modifier
+                    .size(10.dp)
+                    .background(MaterialTheme.colorScheme.primary, CircleShape),
+            )
+        }
+        count > 0 -> Badge(text = "$count")
+    }
+    // KMK <--
 }
 
 @Composable

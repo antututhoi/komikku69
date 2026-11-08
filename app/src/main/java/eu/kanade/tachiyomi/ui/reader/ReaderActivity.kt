@@ -1023,13 +1023,13 @@ class ReaderActivity : BaseActivity() {
                 setDoublePageMode(newViewer)
             }
             viewModel.state.value.lastShiftDoubleState?.let { newViewer.config.shiftDoublePage = it }
-            // KMK --> 69 mod N28: the shift is remembered for each entry
-            ?: run {
-                val mangaId = viewModel.state.value.manga?.id
-                if (mangaId != null && newViewer.config.doublePages && mod69ShiftStore().contains(mangaId.toString())) {
-                    newViewer.config.shiftDoublePage = true
+                // KMK --> 69 mod N28: the shift is remembered for each entry
+                ?: run {
+                    val mangaId = viewModel.state.value.manga?.id
+                    if (mangaId != null && newViewer.config.doublePages && mod69ShiftStore().contains(mangaId.toString())) {
+                        newViewer.config.shiftDoublePage = true
+                    }
                 }
-            }
             // KMK <--
         }
 

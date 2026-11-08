@@ -633,9 +633,19 @@ class LibraryScreenModel(
         }
         // SY <--
 
+        // KMK --> 69 mod L4: optionally ignore "a / an / the" at the start of titles
+        val ignoreArticles = libraryPreferences.mod69SortIgnoreArticles().get()
+        val articles = Regex("^(the|an|a)\\s+")
+        // KMK <--
         val sortAlphabetically: (LibraryItem, LibraryItem) -> Int = { manga1, manga2 ->
             val title1 = manga1.libraryManga.manga.title.lowercase()
+                // KMK -->
+                .let { if (ignoreArticles) it.replaceFirst(articles, "") else it }
+            // KMK <--
             val title2 = manga2.libraryManga.manga.title.lowercase()
+                // KMK -->
+                .let { if (ignoreArticles) it.replaceFirst(articles, "") else it }
+            // KMK <--
             title1.compareToWithCollator(title2)
         }
 

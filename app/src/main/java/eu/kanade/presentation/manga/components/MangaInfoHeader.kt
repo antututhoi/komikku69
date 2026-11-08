@@ -377,10 +377,15 @@ fun ExpandableMangaDescription(
     doSearch: (query: String, global: Boolean) -> Unit,
     // SY <--
     modifier: Modifier = Modifier,
+    // KMK -->
+    dateAdded: Long = 0L,
+    // KMK <--
 ) {
     // KMK -->
     val uiPreferences = Injekt.get<UiPreferences>()
     val pureDarkMode = uiPreferences.themeDarkAmoled().get()
+    val libraryPrefs = remember { Injekt.get<tachiyomi.domain.library.service.LibraryPreferences>() }
+    val context = androidx.compose.ui.platform.LocalContext.current
     // KMK <--
     Column(modifier = modifier) {
         val (expanded, onExpanded) = rememberSaveable {
@@ -399,7 +404,33 @@ fun ExpandableMangaDescription(
                 .padding(horizontal = 16.dp)
                 .clickableNoIndication { onExpanded(!expanded) },
         )
-        val tags = tagsProvider()
+        // KMK --> 69 mod N18: when the entry was added to the library
+        if (dateAdded > 0 && libraryPrefs.mod69ShowDateAdded().get()) {
+            Text(
+                text = stringResource(
+                    tachiyomi.i18n.kmk.KMR.strings.mod69_date_added,
+                    android.text.format.DateFormat.getMediumDateFormat(context).format(java.util.Date(dateAdded)),
+                ),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier
+                    .padding(top = 4.dp)
+                    .padding(horizontal = 16.dp),
+            )
+        }
+        // KMK <--
+        // KMK --> 69 mod P12: tidy tags (same capitals, no duplicates, sorted)
+        val tags = tagsProvider()?.let { list ->
+            if (libraryPrefs.mod69TidyTags().get()) {
+                list.map { tag -> tag.trim().lowercase().replaceFirstChar { it.uppercase() } }
+                    .filter { it.isNotEmpty() }
+                    .distinct()
+                    .sorted()
+            } else {
+                list
+            }
+        }
+        // KMK <--
         if (!tags.isNullOrEmpty()) {
             Box(
                 modifier = Modifier

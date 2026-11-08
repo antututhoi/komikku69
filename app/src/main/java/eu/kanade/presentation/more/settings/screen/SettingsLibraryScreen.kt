@@ -69,8 +69,63 @@ object SettingsLibraryScreen : SearchableSettings {
             // SY -->
             getSortingCategory(LocalNavigator.currentOrThrow, libraryPreferences),
             // SY <--
+            // KMK -->
+            getMod69Group(libraryPreferences),
+            // KMK <--
         )
     }
+
+    // KMK --> 69 mod: library and entry page extras
+    @Composable
+    private fun getMod69Group(libraryPreferences: LibraryPreferences): Preference.PreferenceGroup {
+        return Preference.PreferenceGroup(
+            title = stringResource(KMR.strings.mod69_library_extras),
+            preferenceItems = persistentListOf(
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = libraryPreferences.mod69SortIgnoreArticles(),
+                    title = stringResource(KMR.strings.mod69_sort_ignore_articles),
+                    subtitle = stringResource(KMR.strings.mod69_sort_ignore_articles_summary),
+                ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = libraryPreferences.mod69BadgeStyle(),
+                    entries = persistentMapOf(
+                        "number" to stringResource(KMR.strings.mod69_badge_number),
+                        "dot" to stringResource(KMR.strings.mod69_badge_dot),
+                        "progress" to stringResource(KMR.strings.mod69_badge_progress),
+                        "percent" to stringResource(KMR.strings.mod69_badge_percent),
+                    ),
+                    title = stringResource(KMR.strings.mod69_badge_style),
+                    subtitle = stringResource(KMR.strings.mod69_badge_style_summary),
+                ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = libraryPreferences.mod69TitleLines(),
+                    entries = persistentMapOf(
+                        0 to stringResource(MR.strings.label_default),
+                        1 to "1",
+                        2 to "2",
+                        3 to "3",
+                    ),
+                    title = stringResource(KMR.strings.mod69_title_lines),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = libraryPreferences.mod69ConfirmRemove(),
+                    title = stringResource(KMR.strings.mod69_confirm_remove),
+                    subtitle = stringResource(KMR.strings.mod69_confirm_remove_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = libraryPreferences.mod69ShowDateAdded(),
+                    title = stringResource(KMR.strings.mod69_show_date_added),
+                    subtitle = stringResource(KMR.strings.mod69_show_date_added_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = libraryPreferences.mod69TidyTags(),
+                    title = stringResource(KMR.strings.mod69_tidy_tags),
+                    subtitle = stringResource(KMR.strings.mod69_tidy_tags_summary),
+                ),
+            ),
+        )
+    }
+    // KMK <--
 
     @Composable
     private fun getCategoriesGroup(

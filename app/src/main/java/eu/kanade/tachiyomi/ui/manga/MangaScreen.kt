@@ -279,7 +279,23 @@ class MangaScreen(
             onDownloadChapter = screenModel::runChapterDownloadActions.takeIf { !successState.source.isLocalOrStub() },
             onAddToLibraryClicked = {
                 haptic.performHapticFeedback(HapticFeedbackType.LongPress)
-                screenModel.toggleFavorite()
+                // KMK --> 69 mod N33: ask before removing from the library
+                if (successState.manga.favorite &&
+                    Injekt.get<tachiyomi.domain.library.service.LibraryPreferences>().mod69ConfirmRemove().get()
+                ) {
+                    com.google.android.material.dialog.MaterialAlertDialogBuilder(context)
+                        .setTitle(context.stringResource(KMR.strings.mod69_confirm_remove_title))
+                        .setPositiveButton(context.stringResource(MR.strings.action_remove)) { _, _ ->
+                            screenModel.toggleFavorite()
+                        }
+                        .setNegativeButton(context.stringResource(MR.strings.action_cancel), null)
+                        .show()
+                } else {
+                    // KMK <--
+                    screenModel.toggleFavorite()
+                    // KMK -->
+                }
+                // KMK <--
             },
             // SY -->
             onWebViewClicked = {

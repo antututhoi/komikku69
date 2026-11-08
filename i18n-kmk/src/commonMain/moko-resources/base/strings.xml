@@ -330,4 +330,22 @@
     <string name="mod69_webtoon_gap">69- Gap between pages in long strip</string>
     <string name="mod69_reorder_buttons">69- Order of the reader\'s bottom buttons</string>
     <string name="mod69_reorder_buttons_summary">Move the buttons up or down. Which buttons show is set in "Reader bottom buttons"</string>
+    <string name="mod69_library_extras">69- Library and entry page extras</string>
+    <string name="mod69_sort_ignore_articles">69- Sort ignoring \'a / an / the\'</string>
+    <string name="mod69_sort_ignore_articles_summary">Alphabetical sort skips these words at the start of titles</string>
+    <string name="mod69_badge_number">Unread number (normal)</string>
+    <string name="mod69_badge_dot">A small dot when there is something unread</string>
+    <string name="mod69_badge_progress">Chapters read / total (12/30)</string>
+    <string name="mod69_badge_percent">Percent read (40%)</string>
+    <string name="mod69_badge_style">69- Badge on covers</string>
+    <string name="mod69_badge_style_summary">What the unread badge shows. It still needs \'Unread badges\' switched on in the library display settings</string>
+    <string name="mod69_title_lines">69- Title lines under covers</string>
+    <string name="mod69_confirm_remove">69- Ask before removing from library</string>
+    <string name="mod69_confirm_remove_summary">On an entry\'s page, tapping the library button asks first when removing</string>
+    <string name="mod69_confirm_remove_title">Remove from library?</string>
+    <string name="mod69_show_date_added">69- Show date added</string>
+    <string name="mod69_show_date_added_summary">Shows when the entry was added to your library on its page</string>
+    <string name="mod69_date_added">Added to library: %1$s</string>
+    <string name="mod69_tidy_tags">69- Tidy tags</string>
+    <string name="mod69_tidy_tags_summary">Shows tags with the same capital letters, without duplicates, sorted A-Z</string>
 </resources>

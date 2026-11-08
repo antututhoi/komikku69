@@ -373,6 +373,18 @@ private fun GridItemTitle(
     modifier: Modifier = Modifier,
     maxLines: Int = 2,
 ) {
+    // KMK --> 69 mod P9: title lines under covers can be 1, 2 or 3
+    @Suppress("NAME_SHADOWING")
+    val lines = remember {
+        uy.kohesive.injekt.Injekt.get<tachiyomi.domain.library.service.LibraryPreferences>().mod69TitleLines().get()
+    }
+
+    @Suppress("NAME_SHADOWING")
+    val maxLines = if (lines > 0) lines else maxLines
+
+    @Suppress("NAME_SHADOWING")
+    val minLines = minOf(minLines, maxLines)
+    // KMK <--
     Text(
         modifier = modifier,
         text = title,
