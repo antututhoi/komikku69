@@ -11,7 +11,7 @@ import re
 import shutil
 import zipfile
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from dataclasses import dataclass
+from dataclasses import dataclass, field, replace
 
 from PIL import Image, ImageFile
 
@@ -148,11 +148,37 @@ class CategoryFinder:
 class Options:
     resize: bool = True
     max_width: int = 1080
+    max_height: int = 0  # 0 = no limit
     fmt: str = "webp"  # webp / jpeg / keep
     quality: int = 80
     webtoon_ratio: float = 2.5
     only_smaller: bool = True
-    shrink_webtoon: bool = False  # long strips keep their full width unless this is on
+    shrink_webtoon: bool = False  # long strips keep their full size unless this is on
+    # [(folder, "width" | "height" | "all")]: that limit is not used for pictures inside the folder
+    excludes: list = field(default_factory=list)
+
+
+EXCLUDE_CHOICES = {"width": "Don't limit width", "height": "Don't limit height", "all": "Don't resize at all"}
+
+
+def _norm(p: str) -> str:
+    return os.path.normcase(os.path.abspath(p)).rstrip("\\/")
+
+
+def options_for(path: str, o: Options) -> Options:
+    """Options for one chapter, with the exclude list applied (several folders can match)."""
+    if not o.excludes:
+        return o
+    p = _norm(path)
+    mw, mh = o.max_width, o.max_height
+    for folder, mode in o.excludes:
+        f = _norm(folder)
+        if p == f or p.startswith(f + os.sep):
+            if mode in ("width", "all"):
+                mw = 0
+            if mode in ("height", "all"):
+                mh = 0
+    return replace(o, max_width=mw, max_height=mh, excludes=[])
 
 
 def convert_image(data: bytes, name: str, o: Options):
@@ -169,9 +195,13 @@ def convert_image(data: bytes, name: str, o: Options):
     w, h = im.size
     tall = h > w * o.webtoon_ratio  # long webtoon strip
     scale = 1.0
-    if o.max_width and w > o.max_width and (o.shrink_webtoon or not tall):
-        scale = o.max_width / w
-    # long webtoon strips keep their size (only type + quality change); never cut
+    # fits inside max width x max height, same shape, never made bigger;
+    # long webtoon strips keep their size (only type + quality change) unless asked; never cut
+    if o.shrink_webtoon or not tall:
+        if o.max_width and w > o.max_width:
+            scale = min(scale, o.max_width / w)
+        if o.max_height and h > o.max_height:
+            scale = min(scale, o.max_height / h)
     if scale < 1.0:
         im = im.resize((max(1, round(w * scale)), max(1, round(h * scale))), Image.LANCZOS)
     nw, nh = im.size
@@ -296,7 +326,7 @@ def run(downloads, output, backup=None, extract=True, sort=True, o: Options = Op
         dst = os.path.join(out_root, folder, manga, ch_name)
         if os.path.exists(os.path.join(dst, DONE_MARK)) or os.path.exists(dst + ".cbz"):
             continue  # done before (the tool can be run again to continue)
-        jobs.append((cp, dst, extract, o))
+        jobs.append((cp, dst, extract, options_for(cp, o)))
     if unsorted:
         log(f"{len(unsorted)} entries have no category (or aren't in the backup): they keep their source folder")
     total = len(jobs)
