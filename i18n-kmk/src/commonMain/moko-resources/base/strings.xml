@@ -397,4 +397,5 @@
     <string name="mod69_no_marked">No entries are marked yet</string>
     <string name="mod69_marked_n">Marked %1$d entries</string>
     <string name="mod69_unmarked_n">Unmarked %1$d entries</string>
+    <string name="mod69_grid_spacing">69- Space between covers</string>
 </resources>
