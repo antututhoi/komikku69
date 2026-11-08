@@ -172,6 +172,36 @@ data object LibraryTab : Tab {
                             }
                         }
                     },
+                    // KMK -->
+                    onClickUpdateMarked = {
+                        val ids = eu.kanade.presentation.library.components.Mod69Marked.ids()
+                        scope.launch {
+                            if (ids.isEmpty()) {
+                                snackbarHostState.showSnackbar(context.stringResource(KMR.strings.mod69_no_marked))
+                            } else {
+                                val started = LibraryUpdateJob.startNow(context = context, mangaIds = ids)
+                                snackbarHostState.showSnackbar(
+                                    context.stringResource(
+                                        if (started) MR.strings.updating_library else MR.strings.update_already_running,
+                                    ),
+                                )
+                            }
+                        }
+                    },
+                    onClickMarkSelection = { mark ->
+                        val ids = state.selection.toList()
+                        eu.kanade.presentation.library.components.Mod69Marked.set(ids, mark)
+                        screenModel.clearSelection()
+                        scope.launch {
+                            snackbarHostState.showSnackbar(
+                                context.stringResource(
+                                    if (mark) KMR.strings.mod69_marked_n else KMR.strings.mod69_unmarked_n,
+                                    ids.size,
+                                ),
+                            )
+                        }
+                    },
+                    // KMK <--
                     onClickSyncNow = {
                         if (!SyncDataJob.isRunning(context)) {
                             SyncDataJob.startNow(context, manual = true)

@@ -24,6 +24,7 @@ import eu.kanade.presentation.components.AppBarActions
 import eu.kanade.presentation.components.SearchToolbar
 import kotlinx.collections.immutable.persistentListOf
 import tachiyomi.i18n.MR
+import tachiyomi.i18n.kmk.KMR
 import tachiyomi.i18n.sy.SYMR
 import tachiyomi.presentation.core.components.Pill
 import tachiyomi.presentation.core.i18n.stringResource
@@ -46,6 +47,10 @@ fun LibraryToolbar(
     onClickSyncExh: (() -> Unit)?,
     isSyncEnabled: Boolean,
     // SY <--
+    // KMK -->
+    onClickUpdateMarked: () -> Unit,
+    onClickMarkSelection: (Boolean) -> Unit,
+    // KMK <--
     searchQuery: String?,
     onSearchQueryChange: (String?) -> Unit,
     scrollBehavior: TopAppBarScrollBehavior?,
@@ -56,6 +61,9 @@ fun LibraryToolbar(
         onClickUnselectAll = onClickUnselectAll,
         onClickSelectAll = onClickSelectAll,
         onClickInvertSelection = onClickInvertSelection,
+        // KMK -->
+        onClickMarkSelection = onClickMarkSelection,
+        // KMK <--
     )
     else -> LibraryRegularToolbar(
         title = title,
@@ -67,6 +75,9 @@ fun LibraryToolbar(
         onClickGlobalUpdate = onClickGlobalUpdate,
         onClickOpenRandomManga = onClickOpenRandomManga,
         onClickSyncNow = onClickSyncNow,
+        // KMK -->
+        onClickUpdateMarked = onClickUpdateMarked,
+        // KMK <--
         // SY -->
         onClickSyncExh = onClickSyncExh,
         isSyncEnabled = isSyncEnabled,
@@ -87,6 +98,9 @@ private fun LibraryRegularToolbar(
     onClickGlobalUpdate: () -> Unit,
     onClickOpenRandomManga: () -> Unit,
     onClickSyncNow: () -> Unit,
+    // KMK -->
+    onClickUpdateMarked: () -> Unit,
+    // KMK <--
     // SY -->
     onClickSyncExh: (() -> Unit)?,
     isSyncEnabled: Boolean,
@@ -139,6 +153,12 @@ private fun LibraryRegularToolbar(
                         title = stringResource(MR.strings.action_update_category),
                         onClick = onClickRefresh,
                     ),
+                    // KMK -->
+                    AppBar.OverflowAction(
+                        title = stringResource(KMR.strings.mod69_update_marked),
+                        onClick = onClickUpdateMarked,
+                    ),
+                    // KMK <--
                     AppBar.OverflowAction(
                         title = stringResource(MR.strings.action_open_random_manga),
                         onClick = onClickOpenRandomManga,
@@ -181,6 +201,9 @@ private fun LibrarySelectionToolbar(
     onClickUnselectAll: () -> Unit,
     onClickSelectAll: () -> Unit,
     onClickInvertSelection: () -> Unit,
+    // KMK -->
+    onClickMarkSelection: (Boolean) -> Unit,
+    // KMK <--
 ) {
     AppBar(
         titleContent = { Text(text = "$selectedCount") },
@@ -197,6 +220,16 @@ private fun LibrarySelectionToolbar(
                         icon = Icons.Outlined.FlipToBack,
                         onClick = onClickInvertSelection,
                     ),
+                    // KMK -->
+                    AppBar.OverflowAction(
+                        title = stringResource(KMR.strings.mod69_mark_for_update),
+                        onClick = { onClickMarkSelection(true) },
+                    ),
+                    AppBar.OverflowAction(
+                        title = stringResource(KMR.strings.mod69_unmark_for_update),
+                        onClick = { onClickMarkSelection(false) },
+                    ),
+                    // KMK <--
                 ),
             )
         },

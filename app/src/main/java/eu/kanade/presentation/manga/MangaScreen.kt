@@ -484,6 +484,9 @@ private fun MangaScreenSmallImpl(
                 onClickRefresh = onRefresh,
                 onClickMigrate = onMigrateClicked,
                 onClickEditNotes = onEditNotesClicked,
+                // KMK -->
+                mod69MangaId = state.manga.id,
+                // KMK <--
                 // SY -->
                 onClickEditInfo = onEditInfoClicked.takeIf { state.manga.favorite },
                 // KMK -->
@@ -947,6 +950,9 @@ private fun MangaScreenLargeImpl(
                 onClickRefresh = onRefresh,
                 onClickMigrate = onMigrateClicked,
                 onClickEditNotes = onEditNotesClicked,
+                // KMK -->
+                mod69MangaId = state.manga.id,
+                // KMK <--
                 onCancelActionMode = { onAllChapterSelected(false) },
                 // SY -->
                 onClickEditInfo = onEditInfoClicked.takeIf { state.manga.favorite },

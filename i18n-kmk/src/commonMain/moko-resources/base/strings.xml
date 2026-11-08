@@ -391,4 +391,10 @@
     <string name="mod69_discord_hide_nsfw">69- Hide 18+ entries</string>
     <string name="mod69_discord_hide_nsfw_summary">Discord does not show the name of 18+ entries you read</string>
     <string name="mod69_search_chapters">Search chapters (number or name)</string>
+    <string name="mod69_update_marked">Update marked entries</string>
+    <string name="mod69_mark_for_update">Mark for \'Update marked entries\'</string>
+    <string name="mod69_unmark_for_update">Unmark from \'Update marked entries\'</string>
+    <string name="mod69_no_marked">No entries are marked yet</string>
+    <string name="mod69_marked_n">Marked %1$d entries</string>
+    <string name="mod69_unmarked_n">Unmarked %1$d entries</string>
 </resources>

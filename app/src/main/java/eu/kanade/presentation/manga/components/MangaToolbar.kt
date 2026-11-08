@@ -22,6 +22,7 @@ import eu.kanade.presentation.components.AppBar
 import eu.kanade.presentation.components.AppBarActions
 import eu.kanade.presentation.components.AppBarTitle
 import eu.kanade.presentation.components.DownloadDropdownMenu
+import eu.kanade.presentation.library.components.Mod69Marked
 import eu.kanade.presentation.manga.DownloadAction
 import eu.kanade.tachiyomi.ui.browse.source.browse.BrowseSourceScreen
 import eu.kanade.tachiyomi.ui.browse.source.feed.SourceFeedScreen
@@ -48,6 +49,9 @@ fun MangaToolbar(
     onClickRefresh: () -> Unit,
     onClickMigrate: (() -> Unit)?,
     onClickEditNotes: () -> Unit,
+    // KMK -->
+    mod69MangaId: Long = -1L,
+    // KMK <--
     // SY -->
     onClickEditInfo: (() -> Unit)?,
     // KMK -->
@@ -246,6 +250,22 @@ fun MangaToolbar(
                             ),
                         )
                     }
+                    // KMK -->
+                    if (mod69MangaId > 0) {
+                        var marked by remember { mutableStateOf(Mod69Marked.isMarked(mod69MangaId)) }
+                        add(
+                            AppBar.OverflowAction(
+                                title = stringResource(
+                                    if (marked) KMR.strings.mod69_unmark_for_update else KMR.strings.mod69_mark_for_update,
+                                ),
+                                onClick = {
+                                    marked = !marked
+                                    Mod69Marked.set(listOf(mod69MangaId), marked)
+                                },
+                            ),
+                        )
+                    }
+                    // KMK <--
                     add(
                         AppBar.OverflowAction(
                             title = stringResource(KMR.strings.action_clear_manga),
