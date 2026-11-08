@@ -99,7 +99,15 @@ class WebtoonViewer(
             .threshold
 
     init {
-        recycler.setItemViewCacheSize(RECYCLER_VIEW_CACHE_SIZE)
+        recycler.setItemViewCacheSize(
+            // KMK --> 69 mod: low memory mode keeps fewer pages you've scrolled past
+            if (Injekt.get<ReaderPreferences>().mod69LowMemory().get()) {
+                1
+            } else {
+                RECYCLER_VIEW_CACHE_SIZE
+            },
+            // KMK <--
+        )
         recycler.isVisible = false // Don't let the recycler layout yet
         recycler.layoutParams = ViewGroup.LayoutParams(MATCH_PARENT, MATCH_PARENT)
         recycler.isFocusable = false

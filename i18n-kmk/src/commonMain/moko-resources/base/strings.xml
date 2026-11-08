@@ -267,6 +267,8 @@
     <string name="mod69_short_names">69- Short file names (Windows-safe)</string>
     <string name="mod69_short_names_summary">Cuts long entry and chapter folder names so Windows can copy them. A short code at the end keeps cut names apart</string>
     <string name="mod69_short_name_length">69- Max name length</string>
+    <string name="mod69_low_memory">69- Low memory mode</string>
+    <string name="mod69_low_memory_summary">For weak phones or long webtoons that stutter or close: preloads at most 3 pages, loads one page at a time, lets go of pages you\'ve scrolled past sooner, lighter zoom. Reopen the chapter after changing</string>
     <string name="mod69_rename_downloads">69- Rename existing downloads</string>
     <string name="mod69_rename_downloads_summary">Renames downloaded folders and .cbz files to the settings above. Shows progress and a summary in notifications</string>
     <string name="mod69_page_max_height">69- Max page height</string>

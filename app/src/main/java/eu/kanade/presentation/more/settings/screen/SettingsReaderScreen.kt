@@ -607,6 +607,13 @@ object SettingsReaderScreen : SearchableSettings {
                     title = stringResource(SYMR.strings.aggressively_load_pages),
                     subtitle = stringResource(SYMR.strings.aggressively_load_pages_summary),
                 ),
+                // KMK --> 69 mod
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69LowMemory(),
+                    title = stringResource(KMR.strings.mod69_low_memory),
+                    subtitle = stringResource(KMR.strings.mod69_low_memory_summary),
+                ),
+                // KMK <--
             ),
         )
     }

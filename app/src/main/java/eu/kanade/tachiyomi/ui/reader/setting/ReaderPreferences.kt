@@ -188,6 +188,14 @@ class ReaderPreferences(
 
     fun preloadSize() = preferenceStore.getInt("eh_preload_size", 10)
 
+    // KMK --> 69 mod
+    /**
+     * Low memory mode for weak phones: fewer pages kept and preloaded, one loading thread,
+     * pages you've scrolled past are let go sooner, and lighter tiles when zooming.
+     */
+    fun mod69LowMemory() = preferenceStore.getBoolean("mod69_low_memory_reader", false)
+    // KMK <--
+
     fun useAutoWebtoon() = preferenceStore.getBoolean("eh_use_auto_webtoon", true)
 
     fun continuousVerticalTappingByPage() = preferenceStore.getBoolean("continuous_vertical_tapping_by_page", false)

@@ -277,7 +277,11 @@ open class ReaderPageImageView @JvmOverloads constructor(
             setMaxTileSize(ImageUtil.hardwareBitmapThreshold)
             setDoubleTapZoomStyle(SubsamplingScaleImageView.ZOOM_FOCUS_CENTER)
             setPanLimit(SubsamplingScaleImageView.PAN_LIMIT_INSIDE)
-            setMinimumTileDpi(180)
+            setMinimumTileDpi(
+                // KMK --> 69 mod: lighter zoom tiles in low memory mode
+                if (Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>().mod69LowMemory().get()) 120 else 180,
+                // KMK <--
+            )
             setOnStateChangedListener(
                 object : SubsamplingScaleImageView.OnStateChangedListener {
                     override fun onScaleChanged(newScale: Float, origin: Int) {

@@ -53,6 +53,9 @@ internal class HttpPageLoader(
     private val queue = PriorityBlockingQueue<PriorityPage>()
 
     private val preloadSize = /* SY --> */ readerPreferences.preloadSize().get() // SY <--
+        // KMK --> 69 mod: low memory mode preloads at most 3 pages
+        .let { if (readerPreferences.mod69LowMemory().get()) it.coerceAtMost(3) else it }
+    // KMK <--
 
     // SY -->
     private val dataSaver = DataSaver(source, sourcePreferences)
@@ -60,7 +63,12 @@ internal class HttpPageLoader(
 
     init {
         // EXH -->
-        repeat(readerPreferences.readerThreads().get()) {
+        repeat(
+            readerPreferences.readerThreads().get()
+                // KMK --> 69 mod: low memory mode loads one page at a time
+                .let { if (readerPreferences.mod69LowMemory().get()) 1 else it },
+            // KMK <--
+        ) {
             // EXH <--
             scope.launchIO {
                 flow {
