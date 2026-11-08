@@ -690,6 +690,23 @@ class MangaScreen(
     }
 
     private fun openChapter(context: Context, chapter: Chapter) {
+        // KMK --> 69 mod R24: a chapter you already read can be opened "just to peek"
+        if (chapter.read &&
+            Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>().mod69AskPeek().get()
+        ) {
+            com.google.android.material.dialog.MaterialAlertDialogBuilder(context)
+                .setTitle(context.stringResource(KMR.strings.mod69_peek_title))
+                .setMessage(context.stringResource(KMR.strings.mod69_peek_message))
+                .setPositiveButton(context.stringResource(KMR.strings.mod69_peek_peek)) { _, _ ->
+                    context.startActivity(ReaderActivity.newIntent(context, mangaId, chapter.id, peek = true))
+                }
+                .setNegativeButton(context.stringResource(KMR.strings.mod69_peek_normal)) { _, _ ->
+                    context.startActivity(ReaderActivity.newIntent(context, mangaId, chapter.id))
+                }
+                .show()
+            return
+        }
+        // KMK <--
         context.startActivity(ReaderActivity.newIntent(context, mangaId, chapter.id))
     }
 

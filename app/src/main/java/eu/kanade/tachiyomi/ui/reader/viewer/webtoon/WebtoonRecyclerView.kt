@@ -195,12 +195,23 @@ class WebtoonRecyclerView @JvmOverloads constructor(
         scaleTo(currentScale * scaleFactor)
     }
 
+    // KMK --> 69 mod R14: zoom button
+    fun mod69ZoomBy(factor: Float) {
+        scaleTo(currentScale * factor)
+    }
+    // KMK <--
+
     fun scaleTo(scale: Float) {
         // KMK <--
         currentScale = scale
         currentScale = currentScale.coerceIn(
             minRate,
-            MAX_SCALE_RATE,
+            // KMK --> 69 mod N20: higher zoom limit
+            MAX_SCALE_RATE * (
+                uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>()
+                    .mod69MaxZoom().get().coerceIn(5, 30) / 5f
+                ),
+            // KMK <--
         )
 
         setScaleRate(currentScale)

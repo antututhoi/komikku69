@@ -105,7 +105,10 @@ class WebtoonPageHolder(
     private fun refreshLayoutParams() {
         frame.layoutParams = FrameLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT).apply {
             if (!viewer.isContinuous) {
-                bottomMargin = 15.dpToPx
+                // KMK --> 69 mod R10: gap between pages is a setting (15 = normal)
+                bottomMargin = uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>()
+                    .mod69WebtoonGap().get().dpToPx
+                // KMK <--
             }
 
             val margin = Resources.getSystem().displayMetrics.widthPixels * (viewer.config.sidePadding / 100f)

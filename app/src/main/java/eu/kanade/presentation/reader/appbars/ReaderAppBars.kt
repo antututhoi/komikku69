@@ -170,20 +170,29 @@ fun ReaderAppBars(
                         .weight(1f)
                         .align(Alignment.Start),
                 ) {
-                    ChapterNavigator(
-                        isRtl = isRtl,
-                        onNextChapter = onNextChapter,
-                        enabledNext = enabledNext,
-                        onPreviousChapter = onPreviousChapter,
-                        enabledPrevious = enabledPrevious,
-                        currentPage = currentPage,
-                        totalPages = totalPages,
-                        onPageIndexChange = onPageIndexChange,
-                        // SY -->
-                        isVerticalSlider = true,
-                        currentPageText = currentPageText,
-                        // SY <--
-                    )
+                    // KMK --> 69 mod R6: centered when the slider is shorter than the screen
+                    androidx.compose.foundation.layout.Box(
+                        modifier = Modifier.fillMaxHeight(),
+                        contentAlignment = Alignment.Center,
+                    ) {
+                        // KMK <--
+                        ChapterNavigator(
+                            isRtl = isRtl,
+                            onNextChapter = onNextChapter,
+                            enabledNext = enabledNext,
+                            onPreviousChapter = onPreviousChapter,
+                            enabledPrevious = enabledPrevious,
+                            currentPage = currentPage,
+                            totalPages = totalPages,
+                            onPageIndexChange = onPageIndexChange,
+                            // SY -->
+                            isVerticalSlider = true,
+                            currentPageText = currentPageText,
+                            // SY <--
+                        )
+                        // KMK -->
+                    }
+                    // KMK <--
                 }
             }
 
@@ -204,20 +213,29 @@ fun ReaderAppBars(
                         .weight(1f)
                         .align(Alignment.End),
                 ) {
-                    ChapterNavigator(
-                        isRtl = isRtl,
-                        onNextChapter = onNextChapter,
-                        enabledNext = enabledNext,
-                        onPreviousChapter = onPreviousChapter,
-                        enabledPrevious = enabledPrevious,
-                        currentPage = currentPage,
-                        totalPages = totalPages,
-                        onPageIndexChange = onPageIndexChange,
-                        // SY -->
-                        isVerticalSlider = true,
-                        currentPageText = currentPageText,
-                        // SY <--
-                    )
+                    // KMK --> 69 mod R6: centered when the slider is shorter than the screen
+                    androidx.compose.foundation.layout.Box(
+                        modifier = Modifier.fillMaxHeight(),
+                        contentAlignment = Alignment.Center,
+                    ) {
+                        // KMK <--
+                        ChapterNavigator(
+                            isRtl = isRtl,
+                            onNextChapter = onNextChapter,
+                            enabledNext = enabledNext,
+                            onPreviousChapter = onPreviousChapter,
+                            enabledPrevious = enabledPrevious,
+                            currentPage = currentPage,
+                            totalPages = totalPages,
+                            onPageIndexChange = onPageIndexChange,
+                            // SY -->
+                            isVerticalSlider = true,
+                            currentPageText = currentPageText,
+                            // SY <--
+                        )
+                        // KMK -->
+                    }
+                    // KMK <--
                 }
             }
             // KMK <--

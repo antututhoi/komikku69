@@ -368,6 +368,10 @@ class WebtoonViewer(
      * Scrolls down by [scrollDistance].
      */
     /* [EXH] private */
+    // KMK --> 69 mod R14: zoom button
+    fun mod69ZoomBy(factor: Float) = recycler.mod69ZoomBy(factor)
+    // KMK <--
+
     fun scrollDown() {
         // SY -->
         if (!isContinuous && tapByPage) {

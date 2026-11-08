@@ -57,6 +57,15 @@ internal class HttpPageLoader(
         .let { if (readerPreferences.mod69LowMemory().get()) it.coerceAtMost(3) else it }
     // KMK <--
 
+    // KMK --> 69 mod R8: on mobile data only 2 pages are loaded ahead
+    private fun mod69PreloadAmount(): Int {
+        if (!readerPreferences.mod69PreloadWifiOnly().get()) return preloadSize
+        val manager = Injekt.get<android.app.Application>()
+            .getSystemService(android.content.Context.CONNECTIVITY_SERVICE) as? android.net.ConnectivityManager
+        return if (manager?.isActiveNetworkMetered == true) preloadSize.coerceAtMost(2) else preloadSize
+    }
+    // KMK <--
+
     // SY -->
     private val dataSaver = DataSaver(source, sourcePreferences)
     // SY <--
@@ -135,7 +144,7 @@ internal class HttpPageLoader(
         if (page.status == Page.State.Queue) {
             queuedPages += PriorityPage(page, 1).also { queue.offer(it) }
         }
-        queuedPages += preloadNextPages(page, preloadSize)
+        queuedPages += preloadNextPages(page, /* KMK --> */ mod69PreloadAmount() /* KMK <-- */)
 
         suspendCancellableCoroutine<Nothing> { continuation ->
             continuation.invokeOnCancellation {

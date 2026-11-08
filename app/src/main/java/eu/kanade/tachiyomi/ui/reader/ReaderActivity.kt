@@ -153,14 +153,32 @@ class ReaderActivity : BaseActivity() {
 
     companion object {
 
-        fun newIntent(context: Context, mangaId: Long?, chapterId: Long?/* SY --> */, page: Int? = null/* SY <-- */): Intent {
+        fun newIntent(
+            context: Context,
+            mangaId: Long?,
+            chapterId: Long?/* SY --> */,
+            page: Int? = null, /* SY <-- */
+            // KMK -->
+            peek: Boolean = false,
+            // KMK <--
+        ): Intent {
             return Intent(context, ReaderActivity::class.java).apply {
                 putExtra("manga", mangaId)
                 putExtra("chapter", chapterId)
                 // SY -->
                 putExtra("page", page)
                 // SY <--
-                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                // KMK -->
+                putExtra("mod69_peek", peek)
+                // R20: the reader as its own window in the recent apps list
+                if (Injekt.get<ReaderPreferences>().mod69ReaderOwnWindow().get()) {
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT or Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
+                } else {
+                    // KMK <--
+                    addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                    // KMK -->
+                }
+                // KMK <--
             }
         }
     }
@@ -255,6 +273,11 @@ class ReaderActivity : BaseActivity() {
         config = ReaderConfig()
         setMenuVisibility(viewModel.state.value.menuVisible)
 
+        // KMK --> 69 mod
+        viewModel.mod69Peek = intent.getBooleanExtra("mod69_peek", false)
+        mod69AskBeforeLeaving()
+        // KMK <--
+
         // EXH -->
         enableExhAutoScroll()
         // EXH <--
@@ -346,6 +369,27 @@ class ReaderActivity : BaseActivity() {
                             .navigationBarsPadding(),
                     )
                 }
+
+                // KMK --> 69 mod R12 / R14
+                if (!state.menuVisible) {
+                    eu.kanade.presentation.reader.Mod69ReaderInfoBar(
+                        readerPreferences = readerPreferences,
+                        chapterName = state.currentChapter?.chapter?.name,
+                        pageText = state.currentPageText,
+                        totalPages = state.totalPages,
+                    )
+                    eu.kanade.presentation.reader.Mod69ZoomButtons(
+                        readerPreferences = readerPreferences,
+                        onZoom = { factor ->
+                            when (val v = state.viewer) {
+                                is PagerViewer -> v.mod69ZoomBy(factor)
+                                is WebtoonViewer -> v.mod69ZoomBy(factor)
+                                else -> Unit
+                            }
+                        },
+                    )
+                }
+                // KMK <--
 
                 ContentOverlay(state = state)
 
@@ -914,6 +958,13 @@ class ReaderActivity : BaseActivity() {
         val viewer = viewModel.state.value.viewer as? PagerViewer ?: return
         viewer.config.let { config ->
             config.shiftDoublePage = !config.shiftDoublePage
+            // KMK -->
+            viewModel.state.value.manga?.id?.let { id ->
+                val store = mod69ShiftStore().toMutableSet()
+                if (config.shiftDoublePage) store.add(id.toString()) else store.remove(id.toString())
+                getSharedPreferences("mod69_shift_double_page", MODE_PRIVATE).edit().putStringSet("ids", store).apply()
+            }
+            // KMK <--
             viewModel.state.value.viewerChapters?.let {
                 viewer.updateShifting()
                 viewer.setChaptersInternal(it)
@@ -972,6 +1023,14 @@ class ReaderActivity : BaseActivity() {
                 setDoublePageMode(newViewer)
             }
             viewModel.state.value.lastShiftDoubleState?.let { newViewer.config.shiftDoublePage = it }
+            // KMK --> 69 mod N28: the shift is remembered for each entry
+            ?: run {
+                val mangaId = viewModel.state.value.manga?.id
+                if (mangaId != null && newViewer.config.doublePages && mod69ShiftStore().contains(mangaId.toString())) {
+                    newViewer.config.shiftDoublePage = true
+                }
+            }
+            // KMK <--
         }
 
         val manga = viewModel.state.value.manga
@@ -1286,6 +1345,38 @@ class ReaderActivity : BaseActivity() {
         }
     }
 
+    // KMK -->
+    private fun mod69ShiftStore(): Set<String> =
+        getSharedPreferences("mod69_shift_double_page", MODE_PRIVATE).getStringSet("ids", emptySet()).orEmpty()
+
+    /** 69 mod P5: after a few pages, Back asks before the reader closes. */
+    private fun mod69AskBeforeLeaving() {
+        onBackPressedDispatcher.addCallback(
+            this,
+            object : androidx.activity.OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    val pages = readerPreferences.mod69AskLeavePages().get()
+                    val state = viewModel.state.value
+                    if (pages <= 0 || state.menuVisible || state.currentPage < pages) {
+                        leave()
+                        return
+                    }
+                    com.google.android.material.dialog.MaterialAlertDialogBuilder(this@ReaderActivity)
+                        .setMessage(stringResource(KMR.strings.mod69_ask_leave_message))
+                        .setPositiveButton(stringResource(KMR.strings.mod69_ask_leave_yes)) { _, _ -> leave() }
+                        .setNegativeButton(stringResource(MR.strings.action_cancel), null)
+                        .show()
+                }
+
+                private fun leave() {
+                    isEnabled = false
+                    onBackPressedDispatcher.onBackPressed()
+                }
+            },
+        )
+    }
+    // KMK <--
+
     /**
      * Updates viewer inset depending on fullscreen reader preferences.
      */
@@ -1308,6 +1399,11 @@ class ReaderActivity : BaseActivity() {
         val insets = when {
             !fullscreen -> windowInsets?.getInsets(WindowInsetsCompat.Type.systemBars())
             !drawUnderCutout -> windowInsets?.getInsets(WindowInsetsCompat.Type.displayCutout())
+            // KMK --> 69 mod R5: avoid the notch only when the phone is sideways
+            readerPreferences.mod69CutoutAvoidSideways().get() &&
+                resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE ->
+                windowInsets?.getInsets(WindowInsetsCompat.Type.displayCutout())
+            // KMK <--
             else -> null
         }
             ?: Insets.NONE

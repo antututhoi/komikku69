@@ -249,6 +249,19 @@ open class ReaderPageImageView @JvmOverloads constructor(
     }
     // KMK <--
 
+    // KMK --> 69 mod R14: zoom button
+    fun mod69ZoomBy(factor: Float) {
+        (pageView as? SubsamplingScaleImageView)?.let { view ->
+            val center = view.center ?: return
+            val target = (view.scale * factor).coerceIn(view.minScale, view.maxScale)
+            view.animateScaleAndCenter(target, center)
+                ?.withDuration(200)
+                ?.withInterruptible(true)
+                ?.start()
+        }
+    }
+    // KMK <--
+
     /**
      * Pans the image.
      * @param fn a function that computes the new center of the image
@@ -486,4 +499,8 @@ open class ReaderPageImageView @JvmOverloads constructor(
     }
 }
 
-private const val MAX_ZOOM_SCALE = 5F
+// KMK --> 69 mod N20: the zoom limit can be raised in settings
+private val MAX_ZOOM_SCALE: Float
+    get() = uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>()
+        .mod69MaxZoom().get().coerceIn(5, 30).toFloat()
+// KMK <--

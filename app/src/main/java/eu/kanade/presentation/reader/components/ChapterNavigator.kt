@@ -207,9 +207,17 @@ fun ChapterNavigatorVert(
 
     val haptic = LocalHapticFeedback.current
 
+    // KMK --> 69 mod R6: height of the side slider
+    val heightFraction = remember {
+        uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>()
+            .mod69SeekbarHeight().get().coerceIn(30, 100) / 100f
+    }
+    // KMK <--
     Column(
         modifier = Modifier
-            .fillMaxHeight()
+            // KMK -->
+            .fillMaxHeight(heightFraction)
+            // KMK <--
             .padding(vertical = verticalPadding, horizontal = 8.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {

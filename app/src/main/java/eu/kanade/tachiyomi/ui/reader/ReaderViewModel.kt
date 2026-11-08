@@ -357,7 +357,10 @@ class ReaderViewModel @JvmOverloads constructor(
             .map(::ReaderChapter)
     }
 
-    val incognitoMode: Boolean by lazy { getIncognitoState.await(manga?.source) }
+    // KMK --> 69 mod R24: "just peek" opens the chapter without saving progress or history
+    var mod69Peek = false
+    val incognitoMode: Boolean by lazy { mod69Peek || getIncognitoState.await(manga?.source) }
+    // KMK <--
     private val downloadAheadAmount = downloadPreferences.autoDownloadWhileReading().get()
 
     init {

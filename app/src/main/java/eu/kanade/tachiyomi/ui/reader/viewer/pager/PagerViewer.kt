@@ -184,6 +184,13 @@ abstract class PagerViewer(
         return pager
     }
 
+    // KMK --> 69 mod R14: zoom button
+    fun mod69ZoomBy(factor: Float) {
+        val holder = (currentPage as? ReaderPage)?.let(::getPageHolder) ?: return
+        holder.mod69ZoomBy(factor)
+    }
+    // KMK <--
+
     /**
      * Returns the PagerPageHolder for the provided page
      */

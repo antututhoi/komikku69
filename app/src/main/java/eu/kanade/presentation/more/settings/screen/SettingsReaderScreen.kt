@@ -6,6 +6,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalView
 import eu.kanade.presentation.more.settings.Preference
+import eu.kanade.presentation.more.settings.widget.Mod69ReorderPreferenceWidget
 import eu.kanade.tachiyomi.ui.reader.setting.ReaderBottomButton
 import eu.kanade.tachiyomi.ui.reader.setting.ReaderOrientation
 import eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences
@@ -114,8 +115,154 @@ object SettingsReaderScreen : SearchableSettings {
             getPageDownloadingGroup(readerPreferences = readerPref),
             getForkSettingsGroup(readerPreferences = readerPref),
             // SY <--
+            // KMK -->
+            getMod69Group(readerPreferences = readerPref),
+            // KMK <--
         )
     }
+
+    // KMK --> 69 mod: small extras for the reader
+    @Composable
+    private fun getMod69Group(readerPreferences: ReaderPreferences): Preference.PreferenceGroup {
+        val infoBar by readerPreferences.mod69InfoBar().collectAsState()
+        val seekbarHeightPref = readerPreferences.mod69SeekbarHeight()
+        val seekbarHeight by seekbarHeightPref.collectAsState()
+        return Preference.PreferenceGroup(
+            title = stringResource(KMR.strings.mod69_reader_extras),
+            preferenceItems = persistentListOf(
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69CutoutAvoidSideways(),
+                    title = stringResource(KMR.strings.mod69_cutout_sideways),
+                    subtitle = stringResource(KMR.strings.mod69_cutout_sideways_summary),
+                    enabled = LocalView.current.hasDisplayCutout(),
+                ),
+                Preference.PreferenceItem.SliderPreference(
+                    value = seekbarHeight,
+                    valueRange = 30..100,
+                    title = stringResource(KMR.strings.mod69_seekbar_height),
+                    valueString = "$seekbarHeight%",
+                    onValueChanged = { seekbarHeightPref.set(it) },
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69PreloadWifiOnly(),
+                    title = stringResource(KMR.strings.mod69_preload_wifi),
+                    subtitle = stringResource(KMR.strings.mod69_preload_wifi_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69InfoBar(),
+                    title = stringResource(KMR.strings.mod69_info_bar),
+                    subtitle = stringResource(KMR.strings.mod69_info_bar_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69InfoBarClock(),
+                    title = stringResource(KMR.strings.mod69_info_bar_clock),
+                    enabled = infoBar,
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69InfoBarBattery(),
+                    title = stringResource(KMR.strings.mod69_info_bar_battery),
+                    enabled = infoBar,
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69InfoBarChapter(),
+                    title = stringResource(KMR.strings.mod69_info_bar_chapter),
+                    enabled = infoBar,
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69InfoBarPage(),
+                    title = stringResource(KMR.strings.mod69_info_bar_page),
+                    enabled = infoBar,
+                ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69InfoBarPosition(),
+                    entries = persistentMapOf(
+                        "top" to stringResource(KMR.strings.mod69_position_top),
+                        "bottom" to stringResource(KMR.strings.mod69_position_bottom),
+                    ),
+                    title = stringResource(KMR.strings.mod69_info_bar_position),
+                    enabled = infoBar,
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69InfoBarTransparent(),
+                    title = stringResource(KMR.strings.mod69_info_bar_transparent),
+                    enabled = infoBar,
+                ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69ClockFormat(),
+                    entries = persistentMapOf(
+                        "system" to stringResource(KMR.strings.mod69_clock_system),
+                        "12" to stringResource(KMR.strings.mod69_clock_12),
+                        "24" to stringResource(KMR.strings.mod69_clock_24),
+                    ),
+                    title = stringResource(KMR.strings.mod69_clock_format),
+                ),
+                Preference.PreferenceItem.CustomPreference(
+                    title = stringResource(KMR.strings.mod69_reorder_buttons),
+                ) {
+                    val savedOrder by readerPreferences.mod69BottomButtonOrder().collectAsState()
+                    val saved = savedOrder.split(",").filter { it.isNotBlank() }
+                    val ordered = (saved + ReaderBottomButton.entries.map { it.value }).distinct()
+                    val byKey = ReaderBottomButton.entries.associateBy { it.value }
+                    Mod69ReorderPreferenceWidget(
+                        title = stringResource(KMR.strings.mod69_reorder_buttons),
+                        subtitle = stringResource(KMR.strings.mod69_reorder_buttons_summary),
+                        items = ordered.mapNotNull { key -> byKey[key]?.let { key to stringResource(it.stringRes) } },
+                        saveText = stringResource(MR.strings.action_save),
+                        cancelText = stringResource(MR.strings.action_cancel),
+                        onSave = { readerPreferences.mod69BottomButtonOrder().set(it.joinToString(",")) },
+                    )
+                },
+                Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69WebtoonGap(),
+                    entries = persistentMapOf(
+                        0 to "0",
+                        5 to "5",
+                        15 to "15 (normal)",
+                        30 to "30",
+                        60 to "60",
+                    ),
+                    title = stringResource(KMR.strings.mod69_webtoon_gap),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69ZoomButtons(),
+                    title = stringResource(KMR.strings.mod69_zoom_buttons),
+                    subtitle = stringResource(KMR.strings.mod69_zoom_buttons_summary),
+                ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69MaxZoom(),
+                    entries = persistentMapOf(
+                        5 to "5x",
+                        8 to "8x",
+                        12 to "12x",
+                        20 to "20x",
+                    ),
+                    title = stringResource(KMR.strings.mod69_max_zoom),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69ReaderOwnWindow(),
+                    title = stringResource(KMR.strings.mod69_reader_own_window),
+                    subtitle = stringResource(KMR.strings.mod69_reader_own_window_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69AskPeek(),
+                    title = stringResource(KMR.strings.mod69_ask_peek),
+                    subtitle = stringResource(KMR.strings.mod69_ask_peek_summary),
+                ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69AskLeavePages(),
+                    entries = persistentMapOf(
+                        0 to stringResource(KMR.strings.mod69_ask_leave_never),
+                        3 to stringResource(KMR.strings.mod69_ask_leave_pages, 3),
+                        10 to stringResource(KMR.strings.mod69_ask_leave_pages, 10),
+                        20 to stringResource(KMR.strings.mod69_ask_leave_pages, 20),
+                        50 to stringResource(KMR.strings.mod69_ask_leave_pages, 50),
+                    ),
+                    title = stringResource(KMR.strings.mod69_ask_leave),
+                ),
+            ),
+        )
+    }
+    // KMK <--
 
     @Composable
     private fun getDisplayGroup(readerPreferences: ReaderPreferences): Preference.PreferenceGroup {
