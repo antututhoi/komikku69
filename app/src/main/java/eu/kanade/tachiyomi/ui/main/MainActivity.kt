@@ -471,6 +471,11 @@ class MainActivity : BaseActivity() {
                 chapterCache.clear()
             }
         }
+        // KMK --> 69 mod S4
+        if (isLaunch) {
+            lifecycleScope.launchIO { Mod69Shortcuts.refresh(applicationContext) }
+        }
+        // KMK <--
     }
 
     // KMK -->
