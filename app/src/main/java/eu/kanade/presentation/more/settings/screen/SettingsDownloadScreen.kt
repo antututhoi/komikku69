@@ -131,6 +131,31 @@ object SettingsDownloadScreen : SearchableSettings {
                     }
                 },
             ),
+            Preference.PreferenceItem.SwitchPreference(
+                preference = downloadPreferences.mod69ScanlatorInChapterNames(),
+                title = stringResource(KMR.strings.mod69_scanlator_in_names),
+                subtitle = stringResource(KMR.strings.mod69_scanlator_in_names_summary),
+            ),
+            Preference.PreferenceItem.SwitchPreference(
+                preference = downloadPreferences.mod69ShortNames(),
+                title = stringResource(KMR.strings.mod69_short_names),
+                subtitle = stringResource(KMR.strings.mod69_short_names_summary),
+            ),
+            Preference.PreferenceItem.EditTextPreference(
+                preference = downloadPreferences.mod69ShortNameLengthText(),
+                title = stringResource(KMR.strings.mod69_short_name_length),
+                subtitle = "%s (30 – 200)",
+                onValueChanged = { it.trim().toIntOrNull()?.let { n -> n in 30..200 } ?: false },
+            ),
+            Preference.PreferenceItem.TextPreference(
+                title = stringResource(KMR.strings.mod69_rename_downloads),
+                subtitle = stringResource(KMR.strings.mod69_rename_downloads_summary),
+                onClick = {
+                    mod69Scope.launch(kotlinx.coroutines.Dispatchers.IO) {
+                        runCatching { eu.kanade.tachiyomi.data.download.Mod69RenameDownloads.run(mod69Context) }
+                    }
+                },
+            ),
             Preference.PreferenceItem.TextPreference(
                 title = stringResource(KMR.strings.mod69_convert_all),
                 subtitle = stringResource(KMR.strings.mod69_convert_all_summary),

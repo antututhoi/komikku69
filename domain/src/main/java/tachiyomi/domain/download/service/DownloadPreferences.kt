@@ -37,6 +37,17 @@ class DownloadPreferences(
     /** New downloads go into a folder named after the entry's category instead of the source. */
     fun mod69CategoryFolders() = preferenceStore.getBoolean("mod69_category_folders", false)
 
+    /** Chapter folder names start with the scanlator's name ("Group_Chapter 1"). Off = just "Chapter 1". */
+    fun mod69ScanlatorInChapterNames() = preferenceStore.getBoolean("mod69_scanlator_in_chapter_names", false)
+
+    /** Entry and chapter folder names are cut to [mod69ShortNameLength] characters (Windows-safe). */
+    fun mod69ShortNames() = preferenceStore.getBoolean("mod69_short_names", false)
+
+    fun mod69ShortNameLengthText() = preferenceStore.getString("mod69_short_name_length", "80")
+
+    /** Max characters of an entry / chapter folder name when [mod69ShortNames] is on (30..200). */
+    fun mod69ShortNameLength(): Int = mod69ShortNameLengthText().get().trim().toIntOrNull()?.coerceIn(30, 200) ?: 80
+
     /** WebP quality 1..100. */
     fun mod69PageWebpQuality(): Int = mod69PageWebpQualityText().get().trim().toIntOrNull()?.coerceIn(1, 100) ?: 80
     // KMK <--

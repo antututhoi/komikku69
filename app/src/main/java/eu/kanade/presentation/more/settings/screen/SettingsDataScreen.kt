@@ -138,7 +138,7 @@ object SettingsDataScreen : SearchableSettings {
             // KMK --> 69 mod
             Preference.PreferenceItem.TextPreference(
                 title = stringResource(KMR.strings.mod69_file_picker),
-                subtitle = mod69PickerName,
+                subtitle = stringResource(KMR.strings.mod69_file_picker_summary, mod69PickerName),
                 onClick = {
                     eu.kanade.tachiyomi.util.system.Mod69Picker.showSettingDialog(mod69Context) {
                         mod69PickerName = eu.kanade.tachiyomi.util.system.Mod69Picker.choiceName(mod69Context)
@@ -460,7 +460,12 @@ object SettingsDataScreen : SearchableSettings {
         }
 
         val saveFileLauncher = rememberLauncherForActivityResult(
-            contract = ActivityResultContracts.CreateDocument("text/csv"),
+            // KMK --> 69 mod: the chosen folder / file picker
+            contract = object : ActivityResultContracts.CreateDocument("text/csv") {
+                override fun createIntent(context: Context, input: String): Intent =
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+            },
+            // KMK <--
         ) { uri ->
             uri?.let {
                 scope.launch {

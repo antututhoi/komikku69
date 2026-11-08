@@ -57,7 +57,24 @@ object Mod69DownloadFolders {
         prefs.edit().putString(key(sourceId, title), folder ?: SOURCE).apply()
     }
 
-    private fun isDecided(sourceId: Long, title: String) = prefs.contains(key(sourceId, title))
+    fun isDecided(sourceId: Long, title: String) = prefs.contains(key(sourceId, title))
+
+    /** Remembers the folder chosen for an entry (null = source folder). */
+    fun choose(sourceId: Long, title: String, folder: String?) = remember(sourceId, title, folder)
+
+    /**
+     * The category folders to ask about before downloading, or empty when there's nothing to ask:
+     * the setting is off, the folder is already chosen, or the entry has fewer than 2 categories.
+     */
+    suspend fun folderChoicesToAsk(manga: Manga): List<Pair<String, String>> {
+        if (!enabled() || isDecided(manga.source, manga.ogTitle)) return emptyList()
+        val cats = categoriesOf(manga)
+        if (cats.size < 2) return emptyList()
+        return cats.map { it to folderName(it) }
+    }
+
+    /** Moves [dir] into [newParent] (public for the download provider). */
+    fun moveDir(context: Context, dir: UniFile, newParent: UniFile): UniFile? = move(context, dir, newParent)
 
     fun folderName(categoryName: String): String = DiskUtil.buildValidFilename(categoryName)
 
@@ -73,11 +90,11 @@ object Mod69DownloadFolders {
 
     /**
      * For a new download: the category folder to use (decides once per entry), or null = source folder.
-     * Entries that already have downloads in the source folder stay there (move them with the setting).
+     * Earlier downloads in the source folder are moved there by the caller.
      */
-    fun folderForNewDownload(source: Source, title: String, hasSourceFolderDownloads: Boolean): String? {
+    fun folderForNewDownload(source: Source, title: String): String? {
         if (isDecided(source.id, title)) return folderOf(source.id, title)
-        if (!enabled() || hasSourceFolderDownloads) return null
+        if (!enabled()) return null
         val folder = runCatching {
             runBlocking {
                 val manga = libraryEntry(source.id, title) ?: return@runBlocking NO_INFO_FOLDER
@@ -96,7 +113,9 @@ object Mod69DownloadFolders {
             if (folder == SOURCE) return@forEach
             val sourceId = k.substringBefore('|').toLongOrNull() ?: return@forEach
             val title = k.substringAfter('|')
-            out.getOrPut(folder.lowercase() to provider.getMangaDirName(title).lowercase()) { mutableListOf() } += sourceId
+            provider.getMangaDirNames(title).forEach { name ->
+                out.getOrPut(folder.lowercase() to name.lowercase()) { mutableListOf() } += sourceId
+            }
         }
         return out
     }
@@ -163,20 +182,53 @@ object Mod69DownloadFolders {
     suspend fun moveAll(context: Context): Int {
         val provider = Injekt.get<DownloadProvider>()
         val sources = Injekt.get<tachiyomi.domain.source.service.SourceManager>()
+        val id = eu.kanade.tachiyomi.data.notification.Mod69Progress.ID_MOVE
+        val progress = eu.kanade.tachiyomi.data.notification.Mod69Progress
+        val title = "Moving downloads into category folders"
+        val started = System.currentTimeMillis()
+        progress.start(context, id, title)
+        val favorites = Injekt.get<GetFavorites>().await()
         var moved = 0
-        for (manga in Injekt.get<GetFavorites>().await()) {
+        var already = 0
+        var noDownloads = 0
+        var failed = 0
+        for ((index, manga) in favorites.withIndex()) {
+            if (progress.isStopped(id)) break
+            progress.update(context, id, title, manga.title, index + 1, favorites.size)
             val source = sources.get(manga.source) ?: continue
-            if (provider.findMangaDir(manga.ogTitle, source) == null) continue
+            val dir = provider.findMangaDir(manga.ogTitle, source)
+            if (dir == null) {
+                noDownloads++
+                continue
+            }
             val folder = folderOf(manga.source, manga.ogTitle)
                 ?: categoriesOf(manga).firstOrNull()?.let { folderName(it) }
                 ?: DEFAULT_FOLDER
+            if (dir.parentFile?.name.equals(folder, ignoreCase = true)) {
+                remember(manga.source, manga.ogTitle, folder)
+                already++
+                continue
+            }
             try {
-                if (moveEntry(context, manga, source, folder)) moved++
+                if (moveEntry(context, manga, source, folder)) moved++ else failed++
             } catch (e: Exception) {
+                failed++
                 logcat(LogPriority.ERROR, e) { "69: moving ${manga.title} failed" }
             }
         }
         Injekt.get<DownloadCache>().invalidateCache()
+        progress.finish(
+            context,
+            id,
+            "Moving downloads finished",
+            listOf(
+                "Moved: $moved",
+                "Already in the right folder: $already",
+                "Library entries without downloads: $noDownloads",
+                "Failed: $failed",
+                "Time: ${progress.duration(System.currentTimeMillis() - started)}",
+            ),
+        )
         return moved
     }
 
@@ -284,7 +336,8 @@ object Mod69DownloadFolders {
                 if (byDirName == null) {
                     // every entry the app knows (not only the library: uncategories holds the others)
                     byDirName = Injekt.get<tachiyomi.domain.manga.interactor.GetAllManga>().await()
-                        .groupBy { provider.getMangaDirName(it.ogTitle).lowercase() }
+                        .flatMap { m -> provider.getMangaDirNames(m.ogTitle).map { it.lowercase() to m } }
+                        .groupBy({ it.first }, { it.second })
                 }
                 byDirName[name.lowercase()]?.forEach { manga ->
                     if (folderOf(manga.source, manga.ogTitle) != folder) remember(manga.source, manga.ogTitle, folder)

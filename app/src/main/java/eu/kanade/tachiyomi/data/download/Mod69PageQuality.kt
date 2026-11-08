@@ -109,15 +109,57 @@ object Mod69PageQuality {
             val provider = Injekt.get<DownloadProvider>()
             val sources = Injekt.get<SourceManager>()
             val getManga = Injekt.get<GetManga>()
+            val context = Injekt.get<android.app.Application>()
+            val p = eu.kanade.tachiyomi.data.notification.Mod69Progress
+            val id = p.ID_CONVERT
+            val title = "Making downloads smaller"
+            val started = System.currentTimeMillis()
+            p.start(context, id, title)
             var done = 0
-            chapters.groupBy { it.mangaId }.forEach { (mangaId, list) ->
-                val manga = getManga.await(mangaId) ?: return@forEach
-                val source = sources.get(manga.source) ?: return@forEach
-                list.forEach { ch ->
-                    val dir = provider.findChapterDir(ch.name, ch.scanlator, ch.url, manga.ogTitle, source) ?: return@forEach
-                    if (convertOne(dir)) done++
+            var failed = 0
+            var missing = 0
+            var count = 0
+            var before = 0L
+            var after = 0L
+            fun sizeOf(f: UniFile): Long =
+                if (f.isDirectory) f.listFiles().orEmpty().sumOf { it.length() } else f.length()
+            run loop@{
+                chapters.groupBy { it.mangaId }.forEach { (mangaId, list) ->
+                    val manga = getManga.await(mangaId) ?: return@forEach
+                    val source = sources.get(manga.source) ?: return@forEach
+                    list.forEach { ch ->
+                        if (p.isStopped(id)) return@loop
+                        count++
+                        p.update(context, id, title, "${manga.title} – ${ch.name}", count, chapters.size)
+                        val dir = provider.findChapterDir(ch.name, ch.scanlator, ch.url, manga.ogTitle, source)
+                        if (dir == null) {
+                            missing++
+                            return@forEach
+                        }
+                        val b = sizeOf(dir)
+                        if (convertOne(dir)) {
+                            done++
+                            before += b
+                            after += provider.findChapterDir(ch.name, ch.scanlator, ch.url, manga.ogTitle, source)
+                                ?.let { sizeOf(it) } ?: b
+                        } else {
+                            failed++
+                        }
+                    }
                 }
             }
+            p.finish(
+                context,
+                id,
+                "Making downloads smaller finished",
+                listOf(
+                    "Chapters made smaller: $done",
+                    "Size: ${p.size(before)} → ${p.size(after)} (saved ${p.size((before - after).coerceAtLeast(0))})",
+                    "Not found: $missing",
+                    "Failed: $failed",
+                    "Time: ${p.duration(System.currentTimeMillis() - started)}",
+                ),
+            )
             onDone?.invoke(done)
         }
     }

@@ -42,14 +42,25 @@ class CreateBackupScreen : Screen() {
         val state by model.state.collectAsState()
 
         val chooseBackupDir = rememberLauncherForActivityResult(
-            contract = ActivityResultContracts.CreateDocument("application/*"),
+            // KMK --> 69 mod: the chosen folder / file picker
+            contract = object : ActivityResultContracts.CreateDocument("application/*") {
+                override fun createIntent(context: android.content.Context, input: String): Intent =
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+            },
+            // KMK <--
         ) {
             if (it != null) {
-                context.contentResolver.takePersistableUriPermission(
-                    it,
-                    Intent.FLAG_GRANT_READ_URI_PERMISSION or
-                        Intent.FLAG_GRANT_WRITE_URI_PERMISSION,
-                )
+                // KMK --> some pickers give a link that can't be kept; the backup still works once
+                runCatching {
+                    // KMK <--
+                    context.contentResolver.takePersistableUriPermission(
+                        it,
+                        Intent.FLAG_GRANT_READ_URI_PERMISSION or
+                            Intent.FLAG_GRANT_WRITE_URI_PERMISSION,
+                    )
+                    // KMK -->
+                }
+                // KMK <--
                 model.createBackup(context, it)
                 navigator.pop()
             }

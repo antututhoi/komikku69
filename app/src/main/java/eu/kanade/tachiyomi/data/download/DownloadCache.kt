@@ -159,7 +159,7 @@ class DownloadCache(
 
         val sourceDir = rootDownloadsDir.sourceDirs[sourceId]
         if (sourceDir != null) {
-            val mangaDir = sourceDir.mangaDirs[provider.getMangaDirName(mangaTitle)]
+            val mangaDir = /* KMK --> */ sourceDir.mod69Manga(mangaTitle) /* KMK <-- */
             if (mangaDir != null) {
                 return provider.getValidChapterDirNames(
                     chapterName,
@@ -196,9 +196,7 @@ class DownloadCache(
 
         val sourceDir = rootDownloadsDir.sourceDirs[manga.source]
         if (sourceDir != null) {
-            val mangaDir = sourceDir.mangaDirs[
-                provider.getMangaDirName(/* SY --> */ manga.ogTitle /* SY <-- */),
-            ]
+            val mangaDir = /* KMK --> */ sourceDir.mod69Manga(manga.ogTitle) /* KMK <-- */
             if (mangaDir != null) {
                 return mangaDir.chapterDirs.size
             }
@@ -251,13 +249,7 @@ class DownloadCache(
     suspend fun removeChapter(chapter: Chapter, manga: Manga) {
         rootDownloadsDirMutex.withLock {
             val sourceDir = rootDownloadsDir.sourceDirs[manga.source] ?: return
-            val mangaDir = sourceDir.mangaDirs[
-                provider.getMangaDirName(
-                    // SY -->
-                    manga.ogTitle,
-                    // SY <--
-                ),
-            ] ?: return
+            val mangaDir = /* KMK --> */ sourceDir.mod69Manga(manga.ogTitle) /* KMK <-- */ ?: return
             provider.getValidChapterDirNames(chapter.name, chapter.scanlator, chapter.url).forEach {
                 if (it in mangaDir.chapterDirs) {
                     mangaDir.chapterDirs -= it
@@ -272,7 +264,7 @@ class DownloadCache(
     suspend fun removeFolders(folders: List<String>, manga: Manga) {
         rootDownloadsDirMutex.withLock {
             val sourceDir = rootDownloadsDir.sourceDirs[manga.source] ?: return
-            val mangaDir = sourceDir.mangaDirs[provider.getMangaDirName(manga.ogTitle)] ?: return
+            val mangaDir = /* KMK --> */ sourceDir.mod69Manga(manga.ogTitle) /* KMK <-- */ ?: return
             folders.forEach { chapter ->
                 if (chapter in mangaDir.chapterDirs) {
                     mangaDir.chapterDirs -= chapter
@@ -292,13 +284,7 @@ class DownloadCache(
     suspend fun removeChapters(chapters: List<Chapter>, manga: Manga) {
         rootDownloadsDirMutex.withLock {
             val sourceDir = rootDownloadsDir.sourceDirs[manga.source] ?: return
-            val mangaDir = sourceDir.mangaDirs[
-                provider.getMangaDirName(
-                    // SY -->
-                    manga.ogTitle,
-                    // SY <--
-                ),
-            ] ?: return
+            val mangaDir = /* KMK --> */ sourceDir.mod69Manga(manga.ogTitle) /* KMK <-- */ ?: return
             chapters.forEach { chapter ->
                 provider.getValidChapterDirNames(chapter.name, chapter.scanlator, chapter.url).forEach {
                     if (it in mangaDir.chapterDirs) {
@@ -558,6 +544,11 @@ private class RootDirectory(
  * Class to store the files under a source directory.
  */
 @Serializable
+// KMK --> 69 mod: an entry folder by its current name, or by the other name style (long / short)
+private fun SourceDirectory.mod69Manga(title: String): MangaDirectory? =
+    Injekt.get<DownloadProvider>().getMangaDirNames(title).firstNotNullOfOrNull { mangaDirs[it] }
+// KMK <--
+
 private class SourceDirectory(
     @Serializable(with = UniFileAsStringSerializer::class)
     val dir: UniFile?,

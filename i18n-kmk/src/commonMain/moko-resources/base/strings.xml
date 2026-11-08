@@ -257,6 +257,16 @@
     <string name="mod69_redownload_all_original">69- Redownload everything downloaded – original</string>
     <string name="mod69_redownload_queued">%1$d chapters queued again</string>
     <string name="mod69_file_picker">69- Folder / file picker</string>
+    <string name="mod69_file_picker_summary">%1$s. Used for backups, covers, CSV export and imports. The storage folder always uses the phone\'s picker (other pickers broke downloaded chapters)</string>
+    <string name="mod69_pick_download_folder">Download into which folder?</string>
+    <string name="mod69_pick_download_folder_summary">This entry is in more than one category. Your choice is remembered; change it later with "69- Download folder" in the entry\'s menu.</string>
+    <string name="mod69_scanlator_in_names">69- Scanlator name in chapter folder names</string>
+    <string name="mod69_scanlator_in_names_summary">On: "Group_Chapter 1". Off: "Chapter 1". Chapters downloaded either way are still found</string>
+    <string name="mod69_short_names">69- Short file names (Windows-safe)</string>
+    <string name="mod69_short_names_summary">Cuts long entry and chapter folder names so Windows can copy them. A short code at the end keeps cut names apart</string>
+    <string name="mod69_short_name_length">69- Max name length</string>
+    <string name="mod69_rename_downloads">69- Rename existing downloads</string>
+    <string name="mod69_rename_downloads_summary">Renames downloaded folders and .cbz files to the settings above. Shows progress and a summary in notifications</string>
     <string name="mod69_page_max_height">69- Max page height</string>
     <string name="mod69_storage_repick">69- Picked with 69-Material Files – tap and pick the folder again with the phone\'s picker (downloaded chapters could not open)</string>
     <string name="mod69_auto_update_extensions">69- Update extensions automatically</string>

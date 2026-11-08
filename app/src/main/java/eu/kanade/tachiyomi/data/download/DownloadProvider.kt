@@ -54,11 +54,7 @@ class DownloadProvider(
         }
 
         // KMK --> 69 mod: category folder (downloads/<category>/<entry>) when chosen / turned on
-        val mod69Folder = Mod69DownloadFolders.folderForNewDownload(
-            source,
-            mangaTitle,
-            hasSourceFolderDownloads = downloadsDir.findFile(getSourceDirName(source))?.findFile(getMangaDirName(mangaTitle)) != null,
-        )
+        val mod69Folder = Mod69DownloadFolders.folderForNewDownload(source, mangaTitle)
         val sourceDirName = mod69Folder ?: getSourceDirName(source)
         // KMK <--
         val sourceDir = downloadsDir.createDirectory(sourceDirName)
@@ -71,6 +67,23 @@ class DownloadProvider(
         }
 
         val mangaDirName = getMangaDirName(mangaTitle)
+        // KMK --> 69 mod: earlier downloads in the source folder move into the category folder first,
+        // and a folder made under the other name style (long / short) is renamed, so nothing is split
+        if (mod69Folder != null) {
+            val old = downloadsDir.findFile(getSourceDirName(source))?.let { dir ->
+                getMangaDirNames(mangaTitle).firstNotNullOfOrNull { dir.findFile(it) }
+            }
+            if (old != null && old.isDirectory) {
+                runCatching { Mod69DownloadFolders.moveDir(context, old, sourceDir) }
+                Injekt.get<DownloadCache>().invalidateCache()
+            }
+        }
+        if (sourceDir.findFile(mangaDirName) == null) {
+            getMangaDirNames(mangaTitle).drop(1).firstNotNullOfOrNull { sourceDir.findFile(it) }?.let {
+                if (it.renameTo(mangaDirName)) Injekt.get<DownloadCache>().invalidateCache()
+            }
+        }
+        // KMK <--
         val mangaDir = sourceDir.createDirectory(mangaDirName)
         if (mangaDir == null) {
             val displayablePath = sourceDir.displayablePath + "/$mangaDirName"
@@ -106,12 +119,13 @@ class DownloadProvider(
      */
     fun findMangaDir(mangaTitle: String, source: Source): UniFile? {
         // KMK --> 69 mod: entry kept in a category folder
+        val names = getMangaDirNames(mangaTitle)
         Mod69DownloadFolders.folderOf(source.id, mangaTitle)?.let { folder ->
-            downloadsDir?.findFile(folder)?.findFile(getMangaDirName(mangaTitle))?.let { return it }
+            downloadsDir?.findFile(folder)?.let { dir -> names.firstNotNullOfOrNull { dir.findFile(it) } }?.let { return it }
         }
+        val sourceDir = findSourceDir(source) ?: return null
+        return names.firstNotNullOfOrNull { sourceDir.findFile(it) }
         // KMK <--
-        val sourceDir = findSourceDir(source)
-        return sourceDir?.findFile(getMangaDirName(mangaTitle))
     }
 
     /**
@@ -207,11 +221,33 @@ class DownloadProvider(
      * @param mangaTitle the title of the manga to query.
      */
     fun getMangaDirName(mangaTitle: String): String {
-        return DiskUtil.buildValidFilename(
+        // KMK --> 69 mod: optional short (Windows-safe) names
+        return mod69MangaDirName(mangaTitle, downloadPreferences.mod69ShortNames().get())
+    }
+
+    /** The entry folder name, short or full. */
+    fun mod69MangaDirName(mangaTitle: String, short: Boolean): String {
+        val full = DiskUtil.buildValidFilename(
             mangaTitle,
             disallowNonAscii = libraryPreferences.disallowNonAsciiFilenames().get(),
         )
+        return if (short) mod69Shorten(full, mangaTitle, downloadPreferences.mod69ShortNameLength()) else full
     }
+
+    /** The current entry folder name first, then the other style, to find folders made before a change. */
+    fun getMangaDirNames(mangaTitle: String): List<String> {
+        val short = downloadPreferences.mod69ShortNames().get()
+        return listOf(mod69MangaDirName(mangaTitle, short), mod69MangaDirName(mangaTitle, !short)).distinct()
+    }
+
+    /** Cuts [name] to [length] characters; a short code from [key] keeps cut names apart. */
+    private fun mod69Shorten(name: String, key: String, length: Int): String {
+        if (name.length <= length) return name
+        var cut = name.take(length - 7)
+        if (cut.isNotEmpty() && cut.last().isHighSurrogate()) cut = cut.dropLast(1)
+        return cut.trimEnd('.', ' ', '_') + "_" + md5(key).take(6)
+    }
+    // KMK <--
 
     /**
      * Returns the chapter directory name for a chapter.
@@ -228,14 +264,27 @@ class DownloadProvider(
         // SY -->
         includeChapterUrlHash: Boolean = downloadPreferences.includeChapterUrlHash().get(),
         // SY <--
+        // KMK --> 69 mod
+        scanlatorPrefix: Boolean = downloadPreferences.mod69ScanlatorInChapterNames().get(),
+        shortLength: Int = if (downloadPreferences.mod69ShortNames().get()) downloadPreferences.mod69ShortNameLength() else 0,
+        // KMK <--
     ): String {
         var dirName = sanitizeChapterName(chapterName)
-        if (!chapterScanlator.isNullOrBlank()) {
+        if (/* KMK --> */ scanlatorPrefix && /* KMK <-- */ !chapterScanlator.isNullOrBlank()) {
             dirName = chapterScanlator + "_" + dirName
         }
         // Subtract 7 bytes for hash and underscore, 4 bytes for .cbz
         dirName = DiskUtil.buildValidFilename(dirName, DiskUtil.MAX_FILE_NAME_BYTES - 11, disallowNonAsciiFilenames)
-        /* SY --> */ if (includeChapterUrlHash) /* SY <-- */ dirName += "_" + md5(chapterUrl).take(6)
+        // KMK --> 69 mod: short names (the code at the end keeps cut names apart)
+        var mod69Cut = false
+        if (shortLength > 0 && dirName.length > shortLength - 7) {
+            var cut = dirName.take(shortLength - 7)
+            if (cut.isNotEmpty() && cut.last().isHighSurrogate()) cut = cut.dropLast(1)
+            dirName = cut.trimEnd('.', ' ', '_')
+            mod69Cut = true
+        }
+        // KMK <--
+        /* SY --> */ if (includeChapterUrlHash /* KMK --> */ || mod69Cut /* KMK <-- */) /* SY <-- */ dirName += "_" + md5(chapterUrl).take(6)
         return dirName
     }
 
@@ -276,12 +325,23 @@ class DownloadProvider(
                 // SY <--
             )
 
-        return buildList(2) {
+        return buildList {
             // Chapter name without hash (unable to handle duplicate
             // chapter names)
             add(chapterNameV1)
             add(otherChapterDirName)
-        }
+            // KMK --> 69 mod: names made with the scanlator / short name settings switched either way
+            val nonAscii = libraryPreferences.disallowNonAsciiFilenames().get()
+            val shortLength = downloadPreferences.mod69ShortNameLength()
+            for (scanlator in listOf(true, false)) {
+                for (short in listOf(0, shortLength)) {
+                    for (hash in listOf(true, false)) {
+                        add(getChapterDirName(chapterName, chapterScanlator, chapterUrl, nonAscii, hash, scanlator, short))
+                    }
+                }
+            }
+            // KMK <--
+        }.distinct()
     }
 
     /**

@@ -500,11 +500,18 @@ object SettingsAdvancedScreen : SearchableSettings {
     ): Preference.PreferenceGroup {
         val context = LocalContext.current
         val chooseColorProfile = rememberLauncherForActivityResult(
-            contract = ActivityResultContracts.OpenDocument(),
+            // KMK --> 69 mod: the chosen folder / file picker
+            contract = object : ActivityResultContracts.OpenDocument() {
+                override fun createIntent(context: android.content.Context, input: Array<String>): Intent =
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+            },
+            // KMK <--
         ) { uri ->
             uri?.let {
                 val flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
-                context.contentResolver.takePersistableUriPermission(uri, flags)
+                /* KMK --> */ runCatching {
+                    /* KMK <-- */ context.contentResolver.takePersistableUriPermission(uri, flags) /* KMK --> */
+                } /* KMK <-- */
                 basePreferences.displayProfile().set(uri.toString())
             }
         }

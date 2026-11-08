@@ -261,6 +261,12 @@
             android:name=".data.notification.NotificationReceiver"
             android:exported="false" />
 
+        <!-- KMK: 69 mod, Stop button of long jobs -->
+        <receiver
+            android:name=".data.notification.Mod69Progress$Mod69StopReceiver"
+            android:exported="false" />
+        <!-- KMK end -->
+
         <receiver
             android:name=".data.updater.AppUpdateBroadcast"
             android:exported="false">

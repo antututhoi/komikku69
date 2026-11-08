@@ -1463,10 +1463,30 @@ class MangaScreenModel(
         } else {
             // SY <--
             val manga = state.manga
-            downloadManager.downloadChapters(manga, chapters)
+            // KMK --> 69 mod: entries in 2+ categories ask which category folder to download into (once)
+            screenModelScope.launchIO {
+                val choices = runCatching {
+                    eu.kanade.tachiyomi.data.download.Mod69DownloadFolders.folderChoicesToAsk(manga)
+                }.getOrDefault(emptyList())
+                if (choices.isNotEmpty()) {
+                    updateSuccessState { it.copy(dialog = Dialog.Mod69PickFolder(manga, choices, chapters)) }
+                } else {
+                    downloadManager.downloadChapters(manga, chapters)
+                }
+            }
+            // KMK <--
         }
         toggleAllSelection(false)
     }
+
+    // KMK --> 69 mod
+    /** The category folder was picked in the popup: remember it and start the downloads. */
+    fun mod69DownloadIntoFolder(dialog: Dialog.Mod69PickFolder, folder: String) {
+        eu.kanade.tachiyomi.data.download.Mod69DownloadFolders.choose(dialog.manga.source, dialog.manga.ogTitle, folder)
+        dismissDialog()
+        downloadManager.downloadChapters(dialog.manga, dialog.chapters)
+    }
+    // KMK <--
 
     /**
      * Bookmarks the given list of chapters.
@@ -1917,6 +1937,13 @@ class MangaScreenModel(
 
         // KMK -->
         data object ClearManga : Dialog
+
+        /** 69 mod: which category folder to download into. [choices] = (category name, folder name). */
+        data class Mod69PickFolder(
+            val manga: Manga,
+            val choices: List<Pair<String, String>>,
+            val chapters: List<Chapter>,
+        ) : Dialog
         // KMK <--
 
         data object SettingsSheet : Dialog

@@ -487,6 +487,30 @@ class MangaScreen(
                     },
                 )
             }
+            // KMK --> 69 mod
+            is MangaScreenModel.Dialog.Mod69PickFolder -> {
+                androidx.compose.material3.AlertDialog(
+                    onDismissRequest = onDismissRequest,
+                    title = { androidx.compose.material3.Text(tachiyomi.presentation.core.i18n.stringResource(KMR.strings.mod69_pick_download_folder)) },
+                    text = {
+                        androidx.compose.foundation.layout.Column {
+                            androidx.compose.material3.Text(tachiyomi.presentation.core.i18n.stringResource(KMR.strings.mod69_pick_download_folder_summary))
+                            dialog.choices.forEach { (name, folder) ->
+                                androidx.compose.material3.TextButton(
+                                    onClick = { screenModel.mod69DownloadIntoFolder(dialog, folder) },
+                                ) { androidx.compose.material3.Text(name) }
+                            }
+                        }
+                    },
+                    confirmButton = {},
+                    dismissButton = {
+                        androidx.compose.material3.TextButton(onClick = onDismissRequest) {
+                            androidx.compose.material3.Text(tachiyomi.presentation.core.i18n.stringResource(MR.strings.action_cancel))
+                        }
+                    },
+                )
+            }
+            // KMK <--
             is MangaScreenModel.Dialog.DeleteChapters -> {
                 DeleteChaptersDialog(
                     onDismissRequest = onDismissRequest,
@@ -547,7 +571,14 @@ class MangaScreen(
                 val sm = rememberScreenModel { MangaCoverScreenModel(successState.manga.id) }
                 val manga by sm.state.collectAsState()
                 if (manga != null) {
-                    val getContent = rememberLauncherForActivityResult(ActivityResultContracts.GetContent()) {
+                    val getContent = rememberLauncherForActivityResult(
+                        // KMK --> 69 mod: the chosen folder / file picker
+                        object : ActivityResultContracts.GetContent() {
+                            override fun createIntent(context: android.content.Context, input: String): android.content.Intent =
+                                eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+                        },
+                        // KMK <--
+                    ) {
                         if (it == null) return@rememberLauncherForActivityResult
                         sm.editCover(context, it)
                     }
