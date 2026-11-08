@@ -137,7 +137,7 @@ class StorageManager(
             }
         }
 
-        private fun hasManageExternalStoragePermission(context: Context): Boolean {
+        /* KMK --> 69 mod: public */ fun hasManageExternalStoragePermission(context: Context): Boolean {
             return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 Environment.isExternalStorageManager()
             } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
@@ -149,7 +149,7 @@ class StorageManager(
             }
         }
 
-        private fun requestManageExternalStoragePermission(context: Context) {
+        /* KMK --> 69 mod: public */ fun requestManageExternalStoragePermission(context: Context) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 try {
                     val intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION).apply {

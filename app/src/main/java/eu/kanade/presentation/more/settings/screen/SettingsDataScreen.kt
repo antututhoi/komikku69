@@ -157,6 +157,21 @@ object SettingsDataScreen : SearchableSettings {
         // SY <--
     }
 
+    // KMK --> 69 mod
+    /** The real folder path inside a picker's link (file://, or a path written inside a content link). */
+    private fun mod69PathOf(uri: Uri): String? {
+        if (uri.scheme == "file") return uri.path?.takeIf { java.io.File(it).isDirectory }
+        val text = Uri.decode(Uri.decode(uri.toString()))
+        val path = Regex("(/storage/[^?#]+|/sdcard/[^?#]+|/mnt/[^?#]+)").find(text)?.value?.trimEnd('/')
+            ?: Regex("(?:primary|[0-9A-F]{4}-[0-9A-F]{4}):(.*)$").find(text)?.let { m ->
+                val volume = m.value.substringBefore(':')
+                val rest = m.groupValues[1]
+                if (volume == "primary") "/storage/emulated/0/$rest" else "/storage/$volume/$rest"
+            }
+        return path?.trimEnd('/')?.takeIf { java.io.File(it).let { f -> f.isDirectory || f.parentFile?.isDirectory == true } }
+    }
+    // KMK <--
+
     @Composable
     fun storageLocationPicker(
         storageDirPref: tachiyomi.core.common.preference.Preference<String>,
@@ -164,11 +179,33 @@ object SettingsDataScreen : SearchableSettings {
         val context = LocalContext.current
 
         return rememberLauncherForActivityResult(
-            // KMK --> 69 mod: always the phone's own picker here. A storage folder picked through
-            // 69-Material Files made downloaded chapters fail to open ("open failed: ENOENT").
-            contract = ActivityResultContracts.OpenDocumentTree(),
+            // KMK --> 69 mod: the chosen folder / file picker. Other pickers return their own kind of
+            // link, which breaks downloads ("open failed: ENOENT"); their real folder path is used
+            // instead, with "All files access" (also faster than the phone's picker links).
+            contract = object : ActivityResultContracts.OpenDocumentTree() {
+                override fun createIntent(context: Context, input: Uri?): Intent =
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+            },
             // KMK <--
         ) { uri ->
+            // KMK -->
+            if (uri != null && uri.authority != "com.android.externalstorage.documents") {
+                val path = mod69PathOf(uri)
+                when {
+                    path == null -> context.toast(KMR.strings.mod69_picker_folder_unusable)
+                    !tachiyomi.domain.storage.service.StorageManager.hasManageExternalStoragePermission(context) -> {
+                        context.toast(KMR.strings.mod69_picker_folder_need_access)
+                        tachiyomi.domain.storage.service.StorageManager.requestManageExternalStoragePermission(context)
+                    }
+                    else -> {
+                        val dir = java.io.File(path).apply { mkdirs() }
+                        storageDirPref.set("") // Trigger recompose
+                        storageDirPref.set(Uri.fromFile(dir).toString())
+                    }
+                }
+                return@rememberLauncherForActivityResult
+            }
+            // KMK <--
             if (uri != null) {
                 val flags = Intent.FLAG_GRANT_READ_URI_PERMISSION or
                     Intent.FLAG_GRANT_WRITE_URI_PERMISSION

@@ -190,7 +190,8 @@ object Mod69PageQuality {
             if (target.isDirectory) {
                 target.listFiles()?.forEach { f ->
                     val n = f.name ?: return@forEach
-                    if (isShrinkable(n) && !n.endsWith(".webp", ignoreCase = true)) {
+                    // WebP pages too: many sources send big WebP pages
+                    if (isShrinkable(n)) {
                         shrinkFile(f, target, n.substringBeforeLast('.'))
                     }
                 }
@@ -220,7 +221,7 @@ object Mod69PageQuality {
                     val bytes = zin.readBytes()
                     var entryName = e.name
                     var data = bytes
-                    if (isShrinkable(entryName) && !entryName.endsWith(".webp", ignoreCase = true)) {
+                    if (isShrinkable(entryName)) {
                         shrinkBytes(bytes)?.let {
                             data = it
                             entryName = entryName.substringBeforeLast('.') + ".webp"
@@ -245,14 +246,14 @@ object Mod69PageQuality {
     fun redownload(chapters: List<Chapter>, mode: String) {
         if (chapters.isEmpty()) return
         launchIO {
-            val dm = Injekt.get<DownloadManager>()
             val sources = Injekt.get<SourceManager>()
             val getManga = Injekt.get<GetManga>()
-            chapters.groupBy { it.mangaId }.forEach { (mangaId, list) ->
-                val manga = getManga.await(mangaId) ?: return@forEach
-                val source = sources.get(manga.source) ?: return@forEach
-                redownloadOne(dm, manga, source, list, mode)
+            val groups = chapters.groupBy { it.mangaId }.mapNotNull { (mangaId, list) ->
+                val manga = getManga.await(mangaId) ?: return@mapNotNull null
+                val source = sources.get(manga.source) ?: return@mapNotNull null
+                Triple(manga, source, list)
             }
+            runRedownload(groups, mode)
         }
     }
 
@@ -268,17 +269,72 @@ object Mod69PageQuality {
         val dm = Injekt.get<DownloadManager>()
         val sources = Injekt.get<SourceManager>()
         val getChapters = Injekt.get<GetChaptersByMangaId>()
-        var count = 0
+        val groups = mutableListOf<Triple<Manga, Source, List<Chapter>>>()
         for (manga in Injekt.get<GetFavorites>().await()) {
             val source = sources.get(manga.source) ?: continue
             val downloaded = getChapters.await(manga.id).filter {
                 dm.isChapterDownloaded(it.name, it.scanlator, it.url, manga.ogTitle, manga.source)
             }
-            if (downloaded.isEmpty()) continue
-            count += downloaded.size
-            redownloadOne(dm, manga, source, downloaded, mode)
+            if (downloaded.isNotEmpty()) groups += Triple(manga, source, downloaded)
         }
-        return count
+        launchIO { runRedownload(groups, mode) }
+        return groups.sumOf { it.third.size }
+    }
+
+    /**
+     * Deletes and queues the chapters again, with a progress notification while they download
+     * and a summary at the end (chapters done, size before -> after, time).
+     */
+    private suspend fun runRedownload(groups: List<Triple<Manga, Source, List<Chapter>>>, mode: String) {
+        if (groups.isEmpty()) return
+        val dm = Injekt.get<DownloadManager>()
+        val provider = Injekt.get<DownloadProvider>()
+        val context = Injekt.get<android.app.Application>()
+        val p = eu.kanade.tachiyomi.data.notification.Mod69Progress
+        val id = p.ID_REDOWNLOAD
+        val title = if (mode == SMALLER) "Downloading again, smaller" else "Downloading again, original quality"
+        val started = System.currentTimeMillis()
+        val total = groups.sumOf { it.third.size }
+        fun sizeOf(f: UniFile): Long =
+            if (f.isDirectory) f.listFiles().orEmpty().sumOf { it.length() } else f.length()
+        fun sizeNow(): Long = groups.sumOf { (manga, source, list) ->
+            list.sumOf { ch ->
+                provider.findChapterDir(ch.name, ch.scanlator, ch.url, manga.ogTitle, source)?.let { sizeOf(it) } ?: 0L
+            }
+        }
+        p.start(context, id, title)
+        p.update(context, id, title, "Measuring the current size…", 0, 0, force = true)
+        val before = sizeNow()
+        for ((i, g) in groups.withIndex()) {
+            if (p.isStopped(id)) break
+            p.update(context, id, title, "Queueing ${g.first.title}", i + 1, groups.size)
+            redownloadOne(dm, g.first, g.second, g.third, mode)
+        }
+        // wait while they download (the download notification shows the details of each page)
+        val ids = groups.flatMap { g -> g.third.map { it.id } }.toSet()
+        val deadline = System.currentTimeMillis() + 12 * 60 * 60 * 1000L
+        while (System.currentTimeMillis() < deadline && !p.isStopped(id)) {
+            val left = dm.queueState.value.count { it.chapter.id in ids }
+            p.update(context, id, title, "${total - left} of $total chapters downloaded", total - left, total)
+            if (left == 0) break
+            delay(2000)
+        }
+        val done = groups.sumOf { (manga, _, list) ->
+            list.count { dm.isChapterDownloaded(it.name, it.scanlator, it.url, manga.ogTitle, manga.source) }
+        }
+        val after = sizeNow()
+        p.finish(
+            context,
+            id,
+            "Downloading again finished",
+            listOf(
+                "Chapters downloaded again: $done of $total",
+                "Not downloaded (failed or cancelled): ${total - done}",
+                "Size: ${p.size(before)} → ${p.size(after)}" +
+                    if (after < before) " (saved ${p.size(before - after)})" else "",
+                "Time: ${p.duration(System.currentTimeMillis() - started)}",
+            ),
+        )
     }
 
     private suspend fun redownloadOne(dm: DownloadManager, manga: Manga, source: Source, chapters: List<Chapter>, mode: String) {

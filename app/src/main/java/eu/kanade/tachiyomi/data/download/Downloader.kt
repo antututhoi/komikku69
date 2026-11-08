@@ -733,6 +733,9 @@ class Downloader(
     private inline fun removeFromQueueIf(predicate: (Download) -> Boolean) {
         _queueState.update { queue ->
             val downloads = queue.filter { predicate(it) }
+            // KMK --> 69 mod: cancelled downloads leave no half-downloaded files behind
+            mod69DeletePartial(downloads)
+            // KMK <--
             store.removeAll(downloads)
             downloads.forEach { download ->
                 if (download.status == Download.State.DOWNLOADING || download.status == Download.State.QUEUE) {
@@ -742,6 +745,46 @@ class Downloader(
             queue - downloads.toSet()
         }
     }
+
+    // KMK --> 69 mod
+    /**
+     * Deletes the half-downloaded pages ("…_tmp" folder / ".cbz_tmp" file) of cancelled downloads,
+     * and the entry folder when nothing else is left in it. Finished downloads are not touched.
+     */
+    private fun mod69DeletePartial(downloads: List<Download>) {
+        val unfinished = downloads.filter { it.status != Download.State.DOWNLOADED }
+        if (unfinished.isEmpty()) return
+        scope.launchIO {
+            delay(1500) // let the stopped download let go of its files
+            unfinished.forEach { download ->
+                runCatching {
+                    val mangaDir = provider.findMangaDir(download.manga.ogTitle, download.source) ?: return@runCatching
+                    if (getQueuedOrDownloaded(download)) return@runCatching
+                    val name = provider.getChapterDirName(
+                        download.chapter.name,
+                        download.chapter.scanlator,
+                        download.chapter.url,
+                    )
+                    mangaDir.findFile(name + TMP_DIR_SUFFIX)?.delete()
+                    mangaDir.findFile("$name.cbz$TMP_DIR_SUFFIX")?.delete()
+                    val left = mangaDir.listFiles().orEmpty().filterNot { it.name == ".nomedia" }
+                    if (left.isEmpty()) mangaDir.delete()
+                }
+            }
+        }
+    }
+
+    /** Queued again, or finished meanwhile: keep its files. */
+    private fun getQueuedOrDownloaded(download: Download): Boolean =
+        queueState.value.any { it.chapter.id == download.chapter.id } ||
+            provider.findChapterDir(
+                download.chapter.name,
+                download.chapter.scanlator,
+                download.chapter.url,
+                download.manga.ogTitle,
+                download.source,
+            ) != null
+    // KMK <--
 
     fun removeFromQueue(chapters: List<Chapter>) {
         val chapterIds = chapters.map { it.id }
@@ -754,6 +797,9 @@ class Downloader(
 
     private fun internalClearQueue() {
         _queueState.update {
+            // KMK --> 69 mod: cancelled downloads leave no half-downloaded files behind
+            mod69DeletePartial(it)
+            // KMK <--
             it.forEach { download ->
                 if (download.status == Download.State.DOWNLOADING || download.status == Download.State.QUEUE) {
                     download.status = Download.State.NOT_DOWNLOADED

@@ -257,7 +257,9 @@
     <string name="mod69_redownload_all_original">69- Redownload everything downloaded – original</string>
     <string name="mod69_redownload_queued">%1$d chapters queued again</string>
     <string name="mod69_file_picker">69- Folder / file picker</string>
-    <string name="mod69_file_picker_summary">%1$s. Used for backups, covers, CSV export and imports. The storage folder always uses the phone\'s picker (other pickers broke downloaded chapters)</string>
+    <string name="mod69_file_picker_summary">%1$s. Used for the storage folder, backups, covers, CSV export and imports. Other pickers need "All files access" for the storage folder</string>
+    <string name="mod69_picker_folder_unusable">That picker didn\'t give a usable folder. Pick it again, or use the phone\'s picker</string>
+    <string name="mod69_picker_folder_need_access">Allow "All files access" for Komikku, then pick the folder again</string>
     <string name="mod69_pick_download_folder">Download into which folder?</string>
     <string name="mod69_pick_download_folder_summary">This entry is in more than one category. Your choice is remembered; change it later with "69- Download folder" in the entry\'s menu.</string>
     <string name="mod69_scanlator_in_names">69- Scanlator name in chapter folder names</string>

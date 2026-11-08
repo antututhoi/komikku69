@@ -23,6 +23,7 @@ object Mod69Progress {
     const val ID_RENAME = -6904
     const val ID_MOVE = -6905
     const val ID_CONVERT = -6906
+    const val ID_REDOWNLOAD = -6907
 
     private const val EXTRA_ID = "mod69_job_id"
     private val stopped = ConcurrentHashMap.newKeySet<Int>()
