@@ -15,6 +15,14 @@ class NetworkPreferences(
         return preferenceStore.getInt("doh_provider", -1)
     }
 
+    // KMK --> 69 mod
+    /** B7: address put in front of GitHub addresses, e.g. "https://ghproxy.net/". Empty = off. */
+    fun mod69GithubMirror(): Preference<String> = preferenceStore.getString("mod69_github_mirror", "")
+
+    /** B11: picture proxy address with {url} in it. Empty = off. */
+    fun mod69ImageProxy(): Preference<String> = preferenceStore.getString("mod69_image_proxy", "")
+    // KMK <--
+
     fun defaultUserAgent(): Preference<String> {
         return preferenceStore.getString(
             "default_user_agent",

@@ -76,6 +76,42 @@ object SettingsDownloadScreen : SearchableSettings {
             ),
             // KMK -->
             Preference.PreferenceItem.ListPreference(
+                preference = downloadPreferences.mod69SpeedLimitKb(),
+                entries = persistentMapOf(
+                    0 to stringResource(KMR.strings.mod69_no_limit),
+                    256 to "256 KB/s",
+                    512 to "512 KB/s",
+                    1024 to "1 MB/s",
+                    2048 to "2 MB/s",
+                    5120 to "5 MB/s",
+                ),
+                title = stringResource(KMR.strings.mod69_speed_limit),
+                subtitle = stringResource(KMR.strings.mod69_speed_limit_summary),
+            ),
+            Preference.PreferenceItem.ListPreference(
+                preference = downloadPreferences.mod69DownloadDelayMs(),
+                entries = persistentMapOf(
+                    0 to stringResource(KMR.strings.mod69_no_pause),
+                    250 to "0.25 s",
+                    500 to "0.5 s",
+                    1000 to "1 s",
+                    2000 to "2 s",
+                ),
+                title = stringResource(KMR.strings.mod69_download_delay),
+                subtitle = stringResource(KMR.strings.mod69_download_delay_summary),
+            ),
+            Preference.PreferenceItem.ListPreference(
+                preference = downloadPreferences.mod69DownloadRetries(),
+                entries = persistentMapOf(
+                    0 to "0",
+                    1 to "1",
+                    3 to "3 (normal)",
+                    5 to "5",
+                    8 to "8",
+                ),
+                title = stringResource(KMR.strings.mod69_download_retries),
+            ),
+            Preference.PreferenceItem.ListPreference(
                 preference = downloadPreferences.mod69PageQuality(),
                 entries = persistentMapOf(
                     "original" to stringResource(KMR.strings.mod69_page_quality_original),

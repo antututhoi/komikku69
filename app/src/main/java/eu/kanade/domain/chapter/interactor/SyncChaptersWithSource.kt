@@ -61,7 +61,11 @@ class SyncChaptersWithSource(
         val now = ZonedDateTime.now()
         val nowMillis = now.toInstant().toEpochMilli()
 
-        val sourceChapters = rawSourceChapters
+        // KMK --> 69 mod P21: sources that list chapters backwards get their list flipped
+        val mod69Flip = source.id.toString() in uy.kohesive.injekt.Injekt
+            .get<eu.kanade.domain.source.service.SourcePreferences>().mod69ReverseChapterSources().get()
+        val sourceChapters = (if (mod69Flip) rawSourceChapters.reversed() else rawSourceChapters)
+            // KMK <--
             .distinctBy { it.url }
             .mapIndexed { i, sChapter ->
                 Chapter.create()

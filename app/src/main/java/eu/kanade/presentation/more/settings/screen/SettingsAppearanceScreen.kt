@@ -26,6 +26,7 @@ import eu.kanade.presentation.more.settings.widget.AppThemeModePreferenceWidget
 import eu.kanade.presentation.more.settings.widget.AppThemePreferenceWidget
 import eu.kanade.tachiyomi.util.system.toast
 import kotlinx.collections.immutable.persistentListOf
+import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.collections.immutable.toImmutableMap
 import tachiyomi.i18n.MR
 import tachiyomi.i18n.kmk.KMR
@@ -101,6 +102,11 @@ object SettingsAppearanceScreen : SearchableSettings {
                     }
                 },
                 // KMK -->
+                Preference.PreferenceItem.CustomPreference(
+                    title = stringResource(KMR.strings.mod69_theme_presets),
+                ) {
+                    eu.kanade.presentation.more.settings.widget.Mod69ThemeTools(uiPreferences)
+                },
                 Preference.PreferenceItem.TextPreference(
                     title = stringResource(KMR.strings.pref_custom_color),
                     subtitle = stringResource(KMR.strings.custom_color_description),
@@ -135,6 +141,26 @@ object SettingsAppearanceScreen : SearchableSettings {
                         .toImmutableMap(),
                     title = stringResource(KMR.strings.pref_custom_theme_style),
                     enabled = appTheme == AppTheme.CUSTOM,
+                    onValueChanged = {
+                        (context as? Activity)?.let { ActivityCompat.recreate(it) }
+                        true
+                    },
+                ),
+                // KMK <--
+                // KMK --> 69 mod U7
+                Preference.PreferenceItem.ListPreference(
+                    preference = uiPreferences.mod69AppFont(),
+                    entries = persistentMapOf(
+                        "default" to stringResource(KMR.strings.mod69_font_default),
+                        "serif" to "Serif",
+                        "mono" to "Monospace",
+                        "cursive" to "Cursive",
+                        "condensed" to "Condensed",
+                        "light" to "Light",
+                        "medium" to "Medium",
+                        "casual" to "Casual",
+                    ),
+                    title = stringResource(KMR.strings.mod69_app_font),
                     onValueChanged = {
                         (context as? Activity)?.let { ActivityCompat.recreate(it) }
                         true

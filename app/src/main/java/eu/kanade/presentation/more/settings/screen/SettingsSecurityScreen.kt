@@ -52,11 +52,13 @@ import eu.kanade.tachiyomi.ui.category.biometric.BiometricTimesScreen
 import eu.kanade.tachiyomi.util.system.AuthenticatorUtil.authenticate
 import eu.kanade.tachiyomi.util.system.AuthenticatorUtil.isAuthenticationSupported
 import eu.kanade.tachiyomi.util.system.telemetryIncluded
+import eu.kanade.tachiyomi.util.system.toast
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableMap
 import mihon.core.archive.CbzCrypto
 import tachiyomi.core.common.i18n.stringResource
 import tachiyomi.i18n.MR
+import tachiyomi.i18n.kmk.KMR
 import tachiyomi.i18n.sy.SYMR
 import tachiyomi.presentation.core.i18n.pluralStringResource
 import tachiyomi.presentation.core.i18n.stringResource
@@ -109,6 +111,33 @@ object SettingsSecurityScreen : SearchableSettings {
                         )
                     },
                 ),
+                // KMK --> 69 mod X2: own PIN
+                run {
+                    var pinSet by remember { mutableStateOf(eu.kanade.tachiyomi.util.system.Mod69Pin.isSet(context)) }
+                    Preference.PreferenceItem.TextPreference(
+                        title = stringResource(KMR.strings.mod69_pin_lock),
+                        subtitle = stringResource(
+                            if (pinSet) KMR.strings.mod69_pin_is_on else KMR.strings.mod69_pin_is_off,
+                        ),
+                        enabled = authSupported && useAuth,
+                        onClick = {
+                            if (pinSet) {
+                                eu.kanade.tachiyomi.util.system.Mod69Pin.clear(context)
+                                pinSet = false
+                                context.toast(KMR.strings.mod69_pin_removed)
+                            } else {
+                                eu.kanade.tachiyomi.util.system.Mod69Pin.askNew(
+                                    context = context,
+                                    title = context.stringResource(KMR.strings.mod69_pin_new),
+                                    again = context.stringResource(KMR.strings.mod69_pin_again),
+                                    mismatch = context.stringResource(KMR.strings.mod69_pin_mismatch),
+                                    onSet = { pinSet = true },
+                                )
+                            }
+                        },
+                    )
+                },
+                // KMK <--
                 Preference.PreferenceItem.ListPreference(
                     preference = securityPreferences.lockAppAfter(),
                     entries = LockAfterValues

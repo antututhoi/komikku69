@@ -73,6 +73,15 @@ class LibraryPreferences(
 
     fun autoUpdateMetadata() = preferenceStore.getBoolean("auto_update_metadata", false)
 
+    // KMK --> 69 mod: library / entry extras
+    fun mod69SortIgnoreArticles() = preferenceStore.getBoolean("mod69_sort_ignore_articles", false)
+    fun mod69BadgeStyle() = preferenceStore.getString("mod69_badge_style", "number")
+    fun mod69TitleLines() = preferenceStore.getInt("mod69_title_lines", 0)
+    fun mod69ConfirmRemove() = preferenceStore.getBoolean("mod69_confirm_remove", false)
+    fun mod69ShowDateAdded() = preferenceStore.getBoolean("mod69_show_date_added", false)
+    fun mod69TidyTags() = preferenceStore.getBoolean("mod69_tidy_tags", false)
+    // KMK <--
+
     // KMK -->
     fun fetchMetadataOnAdd() = preferenceStore.getBoolean("fetch_metadata_on_add", false)
     fun fetchChaptersOnAdd() = preferenceStore.getBoolean("fetch_chapters_on_add", false)

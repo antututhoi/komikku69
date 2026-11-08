@@ -25,6 +25,11 @@ class UiPreferences(
     fun themeDarkAmoled() = preferenceStore.getBoolean("pref_theme_dark_amoled_key", false)
 
     // KMK -->
+    // KMK --> 69 mod
+    /** U7: "default", "serif", "mono", "cursive", "condensed", "light", "medium" or "casual". */
+    fun mod69AppFont() = preferenceStore.getString("mod69_app_font", "default")
+    // KMK <--
+
     fun colorTheme() = preferenceStore.getInt("pref_color_theme", 0xFFDF0090.toInt())
 
     fun customThemeStyle() = preferenceStore.getEnum("pref_custom_theme_style_key", PaletteStyle.Fidelity)

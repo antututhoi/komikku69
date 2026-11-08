@@ -146,6 +146,14 @@ class SourcePreferences(
     fun recommendationSearchFlags() = preferenceStore.getInt("rec_search_flags", Int.MAX_VALUE)
     // SY <--
 
+    // KMK --> 69 mod
+    /** P19: tapping a source opens its Latest list (when it has one) instead of Popular. */
+    fun mod69OpenLatestFirst() = preferenceStore.getBoolean("mod69_open_latest_first", false)
+
+    /** P21: ids of sources whose chapter list comes oldest-first from the source, so it is flipped. */
+    fun mod69ReverseChapterSources() = preferenceStore.getStringSet("mod69_reverse_chapter_sources", emptySet())
+    // KMK <--
+
     // KMK -->
     fun relatedMangas() = preferenceStore.getBoolean("related_mangas", true)
 

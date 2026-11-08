@@ -48,6 +48,15 @@ class DownloadPreferences(
     /** Max characters of an entry / chapter folder name when [mod69ShortNames] is on (30..200). */
     fun mod69ShortNameLength(): Int = mod69ShortNameLengthText().get().trim().toIntOrNull()?.coerceIn(30, 200) ?: 80
 
+    /** W4: pause in milliseconds before each picture is requested (0 = none). */
+    fun mod69DownloadDelayMs() = preferenceStore.getInt("mod69_download_delay_ms", 0)
+
+    /** W4: how many times a picture is tried again after a failure (3 = normal). */
+    fun mod69DownloadRetries() = preferenceStore.getInt("mod69_download_retries", 3)
+
+    /** P17: speed limit in KB per second for all downloads together (0 = no limit). */
+    fun mod69SpeedLimitKb() = preferenceStore.getInt("mod69_speed_limit_kb", 0)
+
     /** WebP quality 1..100. */
     fun mod69PageWebpQuality(): Int = mod69PageWebpQualityText().get().trim().toIntOrNull()?.coerceIn(1, 100) ?: 80
     // KMK <--

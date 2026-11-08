@@ -48,6 +48,7 @@ import eu.kanade.presentation.util.isTabletUi
 import tachiyomi.i18n.MR
 import tachiyomi.presentation.core.components.material.Slider
 import tachiyomi.presentation.core.i18n.stringResource
+import uy.kohesive.injekt.api.get
 
 @Composable
 fun ChapterNavigator(

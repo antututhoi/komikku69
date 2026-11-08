@@ -34,6 +34,7 @@ import tachiyomi.i18n.MR
 import tachiyomi.i18n.kmk.KMR
 import tachiyomi.i18n.sy.SYMR
 import tachiyomi.presentation.core.i18n.stringResource
+import uy.kohesive.injekt.api.get
 
 @Composable
 fun Screen.sourcesTab(
@@ -83,7 +84,19 @@ fun Screen.sourcesTab(
             SourcesScreen(
                 state = state,
                 contentPadding = contentPadding,
-                onClickItem = { source, listing ->
+                onClickItem = { source, listing0 ->
+                    // KMK --> 69 mod P19: open Latest first when chosen
+                    val listing = if (
+                        listing0 == Listing.Popular && source.supportsLatest &&
+                        smartSearchConfig == null &&
+                        uy.kohesive.injekt.Injekt.get<eu.kanade.domain.source.service.SourcePreferences>()
+                            .mod69OpenLatestFirst().get()
+                    ) {
+                        Listing.Latest
+                    } else {
+                        listing0
+                    }
+                    // KMK <--
                     // SY -->
                     val screen = when {
                         // Search selected source for entries to merge or for the recommending entry

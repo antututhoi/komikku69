@@ -51,6 +51,14 @@ import kotlin.random.Random
             )
             .addInterceptor(UncaughtExceptionInterceptor())
             .addInterceptor(UserAgentInterceptor(::defaultUserAgentProvider))
+            // KMK --> 69 mod B7 / B11
+            .addInterceptor(
+                eu.kanade.tachiyomi.network.interceptor.Mod69UrlInterceptor(
+                    githubMirror = { preferences.mod69GithubMirror().get() },
+                    imageProxy = { preferences.mod69ImageProxy().get() },
+                ),
+            )
+        // KMK <--
 
         // KMK -->
         if (EHLogLevel.isExtraLogging()) {

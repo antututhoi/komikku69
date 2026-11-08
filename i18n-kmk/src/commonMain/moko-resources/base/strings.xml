@@ -348,4 +348,44 @@
     <string name="mod69_date_added">Added to library: %1$s</string>
     <string name="mod69_tidy_tags">69- Tidy tags</string>
     <string name="mod69_tidy_tags_summary">Shows tags with the same capital letters, without duplicates, sorted A-Z</string>
+    <string name="mod69_db_cleanup">69- Clean up the database</string>
+    <string name="mod69_db_cleanup_summary">Makes the library database smaller and faster. A notification shows the sizes when it is done</string>
+    <string name="mod69_clear_caches">69- Clear all caches</string>
+    <string name="mod69_clear_caches_summary">Empties the page cache and the picture cache. Downloads and your library are not touched</string>
+    <string name="mod69_no_pause">No pause (normal)</string>
+    <string name="mod69_update_delay">69- Pause between entries when updating</string>
+    <string name="mod69_update_delay_summary">Waits a little before each entry of a source is checked. Gentler for sources that block you</string>
+    <string name="mod69_update_parallel">69- Sources updated at the same time</string>
+    <string name="mod69_update_parallel_summary">Lower = slower but gentler on your phone and the sources</string>
+    <string name="mod69_no_limit">No limit</string>
+    <string name="mod69_speed_limit">69- Download speed limit</string>
+    <string name="mod69_speed_limit_summary">Caps all downloads together so browsing and streaming stay fast</string>
+    <string name="mod69_download_delay">69- Pause before each picture</string>
+    <string name="mod69_download_delay_summary">Gentler for sources that block fast downloads</string>
+    <string name="mod69_download_retries">69- Tries again after a failed picture</string>
+    <string name="mod69_github_mirror">69- GitHub mirror</string>
+    <string name="mod69_github_mirror_summary">For when GitHub is blocked. An address that is put in front of GitHub links (extension lists, downloads, updates), for example https://ghproxy.net/ . Leave empty to switch off</string>
+    <string name="mod69_image_proxy">69- Picture proxy (saves data)</string>
+    <string name="mod69_image_proxy_summary">Experimental. Sends pictures through a compressing service. Write its address with {url} where the real address goes, for example https://wsrv.nl/?url={url}&amp;w=1080&amp;q=70&amp;output=webp . Leave empty to switch off</string>
+    <string name="mod69_browse_extras">69- Browse extras</string>
+    <string name="mod69_open_latest_first">69- Open sources on Latest</string>
+    <string name="mod69_open_latest_first_summary">Tapping a source opens its Latest list first (when the source has one)</string>
+    <string name="mod69_reverse_chapters">69- Flip the chapter order for these sources</string>
+    <string name="mod69_reverse_chapters_summary">For sources that list chapters backwards. Pull to refresh an entry\'s chapters afterwards</string>
+    <string name="mod69_theme_presets">69- Theme presets</string>
+    <string name="mod69_theme_presets_summary">Tap one to use it as your custom theme. You can still change its color and style below</string>
+    <string name="mod69_theme_export">Save theme to a file</string>
+    <string name="mod69_theme_import">Load theme from a file</string>
+    <string name="mod69_theme_exported">Theme saved</string>
+    <string name="mod69_theme_import_failed">That file is not a 69-Komikku theme</string>
+    <string name="mod69_app_font">69- App font</string>
+    <string name="mod69_font_default">Default</string>
+    <string name="mod69_pin_lock">69- PIN lock</string>
+    <string name="mod69_pin_is_on">On. Tap to remove the PIN. The app asks for the PIN (or the phone lock) when it is locked</string>
+    <string name="mod69_pin_is_off">Off. Tap to set a PIN of 4-8 digits. Needs \'Lock with biometrics\' switched on, which also sets when it locks</string>
+    <string name="mod69_pin_removed">PIN removed</string>
+    <string name="mod69_pin_new">Choose a PIN (4-8 digits)</string>
+    <string name="mod69_pin_again">Type the PIN again</string>
+    <string name="mod69_pin_mismatch">The two PINs are different</string>
+    <string name="mod69_pin_use_phone_lock">Use phone lock</string>
 </resources>

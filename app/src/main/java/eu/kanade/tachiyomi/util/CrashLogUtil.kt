@@ -33,12 +33,29 @@ class CrashLogUtil(
 
             Runtime.getRuntime().exec("logcat *:E -d -v year -v zone -f ${file.absolutePath}").waitFor()
 
+            // KMK --> 69 mod X6: remove login tokens, cookies, passwords and email addresses
+            file.writeText(mod69Redact(file.readText()))
+            // KMK <--
+
             val uri = file.getUriCompat(context)
             context.startActivity(uri.toShareIntent(context, "text/plain"))
         } catch (e: Throwable) {
             withUIContext { context.toast("Failed to get logs") }
         }
     }
+
+    // KMK -->
+    private fun mod69Redact(text: String): String {
+        var result = text
+        listOf(
+            Regex("(?i)(authorization:?\\s*(?:bearer|basic)?\\s*)[A-Za-z0-9._~+/=-]{8,}") to "$1<hidden>",
+            Regex("(?i)(access_token|refresh_token|token|api_key|apikey|password|passwd|secret|session|sessionid|code)(=|\":\\s*\")[^&\\s\"']{4,}") to "$1$2<hidden>",
+            Regex("(?i)((?:set-)?cookie:?\\s*)[^\\n]+") to "$1<hidden>",
+            Regex("[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}") to "<email hidden>",
+        ).forEach { (regex, replacement) -> result = regex.replace(result, replacement) }
+        return result
+    }
+    // KMK <--
 
     fun getDebugInfo(): String {
         return """

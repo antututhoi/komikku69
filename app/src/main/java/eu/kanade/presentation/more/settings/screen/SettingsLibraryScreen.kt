@@ -81,6 +81,30 @@ object SettingsLibraryScreen : SearchableSettings {
         return Preference.PreferenceGroup(
             title = stringResource(KMR.strings.mod69_library_extras),
             preferenceItems = persistentListOf(
+                Preference.PreferenceItem.ListPreference(
+                    preference = libraryPreferences.mod69UpdateDelayMs(),
+                    entries = persistentMapOf(
+                        0 to stringResource(KMR.strings.mod69_no_pause),
+                        500 to "0.5 s",
+                        1000 to "1 s",
+                        2000 to "2 s",
+                        5000 to "5 s",
+                    ),
+                    title = stringResource(KMR.strings.mod69_update_delay),
+                    subtitle = stringResource(KMR.strings.mod69_update_delay_summary),
+                ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = libraryPreferences.mod69UpdateParallel(),
+                    entries = persistentMapOf(
+                        1 to "1",
+                        2 to "2",
+                        3 to "3",
+                        5 to "5 (normal)",
+                        8 to "8",
+                    ),
+                    title = stringResource(KMR.strings.mod69_update_parallel),
+                    subtitle = stringResource(KMR.strings.mod69_update_parallel_summary),
+                ),
                 Preference.PreferenceItem.SwitchPreference(
                     preference = libraryPreferences.mod69SortIgnoreArticles(),
                     title = stringResource(KMR.strings.mod69_sort_ignore_articles),

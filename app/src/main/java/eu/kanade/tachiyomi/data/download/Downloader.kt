@@ -534,10 +534,32 @@ class Downloader(
         page.status = Page.State.DownloadImage
         page.progress = 0
         return flow {
+            // KMK --> 69 mod W4: pause before each picture
+            val mod69Delay = downloadPreferences.mod69DownloadDelayMs().get().toLong()
+            if (mod69Delay > 0) delay(mod69Delay)
+            // KMK <--
             val response = source.getImage(page, dataSaver)
             val file = tmpDir.createFile("$filename.tmp")!!
             try {
-                response.body.source().saveTo(file.openOutputStream())
+                // KMK --> 69 mod P17: optional speed limit
+                val mod69Limit = downloadPreferences.mod69SpeedLimitKb().get() * 1024L
+                if (mod69Limit > 0) {
+                    val input = response.body.source()
+                    file.openOutputStream().use { out ->
+                        val buffer = ByteArray(8192)
+                        while (true) {
+                            val read = input.read(buffer)
+                            if (read < 0) break
+                            Mod69Throttle.consume(read, mod69Limit)
+                            out.write(buffer, 0, read)
+                        }
+                    }
+                } else {
+                    // KMK <--
+                    response.body.source().saveTo(file.openOutputStream())
+                    // KMK -->
+                }
+                // KMK <--
                 val extension = getImageExtension(response, file)
                 file.renameTo("$filename.$extension")
             } catch (e: Exception) {
@@ -549,7 +571,9 @@ class Downloader(
         }
             // Retry 3 times, waiting 2, 4 and 8 seconds between attempts.
             .retryWhen { _, attempt ->
-                if (attempt < 3) {
+                // KMK --> 69 mod W4: retry count is a setting
+                if (attempt < downloadPreferences.mod69DownloadRetries().get()) {
+                    // KMK <--
                     delay((2L shl attempt.toInt()) * 1000)
                     if (source.isEhBasedSource()) {
                         page.imageUrl = source.getImageUrl(page)
@@ -838,3 +862,22 @@ class Downloader(
 
 // Arbitrary minimum required space to start a download: 200 MB
 private const val MIN_DISK_SPACE = 200L * 1024 * 1024
+
+// KMK --> 69 mod P17
+/** Shares one speed limit between all pictures that download at the same time. */
+internal object Mod69Throttle {
+    private var nextFree = 0L
+
+    fun consume(bytes: Int, limitBytesPerSecond: Long) {
+        if (limitBytesPerSecond <= 0) return
+        val wait: Long
+        synchronized(this) {
+            val now = System.currentTimeMillis()
+            val start = maxOf(now, nextFree)
+            nextFree = start + bytes * 1000L / limitBytesPerSecond
+            wait = start - now
+        }
+        if (wait > 0) Thread.sleep(wait)
+    }
+}
+// KMK <--

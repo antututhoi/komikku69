@@ -241,6 +241,9 @@ object SettingsAdvancedScreen : SearchableSettings {
     private fun getDataGroup(): Preference.PreferenceGroup {
         val context = LocalContext.current
         val navigator = LocalNavigator.currentOrThrow
+        // KMK -->
+        val scope = rememberCoroutineScope()
+        // KMK <--
 
         return Preference.PreferenceGroup(
             title = stringResource(MR.strings.label_data),
@@ -258,6 +261,22 @@ object SettingsAdvancedScreen : SearchableSettings {
                     subtitle = stringResource(MR.strings.pref_clear_database_summary),
                     onClick = { navigator.push(ClearDatabaseScreen()) },
                 ),
+                // KMK --> 69 mod M1 / M2
+                Preference.PreferenceItem.TextPreference(
+                    title = stringResource(KMR.strings.mod69_db_cleanup),
+                    subtitle = stringResource(KMR.strings.mod69_db_cleanup_summary),
+                    onClick = {
+                        scope.launchNonCancellable { eu.kanade.tachiyomi.data.Mod69Upkeep.optimiseDatabase(context) }
+                    },
+                ),
+                Preference.PreferenceItem.TextPreference(
+                    title = stringResource(KMR.strings.mod69_clear_caches),
+                    subtitle = stringResource(KMR.strings.mod69_clear_caches_summary),
+                    onClick = {
+                        scope.launchNonCancellable { eu.kanade.tachiyomi.data.Mod69Upkeep.clearAllCaches(context) }
+                    },
+                ),
+                // KMK <--
             ),
         )
     }
@@ -342,6 +361,18 @@ object SettingsAdvancedScreen : SearchableSettings {
                         true
                     },
                 ),
+                // KMK --> 69 mod B7 / B11
+                Preference.PreferenceItem.EditTextPreference(
+                    preference = networkPreferences.mod69GithubMirror(),
+                    title = stringResource(KMR.strings.mod69_github_mirror),
+                    subtitle = stringResource(KMR.strings.mod69_github_mirror_summary),
+                ),
+                Preference.PreferenceItem.EditTextPreference(
+                    preference = networkPreferences.mod69ImageProxy(),
+                    title = stringResource(KMR.strings.mod69_image_proxy),
+                    subtitle = stringResource(KMR.strings.mod69_image_proxy_summary),
+                ),
+                // KMK <--
                 Preference.PreferenceItem.TextPreference(
                     title = stringResource(MR.strings.pref_reset_user_agent_string),
                     enabled = remember(userAgent) { userAgent != userAgentPref.defaultValue() },

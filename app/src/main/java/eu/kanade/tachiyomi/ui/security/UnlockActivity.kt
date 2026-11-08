@@ -19,6 +19,26 @@ class UnlockActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // KMK --> 69 mod X2: PIN first, with a button for the phone's own lock
+        if (eu.kanade.tachiyomi.util.system.Mod69Pin.isSet(this)) {
+            eu.kanade.tachiyomi.util.system.Mod69Pin.ask(
+                context = this,
+                title = stringResource(MR.strings.unlock_app_title, stringResource(MR.strings.app_name)),
+                phoneLockText = stringResource(tachiyomi.i18n.kmk.KMR.strings.mod69_pin_use_phone_lock),
+                onCorrect = {
+                    SecureActivityDelegate.unlock()
+                    finish()
+                },
+                onPhoneLock = { startPhoneAuthentication() },
+                onFail = { finishAffinity() },
+            )
+            return
+        }
+        // KMK <--
+        startPhoneAuthentication()
+    }
+
+    private fun startPhoneAuthentication() {
         startAuthentication(
             stringResource(MR.strings.unlock_app_title, stringResource(MR.strings.app_name)),
             confirmationRequired = false,

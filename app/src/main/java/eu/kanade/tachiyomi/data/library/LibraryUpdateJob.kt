@@ -387,7 +387,10 @@ class LibraryUpdateJob(private val context: Context, workerParams: WorkerParamet
      * @return an observable delivering the progress of each update.
      */
     private suspend fun updateChapterList() {
-        val semaphore = Semaphore(5)
+        // KMK --> 69 mod M3: gentler updates
+        val semaphore = Semaphore(libraryPreferences.mod69UpdateParallel().get().coerceIn(1, 10))
+        val mod69Delay = libraryPreferences.mod69UpdateDelayMs().get().toLong()
+        // KMK <--
         val progressCount = AtomicInt(0)
         val currentlyUpdatingManga = CopyOnWriteArrayList<Manga>()
         val newUpdates = CopyOnWriteArrayList<Pair<Manga, Array<Chapter>>>()
@@ -433,6 +436,9 @@ class LibraryUpdateJob(private val context: Context, workerParams: WorkerParamet
                             mangaInSource.forEach { libraryManga ->
                                 val manga = libraryManga.manga
                                 ensureActive()
+                                // KMK --> 69 mod M3: small pause between entries
+                                if (mod69Delay > 0) kotlinx.coroutines.delay(mod69Delay)
+                                // KMK <--
 
                                 // Don't continue to update if manga is not in library
                                 if (getManga.await(manga.id)?.favorite != true) {
