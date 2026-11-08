@@ -540,15 +540,15 @@ private class RootDirectory(
     var sourceDirs: Map<Long, SourceDirectory> = mapOf(),
 )
 
-/**
- * Class to store the files under a source directory.
- */
-@Serializable
 // KMK --> 69 mod: an entry folder by its current name, or by the other name style (long / short)
 private fun SourceDirectory.mod69Manga(title: String): MangaDirectory? =
     Injekt.get<DownloadProvider>().getMangaDirNames(title).firstNotNullOfOrNull { mangaDirs[it] }
 // KMK <--
 
+/**
+ * Class to store the files under a source directory.
+ */
+@Serializable
 private class SourceDirectory(
     @Serializable(with = UniFileAsStringSerializer::class)
     val dir: UniFile?,
