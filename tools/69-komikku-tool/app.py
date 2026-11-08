@@ -48,7 +48,7 @@ class App(tk.Tk):
         self.v_webtoon = tk.BooleanVar(value=False)
         ttk.Checkbutton(opts, text="Unpack .cbz into folders of pictures (Komikku reads them the same)",
                         variable=self.v_extract).grid(row=0, column=0, columnspan=4, sticky="w", **pad)
-        ttk.Checkbutton(opts, text="Sort into folders named after the categories (needs the backup)",
+        ttk.Checkbutton(opts, text="Sort into folders named after the categories (needs the backup). No category -> Default, not in library -> uncategories",
                         variable=self.v_sort).grid(row=1, column=0, columnspan=4, sticky="w", **pad)
         ttk.Checkbutton(opts, text="Make pictures smaller", variable=self.v_resize).grid(
             row=2, column=0, columnspan=4, sticky="w", **pad)
@@ -71,10 +71,10 @@ class App(tk.Tk):
                      values=["WebP (smallest)", "JPEG", "Keep the same"]).grid(row=4, column=1, sticky="w", **pad)
         ttk.Checkbutton(opts, text="Keep the original when the new one isn't smaller",
                         variable=self.v_smaller).grid(row=5, column=0, columnspan=4, sticky="w", **pad)
-        ttk.Checkbutton(opts, text="Shrink long webtoon pictures too",
+        ttk.Checkbutton(opts, text="Shrink long and wide pictures too",
                         variable=self.v_webtoon).grid(row=6, column=0, columnspan=4, sticky="w", **pad)
         ttk.Label(opts, text="Pictures shrink to fit inside max width and max height, keep their shape and are "
-                             "never made bigger. Long webtoon pictures are found by themselves; with the box above "
+                             "never made bigger. Long webtoon pictures and wide pictures are found by themselves; with the box above "
                              "off they keep their full size (only picture type and quality change), never cut.",
                   foreground="#666", wraplength=680).grid(row=7, column=0, columnspan=4, sticky="w", **pad)
 

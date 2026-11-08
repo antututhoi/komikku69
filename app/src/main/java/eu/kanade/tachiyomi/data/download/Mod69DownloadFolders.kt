@@ -39,6 +39,12 @@ object Mod69DownloadFolders {
     /** "Source folder" choice: keep the normal layout for this entry. */
     const val SOURCE = "\u0000source"
 
+    /** Folder for library entries in the Default category (same name as the 69-Komikku PC tool). */
+    const val DEFAULT_FOLDER = "Default"
+
+    /** Folder for downloads of entries that aren't in the library (same name as the PC tool). */
+    const val NO_INFO_FOLDER = "uncategories"
+
     fun enabled(): Boolean = downloadPreferences.mod69CategoryFolders().get()
 
     private fun key(sourceId: Long, title: String) = "$sourceId|$title"
@@ -74,8 +80,8 @@ object Mod69DownloadFolders {
         if (!enabled() || hasSourceFolderDownloads) return null
         val folder = runCatching {
             runBlocking {
-                val manga = libraryEntry(source.id, title) ?: return@runBlocking null
-                categoriesOf(manga).firstOrNull()?.let { folderName(it) }
+                val manga = libraryEntry(source.id, title) ?: return@runBlocking NO_INFO_FOLDER
+                categoriesOf(manga).firstOrNull()?.let { folderName(it) } ?: DEFAULT_FOLDER
             }
         }.getOrNull() ?: return null
         remember(source.id, title, folder)
@@ -163,7 +169,7 @@ object Mod69DownloadFolders {
             if (provider.findMangaDir(manga.ogTitle, source) == null) continue
             val folder = folderOf(manga.source, manga.ogTitle)
                 ?: categoriesOf(manga).firstOrNull()?.let { folderName(it) }
-                ?: continue
+                ?: DEFAULT_FOLDER
             try {
                 if (moveEntry(context, manga, source, folder)) moved++
             } catch (e: Exception) {
@@ -176,7 +182,8 @@ object Mod69DownloadFolders {
 
     /** Folder choice for one entry: its categories + "Source folder". Returns (label, folder or null). */
     suspend fun choices(manga: Manga): List<Pair<String, String?>> =
-        categoriesOf(manga).map { it to folderName(it) } + ("Source folder (normal)" to null)
+        categoriesOf(manga).map { it to folderName(it) }.ifEmpty { listOf(DEFAULT_FOLDER to DEFAULT_FOLDER) } +
+            ("Source folder (normal)" to null)
 
     // ---------------- following the app's categories ----------------
 
@@ -247,23 +254,25 @@ object Mod69DownloadFolders {
             val current = folderOf(manga.source, manga.ogTitle) ?: continue // kept in the source folder by choice
             val folders = item.categories.mapNotNull { catNames[it] }.sortedBy { it.first }.map { it.second }
             if (current in folders) continue
-            // taken out of that category: follow it to its (first) category, or back to the source folder
+            // category changed: follow it to its (first) category, or the Default folder
+            val target = folders.firstOrNull() ?: DEFAULT_FOLDER
+            if (target == current) continue
             val source = sources.get(manga.source) ?: continue
-            if (moveEntry(context, manga, source, folders.firstOrNull())) changed = true
+            if (moveEntry(context, manga, source, target)) changed = true
         }
         if (changed) Injekt.get<DownloadCache>().invalidateCache()
     }
 
     /**
      * Downloads put into category folders outside the app (e.g. sorted on a PC) are learned:
-     * a top folder named like a category, holding a folder named like a library entry.
+     * a top folder named like a category (or Default / uncategories), holding a folder named like an entry.
      */
     suspend fun learn(provider: DownloadProvider, topDirs: List<UniFile>, sourceDirNames: Set<String>) {
         val categoryFolders = Injekt.get<GetCategories>().await()
             .filter { !it.isSystemCategory }
             .map { folderName(it.name) }
+            .plus(listOf(DEFAULT_FOLDER, NO_INFO_FOLDER))
             .associateBy { it.lowercase() }
-        if (categoryFolders.isEmpty()) return
         var byDirName: Map<String, List<Manga>>? = null
         for (top in topDirs) {
             val topName = top.name?.lowercase() ?: continue
@@ -273,7 +282,8 @@ object Mod69DownloadFolders {
                 if (!child.isDirectory) continue
                 val name = child.name ?: continue
                 if (byDirName == null) {
-                    byDirName = Injekt.get<GetFavorites>().await()
+                    // every entry the app knows (not only the library: uncategories holds the others)
+                    byDirName = Injekt.get<tachiyomi.domain.manga.interactor.GetAllManga>().await()
                         .groupBy { provider.getMangaDirName(it.ogTitle).lowercase() }
                 }
                 byDirName[name.lowercase()]?.forEach { manga ->

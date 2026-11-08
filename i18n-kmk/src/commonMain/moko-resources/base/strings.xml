@@ -273,7 +273,7 @@
     <string name="mod69_keep_tall_pages">69- Keep long webtoon pages readable</string>
     <string name="mod69_keep_tall_pages_summary">Pages much taller than wide only get the max width, never the max height</string>
     <string name="mod69_category_folders">69- Download into category folders</string>
-    <string name="mod69_category_folders_summary">New downloads go to downloads/(category)/(entry) instead of the source\'s folder. Entries in 2+ categories use the first one; change it in the entry\'s menu (69- Download folder)</string>
+    <string name="mod69_category_folders_summary">New downloads go to downloads/(category)/(entry) instead of the source\'s folder. Entries in 2+ categories use the first one; no category = Default folder, not in library = uncategories folder. Change it in the entry\'s menu (69- Download folder)</string>
     <string name="mod69_move_to_category_folders">69- Move existing downloads into category folders</string>
     <string name="mod69_move_to_category_folders_summary">Moves every library entry\'s downloaded chapters into its category folder. Can take a while</string>
     <string name="mod69_download_folder">69- Download folder</string>

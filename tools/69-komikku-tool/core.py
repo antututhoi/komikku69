@@ -21,6 +21,8 @@ Image.MAX_IMAGE_PIXELS = None
 IMAGE_EXT = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".bmp", ".avif", ".jxl"}
 WEBP_MAX = 16383  # WebP can't be taller/wider than this
 DONE_MARK = ".69done"
+DEFAULT_FOLDER = "Default"  # library entries in Komikku's Default category (same name in the app)
+NO_INFO_FOLDER = "uncategories"  # not in the library / backup (same name in the app)
 
 
 # ---------------------------------------------------------------- names (same rules as Komikku)
@@ -134,11 +136,15 @@ class CategoryFinder:
             self.fuzzy.setdefault(loose(title), names)
 
     def folder_for(self, manga_dir_name: str):
+        """Category folder; DEFAULT_FOLDER for library entries without a category,
+        NO_INFO_FOLDER for entries that aren't in the library/backup."""
         names = self.exact.get(manga_dir_name.lower())
         if names is None:
             names = self.fuzzy.get(loose(manga_dir_name))
+        if names is None:
+            return NO_INFO_FOLDER
         if not names:
-            return None
+            return DEFAULT_FOLDER
         return valid_filename(names[0])
 
 
@@ -153,7 +159,7 @@ class Options:
     quality: int = 80
     webtoon_ratio: float = 2.5
     only_smaller: bool = True
-    shrink_webtoon: bool = False  # long strips keep their full size unless this is on
+    shrink_webtoon: bool = False  # long (and wide) pictures keep their full size unless this is on
     # [(folder, "width" | "height" | "all")]: that limit is not used for pictures inside the folder
     excludes: list = field(default_factory=list)
 
@@ -193,7 +199,7 @@ def convert_image(data: bytes, name: str, o: Options):
     except Exception:
         return name, data
     w, h = im.size
-    tall = h > w * o.webtoon_ratio  # long webtoon strip
+    tall = h > w * o.webtoon_ratio or w > h * o.webtoon_ratio  # long webtoon strip / wide panorama
     scale = 1.0
     # fits inside max width x max height, same shape, never made bigger;
     # long webtoon strips keep their size (only type + quality change) unless asked; never cut
@@ -306,29 +312,59 @@ def find_chapters(downloads: str):
                     yield top, manga, cp
 
 
+def _done(dst):
+    return os.path.exists(os.path.join(dst, DONE_MARK)) or os.path.exists(dst + ".cbz")
+
+
+def _move_done(old, dst):
+    """Moves a chapter finished by an earlier run (old layout) to dst. True when moved."""
+    try:
+        if os.path.exists(os.path.join(old, DONE_MARK)):
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            os.replace(old, dst)
+        elif os.path.exists(old + ".cbz"):
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            os.replace(old + ".cbz", dst + ".cbz")
+        else:
+            return False
+    except OSError:
+        return False
+    for d in (os.path.dirname(old), os.path.dirname(os.path.dirname(old))):
+        try:
+            os.rmdir(d)  # only removed when empty
+        except OSError:
+            pass
+    return True
+
+
 def run(downloads, output, backup=None, extract=True, sort=True, o: Options = Options(),
         workers=None, log=print, progress=lambda done, total: None, stop=lambda: False):
     finder = CategoryFinder(read_backup(backup)) if (sort and backup) else None
     out_root = os.path.join(output, "downloads")
     jobs = []
-    unsorted = set()
+    moved = 0
+    counts = {DEFAULT_FOLDER: set(), NO_INFO_FOLDER: set()}
     for top, manga, cp in find_chapters(downloads):
         folder = top
         if finder:
-            f = finder.folder_for(manga)
-            if f:
-                folder = f
-            else:
-                unsorted.add(manga)
+            folder = finder.folder_for(manga)
+            if folder in counts:
+                counts[folder].add(manga)
         ch_name = os.path.basename(cp)
         if ch_name.lower().endswith((".cbz", ".zip")):
             ch_name = ch_name[:-4]
         dst = os.path.join(out_root, folder, manga, ch_name)
-        if os.path.exists(os.path.join(dst, DONE_MARK)) or os.path.exists(dst + ".cbz"):
+        if _done(dst):
             continue  # done before (the tool can be run again to continue)
+        if folder != top and _move_done(os.path.join(out_root, top, manga, ch_name), dst):
+            moved += 1  # done by an earlier run into the source folder: moved, not redone
+            continue
         jobs.append((cp, dst, extract, options_for(cp, o)))
-    if unsorted:
-        log(f"{len(unsorted)} entries have no category (or aren't in the backup): they keep their source folder")
+    if finder:
+        log(f"{len(counts[DEFAULT_FOLDER])} entries are in Komikku's Default category -> '{DEFAULT_FOLDER}' folder")
+        log(f"{len(counts[NO_INFO_FOLDER])} entries aren't in the library/backup -> '{NO_INFO_FOLDER}' folder")
+    if moved:
+        log(f"{moved} chapters done by an earlier run were moved into their new folder")
     total = len(jobs)
     log(f"{total} chapters to do")
     before = after = 0
