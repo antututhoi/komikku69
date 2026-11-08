@@ -194,6 +194,13 @@ object SettingsDiscordScreen : SearchableSettings {
                         subtitle = stringResource(KMR.strings.pref_discord_custom_message_summary),
                         onClick = { showCustomMessageDialog = true },
                     ),
+                    // KMK -->
+                    Preference.PreferenceItem.SwitchPreference(
+                        preference = connectionsPreferences.mod69DiscordHideNsfw(),
+                        title = stringResource(KMR.strings.mod69_discord_hide_nsfw),
+                        subtitle = stringResource(KMR.strings.mod69_discord_hide_nsfw_summary),
+                    ),
+                    // KMK <--
                     Preference.PreferenceItem.SwitchPreference(
                         preference = showProgressPref,
                         title = stringResource(KMR.strings.pref_discord_show_progress),

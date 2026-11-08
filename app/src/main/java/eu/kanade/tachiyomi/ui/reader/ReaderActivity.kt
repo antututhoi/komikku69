@@ -1621,10 +1621,21 @@ class ReaderActivity : BaseActivity() {
                     val manga = viewModel.manga ?: return@launchIO
                     val chapter = viewModel.currentChapter ?: return@launchIO
 
+                    // KMK --> 69 mod P25: treat 18+ entries like incognito for Discord
+                    val mod69Nsfw = connectionsPreferences.mod69DiscordHideNsfw().get() && (
+                        uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.extension.ExtensionManager>()
+                            .installedExtensionsFlow.value
+                            .any { ext -> ext.isNsfw && ext.sources.any { it.id == manga.source } } ||
+                            manga.genre.orEmpty().any {
+                                it.lowercase() in setOf("hentai", "adult", "smut", "erotica", "pornographic", "mature")
+                            }
+                        )
+                    // KMK <--
+
                     DiscordRPCService.setReaderActivity(
                         context = this@ReaderActivity,
                         ReaderData(
-                            incognitoMode = viewModel.incognitoMode,
+                            incognitoMode = viewModel.incognitoMode || mod69Nsfw,
                             mangaId = manga.id,
                             mangaTitle = manga.ogTitle,
                             thumbnailUrl = manga.thumbnailUrl.takeIf { UrlUtils.isOnlineUrl(it) } ?: manga.ogThumbnailUrl,

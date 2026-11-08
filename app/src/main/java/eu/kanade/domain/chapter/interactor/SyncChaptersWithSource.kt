@@ -23,6 +23,7 @@ import tachiyomi.domain.chapter.service.ChapterRecognition
 import tachiyomi.domain.library.service.LibraryPreferences
 import tachiyomi.domain.manga.model.Manga
 import tachiyomi.source.local.isLocal
+import uy.kohesive.injekt.api.get
 import java.lang.Long.max
 import java.time.ZonedDateTime
 import java.util.TreeSet

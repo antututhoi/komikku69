@@ -30,6 +30,10 @@ class ConnectionsPreferences(
 
     fun enableDiscordRPC() = preferenceStore.getBoolean("pref_enable_discord_rpc", false)
 
+    // KMK --> 69 mod P25
+    fun mod69DiscordHideNsfw() = preferenceStore.getBoolean("mod69_discord_hide_nsfw", false)
+    // KMK <--
+
     fun discordRPCStatus() = preferenceStore.getInt("pref_discord_rpc_status", 1)
 
     fun discordRPCIncognito() = preferenceStore.getBoolean("pref_discord_rpc_incognito", false)

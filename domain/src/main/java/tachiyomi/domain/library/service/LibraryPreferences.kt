@@ -74,6 +74,8 @@ class LibraryPreferences(
     fun autoUpdateMetadata() = preferenceStore.getBoolean("auto_update_metadata", false)
 
     // KMK --> 69 mod: library / entry extras
+    fun mod69UpdateDelayMs() = preferenceStore.getInt("mod69_update_delay_ms", 0)
+    fun mod69UpdateParallel() = preferenceStore.getInt("mod69_update_parallel", 5)
     fun mod69SortIgnoreArticles() = preferenceStore.getBoolean("mod69_sort_ignore_articles", false)
     fun mod69BadgeStyle() = preferenceStore.getString("mod69_badge_style", "number")
     fun mod69TitleLines() = preferenceStore.getInt("mod69_title_lines", 0)
