@@ -318,9 +318,29 @@ object SettingsDataScreen : SearchableSettings {
             navigator.push(RestoreBackupScreen(it.toString()))
         }
 
+        // KMK --> 69 mod N26 / X5: import the library of another app
+        val mod69ChooseOtherApp = rememberLauncherForActivityResult(
+            object : ActivityResultContracts.GetContent() {
+                override fun createIntent(context: Context, input: String): Intent =
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+            },
+        ) {
+            if (it == null) return@rememberLauncherForActivityResult
+            eu.kanade.tachiyomi.data.backup.Mod69AppImport.start(context, it)
+            context.toast(KMR.strings.mod69_import_started)
+        }
+        // KMK <--
+
         return Preference.PreferenceGroup(
             title = stringResource(MR.strings.label_backup),
             preferenceItems = persistentListOf(
+                // KMK -->
+                Preference.PreferenceItem.TextPreference(
+                    title = stringResource(KMR.strings.mod69_import_other),
+                    subtitle = stringResource(KMR.strings.mod69_import_other_summary),
+                    onClick = { mod69ChooseOtherApp.launch("*/*") },
+                ),
+                // KMK <--
                 // Manual actions
                 Preference.PreferenceItem.CustomPreference(
                     title = stringResource(restorePreferenceKeyString),

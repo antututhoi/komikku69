@@ -47,6 +47,7 @@ import androidx.compose.ui.unit.sp
 import eu.kanade.presentation.manga.components.MangaCover
 import eu.kanade.presentation.manga.components.MangaCoverHide
 import eu.kanade.presentation.manga.components.RatioSwitchToPanorama
+import eu.kanade.presentation.util.mod69SharedCover
 import exh.debug.DebugToggles
 import tachiyomi.i18n.MR
 import tachiyomi.presentation.core.components.BadgeGroup
@@ -120,7 +121,10 @@ fun MangaCompactGridItem(
                             // KMK -->
                             // .alpha(if (isSelected) GridSelectedCoverAlpha else coverAlpha)
                             // KMK <--
-                            .fillMaxWidth(),
+                            .fillMaxWidth()
+                            // KMK --> 69 mod U11
+                            .then(Modifier.mod69SharedCover(coverData.mangaId)),
+                        // KMK <--
                         data = coverData,
                         // KMK -->
                         alpha = if (isSelected) GRID_SELECTED_COVER_ALPHA else coverAlpha,
@@ -275,7 +279,10 @@ fun MangaComfortableGridItem(
                                     // KMK -->
                                     // .alpha(if (isSelected) GridSelectedCoverAlpha else coverAlpha)
                                     // KMK <--
-                                    .fillMaxWidth(),
+                                    .fillMaxWidth()
+                                    // KMK --> 69 mod U11
+                                    .then(Modifier.mod69SharedCover(coverData.mangaId)),
+                                // KMK <--
                                 data = coverData,
                                 // KMK -->
                                 alpha = if (isSelected) GRID_SELECTED_COVER_ALPHA else coverAlpha,

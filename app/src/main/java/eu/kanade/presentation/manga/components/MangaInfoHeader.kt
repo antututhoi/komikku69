@@ -92,6 +92,7 @@ import com.mikepenz.markdown.model.markdownAnnotatorConfig
 import com.mikepenz.markdown.utils.getUnescapedTextInNode
 import eu.kanade.domain.ui.UiPreferences
 import eu.kanade.presentation.components.DropdownMenu
+import eu.kanade.presentation.util.mod69SharedCover
 import eu.kanade.tachiyomi.R
 import eu.kanade.tachiyomi.source.model.SManga
 import eu.kanade.tachiyomi.util.system.copyToClipboard
@@ -574,7 +575,9 @@ private fun MangaAndSourceTitlesLarge(
         } else {
             // KMK <--
             MangaCover.Book(
-                modifier = Modifier.fillMaxWidth(0.65f),
+                // KMK --> 69 mod U11
+                modifier = Modifier.fillMaxWidth(0.65f).mod69SharedCover(manga.id),
+                // KMK <--
                 data = ImageRequest.Builder(LocalContext.current)
                     .data(manga)
                     .crossfade(true)
@@ -666,6 +669,7 @@ private fun MangaAndSourceTitlesSmall(
                 modifier = Modifier
                     .sizeIn(maxWidth = 100.dp)
                     // KMK -->
+                    .mod69SharedCover(manga.id)
                     .align(if (topAlignCover) Alignment.Top else Alignment.CenterVertically),
                 // KMK <--
                 data = ImageRequest.Builder(LocalContext.current)

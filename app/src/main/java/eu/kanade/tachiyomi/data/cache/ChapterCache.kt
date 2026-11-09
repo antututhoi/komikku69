@@ -192,6 +192,27 @@ class ChapterCache(
         }
     }
 
+    // KMK --> 69 mod N2: same as putImageToCache, while also giving a growing copy to the reader
+    fun mod69PutImageToCacheProgressive(
+        imageUrl: String,
+        response: Response,
+        page: eu.kanade.tachiyomi.ui.reader.model.ReaderPage,
+        tempDir: File,
+    ) {
+        var editor: DiskLruCache.Editor? = null
+        try {
+            val key = DiskUtil.hashKeyForDisk(imageUrl)
+            editor = diskCache.edit(key) ?: return
+            eu.kanade.tachiyomi.ui.reader.viewer.Mod69PartialPage.copy(page, response, editor.newOutputStream(0), tempDir)
+            diskCache.flush()
+            editor.commit()
+        } finally {
+            response.body.close()
+            editor?.abortUnlessCommitted()
+        }
+    }
+    // KMK <--
+
     fun clear(): Int {
         var deletedFiles = 0
         cacheDir.listFiles()?.forEach {

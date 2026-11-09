@@ -226,6 +226,12 @@ internal class HttpPageLoader(
      *
      * @param page the page whose source image has to be downloaded.
      */
+    // KMK -->
+    private val mod69Progressive by lazy {
+        Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>().mod69ProgressivePages().get()
+    }
+    // KMK <--
+
     private suspend fun internalLoadPage(page: ReaderPage) {
         try {
             if (page.imageUrl.isNullOrEmpty()) {
@@ -237,7 +243,18 @@ internal class HttpPageLoader(
             if (!chapterCache.isImageInCache(imageUrl)) {
                 page.status = Page.State.DownloadImage
                 val imageResponse = source.getImage(page, dataSaver)
-                chapterCache.putImageToCache(imageUrl, imageResponse)
+                // KMK --> 69 mod N2: blurry first look while downloading
+                if (mod69Progressive) {
+                    chapterCache.mod69PutImageToCacheProgressive(
+                        imageUrl,
+                        imageResponse,
+                        page,
+                        Injekt.get<android.app.Application>().cacheDir,
+                    )
+                } else {
+                    // KMK <--
+                    chapterCache.putImageToCache(imageUrl, imageResponse)
+                }
             }
 
             page.stream = { chapterCache.getImageFile(imageUrl).inputStream() }

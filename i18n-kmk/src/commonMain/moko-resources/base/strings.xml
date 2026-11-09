@@ -509,4 +509,11 @@
     <string name="mod69_frosted_off">Off</string>
     <string name="mod69_frosted_light">Light (bars slightly see-through, content blurred behind)</string>
     <string name="mod69_frosted_strong">Strong (more see-through, more blur)</string>
+    <string name="mod69_import_other">69- Import from another app</string>
+    <string name="mod69_import_other_summary">Kotatsu (and apps like it) backup .zip, Venera backup, or a .txt list with one title per line. Each title is searched on your sources and added to the library with its category. Komikku backups already open in Mihon</string>
+    <string name="mod69_import_started">Importing… see the notification</string>
+    <string name="mod69_cover_grow">69- Cover-grow animation</string>
+    <string name="mod69_cover_grow_summary">When you open an entry from the library grid, its cover grows into the entry page. Restart the app after changing</string>
+    <string name="mod69_progressive">69- Pages appear while loading</string>
+    <string name="mod69_progressive_summary">Page-by-page modes: a blurry picture shows while the page downloads and gets sharper as it arrives (works best with JPEG pages). Reopen the chapter after changing</string>
 </resources>

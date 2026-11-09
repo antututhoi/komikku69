@@ -248,6 +248,11 @@ object SettingsReaderScreen : SearchableSettings {
                     title = stringResource(KMR.strings.mod69_ask_peek),
                     subtitle = stringResource(KMR.strings.mod69_ask_peek_summary),
                 ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69ProgressivePages(),
+                    title = stringResource(KMR.strings.mod69_progressive),
+                    subtitle = stringResource(KMR.strings.mod69_progressive_summary),
+                ),
                 Preference.PreferenceItem.ListPreference(
                     preference = readerPreferences.mod69PageTransition(),
                     entries = persistentMapOf(

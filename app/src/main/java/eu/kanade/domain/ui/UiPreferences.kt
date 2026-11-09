@@ -41,6 +41,9 @@ class UiPreferences(
     /** U1 / U4: frosted glass bars: 0 off, 1 light, 2 strong. */
     fun mod69Frosted() = preferenceStore.getInt("mod69_frosted", 0)
 
+    /** U11: the cover grows from the library into the entry page (restart to apply). */
+    fun mod69CoverGrow() = preferenceStore.getBoolean("mod69_cover_grow", false)
+
     /** U8: taller title bar on most screens. */
     fun mod69LargeTopBar() = preferenceStore.getBoolean("mod69_large_top_bar", false)
     // KMK <--

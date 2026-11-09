@@ -94,6 +94,33 @@ class PagerPageHolder(
         extraLoadJob = null
     }
 
+    // KMK --> 69 mod N2
+    private val mod69Progressive by lazy {
+        uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>()
+            .mod69ProgressivePages().get()
+    }
+    private var mod69Preview: android.widget.ImageView? = null
+
+    private suspend fun mod69ShowPartial(page: ReaderPage) {
+        val bitmap = withIOContext {
+            eu.kanade.tachiyomi.ui.reader.viewer.Mod69PartialPage.decode(page, width.coerceAtLeast(480))
+        } ?: return
+        withUIContext {
+            val view = mod69Preview ?: eu.kanade.tachiyomi.ui.reader.viewer.Mod69PartialPage.previewView(this@PagerPageHolder)
+                .also {
+                    mod69Preview = it
+                    addView(it, 0)
+                }
+            view.setImageBitmap(bitmap)
+        }
+    }
+
+    private fun mod69RemovePreview() {
+        mod69Preview?.let { removeView(it) }
+        mod69Preview = null
+    }
+    // KMK <--
+
     private fun initProgressIndicator() {
         if (progressIndicator == null) {
             progressIndicator = ReaderProgressIndicator(
@@ -129,8 +156,18 @@ class PagerPageHolder(
                     Page.State.LoadPage -> setLoading()
                     Page.State.DownloadImage -> {
                         setDownloading()
-                        page.progressFlow.collectLatest { value ->
-                            progressIndicator?.setProgress(value)
+                        // KMK --> 69 mod N2: blurry first look that sharpens while downloading
+                        kotlinx.coroutines.coroutineScope {
+                            if (mod69Progressive) {
+                                launch {
+                                    eu.kanade.tachiyomi.ui.reader.viewer.Mod69PartialPage.flowFor(page)
+                                        .collectLatest { if (it > 0) mod69ShowPartial(page) }
+                                }
+                            }
+                            // KMK <--
+                            page.progressFlow.collectLatest { value ->
+                                progressIndicator?.setProgress(value)
+                            }
                         }
                     }
                     Page.State.Ready -> setImage()
@@ -171,6 +208,9 @@ class PagerPageHolder(
      * Called when the page is ready.
      */
     private suspend fun setImage() {
+        // KMK -->
+        withUIContext { mod69RemovePreview() }
+        // KMK <--
         if (extraPage == null) {
             progressIndicator?.setProgress(0)
         } else {
@@ -424,6 +464,9 @@ class PagerPageHolder(
      * Called when the page has an error.
      */
     private fun setError(error: Throwable?) {
+        // KMK -->
+        mod69RemovePreview()
+        // KMK <--
         progressIndicator?.hide()
         showErrorLayout(error)
     }

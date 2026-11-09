@@ -245,6 +245,9 @@ class ReaderPreferences(
     /** P5: pressing back after this many pages asks before closing the reader. 0 = never ask. */
     fun mod69AskLeavePages() = preferenceStore.getInt("mod69_ask_leave_pages", 0)
 
+    /** N2: pages show a blurry first look while downloading and sharpen as they arrive. */
+    fun mod69ProgressivePages() = preferenceStore.getBoolean("mod69_progressive_pages", false)
+
     /** R1: page turn animation for page-by-page reading: none, fade, stack, cube, zoom, flip. */
     fun mod69PageTransition() = preferenceStore.getString("mod69_page_transition", "none")
 

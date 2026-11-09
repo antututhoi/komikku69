@@ -78,6 +78,7 @@ fun DefaultNavigatorScreenTransition(
     )
 }
 
+@OptIn(androidx.compose.animation.ExperimentalSharedTransitionApi::class)
 @Composable
 fun ScreenTransition(
     navigator: Navigator,
@@ -91,20 +92,31 @@ fun ScreenTransition(
     BackHandler(enabled = navigator.canPop, onBack = navigator::pop)
     // KMK <--
 
-    AnimatedContent(
-        targetState = navigator.lastItem,
-        transitionSpec = transition,
-        modifier = modifier,
-        label = "transition",
-        // KMK -->
-        // Key children by the same key saveableState uses, like Voyager's ScreenTransition. Keying by equality
-        // lets two screens sharing a key be composed at once (e.g. a restored copy of an object screen and the
-        // object itself), crashing with "Key <screen.key>:transition was used multiple times".
-        contentKey = { it.key },
+    // KMK --> 69 mod U11: shared cover between screens
+    androidx.compose.animation.SharedTransitionLayout(modifier = modifier) {
+        val sharedScope = this
         // KMK <--
-    ) { screen ->
-        navigator.saveableState("transition", screen) {
-            content(screen)
+        AnimatedContent(
+            targetState = navigator.lastItem,
+            transitionSpec = transition,
+            label = "transition",
+            // KMK -->
+            // Key children by the same key saveableState uses, like Voyager's ScreenTransition. Keying by equality
+            // lets two screens sharing a key be composed at once (e.g. a restored copy of an object screen and the
+            // object itself), crashing with "Key <screen.key>:transition was used multiple times".
+            contentKey = { it.key },
+            // KMK <--
+        ) { screen ->
+            // KMK -->
+            androidx.compose.runtime.CompositionLocalProvider(
+                LocalMod69SharedScope provides sharedScope,
+                LocalMod69AnimatedScope provides this,
+            ) {
+                // KMK <--
+                navigator.saveableState("transition", screen) {
+                    content(screen)
+                }
+            }
         }
     }
     // KMK: BackHandler moved above AnimatedContent

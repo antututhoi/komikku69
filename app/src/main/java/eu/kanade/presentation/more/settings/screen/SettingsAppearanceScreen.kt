@@ -199,6 +199,11 @@ object SettingsAppearanceScreen : SearchableSettings {
                     preference = uiPreferences.mod69LargeTopBar(),
                     title = stringResource(KMR.strings.mod69_large_top_bar),
                 ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = uiPreferences.mod69CoverGrow(),
+                    title = stringResource(KMR.strings.mod69_cover_grow),
+                    subtitle = stringResource(KMR.strings.mod69_cover_grow_summary),
+                ),
                 Preference.PreferenceItem.ListPreference(
                     preference = uiPreferences.mod69Frosted(),
                     entries = persistentMapOf(
