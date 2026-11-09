@@ -489,6 +489,24 @@ class ReaderActivity : BaseActivity() {
                             }
                         },
                         hasExtraPage = (state.dialog as? ReaderViewModel.Dialog.PageActions)?.extraPage != null,
+                        // KMK --> 69 mod R17
+                        mod69MangaId = viewModel.manga?.id ?: -1L,
+                        mod69ChapterId = state.currentChapter?.chapter?.id ?: -1L,
+                        mod69ChapterName = state.currentChapter?.chapter?.name.orEmpty(),
+                        mod69PageIndex = (state.dialog as? ReaderViewModel.Dialog.PageActions)?.page?.index ?: 0,
+                        onMod69Jump = { chapterId, pageIndex ->
+                            if (chapterId == state.currentChapter?.chapter?.id) {
+                                moveToPageIndex(pageIndex)
+                            } else {
+                                viewModel.getChapters().firstOrNull { it.chapter.id == chapterId }?.let {
+                                    viewModel.loadNewChapterFromDialog(it.chapter)
+                                    toast(
+                                        stringResource(KMR.strings.mod69_go_to_page, pageIndex + 1),
+                                    )
+                                }
+                            }
+                        },
+                        // KMK <--
                     )
                 }
 

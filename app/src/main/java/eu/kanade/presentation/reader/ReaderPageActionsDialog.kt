@@ -5,6 +5,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Bookmark
+import androidx.compose.material.icons.outlined.Bookmarks
 import androidx.compose.material.icons.outlined.ContentCopy
 import androidx.compose.material.icons.outlined.Photo
 import androidx.compose.material.icons.outlined.Save
@@ -39,7 +41,20 @@ fun ReaderPageActionsDialog(
     onSaveCombined: () -> Unit,
     hasExtraPage: Boolean,
     // SY <--
+    // KMK -->
+    mod69MangaId: Long = -1L,
+    mod69ChapterId: Long = -1L,
+    mod69ChapterName: String = "",
+    mod69PageIndex: Int = 0,
+    onMod69Jump: (chapterId: Long, pageIndex: Int) -> Unit = { _, _ -> },
+    // KMK <--
 ) {
+    // KMK -->
+    var showMod69List by remember { mutableStateOf(false) }
+    var mod69Marked by remember {
+        mutableStateOf(Mod69PageBookmarks.isBookmarked(mod69MangaId, mod69ChapterId, mod69PageIndex))
+    }
+    // KMK <--
     var showSetCoverDialog by remember { mutableStateOf(false) }
     // SY -->
     var useExtraPage by remember { mutableStateOf(false) }
@@ -122,6 +137,32 @@ fun ReaderPageActionsDialog(
                     },
                 )
             }
+            // KMK --> 69 mod R17: bookmark this page, see the page bookmarks of this entry
+            if (mod69MangaId > 0) {
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(MaterialTheme.padding.small),
+                ) {
+                    ActionButton(
+                        modifier = Modifier.weight(1f),
+                        title = stringResource(
+                            if (mod69Marked) KMR.strings.mod69_unbookmark_page else KMR.strings.mod69_bookmark_page,
+                        ),
+                        icon = Icons.Outlined.Bookmark,
+                        onClick = {
+                            mod69Marked = Mod69PageBookmarks.toggle(
+                                Mod69PageBookmarks.Item(mod69MangaId, mod69ChapterId, mod69PageIndex, mod69ChapterName),
+                            )
+                        },
+                    )
+                    ActionButton(
+                        modifier = Modifier.weight(1f),
+                        title = stringResource(KMR.strings.mod69_page_bookmarks),
+                        icon = Icons.Outlined.Bookmarks,
+                        onClick = { showMod69List = true },
+                    )
+                }
+            }
+            // KMK <--
             if (hasExtraPage) {
                 Row(
                     horizontalArrangement = Arrangement.spacedBy(MaterialTheme.padding.small),
@@ -196,6 +237,38 @@ fun ReaderPageActionsDialog(
             }
         }
     }
+
+    // KMK -->
+    if (showMod69List) {
+        val items = remember { Mod69PageBookmarks.forManga(mod69MangaId) }
+        AlertDialog(
+            onDismissRequest = { showMod69List = false },
+            title = { Text(stringResource(KMR.strings.mod69_page_bookmarks)) },
+            text = {
+                if (items.isEmpty()) {
+                    Text(stringResource(KMR.strings.mod69_no_page_bookmarks))
+                } else {
+                    Column {
+                        items.forEach { item ->
+                            TextButton(
+                                onClick = {
+                                    showMod69List = false
+                                    onMod69Jump(item.chapterId, item.pageIndex)
+                                    onDismissRequest()
+                                },
+                            ) {
+                                Text("${item.chapterName} - ${item.pageIndex + 1}")
+                            }
+                        }
+                    }
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = { showMod69List = false }) { Text(stringResource(MR.strings.action_cancel)) }
+            },
+        )
+    }
+    // KMK <--
 
     if (showSetCoverDialog) {
         SetCoverDialog(

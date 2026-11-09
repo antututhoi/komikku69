@@ -398,4 +398,9 @@
     <string name="mod69_marked_n">Marked %1$d entries</string>
     <string name="mod69_unmarked_n">Unmarked %1$d entries</string>
     <string name="mod69_grid_spacing">69- Space between covers</string>
+    <string name="mod69_bookmark_page">Bookmark page</string>
+    <string name="mod69_unbookmark_page">Remove page bookmark</string>
+    <string name="mod69_page_bookmarks">Page bookmarks</string>
+    <string name="mod69_no_page_bookmarks">No page bookmarks for this entry yet</string>
+    <string name="mod69_go_to_page">Opened the chapter. Go to page %1$d</string>
 </resources>
