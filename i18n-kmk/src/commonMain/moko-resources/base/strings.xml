@@ -574,4 +574,6 @@
     <string name="mod69_anime_more">Load more</string>
     <string name="mod69_anime_no_video">No video found for this episode</string>
     <string name="mod69_anime_no_player">No video app found. Install 69-NextPlayer, MX Player or VLC</string>
+    <string name="mod69_import_pc">69- Import reading from PC</string>
+    <string name="mod69_import_pc_summary">Pick 69-komikku-pc-progress.json (next to your backups) to bring back the chapters you read in 69-Komikku-PC</string>
 </resources>

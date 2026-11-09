@@ -32,6 +32,7 @@ object Mod69Progress {
     const val ID_ANILIST_MATCH = -6913
     const val ID_AI_UPSCALE = -6914
     const val ID_TRANSLATE = -6915
+    const val ID_PC_IMPORT = -6916
 
     private const val EXTRA_ID = "mod69_job_id"
     private val stopped = ConcurrentHashMap.newKeySet<Int>()

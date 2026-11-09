@@ -329,12 +329,27 @@ object SettingsDataScreen : SearchableSettings {
             eu.kanade.tachiyomi.data.backup.Mod69AppImport.start(context, it)
             context.toast(KMR.strings.mod69_import_started)
         }
+        val mod69ChoosePcProgress = rememberLauncherForActivityResult(
+            object : ActivityResultContracts.GetContent() {
+                override fun createIntent(context: Context, input: String): Intent =
+                    eu.kanade.tachiyomi.util.system.Mod69Picker.apply(context, super.createIntent(context, input))
+            },
+        ) {
+            if (it == null) return@rememberLauncherForActivityResult
+            eu.kanade.tachiyomi.data.backup.Mod69PcProgressImport.start(context, it)
+            context.toast(KMR.strings.mod69_import_started)
+        }
         // KMK <--
 
         return Preference.PreferenceGroup(
             title = stringResource(MR.strings.label_backup),
             preferenceItems = persistentListOf(
                 // KMK -->
+                Preference.PreferenceItem.TextPreference(
+                    title = stringResource(KMR.strings.mod69_import_pc),
+                    subtitle = stringResource(KMR.strings.mod69_import_pc_summary),
+                    onClick = { mod69ChoosePcProgress.launch("*/*") },
+                ),
                 Preference.PreferenceItem.TextPreference(
                     title = stringResource(KMR.strings.mod69_import_other),
                     subtitle = stringResource(KMR.strings.mod69_import_other_summary),
