@@ -12,6 +12,7 @@ import androidx.compose.material.icons.outlined.ContentCopy
 import androidx.compose.material.icons.outlined.GridView
 import androidx.compose.material.icons.outlined.Photo
 import androidx.compose.material.icons.outlined.Save
+import androidx.compose.material.icons.outlined.School
 import androidx.compose.material.icons.outlined.Share
 import androidx.compose.material.icons.outlined.Translate
 import androidx.compose.material3.AlertDialog
@@ -53,10 +54,12 @@ fun ReaderPageActionsDialog(
     onMod69AllPages: () -> Unit = {},
     onMod69AiSharpen: (() -> Unit)? = null,
     onMod69Translate: (() -> Unit)? = null,
+    mod69Page: eu.kanade.tachiyomi.ui.reader.model.ReaderPage? = null,
     // KMK <--
 ) {
     // KMK -->
     var showMod69List by remember { mutableStateOf(false) }
+    var showMod69Japanese by remember { mutableStateOf(false) }
     var mod69Marked by remember {
         mutableStateOf(Mod69PageBookmarks.isBookmarked(mod69MangaId, mod69ChapterId, mod69PageIndex))
     }
@@ -178,6 +181,15 @@ fun ReaderPageActionsDialog(
                             },
                         )
                     }
+                    // O3: Japanese words
+                    if (mod69Page != null) {
+                        ActionButton(
+                            modifier = Modifier.weight(1f),
+                            title = stringResource(KMR.strings.mod69_jp_title),
+                            icon = Icons.Outlined.School,
+                            onClick = { showMod69Japanese = true },
+                        )
+                    }
                     // R3: AI sharpening
                     if (onMod69AiSharpen != null) {
                         ActionButton(
@@ -279,6 +291,12 @@ fun ReaderPageActionsDialog(
     }
 
     // KMK -->
+    if (showMod69Japanese && mod69Page != null) {
+        Mod69JapaneseDialog(page = mod69Page, onDismissRequest = {
+            showMod69Japanese = false
+            onDismissRequest()
+        })
+    }
     if (showMod69List) {
         val items = remember { Mod69PageBookmarks.forManga(mod69MangaId) }
         AlertDialog(

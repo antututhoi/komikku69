@@ -530,6 +530,7 @@ class ReaderActivity : BaseActivity() {
                         mod69ChapterName = state.currentChapter?.chapter?.name.orEmpty(),
                         mod69PageIndex = (state.dialog as? ReaderViewModel.Dialog.PageActions)?.page?.index ?: 0,
                         onMod69AllPages = { mod69ThumbsOpen = true },
+                        mod69Page = (state.dialog as? ReaderViewModel.Dialog.PageActions)?.page,
                         onMod69Translate = {
                             (state.dialog as? ReaderViewModel.Dialog.PageActions)?.page?.let { page ->
                                 toast(KMR.strings.mod69_translate_started)

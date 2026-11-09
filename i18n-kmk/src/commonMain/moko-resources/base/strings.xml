@@ -557,4 +557,12 @@
     <string name="mod69_novels_look">Text look</string>
     <string name="mod69_novels_size">Text size: %1$d</string>
     <string name="mod69_novels_spacing">Line spacing: %1$s</string>
+    <string name="mod69_jp_title">Japanese words</string>
+    <string name="mod69_jp_none">No Japanese text found on this page</string>
+    <string name="mod69_jp_pick_line">Tap a line to look up its words:</string>
+    <string name="mod69_jp_search">Word or sentence (shorten it to one word)</string>
+    <string name="mod69_jp_look_up">Look up</string>
+    <string name="mod69_jp_back">Back to lines</string>
+    <string name="mod69_jp_anki">Add to Anki</string>
+    <string name="mod69_jp_no_anki">AnkiDroid is not installed</string>
 </resources>
