@@ -73,6 +73,15 @@ class App(tk.Tk):
                         variable=self.v_smaller).grid(row=5, column=0, columnspan=4, sticky="w", **pad)
         ttk.Checkbutton(opts, text="Shrink long and wide pictures too",
                         variable=self.v_webtoon).grid(row=6, column=0, columnspan=4, sticky="w", **pad)
+        ttk.Label(opts, text="Don't use these categories (comma separated)").grid(row=8, column=0, sticky="w", **pad)
+        self.v_skip = tk.StringVar(value="z 0")
+        ttk.Entry(opts, textvariable=self.v_skip, width=24).grid(row=8, column=1, sticky="w", **pad)
+        ttk.Button(opts, text="Move them out now", command=self.move_skipped).grid(row=8, column=2, columnspan=2,
+                                                                                 sticky="w", **pad)
+        ttk.Label(opts, text="Entries in these categories go to the folder of their next category (or Default). "
+                             "Entries already in such a folder in the save location are moved there too, on Start "
+                             "or with \"Move them out now\" (needs the backup). \"z 0\" also covers \"z 0 something\".",
+                  foreground="#666", wraplength=680).grid(row=9, column=0, columnspan=4, sticky="w", **pad)
         ttk.Label(opts, text="Pictures shrink to fit inside max width and max height, keep their shape and are "
                              "never made bigger. Long webtoon pictures and wide pictures are found by themselves; with the box above "
                              "off they keep their full size (only picture type and quality change), never cut.",
@@ -152,14 +161,16 @@ class App(tk.Tk):
     def ex_save(self):
         try:
             with open(self.SETTINGS, "w", encoding="utf-8") as fh:
-                json.dump({"excludes": self.ex_items()}, fh, ensure_ascii=False, indent=1)
+                json.dump({"excludes": self.ex_items(), "skip": self.v_skip.get()}, fh, ensure_ascii=False, indent=1)
         except OSError:
             pass
 
     def ex_load(self):
         try:
             with open(self.SETTINGS, encoding="utf-8") as fh:
-                for folder, mode in json.load(fh).get("excludes", []):
+                data = json.load(fh)
+                self.v_skip.set(data.get("skip", "z 0"))
+                for folder, mode in data.get("excludes", []):
                     self.ex_list.insert("", "end", values=(folder, core.EXCLUDE_CHOICES.get(mode, mode)))
         except (OSError, ValueError, TypeError):
             pass
@@ -186,6 +197,29 @@ class App(tk.Tk):
         for i in self.ex_list.selection():
             self.ex_list.delete(i)
         self.ex_save()
+
+    def skip_list(self):
+        return [x.strip() for x in self.v_skip.get().split(",") if x.strip()]
+
+    def move_skipped(self):
+        out, bk = self.v_out.get().strip(), self.v_backup.get().strip()
+        if not os.path.isdir(out):
+            messagebox.showerror("69-Komikku Tool", "Choose the save location (the output folder) first.")
+            return
+        if not os.path.isfile(bk):
+            messagebox.showerror("69-Komikku Tool", "Choose the Komikku backup first (it tells which categories each entry has).")
+            return
+        self.ex_save()
+        self.b_start.config(state="disabled")
+
+        def go():
+            try:
+                core.organize(out, bk, self.skip_list(), log=lambda t: self.q.put(("log", t)))
+            except Exception as e:
+                self.q.put(("log", f"Error: {e}"))
+            self.q.put(("end",))
+
+        threading.Thread(target=go, daemon=True).start()
 
     # ---------- run
     def say(self, text):
@@ -225,7 +259,8 @@ class App(tk.Tk):
         self.b_start.config(state="disabled")
         self.b_stop.config(state="normal")
         args = dict(downloads=src, output=out, backup=bk if os.path.isfile(bk) else None,
-                    extract=self.v_extract.get(), sort=self.v_sort.get(), o=o)
+                    extract=self.v_extract.get(), sort=self.v_sort.get(), o=o, skip=self.skip_list())
+        self.ex_save()
         self.worker = threading.Thread(target=self.work, kwargs=args, daemon=True)
         self.worker.start()
 

@@ -127,8 +127,15 @@ def read_backup(path: str):
     return result
 
 
+def is_skipped(name: str, skip) -> bool:
+    """True when the category / folder name starts with one of the skipped names (e.g. "z 0")."""
+    n = valid_filename(name).strip().lower()
+    return any(n.startswith(valid_filename(x).strip().lower()) for x in (skip or []) if x.strip())
+
+
 class CategoryFinder:
-    def __init__(self, backup: dict):
+    def __init__(self, backup: dict, skip=()):
+        self.skip = list(skip or [])
         self.exact = {}
         self.fuzzy = {}
         for title, names in backup.items():
@@ -143,6 +150,8 @@ class CategoryFinder:
             names = self.fuzzy.get(loose(manga_dir_name))
         if names is None:
             return NO_INFO_FOLDER
+        # skipped categories (e.g. "z 0") are passed over: the next category is used
+        names = [n for n in names if not is_skipped(n, self.skip)]
         if not names:
             return DEFAULT_FOLDER
         return valid_filename(names[0])
@@ -337,9 +346,72 @@ def _move_done(old, dst):
     return True
 
 
+def _merge_move(src, dst):
+    """Moves folder src to dst; when dst exists, moves what's inside one by one. Returns items moved."""
+    if not os.path.exists(dst):
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        os.replace(src, dst)
+        return 1
+    n = 0
+    for child in os.listdir(src):
+        s, d = os.path.join(src, child), os.path.join(dst, child)
+        if os.path.isdir(s) and os.path.isdir(d):
+            n += _merge_move(s, d)
+        elif not os.path.exists(d):
+            os.replace(s, d)
+            n += 1
+    try:
+        os.rmdir(src)  # only when empty
+    except OSError:
+        pass
+    return n
+
+
+def move_out_of_skipped(output, finder, log=print):
+    """Entries already in a skipped category folder of the output (e.g. downloads/z 0/<entry>)
+    move to the folder of their next category. Returns how many entries moved."""
+    out_root = os.path.join(output, "downloads")
+    if not os.path.isdir(out_root) or not finder.skip:
+        return 0
+    moved = 0
+    left = 0
+    for top in sorted(os.listdir(out_root)):
+        tp = os.path.join(out_root, top)
+        if not os.path.isdir(tp) or not is_skipped(top, finder.skip):
+            continue
+        for manga in sorted(os.listdir(tp)):
+            mp = os.path.join(tp, manga)
+            if not os.path.isdir(mp):
+                continue
+            folder = finder.folder_for(manga)
+            if folder == NO_INFO_FOLDER or is_skipped(folder, finder.skip):
+                left += 1  # not in the backup: we don't know its other categories
+                continue
+            try:
+                _merge_move(mp, os.path.join(out_root, folder, manga))
+                moved += 1
+                log(f"Moved: {top}/{manga} -> {folder}/{manga}")
+            except OSError as e:
+                left += 1
+                log(f"Couldn't move {top}/{manga}: {e}")
+        try:
+            os.rmdir(tp)  # removed when nothing is left in it
+        except OSError:
+            pass
+    log(f"Moved {moved} entries out of skipped category folders" + (f" ({left} left there)" if left else ""))
+    return moved
+
+
+def organize(output, backup, skip, log=print):
+    """Only the moving: puts entries in skipped category folders into their next category's folder."""
+    return move_out_of_skipped(output, CategoryFinder(read_backup(backup), skip), log)
+
+
 def run(downloads, output, backup=None, extract=True, sort=True, o: Options = Options(),
-        workers=None, log=print, progress=lambda done, total: None, stop=lambda: False):
-    finder = CategoryFinder(read_backup(backup)) if (sort and backup) else None
+        workers=None, log=print, progress=lambda done, total: None, stop=lambda: False, skip=("z 0",)):
+    finder = CategoryFinder(read_backup(backup), skip) if (sort and backup) else None
+    if finder:
+        move_out_of_skipped(output, finder, log)
     out_root = os.path.join(output, "downloads")
     jobs = []
     moved = 0
