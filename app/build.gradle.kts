@@ -320,6 +320,15 @@ dependencies {
     // KMK -->
     implementation(libs.palette.ktx)
     implementation(libs.haze)
+    // KMK --> 69 mod R3: AI page sharpening
+    implementation("org.tensorflow:tensorflow-lite:2.16.1")
+    // 69 mod R4: page translation (Google's on-device tools, models downloaded by Play services)
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition:19.0.1")
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.0.1")
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.0.1")
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition-korean:16.0.1")
+    implementation("com.google.mlkit:translate:17.0.3")
+    // KMK <--
     implementation(compose.colorpicker)
     implementation(projects.flagkit)
     // KMK <--

@@ -245,6 +245,14 @@ class ReaderPreferences(
     /** P5: pressing back after this many pages asks before closing the reader. 0 = never ask. */
     fun mod69AskLeavePages() = preferenceStore.getInt("mod69_ask_leave_pages", 0)
 
+    /** R4: page translation. Engine "google" (free, on the phone) or "ai" (your own key). */
+    fun mod69TranslateEngine() = preferenceStore.getString("mod69_translate_engine", "google")
+    fun mod69TranslateTo() = preferenceStore.getString("mod69_translate_to", "en")
+    fun mod69AiProvider() = preferenceStore.getString("mod69_ai_provider", "gemini")
+    fun mod69AiKey() = preferenceStore.getString("mod69_ai_key", "")
+    fun mod69AiModel() = preferenceStore.getString("mod69_ai_model", "")
+    fun mod69AiBaseUrl() = preferenceStore.getString("mod69_ai_base_url", "")
+
     /** P2: long strip runs sideways: "off", "ltr" (left to right) or "rtl" (right to left). */
     fun mod69SidewaysStrip() = preferenceStore.getString("mod69_sideways_strip", "off")
 

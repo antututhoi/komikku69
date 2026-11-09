@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.AutoFixHigh
 import androidx.compose.material.icons.outlined.Bookmark
 import androidx.compose.material.icons.outlined.Bookmarks
 import androidx.compose.material.icons.outlined.ContentCopy
@@ -12,6 +13,7 @@ import androidx.compose.material.icons.outlined.GridView
 import androidx.compose.material.icons.outlined.Photo
 import androidx.compose.material.icons.outlined.Save
 import androidx.compose.material.icons.outlined.Share
+import androidx.compose.material.icons.outlined.Translate
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -49,6 +51,8 @@ fun ReaderPageActionsDialog(
     mod69PageIndex: Int = 0,
     onMod69Jump: (chapterId: Long, pageIndex: Int) -> Unit = { _, _ -> },
     onMod69AllPages: () -> Unit = {},
+    onMod69AiSharpen: (() -> Unit)? = null,
+    onMod69Translate: (() -> Unit)? = null,
     // KMK <--
 ) {
     // KMK -->
@@ -162,6 +166,30 @@ fun ReaderPageActionsDialog(
                         icon = Icons.Outlined.Bookmarks,
                         onClick = { showMod69List = true },
                     )
+                    // R4: translate
+                    if (onMod69Translate != null) {
+                        ActionButton(
+                            modifier = Modifier.weight(1f),
+                            title = stringResource(KMR.strings.mod69_translate_page),
+                            icon = Icons.Outlined.Translate,
+                            onClick = {
+                                onMod69Translate()
+                                onDismissRequest()
+                            },
+                        )
+                    }
+                    // R3: AI sharpening
+                    if (onMod69AiSharpen != null) {
+                        ActionButton(
+                            modifier = Modifier.weight(1f),
+                            title = stringResource(KMR.strings.mod69_ai_sharpen),
+                            icon = Icons.Outlined.AutoFixHigh,
+                            onClick = {
+                                onMod69AiSharpen()
+                                onDismissRequest()
+                            },
+                        )
+                    }
                     // R18: picture grid of all pages
                     ActionButton(
                         modifier = Modifier.weight(1f),

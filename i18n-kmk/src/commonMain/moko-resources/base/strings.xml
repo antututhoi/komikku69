@@ -533,4 +533,28 @@
     <string name="mod69_sideways_off">Off (strip goes down)</string>
     <string name="mod69_sideways_ltr">Left to right</string>
     <string name="mod69_sideways_rtl">Right to left (manga)</string>
+    <string name="mod69_ai_sharpen">Make sharper with AI</string>
+    <string name="mod69_ai_started">Making the page sharper… see the notification</string>
+    <string name="mod69_translate_page">Translate page</string>
+    <string name="mod69_translate_started">Translating… see the notification</string>
+    <string name="mod69_tr_engine">69- Page translation: how</string>
+    <string name="mod69_tr_google">Google, free, on the phone (needs Google Play services)</string>
+    <string name="mod69_tr_ai">My own AI key (best quality)</string>
+    <string name="mod69_tr_to">69- Translate pages to</string>
+    <string name="mod69_ai_provider">69- AI service</string>
+    <string name="mod69_ai_openai">OpenAI (or any OpenAI-compatible service)</string>
+    <string name="mod69_ai_key">69- AI key</string>
+    <string name="mod69_ai_key_summary">Your key from aistudio.google.com (Gemini) or platform.openai.com. Stays on this phone</string>
+    <string name="mod69_ai_model">69- AI model (optional)</string>
+    <string name="mod69_ai_model_summary">Empty = gemini-2.5-flash / gpt-4o-mini. Now: %s</string>
+    <string name="mod69_ai_base_url">69- AI address (optional, OpenAI-compatible only)</string>
+    <string name="mod69_ai_base_url_summary">For services like OpenRouter, e.g. https://openrouter.ai/api/v1. Empty = OpenAI</string>
+    <string name="mod69_novels">69- Novels (EPUB / TXT)</string>
+    <string name="mod69_novels_pick">Pick my books folder</string>
+    <string name="mod69_novels_intro">Read light novels and books as text: pick a folder on your phone with .epub or .txt files</string>
+    <string name="mod69_novels_empty">No .epub or .txt files in that folder</string>
+    <string name="mod69_novels_chapters">Chapters</string>
+    <string name="mod69_novels_look">Text look</string>
+    <string name="mod69_novels_size">Text size: %1$d</string>
+    <string name="mod69_novels_spacing">Line spacing: %1$s</string>
 </resources>

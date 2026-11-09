@@ -51,6 +51,7 @@ class CrashLogUtil(
             Regex("(?i)(authorization:?\\s*(?:bearer|basic)?\\s*)[A-Za-z0-9._~+/=-]{8,}") to "$1<hidden>",
             Regex("(?i)(access_token|refresh_token|token|api_key|apikey|password|passwd|secret|session|sessionid|code)(=|\":\\s*\")[^&\\s\"']{4,}") to "$1$2<hidden>",
             Regex("(?i)((?:set-)?cookie:?\\s*)[^\\n]+") to "$1<hidden>",
+            Regex("(?i)([?&]key=)[^&\\s]+") to "$1<hidden>",
             Regex("[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}") to "<email hidden>",
         ).forEach { (regex, replacement) -> result = regex.replace(result, replacement) }
         return result

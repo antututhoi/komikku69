@@ -530,6 +530,23 @@ class ReaderActivity : BaseActivity() {
                         mod69ChapterName = state.currentChapter?.chapter?.name.orEmpty(),
                         mod69PageIndex = (state.dialog as? ReaderViewModel.Dialog.PageActions)?.page?.index ?: 0,
                         onMod69AllPages = { mod69ThumbsOpen = true },
+                        onMod69Translate = {
+                            (state.dialog as? ReaderViewModel.Dialog.PageActions)?.page?.let { page ->
+                                toast(KMR.strings.mod69_translate_started)
+                                val lang = viewModel.manga?.source?.let { sourceManager.getOrStub(it).lang }.orEmpty()
+                                lifecycleScope.launch {
+                                    eu.kanade.tachiyomi.ui.reader.viewer.Mod69Translate.run(applicationContext, page, lang)
+                                }
+                            }
+                        },
+                        onMod69AiSharpen = {
+                            (state.dialog as? ReaderViewModel.Dialog.PageActions)?.page?.let { page ->
+                                toast(KMR.strings.mod69_ai_started)
+                                lifecycleScope.launch {
+                                    eu.kanade.tachiyomi.ui.reader.viewer.Mod69AiUpscale.run(applicationContext, page)
+                                }
+                            }
+                        },
                         onMod69Jump = { chapterId, pageIndex ->
                             if (chapterId == state.currentChapter?.chapter?.id) {
                                 moveToPageIndex(pageIndex)

@@ -249,6 +249,56 @@ object SettingsReaderScreen : SearchableSettings {
                     subtitle = stringResource(KMR.strings.mod69_ask_peek_summary),
                 ),
                 Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69TranslateEngine(),
+                    entries = persistentMapOf(
+                        "google" to stringResource(KMR.strings.mod69_tr_google),
+                        "ai" to stringResource(KMR.strings.mod69_tr_ai),
+                    ),
+                    title = stringResource(KMR.strings.mod69_tr_engine),
+                ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69TranslateTo(),
+                    entries = persistentMapOf(
+                        "en" to "English",
+                        "vi" to "Tiếng Việt",
+                        "es" to "Español",
+                        "fr" to "Français",
+                        "de" to "Deutsch",
+                        "pt" to "Português",
+                        "it" to "Italiano",
+                        "ru" to "Русский",
+                        "id" to "Bahasa Indonesia",
+                        "th" to "ไทย",
+                        "zh" to "中文",
+                        "ko" to "한국어",
+                        "ja" to "日本語",
+                    ),
+                    title = stringResource(KMR.strings.mod69_tr_to),
+                ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69AiProvider(),
+                    entries = persistentMapOf(
+                        "gemini" to "Google Gemini",
+                        "openai" to stringResource(KMR.strings.mod69_ai_openai),
+                    ),
+                    title = stringResource(KMR.strings.mod69_ai_provider),
+                ),
+                Preference.PreferenceItem.EditTextPreference(
+                    preference = readerPreferences.mod69AiKey(),
+                    title = stringResource(KMR.strings.mod69_ai_key),
+                    subtitle = stringResource(KMR.strings.mod69_ai_key_summary),
+                ),
+                Preference.PreferenceItem.EditTextPreference(
+                    preference = readerPreferences.mod69AiModel(),
+                    title = stringResource(KMR.strings.mod69_ai_model),
+                    subtitle = stringResource(KMR.strings.mod69_ai_model_summary),
+                ),
+                Preference.PreferenceItem.EditTextPreference(
+                    preference = readerPreferences.mod69AiBaseUrl(),
+                    title = stringResource(KMR.strings.mod69_ai_base_url),
+                    subtitle = stringResource(KMR.strings.mod69_ai_base_url_summary),
+                ),
+                Preference.PreferenceItem.ListPreference(
                     preference = readerPreferences.mod69SidewaysStrip(),
                     entries = persistentMapOf(
                         "off" to stringResource(KMR.strings.mod69_sideways_off),

@@ -185,6 +185,18 @@ fun MoreScreen(
                     onPreferenceClick = onClickStats,
                 )
             }
+            // KMK --> 69 mod O1
+            item {
+                val navigator = cafe.adriel.voyager.navigator.LocalNavigator.current
+                TextPreferenceWidget(
+                    title = stringResource(KMR.strings.mod69_novels),
+                    icon = androidx.compose.material.icons.Icons.AutoMirrored.Outlined.MenuBook,
+                    onPreferenceClick = {
+                        navigator?.push(eu.kanade.tachiyomi.ui.mod69.novel.Mod69NovelLibraryScreen())
+                    },
+                )
+            }
+            // KMK <--
             // KMK -->
             item {
                 TextPreferenceWidget(
