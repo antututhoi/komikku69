@@ -22,6 +22,9 @@ class NetworkPreferences(
     /** B11: picture proxy address with {url} in it. Empty = off. */
     fun mod69ImageProxy(): Preference<String> = preferenceStore.getString("mod69_image_proxy", "")
 
+    /** B2: address of a FlareSolverr server (e.g. http://192.168.1.5:8191). Empty = off. */
+    fun mod69FlareSolverr(): Preference<String> = preferenceStore.getString("mod69_flaresolverr", "")
+
     /** B3: block common ad / tracking hosts in the built-in browser. */
     fun mod69WebAdBlock(): Preference<Boolean> = preferenceStore.getBoolean("mod69_web_ad_block", true)
     // KMK <--

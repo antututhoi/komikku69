@@ -372,6 +372,11 @@ object SettingsAdvancedScreen : SearchableSettings {
                     title = stringResource(KMR.strings.mod69_image_proxy),
                     subtitle = stringResource(KMR.strings.mod69_image_proxy_summary),
                 ),
+                Preference.PreferenceItem.EditTextPreference(
+                    preference = networkPreferences.mod69FlareSolverr(),
+                    title = stringResource(KMR.strings.mod69_flaresolverr),
+                    subtitle = stringResource(KMR.strings.mod69_flaresolverr_summary),
+                ),
                 // KMK <--
                 Preference.PreferenceItem.TextPreference(
                     title = stringResource(MR.strings.pref_reset_user_agent_string),

@@ -91,6 +91,14 @@ import kotlin.random.Random
             .addInterceptor(
                 CloudflareInterceptor(context, cookieJar, ::defaultUserAgentProvider),
             )
+            // KMK --> 69 mod B2: FlareSolverr runs first (it is closer to the network)
+            .addInterceptor(
+                eu.kanade.tachiyomi.network.interceptor.Mod69FlareSolverrInterceptor(
+                    serverUrl = { preferences.mod69FlareSolverr().get() },
+                    cookieJar = cookieJar,
+                ),
+            )
+            // KMK <--
             .build()
     }
 
@@ -106,6 +114,14 @@ import kotlin.random.Random
         .addInterceptor(
             CloudflareInterceptor(context, cookieJar, ::defaultUserAgentProvider),
         )
+        // KMK --> 69 mod B2: FlareSolverr runs first (it is closer to the network)
+        .addInterceptor(
+            eu.kanade.tachiyomi.network.interceptor.Mod69FlareSolverrInterceptor(
+                serverUrl = { preferences.mod69FlareSolverr().get() },
+                cookieJar = cookieJar,
+            ),
+        )
+        // KMK <--
         .build()
 
     /**

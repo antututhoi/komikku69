@@ -123,6 +123,7 @@ private fun LibraryRegularToolbar(
     val pillAlpha = if (isSystemInDarkTheme()) 0.12f else 0.08f
     // KMK --> 69 mod L3: search tips dialog
     var mod69ShowTips by remember { mutableStateOf(false) }
+    val mod69Navigator = cafe.adriel.voyager.navigator.LocalNavigator.current
     if (mod69ShowTips) {
         AlertDialog(
             onDismissRequest = { mod69ShowTips = false },
@@ -189,6 +190,10 @@ private fun LibraryRegularToolbar(
                     AppBar.OverflowAction(
                         title = stringResource(KMR.strings.mod69_find_duplicates),
                         onClick = onClickFindDuplicates,
+                    ),
+                    AppBar.OverflowAction(
+                        title = stringResource(KMR.strings.mod69_suggestions),
+                        onClick = { mod69Navigator?.push(eu.kanade.tachiyomi.ui.mod69.Mod69SuggestionsScreen()) },
                     ),
                     // KMK <--
                     AppBar.OverflowAction(
