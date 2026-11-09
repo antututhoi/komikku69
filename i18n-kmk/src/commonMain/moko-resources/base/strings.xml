@@ -483,4 +483,15 @@
     <string name="mod69_floating_nav">69- Floating bottom bar (rounded)</string>
     <string name="mod69_nav_height">69- Bottom bar height</string>
     <string name="mod69_large_top_bar">69- Taller title bar</string>
+    <string name="mod69_page_turn">69- Page turn animation (page-by-page modes)</string>
+    <string name="mod69_turn_slide">Slide (normal)</string>
+    <string name="mod69_turn_fade">Fade</string>
+    <string name="mod69_turn_stack">Stack (pages pile up)</string>
+    <string name="mod69_turn_cube">Cube</string>
+    <string name="mod69_turn_zoom">Zoom out</string>
+    <string name="mod69_turn_flip">Page flip</string>
+    <string name="mod69_one_page">69- All categories on one page</string>
+    <string name="mod69_one_page_summary">One scrolling page with a header per category. Tap a header to fold it. Tap \"Library\" at the top to jump to a category</string>
+    <string name="mod69_expand_all">Open all</string>
+    <string name="mod69_collapse_all">Fold all</string>
 </resources>

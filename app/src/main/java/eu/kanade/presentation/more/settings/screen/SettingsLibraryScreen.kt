@@ -170,6 +170,11 @@ object SettingsLibraryScreen : SearchableSettings {
                     )
                 }.toTypedArray(),
                 Preference.PreferenceItem.SwitchPreference(
+                    preference = libraryPreferences.mod69OnePageLibrary(),
+                    title = stringResource(KMR.strings.mod69_one_page),
+                    subtitle = stringResource(KMR.strings.mod69_one_page_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
                     preference = libraryPreferences.mod69CoverOutline(),
                     title = stringResource(KMR.strings.mod69_cover_outline),
                 ),

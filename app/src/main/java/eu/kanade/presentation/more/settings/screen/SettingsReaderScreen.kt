@@ -248,6 +248,18 @@ object SettingsReaderScreen : SearchableSettings {
                     title = stringResource(KMR.strings.mod69_ask_peek),
                     subtitle = stringResource(KMR.strings.mod69_ask_peek_summary),
                 ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69PageTransition(),
+                    entries = persistentMapOf(
+                        "none" to stringResource(KMR.strings.mod69_turn_slide),
+                        "fade" to stringResource(KMR.strings.mod69_turn_fade),
+                        "stack" to stringResource(KMR.strings.mod69_turn_stack),
+                        "cube" to stringResource(KMR.strings.mod69_turn_cube),
+                        "zoom" to stringResource(KMR.strings.mod69_turn_zoom),
+                        "flip" to stringResource(KMR.strings.mod69_turn_flip),
+                    ),
+                    title = stringResource(KMR.strings.mod69_page_turn),
+                ),
                 Preference.PreferenceItem.CustomPreference(
                     title = stringResource(KMR.strings.mod69_tap_grid),
                 ) {

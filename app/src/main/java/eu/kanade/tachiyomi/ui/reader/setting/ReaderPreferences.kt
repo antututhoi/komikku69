@@ -245,6 +245,9 @@ class ReaderPreferences(
     /** P5: pressing back after this many pages asks before closing the reader. 0 = never ask. */
     fun mod69AskLeavePages() = preferenceStore.getInt("mod69_ask_leave_pages", 0)
 
+    /** R1: page turn animation for page-by-page reading: none, fade, stack, cube, zoom, flip. */
+    fun mod69PageTransition() = preferenceStore.getString("mod69_page_transition", "none")
+
     /** R16: the user's own tap zones (3 x 3 letters, see Mod69CustomNavigation). */
     fun mod69TapGrid() = preferenceStore.getString("mod69_tap_grid", "PPPPMNNNN")
 

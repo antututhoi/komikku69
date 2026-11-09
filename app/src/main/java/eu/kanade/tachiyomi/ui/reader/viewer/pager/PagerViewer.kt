@@ -24,6 +24,7 @@ import eu.kanade.tachiyomi.ui.reader.viewer.ViewerNavigation.NavigationRegion
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.cancel
 import tachiyomi.core.common.util.system.logcat
+import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
 import kotlin.math.min
 
@@ -116,6 +117,13 @@ abstract class PagerViewer(
         pager.offscreenPageLimit = 1
         pager.id = R.id.reader_pager
         pager.adapter = adapter
+        // KMK --> 69 mod R1: page turn animation
+        Mod69PageTransformers.create(
+            uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>()
+                .mod69PageTransition().get(),
+            horizontal = this !is VerticalPagerViewer,
+        )?.let { (reverse, transformer) -> pager.setPageTransformer(reverse, transformer) }
+        // KMK <--
         pager.addOnPageChangeListener(pagerListener)
         pager.tapListener = { event ->
             val viewPosition = IntArray(2)

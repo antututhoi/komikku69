@@ -26,6 +26,8 @@ import tachiyomi.domain.category.model.Category
 import tachiyomi.domain.library.model.LibraryDisplayMode
 import tachiyomi.domain.library.model.LibraryManga
 import tachiyomi.presentation.core.components.material.PullRefresh
+import tachiyomi.presentation.core.util.collectAsState
+import uy.kohesive.injekt.api.get
 import kotlin.time.Duration.Companion.seconds
 
 @Composable
@@ -55,6 +57,12 @@ fun LibraryContent(
     // KMK --> 69 mod: half-screen category panel over the library
     var mod69PanelOpen by Mod69LibraryPanel::open
     val pagerState = rememberPagerState(currentPage) { categories.size }
+    // 69 mod L1: all categories on one page (not while searching)
+    val mod69OnePagePref by androidx.compose.runtime.remember {
+        uy.kohesive.injekt.Injekt.get<tachiyomi.domain.library.service.LibraryPreferences>().mod69OnePageLibrary()
+    }.collectAsState()
+    val mod69OnePage = mod69OnePagePref && searchQuery.isNullOrEmpty() && categories.size > 1
+    val mod69GridState = androidx.compose.foundation.lazy.grid.rememberLazyGridState()
     Box(modifier = Modifier.fillMaxSize()) {
         // KMK <--
         Column(
@@ -67,7 +75,7 @@ fun LibraryContent(
             val scope = rememberCoroutineScope()
             var isRefreshing by remember(pagerState.currentPage) { mutableStateOf(false) }
 
-            if (showPageTabs && categories.isNotEmpty() && (categories.size > 1 || !categories.first().isSystemCategory)) {
+            if (!mod69OnePage && showPageTabs && categories.isNotEmpty() && (categories.size > 1 || !categories.first().isSystemCategory)) {
                 LaunchedEffect(categories) {
                     // KMK -->
                     val targetPage = when {
@@ -110,6 +118,28 @@ fun LibraryContent(
                     }
                 },
             ) {
+                // KMK -->
+                if (mod69OnePage) {
+                    Mod69OnePageLibrary(
+                        categories = categories,
+                        gridState = mod69GridState,
+                        contentPadding = PaddingValues(bottom = contentPadding.calculateBottomPadding()),
+                        selection = selection,
+                        getDisplayMode = getDisplayMode,
+                        getColumnsForOrientation = getColumnsForOrientation,
+                        getItemsForCategory = getItemsForCategory,
+                        onClickManga = { category, manga ->
+                            if (selection.isNotEmpty()) {
+                                onToggleSelection(category, manga)
+                            } else {
+                                onClickManga(manga.manga.id)
+                            }
+                        },
+                        onLongClickManga = onToggleRangeSelection,
+                    )
+                    return@PullRefresh
+                }
+                // KMK <--
                 LibraryPager(
                     state = pagerState,
                     contentPadding = PaddingValues(bottom = contentPadding.calculateBottomPadding()),
@@ -144,7 +174,17 @@ fun LibraryContent(
                 categories = categories,
                 currentIndex = pagerState.currentPage.coerceAtMost(categories.lastIndex),
                 getItemCountForCategory = getItemCountForCategory,
-                onPick = { mod69Scope.launch { pagerState.scrollToPage(it) } },
+                onPick = { index ->
+                    mod69Scope.launch {
+                        if (mod69OnePage) {
+                            categories.getOrNull(index)?.let { category ->
+                                Mod69OnePage.headerIndex[category.id]?.let { mod69GridState.scrollToItem(it) }
+                            }
+                        } else {
+                            pagerState.scrollToPage(index)
+                        }
+                    }
+                },
                 onDismiss = { mod69PanelOpen = false },
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
