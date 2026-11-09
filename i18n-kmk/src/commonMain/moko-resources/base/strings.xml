@@ -565,4 +565,13 @@
     <string name="mod69_jp_back">Back to lines</string>
     <string name="mod69_jp_anki">Add to Anki</string>
     <string name="mod69_jp_no_anki">AnkiDroid is not installed</string>
+    <string name="mod69_anime">69- Anime</string>
+    <string name="mod69_anime_my">My anime</string>
+    <string name="mod69_anime_sources">Sources</string>
+    <string name="mod69_anime_my_empty">Tap the heart on an anime to keep it here</string>
+    <string name="mod69_anime_no_ext">No anime extensions found. Install Aniyomi anime extensions (APK files), then tap refresh</string>
+    <string name="mod69_anime_search">Search</string>
+    <string name="mod69_anime_more">Load more</string>
+    <string name="mod69_anime_no_video">No video found for this episode</string>
+    <string name="mod69_anime_no_player">No video app found. Install 69-NextPlayer, MX Player or VLC</string>
 </resources>

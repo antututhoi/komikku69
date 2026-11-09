@@ -31,6 +31,9 @@ kotlin {
             dependencies {
                 implementation(projects.core.common)
                 api(libs.preferencektx)
+                // KMK --> 69 mod O2: anime extensions (Aniyomi API) need a small web server class
+                api("org.nanohttpd:nanohttpd:2.3.1")
+                // KMK <--
 
                 // Workaround for https://youtrack.jetbrains.com/issue/KT-57605
                 implementation(kotlinx.coroutines.android)

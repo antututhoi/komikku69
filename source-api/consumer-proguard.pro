@@ -5,3 +5,7 @@
 -keep,allowoptimization class eu.kanade.tachiyomi.util.JsoupExtensionsKt { public protected *; }
 
 -keep class exh.metadata.** { public protected *; }
+# KMK --> 69 mod O2: Aniyomi anime extensions
+-keep class eu.kanade.tachiyomi.animesource.** { public protected *; }
+-keep class fi.iki.elonen.** { *; }
+# KMK <--
