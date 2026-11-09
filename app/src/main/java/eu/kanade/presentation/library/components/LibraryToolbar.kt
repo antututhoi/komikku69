@@ -192,6 +192,10 @@ private fun LibraryRegularToolbar(
                         onClick = onClickFindDuplicates,
                     ),
                     AppBar.OverflowAction(
+                        title = stringResource(KMR.strings.mod69_anilist_list),
+                        onClick = { mod69Navigator?.push(eu.kanade.tachiyomi.ui.mod69.Mod69AniListScreen()) },
+                    ),
+                    AppBar.OverflowAction(
                         title = stringResource(KMR.strings.mod69_suggestions),
                         onClick = { mod69Navigator?.push(eu.kanade.tachiyomi.ui.mod69.Mod69SuggestionsScreen()) },
                     ),

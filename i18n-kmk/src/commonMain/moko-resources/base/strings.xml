@@ -516,4 +516,10 @@
     <string name="mod69_cover_grow_summary">When you open an entry from the library grid, its cover grows into the entry page. Restart the app after changing</string>
     <string name="mod69_progressive">69- Pages appear while loading</string>
     <string name="mod69_progressive_summary">Page-by-page modes: a blurry picture shows while the page downloads and gets sharper as it arrives (works best with JPEG pages). Reopen the chapter after changing</string>
+    <string name="mod69_anilist_list">My AniList list</string>
+    <string name="mod69_anilist_empty">Your AniList list is empty</string>
+    <string name="mod69_anilist_match">Find the %1$d missing ones on my sources</string>
+    <string name="mod69_anilist_matching">Matching… see the notification</string>
+    <string name="mod69_anilist_in_library">In your library</string>
+    <string name="mod69_anilist_not_in_library">Not in your library (tap to search)</string>
 </resources>
