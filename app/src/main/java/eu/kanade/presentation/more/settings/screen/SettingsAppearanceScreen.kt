@@ -166,6 +166,39 @@ object SettingsAppearanceScreen : SearchableSettings {
                         true
                     },
                 ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = uiPreferences.mod69DisplaySize(),
+                    entries = persistentMapOf(
+                        80 to "80%",
+                        90 to "90%",
+                        100 to stringResource(KMR.strings.mod69_size_normal),
+                        110 to "110%",
+                        120 to "120%",
+                    ),
+                    title = stringResource(KMR.strings.mod69_display_size),
+                    onValueChanged = {
+                        (context as? Activity)?.let { ActivityCompat.recreate(it) }
+                        true
+                    },
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = uiPreferences.mod69FloatingNavBar(),
+                    title = stringResource(KMR.strings.mod69_floating_nav),
+                ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = uiPreferences.mod69NavBarHeight(),
+                    entries = persistentMapOf(
+                        0 to stringResource(KMR.strings.mod69_size_normal),
+                        56 to "56 dp",
+                        64 to "64 dp",
+                        72 to "72 dp",
+                    ),
+                    title = stringResource(KMR.strings.mod69_nav_height),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = uiPreferences.mod69LargeTopBar(),
+                    title = stringResource(KMR.strings.mod69_large_top_bar),
+                ),
                 // KMK <--
                 Preference.PreferenceItem.SwitchPreference(
                     preference = amoledPref,

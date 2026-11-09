@@ -61,9 +61,11 @@ import kotlinx.collections.immutable.ImmutableList
 import tachiyomi.i18n.MR
 import tachiyomi.presentation.core.i18n.stringResource
 import tachiyomi.presentation.core.util.clearFocusOnSoftKeyboardHide
+import tachiyomi.presentation.core.util.collectAsState
 import tachiyomi.presentation.core.util.runOnEnterKeyPressed
 import tachiyomi.presentation.core.util.secondaryItemAlpha
 import tachiyomi.presentation.core.util.showSoftKeyboard
+import uy.kohesive.injekt.api.get
 
 const val SEARCH_DEBOUNCE_MILLIS = 250L
 
@@ -138,44 +140,63 @@ fun AppBar(
 
     scrollBehavior: TopAppBarScrollBehavior? = null,
 ) {
+    // KMK --> 69 mod U8: taller title bar
+    val mod69Large by remember {
+        uy.kohesive.injekt.Injekt.get<eu.kanade.domain.ui.UiPreferences>().mod69LargeTopBar()
+    }.collectAsState()
+    // KMK <--
     Column(
         modifier = modifier,
     ) {
-        TopAppBar(
-            navigationIcon = {
-                if (isActionMode) {
-                    IconButton(onClick = onCancelActionMode) {
-                        Icon(
-                            imageVector = Icons.Outlined.Close,
-                            contentDescription = stringResource(MR.strings.action_cancel),
-                        )
-                    }
-                } else {
-                    // KMK -->
-                    Row {
-                        // KMK <--
-                        navigateUp?.let {
-                            IconButton(onClick = it) {
-                                UpIcon(navigationIcon = navigationIcon)
-                            }
-                        }
-                        // KMK -->
-                        goHome?.let {
-                            IconButton(onClick = { it.invoke() }) {
-                                UpIcon(navigationIcon = Icons.Filled.Home)
-                            }
-                        }
-                        // KMK <--
-                    }
+        val navIcon: @Composable () -> Unit = {
+            if (isActionMode) {
+                IconButton(onClick = onCancelActionMode) {
+                    Icon(
+                        imageVector = Icons.Outlined.Close,
+                        contentDescription = stringResource(MR.strings.action_cancel),
+                    )
                 }
-            },
+            } else {
+                // KMK -->
+                Row {
+                    // KMK <--
+                    navigateUp?.let {
+                        IconButton(onClick = it) {
+                            UpIcon(navigationIcon = navigationIcon)
+                        }
+                    }
+                    // KMK -->
+                    goHome?.let {
+                        IconButton(onClick = { it.invoke() }) {
+                            UpIcon(navigationIcon = Icons.Filled.Home)
+                        }
+                    }
+                    // KMK <--
+                }
+            }
+        }
+        val colors = TopAppBarDefaults.topAppBarColors(
+            containerColor = backgroundColor ?: MaterialTheme.colorScheme.surfaceColorAtElevation(
+                elevation = if (isActionMode) 3.dp else 0.dp,
+            ),
+        )
+        // KMK -->
+        if (mod69Large && !isActionMode) {
+            androidx.compose.material3.MediumTopAppBar(
+                navigationIcon = navIcon,
+                title = titleContent,
+                actions = actions,
+                colors = colors,
+                scrollBehavior = scrollBehavior,
+            )
+            return@Column
+        }
+        // KMK <--
+        TopAppBar(
+            navigationIcon = navIcon,
             title = titleContent,
             actions = actions,
-            colors = TopAppBarDefaults.topAppBarColors(
-                containerColor = backgroundColor ?: MaterialTheme.colorScheme.surfaceColorAtElevation(
-                    elevation = if (isActionMode) 3.dp else 0.dp,
-                ),
-            ),
+            colors = colors,
             scrollBehavior = scrollBehavior,
         )
     }

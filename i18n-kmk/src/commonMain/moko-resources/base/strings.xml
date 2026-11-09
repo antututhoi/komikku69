@@ -478,4 +478,9 @@
     <string name="mod69_stats_by_source">Library by source</string>
     <string name="mod69_stats_by_language">Library by language</string>
     <string name="mod69_stats_note">Days and times come from the last time you read each chapter</string>
+    <string name="mod69_display_size">69- Display size (whole app)</string>
+    <string name="mod69_size_normal">Normal</string>
+    <string name="mod69_floating_nav">69- Floating bottom bar (rounded)</string>
+    <string name="mod69_nav_height">69- Bottom bar height</string>
+    <string name="mod69_large_top_bar">69- Taller title bar</string>
 </resources>

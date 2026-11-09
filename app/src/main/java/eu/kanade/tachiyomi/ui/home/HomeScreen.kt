@@ -9,12 +9,17 @@ import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.consumeWindowInsets
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBars
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Badge
 import androidx.compose.material3.BadgedBox
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.NavigationBarDefaults
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationRailItem
 import androidx.compose.material3.Text
@@ -26,9 +31,11 @@ import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastFilter
 import androidx.compose.ui.util.fastForEach
 import cafe.adriel.voyager.navigator.LocalNavigator
@@ -61,6 +68,7 @@ import tachiyomi.presentation.core.components.material.NavigationBar
 import tachiyomi.presentation.core.components.material.NavigationRail
 import tachiyomi.presentation.core.components.material.Scaffold
 import tachiyomi.presentation.core.i18n.pluralStringResource
+import tachiyomi.presentation.core.util.collectAsState
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 
@@ -127,7 +135,42 @@ object HomeScreen : Screen() {
                                 enter = expandVertically(),
                                 exit = shrinkVertically(),
                             ) {
-                                NavigationBar {
+                                // KMK --> 69 mod U2: floating bottom bar, height
+                                val mod69Floating by remember {
+                                    Injekt.get<UiPreferences>().mod69FloatingNavBar()
+                                }.collectAsState()
+                                val mod69Height by remember {
+                                    Injekt.get<UiPreferences>().mod69NavBarHeight()
+                                }.collectAsState()
+                                NavigationBar(
+                                    modifier = Modifier
+                                        .then(
+                                            if (mod69Floating) {
+                                                Modifier
+                                                    .navigationBarsPadding()
+                                                    .padding(horizontal = 16.dp, vertical = 8.dp)
+                                                    .clip(androidx.compose.foundation.shape.RoundedCornerShape(28.dp))
+                                            } else {
+                                                Modifier
+                                            },
+                                        )
+                                        .then(
+                                            if (mod69Height > 0) {
+                                                // the normal bar also holds the phone's navigation area
+                                                val insets = if (mod69Floating) {
+                                                    0.dp
+                                                } else {
+                                                    WindowInsets.navigationBars.asPaddingValues().calculateBottomPadding()
+                                                }
+                                                Modifier.height(mod69Height.dp + insets)
+                                            } else {
+                                                Modifier
+                                            },
+                                        ),
+                                    tonalElevation = if (mod69Floating) 6.dp else NavigationBarDefaults.Elevation,
+                                    windowInsets = if (mod69Floating) WindowInsets(0) else NavigationBarDefaults.windowInsets,
+                                ) {
+                                    // KMK <--
                                     TABS
                                         // SY -->
                                         .fastFilter { it.isEnabled() }

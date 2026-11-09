@@ -28,6 +28,18 @@ class UiPreferences(
     // KMK --> 69 mod
     /** U7: "default", "serif", "mono", "cursive", "condensed", "light", "medium" or "casual". */
     fun mod69AppFont() = preferenceStore.getString("mod69_app_font", "default")
+
+    /** U3: size of everything in the app, in percent (100 = normal). */
+    fun mod69DisplaySize() = preferenceStore.getInt("mod69_display_size", 100)
+
+    /** U2: bottom bar floats with rounded corners. */
+    fun mod69FloatingNavBar() = preferenceStore.getBoolean("mod69_floating_nav_bar", false)
+
+    /** U2: bottom bar height in dp (0 = normal). */
+    fun mod69NavBarHeight() = preferenceStore.getInt("mod69_nav_bar_height", 0)
+
+    /** U8: taller title bar on most screens. */
+    fun mod69LargeTopBar() = preferenceStore.getBoolean("mod69_large_top_bar", false)
     // KMK <--
 
     fun colorTheme() = preferenceStore.getInt("pref_color_theme", 0xFFDF0090.toInt())
