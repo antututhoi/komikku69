@@ -13,12 +13,14 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.HelpOutline
 import androidx.compose.material.icons.automirrored.outlined.Label
+import androidx.compose.material.icons.automirrored.outlined.MenuBook
 import androidx.compose.material.icons.automirrored.outlined.PlaylistAdd
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.outlined.CloudOff
 import androidx.compose.material.icons.outlined.GetApp
 import androidx.compose.material.icons.outlined.History
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.Movie
 import androidx.compose.material.icons.outlined.NewReleases
 import androidx.compose.material.icons.outlined.QueryStats
 import androidx.compose.material.icons.outlined.Settings
@@ -190,7 +192,7 @@ fun MoreScreen(
                 val navigator = cafe.adriel.voyager.navigator.LocalNavigator.current
                 TextPreferenceWidget(
                     title = stringResource(KMR.strings.mod69_anime),
-                    icon = androidx.compose.material.icons.Icons.Outlined.Movie,
+                    icon = Icons.Outlined.Movie,
                     onPreferenceClick = {
                         navigator?.push(eu.kanade.tachiyomi.ui.mod69.anime.Mod69AnimeHomeScreen())
                     },
@@ -202,7 +204,7 @@ fun MoreScreen(
                 val navigator = cafe.adriel.voyager.navigator.LocalNavigator.current
                 TextPreferenceWidget(
                     title = stringResource(KMR.strings.mod69_novels),
-                    icon = androidx.compose.material.icons.Icons.AutoMirrored.Outlined.MenuBook,
+                    icon = Icons.AutoMirrored.Outlined.MenuBook,
                     onPreferenceClick = {
                         navigator?.push(eu.kanade.tachiyomi.ui.mod69.novel.Mod69NovelLibraryScreen())
                     },
