@@ -188,6 +188,18 @@ data object LibraryTab : Tab {
                             }
                         }
                     },
+                    onClickFindDuplicates = {
+                        val (groups, selected) = screenModel.mod69SelectDuplicates()
+                        scope.launch {
+                            snackbarHostState.showSnackbar(
+                                if (groups == 0) {
+                                    context.stringResource(KMR.strings.mod69_no_duplicates)
+                                } else {
+                                    context.stringResource(KMR.strings.mod69_duplicates_found, groups, selected)
+                                },
+                            )
+                        }
+                    },
                     onClickMarkSelection = { mark ->
                         val ids = state.selection.toList()
                         eu.kanade.presentation.library.components.Mod69Marked.set(ids, mark)

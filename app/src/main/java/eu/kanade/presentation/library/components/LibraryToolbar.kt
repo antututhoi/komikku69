@@ -8,12 +8,18 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.FilterList
 import androidx.compose.material.icons.outlined.FlipToBack
 import androidx.compose.material.icons.outlined.SelectAll
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -49,6 +55,7 @@ fun LibraryToolbar(
     // SY <--
     // KMK -->
     onClickUpdateMarked: () -> Unit,
+    onClickFindDuplicates: () -> Unit,
     onClickMarkSelection: (Boolean) -> Unit,
     // KMK <--
     searchQuery: String?,
@@ -77,6 +84,7 @@ fun LibraryToolbar(
         onClickSyncNow = onClickSyncNow,
         // KMK -->
         onClickUpdateMarked = onClickUpdateMarked,
+        onClickFindDuplicates = onClickFindDuplicates,
         // KMK <--
         // SY -->
         onClickSyncExh = onClickSyncExh,
@@ -100,6 +108,7 @@ private fun LibraryRegularToolbar(
     onClickSyncNow: () -> Unit,
     // KMK -->
     onClickUpdateMarked: () -> Unit,
+    onClickFindDuplicates: () -> Unit,
     // KMK <--
     // SY -->
     onClickSyncExh: (() -> Unit)?,
@@ -110,6 +119,19 @@ private fun LibraryRegularToolbar(
 ) {
     val context = LocalContext.current
     val pillAlpha = if (isSystemInDarkTheme()) 0.12f else 0.08f
+    // KMK --> 69 mod L3: search tips dialog
+    var mod69ShowTips by remember { mutableStateOf(false) }
+    if (mod69ShowTips) {
+        AlertDialog(
+            onDismissRequest = { mod69ShowTips = false },
+            title = { Text(stringResource(KMR.strings.mod69_search_tips)) },
+            text = { Text(stringResource(KMR.strings.mod69_search_tips_text)) },
+            confirmButton = {
+                TextButton(onClick = { mod69ShowTips = false }) { Text(stringResource(MR.strings.action_ok)) }
+            },
+        )
+    }
+    // KMK <--
     SearchToolbar(
         titleContent = {
             // KMK --> 69 mod: tap "Library" (with the count) for the category panel
@@ -157,6 +179,14 @@ private fun LibraryRegularToolbar(
                     AppBar.OverflowAction(
                         title = stringResource(KMR.strings.mod69_update_marked),
                         onClick = onClickUpdateMarked,
+                    ),
+                    AppBar.OverflowAction(
+                        title = stringResource(KMR.strings.mod69_search_tips),
+                        onClick = { mod69ShowTips = true },
+                    ),
+                    AppBar.OverflowAction(
+                        title = stringResource(KMR.strings.mod69_find_duplicates),
+                        onClick = onClickFindDuplicates,
                     ),
                     // KMK <--
                     AppBar.OverflowAction(

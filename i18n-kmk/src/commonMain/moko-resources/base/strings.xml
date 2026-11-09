@@ -417,4 +417,14 @@
     <string name="mod69_all_pages_empty">The pages are not loaded yet</string>
     <string name="mod69_chapter_grid">69- Chapters as a grid of numbers (tiles per row)</string>
     <string name="mod69_chapter_grid_off">Off (normal list)</string>
+    <string name="mod69_search_tips">Search tips</string>
+    <string name="mod69_search_tips_text">You can mix these with normal words in the library search:\n\nchapters&gt;50, unread&gt;=10, read&lt;5, bookmarks&gt;0, downloaded&gt;0\nchapters:10-50 (between)\nadded&gt;2025-01-01, updated&lt;2025-06-01, lastread&gt;2025-03-01\ntag:romance  (has the tag)\n-tag:horror  (does not have it)\nanytag:romance,comedy  (has any of them)\nnotags  (no tags at all)\nsource:mangadex  (source name)\n\nExample: tag:romance unread&gt;0 chapters&gt;20</string>
+    <string name="mod69_find_duplicates">Find duplicates</string>
+    <string name="mod69_no_duplicates">No entry is in the library twice</string>
+    <string name="mod69_duplicates_found">%1$d titles are in the library more than once. Selected %2$d extra copies (the copy you read most is kept). Use the selection menu to remove or move them</string>
+    <string name="mod69_dedupe_chapters">69- One row per chapter number</string>
+    <string name="mod69_dedupe_chapters_summary">When several groups uploaded the same chapter, the entry page shows only one copy (from your preferred group)</string>
+    <string name="mod69_preferred_groups">69- Preferred groups</string>
+    <string name="mod69_preferred_groups_summary">Group (scanlator) names, separated by commas, best first. Used for \"One row per chapter number\" and \"Download all\". Empty = the group with the most chapters</string>
+    <string name="mod69_download_all">All (one copy per chapter)</string>
 </resources>

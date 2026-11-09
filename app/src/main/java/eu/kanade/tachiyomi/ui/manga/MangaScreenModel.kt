@@ -1356,6 +1356,12 @@ class MangaScreenModel(
             DownloadAction.NEXT_25_CHAPTERS -> getUnreadChaptersSorted().take(25)
             DownloadAction.UNREAD_CHAPTERS -> getUnreadChapters()
             DownloadAction.BOOKMARKED_CHAPTERS -> getBookmarkedChapters()
+            // KMK --> 69 mod N10: every chapter not downloaded yet, one copy per chapter number
+            DownloadAction.ALL_CHAPTERS -> Mod69ChapterDedupe.pick(
+                allChapters.orEmpty().filter { it.downloadState == Download.State.NOT_DOWNLOADED },
+                Mod69ChapterDedupe.parseGroups(libraryPreferences.mod69PreferredGroups().get()),
+            ) { it.chapter }.map { it.chapter }
+            // KMK <--
         }
         if (chaptersToDownload.isNotEmpty()) {
             startDownload(chaptersToDownload, false)
@@ -2075,6 +2081,18 @@ class MangaScreenModel(
                     // KMK -->
                     // safe-guard some edge-cases where chapters are duplicated some how on a merged entry
                     .distinctBy { it.id }
+                    // 69 mod N9: one row per chapter number
+                    .let { list ->
+                        val prefs = Injekt.get<LibraryPreferences>()
+                        if (prefs.mod69DedupeChapters().get()) {
+                            Mod69ChapterDedupe.pick(
+                                list,
+                                Mod69ChapterDedupe.parseGroups(prefs.mod69PreferredGroups().get()),
+                            ) { it.chapter }
+                        } else {
+                            list
+                        }
+                    }
                 // KMK <--
             }
 

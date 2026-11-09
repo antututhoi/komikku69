@@ -121,6 +121,9 @@ fun MangaToolbar(
                     expanded = downloadExpanded,
                     onDismissRequest = onDismissRequest,
                     onDownloadClicked = onClickDownload,
+                    // KMK -->
+                    includeAll = true,
+                    // KMK <--
                 )
             }
 

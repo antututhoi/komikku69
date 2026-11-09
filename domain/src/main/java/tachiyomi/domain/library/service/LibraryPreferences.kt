@@ -77,6 +77,8 @@ class LibraryPreferences(
     fun mod69MarkedForUpdate() = preferenceStore.getStringSet("mod69_marked_for_update", emptySet())
     fun mod69GridSpacing() = preferenceStore.getInt("mod69_grid_spacing", 4)
     fun mod69ChapterGridColumns() = preferenceStore.getInt("mod69_chapter_grid_columns", 0)
+    fun mod69DedupeChapters() = preferenceStore.getBoolean("mod69_dedupe_chapters", false)
+    fun mod69PreferredGroups() = preferenceStore.getString("mod69_preferred_groups", "")
     fun mod69UpdateDelayMs() = preferenceStore.getInt("mod69_update_delay_ms", 0)
     fun mod69UpdateParallel() = preferenceStore.getInt("mod69_update_parallel", 5)
     fun mod69SortIgnoreArticles() = preferenceStore.getBoolean("mod69_sort_ignore_articles", false)

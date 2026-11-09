@@ -154,6 +154,16 @@ object SettingsLibraryScreen : SearchableSettings {
                     title = stringResource(KMR.strings.mod69_chapter_grid),
                 ),
                 Preference.PreferenceItem.SwitchPreference(
+                    preference = libraryPreferences.mod69DedupeChapters(),
+                    title = stringResource(KMR.strings.mod69_dedupe_chapters),
+                    subtitle = stringResource(KMR.strings.mod69_dedupe_chapters_summary),
+                ),
+                Preference.PreferenceItem.EditTextPreference(
+                    preference = libraryPreferences.mod69PreferredGroups(),
+                    title = stringResource(KMR.strings.mod69_preferred_groups),
+                    subtitle = stringResource(KMR.strings.mod69_preferred_groups_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
                     preference = libraryPreferences.mod69ConfirmRemove(),
                     title = stringResource(KMR.strings.mod69_confirm_remove),
                     subtitle = stringResource(KMR.strings.mod69_confirm_remove_summary),

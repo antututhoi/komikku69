@@ -8,6 +8,7 @@ import androidx.compose.ui.unit.DpOffset
 import eu.kanade.presentation.manga.DownloadAction
 import kotlinx.collections.immutable.persistentListOf
 import tachiyomi.i18n.MR
+import tachiyomi.i18n.kmk.KMR
 import tachiyomi.presentation.core.i18n.pluralStringResource
 import tachiyomi.presentation.core.i18n.stringResource
 
@@ -18,6 +19,9 @@ fun DownloadDropdownMenu(
     onDownloadClicked: (DownloadAction) -> Unit,
     modifier: Modifier = Modifier,
     offset: DpOffset = /* KMK --> */ DefaultDropdownMenuOffset, /* KMK <-- */
+    // KMK --> 69 mod N10
+    includeAll: Boolean = false,
+    // KMK <--
 ) {
     DropdownMenu(
         expanded = expanded,
@@ -28,6 +32,9 @@ fun DownloadDropdownMenu(
             DownloadDropdownMenuItems(
                 onDismissRequest = onDismissRequest,
                 onDownloadClicked = onDownloadClicked,
+                // KMK -->
+                includeAll = includeAll,
+                // KMK <--
             )
         },
     )
@@ -37,6 +44,9 @@ fun DownloadDropdownMenu(
 private fun DownloadDropdownMenuItems(
     onDismissRequest: () -> Unit,
     onDownloadClicked: (DownloadAction) -> Unit,
+    // KMK -->
+    includeAll: Boolean,
+    // KMK <--
 ) {
     val options = persistentListOf(
         DownloadAction.NEXT_1_CHAPTER to pluralStringResource(MR.plurals.download_amount, 1, 1),
@@ -46,6 +56,11 @@ private fun DownloadDropdownMenuItems(
         DownloadAction.UNREAD_CHAPTERS to stringResource(MR.strings.download_unread),
         DownloadAction.BOOKMARKED_CHAPTERS to stringResource(MR.strings.download_bookmarked),
     )
+        // KMK -->
+        .let {
+            if (includeAll) it.add(DownloadAction.ALL_CHAPTERS to stringResource(KMR.strings.mod69_download_all)) else it
+        }
+    // KMK <--
 
     options.forEach { (downloadAction, string) ->
         DropdownMenuItem(

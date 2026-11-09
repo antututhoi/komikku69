@@ -918,6 +918,9 @@ class LibraryScreenModel(
             DownloadAction.NEXT_25_CHAPTERS -> downloadNextChapters(25)
             DownloadAction.UNREAD_CHAPTERS -> downloadNextChapters(null)
             DownloadAction.BOOKMARKED_CHAPTERS -> downloadBookmarkedChapters()
+            // KMK --> 69 mod N10: not offered in the library menu
+            DownloadAction.ALL_CHAPTERS -> downloadNextChapters(null)
+            // KMK <--
         }
         clearSelection()
     }
@@ -1221,6 +1224,19 @@ class LibraryScreenModel(
                 }
             }
             // AZ <--
+            // KMK --> 69 mod L3 / P10: number, date, tag and source words
+            val mod69Query = Mod69LibraryQuery.parse(query)
+            if (mod69Query.hasChecks) {
+                val narrowed = unfiltered.fastFilter {
+                    mod69Query.matches(it, sourceManager.getOrStub(it.libraryManga.manga.source).name)
+                }
+                return if (mod69Query.rest.isBlank()) {
+                    narrowed
+                } else {
+                    filterLibrary(narrowed, mod69Query.rest, loggedInTrackServices)
+                }
+            }
+            // KMK <--
             // Prepare filter object
             val parsedQuery = searchEngine.parseQuery(query)
             val mangaWithMetaIds = getIdsOfFavoriteMangaWithMetadata.await()
@@ -1440,6 +1456,29 @@ class LibraryScreenModel(
             state.copy(selection = newSelection)
         }
     }
+
+    // KMK --> 69 mod L12: select the extra copies of entries added more than once
+    /** Returns (groups found, entries selected). Keeps the copy with the most read chapters unselected. */
+    fun mod69SelectDuplicates(): Pair<Int, Int> {
+        val all = state.value.libraryData.favorites.distinctBy { it.id }
+        val groups = all
+            .groupBy { mod69TitleKey(it.libraryManga.manga.title) }
+            .filter { (key, items) -> key.isNotEmpty() && items.size > 1 }
+        val extra = groups.values.flatMap { group ->
+            group.sortedWith(
+                compareByDescending<LibraryItem> { it.libraryManga.readCount }
+                    .thenByDescending { it.libraryManga.totalChapters },
+            ).drop(1).map { it.id }
+        }.toSet()
+        lastSelectionCategory = null
+        mutableState.update { it.copy(selection = extra) }
+        return groups.size to extra.size
+    }
+
+    private fun mod69TitleKey(title: String): String = title.lowercase()
+        .replace(Regex("\\(.*?\\)|\\[.*?\\]"), "")
+        .replace(Regex("[^\\p{L}\\p{N}]"), "")
+    // KMK <--
 
     fun invertSelection() {
         lastSelectionCategory = null
