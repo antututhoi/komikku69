@@ -255,6 +255,14 @@ fun MangaToolbar(
                     }
                     // KMK -->
                     if (mod69MangaId > 0) {
+                        add(
+                            AppBar.OverflowAction(
+                                title = stringResource(KMR.strings.mod69_reading_record),
+                                onClick = { Mod69ReadingRecord.openFor = mod69MangaId },
+                            ),
+                        )
+                    }
+                    if (mod69MangaId > 0) {
                         var marked by remember { mutableStateOf(Mod69Marked.isMarked(mod69MangaId)) }
                         add(
                             AppBar.OverflowAction(

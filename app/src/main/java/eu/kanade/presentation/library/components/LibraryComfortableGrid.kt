@@ -46,28 +46,10 @@ internal fun LibraryComfortableGrid(
                     ogUrl = manga.thumbnailUrl,
                     lastModified = manga.coverLastModified,
                 ),
-                coverBadgeStart = {
-                    DownloadsBadge(count = libraryItem.downloadCount)
-                    UnreadBadge(
-                        count = libraryItem.unreadCount,
-                        // KMK -->
-                        readCount = libraryItem.libraryManga.readCount,
-                        totalChapters = libraryItem.libraryManga.totalChapters,
-                        // KMK <--
-                    )
-                },
-                coverBadgeEnd = {
-                    LanguageBadge(
-                        isLocal = libraryItem.isLocal,
-                        sourceLanguage = libraryItem.sourceLanguage,
-                        // KMK -->
-                        useLangIcon = libraryItem.useLangIcon,
-                        // KMK <--
-                    )
-                    // KMK -->
-                    SourceIconBadge(source = libraryItem.source)
-                    // KMK <--
-                },
+                // KMK --> 69 mod L9: badges in the corners the user picked
+                coverBadgeStart = { Mod69Badges(libraryItem, "start") },
+                coverBadgeEnd = { Mod69Badges(libraryItem, "end") },
+                // KMK <--
                 onLongClick = { onLongClick(libraryItem.libraryManga) },
                 onClick = { onClick(libraryItem.libraryManga) },
                 onClickContinueReading = if (onClickContinueReading != null && libraryItem.unreadCount > 0) {

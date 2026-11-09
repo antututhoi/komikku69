@@ -427,4 +427,19 @@
     <string name="mod69_preferred_groups">69- Preferred groups</string>
     <string name="mod69_preferred_groups_summary">Group (scanlator) names, separated by commas, best first. Used for \"One row per chapter number\" and \"Download all\". Empty = the group with the most chapters</string>
     <string name="mod69_download_all">All (one copy per chapter)</string>
+    <string name="mod69_badge_corner_downloads">69- Corner for the download count</string>
+    <string name="mod69_badge_corner_unread">69- Corner for the unread badge</string>
+    <string name="mod69_badge_corner_language">69- Corner for the language</string>
+    <string name="mod69_badge_corner_source">69- Corner for the source icon</string>
+    <string name="mod69_corner_left">Top left</string>
+    <string name="mod69_corner_right">Top right</string>
+    <string name="mod69_corner_hide">Hidden</string>
+    <string name="mod69_reading_record">Reading record</string>
+    <string name="mod69_reading_record_empty">Nothing read yet for this entry</string>
+    <string name="mod69_record_time">Total reading time: %1$s</string>
+    <string name="mod69_record_chapters">Chapters opened: %1$d</string>
+    <string name="mod69_record_days">Days you read it on: %1$d</string>
+    <string name="mod69_record_first">First read: %1$s</string>
+    <string name="mod69_record_last">Last read: %1$s</string>
+    <string name="mod69_record_timeline">Timeline (tap to jump back)</string>
 </resources>

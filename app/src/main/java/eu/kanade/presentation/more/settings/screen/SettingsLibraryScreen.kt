@@ -153,6 +153,22 @@ object SettingsLibraryScreen : SearchableSettings {
                     ),
                     title = stringResource(KMR.strings.mod69_chapter_grid),
                 ),
+                *listOf(
+                    libraryPreferences.mod69BadgeDownloads() to KMR.strings.mod69_badge_corner_downloads,
+                    libraryPreferences.mod69BadgeUnread() to KMR.strings.mod69_badge_corner_unread,
+                    libraryPreferences.mod69BadgeLanguage() to KMR.strings.mod69_badge_corner_language,
+                    libraryPreferences.mod69BadgeSource() to KMR.strings.mod69_badge_corner_source,
+                ).map { (pref, titleRes) ->
+                    Preference.PreferenceItem.ListPreference(
+                        preference = pref,
+                        entries = persistentMapOf(
+                            "start" to stringResource(KMR.strings.mod69_corner_left),
+                            "end" to stringResource(KMR.strings.mod69_corner_right),
+                            "hide" to stringResource(KMR.strings.mod69_corner_hide),
+                        ),
+                        title = stringResource(titleRes),
+                    )
+                }.toTypedArray(),
                 Preference.PreferenceItem.SwitchPreference(
                     preference = libraryPreferences.mod69DedupeChapters(),
                     title = stringResource(KMR.strings.mod69_dedupe_chapters),

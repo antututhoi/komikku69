@@ -491,6 +491,17 @@ class MangaScreen(
             }
             // KMK <--
         }
+        // KMK --> 69 mod D8
+        if (eu.kanade.presentation.manga.components.Mod69ReadingRecord.openFor == successState.manga.id) {
+            val recordContext = androidx.compose.ui.platform.LocalContext.current
+            eu.kanade.presentation.manga.components.Mod69ReadingRecordDialog(
+                mangaId = successState.manga.id,
+                chapters = successState.chapters.map { it.chapter },
+                onOpenChapter = { openChapter(recordContext, it) },
+                onDismissRequest = { eu.kanade.presentation.manga.components.Mod69ReadingRecord.openFor = null },
+            )
+        }
+        // KMK <--
         when (val dialog = successState.dialog) {
             null -> {}
             is MangaScreenModel.Dialog.ChangeCategory -> {
