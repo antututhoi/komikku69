@@ -136,8 +136,10 @@ abstract class PagerViewer(
             )
             when (config.navigator.getAction(pos)) {
                 NavigationRegion.MENU -> activity.toggleMenu()
-                NavigationRegion.NEXT -> moveToNext()
-                NavigationRegion.PREV -> moveToPrevious()
+                // KMK --> 69 mod R22: step through panels first when panel reading is on
+                NavigationRegion.NEXT -> if (!mod69PanelStep(true)) moveToNext()
+                NavigationRegion.PREV -> if (!mod69PanelStep(false)) moveToPrevious()
+                // KMK <--
                 NavigationRegion.RIGHT -> moveRight()
                 NavigationRegion.LEFT -> moveLeft()
             }
@@ -202,6 +204,18 @@ abstract class PagerViewer(
     /**
      * Returns the PagerPageHolder for the provided page
      */
+    // KMK --> 69 mod R22
+    private val mod69PanelMode by lazy {
+        uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>().mod69PanelMode().get()
+    }
+
+    private fun mod69PanelStep(forward: Boolean): Boolean {
+        if (!mod69PanelMode) return false
+        val holder = (currentPage as? ReaderPage)?.let(::getPageHolder) ?: return false
+        return runCatching { holder.mod69PanelStep(forward, rightToLeft = this is R2LPagerViewer) }.getOrDefault(false)
+    }
+    // KMK <--
+
     private fun getPageHolder(page: ReaderPage): PagerPageHolder? =
         pager.children
             .filterIsInstance<PagerPageHolder>()

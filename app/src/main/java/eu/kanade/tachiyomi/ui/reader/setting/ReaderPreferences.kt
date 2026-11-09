@@ -245,6 +245,12 @@ class ReaderPreferences(
     /** P5: pressing back after this many pages asks before closing the reader. 0 = never ask. */
     fun mod69AskLeavePages() = preferenceStore.getInt("mod69_ask_leave_pages", 0)
 
+    /** R2: picture filter on pages: none, sharpen, strong, smooth. */
+    fun mod69PageFilter() = preferenceStore.getString("mod69_page_filter", "none")
+
+    /** R22: taps move from panel to panel before turning the page (page-by-page modes). */
+    fun mod69PanelMode() = preferenceStore.getBoolean("mod69_panel_mode", false)
+
     /** N2: pages show a blurry first look while downloading and sharpen as they arrive. */
     fun mod69ProgressivePages() = preferenceStore.getBoolean("mod69_progressive_pages", false)
 

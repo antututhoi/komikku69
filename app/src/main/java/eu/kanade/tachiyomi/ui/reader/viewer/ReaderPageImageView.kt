@@ -250,6 +250,29 @@ open class ReaderPageImageView @JvmOverloads constructor(
     // KMK <--
 
     // KMK --> 69 mod R14: zoom button
+    /** R22: zooms onto [rect] (fractions of the page), or back to the whole page when null. */
+    fun mod69ShowRect(rect: android.graphics.RectF?) {
+        (pageView as? SubsamplingScaleImageView)?.let { view ->
+            if (!view.isReady) return
+            val sw = view.sWidth.toFloat()
+            val sh = view.sHeight.toFloat()
+            if (rect == null) {
+                view.animateScaleAndCenter(view.minScale, PointF(sw / 2f, sh / 2f))
+                    ?.withDuration(250)
+                    ?.withInterruptible(true)
+                    ?.start()
+                return
+            }
+            val rw = rect.width() * sw
+            val rh = rect.height() * sh
+            val target = minOf(view.width / rw, view.height / rh).coerceIn(view.minScale, view.maxScale)
+            view.animateScaleAndCenter(target, PointF(rect.centerX() * sw, rect.centerY() * sh))
+                ?.withDuration(300)
+                ?.withInterruptible(true)
+                ?.start()
+        }
+    }
+
     fun mod69ZoomBy(factor: Float) {
         (pageView as? SubsamplingScaleImageView)?.let { view ->
             val center = view.center ?: return
@@ -307,6 +330,12 @@ open class ReaderPageImageView @JvmOverloads constructor(
                 },
             )
             setOnClickListener { this@ReaderPageImageView.onViewClicked() }
+            // KMK --> 69 mod R2: sharpen / smooth filter
+            Mod69PageFilter.apply(
+                this,
+                Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>().mod69PageFilter().get(),
+            )
+            // KMK <--
         }
         addView(pageView, MATCH_PARENT, MATCH_PARENT)
     }

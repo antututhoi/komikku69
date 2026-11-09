@@ -248,6 +248,21 @@ object SettingsReaderScreen : SearchableSettings {
                     title = stringResource(KMR.strings.mod69_ask_peek),
                     subtitle = stringResource(KMR.strings.mod69_ask_peek_summary),
                 ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69PageFilter(),
+                    entries = persistentMapOf(
+                        "none" to stringResource(KMR.strings.mod69_filter_none),
+                        "sharpen" to stringResource(KMR.strings.mod69_filter_sharpen),
+                        "strong" to stringResource(KMR.strings.mod69_filter_strong),
+                        "smooth" to stringResource(KMR.strings.mod69_filter_smooth),
+                    ),
+                    title = stringResource(KMR.strings.mod69_filter),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69PanelMode(),
+                    title = stringResource(KMR.strings.mod69_panel_mode),
+                    subtitle = stringResource(KMR.strings.mod69_panel_mode_summary),
+                ),
                 Preference.PreferenceItem.SwitchPreference(
                     preference = readerPreferences.mod69ProgressivePages(),
                     title = stringResource(KMR.strings.mod69_progressive),

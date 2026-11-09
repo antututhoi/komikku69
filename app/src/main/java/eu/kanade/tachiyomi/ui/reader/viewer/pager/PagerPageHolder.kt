@@ -115,6 +115,35 @@ class PagerPageHolder(
         }
     }
 
+    // R22: panel-by-panel reading
+    private var mod69Panels: List<android.graphics.RectF>? = null
+    private var mod69PanelIndex = -1
+
+    /** Moves to the next / previous panel. False when there is none (then the page turns). */
+    fun mod69PanelStep(forward: Boolean, rightToLeft: Boolean): Boolean {
+        if (extraPage != null) return false
+        val panels = mod69Panels ?: run {
+            val stream = page.stream ?: return false
+            // first use on this page: find the panels (small picture, fast)
+            Mod69PanelsCache.get(page) ?: eu.kanade.tachiyomi.ui.reader.viewer.Mod69Panels.detect(stream, rightToLeft)
+                .also { Mod69PanelsCache.put(page, it) }
+        }.also { mod69Panels = it }
+        if (panels.isEmpty()) return false
+        if (forward) {
+            if (mod69PanelIndex + 1 >= panels.size) {
+                mod69PanelIndex = -1
+                mod69ShowRect(null)
+                return false
+            }
+            mod69PanelIndex++
+        } else {
+            if (mod69PanelIndex < 0) return false
+            mod69PanelIndex--
+        }
+        mod69ShowRect(panels.getOrNull(mod69PanelIndex))
+        return true
+    }
+
     private fun mod69RemovePreview() {
         mod69Preview?.let { removeView(it) }
         mod69Preview = null
@@ -530,3 +559,17 @@ class PagerPageHolder(
         errorLayout = null
     }
 }
+
+// KMK -->
+private object Mod69PanelsCache {
+    private val map = java.util.WeakHashMap<ReaderPage, List<android.graphics.RectF>>()
+
+    @Synchronized
+    fun get(page: ReaderPage) = map[page]
+
+    @Synchronized
+    fun put(page: ReaderPage, panels: List<android.graphics.RectF>) {
+        map[page] = panels
+    }
+}
+// KMK <--

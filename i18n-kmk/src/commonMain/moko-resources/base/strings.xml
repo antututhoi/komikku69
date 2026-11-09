@@ -522,4 +522,11 @@
     <string name="mod69_anilist_matching">Matching… see the notification</string>
     <string name="mod69_anilist_in_library">In your library</string>
     <string name="mod69_anilist_not_in_library">Not in your library (tap to search)</string>
+    <string name="mod69_panel_mode">69- Panel-by-panel reading</string>
+    <string name="mod69_panel_mode_summary">Page-by-page modes: tapping next zooms to each comic panel in turn, then turns the page. Works on pages with clear white or black gutters. Reopen the chapter after changing</string>
+    <string name="mod69_filter">69- Picture filter (GPU)</string>
+    <string name="mod69_filter_none">None</string>
+    <string name="mod69_filter_sharpen">Sharpen (Android 13+)</string>
+    <string name="mod69_filter_strong">Sharpen strongly (Android 13+)</string>
+    <string name="mod69_filter_smooth">Smooth blocky pages (Android 12+)</string>
 </resources>
