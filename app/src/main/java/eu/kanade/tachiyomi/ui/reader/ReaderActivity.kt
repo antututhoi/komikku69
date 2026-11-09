@@ -667,6 +667,18 @@ class ReaderActivity : BaseActivity() {
      * Dispatches a key event. If the viewer doesn't handle it, call the default implementation.
      */
     override fun dispatchKeyEvent(event: KeyEvent): Boolean {
+        // KMK --> 69 mod N11: game controller buttons turn pages (R1 / A next, L1 / B previous, Start menu)
+        val mapped = when (event.keyCode) {
+            KeyEvent.KEYCODE_BUTTON_R1, KeyEvent.KEYCODE_BUTTON_A -> KeyEvent.KEYCODE_PAGE_DOWN
+            KeyEvent.KEYCODE_BUTTON_L1, KeyEvent.KEYCODE_BUTTON_B -> KeyEvent.KEYCODE_PAGE_UP
+            KeyEvent.KEYCODE_BUTTON_START -> KeyEvent.KEYCODE_MENU
+            else -> null
+        }
+        if (mapped != null) {
+            val handledPad = viewModel.state.value.viewer?.handleKeyEvent(KeyEvent(event.action, mapped)) ?: false
+            if (handledPad) return true
+        }
+        // KMK <--
         val handled = viewModel.state.value.viewer?.handleKeyEvent(event) ?: false
         return handled || super.dispatchKeyEvent(event)
     }
