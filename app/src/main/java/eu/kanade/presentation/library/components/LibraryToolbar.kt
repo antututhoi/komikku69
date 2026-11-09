@@ -57,6 +57,7 @@ fun LibraryToolbar(
     onClickUpdateMarked: () -> Unit,
     onClickFindDuplicates: () -> Unit,
     onClickMarkSelection: (Boolean) -> Unit,
+    onClickTrackSelection: () -> Unit,
     // KMK <--
     searchQuery: String?,
     onSearchQueryChange: (String?) -> Unit,
@@ -70,6 +71,7 @@ fun LibraryToolbar(
         onClickInvertSelection = onClickInvertSelection,
         // KMK -->
         onClickMarkSelection = onClickMarkSelection,
+        onClickTrackSelection = onClickTrackSelection,
         // KMK <--
     )
     else -> LibraryRegularToolbar(
@@ -233,6 +235,7 @@ private fun LibrarySelectionToolbar(
     onClickInvertSelection: () -> Unit,
     // KMK -->
     onClickMarkSelection: (Boolean) -> Unit,
+    onClickTrackSelection: () -> Unit,
     // KMK <--
 ) {
     AppBar(
@@ -258,6 +261,10 @@ private fun LibrarySelectionToolbar(
                     AppBar.OverflowAction(
                         title = stringResource(KMR.strings.mod69_unmark_for_update),
                         onClick = { onClickMarkSelection(false) },
+                    ),
+                    AppBar.OverflowAction(
+                        title = stringResource(KMR.strings.mod69_bulk_track),
+                        onClick = onClickTrackSelection,
                     ),
                     // KMK <--
                 ),

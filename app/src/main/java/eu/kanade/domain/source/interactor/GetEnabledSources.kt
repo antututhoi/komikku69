@@ -46,6 +46,11 @@ class GetEnabledSources(
             sources
                 .filter { it.lang in enabledLanguages || it.isLocal() }
                 .filterNot { it.id.toString() in disabledSources || it.id in BlacklistedSources.HIDDEN_SOURCES }
+                // KMK --> 69 mod B8: sources marked 18+ are hidden when 18+ sources are hidden
+                .filterNot {
+                    !preferences.showNsfwSource().get() && it.id.toString() in preferences.mod69NsfwSources().get()
+                }
+                // KMK <--
                 .sortedWith(compareBy(String.CASE_INSENSITIVE_ORDER) { it.name })
                 .flatMap {
                     val flag = if ("${it.id}" in pinnedSourceIds) Pins.pinned else Pins.unpinned

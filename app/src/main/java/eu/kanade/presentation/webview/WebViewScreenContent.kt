@@ -51,8 +51,10 @@ import eu.kanade.tachiyomi.util.system.setDefaultSettings
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.launch
 import tachiyomi.i18n.MR
+import tachiyomi.i18n.kmk.KMR
 import tachiyomi.presentation.core.components.material.Scaffold
 import tachiyomi.presentation.core.i18n.stringResource
+import uy.kohesive.injekt.api.get
 
 class WebViewWindow(webContent: WebContent, val navigator: WebViewNavigator) {
     var state by mutableStateOf(WebViewState(webContent))
@@ -95,6 +97,13 @@ fun WebViewScreenContent(
 
     var currentUrl by remember { mutableStateOf(url) }
     var showCloudflareHelp by remember { mutableStateOf(false) }
+    // KMK --> 69 mod B3
+    val mod69AdBlockPref = remember {
+        uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.network.NetworkPreferences>().mod69WebAdBlock()
+    }
+    var mod69AdBlock by remember { mutableStateOf(mod69AdBlockPref.get()) }
+    var mod69Desktop by remember { mutableStateOf(false) }
+    // KMK <--
 
     val webClient = remember {
         object : AccompanistWebViewClient() {
@@ -125,6 +134,18 @@ fun WebViewScreenContent(
                     onUrlChange(it)
                 }
             }
+
+            // KMK --> 69 mod B3: block ads
+            override fun shouldInterceptRequest(
+                view: WebView?,
+                request: WebResourceRequest?,
+            ): android.webkit.WebResourceResponse? {
+                if (mod69AdBlock && request?.isForMainFrame == false && Mod69Web.isAd(request.url?.host)) {
+                    return Mod69Web.empty()
+                }
+                return super.shouldInterceptRequest(view, request)
+            }
+            // KMK <--
 
             override fun shouldOverrideUrlLoading(
                 view: WebView?,
@@ -233,6 +254,36 @@ fun WebViewScreenContent(
                                         title = stringResource(MR.strings.pref_clear_cookies),
                                         onClick = { onClearCookies(currentUrl) },
                                     ),
+                                    // KMK --> 69 mod B3
+                                    AppBar.OverflowAction(
+                                        title = stringResource(
+                                            if (mod69Desktop) KMR.strings.mod69_web_mobile else KMR.strings.mod69_web_desktop,
+                                        ),
+                                        onClick = {
+                                            mod69Desktop = !mod69Desktop
+                                            currentWindow.webView?.let { view ->
+                                                view.settings.userAgentString = if (mod69Desktop) {
+                                                    Mod69Web.DESKTOP_UA
+                                                } else {
+                                                    headers["user-agent"]
+                                                }
+                                                view.settings.useWideViewPort = true
+                                                view.settings.loadWithOverviewMode = mod69Desktop
+                                                view.reload()
+                                            }
+                                        },
+                                    ),
+                                    AppBar.OverflowAction(
+                                        title = stringResource(
+                                            if (mod69AdBlock) KMR.strings.mod69_web_ads_on else KMR.strings.mod69_web_ads_off,
+                                        ),
+                                        onClick = {
+                                            mod69AdBlock = !mod69AdBlock
+                                            mod69AdBlockPref.set(mod69AdBlock)
+                                            navigator.reload()
+                                        },
+                                    ),
+                                    // KMK <--
                                 ).builder().apply {
                                     if (windowStack.size > 1) {
                                         add(

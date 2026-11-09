@@ -49,6 +49,11 @@ fun StatsScreenContent(
         item {
             TrackerStats(state.trackers)
         }
+        // KMK --> 69 mod S1 / S2
+        item {
+            Mod69StatsSection()
+        }
+        // KMK <--
     }
 }
 

@@ -147,6 +147,12 @@ class SourcePreferences(
     // SY <--
 
     // KMK --> 69 mod
+    /** B8: sources that failed the last "Test all sources". */
+    fun mod69BrokenSources() = preferenceStore.getStringSet("mod69_broken_sources", emptySet())
+
+    /** B8: sources the user marked as 18+ (hidden when 18+ sources are hidden). */
+    fun mod69NsfwSources() = preferenceStore.getStringSet("mod69_nsfw_sources", emptySet())
+
     /** P19: tapping a source opens its Latest list (when it has one) instead of Popular. */
     fun mod69OpenLatestFirst() = preferenceStore.getBoolean("mod69_open_latest_first", false)
 

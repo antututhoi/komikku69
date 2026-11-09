@@ -21,6 +21,9 @@ class NetworkPreferences(
 
     /** B11: picture proxy address with {url} in it. Empty = off. */
     fun mod69ImageProxy(): Preference<String> = preferenceStore.getString("mod69_image_proxy", "")
+
+    /** B3: block common ad / tracking hosts in the built-in browser. */
+    fun mod69WebAdBlock(): Preference<Boolean> = preferenceStore.getBoolean("mod69_web_ad_block", true)
     // KMK <--
 
     fun defaultUserAgent(): Preference<String> {

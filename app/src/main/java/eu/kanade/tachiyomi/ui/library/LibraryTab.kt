@@ -17,6 +17,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalContext
@@ -113,6 +114,9 @@ data object LibraryTab : Tab {
         val context = LocalContext.current
         val scope = rememberCoroutineScope()
         val haptic = LocalHapticFeedback.current
+        // KMK --> 69 mod N30
+        var mod69TrackPick by androidx.compose.runtime.saveable.rememberSaveable { androidx.compose.runtime.mutableStateOf(false) }
+        // KMK <--
 
         val screenModel = rememberScreenModel { LibraryScreenModel() }
         val settingsScreenModel = rememberScreenModel { LibrarySettingsScreenModel() }
@@ -202,6 +206,7 @@ data object LibraryTab : Tab {
                             )
                         }
                     },
+                    onClickTrackSelection = { mod69TrackPick = true },
                     onClickMarkSelection = { mark ->
                         val ids = state.selection.toList()
                         eu.kanade.presentation.library.components.Mod69Marked.set(ids, mark)
@@ -420,6 +425,42 @@ data object LibraryTab : Tab {
             }
         }
 
+        // KMK --> 69 mod N30: pick the tracker to link to the selected entries
+        if (mod69TrackPick) {
+            val trackers = remember { eu.kanade.tachiyomi.data.track.Mod69BulkTrack.trackers() }
+            androidx.compose.material3.AlertDialog(
+                onDismissRequest = { mod69TrackPick = false },
+                title = { androidx.compose.material3.Text(stringResource(KMR.strings.mod69_bulk_track)) },
+                text = {
+                    androidx.compose.foundation.layout.Column {
+                        if (trackers.isEmpty()) {
+                            androidx.compose.material3.Text(stringResource(KMR.strings.mod69_bulk_track_none))
+                        }
+                        trackers.forEach { tracker ->
+                            androidx.compose.material3.TextButton(
+                                onClick = {
+                                    mod69TrackPick = false
+                                    val mangas = state.selectedManga
+                                    eu.kanade.tachiyomi.data.track.Mod69BulkTrack.start(context, tracker, mangas)
+                                    screenModel.clearSelection()
+                                    scope.launch {
+                                        snackbarHostState.showSnackbar(
+                                            context.stringResource(KMR.strings.mod69_bulk_track_started, mangas.size),
+                                        )
+                                    }
+                                },
+                            ) { androidx.compose.material3.Text(tracker.name) }
+                        }
+                    }
+                },
+                confirmButton = {
+                    androidx.compose.material3.TextButton(onClick = { mod69TrackPick = false }) {
+                        androidx.compose.material3.Text(stringResource(MR.strings.action_cancel))
+                    }
+                },
+            )
+        }
+        // KMK <--
         val onDismissRequest = screenModel::closeDialog
         when (val dialog = state.dialog) {
             is LibraryScreenModel.Dialog.SettingsSheet -> run {

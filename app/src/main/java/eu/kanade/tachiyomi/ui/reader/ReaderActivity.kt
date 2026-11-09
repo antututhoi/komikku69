@@ -1696,6 +1696,10 @@ class ReaderActivity : BaseActivity() {
                         uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.extension.ExtensionManager>()
                             .installedExtensionsFlow.value
                             .any { ext -> ext.isNsfw && ext.sources.any { it.id == manga.source } } ||
+                            manga.source.toString() in uy.kohesive.injekt.Injekt
+                                .get<eu.kanade.domain.source.service.SourcePreferences>()
+                                .mod69NsfwSources()
+                                .get() ||
                             manga.genre.orEmpty().any {
                                 it.lowercase() in setOf("hentai", "adult", "smut", "erotica", "pornographic", "mature")
                             }

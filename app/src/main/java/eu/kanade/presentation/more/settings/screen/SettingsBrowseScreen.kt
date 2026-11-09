@@ -17,6 +17,7 @@ import eu.kanade.presentation.more.settings.Preference
 import eu.kanade.presentation.more.settings.screen.browse.ExtensionStoresScreen
 import eu.kanade.tachiyomi.ui.category.sources.SourceCategoryScreen
 import eu.kanade.tachiyomi.util.system.AuthenticatorUtil.authenticate
+import eu.kanade.tachiyomi.util.system.toast
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableMap
 import mihon.domain.extension.interactor.GetExtensionStoreCountAsFlow
@@ -135,6 +136,29 @@ object SettingsBrowseScreen : SearchableSettings {
                             entries = entries,
                             title = stringResource(KMR.strings.mod69_reverse_chapters),
                             subtitle = stringResource(KMR.strings.mod69_reverse_chapters_summary),
+                        ),
+                        // B8: source health
+                        Preference.PreferenceItem.TextPreference(
+                            title = stringResource(KMR.strings.mod69_test_sources),
+                            subtitle = stringResource(KMR.strings.mod69_test_sources_summary),
+                            onClick = {
+                                eu.kanade.tachiyomi.data.Mod69SourceTest.start(context)
+                                context.toast(KMR.strings.mod69_test_sources_started)
+                            },
+                        ),
+                        Preference.PreferenceItem.TextPreference(
+                            title = stringResource(KMR.strings.mod69_hide_broken),
+                            subtitle = stringResource(KMR.strings.mod69_hide_broken_summary),
+                            onClick = {
+                                val count = eu.kanade.tachiyomi.data.Mod69SourceTest.hideBroken()
+                                context.toast(context.stringResource(KMR.strings.mod69_hide_broken_done, count))
+                            },
+                        ),
+                        Preference.PreferenceItem.MultiSelectListPreference(
+                            preference = sourcePreferences.mod69NsfwSources(),
+                            entries = entries,
+                            title = stringResource(KMR.strings.mod69_nsfw_sources),
+                            subtitle = stringResource(KMR.strings.mod69_nsfw_sources_summary),
                         ),
                     ),
                 )

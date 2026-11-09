@@ -29,6 +29,7 @@ import eu.kanade.tachiyomi.ui.browse.source.feed.SourceFeedScreen
 import eu.kanade.tachiyomi.ui.manga.MangaScreen
 import eu.kanade.tachiyomi.util.system.isDebugBuildType
 import kotlinx.collections.immutable.persistentListOf
+import kotlinx.coroutines.launch
 import tachiyomi.i18n.MR
 import tachiyomi.i18n.kmk.KMR
 import tachiyomi.i18n.sy.SYMR
@@ -259,6 +260,19 @@ fun MangaToolbar(
                             AppBar.OverflowAction(
                                 title = stringResource(KMR.strings.mod69_reading_record),
                                 onClick = { Mod69ReadingRecord.openFor = mod69MangaId },
+                            ),
+                        )
+                        // 69 mod S4: icon for this entry on the home screen
+                        val mod69Context = androidx.compose.ui.platform.LocalContext.current
+                        val mod69Scope = androidx.compose.runtime.rememberCoroutineScope()
+                        add(
+                            AppBar.OverflowAction(
+                                title = stringResource(KMR.strings.mod69_add_to_home),
+                                onClick = {
+                                    mod69Scope.launch {
+                                        eu.kanade.tachiyomi.ui.main.Mod69Shortcuts.pinManga(mod69Context, mod69MangaId, title)
+                                    }
+                                },
                             ),
                         )
                     }
