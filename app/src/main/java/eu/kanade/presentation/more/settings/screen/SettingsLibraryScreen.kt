@@ -175,6 +175,11 @@ object SettingsLibraryScreen : SearchableSettings {
                     subtitle = stringResource(KMR.strings.mod69_one_page_summary),
                 ),
                 Preference.PreferenceItem.SwitchPreference(
+                    preference = libraryPreferences.mod69StaggeredGrid(),
+                    title = stringResource(KMR.strings.mod69_staggered),
+                    subtitle = stringResource(KMR.strings.mod69_staggered_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
                     preference = libraryPreferences.mod69CoverOutline(),
                     title = stringResource(KMR.strings.mod69_cover_outline),
                 ),

@@ -199,6 +199,19 @@ object SettingsAppearanceScreen : SearchableSettings {
                     preference = uiPreferences.mod69LargeTopBar(),
                     title = stringResource(KMR.strings.mod69_large_top_bar),
                 ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = uiPreferences.mod69Frosted(),
+                    entries = persistentMapOf(
+                        0 to stringResource(KMR.strings.mod69_frosted_off),
+                        1 to stringResource(KMR.strings.mod69_frosted_light),
+                        2 to stringResource(KMR.strings.mod69_frosted_strong),
+                    ),
+                    title = stringResource(KMR.strings.mod69_frosted),
+                    onValueChanged = {
+                        (context as? Activity)?.let { ActivityCompat.recreate(it) }
+                        true
+                    },
+                ),
                 // KMK <--
                 Preference.PreferenceItem.SwitchPreference(
                     preference = amoledPref,

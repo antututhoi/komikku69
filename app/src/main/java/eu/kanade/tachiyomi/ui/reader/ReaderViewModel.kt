@@ -1445,6 +1445,11 @@ class ReaderViewModel @JvmOverloads constructor(
         val manga = manga ?: return
         val context = Injekt.get<Application>()
 
+        // KMK --> 69 mod P24: wait until enough chapters are read before telling the trackers
+        val mod69Minimum = trackPreferences.mod69TrackAfterChapters().get()
+        if (mod69Minimum > 0 && chapterList.count { it.chapter.read } < mod69Minimum) return
+        // KMK <--
+
         viewModelScope.launchNonCancellable {
             trackChapter.await(context, manga.id, readerChapter.chapter.chapter_number.toDouble())
         }

@@ -41,6 +41,9 @@ dependencies {
     implementation(compose.material.icons)
     implementation(compose.animation)
     implementation(compose.animation.graphics)
+    // KMK --> 69 mod U1: frosted glass bars
+    implementation(libs.haze)
+    // KMK <--
     debugImplementation(compose.ui.tooling)
     implementation(compose.ui.tooling.preview)
     implementation(compose.ui.util)

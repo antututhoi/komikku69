@@ -500,4 +500,13 @@
     <string name="mod69_suggestions_tags">Your top tags (tap to leave one out):</string>
     <string name="mod69_suggestions_none">No suggestions found. Check your internet, or add more entries with tags</string>
     <string name="mod69_suggestions_find">Find on my sources</string>
+    <string name="mod69_track_after">69- Update trackers only after this many chapters</string>
+    <string name="mod69_track_after_summary">Reading progress is sent to your trackers only once you have read this many chapters of the entry (so trying a few pages does not add it). Now: %s</string>
+    <string name="mod69_track_after_always">From the first chapter (normal)</string>
+    <string name="mod69_staggered">69- Covers in their own shape (Pinterest grid)</string>
+    <string name="mod69_staggered_summary">In grid views, tall and wide covers keep their real shape and are packed together. Reopen the library after changing</string>
+    <string name="mod69_frosted">69- Frosted glass bars</string>
+    <string name="mod69_frosted_off">Off</string>
+    <string name="mod69_frosted_light">Light (bars slightly see-through, content blurred behind)</string>
+    <string name="mod69_frosted_strong">Strong (more see-through, more blur)</string>
 </resources>

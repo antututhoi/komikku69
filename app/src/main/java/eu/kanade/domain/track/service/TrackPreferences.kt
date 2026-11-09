@@ -40,6 +40,10 @@ class TrackPreferences(
 
     fun trackOnAddingToLibrary() = preferenceStore.getBoolean("track_on_adding_to_library", true)
 
+    // KMK --> 69 mod P24: send reading progress to trackers only once this many chapters are read (0 = always)
+    fun mod69TrackAfterChapters() = preferenceStore.getInt("mod69_track_after_chapters", 0)
+    // KMK <--
+
     fun autoUpdateTrackOnMarkRead() = preferenceStore.getEnum(
         "pref_auto_update_manga_on_mark_read",
         AutoTrackState.ALWAYS,

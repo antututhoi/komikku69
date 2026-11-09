@@ -110,7 +110,15 @@ private fun BaseTachiyomiTheme(
         // KMK -->
         typography = remember(font) { mod69Typography(font) },
         // KMK <--
-        content = content,
+        // KMK --> 69 mod U1: frosted glass bars
+        content = {
+            val frosted = remember { Injekt.get<UiPreferences>().mod69Frosted().get() }
+            androidx.compose.runtime.CompositionLocalProvider(
+                tachiyomi.presentation.core.components.material.LocalMod69Frosted provides frosted,
+                content = content,
+            )
+        },
+        // KMK <--
     )
 }
 

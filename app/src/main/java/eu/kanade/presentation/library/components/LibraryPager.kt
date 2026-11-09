@@ -26,6 +26,7 @@ import tachiyomi.domain.library.model.LibraryManga
 import tachiyomi.i18n.MR
 import tachiyomi.presentation.core.screens.EmptyScreen
 import tachiyomi.presentation.core.util.plus
+import uy.kohesive.injekt.api.get
 
 @Composable
 fun LibraryPager(
@@ -77,6 +78,23 @@ fun LibraryPager(
 
         val onClickManga: (LibraryManga) -> Unit = { onClickManga(category, it) }
         val onLongClickManga: (LibraryManga) -> Unit = { onLongClickManga(category, it) }
+
+        // KMK --> 69 mod L2: covers in their own shape
+        val mod69Staggered = remember {
+            uy.kohesive.injekt.Injekt.get<tachiyomi.domain.library.service.LibraryPreferences>().mod69StaggeredGrid().get()
+        }
+        if (mod69Staggered && displayMode != LibraryDisplayMode.List && searchQuery.isNullOrEmpty()) {
+            Mod69StaggeredLibrary(
+                items = items,
+                columns = columns,
+                contentPadding = contentPadding,
+                selection = selection,
+                onClick = onClickManga,
+                onLongClick = onLongClickManga,
+            )
+            return@HorizontalPager
+        }
+        // KMK <--
 
         when (displayMode) {
             LibraryDisplayMode.List -> {

@@ -38,6 +38,9 @@ class UiPreferences(
     /** U2: bottom bar height in dp (0 = normal). */
     fun mod69NavBarHeight() = preferenceStore.getInt("mod69_nav_bar_height", 0)
 
+    /** U1 / U4: frosted glass bars: 0 off, 1 light, 2 strong. */
+    fun mod69Frosted() = preferenceStore.getInt("mod69_frosted", 0)
+
     /** U8: taller title bar on most screens. */
     fun mod69LargeTopBar() = preferenceStore.getBoolean("mod69_large_top_bar", false)
     // KMK <--

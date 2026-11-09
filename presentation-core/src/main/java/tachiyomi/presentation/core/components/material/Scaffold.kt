@@ -18,6 +18,7 @@
 
 package tachiyomi.presentation.core.components.material
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.MutableWindowInsets
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.WindowInsets
@@ -53,6 +54,11 @@ import androidx.compose.ui.util.fastForEach
 import androidx.compose.ui.util.fastMap
 import androidx.compose.ui.util.fastMapNotNull
 import androidx.compose.ui.util.fastMaxBy
+import dev.chrisbanes.haze.HazeState
+import dev.chrisbanes.haze.HazeStyle
+import dev.chrisbanes.haze.HazeTint
+import dev.chrisbanes.haze.hazeEffect
+import dev.chrisbanes.haze.hazeSource
 import kotlin.math.max
 
 /**
@@ -133,12 +139,41 @@ fun Scaffold(
         color = containerColor,
         contentColor = contentColor,
     ) {
+        // KMK --> 69 mod U1 / U4: content blurs behind the bars
+        val frosted = LocalMod69Frosted.current
+        val hazeState = remember { HazeState() }
+        val hazeStyle = HazeStyle(
+            backgroundColor = MaterialTheme.colorScheme.surface,
+            tint = HazeTint(MaterialTheme.colorScheme.surface.copy(alpha = if (frosted >= 2) 0.35f else 0.55f)),
+            blurRadius = if (frosted >= 2) 28.dp else 18.dp,
+        )
+        // KMK <--
         ScaffoldLayout(
             fabPosition = floatingActionButtonPosition,
-            topBar = { topBar(topBarScrollBehavior) },
+            // KMK -->
+            topBar = {
+                if (frosted > 0) {
+                    Box(Modifier.hazeEffect(state = hazeState, style = hazeStyle)) { topBar(topBarScrollBehavior) }
+                } else {
+                    topBar(topBarScrollBehavior)
+                }
+            },
             startBar = startBar,
-            bottomBar = bottomBar,
-            content = content,
+            bottomBar = {
+                if (frosted > 0) {
+                    Box(Modifier.hazeEffect(state = hazeState, style = hazeStyle)) { bottomBar() }
+                } else {
+                    bottomBar()
+                }
+            },
+            content = { padding ->
+                if (frosted > 0) {
+                    Box(Modifier.hazeSource(state = hazeState)) { content(padding) }
+                } else {
+                    content(padding)
+                }
+            },
+            // KMK <--
             snackbar = snackbarHost,
             contentWindowInsets = remainingWindowInsets,
             fab = floatingActionButton,

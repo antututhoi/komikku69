@@ -175,11 +175,21 @@ fun AppBar(
                 }
             }
         }
-        val colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = backgroundColor ?: MaterialTheme.colorScheme.surfaceColorAtElevation(
-                elevation = if (isActionMode) 3.dp else 0.dp,
-            ),
+        // KMK --> 69 mod U1: see-through bar with the frosted look
+        val mod69Alpha = tachiyomi.presentation.core.components.material.mod69FrostedAlpha(
+            tachiyomi.presentation.core.components.material.LocalMod69Frosted.current,
         )
+        val mod69Container = (
+            backgroundColor ?: MaterialTheme.colorScheme.surfaceColorAtElevation(
+                elevation = if (isActionMode) 3.dp else 0.dp,
+            )
+            ).let { if (mod69Alpha < 1f) it.copy(alpha = mod69Alpha) else it }
+        val colors = TopAppBarDefaults.topAppBarColors(
+            containerColor = mod69Container,
+        ).let {
+            if (mod69Alpha < 1f) it.copy(scrolledContainerColor = mod69Container) else it
+        }
+        // KMK <--
         // KMK -->
         if (mod69Large && !isActionMode) {
             androidx.compose.material3.MediumTopAppBar(

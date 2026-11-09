@@ -56,6 +56,7 @@ import eu.kanade.tachiyomi.data.track.shikimori.ShikimoriApi
 import eu.kanade.tachiyomi.util.system.openInBrowser
 import eu.kanade.tachiyomi.util.system.toast
 import kotlinx.collections.immutable.persistentListOf
+import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.collections.immutable.toPersistentMap
 import tachiyomi.core.common.util.lang.launchIO
@@ -138,6 +139,20 @@ object SettingsTrackingScreen : SearchableSettings {
                 preference = trackPreferences.autoUpdateTrack(),
                 title = stringResource(MR.strings.pref_auto_update_manga_sync),
             ),
+            // KMK --> 69 mod P24
+            Preference.PreferenceItem.ListPreference(
+                preference = trackPreferences.mod69TrackAfterChapters(),
+                entries = persistentMapOf(
+                    0 to stringResource(KMR.strings.mod69_track_after_always),
+                    2 to "2",
+                    3 to "3",
+                    5 to "5",
+                    10 to "10",
+                ),
+                title = stringResource(KMR.strings.mod69_track_after),
+                subtitle = stringResource(KMR.strings.mod69_track_after_summary),
+            ),
+            // KMK <--
             Preference.PreferenceItem.ListPreference(
                 preference = trackPreferences.autoUpdateTrackOnMarkRead(),
                 entries = AutoTrackState.entries
