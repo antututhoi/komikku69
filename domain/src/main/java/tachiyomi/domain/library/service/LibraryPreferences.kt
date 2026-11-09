@@ -84,6 +84,8 @@ class LibraryPreferences(
     fun mod69BadgeLanguage() = preferenceStore.getString("mod69_badge_language", "end")
     fun mod69BadgeSource() = preferenceStore.getString("mod69_badge_source", "end")
     fun mod69ChapterThumbs() = preferenceStore.getBoolean("mod69_chapter_thumbs", false)
+    fun mod69LowMemoryCovers() = preferenceStore.getBoolean("mod69_low_memory_covers", false)
+    fun mod69CoverOutline() = preferenceStore.getBoolean("mod69_cover_outline", false)
     fun mod69UpdateDelayMs() = preferenceStore.getInt("mod69_update_delay_ms", 0)
     fun mod69UpdateParallel() = preferenceStore.getInt("mod69_update_parallel", 5)
     fun mod69SortIgnoreArticles() = preferenceStore.getBoolean("mod69_sort_ignore_articles", false)

@@ -447,4 +447,7 @@
     <string name="mod69_find_covers_none">No covers found on your other sources</string>
     <string name="mod69_chapter_thumbs">69- Chapter pictures</string>
     <string name="mod69_chapter_thumbs_summary">Downloaded chapters show a small picture of their first page in the chapter list</string>
+    <string name="mod69_low_memory_covers">69- Low-memory library</string>
+    <string name="mod69_low_memory_covers_summary">Keeps fewer covers in memory and uses lighter picture colors, for big libraries or phones with little memory. Restart the app after changing</string>
+    <string name="mod69_cover_outline">69- Thin outline around covers</string>
 </resources>

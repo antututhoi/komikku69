@@ -1,6 +1,7 @@
 package eu.kanade.presentation.library.components
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
@@ -27,6 +28,7 @@ import androidx.compose.material3.contentColorFor
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.MutableFloatState
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -49,6 +51,7 @@ import exh.debug.DebugToggles
 import tachiyomi.i18n.MR
 import tachiyomi.presentation.core.components.BadgeGroup
 import tachiyomi.presentation.core.i18n.stringResource
+import tachiyomi.presentation.core.util.collectAsState
 import tachiyomi.presentation.core.util.selectedBackground
 import uy.kohesive.injekt.api.get
 import tachiyomi.domain.manga.model.MangaCover as MangaCoverModel
@@ -339,10 +342,25 @@ private fun MangaGridCover(
     badgesEnd: (@Composable RowScope.() -> Unit)? = null,
     content: @Composable (BoxScope.() -> Unit)? = null,
 ) {
+    // KMK --> 69 mod L2: thin outline around covers
+    val mod69Outline by remember {
+        uy.kohesive.injekt.Injekt.get<tachiyomi.domain.library.service.LibraryPreferences>().mod69CoverOutline()
+    }.collectAsState()
+    val outlineColor = MaterialTheme.colorScheme.outlineVariant
+    // KMK <--
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .aspectRatio(ratio),
+            .aspectRatio(ratio)
+            // KMK -->
+            .then(
+                if (mod69Outline) {
+                    Modifier.border(1.dp, outlineColor, MaterialTheme.shapes.extraSmall)
+                } else {
+                    Modifier
+                },
+            ),
+        // KMK <--
     ) {
         cover()
         content?.invoke(this)

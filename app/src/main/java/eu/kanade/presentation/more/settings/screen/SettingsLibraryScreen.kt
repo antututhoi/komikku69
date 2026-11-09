@@ -170,6 +170,15 @@ object SettingsLibraryScreen : SearchableSettings {
                     )
                 }.toTypedArray(),
                 Preference.PreferenceItem.SwitchPreference(
+                    preference = libraryPreferences.mod69CoverOutline(),
+                    title = stringResource(KMR.strings.mod69_cover_outline),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = libraryPreferences.mod69LowMemoryCovers(),
+                    title = stringResource(KMR.strings.mod69_low_memory_covers),
+                    subtitle = stringResource(KMR.strings.mod69_low_memory_covers_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
                     preference = libraryPreferences.mod69ChapterThumbs(),
                     title = stringResource(KMR.strings.mod69_chapter_thumbs),
                     subtitle = stringResource(KMR.strings.mod69_chapter_thumbs_summary),

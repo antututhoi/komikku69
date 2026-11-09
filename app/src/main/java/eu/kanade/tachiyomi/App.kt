@@ -286,14 +286,20 @@ class App : Application(), DefaultLifecycleObserver, SingletonImageLoader.Factor
                     .build(),
             )
 
+            // KMK --> 69 mod L14: low-memory covers (smaller picture cache, lighter colors)
+            val mod69LowMemory = androidx.preference.PreferenceManager.getDefaultSharedPreferences(this@App)
+                .getBoolean("mod69_low_memory_covers", false)
+            // KMK <--
             memoryCache(
                 MemoryCache.Builder()
-                    .maxSizePercent(context)
+                    // KMK -->
+                    .apply { if (mod69LowMemory) maxSizePercent(context, 0.08) else maxSizePercent(context) }
+                    // KMK <--
                     .build(),
             )
 
             crossfade((300 * this@App.animatorDurationScale).toInt())
-            allowRgb565(DeviceUtil.isLowRamDevice(this@App))
+            allowRgb565(DeviceUtil.isLowRamDevice(this@App) /* KMK --> */ || mod69LowMemory /* KMK <-- */)
             // KMK -->
             if (EHLogLevel.isExtraLogging()) logger(DebugLogger())
             // KMK <--
