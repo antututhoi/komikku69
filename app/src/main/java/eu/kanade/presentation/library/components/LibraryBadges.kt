@@ -56,6 +56,7 @@ internal fun UnreadBadge(
         Injekt.get<tachiyomi.domain.library.service.LibraryPreferences>().mod69BadgeStyle().get()
     }
     when {
+        style == "bar" -> Unit
         style == "progress" && totalChapters > 0 -> Badge(text = "$readCount/$totalChapters")
         style == "percent" && totalChapters > 0 -> Badge(text = "${readCount * 100 / totalChapters}%")
         style == "dot" -> if (count > 0) {

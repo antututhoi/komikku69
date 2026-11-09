@@ -34,32 +34,38 @@ internal fun LibraryCompactGrid(
             contentType = { "library_compact_grid_item" },
         ) { libraryItem ->
             val manga = libraryItem.libraryManga.manga
-            MangaCompactGridItem(
-                isSelected = manga.id in selection,
-                title = manga.title.takeIf { showTitle },
-                coverData = MangaCover(
-                    mangaId = manga.id,
-                    sourceId = manga.source,
-                    isMangaFavorite = manga.favorite,
-                    ogUrl = manga.thumbnailUrl,
-                    lastModified = manga.coverLastModified,
-                ),
-                // KMK --> 69 mod L9: badges in the corners the user picked
-                coverBadgeStart = { Mod69Badges(libraryItem, "start") },
-                coverBadgeEnd = { Mod69Badges(libraryItem, "end") },
+            // KMK -->
+            Mod69CoverProgress(libraryItem) {
                 // KMK <--
-                onLongClick = { onLongClick(libraryItem.libraryManga) },
-                onClick = { onClick(libraryItem.libraryManga) },
-                onClickContinueReading = if (onClickContinueReading != null && libraryItem.unreadCount > 0) {
-                    { onClickContinueReading(libraryItem.libraryManga) }
-                    // KMK -->
-                } else if (onClickContinueReading != null) {
-                    Mod69RereadClick { onClickContinueReading(libraryItem.libraryManga) }
+                MangaCompactGridItem(
+                    isSelected = manga.id in selection,
+                    title = manga.title.takeIf { showTitle },
+                    coverData = MangaCover(
+                        mangaId = manga.id,
+                        sourceId = manga.source,
+                        isMangaFavorite = manga.favorite,
+                        ogUrl = manga.thumbnailUrl,
+                        lastModified = manga.coverLastModified,
+                    ),
+                    // KMK --> 69 mod L9: badges in the corners the user picked
+                    coverBadgeStart = { Mod69Badges(libraryItem, "start") },
+                    coverBadgeEnd = { Mod69Badges(libraryItem, "end") },
                     // KMK <--
-                } else {
-                    null
-                },
-            )
+                    onLongClick = { onLongClick(libraryItem.libraryManga) },
+                    onClick = { onClick(libraryItem.libraryManga) },
+                    onClickContinueReading = if (onClickContinueReading != null && libraryItem.unreadCount > 0) {
+                        { onClickContinueReading(libraryItem.libraryManga) }
+                        // KMK -->
+                    } else if (onClickContinueReading != null) {
+                        Mod69RereadClick { onClickContinueReading(libraryItem.libraryManga) }
+                        // KMK <--
+                    } else {
+                        null
+                    },
+                )
+                // KMK -->
+            }
+            // KMK <--
         }
     }
 }

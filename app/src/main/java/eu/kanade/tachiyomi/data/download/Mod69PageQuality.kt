@@ -42,9 +42,21 @@ object Mod69PageQuality {
     }
 
     /** Called for every newly downloaded page. Returns the file to use (maybe a new one). */
-    fun process(file: UniFile, tmpDir: UniFile, filename: String, chapterId: Long): UniFile {
+    fun process(file: UniFile, tmpDir: UniFile, filename: String, chapterId: Long, mangaId: Long = -1L): UniFile {
         if (modeFor(chapterId) != SMALLER) return file
+        if (isEntryExcluded(mangaId)) return file
         return shrinkFile(file, tmpDir, filename)
+    }
+
+    fun isEntryExcluded(mangaId: Long): Boolean = mangaId.toString() in prefs.mod69NoResizeEntries().get()
+
+    /** Turns "never make this entry's downloads smaller" on or off. Returns the new state (true = excluded). */
+    fun toggleEntryExcluded(mangaId: Long): Boolean {
+        val key = mangaId.toString()
+        val set = prefs.mod69NoResizeEntries().get()
+        val excluded = key !in set
+        prefs.mod69NoResizeEntries().set(if (excluded) set + key else set - key)
+        return excluded
     }
 
     private fun isShrinkable(name: String): Boolean {
@@ -61,9 +73,11 @@ object Mod69PageQuality {
         BitmapFactory.decodeByteArray(bytes, 0, bytes.size, opts)
         if (opts.outWidth <= 0 || opts.outHeight <= 0) return null
         // fit inside max width x max height (0 = no limit), keeping the page's shape
+        // long webtoon strips (much taller than wide, or much wider than tall) are left as they are
+        val long = opts.outHeight > opts.outWidth * 2.5 || opts.outWidth > opts.outHeight * 2.5
+        if (prefs.mod69KeepTallPages().get() && long) return null
         val maxW = prefs.mod69PageMaxWidth().let { if (it == 0) Int.MAX_VALUE else it.coerceAtLeast(100) }
-        val tall = prefs.mod69KeepTallPages().get() && opts.outHeight > opts.outWidth * 2.5
-        val maxH = prefs.mod69PageMaxHeight().let { if (it == 0 || tall) Int.MAX_VALUE else it.coerceAtLeast(100) }
+        val maxH = prefs.mod69PageMaxHeight().let { if (it == 0) Int.MAX_VALUE else it.coerceAtLeast(100) }
         val scale = minOf(1.0, maxW.toDouble() / opts.outWidth, maxH.toDouble() / opts.outHeight)
         val targetW = (opts.outWidth * scale).toInt().coerceAtLeast(1)
         val targetH = (opts.outHeight * scale).toInt().coerceAtLeast(1)
@@ -125,6 +139,7 @@ object Mod69PageQuality {
                 if (f.isDirectory) f.listFiles().orEmpty().sumOf { it.length() } else f.length()
             run loop@{
                 chapters.groupBy { it.mangaId }.forEach { (mangaId, list) ->
+                    if (isEntryExcluded(mangaId)) return@forEach
                     val manga = getManga.await(mangaId) ?: return@forEach
                     val source = sources.get(manga.source) ?: return@forEach
                     list.forEach { ch ->

@@ -284,8 +284,17 @@
     <string name="mod69_convert_all_summary">Resizes and re-saves the downloaded pages as WebP with the settings above. Nothing is downloaded again</string>
     <string name="mod69_import_cover_folder">69- Import covers from another Komikku folder</string>
     <string name="mod69_import_cover_folder_summary">Pick the old app\'s folder (e.g. app.komikku.beta or its "covers" folder). Covers of entries in your library are copied over (not your own custom covers)</string>
-    <string name="mod69_keep_tall_pages">69- Keep long webtoon pages readable</string>
-    <string name="mod69_keep_tall_pages_summary">Pages much taller than wide only get the max width, never the max height</string>
+    <string name="mod69_keep_tall_pages">69- Don\'t resize long webtoon pages</string>
+    <string name="mod69_keep_tall_pages_summary">Pages much taller than wide (or much wider than tall) are kept as they are</string>
+    <string name="mod69_excluded_folder_categories">69- Categories not used as folders</string>
+    <string name="mod69_excluded_folder_categories_summary">Category names, comma separated (\"z 0\" also covers \"z 0 anything\"). Entries in them use their next category. Now: %s</string>
+    <string name="mod69_migrate_move_downloads">69- Keep downloads when migrating</string>
+    <string name="mod69_migrate_move_downloads_summary">Downloaded chapters move to the new entry (matched by chapter number) instead of being deleted</string>
+    <string name="mod69_pin_to_top">Pin to top / unpin</string>
+    <string name="mod69_pinned">Pinned to the top of the category</string>
+    <string name="mod69_unpinned">Unpinned</string>
+    <string name="mod69_no_resize_entry">Don\'t make this entry\'s downloads smaller</string>
+    <string name="mod69_resize_entry_again">Allow making this entry\'s downloads smaller</string>
     <string name="mod69_category_folders">69- Download into category folders</string>
     <string name="mod69_category_folders_summary">New downloads go to downloads/(category)/(entry) instead of the source\'s folder. Entries in 2+ categories use the first one; no category = Default folder, not in library = uncategories folder. Change it in the entry\'s menu (69- Download folder)</string>
     <string name="mod69_move_to_category_folders">69- Move existing downloads into category folders</string>
@@ -337,6 +346,7 @@
     <string name="mod69_badge_dot">A small dot when there is something unread</string>
     <string name="mod69_badge_progress">Chapters read / total (12/30)</string>
     <string name="mod69_badge_percent">Percent read (40%)</string>
+    <string name="mod69_badge_bar">Progress bar under the cover</string>
     <string name="mod69_badge_style">69- Badge on covers</string>
     <string name="mod69_badge_style_summary">What the unread badge shows. It still needs \'Unread badges\' switched on in the library display settings</string>
     <string name="mod69_title_lines">69- Title lines under covers</string>
@@ -372,8 +382,13 @@
     <string name="mod69_open_latest_first_summary">Tapping a source opens its Latest list first (when the source has one)</string>
     <string name="mod69_reverse_chapters">69- Flip the chapter order for these sources</string>
     <string name="mod69_reverse_chapters_summary">For sources that list chapters backwards. Pull to refresh an entry\'s chapters afterwards</string>
-    <string name="mod69_theme_presets">69- Theme presets</string>
-    <string name="mod69_theme_presets_summary">Tap one to use it as your custom theme. You can still change its color and style below</string>
+    <string name="mod69_theme_presets">69- My themes</string>
+    <string name="mod69_theme_presets_summary">Pick a main and a second color, then save it with a name. Tap a saved theme to use it, ✕ to delete it</string>
+    <string name="mod69_theme_main_color">Main color</string>
+    <string name="mod69_theme_second_color">Second color</string>
+    <string name="mod69_theme_second_auto">Second color: automatic</string>
+    <string name="mod69_theme_save">Save as a theme</string>
+    <string name="mod69_theme_name">Theme name</string>
     <string name="mod69_theme_export">Save theme to a file</string>
     <string name="mod69_theme_import">Load theme from a file</string>
     <string name="mod69_theme_exported">Theme saved</string>

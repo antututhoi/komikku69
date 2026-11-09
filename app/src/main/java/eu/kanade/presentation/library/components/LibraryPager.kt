@@ -91,6 +91,7 @@ fun LibraryPager(
                 selection = selection,
                 onClick = onClickManga,
                 onLongClick = onLongClickManga,
+                onClickContinueReading = onClickContinueReading,
             )
             return@HorizontalPager
         }

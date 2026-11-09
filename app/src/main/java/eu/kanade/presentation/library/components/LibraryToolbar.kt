@@ -58,6 +58,7 @@ fun LibraryToolbar(
     onClickFindDuplicates: () -> Unit,
     onClickMarkSelection: (Boolean) -> Unit,
     onClickTrackSelection: () -> Unit,
+    onClickPinSelection: () -> Unit = {},
     // KMK <--
     searchQuery: String?,
     onSearchQueryChange: (String?) -> Unit,
@@ -72,6 +73,7 @@ fun LibraryToolbar(
         // KMK -->
         onClickMarkSelection = onClickMarkSelection,
         onClickTrackSelection = onClickTrackSelection,
+        onClickPinSelection = onClickPinSelection,
         // KMK <--
     )
     else -> LibraryRegularToolbar(
@@ -245,6 +247,7 @@ private fun LibrarySelectionToolbar(
     // KMK -->
     onClickMarkSelection: (Boolean) -> Unit,
     onClickTrackSelection: () -> Unit,
+    onClickPinSelection: () -> Unit,
     // KMK <--
 ) {
     AppBar(
@@ -263,6 +266,10 @@ private fun LibrarySelectionToolbar(
                         onClick = onClickInvertSelection,
                     ),
                     // KMK -->
+                    AppBar.OverflowAction(
+                        title = stringResource(KMR.strings.mod69_pin_to_top),
+                        onClick = onClickPinSelection,
+                    ),
                     AppBar.OverflowAction(
                         title = stringResource(KMR.strings.mod69_mark_for_update),
                         onClick = { onClickMarkSelection(true) },

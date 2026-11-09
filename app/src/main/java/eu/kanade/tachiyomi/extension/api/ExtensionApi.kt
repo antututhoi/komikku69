@@ -97,14 +97,9 @@ internal class ExtensionApi {
             // KMK --> 69 mod: update them right away
             if (sourcePreferences.mod69AutoUpdateExtensions().get()) {
                 try {
+                    // refreshing the list marks the updates and starts them (ExtensionManager.mod69AutoUpdateAll)
                     if (!fromAvailableExtensionList) extensionManager.findAvailableExtensions()
-                    extensionsWithUpdate.forEach { ext ->
-                        try {
-                            extensionManager.updateExtension(ext).collect { }
-                        } catch (e: Exception) {
-                            logcat(LogPriority.ERROR, e) { "69: auto update of ${ext.name} failed" }
-                        }
-                    }
+                    extensionManager.mod69AutoUpdateAll()
                 } catch (e: Exception) {
                     logcat(LogPriority.ERROR, e) { "69: auto update failed" }
                 }

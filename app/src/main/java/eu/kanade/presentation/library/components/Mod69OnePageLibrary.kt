@@ -57,6 +57,7 @@ fun Mod69OnePageLibrary(
     getItemsForCategory: (Category) -> List<LibraryItem>,
     onClickManga: (Category, LibraryManga) -> Unit,
     onLongClickManga: (Category, LibraryManga) -> Unit,
+    onClickContinueReading: ((LibraryManga) -> Unit)? = null,
 ) {
     val displayMode by getDisplayMode(0)
     val isLandscape = LocalConfiguration.current.orientation == Configuration.ORIENTATION_LANDSCAPE
@@ -130,6 +131,13 @@ fun Mod69OnePageLibrary(
                         ogUrl = manga.thumbnailUrl,
                         lastModified = manga.coverLastModified,
                     )
+                    val continueClick: (() -> Unit)? = when {
+                        onClickContinueReading == null -> null
+                        libraryItem.unreadCount > 0 -> {
+                            { onClickContinueReading(libraryItem.libraryManga) }
+                        }
+                        else -> Mod69RereadClick { onClickContinueReading(libraryItem.libraryManga) }
+                    }
                     if (isList) {
                         MangaListItem(
                             isSelected = manga.id in selection,
@@ -138,17 +146,21 @@ fun Mod69OnePageLibrary(
                             badge = { Mod69Badges(libraryItem, "start") },
                             onClick = { onClickManga(category, libraryItem.libraryManga) },
                             onLongClick = { onLongClickManga(category, libraryItem.libraryManga) },
+                            onClickContinueReading = continueClick,
                         )
                     } else {
-                        MangaCompactGridItem(
-                            isSelected = manga.id in selection,
-                            title = manga.title,
-                            coverData = cover,
-                            coverBadgeStart = { Mod69Badges(libraryItem, "start") },
-                            coverBadgeEnd = { Mod69Badges(libraryItem, "end") },
-                            onClick = { onClickManga(category, libraryItem.libraryManga) },
-                            onLongClick = { onLongClickManga(category, libraryItem.libraryManga) },
-                        )
+                        Mod69CoverProgress(libraryItem) {
+                            MangaCompactGridItem(
+                                isSelected = manga.id in selection,
+                                title = manga.title,
+                                coverData = cover,
+                                coverBadgeStart = { Mod69Badges(libraryItem, "start") },
+                                coverBadgeEnd = { Mod69Badges(libraryItem, "end") },
+                                onClick = { onClickManga(category, libraryItem.libraryManga) },
+                                onLongClick = { onLongClickManga(category, libraryItem.libraryManga) },
+                                onClickContinueReading = continueClick,
+                            )
+                        }
                     }
                 }
                 index += items.size

@@ -1547,6 +1547,15 @@ private fun mod69Downloads(context: android.content.Context, state: MangaScreenM
         mod69PickDownloadFolder(context, state.manga)
         return
     }
+    if (mode == "noresize") {
+        val excluded = eu.kanade.tachiyomi.data.download.Mod69PageQuality.toggleEntryExcluded(state.manga.id)
+        android.widget.Toast.makeText(
+            context,
+            if (excluded) "This entry's downloads won't be made smaller" else "This entry's downloads can be made smaller again",
+            android.widget.Toast.LENGTH_SHORT,
+        ).show()
+        return
+    }
     val downloaded = state.chapters
         .filter { it.downloadState == Download.State.DOWNLOADED }
         .map { it.chapter }

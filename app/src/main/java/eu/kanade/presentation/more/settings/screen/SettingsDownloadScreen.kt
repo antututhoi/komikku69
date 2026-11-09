@@ -155,6 +155,19 @@ object SettingsDownloadScreen : SearchableSettings {
                 title = stringResource(KMR.strings.mod69_category_folders),
                 subtitle = stringResource(KMR.strings.mod69_category_folders_summary),
             ),
+            Preference.PreferenceItem.EditTextPreference(
+                preference = downloadPreferences.mod69ExcludedFolderCategories(),
+                title = stringResource(KMR.strings.mod69_excluded_folder_categories),
+                subtitle = stringResource(KMR.strings.mod69_excluded_folder_categories_summary),
+                onValueChanged = {
+                    // move the entries out of the excluded folders right away (to their next category)
+                    mod69Scope.launch(kotlinx.coroutines.Dispatchers.IO) {
+                        kotlinx.coroutines.delay(500)
+                        runCatching { eu.kanade.tachiyomi.data.download.Mod69DownloadFolders.moveAll(mod69Context) }
+                    }
+                    true
+                },
+            ),
             Preference.PreferenceItem.TextPreference(
                 title = stringResource(KMR.strings.mod69_move_to_category_folders),
                 subtitle = stringResource(KMR.strings.mod69_move_to_category_folders_summary),
@@ -166,6 +179,11 @@ object SettingsDownloadScreen : SearchableSettings {
                         }
                     }
                 },
+            ),
+            Preference.PreferenceItem.SwitchPreference(
+                preference = downloadPreferences.mod69MigrateMoveDownloads(),
+                title = stringResource(KMR.strings.mod69_migrate_move_downloads),
+                subtitle = stringResource(KMR.strings.mod69_migrate_move_downloads_summary),
             ),
             Preference.PreferenceItem.SwitchPreference(
                 preference = downloadPreferences.mod69ScanlatorInChapterNames(),

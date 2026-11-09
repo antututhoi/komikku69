@@ -207,6 +207,14 @@ data object LibraryTab : Tab {
                         }
                     },
                     onClickTrackSelection = { mod69TrackPick = true },
+                    onClickPinSelection = {
+                        val pinned = screenModel.mod69TogglePin()
+                        scope.launch {
+                            snackbarHostState.showSnackbar(
+                                context.stringResource(if (pinned) KMR.strings.mod69_pinned else KMR.strings.mod69_unpinned),
+                            )
+                        }
+                    },
                     onClickMarkSelection = { mark ->
                         val ids = state.selection.toList()
                         eu.kanade.presentation.library.components.Mod69Marked.set(ids, mark)

@@ -74,6 +74,9 @@ class LibraryPreferences(
     fun autoUpdateMetadata() = preferenceStore.getBoolean("auto_update_metadata", false)
 
     // KMK --> 69 mod: library / entry extras
+    /** Entries pinned to the top of a category, as "categoryId|mangaId". */
+    fun mod69PinnedEntries() = preferenceStore.getStringSet("mod69_pinned_entries", emptySet())
+
     fun mod69MarkedForUpdate() = preferenceStore.getStringSet("mod69_marked_for_update", emptySet())
     fun mod69GridSpacing() = preferenceStore.getInt("mod69_grid_spacing", 4)
     fun mod69ChapterGridColumns() = preferenceStore.getInt("mod69_chapter_grid_columns", 0)

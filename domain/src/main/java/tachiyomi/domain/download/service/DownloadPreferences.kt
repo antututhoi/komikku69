@@ -34,6 +34,15 @@ class DownloadPreferences(
     /** Long webtoon strips (taller than 2.5x their width) only get the width limit, so they stay readable. */
     fun mod69KeepTallPages() = preferenceStore.getBoolean("mod69_keep_tall_pages", true)
 
+    /** Category names (comma separated) never used as a download folder; each also matches names starting with it. */
+    fun mod69ExcludedFolderCategories() = preferenceStore.getString("mod69_excluded_folder_categories", "")
+
+    /** Migrating an entry moves its downloaded chapters to the new entry instead of deleting them. */
+    fun mod69MigrateMoveDownloads() = preferenceStore.getBoolean("mod69_migrate_move_downloads", true)
+
+    /** Entries (manga ids) whose downloads are never made smaller. */
+    fun mod69NoResizeEntries() = preferenceStore.getStringSet("mod69_no_resize_entries", emptySet())
+
     /** New downloads go into a folder named after the entry's category instead of the source. */
     fun mod69CategoryFolders() = preferenceStore.getBoolean("mod69_category_folders", false)
 

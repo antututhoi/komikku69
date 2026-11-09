@@ -39,6 +39,7 @@ fun Mod69StaggeredLibrary(
     selection: Set<Long>,
     onClick: (LibraryManga) -> Unit,
     onLongClick: (LibraryManga) -> Unit,
+    onClickContinueReading: ((LibraryManga) -> Unit)? = null,
 ) {
     LazyVerticalStaggeredGrid(
         columns = if (columns > 0) StaggeredGridCells.Fixed(columns) else StaggeredGridCells.Adaptive(128.dp),
@@ -91,6 +92,24 @@ fun Mod69StaggeredLibrary(
                     }
                     Row(modifier = Modifier.align(Alignment.TopEnd).padding(4.dp)) {
                         Mod69Badges(libraryItem, "end")
+                    }
+                    if (onClickContinueReading != null) {
+                        val click: () -> Unit = if (libraryItem.unreadCount > 0) {
+                            { onClickContinueReading(libraryItem.libraryManga) }
+                        } else {
+                            Mod69RereadClick { onClickContinueReading(libraryItem.libraryManga) }
+                        }
+                        ContinueReadingButton(
+                            size = 28.dp,
+                            iconSize = 16.dp,
+                            onClick = click,
+                            modifier = Modifier.align(Alignment.BottomEnd).padding(6.dp),
+                        )
+                    }
+                    Mod69CoverProgress(libraryItem) {
+                        Box(Modifier.matchParentSize()) {
+                            Mod69CoverProgressBar(LocalMod69CoverProgress.current)
+                        }
                     }
                 }
                 Text(

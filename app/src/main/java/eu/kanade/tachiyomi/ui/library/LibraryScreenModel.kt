@@ -262,8 +262,10 @@ class LibraryScreenModel(
                     state.map { it.includedCategories }.distinctUntilChanged(),
                     ::Pair,
                 ),
+                // 69 mod: entries pinned to the top of a category
+                libraryPreferences.mod69PinnedEntries().changes(),
                 // KMK <--
-            ) { (data, groupType, noActiveFilterOrSearch), (sort, showHiddenCategories, showEmptyCategoriesSearch), (filterCategory, includedCategories) ->
+            ) { (data, groupType, noActiveFilterOrSearch), (sort, showHiddenCategories, showEmptyCategoriesSearch), (filterCategory, includedCategories), mod69Pinned ->
                 data.favorites
                     .applyGrouping(
                         data.categories,
@@ -284,6 +286,15 @@ class LibraryScreenModel(
                         sort.takeIf { groupType != LibraryGroup.BY_DEFAULT },
                         // SY <--
                     )
+                    // KMK --> 69 mod: pinned entries first (keeps the sort among them)
+                    .mapValues { (category, ids) ->
+                        if (mod69Pinned.isEmpty()) {
+                            ids
+                        } else {
+                            ids.sortedBy { if ("${category.id}|$it" in mod69Pinned) 0 else 1 }
+                        }
+                    }
+                    // KMK <--
                     // KMK -->
                     .filter {
                         // Hide empty categories unless the setting is enabled or there are no active filters/search
@@ -1493,7 +1504,29 @@ class LibraryScreenModel(
     }
     // KMK <--
 
-    // KMK --> 69 mod L12: select the extra copies of entries added more than once
+    // KMK -->
+    /**
+     * 69 mod: pins the selected entries to the top of the category they are selected in
+     * (or unpins them when all are pinned already). Returns true when they got pinned.
+     */
+    fun mod69TogglePin(): Boolean {
+        val st = state.value
+        val keys = st.selection.flatMap { mangaId ->
+            st.libraryData.favorites
+                .firstOrNull { it.id == mangaId }
+                ?.libraryManga?.categories.orEmpty()
+                .ifEmpty { listOf(0L) }
+                .map { "$it|$mangaId" }
+        }.toSet()
+        val pref = libraryPreferences.mod69PinnedEntries()
+        val now = pref.get()
+        val pin = !now.containsAll(keys)
+        pref.set(if (pin) now + keys else now - keys)
+        clearSelection()
+        return pin
+    }
+
+    // 69 mod L12: select the extra copies of entries added more than once
     /** Returns (groups found, entries selected). Keeps the copy with the most read chapters unselected. */
     fun mod69SelectDuplicates(): Pair<Int, Int> {
         val all = state.value.libraryData.favorites.distinctBy { it.id }

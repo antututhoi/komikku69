@@ -19,11 +19,38 @@ import com.materialkolor.dynamiccolor.ColorSpec
 internal class CustomColorScheme(
     seed: Color,
     style: PaletteStyle,
+    // KMK --> 69 mod: own second color
+    secondarySeed: Color? = null,
+    // KMK <--
 ) : BaseColorScheme() {
     override val lightScheme = generateColorSchemeFromSeed(seed = seed, style = style, dark = false)
+        // KMK -->
+        .mod69WithSecondary(secondarySeed, style, dark = false)
+    // KMK <--
     override val darkScheme = generateColorSchemeFromSeed(seed = seed, style = style, dark = true)
+        // KMK -->
+        .mod69WithSecondary(secondarySeed, style, dark = true)
+    // KMK <--
 
     companion object {
+        // KMK -->
+        /** Takes the secondary colors from a scheme made of [secondarySeed]. */
+        private fun ColorScheme.mod69WithSecondary(secondarySeed: Color?, style: PaletteStyle, dark: Boolean): ColorScheme {
+            if (secondarySeed == null) return this
+            val s = generateColorSchemeFromSeed(seed = secondarySeed, style = style, dark = dark)
+            return copy(
+                secondary = s.primary,
+                onSecondary = s.onPrimary,
+                secondaryContainer = s.primaryContainer,
+                onSecondaryContainer = s.onPrimaryContainer,
+                tertiary = s.secondary,
+                onTertiary = s.onSecondary,
+                tertiaryContainer = s.secondaryContainer,
+                onTertiaryContainer = s.onSecondaryContainer,
+            )
+        }
+        // KMK <--
+
         fun generateColorSchemeFromSeed(seed: Color, style: PaletteStyle, dark: Boolean): ColorScheme {
             return dynamicColorScheme(
                 seedColor = seed,

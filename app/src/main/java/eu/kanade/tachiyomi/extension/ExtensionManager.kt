@@ -31,6 +31,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.emptyFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 import logcat.LogPriority
 import tachiyomi.core.common.util.lang.withUIContext
 import tachiyomi.core.common.util.system.logcat
@@ -288,7 +289,35 @@ class ExtensionManager(
             installedExtensionMapFlow.value = installedExtensionsMap
         }
         updatePendingUpdatesCount()
+        // KMK -->
+        mod69AutoUpdateAll()
+        // KMK <--
     }
+
+    // KMK -->
+    private val mod69AutoUpdating = java.util.concurrent.atomic.AtomicBoolean(false)
+
+    /** 69 mod: when "auto update extensions" is on, update every extension that has an update. */
+    fun mod69AutoUpdateAll() {
+        if (!preferences.mod69AutoUpdateExtensions().get()) return
+        val pending = installedExtensionMapFlow.value.values.filter { it.hasUpdate }
+        if (pending.isEmpty()) return
+        if (!mod69AutoUpdating.compareAndSet(false, true)) return
+        scope.launch {
+            try {
+                pending.forEach { ext ->
+                    try {
+                        updateExtension(ext).collect { }
+                    } catch (e: Exception) {
+                        logcat(LogPriority.ERROR, e) { "69: auto update of ${ext.name} failed" }
+                    }
+                }
+            } finally {
+                mod69AutoUpdating.set(false)
+            }
+        }
+    }
+    // KMK <--
 
     /**
      * Returns a flow of the installation process for the given extension. It will complete

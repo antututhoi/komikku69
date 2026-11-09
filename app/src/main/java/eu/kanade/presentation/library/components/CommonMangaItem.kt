@@ -371,6 +371,9 @@ private fun MangaGridCover(
     ) {
         cover()
         content?.invoke(this)
+        // KMK --> 69 mod: reading progress bar
+        Mod69CoverProgressBar(LocalMod69CoverProgress.current)
+        // KMK <--
         if (badgesStart != null) {
             BadgeGroup(
                 modifier = Modifier
@@ -542,7 +545,8 @@ fun MangaListItem(
 }
 
 @Composable
-private fun ContinueReadingButton(
+// KMK: internal so the 69 library layouts can use it
+internal fun ContinueReadingButton(
     size: Dp,
     iconSize: Dp,
     onClick: () -> Unit,

@@ -27,7 +27,11 @@ import tachiyomi.presentation.core.util.collectAsState
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 
-class AppCustomThemeColorPickerScreen : Screen() {
+class AppCustomThemeColorPickerScreen(
+    // KMK --> 69 mod: pick the second color of the custom theme
+    private val mod69Secondary: Boolean = false,
+    // KMK <--
+) : Screen() {
 
     @Composable
     override fun Content() {
@@ -37,7 +41,7 @@ class AppCustomThemeColorPickerScreen : Screen() {
         val navigator = LocalNavigator.currentOrThrow
         val controller = rememberColorPickerController()
 
-        val customColorPref = uiPreferences.colorTheme()
+        val customColorPref = /* KMK --> */ if (mod69Secondary) uiPreferences.mod69SecondaryColor() else /* KMK <-- */ uiPreferences.colorTheme()
         val customColor by customColorPref.collectAsState()
 
         val appThemePref = uiPreferences.appTheme()
@@ -64,7 +68,7 @@ class AppCustomThemeColorPickerScreen : Screen() {
             ) {
                 ThemeColorPickerWidget(
                     controller = controller,
-                    initialColor = Color(currentColor),
+                    initialColor = Color(/* KMK --> */ if (currentColor != 0) currentColor else uiPreferences.colorTheme().get() /* KMK <-- */),
                     onItemClick = { color, appTheme ->
                         customColorPref.set(color.toArgb())
                         appThemePref.set(appTheme)

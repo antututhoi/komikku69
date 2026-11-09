@@ -497,7 +497,7 @@ class Downloader(
             }
             // KMK --> 69 mod: smaller pages if chosen
             if (imageFile == null) {
-                file = Mod69PageQuality.process(file, tmpDir, filename, download.chapter.id)
+                file = Mod69PageQuality.process(file, tmpDir, filename, download.chapter.id, download.manga.id)
             }
             // KMK <--
 

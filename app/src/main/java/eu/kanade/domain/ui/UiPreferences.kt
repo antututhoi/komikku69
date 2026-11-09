@@ -46,6 +46,12 @@ class UiPreferences(
 
     /** U8: taller title bar on most screens. */
     fun mod69LargeTopBar() = preferenceStore.getBoolean("mod69_large_top_bar", false)
+
+    /** Custom theme: second color (0 = made from the main color). */
+    fun mod69SecondaryColor() = preferenceStore.getInt("mod69_secondary_color", 0)
+
+    /** Custom themes saved with a name, as a JSON list. */
+    fun mod69SavedThemes() = preferenceStore.getString("mod69_saved_themes", "[]")
     // KMK <--
 
     fun colorTheme() = preferenceStore.getInt("pref_color_theme", 0xFFDF0090.toInt())

@@ -117,6 +117,7 @@ object SettingsLibraryScreen : SearchableSettings {
                         "dot" to stringResource(KMR.strings.mod69_badge_dot),
                         "progress" to stringResource(KMR.strings.mod69_badge_progress),
                         "percent" to stringResource(KMR.strings.mod69_badge_percent),
+                        "bar" to stringResource(KMR.strings.mod69_badge_bar),
                     ),
                     title = stringResource(KMR.strings.mod69_badge_style),
                     subtitle = stringResource(KMR.strings.mod69_badge_style_summary),

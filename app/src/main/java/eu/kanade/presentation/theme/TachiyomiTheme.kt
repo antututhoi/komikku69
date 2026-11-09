@@ -171,6 +171,7 @@ private fun getThemeColorScheme(
             CustomColorScheme(
                 seed = Color(uiPreferences.colorTheme().get()),
                 style = uiPreferences.customThemeStyle().get(),
+                secondarySeed = uiPreferences.mod69SecondaryColor().get().takeIf { it != 0 }?.let { Color(it) },
             )
         }
         // KMK <--

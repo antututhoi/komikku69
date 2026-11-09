@@ -78,10 +78,24 @@ object Mod69DownloadFolders {
 
     fun folderName(categoryName: String): String = DiskUtil.buildValidFilename(categoryName)
 
-    /** The entry's categories in their order (no "Default"). */
+    /** The excluded names typed in the settings, lowercased. */
+    private fun excludedNames(): List<String> =
+        downloadPreferences.mod69ExcludedFolderCategories().get()
+            .split(',')
+            .map { it.trim().lowercase() }
+            .filter { it.isNotEmpty() }
+
+    /** True when the category (or folder) name is one the user doesn't want as a download folder. */
+    fun isExcluded(name: String): Boolean {
+        val n = name.trim().lowercase()
+        val folder = folderName(name).lowercase()
+        return excludedNames().any { n.startsWith(it) || folder.startsWith(folderName(it).lowercase()) }
+    }
+
+    /** The entry's categories in their order (no "Default", no excluded ones). */
     private suspend fun categoriesOf(manga: Manga): List<String> =
         Injekt.get<GetCategories>().await(manga.id)
-            .filter { !it.isSystemCategory && it.name.isNotBlank() }
+            .filter { !it.isSystemCategory && it.name.isNotBlank() && !isExcluded(it.name) }
             .sortedBy { it.order }
             .map { it.name }
 
@@ -93,7 +107,10 @@ object Mod69DownloadFolders {
      * Earlier downloads in the source folder are moved there by the caller.
      */
     fun folderForNewDownload(source: Source, title: String): String? {
-        if (isDecided(source.id, title)) return folderOf(source.id, title)
+        if (isDecided(source.id, title)) {
+            val kept = folderOf(source.id, title)
+            if (kept == null || !isExcluded(kept)) return kept
+        }
         if (!enabled()) return null
         val folder = runCatching {
             runBlocking {
@@ -201,7 +218,7 @@ object Mod69DownloadFolders {
                 noDownloads++
                 continue
             }
-            val folder = folderOf(manga.source, manga.ogTitle)
+            val folder = folderOf(manga.source, manga.ogTitle)?.takeUnless { isExcluded(it) }
                 ?: categoriesOf(manga).firstOrNull()?.let { folderName(it) }
                 ?: DEFAULT_FOLDER
             if (dir.parentFile?.name.equals(folder, ignoreCase = true)) {
@@ -296,7 +313,7 @@ object Mod69DownloadFolders {
     private suspend fun onLibrary(context: Context, list: List<tachiyomi.domain.library.model.LibraryManga>) {
         if (!enabled()) return
         val catNames = Injekt.get<GetCategories>().await()
-            .filter { !it.isSystemCategory }
+            .filter { !it.isSystemCategory && !isExcluded(it.name) }
             .associate { it.id to (it.order to folderName(it.name)) }
         val sources = Injekt.get<tachiyomi.domain.source.service.SourceManager>()
         var changed = false
@@ -305,7 +322,7 @@ object Mod69DownloadFolders {
             if (!isDecided(manga.source, manga.ogTitle)) continue
             val current = folderOf(manga.source, manga.ogTitle) ?: continue // kept in the source folder by choice
             val folders = item.categories.mapNotNull { catNames[it] }.sortedBy { it.first }.map { it.second }
-            if (current in folders) continue
+            if (current in folders && !isExcluded(current)) continue
             // category changed: follow it to its (first) category, or the Default folder
             val target = folders.firstOrNull() ?: DEFAULT_FOLDER
             if (target == current) continue

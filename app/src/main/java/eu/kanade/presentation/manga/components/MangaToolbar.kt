@@ -35,6 +35,7 @@ import tachiyomi.i18n.kmk.KMR
 import tachiyomi.i18n.sy.SYMR
 import tachiyomi.presentation.core.i18n.stringResource
 import tachiyomi.presentation.core.theme.active
+import tachiyomi.presentation.core.util.collectAsState
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 
@@ -322,6 +323,20 @@ fun MangaToolbar(
                                 onClick = { onMod69Downloads("folder") },
                             ),
                         )
+                        if (mod69MangaId > 0) {
+                            val noResize by remember {
+                                Injekt.get<tachiyomi.domain.download.service.DownloadPreferences>().mod69NoResizeEntries()
+                            }.collectAsState()
+                            val excluded = mod69MangaId.toString() in noResize
+                            add(
+                                AppBar.OverflowAction(
+                                    title = stringResource(
+                                        if (excluded) KMR.strings.mod69_resize_entry_again else KMR.strings.mod69_no_resize_entry,
+                                    ),
+                                    onClick = { onMod69Downloads("noresize") },
+                                ),
+                            )
+                        }
                     }
                     if (onClickSourceSettings != null) {
                         add(

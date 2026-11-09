@@ -128,6 +128,7 @@ fun LibraryContent(
                         getDisplayMode = getDisplayMode,
                         getColumnsForOrientation = getColumnsForOrientation,
                         getItemsForCategory = getItemsForCategory,
+                        onClickContinueReading = onContinueReadingClicked,
                         onClickManga = { category, manga ->
                             if (selection.isNotEmpty()) {
                                 onToggleSelection(category, manga)

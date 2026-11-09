@@ -158,6 +158,21 @@ class MigrateMangaUseCase(
                     ?.let { insertTrack.awaitAll(it) }
             }
 
+            // KMK --> 69 mod: carry the downloaded chapters over to the new entry
+            if (currentSource != null && eu.kanade.tachiyomi.data.download.Mod69MigrateDownloads.enabled()) {
+                runCatching {
+                    eu.kanade.tachiyomi.data.download.Mod69MigrateDownloads.move(
+                        current = current,
+                        currentSource = currentSource,
+                        target = target,
+                        targetSource = targetSource,
+                        oldChapters = getChaptersByMangaId.await(current.id),
+                        newChapters = getChaptersByMangaId.await(target.id),
+                    )
+                }
+            }
+            // KMK <--
+
             // Delete downloaded
             if (MigrationFlag.REMOVE_DOWNLOAD in flags && currentSource != null) {
                 downloadManager.deleteManga(current, currentSource)

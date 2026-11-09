@@ -151,7 +151,8 @@ import java.io.ByteArrayOutputStream
 import kotlin.time.Duration.Companion.seconds
 import androidx.compose.ui.graphics.Color as ComposeColor
 
-class ReaderActivity : BaseActivity() {
+// KMK: open so Mod69ReaderWindowActivity can reuse it
+open class ReaderActivity : BaseActivity() {
 
     companion object {
 
@@ -164,7 +165,12 @@ class ReaderActivity : BaseActivity() {
             peek: Boolean = false,
             // KMK <--
         ): Intent {
-            return Intent(context, ReaderActivity::class.java).apply {
+            // KMK -->
+            // R20: a separate activity so it gets its own task (the main one is singleTask)
+            val mod69OwnWindow = Injekt.get<ReaderPreferences>().mod69ReaderOwnWindow().get()
+            val mod69Target = if (mod69OwnWindow) Mod69ReaderWindowActivity::class.java else ReaderActivity::class.java
+            // KMK <--
+            return Intent(context, /* KMK --> */ mod69Target /* KMK <-- */).apply {
                 putExtra("manga", mangaId)
                 putExtra("chapter", chapterId)
                 // SY -->
@@ -173,7 +179,7 @@ class ReaderActivity : BaseActivity() {
                 // KMK -->
                 putExtra("mod69_peek", peek)
                 // R20: the reader as its own window in the recent apps list
-                if (Injekt.get<ReaderPreferences>().mod69ReaderOwnWindow().get()) {
+                if (mod69OwnWindow) {
                     addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT or Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
                 } else {
                     // KMK <--
