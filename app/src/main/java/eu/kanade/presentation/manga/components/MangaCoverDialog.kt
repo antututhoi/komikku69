@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Close
 import androidx.compose.material.icons.outlined.Edit
+import androidx.compose.material.icons.outlined.ImageSearch
 import androidx.compose.material.icons.outlined.Save
 import androidx.compose.material.icons.outlined.Share
 import androidx.compose.material3.DropdownMenuItem
@@ -53,6 +54,7 @@ import eu.kanade.tachiyomi.ui.reader.viewer.ReaderPageImageView
 import kotlinx.collections.immutable.persistentListOf
 import tachiyomi.domain.manga.model.Manga
 import tachiyomi.i18n.MR
+import tachiyomi.i18n.kmk.KMR
 import tachiyomi.presentation.core.components.material.Scaffold
 import tachiyomi.presentation.core.i18n.stringResource
 import tachiyomi.presentation.core.util.clickableNoIndication
@@ -66,6 +68,9 @@ fun MangaCoverDialog(
     onSaveClick: () -> Unit,
     onEditClick: ((EditCoverAction) -> Unit)?,
     onDismissRequest: () -> Unit,
+    // KMK --> 69 mod D1
+    onMod69FindCovers: (() -> Unit)? = null,
+    // KMK <--
     // KMK -->
     modifier: Modifier = Modifier,
     // KMK <--
@@ -125,7 +130,22 @@ fun MangaCoverDialog(
                                     iconTint = iconColor,
                                     // KMK <--
                                 ),
-                            ),
+                            ).let { actions ->
+                                // KMK --> 69 mod D1
+                                if (onMod69FindCovers != null && manga.favorite) {
+                                    actions.add(
+                                        AppBar.Action(
+                                            title = stringResource(KMR.strings.mod69_find_covers),
+                                            icon = Icons.Outlined.ImageSearch,
+                                            onClick = onMod69FindCovers,
+                                            iconTint = iconColor,
+                                        ),
+                                    )
+                                } else {
+                                    actions
+                                }
+                                // KMK <--
+                            },
                         )
                         if (onEditClick != null && manga.favorite) {
                             Box {

@@ -2,11 +2,11 @@ package eu.kanade.presentation.library.components
 
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import eu.kanade.tachiyomi.ui.library.LibraryItem
 import tachiyomi.domain.library.service.LibraryPreferences
+import tachiyomi.presentation.core.util.collectAsState
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 

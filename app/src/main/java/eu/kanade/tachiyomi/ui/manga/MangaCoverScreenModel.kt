@@ -10,15 +10,27 @@ import coil3.imageLoader
 import coil3.request.ImageRequest
 import coil3.size.Size
 import eu.kanade.domain.manga.interactor.UpdateManga
+import eu.kanade.domain.source.service.SourcePreferences
+import eu.kanade.presentation.manga.components.Mod69FoundCover
 import eu.kanade.tachiyomi.data.cache.CoverCache
 import eu.kanade.tachiyomi.data.saver.Image
 import eu.kanade.tachiyomi.data.saver.ImageSaver
 import eu.kanade.tachiyomi.data.saver.Location
+import eu.kanade.tachiyomi.network.GET
+import eu.kanade.tachiyomi.network.NetworkHelper
+import eu.kanade.tachiyomi.network.awaitSuccess
+import eu.kanade.tachiyomi.source.online.HttpSource
 import eu.kanade.tachiyomi.util.editCover
 import eu.kanade.tachiyomi.util.system.getBitmapOrNull
 import eu.kanade.tachiyomi.util.system.toShareIntent
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withTimeoutOrNull
 import logcat.LogPriority
 import tachiyomi.core.common.i18n.stringResource
 import tachiyomi.core.common.util.lang.launchIO
@@ -27,6 +39,7 @@ import tachiyomi.core.common.util.lang.withUIContext
 import tachiyomi.core.common.util.system.logcat
 import tachiyomi.domain.manga.interactor.GetManga
 import tachiyomi.domain.manga.model.Manga
+import tachiyomi.domain.source.service.SourceManager
 import tachiyomi.i18n.MR
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
@@ -130,6 +143,75 @@ class MangaCoverScreenModel(
             }
         }
     }
+
+    // KMK --> 69 mod D1: covers of the same title on other sources
+    val mod69Covers = MutableStateFlow<List<Mod69FoundCover>?>(null)
+    val mod69Searching = MutableStateFlow(false)
+    val mod69Progress = MutableStateFlow(0 to 0)
+    private var mod69Job: Job? = null
+
+    fun mod69FindCovers() {
+        val manga = state.value ?: return
+        mod69Job?.cancel()
+        mod69Covers.value = emptyList()
+        mod69Searching.value = true
+        mod69Job = screenModelScope.launchIO {
+            val sourcePreferences = Injekt.get<SourcePreferences>()
+            val languages = sourcePreferences.enabledLanguages().get()
+            val disabled = sourcePreferences.disabledSources().get()
+            val pinned = sourcePreferences.pinnedSources().get()
+            val sources = Injekt.get<SourceManager>().getOnlineSources()
+                .filter { it.id != manga.source && it.lang in languages && it.id.toString() !in disabled }
+                .sortedByDescending { it.id.toString() in pinned }
+                .take(40)
+            mod69Progress.value = 0 to sources.size
+            val done = java.util.concurrent.atomic.AtomicInteger(0)
+            val query = manga.ogTitle
+            sources.chunked(5).forEach { group ->
+                coroutineScope {
+                    group.map { source ->
+                        async {
+                            val found = withTimeoutOrNull(15_000) {
+                                runCatching {
+                                    source.getSearchManga(1, query, source.getFilterList()).mangas
+                                }.getOrNull()
+                            }.orEmpty()
+                                .filter { !it.thumbnail_url.isNullOrBlank() }
+                                .take(3)
+                                .map { Mod69FoundCover(source.id, source.name, it.title, it.thumbnail_url!!) }
+                            mod69Covers.update { (it.orEmpty() + found).distinctBy { c -> c.url } }
+                            mod69Progress.value = done.incrementAndGet() to sources.size
+                        }
+                    }.awaitAll()
+                }
+            }
+            mod69Searching.value = false
+        }
+    }
+
+    fun mod69CloseCovers() {
+        mod69Job?.cancel()
+        mod69Searching.value = false
+        mod69Covers.value = null
+    }
+
+    fun mod69UseCover(context: Context, cover: Mod69FoundCover) {
+        val manga = state.value ?: return
+        mod69CloseCovers()
+        screenModelScope.launchIO {
+            try {
+                val source = Injekt.get<SourceManager>().get(cover.sourceId) as? HttpSource
+                val client = source?.client ?: Injekt.get<NetworkHelper>().client
+                val request = if (source != null) GET(cover.url, source.headers) else GET(cover.url)
+                val bytes = client.newCall(request).awaitSuccess().use { it.body.bytes() }
+                manga.editCover(Injekt.get(), bytes.inputStream(), updateManga, coverCache)
+                notifyCoverUpdated(context)
+            } catch (e: Exception) {
+                notifyFailedCoverUpdate(context, e)
+            }
+        }
+    }
+    // KMK <--
 
     fun deleteCustomCover(context: Context) {
         val mangaId = state.value?.id ?: return

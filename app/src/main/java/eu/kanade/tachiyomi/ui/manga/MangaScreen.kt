@@ -620,6 +620,21 @@ class MangaScreen(
                         },
                     )
                     // KMK <--
+                    // KMK --> 69 mod D1: pick a cover found on other sources
+                    val mod69Covers by sm.mod69Covers.collectAsState()
+                    val mod69Searching by sm.mod69Searching.collectAsState()
+                    val mod69Progress by sm.mod69Progress.collectAsState()
+                    mod69Covers?.let { covers ->
+                        eu.kanade.presentation.manga.components.Mod69CoverPickDialog(
+                            covers = covers,
+                            searching = mod69Searching,
+                            searchedSources = mod69Progress.first,
+                            totalSources = mod69Progress.second,
+                            onPick = { sm.mod69UseCover(context, it) },
+                            onDismissRequest = { sm.mod69CloseCovers() },
+                        )
+                    }
+                    // KMK <--
                     MangaCoverDialog(
                         manga = manga!!,
                         snackbarHostState = sm.snackbarHostState,
@@ -641,6 +656,9 @@ class MangaScreen(
                             }
                         },
                         onDismissRequest = onDismissRequest,
+                        // KMK --> 69 mod D1
+                        onMod69FindCovers = { sm.mod69FindCovers() },
+                        // KMK <--
                         // KMK -->
                         modifier = Modifier
                             .hazeEffect(

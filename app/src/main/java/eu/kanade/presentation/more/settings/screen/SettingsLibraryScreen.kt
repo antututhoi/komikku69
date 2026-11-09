@@ -170,6 +170,11 @@ object SettingsLibraryScreen : SearchableSettings {
                     )
                 }.toTypedArray(),
                 Preference.PreferenceItem.SwitchPreference(
+                    preference = libraryPreferences.mod69ChapterThumbs(),
+                    title = stringResource(KMR.strings.mod69_chapter_thumbs),
+                    subtitle = stringResource(KMR.strings.mod69_chapter_thumbs_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
                     preference = libraryPreferences.mod69DedupeChapters(),
                     title = stringResource(KMR.strings.mod69_dedupe_chapters),
                     subtitle = stringResource(KMR.strings.mod69_dedupe_chapters_summary),

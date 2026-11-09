@@ -1377,6 +1377,10 @@ private fun LazyListScope.sharedChapterItems(
         }
         return
     }
+    val mod69ChapterThumbs = uy.kohesive.injekt.Injekt
+        .get<LibraryPreferences>()
+        .mod69ChapterThumbs()
+        .get()
     // KMK <--
     items(
         // KMK --> 69 mod D5
@@ -1399,73 +1403,90 @@ private fun LazyListScope.sharedChapterItems(
                 MissingChapterCountListItem(count = item.count)
             }
             is ChapterList.Item -> {
-                MangaChapterListItem(
-                    title = if (manga.displayMode == Manga.CHAPTER_DISPLAY_NUMBER) {
-                        stringResource(
-                            MR.strings.display_mode_chapter,
-                            formatChapterNumber(item.chapter.chapterNumber),
+                // KMK --> 69 mod P14: first-page picture of downloaded chapters
+                androidx.compose.foundation.layout.Row(
+                    verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
+                ) {
+                    if (mod69ChapterThumbs && item.downloadState == Download.State.DOWNLOADED) {
+                        eu.kanade.presentation.manga.components.Mod69ChapterThumb(
+                            manga = (mergedData?.manga?.get(item.chapter.mangaId) ?: manga),
+                            chapter = item.chapter,
                         )
-                    } else {
-                        item.chapter.name
-                    },
-                    date = item.chapter.dateUpload
-                        .takeIf { it > 0L }
-                        ?.let {
-                            // SY -->
-                            if (manga.isEhBasedManga()) {
-                                MetadataUtil.EX_DATE_FORMAT
-                                    .format(ZonedDateTime.ofInstant(Instant.ofEpochMilli(it), ZoneId.systemDefault()))
-                            } else {
-                                relativeDateText(item.chapter.dateUpload)
-                            }
-                            // SY <--
-                        },
-                    readProgress = item.chapter.lastPageRead
-                        .takeIf {
-                            /* SY --> */(!item.chapter.read || alwaysShowReadingProgress)/* SY <-- */ && it > 0L
-                        }
-                        ?.let {
+                    }
+                    // KMK <--
+                    MangaChapterListItem(
+                        // KMK -->
+                        modifier = Modifier.weight(1f),
+                        // KMK <--
+                        title = if (manga.displayMode == Manga.CHAPTER_DISPLAY_NUMBER) {
                             stringResource(
-                                MR.strings.chapter_progress,
-                                it + 1,
+                                MR.strings.display_mode_chapter,
+                                formatChapterNumber(item.chapter.chapterNumber),
+                            )
+                        } else {
+                            item.chapter.name
+                        },
+                        date = item.chapter.dateUpload
+                            .takeIf { it > 0L }
+                            ?.let {
+                                // SY -->
+                                if (manga.isEhBasedManga()) {
+                                    MetadataUtil.EX_DATE_FORMAT
+                                        .format(ZonedDateTime.ofInstant(Instant.ofEpochMilli(it), ZoneId.systemDefault()))
+                                } else {
+                                    relativeDateText(item.chapter.dateUpload)
+                                }
+                                // SY <--
+                            },
+                        readProgress = item.chapter.lastPageRead
+                            .takeIf {
+                                /* SY --> */(!item.chapter.read || alwaysShowReadingProgress)/* SY <-- */ && it > 0L
+                            }
+                            ?.let {
+                                stringResource(
+                                    MR.strings.chapter_progress,
+                                    it + 1,
+                                )
+                            },
+                        scanlator = item.chapter.scanlator.takeIf {
+                            !it.isNullOrBlank() /* SY --> */ && item.showScanlator /* SY <-- */
+                        },
+                        // SY -->
+                        sourceName = item.sourceName,
+                        // SY <--
+                        read = item.chapter.read,
+                        bookmark = item.chapter.bookmark,
+                        selected = item.selected,
+                        downloadIndicatorEnabled =
+                        !isAnyChapterSelected && !(mergedData?.manga?.get(item.chapter.mangaId) ?: manga).isLocal(),
+                        downloadStateProvider = { item.downloadState },
+                        downloadProgressProvider = { item.downloadProgress },
+                        chapterSwipeStartAction = chapterSwipeStartAction,
+                        chapterSwipeEndAction = chapterSwipeEndAction,
+                        onLongClick = {
+                            haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                            onChapterSelected(item, !item.selected, true)
+                        },
+                        onClick = {
+                            onChapterItemClick(
+                                chapterItem = item,
+                                isAnyChapterSelected = isAnyChapterSelected,
+                                onToggleSelection = { onChapterSelected(item, !item.selected, false) },
+                                onChapterClicked = onChapterClicked,
                             )
                         },
-                    scanlator = item.chapter.scanlator.takeIf {
-                        !it.isNullOrBlank() /* SY --> */ && item.showScanlator /* SY <-- */
-                    },
-                    // SY -->
-                    sourceName = item.sourceName,
-                    // SY <--
-                    read = item.chapter.read,
-                    bookmark = item.chapter.bookmark,
-                    selected = item.selected,
-                    downloadIndicatorEnabled =
-                    !isAnyChapterSelected && !(mergedData?.manga?.get(item.chapter.mangaId) ?: manga).isLocal(),
-                    downloadStateProvider = { item.downloadState },
-                    downloadProgressProvider = { item.downloadProgress },
-                    chapterSwipeStartAction = chapterSwipeStartAction,
-                    chapterSwipeEndAction = chapterSwipeEndAction,
-                    onLongClick = {
-                        haptic.performHapticFeedback(HapticFeedbackType.LongPress)
-                        onChapterSelected(item, !item.selected, true)
-                    },
-                    onClick = {
-                        onChapterItemClick(
-                            chapterItem = item,
-                            isAnyChapterSelected = isAnyChapterSelected,
-                            onToggleSelection = { onChapterSelected(item, !item.selected, false) },
-                            onChapterClicked = onChapterClicked,
-                        )
-                    },
-                    onDownloadClick = if (onDownloadChapter != null) {
-                        { onDownloadChapter(listOf(item), it) }
-                    } else {
-                        null
-                    },
-                    onChapterSwipe = {
-                        onChapterSwipe(item, it)
-                    },
-                )
+                        onDownloadClick = if (onDownloadChapter != null) {
+                            { onDownloadChapter(listOf(item), it) }
+                        } else {
+                            null
+                        },
+                        onChapterSwipe = {
+                            onChapterSwipe(item, it)
+                        },
+                    )
+                    // KMK -->
+                }
+                // KMK <--
             }
         }
     }

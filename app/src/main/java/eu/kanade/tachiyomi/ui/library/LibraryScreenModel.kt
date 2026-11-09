@@ -1457,6 +1457,42 @@ class LibraryScreenModel(
         }
     }
 
+    // KMK --> 69 mod P22: suggestions while typing in the library search
+    /** Returns (text shown, full query to use) pairs. */
+    fun mod69Suggestions(query: String?): List<Pair<String, String>> {
+        val q = query?.trim().orEmpty()
+        if (q.length < 2) return emptyList()
+        val lastWord = q.substringAfterLast(' ')
+        if (lastWord.length < 2 || ':' in lastWord || lastWord.any { it in "<>=" }) return emptyList()
+        val before = q.dropLast(lastWord.length)
+        val favorites = state.value.libraryData.favorites
+        val out = linkedMapOf<String, String>()
+        favorites.asSequence()
+            .map { it.libraryManga.manga.title }
+            .filter { it.contains(q, ignoreCase = true) && !it.equals(q, ignoreCase = true) }
+            .distinct().take(3)
+            .forEach { out[it] = it }
+        favorites.asSequence()
+            .flatMap { listOfNotNull(it.libraryManga.manga.author, it.libraryManga.manga.artist) }
+            .flatMap { it.split(",", "/", "&").map(String::trim) }
+            .filter { it.startsWith(lastWord, ignoreCase = true) || it.contains(" $lastWord", ignoreCase = true) }
+            .distinct().take(2)
+            .forEach { out["✎ $it"] = before + it }
+        favorites.asSequence()
+            .flatMap { it.libraryManga.manga.genre.orEmpty().asSequence() }
+            .map(String::trim)
+            .filter { it.startsWith(lastWord, ignoreCase = true) }
+            .distinctBy { it.lowercase() }.take(3)
+            .forEach { out["# $it"] = before + "tag:" + if (' ' in it) "\"$it\"" else it }
+        favorites.asSequence()
+            .mapNotNull { it.source?.name }
+            .filter { it.startsWith(lastWord, ignoreCase = true) }
+            .distinct().take(2)
+            .forEach { out["⌂ $it"] = before + "source:" + if (' ' in it) "\"$it\"" else it }
+        return out.entries.take(8).map { it.key to it.value }
+    }
+    // KMK <--
+
     // KMK --> 69 mod L12: select the extra copies of entries added more than once
     /** Returns (groups found, entries selected). Keeps the copy with the most read chapters unselected. */
     fun mod69SelectDuplicates(): Pair<Int, Int> {

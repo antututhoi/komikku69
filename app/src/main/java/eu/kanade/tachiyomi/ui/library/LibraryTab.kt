@@ -4,6 +4,7 @@ import androidx.activity.compose.BackHandler
 import androidx.compose.animation.graphics.res.animatedVectorResource
 import androidx.compose.animation.graphics.res.rememberAnimatedVectorPainter
 import androidx.compose.animation.graphics.vector.AnimatedImageVector
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.HelpOutline
@@ -21,6 +22,7 @@ import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.platform.LocalUriHandler
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastAll
 import androidx.compose.ui.util.fastAny
 import cafe.adriel.voyager.core.model.rememberScreenModel
@@ -383,6 +385,37 @@ data object LibraryTab : Tab {
                         getColumnsForOrientation = { screenModel.getColumnsForOrientation(it) },
                         getItemsForCategory = { state.getItemsForCategory(it) },
                     )
+                    // KMK --> 69 mod P22: suggestion chips while searching
+                    val mod69Suggestions = remember(state.searchQuery, state.libraryData.favorites) {
+                        screenModel.mod69Suggestions(state.searchQuery)
+                    }
+                    if (mod69Suggestions.isNotEmpty()) {
+                        androidx.compose.foundation.layout.Box(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(bottom = contentPadding.calculateBottomPadding()),
+                        ) {
+                            androidx.compose.foundation.lazy.LazyRow(
+                                modifier = Modifier
+                                    .align(androidx.compose.ui.Alignment.BottomCenter)
+                                    .padding(bottom = 8.dp),
+                                horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(6.dp),
+                                contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 12.dp),
+                            ) {
+                                items(mod69Suggestions.size) { index ->
+                                    val (label, fullQuery) = mod69Suggestions[index]
+                                    androidx.compose.material3.SuggestionChip(
+                                        onClick = { screenModel.search(fullQuery) },
+                                        label = { androidx.compose.material3.Text(label, maxLines = 1) },
+                                        colors = androidx.compose.material3.SuggestionChipDefaults.suggestionChipColors(
+                                            containerColor = androidx.compose.material3.MaterialTheme.colorScheme.surfaceContainerHigh,
+                                        ),
+                                    )
+                                }
+                            }
+                        }
+                    }
+                    // KMK <--
                 }
             }
         }
