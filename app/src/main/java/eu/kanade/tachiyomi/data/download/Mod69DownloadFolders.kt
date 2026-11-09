@@ -78,24 +78,27 @@ object Mod69DownloadFolders {
 
     fun folderName(categoryName: String): String = DiskUtil.buildValidFilename(categoryName)
 
-    /** The excluded names typed in the settings, lowercased. */
+    /** The staging folder names typed in the settings, lowercased. */
     private fun excludedNames(): List<String> =
         downloadPreferences.mod69ExcludedFolderCategories().get()
             .split(',')
             .map { it.trim().lowercase() }
             .filter { it.isNotEmpty() }
 
-    /** True when the category (or folder) name is one the user doesn't want as a download folder. */
+    /**
+     * True when the category (or folder) name is a staging one (e.g. "z 0"): entries wait there
+     * until they're made smaller / downloaded again, then move to their next category's folder.
+     */
     fun isExcluded(name: String): Boolean {
         val n = name.trim().lowercase()
         val folder = folderName(name).lowercase()
         return excludedNames().any { n.startsWith(it) || folder.startsWith(folderName(it).lowercase()) }
     }
 
-    /** The entry's categories in their order (no "Default", no excluded ones). */
+    /** The entry's categories in their order (no "Default"). */
     private suspend fun categoriesOf(manga: Manga): List<String> =
         Injekt.get<GetCategories>().await(manga.id)
-            .filter { !it.isSystemCategory && it.name.isNotBlank() && !isExcluded(it.name) }
+            .filter { !it.isSystemCategory && it.name.isNotBlank() }
             .sortedBy { it.order }
             .map { it.name }
 
@@ -107,10 +110,7 @@ object Mod69DownloadFolders {
      * Earlier downloads in the source folder are moved there by the caller.
      */
     fun folderForNewDownload(source: Source, title: String): String? {
-        if (isDecided(source.id, title)) {
-            val kept = folderOf(source.id, title)
-            if (kept == null || !isExcluded(kept)) return kept
-        }
+        if (isDecided(source.id, title)) return folderOf(source.id, title)
         if (!enabled()) return null
         val folder = runCatching {
             runBlocking {
@@ -218,7 +218,7 @@ object Mod69DownloadFolders {
                 noDownloads++
                 continue
             }
-            val folder = folderOf(manga.source, manga.ogTitle)?.takeUnless { isExcluded(it) }
+            val folder = folderOf(manga.source, manga.ogTitle)
                 ?: categoriesOf(manga).firstOrNull()?.let { folderName(it) }
                 ?: DEFAULT_FOLDER
             if (dir.parentFile?.name.equals(folder, ignoreCase = true)) {
@@ -244,6 +244,96 @@ object Mod69DownloadFolders {
                 "Library entries without downloads: $noDownloads",
                 "Failed: $failed",
                 "Time: ${progress.duration(System.currentTimeMillis() - started)}",
+            ),
+        )
+        return moved
+    }
+
+    /**
+     * When the entry's downloads sit in a staging folder (e.g. "z 0"), moves them to the folder of its
+     * next category that isn't a staging one (or Default). Returns the new folder, or null when nothing moved.
+     */
+    suspend fun leaveStaging(context: Context, manga: Manga): String? {
+        if (!enabled() || excludedNames().isEmpty()) return null
+        val source = Injekt.get<tachiyomi.domain.source.service.SourceManager>().get(manga.source) ?: return null
+        val dir = Injekt.get<DownloadProvider>().findMangaDir(manga.ogTitle, source) ?: return null
+        val here = dir.parentFile?.name ?: return null
+        if (!isExcluded(here)) return null
+        val target = categoriesOf(manga).firstOrNull { !isExcluded(it) }?.let { folderName(it) } ?: DEFAULT_FOLDER
+        return if (moveEntry(context, manga, source, target)) target else null
+    }
+
+    /** True when every downloaded page of the entry is WebP (= made smaller already). */
+    private fun looksProcessed(entryDir: UniFile): Boolean {
+        var pages = 0
+        for (ch in entryDir.listFiles().orEmpty()) {
+            val n = ch.name.orEmpty().lowercase()
+            if (ch.isDirectory) {
+                for (f in ch.listFiles().orEmpty()) {
+                    val fn = f.name.orEmpty().lowercase()
+                    if (fn.endsWith(".jpg") || fn.endsWith(".jpeg") || fn.endsWith(".png")) return false
+                    if (fn.endsWith(".webp")) pages++
+                }
+            } else if (n.endsWith(".cbz")) {
+                runCatching {
+                    java.util.zip.ZipInputStream(ch.openInputStream().buffered()).use { zin ->
+                        while (true) {
+                            val e = zin.nextEntry ?: break
+                            val en = e.name.lowercase()
+                            if (en.endsWith(".jpg") || en.endsWith(".jpeg") || en.endsWith(".png")) return false
+                            if (en.endsWith(".webp")) pages++
+                        }
+                    }
+                }
+            }
+        }
+        return pages > 0
+    }
+
+    /**
+     * Moves every entry in a staging folder that's already been made smaller (all pages WebP)
+     * to its next category's folder. Shows progress and a summary. Returns how many moved.
+     */
+    suspend fun moveProcessedOutOfStaging(context: Context): Int {
+        if (excludedNames().isEmpty()) return 0
+        val provider = Injekt.get<DownloadProvider>()
+        val sources = Injekt.get<tachiyomi.domain.source.service.SourceManager>()
+        val p = eu.kanade.tachiyomi.data.notification.Mod69Progress
+        val id = p.ID_MOVE
+        val title = "Moving finished entries out of staging folders"
+        val started = System.currentTimeMillis()
+        p.start(context, id, title)
+        val favorites = Injekt.get<GetFavorites>().await()
+        var moved = 0
+        var notDone = 0
+        var failed = 0
+        for ((i, manga) in favorites.withIndex()) {
+            if (p.isStopped(id)) break
+            val source = sources.get(manga.source) ?: continue
+            val dir = provider.findMangaDir(manga.ogTitle, source) ?: continue
+            if (!isExcluded(dir.parentFile?.name ?: continue)) continue
+            p.update(context, id, title, manga.title, i + 1, favorites.size)
+            if (!looksProcessed(dir)) {
+                notDone++
+                continue
+            }
+            try {
+                if (leaveStaging(context, manga) != null) moved++ else failed++
+            } catch (e: Exception) {
+                failed++
+                logcat(LogPriority.ERROR, e) { "69: moving ${manga.title} out of staging failed" }
+            }
+        }
+        Injekt.get<DownloadCache>().invalidateCache()
+        p.finish(
+            context,
+            id,
+            "Moving finished entries done",
+            listOf(
+                "Moved to their next category: $moved",
+                "Still waiting (not made smaller yet): $notDone",
+                "Failed: $failed",
+                "Time: ${p.duration(System.currentTimeMillis() - started)}",
             ),
         )
         return moved
@@ -313,7 +403,7 @@ object Mod69DownloadFolders {
     private suspend fun onLibrary(context: Context, list: List<tachiyomi.domain.library.model.LibraryManga>) {
         if (!enabled()) return
         val catNames = Injekt.get<GetCategories>().await()
-            .filter { !it.isSystemCategory && !isExcluded(it.name) }
+            .filter { !it.isSystemCategory }
             .associate { it.id to (it.order to folderName(it.name)) }
         val sources = Injekt.get<tachiyomi.domain.source.service.SourceManager>()
         var changed = false
@@ -322,7 +412,7 @@ object Mod69DownloadFolders {
             if (!isDecided(manga.source, manga.ogTitle)) continue
             val current = folderOf(manga.source, manga.ogTitle) ?: continue // kept in the source folder by choice
             val folders = item.categories.mapNotNull { catNames[it] }.sortedBy { it.first }.map { it.second }
-            if (current in folders && !isExcluded(current)) continue
+            if (current in folders) continue
             // category changed: follow it to its (first) category, or the Default folder
             val target = folders.firstOrNull() ?: DEFAULT_FOLDER
             if (target == current) continue

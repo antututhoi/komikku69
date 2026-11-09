@@ -183,7 +183,7 @@
                 android:resource="@xml/searchable" />
         </activity>
 
-        <!-- KMK --> <!-- R20: reader in its own window -->
+        <!-- KMK: 69 mod R20, reader in its own window -->
         <activity
             android:name=".ui.reader.Mod69ReaderWindowActivity"
             android:exported="false"
@@ -191,7 +191,7 @@
             android:documentLaunchMode="always"
             android:launchMode="standard"
             android:taskAffinity="${applicationId}.reader" />
-        <!-- KMK <-- -->
+        <!-- KMK end -->
 
         <activity
             android:name=".ui.reader.ReaderActivity"

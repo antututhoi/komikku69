@@ -159,13 +159,14 @@ object SettingsDownloadScreen : SearchableSettings {
                 preference = downloadPreferences.mod69ExcludedFolderCategories(),
                 title = stringResource(KMR.strings.mod69_excluded_folder_categories),
                 subtitle = stringResource(KMR.strings.mod69_excluded_folder_categories_summary),
-                onValueChanged = {
-                    // move the entries out of the excluded folders right away (to their next category)
+            ),
+            Preference.PreferenceItem.TextPreference(
+                title = stringResource(KMR.strings.mod69_move_processed_out),
+                subtitle = stringResource(KMR.strings.mod69_move_processed_out_summary),
+                onClick = {
                     mod69Scope.launch(kotlinx.coroutines.Dispatchers.IO) {
-                        kotlinx.coroutines.delay(500)
-                        runCatching { eu.kanade.tachiyomi.data.download.Mod69DownloadFolders.moveAll(mod69Context) }
+                        runCatching { eu.kanade.tachiyomi.data.download.Mod69DownloadFolders.moveProcessedOutOfStaging(mod69Context) }
                     }
-                    true
                 },
             ),
             Preference.PreferenceItem.TextPreference(

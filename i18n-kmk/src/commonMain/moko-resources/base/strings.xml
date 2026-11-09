@@ -286,8 +286,10 @@
     <string name="mod69_import_cover_folder_summary">Pick the old app\'s folder (e.g. app.komikku.beta or its "covers" folder). Covers of entries in your library are copied over (not your own custom covers)</string>
     <string name="mod69_keep_tall_pages">69- Don\'t resize long webtoon pages</string>
     <string name="mod69_keep_tall_pages_summary">Pages much taller than wide (or much wider than tall) are kept as they are</string>
-    <string name="mod69_excluded_folder_categories">69- Categories not used as folders</string>
-    <string name="mod69_excluded_folder_categories_summary">Category names, comma separated (\"z 0\" also covers \"z 0 anything\"). Entries in them use their next category. Now: %s</string>
+    <string name="mod69_excluded_folder_categories">69- Staging folders</string>
+    <string name="mod69_excluded_folder_categories_summary">Category folders where entries wait to be made smaller, comma separated (\"z 0\" also covers \"z 0 anything\"). After \"Make smaller\" or \"Redownload smaller\" finishes, the entry moves to its next category\'s folder. Now: %s</string>
+    <string name="mod69_move_processed_out">69- Move finished entries out of staging folders</string>
+    <string name="mod69_move_processed_out_summary">For entries made smaller before: every entry in a staging folder whose pages are all WebP moves to its next category\'s folder now</string>
     <string name="mod69_migrate_move_downloads">69- Keep downloads when migrating</string>
     <string name="mod69_migrate_move_downloads_summary">Downloaded chapters move to the new entry (matched by chapter number) instead of being deleted</string>
     <string name="mod69_pin_to_top">Pin to top / unpin</string>
