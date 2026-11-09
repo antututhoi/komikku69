@@ -104,6 +104,17 @@ class WebtoonPageHolder(
     }
 
     private fun refreshLayoutParams() {
+        // KMK --> 69 mod P2: sideways strip, pages fill the height
+        if (viewer.mod69IsSideways) {
+            frame.layoutParams = FrameLayout.LayoutParams(WRAP_CONTENT, MATCH_PARENT).apply {
+                if (!viewer.isContinuous) {
+                    marginEnd = uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>()
+                        .mod69WebtoonGap().get().dpToPx
+                }
+            }
+            return
+        }
+        // KMK <--
         frame.layoutParams = FrameLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT).apply {
             if (!viewer.isContinuous) {
                 // KMK --> 69 mod R10: gap between pages is a setting (15 = normal)
@@ -209,7 +220,11 @@ class WebtoonPageHolder(
                     isAnimated,
                     ReaderPageImageView.Config(
                         zoomDuration = viewer.config.doubleTapAnimDuration,
-                        minimumScaleType = SubsamplingScaleImageView.SCALE_TYPE_FIT_WIDTH,
+                        minimumScaleType = if (viewer.mod69IsSideways) {
+                            SubsamplingScaleImageView.SCALE_TYPE_FIT_HEIGHT
+                        } else {
+                            SubsamplingScaleImageView.SCALE_TYPE_FIT_WIDTH
+                        },
                         cropBorders =
                         (viewer.config.imageCropBorders && viewer.isContinuous) ||
                             (viewer.config.continuousCropBorders && !viewer.isContinuous),
@@ -272,7 +287,13 @@ class WebtoonPageHolder(
      */
     private fun createProgressIndicator(): ReaderProgressIndicator {
         progressContainer = FrameLayout(context)
-        frame.addView(progressContainer, MATCH_PARENT, parentHeight)
+        frame.addView(
+            progressContainer,
+            // KMK --> 69 mod P2
+            if (viewer.mod69IsSideways) viewer.recycler.width.coerceAtLeast(1) else MATCH_PARENT,
+            // KMK <--
+            parentHeight,
+        )
 
         val progress = ReaderProgressIndicator(
             context,

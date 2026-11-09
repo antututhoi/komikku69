@@ -529,4 +529,8 @@
     <string name="mod69_filter_sharpen">Sharpen (Android 13+)</string>
     <string name="mod69_filter_strong">Sharpen strongly (Android 13+)</string>
     <string name="mod69_filter_smooth">Smooth blocky pages (Android 12+)</string>
+    <string name="mod69_sideways">69- Sideways continuous mode (Long strip)</string>
+    <string name="mod69_sideways_off">Off (strip goes down)</string>
+    <string name="mod69_sideways_ltr">Left to right</string>
+    <string name="mod69_sideways_rtl">Right to left (manga)</string>
 </resources>

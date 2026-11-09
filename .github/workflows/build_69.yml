@@ -40,6 +40,11 @@ jobs:
           echo "MOD69_KEYSTORE=$RUNNER_TEMP/my.keystore" >> "$GITHUB_ENV"
           echo "MOD69_KEY_PASSWORD=ytdlnis123" >> "$GITHUB_ENV"
 
+      - name: Use Gradle's second download address (main one times out)
+        run: |
+          sed -i -e 's#services.gradle.org/distributions#downloads.gradle.org/distributions#' \
+            -e 's/networkTimeout=10000/networkTimeout=120000/' gradle/wrapper/gradle-wrapper.properties
+
       - name: Check code format
         run: ./gradlew spotlessCheck
 

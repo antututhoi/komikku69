@@ -245,6 +245,9 @@ class ReaderPreferences(
     /** P5: pressing back after this many pages asks before closing the reader. 0 = never ask. */
     fun mod69AskLeavePages() = preferenceStore.getInt("mod69_ask_leave_pages", 0)
 
+    /** P2: long strip runs sideways: "off", "ltr" (left to right) or "rtl" (right to left). */
+    fun mod69SidewaysStrip() = preferenceStore.getString("mod69_sideways_strip", "off")
+
     /** R2: picture filter on pages: none, sharpen, strong, smooth. */
     fun mod69PageFilter() = preferenceStore.getString("mod69_page_filter", "none")
 

@@ -43,7 +43,15 @@ class WebtoonViewer(
     @param:ColorInt private val seedColor: Int? = null,
     private val readerPreferences: ReaderPreferences = Injekt.get(),
     // KMK <--
+    // KMK --> 69 mod P2: the strip runs sideways ("ltr" / "rtl"), null = normal (downwards)
+    val mod69Sideways: String? = null,
+    // KMK <--
 ) : Viewer {
+
+    // KMK -->
+    val mod69IsSideways get() = mod69Sideways != null
+    private val mod69Direction get() = if (mod69Sideways == "rtl") -1 else 1
+    // KMK <--
 
     val downloadManager: DownloadManager by injectLazy()
 
@@ -62,7 +70,11 @@ class WebtoonViewer(
     /**
      * Distance to scroll when the user taps on one side of the recycler view.
      */
-    private val scrollDistance = activity.resources.displayMetrics.heightPixels * 3 / 4
+    private val scrollDistance = if (mod69Sideways != null) {
+        activity.resources.displayMetrics.widthPixels * 3 / 4
+    } else {
+        activity.resources.displayMetrics.heightPixels * 3 / 4
+    }
 
     /**
      * Layout manager of the recycler view.
@@ -112,12 +124,21 @@ class WebtoonViewer(
         recycler.layoutParams = ViewGroup.LayoutParams(MATCH_PARENT, MATCH_PARENT)
         recycler.isFocusable = false
         recycler.itemAnimator = null
+        // KMK --> 69 mod P2
+        if (mod69Sideways != null) {
+            layoutManager.orientation = RecyclerView.HORIZONTAL
+            layoutManager.reverseLayout = mod69Sideways == "rtl"
+        }
+        // KMK <--
         recycler.layoutManager = layoutManager
         recycler.adapter = adapter
         recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, rawDy: Int) {
                     onScrolled()
+                    // KMK --> 69 mod P2: sideways strips move along x
+                    val dy = if (mod69Sideways != null) dx * mod69Direction else rawDy
+                    // KMK <--
 
                     if ((dy > threshold || dy < -threshold) && activity.viewModel.state.value.menuVisible) {
                         activity.hideMenu()
@@ -178,16 +199,19 @@ class WebtoonViewer(
         }
 
         config.doubleTapZoomChangedListener = {
-            frame.doubleTapZoom = it
+            frame.doubleTapZoom = it /* KMK --> */ && mod69Sideways == null /* KMK <-- */
         }
 
         // KMK -->
         config.pinchToZoomChangedListener = {
-            frame.pinchToZoom = it
+            frame.pinchToZoom = it /* KMK --> */ && mod69Sideways == null /* KMK <-- */
         }
 
         config.webtoonScaleTypeChangedListener = f@{ scaleType ->
             if (!isContinuous && !readerPreferences.longStripGapSmartScale().get()) return@f
+            // KMK --> 69 mod P2
+            if (mod69Sideways != null) return@f
+            // KMK <--
 
             recycler.post {
                 recycler.doOnLayout doOnLayout@{
@@ -345,6 +369,16 @@ class WebtoonViewer(
      * Scrolls up by [scrollDistance].
      */
     private fun scrollUp() {
+        // KMK --> 69 mod P2
+        if (mod69Sideways != null) {
+            if (config.usePageTransitions) {
+                recycler.smoothScrollBy(-scrollDistance * mod69Direction, 0)
+            } else {
+                recycler.scrollBy(-scrollDistance * mod69Direction, 0)
+            }
+            return
+        }
+        // KMK <--
         if (config.usePageTransitions) {
             recycler.smoothScrollBy(0, -scrollDistance)
         } else {
@@ -394,6 +428,16 @@ class WebtoonViewer(
 
     private fun scrollDownBy() {
         // SY <--
+        // KMK --> 69 mod P2
+        if (mod69Sideways != null) {
+            if (config.usePageTransitions) {
+                recycler.smoothScrollBy(scrollDistance * mod69Direction, 0)
+            } else {
+                recycler.scrollBy(scrollDistance * mod69Direction, 0)
+            }
+            return
+        }
+        // KMK <--
         if (config.usePageTransitions) {
             recycler.smoothScrollBy(0, scrollDistance)
         } else {

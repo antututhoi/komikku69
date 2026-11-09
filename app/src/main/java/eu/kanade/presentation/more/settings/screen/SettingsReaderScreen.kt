@@ -249,6 +249,15 @@ object SettingsReaderScreen : SearchableSettings {
                     subtitle = stringResource(KMR.strings.mod69_ask_peek_summary),
                 ),
                 Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69SidewaysStrip(),
+                    entries = persistentMapOf(
+                        "off" to stringResource(KMR.strings.mod69_sideways_off),
+                        "ltr" to stringResource(KMR.strings.mod69_sideways_ltr),
+                        "rtl" to stringResource(KMR.strings.mod69_sideways_rtl),
+                    ),
+                    title = stringResource(KMR.strings.mod69_sideways),
+                ),
+                Preference.PreferenceItem.ListPreference(
                     preference = readerPreferences.mod69PageFilter(),
                     entries = persistentMapOf(
                         "none" to stringResource(KMR.strings.mod69_filter_none),

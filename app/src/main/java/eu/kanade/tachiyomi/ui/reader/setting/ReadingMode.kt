@@ -11,6 +11,7 @@ import eu.kanade.tachiyomi.ui.reader.viewer.pager.R2LPagerViewer
 import eu.kanade.tachiyomi.ui.reader.viewer.pager.VerticalPagerViewer
 import eu.kanade.tachiyomi.ui.reader.viewer.webtoon.WebtoonViewer
 import tachiyomi.i18n.MR
+import uy.kohesive.injekt.api.get
 
 enum class ReadingMode(
     val stringRes: StringResource,
@@ -97,6 +98,10 @@ enum class ReadingMode(
                     activity,
                     // KMK -->
                     seedColor = seedColor,
+                    // KMK <--
+                    // KMK --> 69 mod P2
+                    mod69Sideways = uy.kohesive.injekt.Injekt.get<ReaderPreferences>().mod69SidewaysStrip().get()
+                        .takeIf { it == "ltr" || it == "rtl" },
                     // KMK <--
                 )
                 CONTINUOUS_VERTICAL -> WebtoonViewer(
