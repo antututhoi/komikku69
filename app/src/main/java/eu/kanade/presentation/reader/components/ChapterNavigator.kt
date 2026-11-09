@@ -88,7 +88,11 @@ fun ChapterNavigator(
     // Match with toolbar background color set in ReaderActivity
     val backgroundColor = MaterialTheme.colorScheme
         .surfaceColorAtElevation(3.dp)
-        .copy(alpha = if (isSystemInDarkTheme()) 0.9f else 0.95f)
+        .copy(
+            // KMK --> 69 mod R15
+            alpha = eu.kanade.presentation.reader.mod69BarAlpha(if (isSystemInDarkTheme()) 0.9f else 0.95f),
+            // KMK <--
+        )
     val buttonColor = IconButtonDefaults.filledIconButtonColors(
         containerColor = backgroundColor,
         disabledContainerColor = backgroundColor,
@@ -144,6 +148,11 @@ fun ChapterNavigator(
 
                         val interactionSource = remember { MutableInteractionSource() }
                         val sliderDragged by interactionSource.collectIsDraggedAsState()
+                        // KMK --> 69 mod N23
+                        LaunchedEffect(sliderDragged) {
+                            eu.kanade.presentation.reader.Mod69SliderDrag.dragging = sliderDragged
+                        }
+                        // KMK <--
                         LaunchedEffect(currentPage) {
                             if (sliderDragged) {
                                 haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
@@ -225,7 +234,11 @@ fun ChapterNavigatorVert(
         // Match with toolbar background color set in ReaderActivity
         val backgroundColor = MaterialTheme.colorScheme
             .surfaceColorAtElevation(3.dp)
-            .copy(alpha = if (isSystemInDarkTheme()) 0.9f else 0.95f)
+            .copy(
+                // KMK --> 69 mod R15
+                alpha = eu.kanade.presentation.reader.mod69BarAlpha(if (isSystemInDarkTheme()) 0.9f else 0.95f),
+                // KMK <--
+            )
         val buttonColor = IconButtonDefaults.filledIconButtonColors(
             containerColor = backgroundColor,
             disabledContainerColor = backgroundColor,
@@ -267,6 +280,11 @@ fun ChapterNavigatorVert(
 
                 val interactionSource = remember { MutableInteractionSource() }
                 val sliderDragged by interactionSource.collectIsDraggedAsState()
+                // KMK --> 69 mod N23
+                LaunchedEffect(sliderDragged) {
+                    eu.kanade.presentation.reader.Mod69SliderDrag.dragging = sliderDragged
+                }
+                // KMK <--
                 LaunchedEffect(currentPage) {
                     if (sliderDragged) {
                         haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)

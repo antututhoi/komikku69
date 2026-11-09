@@ -403,4 +403,18 @@
     <string name="mod69_page_bookmarks">Page bookmarks</string>
     <string name="mod69_no_page_bookmarks">No page bookmarks for this entry yet</string>
     <string name="mod69_go_to_page">Opened the chapter. Go to page %1$d</string>
+    <string name="mod69_custom_nav">69- My own</string>
+    <string name="mod69_tap_grid">69- My own tap zones</string>
+    <string name="mod69_tap_grid_summary">Tap a square to change what tapping there does. Then pick \"69- My own\" as the tap zones (reader settings → Tap zones)</string>
+    <string name="mod69_tap_grid_reset">Reset to normal</string>
+    <string name="mod69_bar_opacity">69- See-through reader bars</string>
+    <string name="mod69_bar_opacity_normal">Normal</string>
+    <string name="mod69_floating_menu_button">69- Floating menu button</string>
+    <string name="mod69_floating_menu_button_summary">A small round button in the corner of the reader. Tap: show / hide the menu. Hold: all pages</string>
+    <string name="mod69_slider_preview">69- Page picture while dragging the slider</string>
+    <string name="mod69_slider_preview_summary">Shows a small picture of the page while you drag the page slider</string>
+    <string name="mod69_all_pages">All pages</string>
+    <string name="mod69_all_pages_empty">The pages are not loaded yet</string>
+    <string name="mod69_chapter_grid">69- Chapters as a grid of numbers (tiles per row)</string>
+    <string name="mod69_chapter_grid_off">Off (normal list)</string>
 </resources>

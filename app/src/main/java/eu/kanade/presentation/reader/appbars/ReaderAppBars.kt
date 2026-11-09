@@ -103,7 +103,11 @@ fun ReaderAppBars(
     val isRtl = viewer is R2LPagerViewer
     val backgroundColor = MaterialTheme.colorScheme
         .surfaceColorAtElevation(3.dp)
-        .copy(alpha = if (isSystemInDarkTheme()) 0.9f else 0.95f)
+        .copy(
+            // KMK --> 69 mod R15
+            alpha = eu.kanade.presentation.reader.mod69BarAlpha(if (isSystemInDarkTheme()) 0.9f else 0.95f),
+            // KMK <--
+        )
 
     Column(modifier = Modifier.fillMaxHeight()) {
         AnimatedVisibility(

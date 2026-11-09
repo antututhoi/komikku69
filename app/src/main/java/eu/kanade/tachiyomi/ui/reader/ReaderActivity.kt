@@ -31,6 +31,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
@@ -44,6 +45,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
@@ -391,6 +393,39 @@ class ReaderActivity : BaseActivity() {
                 }
                 // KMK <--
 
+                // KMK --> 69 mod R15 / N23
+                if (!state.menuVisible) {
+                    eu.kanade.presentation.reader.Mod69FloatingMenuButton(
+                        readerPreferences = readerPreferences,
+                        onClick = { toggleMenu() },
+                        onLongClick = { mod69ThumbsOpen = true },
+                    )
+                }
+                val mod69Preview by readerPreferences.mod69SliderPreview().collectAsState()
+                if (mod69Preview && state.menuVisible && eu.kanade.presentation.reader.Mod69SliderDrag.dragging) {
+                    state.currentChapter?.pages?.getOrNull(state.currentPage - 1)?.let { page ->
+                        eu.kanade.presentation.reader.Mod69PageThumb(
+                            page = page,
+                            modifier = Modifier
+                                .align(Alignment.Center)
+                                .size(width = 150.dp, height = 214.dp)
+                                .clip(androidx.compose.foundation.shape.RoundedCornerShape(8.dp)),
+                        )
+                    }
+                }
+                if (mod69ThumbsOpen) {
+                    eu.kanade.presentation.reader.Mod69PageThumbnailsDialog(
+                        pages = state.currentChapter?.pages.orEmpty(),
+                        currentIndex = state.currentPage - 1,
+                        onPick = { index ->
+                            mod69ThumbsOpen = false
+                            moveToPageIndex(index)
+                        },
+                        onDismissRequest = { mod69ThumbsOpen = false },
+                    )
+                }
+                // KMK <--
+
                 ContentOverlay(state = state)
 
                 AppBars(state = state)
@@ -494,6 +529,7 @@ class ReaderActivity : BaseActivity() {
                         mod69ChapterId = state.currentChapter?.chapter?.id ?: -1L,
                         mod69ChapterName = state.currentChapter?.chapter?.name.orEmpty(),
                         mod69PageIndex = (state.dialog as? ReaderViewModel.Dialog.PageActions)?.page?.index ?: 0,
+                        onMod69AllPages = { mod69ThumbsOpen = true },
                         onMod69Jump = { chapterId, pageIndex ->
                             if (chapterId == state.currentChapter?.chapter?.id) {
                                 moveToPageIndex(pageIndex)
@@ -1376,6 +1412,10 @@ class ReaderActivity : BaseActivity() {
     }
 
     // KMK -->
+    // KMK --> 69 mod R18: the "All pages" picture grid
+    private var mod69ThumbsOpen by mutableStateOf(false)
+    // KMK <--
+
     private fun mod69ShiftStore(): Set<String> =
         getSharedPreferences("mod69_shift_double_page", MODE_PRIVATE).getStringSet("ids", emptySet()).orEmpty()
 

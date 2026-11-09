@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.os.BatteryManager
 import androidx.compose.foundation.background
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -14,10 +15,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Remove
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -25,8 +28,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -41,6 +46,8 @@ import androidx.compose.ui.unit.sp
 import eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences
 import kotlinx.coroutines.delay
 import tachiyomi.presentation.core.util.collectAsState
+import uy.kohesive.injekt.Injekt
+import uy.kohesive.injekt.api.get
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -153,6 +160,47 @@ fun Mod69ZoomButtons(
                     Icon(imageVector = icon, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
                 }
             }
+        }
+    }
+}
+
+/** 69 mod R15: how see-through the reader bars are. */
+@Composable
+fun mod69BarAlpha(default: Float): Float {
+    val percent by remember { Injekt.get<ReaderPreferences>().mod69BarOpacity() }.collectAsState()
+    return if (percent in 1..100) percent / 100f else default
+}
+
+/** 69 mod N23: true while the page slider is being dragged. */
+object Mod69SliderDrag {
+    var dragging by mutableStateOf(false)
+}
+
+/** 69 mod R15: a small round button in the corner that shows / hides the menu. */
+@Composable
+fun Mod69FloatingMenuButton(
+    readerPreferences: ReaderPreferences,
+    onClick: () -> Unit,
+    onLongClick: () -> Unit,
+) {
+    val enabled by readerPreferences.mod69FloatingMenuButton().collectAsState()
+    if (!enabled) return
+    Box(modifier = Modifier.fillMaxSize().navigationBarsPadding()) {
+        Box(
+            modifier = Modifier
+                .align(Alignment.BottomEnd)
+                .padding(end = 16.dp, bottom = 24.dp)
+                .size(44.dp)
+                .clip(CircleShape)
+                .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.55f))
+                .combinedClickable(onClick = onClick, onLongClick = onLongClick),
+            contentAlignment = Alignment.Center,
+        ) {
+            Icon(
+                imageVector = Icons.Filled.Menu,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.primary,
+            )
         }
     }
 }

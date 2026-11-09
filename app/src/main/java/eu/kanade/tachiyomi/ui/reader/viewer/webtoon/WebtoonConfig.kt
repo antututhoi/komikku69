@@ -160,6 +160,9 @@ class WebtoonConfig(
             3 -> EdgeNavigation()
             4 -> RightAndLeftNavigation()
             5 -> DisabledNavigation()
+            // KMK -->
+            6 -> eu.kanade.tachiyomi.ui.reader.viewer.navigation.Mod69CustomNavigation()
+            // KMK <--
             else -> defaultNavigation()
         }
         navigationModeChangedListener?.invoke()

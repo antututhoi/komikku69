@@ -1336,6 +1336,48 @@ private fun LazyListScope.sharedChapterItems(
     onChapterSelected: (ChapterList.Item, Boolean, Boolean) -> Unit,
     onChapterSwipe: (ChapterList.Item, LibraryPreferences.ChapterSwipeAction) -> Unit,
 ) {
+    // KMK --> 69 mod D4: chapters as a grid of numbered tiles
+    val mod69Columns = uy.kohesive.injekt.Injekt
+        .get<LibraryPreferences>()
+        .mod69ChapterGridColumns()
+        .get()
+    if (mod69Columns > 0) {
+        val rows = eu.kanade.presentation.manga.components.Mod69ChapterSearch.filter(chapters)
+            .filterIsInstance<ChapterList.Item>()
+            .chunked(mod69Columns)
+        items(
+            items = rows,
+            key = { row -> "chapter-grid-${row.first().id}" },
+            contentType = { MangaScreenItem.CHAPTER },
+        ) { row ->
+            val haptic = LocalHapticFeedback.current
+            eu.kanade.presentation.manga.components.Mod69ChapterGridRow(
+                items = row,
+                columns = mod69Columns,
+                label = { item ->
+                    if (item.chapter.chapterNumber >= 0) {
+                        formatChapterNumber(item.chapter.chapterNumber)
+                    } else {
+                        item.chapter.name.take(6)
+                    }
+                },
+                onClick = { item ->
+                    onChapterItemClick(
+                        chapterItem = item,
+                        isAnyChapterSelected = isAnyChapterSelected,
+                        onToggleSelection = { onChapterSelected(item, !item.selected, false) },
+                        onChapterClicked = onChapterClicked,
+                    )
+                },
+                onLongClick = { item ->
+                    haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                    onChapterSelected(item, !item.selected, true)
+                },
+            )
+        }
+        return
+    }
+    // KMK <--
     items(
         // KMK --> 69 mod D5
         items = eu.kanade.presentation.manga.components.Mod69ChapterSearch.filter(chapters),

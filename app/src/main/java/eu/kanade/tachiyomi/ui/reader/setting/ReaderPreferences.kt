@@ -244,6 +244,18 @@ class ReaderPreferences(
 
     /** P5: pressing back after this many pages asks before closing the reader. 0 = never ask. */
     fun mod69AskLeavePages() = preferenceStore.getInt("mod69_ask_leave_pages", 0)
+
+    /** R16: the user's own tap zones (3 x 3 letters, see Mod69CustomNavigation). */
+    fun mod69TapGrid() = preferenceStore.getString("mod69_tap_grid", "PPPPMNNNN")
+
+    /** R15: how solid the reader's top and bottom bars are, in percent. 0 = normal. */
+    fun mod69BarOpacity() = preferenceStore.getInt("mod69_bar_opacity", 0)
+
+    /** R15: a small round button that shows / hides the reader menu. */
+    fun mod69FloatingMenuButton() = preferenceStore.getBoolean("mod69_floating_menu_button", false)
+
+    /** N23: show a small picture of the page while dragging the page slider. */
+    fun mod69SliderPreview() = preferenceStore.getBoolean("mod69_slider_preview", true)
     // KMK <--
 
     fun useAutoWebtoon() = preferenceStore.getBoolean("eh_use_auto_webtoon", true)
@@ -332,6 +344,9 @@ class ReaderPreferences(
             MR.strings.edge_nav,
             MR.strings.right_and_left_nav,
             MR.strings.disabled_nav,
+            // KMK -->
+            KMR.strings.mod69_custom_nav,
+            // KMK <--
         )
 
         val ImageScaleType = listOf(

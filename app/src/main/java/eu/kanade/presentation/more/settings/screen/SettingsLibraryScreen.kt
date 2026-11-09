@@ -142,6 +142,17 @@ object SettingsLibraryScreen : SearchableSettings {
                     ),
                     title = stringResource(KMR.strings.mod69_grid_spacing),
                 ),
+                Preference.PreferenceItem.ListPreference(
+                    preference = libraryPreferences.mod69ChapterGridColumns(),
+                    entries = persistentMapOf(
+                        0 to stringResource(KMR.strings.mod69_chapter_grid_off),
+                        4 to "4",
+                        5 to "5",
+                        6 to "6",
+                        8 to "8",
+                    ),
+                    title = stringResource(KMR.strings.mod69_chapter_grid),
+                ),
                 Preference.PreferenceItem.SwitchPreference(
                     preference = libraryPreferences.mod69ConfirmRemove(),
                     title = stringResource(KMR.strings.mod69_confirm_remove),

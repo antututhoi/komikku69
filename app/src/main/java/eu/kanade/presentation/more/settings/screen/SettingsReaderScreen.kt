@@ -248,6 +248,37 @@ object SettingsReaderScreen : SearchableSettings {
                     title = stringResource(KMR.strings.mod69_ask_peek),
                     subtitle = stringResource(KMR.strings.mod69_ask_peek_summary),
                 ),
+                Preference.PreferenceItem.CustomPreference(
+                    title = stringResource(KMR.strings.mod69_tap_grid),
+                ) {
+                    eu.kanade.presentation.more.settings.widget.Mod69TapGridWidget(
+                        title = stringResource(KMR.strings.mod69_tap_grid),
+                        subtitle = stringResource(KMR.strings.mod69_tap_grid_summary),
+                        preference = readerPreferences.mod69TapGrid(),
+                        resetText = stringResource(KMR.strings.mod69_tap_grid_reset),
+                    )
+                },
+                Preference.PreferenceItem.ListPreference(
+                    preference = readerPreferences.mod69BarOpacity(),
+                    entries = persistentMapOf(
+                        0 to stringResource(KMR.strings.mod69_bar_opacity_normal),
+                        75 to "75%",
+                        50 to "50%",
+                        25 to "25%",
+                        10 to "10%",
+                    ),
+                    title = stringResource(KMR.strings.mod69_bar_opacity),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69FloatingMenuButton(),
+                    title = stringResource(KMR.strings.mod69_floating_menu_button),
+                    subtitle = stringResource(KMR.strings.mod69_floating_menu_button_summary),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    preference = readerPreferences.mod69SliderPreview(),
+                    title = stringResource(KMR.strings.mod69_slider_preview),
+                    subtitle = stringResource(KMR.strings.mod69_slider_preview_summary),
+                ),
                 Preference.PreferenceItem.ListPreference(
                     preference = readerPreferences.mod69AskLeavePages(),
                     entries = persistentMapOf(

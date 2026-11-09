@@ -8,6 +8,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Bookmark
 import androidx.compose.material.icons.outlined.Bookmarks
 import androidx.compose.material.icons.outlined.ContentCopy
+import androidx.compose.material.icons.outlined.GridView
 import androidx.compose.material.icons.outlined.Photo
 import androidx.compose.material.icons.outlined.Save
 import androidx.compose.material.icons.outlined.Share
@@ -47,6 +48,7 @@ fun ReaderPageActionsDialog(
     mod69ChapterName: String = "",
     mod69PageIndex: Int = 0,
     onMod69Jump: (chapterId: Long, pageIndex: Int) -> Unit = { _, _ -> },
+    onMod69AllPages: () -> Unit = {},
     // KMK <--
 ) {
     // KMK -->
@@ -159,6 +161,16 @@ fun ReaderPageActionsDialog(
                         title = stringResource(KMR.strings.mod69_page_bookmarks),
                         icon = Icons.Outlined.Bookmarks,
                         onClick = { showMod69List = true },
+                    )
+                    // R18: picture grid of all pages
+                    ActionButton(
+                        modifier = Modifier.weight(1f),
+                        title = stringResource(KMR.strings.mod69_all_pages),
+                        icon = Icons.Outlined.GridView,
+                        onClick = {
+                            onMod69AllPages()
+                            onDismissRequest()
+                        },
                     )
                 }
             }
