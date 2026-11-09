@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -57,3 +57,15 @@ jobs:
           name: 69-komikku-apk
           path: app/build/outputs/apk/release/*.apk
           if-no-files-found: error
+
+      - name: Put the APK on the Releases page (latest build)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NOTES: ${{ github.event.head_commit.message }}
+        run: |
+          gh release delete mod69-latest --yes --cleanup-tag || true
+          gh release create mod69-latest app/build/outputs/apk/release/*.apk \
+            --target "$GITHUB_SHA" --prerelease \
+            --title "69-Komikku build #${{ github.run_number }}" \
+            --notes "$NOTES"
+
