@@ -382,9 +382,9 @@ open class ReaderActivity : BaseActivity() {
                 if (!state.menuVisible) {
                     eu.kanade.presentation.reader.Mod69ReaderInfoBar(
                         readerPreferences = readerPreferences,
+                        mangaTitle = state.manga?.title,
                         chapterName = state.currentChapter?.chapter?.name,
-                        pageText = state.currentPageText,
-                        totalPages = state.totalPages,
+                        chapterPosition = remember(state.currentChapter) { viewModel.mod69ChapterPosition() },
                     )
                     eu.kanade.presentation.reader.Mod69ZoomButtons(
                         readerPreferences = readerPreferences,

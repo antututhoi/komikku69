@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.PushPin
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -20,6 +22,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import eu.kanade.tachiyomi.ui.library.LibraryItem
 import tachiyomi.domain.library.service.LibraryPreferences
+import tachiyomi.presentation.core.components.Badge
 import tachiyomi.presentation.core.util.collectAsState
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
@@ -53,7 +56,22 @@ internal fun RowScope.Mod69Badges(libraryItem: LibraryItem, side: String) {
         )
     }
     if (source == side) SourceIconBadge(source = libraryItem.source)
+    // pinned to the top of this category: a pin badge first in the top-left corner
+    if (side == "start") {
+        val pinned by prefs.mod69PinnedEntries().collectAsState()
+        val categoryId = LocalMod69CategoryId.current
+        if (categoryId != null && "$categoryId|${libraryItem.libraryManga.manga.id}" in pinned) {
+            Badge(
+                imageVector = Icons.Filled.PushPin,
+                color = MaterialTheme.colorScheme.primary,
+                iconColor = MaterialTheme.colorScheme.onPrimary,
+            )
+        }
+    }
 }
+
+/** 69 mod: the category whose page is being drawn (for the pin badge). */
+val LocalMod69CategoryId = compositionLocalOf<Long?> { null }
 // KMK <--
 
 // KMK -->

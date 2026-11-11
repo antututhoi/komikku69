@@ -39,7 +39,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -63,24 +67,30 @@ fun mod69TimeText(context: Context, format: String, now: Long = System.currentTi
     return SimpleDateFormat(if (use24) "HH:mm" else "h:mm a", Locale.getDefault()).format(Date(now))
 }
 
-/** 69 mod R12: one small line with clock, battery, chapter and page. */
+/**
+ * 69 mod R12: reader info in the same look as the page number (theme colour with a dark outline).
+ * Top line: entry name on the left half, chapter name on the right half.
+ * Bottom: battery on the left, chapter x / y in the middle (above the page number), clock on the right.
+ * Clock and battery only in fullscreen (otherwise the status bar shows them).
+ */
 @Composable
 fun Mod69ReaderInfoBar(
     readerPreferences: ReaderPreferences,
+    mangaTitle: String?,
     chapterName: String?,
-    pageText: String,
-    totalPages: Int,
+    chapterPosition: Pair<Int, Int>?,
 ) {
     val enabled by readerPreferences.mod69InfoBar().collectAsState()
     if (!enabled) return
     val showClock by readerPreferences.mod69InfoBarClock().collectAsState()
     val showBattery by readerPreferences.mod69InfoBarBattery().collectAsState()
     val showChapter by readerPreferences.mod69InfoBarChapter().collectAsState()
-    val showPage by readerPreferences.mod69InfoBarPage().collectAsState()
-    val position by readerPreferences.mod69InfoBarPosition().collectAsState()
-    val transparent by readerPreferences.mod69InfoBarTransparent().collectAsState()
+    val showCount by readerPreferences.mod69InfoBarPage().collectAsState()
+    val fullscreen by readerPreferences.fullscreen().collectAsState()
     val clockFormat by readerPreferences.mod69ClockFormat().collectAsState()
     val context = LocalContext.current
+    val clockOn = showClock && fullscreen
+    val batteryOn = showBattery && fullscreen
 
     val time by produceState(initialValue = mod69TimeText(context, clockFormat), clockFormat) {
         while (true) {
@@ -90,8 +100,8 @@ fun Mod69ReaderInfoBar(
     }
 
     var battery by remember { mutableIntStateOf(-1) }
-    DisposableEffect(showBattery) {
-        if (!showBattery) return@DisposableEffect onDispose { }
+    DisposableEffect(batteryOn) {
+        if (!batteryOn) return@DisposableEffect onDispose { }
         val receiver = object : BroadcastReceiver() {
             override fun onReceive(c: Context, intent: Intent) {
                 val level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1)
@@ -104,34 +114,52 @@ fun Mod69ReaderInfoBar(
         onDispose { runCatching { context.unregisterReceiver(receiver) } }
     }
 
-    val parts = buildList {
-        if (showClock) add(time)
-        if (showBattery && battery >= 0) add("$battery%")
-        if (showChapter && !chapterName.isNullOrBlank()) add(chapterName)
-        if (showPage && totalPages > 0) add("$pageText/$totalPages")
-    }
-    if (parts.isEmpty()) return
-
-    Box(modifier = Modifier.fillMaxSize().systemBarsPadding()) {
-        Row(
-            modifier = Modifier
-                .align(if (position == "bottom") Alignment.BottomCenter else Alignment.TopCenter)
-                .fillMaxWidth()
-                .background(if (transparent) Color.Transparent else Color.Black.copy(alpha = 0.7f))
-                .padding(horizontal = 12.dp, vertical = 2.dp),
-            horizontalArrangement = Arrangement.SpaceBetween,
-        ) {
-            parts.forEach {
-                Text(
-                    text = it,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
-                    fontSize = 11.sp,
-                    color = Color.White.copy(alpha = 0.85f),
-                    modifier = Modifier.weight(1f, fill = false),
+    Box(modifier = Modifier.fillMaxSize().systemBarsPadding().padding(horizontal = 8.dp, vertical = 2.dp)) {
+        if (showChapter) {
+            Row(modifier = Modifier.align(Alignment.TopCenter).fillMaxWidth()) {
+                Mod69OutlinedText(
+                    text = mangaTitle.orEmpty(),
+                    modifier = Modifier.weight(1f),
+                    textAlign = TextAlign.Start,
+                )
+                Mod69OutlinedText(
+                    text = chapterName.orEmpty(),
+                    modifier = Modifier.weight(1f).padding(start = 8.dp),
+                    textAlign = TextAlign.End,
                 )
             }
         }
+        if (batteryOn && battery >= 0) {
+            Mod69OutlinedText(text = "$battery%", modifier = Modifier.align(Alignment.BottomStart))
+        }
+        if (showCount && chapterPosition != null && chapterPosition.second > 0) {
+            Mod69OutlinedText(
+                text = "Ch ${chapterPosition.first} / ${chapterPosition.second}",
+                // one line above the app's own page number
+                modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 18.dp),
+            )
+        }
+        if (clockOn) {
+            Mod69OutlinedText(text = time, modifier = Modifier.align(Alignment.BottomEnd))
+        }
+    }
+}
+
+/** Text in the same style as the reader's page number: theme colour, bold, dark outline. */
+@Composable
+private fun Mod69OutlinedText(text: String, modifier: Modifier = Modifier, textAlign: TextAlign = TextAlign.Center) {
+    if (text.isBlank()) return
+    val style = TextStyle(
+        color = MaterialTheme.colorScheme.primary,
+        fontSize = MaterialTheme.typography.bodySmall.fontSize,
+        fontWeight = FontWeight.Bold,
+        letterSpacing = 1.sp,
+        textAlign = textAlign,
+    )
+    val outline = style.copy(color = Color(45, 45, 45), drawStyle = Stroke(width = 4f))
+    Box(modifier = modifier) {
+        Text(text = text, style = outline, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.fillMaxWidth())
+        Text(text = text, style = style, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.fillMaxWidth())
     }
 }
 

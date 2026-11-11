@@ -174,20 +174,6 @@ object SettingsReaderScreen : SearchableSettings {
                     enabled = infoBar,
                 ),
                 Preference.PreferenceItem.ListPreference(
-                    preference = readerPreferences.mod69InfoBarPosition(),
-                    entries = persistentMapOf(
-                        "top" to stringResource(KMR.strings.mod69_position_top),
-                        "bottom" to stringResource(KMR.strings.mod69_position_bottom),
-                    ),
-                    title = stringResource(KMR.strings.mod69_info_bar_position),
-                    enabled = infoBar,
-                ),
-                Preference.PreferenceItem.SwitchPreference(
-                    preference = readerPreferences.mod69InfoBarTransparent(),
-                    title = stringResource(KMR.strings.mod69_info_bar_transparent),
-                    enabled = infoBar,
-                ),
-                Preference.PreferenceItem.ListPreference(
                     preference = readerPreferences.mod69ClockFormat(),
                     entries = persistentMapOf(
                         "system" to stringResource(KMR.strings.mod69_clock_system),

@@ -161,6 +161,15 @@ object SettingsDownloadScreen : SearchableSettings {
                 subtitle = stringResource(KMR.strings.mod69_excluded_folder_categories_summary),
             ),
             Preference.PreferenceItem.TextPreference(
+                title = stringResource(KMR.strings.mod69_fix_download_folders),
+                subtitle = stringResource(KMR.strings.mod69_fix_download_folders_summary),
+                onClick = {
+                    mod69Scope.launch(kotlinx.coroutines.Dispatchers.IO) {
+                        runCatching { eu.kanade.tachiyomi.data.download.Mod69DownloadFolders.repairAll(mod69Context) }
+                    }
+                },
+            ),
+            Preference.PreferenceItem.TextPreference(
                 title = stringResource(KMR.strings.mod69_move_processed_out),
                 subtitle = stringResource(KMR.strings.mod69_move_processed_out_summary),
                 onClick = {

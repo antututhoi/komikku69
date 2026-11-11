@@ -61,7 +61,9 @@ object Mod69PageQuality {
 
     private fun isShrinkable(name: String): Boolean {
         val n = name.lowercase()
-        return n.endsWith(".jpg") || n.endsWith(".jpeg") || n.endsWith(".png") || n.endsWith(".webp") || n.endsWith(".bmp")
+        return n.endsWith(".jpg") || n.endsWith(".jpeg") || n.endsWith(".png") || n.endsWith(".webp") || n.endsWith(".bmp") ||
+            // also AVIF / HEIF / JPEG XL (read with the reader's own decoder when Android can't)
+            n.endsWith(".avif") || n.endsWith(".heif") || n.endsWith(".heic") || n.endsWith(".jxl")
     }
 
     /**
@@ -71,11 +73,24 @@ object Mod69PageQuality {
     private fun shrinkBytes(bytes: ByteArray): ByteArray? {
         val opts = BitmapFactory.Options().apply { inJustDecodeBounds = true }
         BitmapFactory.decodeByteArray(bytes, 0, bytes.size, opts)
-        if (opts.outWidth <= 0 || opts.outHeight <= 0) return null
+        // Android can't read it (e.g. AVIF on older phones, JPEG XL): use the reader's decoder
+        var other: tachiyomi.decoder.ImageDecoder? = null
+        if (opts.outWidth <= 0 || opts.outHeight <= 0) {
+            other = runCatching { tachiyomi.decoder.ImageDecoder.newInstance(bytes.inputStream()) }.getOrNull() ?: return null
+            opts.outWidth = other.width
+            opts.outHeight = other.height
+        }
+        if (opts.outWidth <= 0 || opts.outHeight <= 0) {
+            other?.recycle()
+            return null
+        }
         // fit inside max width x max height (0 = no limit), keeping the page's shape
         // long webtoon strips (much taller than wide, or much wider than tall) are left as they are
         val long = opts.outHeight > opts.outWidth * 2.5 || opts.outWidth > opts.outHeight * 2.5
-        if (prefs.mod69KeepTallPages().get() && long) return null
+        if (prefs.mod69KeepTallPages().get() && long) {
+            other?.recycle()
+            return null
+        }
         val maxW = prefs.mod69PageMaxWidth().let { if (it == 0) Int.MAX_VALUE else it.coerceAtLeast(100) }
         val maxH = prefs.mod69PageMaxHeight().let { if (it == 0) Int.MAX_VALUE else it.coerceAtLeast(100) }
         val scale = minOf(1.0, maxW.toDouble() / opts.outWidth, maxH.toDouble() / opts.outHeight)
@@ -83,8 +98,11 @@ object Mod69PageQuality {
         val targetH = (opts.outHeight * scale).toInt().coerceAtLeast(1)
         var sample = 1
         while (opts.outWidth / (sample * 2) >= targetW && opts.outHeight / (sample * 2) >= targetH) sample *= 2
-        val decoded = BitmapFactory.decodeByteArray(bytes, 0, bytes.size, BitmapFactory.Options().apply { inSampleSize = sample })
-            ?: return null
+        val decoded = if (other != null) {
+            runCatching { other.decode() }.getOrNull().also { other.recycle() }
+        } else {
+            BitmapFactory.decodeByteArray(bytes, 0, bytes.size, BitmapFactory.Options().apply { inSampleSize = sample })
+        } ?: return null
         val bmp = if (decoded.width > targetW || decoded.height > targetH) {
             Bitmap.createScaledBitmap(decoded, targetW, targetH, true).also { if (it !== decoded) decoded.recycle() }
         } else {

@@ -518,6 +518,17 @@ class ReaderViewModel @JvmOverloads constructor(
     }
 
     // SY -->
+    // KMK -->
+    /** 69 mod R12: (position of the open chapter, number of chapters), or null before it's known. */
+    fun mod69ChapterPosition(): Pair<Int, Int>? {
+        val current = state.value.currentChapter ?: return null
+        return runCatching {
+            val i = chapterList.indexOfFirst { it.chapter.id == current.chapter.id }
+            if (i < 0) null else (i + 1) to chapterList.size
+        }.getOrNull()
+    }
+    // KMK <--
+
     fun getChapters(): List<ReaderChapterItem> {
         // KMK -->
         val manga = manga ?: return emptyList()

@@ -401,7 +401,7 @@ object Mod69DownloadFolders {
     }
 
     private suspend fun onLibrary(context: Context, list: List<tachiyomi.domain.library.model.LibraryManga>) {
-        if (!enabled()) return
+        if (!enabled() || repairing) return
         val catNames = Injekt.get<GetCategories>().await()
             .filter { !it.isSystemCategory }
             .associate { it.id to (it.order to folderName(it.name)) }
@@ -417,6 +417,11 @@ object Mod69DownloadFolders {
             val target = folders.firstOrNull() ?: DEFAULT_FOLDER
             if (target == current) continue
             val source = sources.get(manga.source) ?: continue
+            // never move the same entry twice within 10 minutes (stops back-and-forth moving)
+            val k = key(manga.source, manga.ogTitle)
+            val now = System.currentTimeMillis()
+            if ((recentMoves[k] ?: 0L) > now - 10 * 60_000L) continue
+            recentMoves[k] = now
             if (moveEntry(context, manga, source, target)) changed = true
         }
         if (changed) Injekt.get<DownloadCache>().invalidateCache()
@@ -441,16 +446,131 @@ object Mod69DownloadFolders {
                 if (!child.isDirectory) continue
                 val name = child.name ?: continue
                 if (byDirName == null) {
-                    // every entry the app knows (not only the library: uncategories holds the others)
-                    byDirName = Injekt.get<tachiyomi.domain.manga.interactor.GetAllManga>().await()
+                    // library entries only (others never decide a folder)
+                    byDirName = Injekt.get<GetFavorites>().await()
                         .flatMap { m -> provider.getMangaDirNames(m.ogTitle).map { it.lowercase() to m } }
                         .groupBy({ it.first }, { it.second })
                 }
-                byDirName[name.lowercase()]?.forEach { manga ->
+                val candidates = byDirName[name.lowercase()].orEmpty()
+                // entries whose own categories point at this folder
+                val fitting = candidates.filter { manga -> fits(manga, folder) }
+                // same title in several sources and none of them fits: we can't tell whose it is, leave it
+                val chosen = when {
+                    fitting.isNotEmpty() -> fitting
+                    candidates.size == 1 && !isDecided(candidates[0].source, candidates[0].ogTitle) -> candidates
+                    else -> emptyList()
+                }
+                chosen.forEach { manga ->
                     if (folderOf(manga.source, manga.ogTitle) != folder) remember(manga.source, manga.ogTitle, folder)
                 }
             }
         }
     }
+
+    /** True when [folder] is one of the entry's category folders (or Default when it has none). */
+    private suspend fun fits(manga: Manga, folder: String): Boolean {
+        val cats = categoriesOf(manga).map { folderName(it).lowercase() }
+        return if (cats.isEmpty()) folder.equals(DEFAULT_FOLDER, true) else folder.lowercase() in cats
+    }
+
+    /**
+     * Repair: puts every library entry's downloads into the folder of its first category (staging ones like
+     * "z 0" skipped; Default when it has none), merging copies found in other category folders or the
+     * source folder, and resets what was remembered. Shows progress and a summary.
+     */
+    suspend fun repairAll(context: Context): Int {
+        val provider = Injekt.get<DownloadProvider>()
+        val sources = Injekt.get<tachiyomi.domain.source.service.SourceManager>()
+        val root = Injekt.get<StorageManager>().getDownloadsDirectory() ?: return 0
+        val p = eu.kanade.tachiyomi.data.notification.Mod69Progress
+        val id = p.ID_MOVE
+        val title = "Fixing download folders"
+        val started = System.currentTimeMillis()
+        p.start(context, id, title)
+        repairing = true
+        var moved = 0
+        var ok = 0
+        var unsure = 0
+        var failed = 0
+        try {
+            val favorites = Injekt.get<GetFavorites>().await()
+            val sourceDirOf = favorites.map { it.source }.distinct()
+                .mapNotNull { sid -> sources.get(sid)?.let { sid to provider.getSourceDirName(it).lowercase() } }
+                .toMap()
+            val sourceDirNames = sourceDirOf.values.toSet()
+            // every entry folder, per lowercased name: (top folder name, the folder)
+            val byName = HashMap<String, MutableList<Pair<String, UniFile>>>()
+            root.listFiles().orEmpty().filter { it.isDirectory }.forEach { top ->
+                val topName = top.name?.lowercase() ?: return@forEach
+                top.listFiles().orEmpty().filter { it.isDirectory }.forEach { child ->
+                    val n = child.name?.lowercase() ?: return@forEach
+                    byName.getOrPut(n) { mutableListOf() } += topName to child
+                }
+            }
+            val sameTitle = favorites.groupBy { it.ogTitle.lowercase() }
+            for ((i, manga) in favorites.withIndex()) {
+                if (p.isStopped(id)) break
+                p.update(context, id, title, manga.title, i + 1, favorites.size)
+                val names = provider.getMangaDirNames(manga.ogTitle).map { it.lowercase() }.toSet()
+                val ownSourceDir = sourceDirOf[manga.source]
+                val shared = (sameTitle[manga.ogTitle.lowercase()]?.size ?: 1) > 1
+                val target = categoriesOf(manga).firstOrNull { !isExcluded(it) }?.let { folderName(it) } ?: DEFAULT_FOLDER
+                val found = names.flatMap { byName[it].orEmpty() }.filter { (top, _) ->
+                    when {
+                        top == ownSourceDir -> true
+                        top in sourceDirNames -> false // another source's folder
+                        shared -> false // same title in 2 sources: only its own source folder is certain
+                        else -> true
+                    }
+                }
+                if (found.isEmpty()) {
+                    if (shared && names.any { byName.containsKey(it) }) unsure++
+                    continue
+                }
+                remember(manga.source, manga.ogTitle, target)
+                val parent = root.createDirectory(target) ?: run {
+                    failed++
+                    continue
+                }
+                var movedThis = false
+                for ((top, dir) in found) {
+                    if (top == target.lowercase()) continue
+                    try {
+                        if (move(context, dir, parent) != null) movedThis = true else failed++
+                    } catch (e: Exception) {
+                        failed++
+                        logcat(LogPriority.ERROR, e) { "69: fixing ${manga.title} failed" }
+                    }
+                }
+                if (movedThis) moved++ else ok++
+            }
+            // empty category folders left behind
+            root.listFiles().orEmpty().filter { it.isDirectory && it.listFiles().isNullOrEmpty() }
+                .filter { it.name?.lowercase() !in sourceDirNames }
+                .forEach { it.delete() }
+        } finally {
+            repairing = false
+        }
+        Injekt.get<DownloadCache>().invalidateCache()
+        p.finish(
+            context,
+            id,
+            "Fixing download folders done",
+            listOf(
+                "Moved into the right folder: $moved",
+                "Already right: $ok",
+                "Same title in two sources, left alone: $unsure",
+                "Failed: $failed",
+                "Time: ${p.duration(System.currentTimeMillis() - started)}",
+            ),
+        )
+        return moved
+    }
+
+    @Volatile
+    private var repairing = false
+
+    /** When onLibrary last moved each entry (key -> time), so it can never move one back and forth. */
+    private val recentMoves = java.util.concurrent.ConcurrentHashMap<String, Long>()
 }
 // KMK <--

@@ -288,6 +288,8 @@
     <string name="mod69_keep_tall_pages_summary">Pages much taller than wide (or much wider than tall) are kept as they are</string>
     <string name="mod69_excluded_folder_categories">69- Staging folders</string>
     <string name="mod69_excluded_folder_categories_summary">Category folders where entries wait to be made smaller, comma separated (\"z 0\" also covers \"z 0 anything\"). After \"Make smaller\" or \"Redownload smaller\" finishes, the entry moves to its next category\'s folder. Now: %s</string>
+    <string name="mod69_fix_download_folders">69- Fix download folders</string>
+    <string name="mod69_fix_download_folders_summary">Puts every library entry\'s downloads back in its first category\'s folder (staging folders skipped, Default when it has none), joining copies found in other folders</string>
     <string name="mod69_move_processed_out">69- Move finished entries out of staging folders</string>
     <string name="mod69_move_processed_out_summary">For entries made smaller before: every entry in a staging folder whose pages are all WebP moves to its next category\'s folder now</string>
     <string name="mod69_migrate_move_downloads">69- Keep downloads when migrating</string>
@@ -310,11 +312,11 @@
     <string name="mod69_preload_wifi">69- Load pages ahead only on Wi-Fi</string>
     <string name="mod69_preload_wifi_summary">On mobile data only the next 2 pages are loaded in advance (saves data)</string>
     <string name="mod69_info_bar">69- Info line in the reader</string>
-    <string name="mod69_info_bar_summary">A small line with time, battery, chapter and page</string>
+    <string name="mod69_info_bar_summary">Entry and chapter names at the top; battery, chapter x / y and time at the bottom (time and battery only in fullscreen)</string>
     <string name="mod69_info_bar_clock">Show the time</string>
     <string name="mod69_info_bar_battery">Show the battery</string>
-    <string name="mod69_info_bar_chapter">Show the chapter name</string>
-    <string name="mod69_info_bar_page">Show the page number</string>
+    <string name="mod69_info_bar_chapter">Show the entry and chapter names</string>
+    <string name="mod69_info_bar_page">Show the chapter number (x / y)</string>
     <string name="mod69_info_bar_position">Info line position</string>
     <string name="mod69_position_top">Top</string>
     <string name="mod69_position_bottom">Bottom</string>
