@@ -492,26 +492,32 @@ object Mod69DownloadFolders {
         var ok = 0
         var unsure = 0
         var failed = 0
+        var notFound = 0
+        val report = mutableListOf<String>()
         try {
             val favorites = Injekt.get<GetFavorites>().await()
             val sourceDirOf = favorites.map { it.source }.distinct()
                 .mapNotNull { sid -> sources.get(sid)?.let { sid to provider.getSourceDirName(it).lowercase() } }
                 .toMap()
             val sourceDirNames = sourceDirOf.values.toSet()
-            // every entry folder, per lowercased name: (top folder name, the folder)
+            // every entry folder, per simplified name (only letters and digits, so small name
+            // differences from a PC or another tool still match): (top folder name, the folder)
             val byName = HashMap<String, MutableList<Pair<String, UniFile>>>()
             root.listFiles().orEmpty().filter { it.isDirectory }.forEach { top ->
                 val topName = top.name?.lowercase() ?: return@forEach
                 top.listFiles().orEmpty().filter { it.isDirectory }.forEach { child ->
-                    val n = child.name?.lowercase() ?: return@forEach
-                    byName.getOrPut(n) { mutableListOf() } += topName to child
+                    val n = simple(child.name ?: return@forEach)
+                    if (n.isNotEmpty()) byName.getOrPut(n) { mutableListOf() } += topName to child
                 }
             }
+            report += "Download folder: ${root.uri}"
+            report += "Top folders: ${root.listFiles().orEmpty().filter { it.isDirectory }.joinToString { it.name.orEmpty() }}"
+            report += ""
             val sameTitle = favorites.groupBy { it.ogTitle.lowercase() }
             for ((i, manga) in favorites.withIndex()) {
                 if (p.isStopped(id)) break
                 p.update(context, id, title, manga.title, i + 1, favorites.size)
-                val names = provider.getMangaDirNames(manga.ogTitle).map { it.lowercase() }.toSet()
+                val names = provider.getMangaDirNames(manga.ogTitle).map { simple(it) }.toSet()
                 val ownSourceDir = sourceDirOf[manga.source]
                 val shared = (sameTitle[manga.ogTitle.lowercase()]?.size ?: 1) > 1
                 val target = categoriesOf(manga).firstOrNull { !isExcluded(it) }?.let { folderName(it) } ?: DEFAULT_FOLDER
@@ -523,10 +529,18 @@ object Mod69DownloadFolders {
                         else -> true
                     }
                 }
+                val line = "${manga.title} | categories: ${categoriesOf(manga).joinToString()} | target: $target"
                 if (found.isEmpty()) {
-                    if (shared && names.any { byName.containsKey(it) }) unsure++
+                    if (shared && names.any { byName.containsKey(it) }) {
+                        unsure++
+                        report += "$line | SAME TITLE IN 2 SOURCES, left alone: " +
+                            names.flatMap { byName[it].orEmpty() }.joinToString { "${it.first}/${it.second.name}" }
+                    } else {
+                        notFound++
+                    }
                     continue
                 }
+                report += "$line | found in: ${found.joinToString { "${it.first}/${it.second.name}" }}"
                 remember(manga.source, manga.ogTitle, target)
                 val parent = root.createDirectory(target) ?: run {
                     failed++
@@ -536,7 +550,12 @@ object Mod69DownloadFolders {
                 for ((top, dir) in found) {
                     if (top == target.lowercase()) continue
                     try {
-                        if (move(context, dir, parent) != null) movedThis = true else failed++
+                        if (move(context, dir, parent) != null) {
+                            movedThis = true
+                        } else {
+                            failed++
+                            report += "   couldn't move $top/${dir.name}"
+                        }
                     } catch (e: Exception) {
                         failed++
                         logcat(LogPriority.ERROR, e) { "69: fixing ${manga.title} failed" }
@@ -548,8 +567,16 @@ object Mod69DownloadFolders {
             root.listFiles().orEmpty().filter { it.isDirectory && it.listFiles().isNullOrEmpty() }
                 .filter { it.name?.lowercase() !in sourceDirNames }
                 .forEach { it.delete() }
+        } catch (e: Exception) {
+            report += "Stopped by an error: $e"
+            logcat(LogPriority.ERROR, e) { "69: fixing download folders failed" }
         } finally {
             repairing = false
+        }
+        // a report next to the downloads, so what happened to each entry can be checked
+        runCatching {
+            root.findFile(REPORT_NAME)?.delete()
+            root.createFile(REPORT_NAME)?.openOutputStream()?.use { it.write(report.joinToString("\n").toByteArray()) }
         }
         Injekt.get<DownloadCache>().invalidateCache()
         p.finish(
@@ -560,12 +587,19 @@ object Mod69DownloadFolders {
                 "Moved into the right folder: $moved",
                 "Already right: $ok",
                 "Same title in two sources, left alone: $unsure",
+                "No download folder found: $notFound",
                 "Failed: $failed",
+                "Details: $REPORT_NAME in the download folder",
                 "Time: ${p.duration(System.currentTimeMillis() - started)}",
             ),
         )
         return moved
     }
+
+    private const val REPORT_NAME = "69 fix download folders report.txt"
+
+    /** Only letters and digits, lowercased: folder names that differ only in symbols / spaces match. */
+    private fun simple(name: String): String = name.lowercase().filter { it.isLetterOrDigit() }
 
     @Volatile
     private var repairing = false
