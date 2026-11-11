@@ -181,12 +181,6 @@ object Mod69PageQuality {
                     }
                 }
             }
-            // 69 mod: entries waiting in a staging folder (e.g. "z 0") move to their next category now
-            val leftStaging = chapters.map { it.mangaId }.distinct().count { mangaId ->
-                val manga = getManga.await(mangaId) ?: return@count false
-                runCatching { Mod69DownloadFolders.leaveStaging(context, manga) != null }.getOrDefault(false)
-            }
-            if (leftStaging > 0) Injekt.get<DownloadCache>().invalidateCache()
             p.finish(
                 context,
                 id,
@@ -196,7 +190,6 @@ object Mod69PageQuality {
                     "Size: ${p.size(before)} → ${p.size(after)} (saved ${p.size((before - after).coerceAtLeast(0))})",
                     "Not found: $missing",
                     "Failed: $failed",
-                    "Moved out of the staging folder: $leftStaging",
                     "Time: ${p.duration(System.currentTimeMillis() - started)}",
                 ),
             )
@@ -363,14 +356,6 @@ object Mod69PageQuality {
             list.count { dm.isChapterDownloaded(it.name, it.scanlator, it.url, manga.ogTitle, manga.source) }
         }
         val after = sizeNow()
-        // 69 mod: entries waiting in a staging folder (e.g. "z 0") move to their next category now
-        val leftStaging = if (mode == SMALLER) {
-            groups.count { (manga, _, _) ->
-                runCatching { Mod69DownloadFolders.leaveStaging(context, manga) != null }.getOrDefault(false)
-            }.also { if (it > 0) Injekt.get<DownloadCache>().invalidateCache() }
-        } else {
-            0
-        }
         p.finish(
             context,
             id,
@@ -380,7 +365,6 @@ object Mod69PageQuality {
                 "Not downloaded (failed or cancelled): ${total - done}",
                 "Size: ${p.size(before)} → ${p.size(after)}" +
                     if (after < before) " (saved ${p.size(before - after)})" else "",
-                "Moved out of the staging folder: $leftStaging",
                 "Time: ${p.duration(System.currentTimeMillis() - started)}",
             ),
         )

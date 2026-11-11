@@ -289,7 +289,7 @@
     <string name="mod69_excluded_folder_categories">69- Staging folders</string>
     <string name="mod69_excluded_folder_categories_summary">Category folders where entries wait to be made smaller, comma separated (\"z 0\" also covers \"z 0 anything\"). After \"Make smaller\" or \"Redownload smaller\" finishes, the entry moves to its next category\'s folder. Now: %s</string>
     <string name="mod69_fix_download_folders">69- Fix download folders</string>
-    <string name="mod69_fix_download_folders_summary">Puts every library entry\'s downloads back in its first category\'s folder (staging folders skipped, Default when it has none), joining copies found in other folders</string>
+    <string name="mod69_fix_download_folders_summary">Puts every library entry\'s downloads back in its category\'s folder (Default when it has none), joining copies found in other folders</string>
     <string name="mod69_move_processed_out">69- Move finished entries out of staging folders</string>
     <string name="mod69_move_processed_out_summary">For entries made smaller before: every entry in a staging folder whose pages are all WebP moves to its next category\'s folder now</string>
     <string name="mod69_migrate_move_downloads">69- Keep downloads when migrating</string>

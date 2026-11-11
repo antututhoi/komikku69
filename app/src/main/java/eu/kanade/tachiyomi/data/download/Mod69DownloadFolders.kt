@@ -259,7 +259,7 @@ object Mod69DownloadFolders {
         val dir = Injekt.get<DownloadProvider>().findMangaDir(manga.ogTitle, source) ?: return null
         val here = dir.parentFile?.name ?: return null
         if (!isExcluded(here)) return null
-        val target = categoriesOf(manga).firstOrNull { !isExcluded(it) }?.let { folderName(it) } ?: DEFAULT_FOLDER
+        val target = categoriesOf(manga).firstOrNull()?.let { folderName(it) } ?: DEFAULT_FOLDER
         return if (moveEntry(context, manga, source, target)) target else null
     }
 
@@ -520,7 +520,7 @@ object Mod69DownloadFolders {
                 val names = provider.getMangaDirNames(manga.ogTitle).map { simple(it) }.toSet()
                 val ownSourceDir = sourceDirOf[manga.source]
                 val shared = (sameTitle[manga.ogTitle.lowercase()]?.size ?: 1) > 1
-                val target = categoriesOf(manga).firstOrNull { !isExcluded(it) }?.let { folderName(it) } ?: DEFAULT_FOLDER
+                val target = categoriesOf(manga).firstOrNull()?.let { folderName(it) } ?: DEFAULT_FOLDER
                 val found = names.flatMap { byName[it].orEmpty() }.filter { (top, _) ->
                     when {
                         top == ownSourceDir -> true
