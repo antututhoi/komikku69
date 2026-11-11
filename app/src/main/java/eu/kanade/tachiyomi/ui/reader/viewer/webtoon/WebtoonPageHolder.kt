@@ -108,8 +108,7 @@ class WebtoonPageHolder(
         if (viewer.mod69IsSideways) {
             frame.layoutParams = FrameLayout.LayoutParams(WRAP_CONTENT, MATCH_PARENT).apply {
                 if (!viewer.isContinuous) {
-                    marginEnd = uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>()
-                        .mod69WebtoonGap().get().dpToPx
+                    marginEnd = 15.dpToPx
                 }
             }
             return
@@ -117,10 +116,7 @@ class WebtoonPageHolder(
         // KMK <--
         frame.layoutParams = FrameLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT).apply {
             if (!viewer.isContinuous) {
-                // KMK --> 69 mod R10: gap between pages is a setting (15 = normal)
-                bottomMargin = uy.kohesive.injekt.Injekt.get<eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences>()
-                    .mod69WebtoonGap().get().dpToPx
-                // KMK <--
+                bottomMargin = 15.dpToPx
             }
 
             val margin = Resources.getSystem().displayMetrics.widthPixels * (viewer.config.sidePadding / 100f)

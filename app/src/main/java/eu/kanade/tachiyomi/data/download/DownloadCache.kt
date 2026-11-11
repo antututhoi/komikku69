@@ -108,9 +108,13 @@ class DownloadCache(
     private val rootDownloadsDirMutex = Mutex()
     private var rootDownloadsDir = RootDirectory(storageManager.getDownloadsDirectory())
 
+    // KMK --> 69 mod: kept so a renewal can wait for the saved list (no full re-check on every start)
+    private val mod69DiskLoad: Job
+
+    // KMK <--
     init {
         // Attempt to read cache file
-        scope.launch {
+        /* KMK --> */ mod69DiskLoad = /* KMK <-- */ scope.launch {
             rootDownloadsDirMutex.withLock {
                 try {
                     if (diskCacheFile.exists()) {
@@ -401,6 +405,11 @@ class DownloadCache(
         }
 
         renewalJob = scope.launchIO {
+            // KMK --> 69 mod: the saved list may still be loading when the app starts; wait for it,
+            // then check again so a fresh saved list is used instead of re-checking every folder
+            mod69DiskLoad.join()
+            if (renewInterval > 0L && lastRenew + renewInterval >= System.currentTimeMillis()) return@launchIO
+            // KMK <--
             if (lastRenew == 0L) {
                 _isInitializing.emit(true)
             }
@@ -420,6 +429,11 @@ class DownloadCache(
 
             rootDownloadsDirMutex.withLock {
                 val updatedRootDir = RootDirectory(storageManager.getDownloadsDirectory())
+                // KMK --> 69 mod: only clean "_tmp" leftovers when the download queue is empty
+                val mod69CanSweep = runCatching {
+                    Injekt.get<DownloadManager>().queueState.value.isEmpty()
+                }.getOrDefault(false)
+                // KMK <--
 
                 // KMK --> 69 mod: also entries kept in category folders
                 val topDirs = updatedRootDir.dir?.listFiles().orEmpty()
@@ -466,7 +480,12 @@ class DownloadCache(
                                 .mapNotNull {
                                     when {
                                         // Ignore incomplete downloads
-                                        it.name?.endsWith(Downloader.TMP_DIR_SUFFIX) == true -> null
+                                        it.name?.endsWith(Downloader.TMP_DIR_SUFFIX) == true -> {
+                                            // KMK --> 69 mod: leftovers are removed while nothing is downloading
+                                            if (mod69CanSweep) runCatching { mod69DeleteTree(it) }
+                                            // KMK <--
+                                            null
+                                        }
                                         // Folder of images
                                         it.isDirectory -> it.name
                                         // CBZ files
@@ -544,6 +563,13 @@ private class RootDirectory(
     val dir: UniFile?,
     var sourceDirs: Map<Long, SourceDirectory> = mapOf(),
 )
+
+// KMK --> 69 mod: deletes a file or a whole folder (plain folders must be emptied first)
+private fun mod69DeleteTree(file: UniFile): Boolean {
+    if (file.isDirectory) file.listFiles().orEmpty().forEach { mod69DeleteTree(it) }
+    return file.delete() || !file.exists()
+}
+// KMK <--
 
 // KMK --> 69 mod: an entry folder by its current name, or by the other name style (long / short)
 private fun SourceDirectory.mod69Manga(title: String): MangaDirectory? =

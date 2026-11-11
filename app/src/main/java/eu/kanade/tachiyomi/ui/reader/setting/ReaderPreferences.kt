@@ -198,9 +198,6 @@ class ReaderPreferences(
     /** R5: avoid the camera notch only when the phone is held sideways. */
     fun mod69CutoutAvoidSideways() = preferenceStore.getBoolean("mod69_cutout_avoid_sideways", false)
 
-    /** R6: height of the vertical page slider, 30..100 percent of the screen. */
-    fun mod69SeekbarHeight() = preferenceStore.getInt("mod69_seekbar_height", 100)
-
     /** R8: on mobile data only the next 2 pages are loaded in advance. */
     fun mod69PreloadWifiOnly() = preferenceStore.getBoolean("mod69_preload_wifi_only", false)
 
@@ -224,9 +221,6 @@ class ReaderPreferences(
     /** U9: "system", "12" or "24" hour clock (reader info bar and elsewhere). */
     fun mod69ClockFormat() = preferenceStore.getString("mod69_clock_format", "system")
 
-    /** R10: gap between long-strip pages in dp. */
-    fun mod69WebtoonGap() = preferenceStore.getInt("mod69_webtoon_gap", 15)
-
     /** P4: order of the buttons in the reader's bottom bar (comma separated keys). */
     fun mod69BottomButtonOrder() = preferenceStore.getString("mod69_bottom_button_order", "")
 
@@ -236,14 +230,8 @@ class ReaderPreferences(
     /** R20: the reader opens as its own window in the recent apps list. */
     fun mod69ReaderOwnWindow() = preferenceStore.getBoolean("mod69_reader_own_window", false)
 
-    /** R24: opening a chapter you already read asks: peek or move progress. */
-    fun mod69AskPeek() = preferenceStore.getBoolean("mod69_ask_peek", false)
-
     /** N20: maximum zoom multiplier (5 = default). */
     fun mod69MaxZoom() = preferenceStore.getInt("mod69_max_zoom", 5)
-
-    /** P5: pressing back after this many pages asks before closing the reader. 0 = never ask. */
-    fun mod69AskLeavePages() = preferenceStore.getInt("mod69_ask_leave_pages", 0)
 
     /** R4: page translation. Engine "google" (free, on the phone) or "ai" (your own key). */
     fun mod69TranslateEngine() = preferenceStore.getString("mod69_translate_engine", "google")

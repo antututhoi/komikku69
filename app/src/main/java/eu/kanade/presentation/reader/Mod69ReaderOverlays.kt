@@ -5,12 +5,14 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.BatteryManager
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.background
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
@@ -28,6 +30,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -69,7 +72,7 @@ fun mod69TimeText(context: Context, format: String, now: Long = System.currentTi
 
 /**
  * 69 mod R12: reader info in the same look as the page number (theme colour with a dark outline).
- * Top line: entry name on the left half, chapter name on the right half.
+ * Top: one centred line "entry · chapter", shown a few seconds then fades.
  * Bottom: battery on the left, chapter x / y in the middle (above the page number), clock on the right.
  * Clock and battery only in fullscreen (otherwise the status bar shows them).
  */
@@ -116,31 +119,47 @@ fun Mod69ReaderInfoBar(
 
     Box(modifier = Modifier.fillMaxSize().systemBarsPadding().padding(horizontal = 8.dp, vertical = 2.dp)) {
         if (showChapter) {
-            Row(modifier = Modifier.align(Alignment.TopCenter).fillMaxWidth()) {
-                Mod69OutlinedText(
-                    text = mangaTitle.orEmpty(),
-                    modifier = Modifier.weight(1f),
-                    textAlign = TextAlign.Start,
-                )
-                Mod69OutlinedText(
-                    text = chapterName.orEmpty(),
-                    modifier = Modifier.weight(1f).padding(start = 8.dp),
-                    textAlign = TextAlign.End,
-                )
+            // One short centred line "Series · Chapter", shown for a few seconds when a chapter opens
+            // or the menu closes, then it fades away so it doesn't cover the page.
+            var titleVisible by remember { mutableStateOf(true) }
+            LaunchedEffect(chapterName) {
+                titleVisible = true
+                delay(4_000)
+                titleVisible = false
+            }
+            val line = listOfNotNull(
+                mangaTitle?.takeIf { it.isNotBlank() },
+                chapterName?.takeIf { it.isNotBlank() },
+            ).joinToString("  ·  ")
+            AnimatedVisibility(
+                visible = titleVisible,
+                enter = fadeIn(),
+                exit = fadeOut(),
+                modifier = Modifier.align(Alignment.TopCenter).fillMaxWidth().padding(horizontal = 24.dp),
+            ) {
+                Mod69OutlinedText(text = line, modifier = Modifier.fillMaxWidth())
             }
         }
         if (batteryOn && battery >= 0) {
-            Mod69OutlinedText(text = "$battery%", modifier = Modifier.align(Alignment.BottomStart))
+            Mod69OutlinedText(
+                text = "$battery%",
+                modifier = Modifier.align(Alignment.BottomStart).fillMaxWidth(),
+                textAlign = TextAlign.Start,
+            )
         }
         if (showCount && chapterPosition != null && chapterPosition.second > 0) {
             Mod69OutlinedText(
                 text = "Ch ${chapterPosition.first} / ${chapterPosition.second}",
                 // one line above the app's own page number
-                modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 18.dp),
+                modifier = Modifier.align(Alignment.BottomCenter).fillMaxWidth().padding(bottom = 18.dp),
             )
         }
         if (clockOn) {
-            Mod69OutlinedText(text = time, modifier = Modifier.align(Alignment.BottomEnd))
+            Mod69OutlinedText(
+                text = time,
+                modifier = Modifier.align(Alignment.BottomEnd).fillMaxWidth(),
+                textAlign = TextAlign.End,
+            )
         }
     }
 }

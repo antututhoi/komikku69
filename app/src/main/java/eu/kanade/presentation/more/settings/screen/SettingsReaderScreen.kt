@@ -125,8 +125,6 @@ object SettingsReaderScreen : SearchableSettings {
     @Composable
     private fun getMod69Group(readerPreferences: ReaderPreferences): Preference.PreferenceGroup {
         val infoBar by readerPreferences.mod69InfoBar().collectAsState()
-        val seekbarHeightPref = readerPreferences.mod69SeekbarHeight()
-        val seekbarHeight by seekbarHeightPref.collectAsState()
         return Preference.PreferenceGroup(
             title = stringResource(KMR.strings.mod69_reader_extras),
             preferenceItems = persistentListOf(
@@ -135,13 +133,6 @@ object SettingsReaderScreen : SearchableSettings {
                     title = stringResource(KMR.strings.mod69_cutout_sideways),
                     subtitle = stringResource(KMR.strings.mod69_cutout_sideways_summary),
                     enabled = LocalView.current.hasDisplayCutout(),
-                ),
-                Preference.PreferenceItem.SliderPreference(
-                    value = seekbarHeight,
-                    valueRange = 30..100,
-                    title = stringResource(KMR.strings.mod69_seekbar_height),
-                    valueString = "$seekbarHeight%",
-                    onValueChanged = { seekbarHeightPref.set(it) },
                 ),
                 Preference.PreferenceItem.SwitchPreference(
                     preference = readerPreferences.mod69PreloadWifiOnly(),
@@ -198,17 +189,6 @@ object SettingsReaderScreen : SearchableSettings {
                         onSave = { readerPreferences.mod69BottomButtonOrder().set(it.joinToString(",")) },
                     )
                 },
-                Preference.PreferenceItem.ListPreference(
-                    preference = readerPreferences.mod69WebtoonGap(),
-                    entries = persistentMapOf(
-                        0 to "0",
-                        5 to "5",
-                        15 to "15 (normal)",
-                        30 to "30",
-                        60 to "60",
-                    ),
-                    title = stringResource(KMR.strings.mod69_webtoon_gap),
-                ),
                 Preference.PreferenceItem.SwitchPreference(
                     preference = readerPreferences.mod69ZoomButtons(),
                     title = stringResource(KMR.strings.mod69_zoom_buttons),
@@ -228,11 +208,6 @@ object SettingsReaderScreen : SearchableSettings {
                     preference = readerPreferences.mod69ReaderOwnWindow(),
                     title = stringResource(KMR.strings.mod69_reader_own_window),
                     subtitle = stringResource(KMR.strings.mod69_reader_own_window_summary),
-                ),
-                Preference.PreferenceItem.SwitchPreference(
-                    preference = readerPreferences.mod69AskPeek(),
-                    title = stringResource(KMR.strings.mod69_ask_peek),
-                    subtitle = stringResource(KMR.strings.mod69_ask_peek_summary),
                 ),
                 Preference.PreferenceItem.ListPreference(
                     preference = readerPreferences.mod69TranslateEngine(),
@@ -355,17 +330,6 @@ object SettingsReaderScreen : SearchableSettings {
                     preference = readerPreferences.mod69SliderPreview(),
                     title = stringResource(KMR.strings.mod69_slider_preview),
                     subtitle = stringResource(KMR.strings.mod69_slider_preview_summary),
-                ),
-                Preference.PreferenceItem.ListPreference(
-                    preference = readerPreferences.mod69AskLeavePages(),
-                    entries = persistentMapOf(
-                        0 to stringResource(KMR.strings.mod69_ask_leave_never),
-                        3 to stringResource(KMR.strings.mod69_ask_leave_pages, 3),
-                        10 to stringResource(KMR.strings.mod69_ask_leave_pages, 10),
-                        20 to stringResource(KMR.strings.mod69_ask_leave_pages, 20),
-                        50 to stringResource(KMR.strings.mod69_ask_leave_pages, 50),
-                    ),
-                    title = stringResource(KMR.strings.mod69_ask_leave),
                 ),
             ),
         )

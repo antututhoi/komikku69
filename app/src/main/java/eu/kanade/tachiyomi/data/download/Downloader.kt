@@ -427,6 +427,9 @@ class Downloader(
 
             if (!isDownloadSuccessful(download, tmpDir)) {
                 download.status = Download.State.ERROR
+                // KMK --> 69 mod: a failed download leaves no "_tmp" folder behind
+                mod69DeleteTree(tmpDir)
+                // KMK <--
                 return
             }
 
@@ -441,7 +444,15 @@ class Downloader(
             if (downloadPreferences.saveChaptersAsCBZ().get()) {
                 archiveChapter(mangaDir, chapterDirname, tmpDir)
             } else {
-                tmpDir.renameTo(chapterDirname)
+                // KMK --> 69 mod: an older copy with the same name (e.g. redownload) is replaced,
+                // so the "_tmp" folder never stays behind next to it
+                if (!tmpDir.renameTo(chapterDirname)) {
+                    mangaDir.findFile(chapterDirname)?.let { mod69DeleteTree(it) }
+                    if (!tmpDir.renameTo(chapterDirname)) {
+                        throw Exception("Couldn't rename the finished download folder")
+                    }
+                }
+                // KMK <--
             }
             cache.addChapter(chapterDirname, mangaDir, download.manga)
 
@@ -456,6 +467,12 @@ class Downloader(
             // If the page list threw, it will resume here
             logcat(LogPriority.ERROR, error)
             download.status = Download.State.ERROR
+            // KMK --> 69 mod: a failed download leaves no "_tmp" folder / ".cbz_tmp" file behind
+            runCatching {
+                mod69DeleteTree(tmpDir)
+                mangaDir.findFile("$chapterDirname.cbz$TMP_DIR_SUFFIX")?.let { mod69DeleteTree(it) }
+            }
+            // KMK <--
             notifier.onError(error.message, download.chapter.name, download.manga.title, download.manga.id)
         }
     }
@@ -690,8 +707,13 @@ class Downloader(
                 writer.write(file)
             }
         }
-        zip.renameTo("$dirname.cbz")
-        tmpDir.delete()
+        // KMK --> 69 mod: replace an older .cbz with the same name, and remove the "_tmp" folder fully
+        if (!zip.renameTo("$dirname.cbz")) {
+            mangaDir.findFile("$dirname.cbz")?.delete()
+            if (!zip.renameTo("$dirname.cbz")) throw Exception("Couldn't rename the finished CBZ file")
+        }
+        mod69DeleteTree(tmpDir)
+        // KMK <--
     }
 
     /**
@@ -789,8 +811,8 @@ class Downloader(
                         download.chapter.scanlator,
                         download.chapter.url,
                     )
-                    mangaDir.findFile(name + TMP_DIR_SUFFIX)?.delete()
-                    mangaDir.findFile("$name.cbz$TMP_DIR_SUFFIX")?.delete()
+                    mangaDir.findFile(name + TMP_DIR_SUFFIX)?.let { mod69DeleteTree(it) }
+                    mangaDir.findFile("$name.cbz$TMP_DIR_SUFFIX")?.let { mod69DeleteTree(it) }
                     val left = mangaDir.listFiles().orEmpty().filterNot { it.name == ".nomedia" }
                     if (left.isEmpty()) mangaDir.delete()
                 }
@@ -798,7 +820,17 @@ class Downloader(
         }
     }
 
+    /**
+     * Deletes a file or a whole folder. Plain storage folders can only be deleted when empty,
+     * so the files inside go first (this is why "_tmp" folders were left behind).
+     */
+    private fun mod69DeleteTree(file: UniFile): Boolean {
+        if (file.isDirectory) file.listFiles().orEmpty().forEach { mod69DeleteTree(it) }
+        return file.delete() || !file.exists()
+    }
+
     /** Queued again, or finished meanwhile: keep its files. */
+
     private fun getQueuedOrDownloaded(download: Download): Boolean =
         queueState.value.any { it.chapter.id == download.chapter.id } ||
             provider.findChapterDir(

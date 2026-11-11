@@ -238,18 +238,23 @@ object SettingsDataScreen : SearchableSettings {
         val storageDir by storageDirPref.collectAsState()
 
         // KMK -->
-        var locationValid by remember(storageDir) {
-            mutableStateOf(directoryAccessible(context, storageDir))
-        }
-
-        LaunchedEffect(storageDir) {
+        // 69 mod: the folder is checked in the background, so opening this screen never freezes
+        // (the storage can be slow while the app is busy reading the downloads folder)
+        val locationValid by androidx.compose.runtime.produceState<Boolean?>(null, storageDir) {
+            value = tachiyomi.core.common.util.lang.withIOContext { directoryAccessible(context, storageDir) }
             storageDirPref.changes()
                 .collectLatest {
-                    locationValid = directoryAccessible(context, storageDir)
+                    value = tachiyomi.core.common.util.lang.withIOContext { directoryAccessible(context, storageDir) }
                 }
         }
+        // first = done checking, second = the folder's readable path
+        val mod69Path by androidx.compose.runtime.produceState<Pair<Boolean, String?>>(false to null, storageDir) {
+            value = true to tachiyomi.core.common.util.lang.withIOContext {
+                runCatching { UniFile.fromUri(context, storageDir.toUri())?.displayablePath }.getOrNull()
+            }
+        }
 
-        if (!locationValid) {
+        if (locationValid == false) {
             // KMK <--
             return stringResource(MR.strings.no_location_set)
         }
@@ -258,11 +263,9 @@ object SettingsDataScreen : SearchableSettings {
         if (storageDir.contains(".mod69documents")) {
             return stringResource(KMR.strings.mod69_storage_repick)
         }
+        if (locationValid == null || !mod69Path.first) return mod69Path.second ?: "\u2026"
+        return mod69Path.second ?: stringResource(MR.strings.invalid_location, storageDir)
         // KMK <--
-        return remember(storageDir) {
-            val file = UniFile.fromUri(context, storageDir.toUri())
-            file?.displayablePath
-        } ?: stringResource(MR.strings.invalid_location, storageDir)
     }
 
     @Composable

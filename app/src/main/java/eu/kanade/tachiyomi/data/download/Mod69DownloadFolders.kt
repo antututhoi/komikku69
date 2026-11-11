@@ -180,19 +180,27 @@ object Mod69DownloadFolders {
     }
 
     /** Moves one entry's downloads to [folder] (null = source folder) and remembers the choice. */
-    fun moveEntry(context: Context, manga: Manga, source: Source, folder: String?): Boolean {
+    fun moveEntry(context: Context, manga: Manga, source: Source, folder: String?): Boolean =
+        moveEntryResult(context, manga, source, folder) != MOVE_FAILED
+
+    private const val MOVE_FAILED = 0
+    private const val MOVE_NOTHING = 1
+    private const val MOVE_DONE = 2
+
+    /** Like [moveEntry], but also tells whether a folder was really moved (then the downloads list must be re-read). */
+    private fun moveEntryResult(context: Context, manga: Manga, source: Source, folder: String?): Int {
         val provider = Injekt.get<DownloadProvider>()
-        val downloads = Injekt.get<StorageManager>().getDownloadsDirectory() ?: return false
+        val downloads = Injekt.get<StorageManager>().getDownloadsDirectory() ?: return MOVE_FAILED
         val current = provider.findMangaDir(manga.ogTitle, source)
         remember(manga.source, manga.ogTitle, folder)
-        if (current == null) return true
+        if (current == null) return MOVE_NOTHING
         val targetParent = if (folder == null) {
             downloads.createDirectory(provider.getSourceDirName(source))
         } else {
             downloads.createDirectory(folder)
-        } ?: return false
-        if (current.parentFile?.uri == targetParent.uri) return true
-        return move(context, current, targetParent) != null
+        } ?: return MOVE_FAILED
+        if (current.parentFile?.uri == targetParent.uri) return MOVE_NOTHING
+        return if (move(context, current, targetParent) != null) MOVE_DONE else MOVE_FAILED
     }
 
     /** Moves every library entry's downloads into its (first) category folder. Returns how many moved. */
@@ -422,7 +430,8 @@ object Mod69DownloadFolders {
             val now = System.currentTimeMillis()
             if ((recentMoves[k] ?: 0L) > now - 10 * 60_000L) continue
             recentMoves[k] = now
-            if (moveEntry(context, manga, source, target)) changed = true
+            // only a real move needs the downloads list re-read (otherwise every start re-checked all downloads)
+            if (moveEntryResult(context, manga, source, target) == MOVE_DONE) changed = true
         }
         if (changed) Injekt.get<DownloadCache>().invalidateCache()
     }

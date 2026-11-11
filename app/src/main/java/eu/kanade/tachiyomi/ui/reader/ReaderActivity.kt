@@ -161,9 +161,6 @@ open class ReaderActivity : BaseActivity() {
             mangaId: Long?,
             chapterId: Long?/* SY --> */,
             page: Int? = null, /* SY <-- */
-            // KMK -->
-            peek: Boolean = false,
-            // KMK <--
         ): Intent {
             // KMK -->
             // R20: a separate activity so it gets its own task (the main one is singleTask)
@@ -177,7 +174,6 @@ open class ReaderActivity : BaseActivity() {
                 putExtra("page", page)
                 // SY <--
                 // KMK -->
-                putExtra("mod69_peek", peek)
                 // R20: the reader as its own window in the recent apps list
                 if (mod69OwnWindow) {
                     addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT or Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
@@ -280,11 +276,6 @@ open class ReaderActivity : BaseActivity() {
 
         config = ReaderConfig()
         setMenuVisibility(viewModel.state.value.menuVisible)
-
-        // KMK --> 69 mod
-        viewModel.mod69Peek = intent.getBooleanExtra("mod69_peek", false)
-        mod69AskBeforeLeaving()
-        // KMK <--
 
         // EXH -->
         enableExhAutoScroll()
@@ -1443,32 +1434,6 @@ open class ReaderActivity : BaseActivity() {
     private fun mod69ShiftStore(): Set<String> =
         getSharedPreferences("mod69_shift_double_page", MODE_PRIVATE).getStringSet("ids", emptySet()).orEmpty()
 
-    /** 69 mod P5: after a few pages, Back asks before the reader closes. */
-    private fun mod69AskBeforeLeaving() {
-        onBackPressedDispatcher.addCallback(
-            this,
-            object : androidx.activity.OnBackPressedCallback(true) {
-                override fun handleOnBackPressed() {
-                    val pages = readerPreferences.mod69AskLeavePages().get()
-                    val state = viewModel.state.value
-                    if (pages <= 0 || state.menuVisible || state.currentPage < pages) {
-                        leave()
-                        return
-                    }
-                    com.google.android.material.dialog.MaterialAlertDialogBuilder(this@ReaderActivity)
-                        .setMessage(stringResource(KMR.strings.mod69_ask_leave_message))
-                        .setPositiveButton(stringResource(KMR.strings.mod69_ask_leave_yes)) { _, _ -> leave() }
-                        .setNegativeButton(stringResource(MR.strings.action_cancel), null)
-                        .show()
-                }
-
-                private fun leave() {
-                    isEnabled = false
-                    onBackPressedDispatcher.onBackPressed()
-                }
-            },
-        )
-    }
     // KMK <--
 
     /**
