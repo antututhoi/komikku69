@@ -161,11 +161,16 @@ class DownloadCache(
         if (sourceDir != null) {
             val mangaDir = /* KMK --> */ sourceDir.mod69Manga(mangaTitle) /* KMK <-- */
             if (mangaDir != null) {
-                return provider.getValidChapterDirNames(
+                val names = provider.getValidChapterDirNames(
                     chapterName,
                     chapterScanlator,
                     chapterUrl,
-                ).any { it in mangaDir.chapterDirs }
+                )
+                if (names.any { it in mangaDir.chapterDirs }) return true
+                // KMK --> 69 mod: folders renamed a little (e.g. on a PC) still match
+                val wanted = names.map { provider.mod69Simple(it) }.filter { it.isNotEmpty() }
+                return mangaDir.chapterDirs.any { provider.mod69Simple(it) in wanted }
+                // KMK <--
             }
         }
         return false

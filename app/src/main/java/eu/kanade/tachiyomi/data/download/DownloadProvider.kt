@@ -144,10 +144,26 @@ class DownloadProvider(
         source: Source,
     ): UniFile? {
         val mangaDir = findMangaDir(mangaTitle, source)
-        return getValidChapterDirNames(chapterName, chapterScanlator, chapterUrl).asSequence()
+        val names = getValidChapterDirNames(chapterName, chapterScanlator, chapterUrl)
+        return names.asSequence()
             .mapNotNull { mangaDir?.findFile(it) }
             .firstOrNull()
+            // KMK --> 69 mod: folders renamed a little (e.g. on a PC) still match
+            ?: mod69LooseFind(mangaDir, names)
+        // KMK <--
     }
+
+    // KMK -->
+    /** Folder or .cbz in [mangaDir] whose name matches one of [names] ignoring spaces, symbols and case. */
+    private fun mod69LooseFind(mangaDir: UniFile?, names: List<String>): UniFile? {
+        if (mangaDir == null) return null
+        val wanted = names.map { mod69Simple(it) }.filter { it.isNotEmpty() }.toSet()
+        return mangaDir.listFiles().orEmpty().firstOrNull { mod69Simple(it.name.orEmpty()) in wanted }
+    }
+
+    fun mod69Simple(name: String): String =
+        name.removeSuffix(".cbz").removeSuffix(".CBZ").lowercase().filter { it.isLetterOrDigit() }
+    // KMK <--
 
     /**
      * Returns a list of downloaded directories for the chapters that exist.
@@ -376,6 +392,28 @@ class DownloadProvider(
             add(chapterDirName)
             // Archived chapters
             add("$chapterDirName.cbz")
+
+            // KMK --> 69 mod: names made with other naming settings (scanlator in name, url hash,
+            // short names) still count, so changing a setting never hides earlier downloads
+            for (scan in listOf(true, false)) {
+                for (hash in listOf(true, false)) {
+                    for (short in listOf(0, if (downloadPreferences.mod69ShortNames().get()) downloadPreferences.mod69ShortNameLength() else 0)) {
+                        val n = getChapterDirName(
+                            chapterName,
+                            chapterScanlator,
+                            chapterUrl,
+                            includeChapterUrlHash = hash,
+                            scanlatorPrefix = scan,
+                            shortLength = short,
+                        )
+                        if (n != chapterDirName) {
+                            add(n)
+                            add("$n.cbz")
+                        }
+                    }
+                }
+            }
+            // KMK <--
 
             // any legacy names
             legacyChapterDirNames.forEach {
