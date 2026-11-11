@@ -596,6 +596,128 @@ object Mod69DownloadFolders {
         return moved
     }
 
+    /**
+     * Sort by a backup file: every library entry in the backup gets its downloads moved into the folder of
+     * its first category in that backup (Default when it has none). Uses the same loose name matching as
+     * "Fix download folders", shows progress and writes a report. Returns how many entries moved.
+     */
+    suspend fun sortFromBackup(context: Context, uri: android.net.Uri): Int {
+        val provider = Injekt.get<DownloadProvider>()
+        val sources = Injekt.get<tachiyomi.domain.source.service.SourceManager>()
+        val root = Injekt.get<StorageManager>().getDownloadsDirectory() ?: return 0
+        val p = eu.kanade.tachiyomi.data.notification.Mod69Progress
+        val id = p.ID_MOVE
+        val title = "Sorting downloads by backup"
+        val started = System.currentTimeMillis()
+        p.start(context, id, title)
+        repairing = true
+        var moved = 0
+        var ok = 0
+        var unsure = 0
+        var notFound = 0
+        var failed = 0
+        val report = mutableListOf<String>()
+        try {
+            val backup = eu.kanade.tachiyomi.data.backup.BackupDecoder(context).decode(uri)
+            val catByOrder = backup.backupCategories.associateBy { it.order }
+            val entries = backup.backupManga.filter { it.favorite }
+            val sourceDirOf = entries.map { it.source }.distinct()
+                .mapNotNull { sid -> sources.get(sid)?.let { sid to provider.getSourceDirName(it).lowercase() } }
+                .toMap()
+            val sourceDirNames = sourceDirOf.values.toSet()
+            val byName = HashMap<String, MutableList<Pair<String, UniFile>>>()
+            root.listFiles().orEmpty().filter { it.isDirectory }.forEach { top ->
+                val topName = top.name?.lowercase() ?: return@forEach
+                top.listFiles().orEmpty().filter { it.isDirectory }.forEach { child ->
+                    val n = simple(child.name ?: return@forEach)
+                    if (n.isNotEmpty()) byName.getOrPut(n) { mutableListOf() } += topName to child
+                }
+            }
+            val sameTitle = entries.groupBy { simple(it.title) }
+            report += "Backup: ${entries.size} library entries, ${backup.backupCategories.size} categories"
+            report += ""
+            for ((i, bm) in entries.withIndex()) {
+                if (p.isStopped(id)) break
+                p.update(context, id, title, bm.title, i + 1, entries.size)
+                val cats = bm.categories.mapNotNull { catByOrder[it] }.sortedBy { it.order }.map { it.name }
+                val target = cats.firstOrNull()?.let { folderName(it) } ?: DEFAULT_FOLDER
+                val names = provider.getMangaDirNames(bm.title).map { simple(it) }.toSet() + simple(bm.title)
+                val ownSourceDir = sourceDirOf[bm.source]
+                val shared = (sameTitle[simple(bm.title)]?.size ?: 1) > 1
+                val found = names.flatMap { byName[it].orEmpty() }.distinctBy { it.second.uri }.filter { (top, _) ->
+                    when {
+                        top == ownSourceDir -> true
+                        top in sourceDirNames -> false
+                        shared -> false
+                        else -> true
+                    }
+                }
+                val line = "${bm.title} | categories: ${cats.joinToString()} | target: $target"
+                if (found.isEmpty()) {
+                    if (shared && names.any { byName.containsKey(it) }) {
+                        unsure++
+                        report += "$line | same title twice in the backup, left alone"
+                    } else {
+                        notFound++
+                    }
+                    continue
+                }
+                remember(bm.source, bm.title, target)
+                val parent = root.createDirectory(target) ?: run {
+                    failed++
+                    continue
+                }
+                var movedThis = false
+                for ((top, dir) in found) {
+                    if (top == target.lowercase()) continue
+                    try {
+                        if (move(context, dir, parent) != null) {
+                            movedThis = true
+                        } else {
+                            failed++
+                            report += "   couldn't move $top/${dir.name}"
+                        }
+                    } catch (e: Exception) {
+                        failed++
+                        report += "   couldn't move $top/${dir.name}: ${e.message}"
+                    }
+                }
+                report += "$line | ${if (movedThis) "moved from" else "already in"}: ${found.joinToString { it.first }}"
+                if (movedThis) moved++ else ok++
+            }
+            root.listFiles().orEmpty().filter { it.isDirectory && it.listFiles().isNullOrEmpty() }
+                .filter { it.name?.lowercase() !in sourceDirNames }
+                .forEach { it.delete() }
+        } catch (e: Exception) {
+            report += "Stopped by an error: $e"
+            logcat(LogPriority.ERROR, e) { "69: sorting by backup failed" }
+        } finally {
+            repairing = false
+        }
+        runCatching {
+            root.findFile(SORT_REPORT_NAME)?.delete()
+            root.createFile(SORT_REPORT_NAME)?.openOutputStream()?.use { it.write(report.joinToString("\n").toByteArray()) }
+        }
+        Injekt.get<DownloadCache>().invalidateCache()
+        p.finish(
+            context,
+            id,
+            "Sorting downloads by backup done",
+            listOf(
+                "Moved into their category folder: $moved",
+                "Already right: $ok",
+                "Same title twice, left alone: $unsure",
+                "No download folder found: $notFound",
+                "Failed: $failed",
+                "Details: $SORT_REPORT_NAME in the download folder",
+                "Time: ${p.duration(System.currentTimeMillis() - started)}",
+            ),
+        )
+        return moved
+    }
+
+    private const val SORT_REPORT_NAME = "69 sort by backup report.txt"
+
     private const val REPORT_NAME = "69 fix download folders report.txt"
 
     /** Only letters and digits, lowercased: folder names that differ only in symbols / spaces match. */

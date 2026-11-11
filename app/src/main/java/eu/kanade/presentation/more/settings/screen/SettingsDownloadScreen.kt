@@ -46,6 +46,16 @@ object SettingsDownloadScreen : SearchableSettings {
         // KMK --> 69 mod
         val mod69Context = androidx.compose.ui.platform.LocalContext.current
         val mod69Scope = androidx.compose.runtime.rememberCoroutineScope()
+        // 69 mod: pick a backup file, then sort the downloads into its category folders
+        val mod69SortPicker = androidx.activity.compose.rememberLauncherForActivityResult(
+            androidx.activity.result.contract.ActivityResultContracts.OpenDocument(),
+        ) { uri ->
+            if (uri != null) {
+                mod69Scope.launch(kotlinx.coroutines.Dispatchers.IO) {
+                    runCatching { eu.kanade.tachiyomi.data.download.Mod69DownloadFolders.sortFromBackup(mod69Context, uri) }
+                }
+            }
+        }
         val mod69Queued = stringResource(KMR.strings.mod69_redownload_queued)
         fun mod69RedownloadAll(mode: String) {
             mod69Scope.launch(kotlinx.coroutines.Dispatchers.IO) {
@@ -154,6 +164,11 @@ object SettingsDownloadScreen : SearchableSettings {
                 preference = downloadPreferences.mod69CategoryFolders(),
                 title = stringResource(KMR.strings.mod69_category_folders),
                 subtitle = stringResource(KMR.strings.mod69_category_folders_summary),
+            ),
+            Preference.PreferenceItem.TextPreference(
+                title = stringResource(KMR.strings.mod69_sort_by_backup),
+                subtitle = stringResource(KMR.strings.mod69_sort_by_backup_summary),
+                onClick = { mod69SortPicker.launch(arrayOf("*/*")) },
             ),
             Preference.PreferenceItem.TextPreference(
                 title = stringResource(KMR.strings.mod69_fix_download_folders),
