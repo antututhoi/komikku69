@@ -9,7 +9,7 @@ os.makedirs(OUT, exist_ok=True)
 T0 = time.time(); BUDGET = 70 * 60
 shots = 0; log = open(os.path.join(OUT, "crawl.txt"), "w")
 W, H = 1080, 2400
-SKIP = re.compile(r"clear|delete|reset|log ?out|sign ?out|remove|wipe|uninstall|factory|biometric|app lock|secure screen|incognito|check for update|install|battery|crash|create backup|restore|erase|purge|cache|empty|stop|quit|exit", re.I)
+SKIP = re.compile(r"save|export|import|share|choose|pick|folder|directory|location|set cbz|installer|file|clear|delete|reset|log ?out|sign ?out|remove|wipe|uninstall|factory|biometric|app lock|secure screen|incognito|check for update|install|battery|crash|create backup|restore|erase|purge|cache|empty|stop|quit|exit", re.I)
 
 def L(*a):
     s = " ".join(str(x) for x in a); print(s, flush=True); log.write(s + "\n"); log.flush()
@@ -136,12 +136,14 @@ def on_page(titles):
 
 def goto(path):
     """restart the app, open settings and follow the given entries (robust against getting lost)"""
+    adb("shell", "input", "keyevent", "3")
+    for pk in ("com.google.android.documentsui", "com.android.documentsui", "com.android.settings"): adb("shell", "am", "force-stop", pk)
     adb("shell", "am", "force-stop", PKG); time.sleep(1)
     adb("shell", "monkey", "-p", PKG, "-c", "android.intent.category.LAUNCHER", "1"); time.sleep(5)
-    if not open_settings(): return False
+    if not open_settings(): shot("noset_" + "_".join(path)); return False
     time.sleep(1.5)
     for t in path:
-        if not find_and_tap(t): return False
+        if not find_and_tap(t): shot("nopath_" + "_".join(path)); return False
         time.sleep(1.5)
     return True
 
