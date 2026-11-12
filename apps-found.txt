@@ -1,0 +1,4 @@
+Kaisoku: v9.8.7-beta7 kaisoku-v9.8.7-beta7-2090-installable.apk
+Kototoro: v2.4.4 Kototoro-2.4.4-x86_64-release.apk
+DropSauce: v1.1.2 DropSauce-v1.1.2.apk
+Futon: nightly-20261103-d8e1f57 app-nightly.apk

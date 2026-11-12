@@ -1,0 +1,8 @@
+Running on test
+ > Flow k3
+Tap on point (30%,38%)... COMPLETED
+Wait for animation to end within 15000 ms... COMPLETED
+Take screenshot k06_first_result... COMPLETED
+Tap on point (30%,38%)... COMPLETED
+Wait for animation to end within 15000 ms... COMPLETED
+Take screenshot k07_page... COMPLETED

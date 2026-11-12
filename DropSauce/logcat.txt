@@ -1,0 +1,526 @@
+--------- beginning of main
+11-12 16:14:09.843  9144  9174 D Maestro : Requesting view hierarchy
+11-12 16:14:09.845  9144  9174 W QueryController: Could not detect idle state.
+11-12 16:14:09.846  9144  9174 W QueryController: Could not detect idle state.
+11-12 16:14:09.887  9144  9174 D Maestro : View hierarchy received in 44 ms
+11-12 16:14:10.011  1066  1066 D TaplEvents: TIS / TouchInteractionService.onInputEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=324.0, y[0]=912.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=534795, downTime=534795, deviceId=-1, source=0x1002, displayId=0, eventId=-809108676 }
+11-12 16:14:10.118  1066  1066 D TaplEvents: TIS / TouchInteractionService.onInputEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=324.0, y[0]=912.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=534928, downTime=534795, deviceId=-1, source=0x1002, displayId=0, eventId=-215672670 }
+11-12 16:14:10.201  9144  9174 D Maestro : Requesting view hierarchy
+11-12 16:14:10.202  9144  9174 W QueryController: Could not detect idle state.
+11-12 16:14:10.202  9144  9174 W QueryController: Could not detect idle state.
+11-12 16:14:10.232  9144  9174 D Maestro : View hierarchy received in 31 ms
+11-12 16:14:10.329  9144  9174 D Maestro : Requesting view hierarchy
+11-12 16:14:10.330  9144  9174 W QueryController: Could not detect idle state.
+11-12 16:14:10.330  9144  9174 W QueryController: Could not detect idle state.
+11-12 16:14:10.355  9144  9174 D Maestro : View hierarchy received in 26 ms
+--------- beginning of system
+11-12 16:14:10.439   526  1851 D WindowManager: captureDisplay
+11-12 16:14:10.452   135   135 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-12 16:14:10.453  9084  9141 I Gralloc4: mapper 4.x is not supported
+--------- beginning of kernel
+11-12 16:14:10.966     0     0 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+11-12 16:14:10.488  9084  9179 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+11-12 16:14:10.489  9084  9179 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-12 16:14:10.490  9084  9179 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-12 16:14:10.513  9084  9179 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-12 16:14:10.852   526  1851 D WindowManager: captureDisplay
+11-12 16:14:10.877  9084  9139 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-12 16:14:10.877  9084  9139 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-12 16:14:10.877  9084  9139 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-12 16:14:10.877  9084  9139 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-12 16:14:10.877  9084  9139 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:266)
+11-12 16:14:10.877  9084  9139 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-12 16:14:10.877  9084  9139 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-12 16:14:10.877  9084  9139 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-12 16:14:10.877  9084  9139 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-12 16:14:10.877  9084  9139 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:266)
+11-12 16:14:11.485   526  1851 D WindowManager: captureDisplay
+11-12 16:14:11.769  9144  9174 D Maestro : Requesting view hierarchy
+11-12 16:14:11.770  9144  9174 W QueryController: Could not detect idle state.
+11-12 16:14:11.771  9144  9174 W QueryController: Could not detect idle state.
+11-12 16:14:11.796  9144  9174 D Maestro : View hierarchy received in 27 ms
+11-12 16:14:11.880  1066  1066 D TaplEvents: TIS / TouchInteractionService.onInputEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=324.0, y[0]=912.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=536667, downTime=536667, deviceId=-1, source=0x1002, displayId=0, eventId=-448087903 }
+11-12 16:14:11.987  1066  1066 D TaplEvents: TIS / TouchInteractionService.onInputEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=324.0, y[0]=912.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=536797, downTime=536667, deviceId=-1, source=0x1002, displayId=0, eventId=-967327256 }
+11-12 16:14:12.046  9144  9180 D Maestro : Requesting view hierarchy
+11-12 16:14:12.046  9144  9180 W QueryController: Could not detect idle state.
+11-12 16:14:12.047  9144  9180 W QueryController: Could not detect idle state.
+11-12 16:14:12.072  9144  9180 D Maestro : View hierarchy received in 26 ms
+11-12 16:14:12.129  9144  9180 D Maestro : Requesting view hierarchy
+11-12 16:14:12.129  9144  9180 W QueryController: Could not detect idle state.
+11-12 16:14:12.130  9144  9180 W QueryController: Could not detect idle state.
+11-12 16:14:12.151  9144  9180 D Maestro : View hierarchy received in 23 ms
+11-12 16:14:12.212   526   539 D WindowManager: captureDisplay
+11-12 16:14:12.239  9084  9139 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-12 16:14:12.240  9084  9139 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-12 16:14:12.240  9084  9139 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-12 16:14:12.240  9084  9139 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-12 16:14:12.240  9084  9139 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:266)
+11-12 16:14:12.240  9084  9139 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-12 16:14:12.240  9084  9139 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-12 16:14:12.240  9084  9139 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-12 16:14:12.240  9084  9139 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-12 16:14:12.240  9084  9139 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:266)
+11-12 16:14:12.428   526   539 D WindowManager: captureDisplay
+11-12 16:14:12.862   526   539 D WindowManager: captureDisplay
+11-12 16:14:12.884  9084  9139 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-12 16:14:12.884  9084  9139 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-12 16:14:12.884  9084  9139 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-12 16:14:12.884  9084  9139 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-12 16:14:12.884  9084  9139 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:266)
+11-12 16:14:12.884  9084  9139 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-12 16:14:12.885  9084  9139 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-12 16:14:12.885  9084  9139 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-12 16:14:12.885  9084  9139 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-12 16:14:12.885  9084  9139 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:266)
+11-12 16:14:13.204   839   839 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+11-12 16:14:13.514   526   539 D OomAdjuster: Not killing cached processes
+11-12 16:14:14.071     0     0 I logd    : logdr: UID=2000 GID=2000 PID=9181 n tail=0 logMask=99 pid=0 start=0ns deadline=0ns
+11-12 16:14:14.088     0     0 I logd    : logdr: UID=2000 GID=2000 PID=9184 n tail=2000 logMask=10 pid=0 start=0ns deadline=0ns
+11-12 16:14:14.103     0     0 I logd    : logdr: UID=2000 GID=2000 PID=9187 n tail=0 logMask=1 pid=0 start=0ns deadline=0ns
+11-12 16:14:13.783  5712  5712 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-12 16:14:13.865   526   555 I ActivityManager: Force stopping dev.mobile.maestro appid=10211 user=-1: deletePackageX
+11-12 16:14:13.865   526   555 E libprocessgroup: No such cgroup attribute: /sys/fs/cgroup/uid_4294877507/cgroup.freeze
+11-12 16:14:13.865   526   555 W libprocessgroup: Failed to apply Frozen process profile: No such file or directory
+11-12 16:14:13.866   526   555 I ActivityManager: Killing 9144:dev.mobile.maestro/u0a211 (adj 0): stop dev.mobile.maestro due to deletePackageX
+11-12 16:14:13.866   526   555 W ActivityManager: Crash of app dev.mobile.maestro running instrumentation ComponentInfo{dev.mobile.maestro.test/androidx.test.runner.AndroidJUnitRunner}
+11-12 16:14:13.867   526   544 D DisplayManagerService: Drop pending events for gone uid 10211
+11-12 16:14:13.868   526   555 I ActivityManager: Force stopping dev.mobile.maestro appid=10211 user=0: finished inst
+11-12 16:14:13.870   526   555 E libprocessgroup: No such cgroup attribute: /sys/fs/cgroup/uid_4294877507/cgroup.freeze
+11-12 16:14:13.870   526   555 W libprocessgroup: Failed to apply Unfrozen process profile: No such file or directory
+11-12 16:14:13.870  9084  9142 W Binder  : Caught a RuntimeException from the binder stub implementation.
+11-12 16:14:13.870  9084  9142 W Binder  : java.lang.SecurityException: Calling from not trusted UID!
+11-12 16:14:13.870  9084  9142 W Binder  : 	at android.app.UiAutomationConnection.throwIfCalledByNotTrustedUidLocked(UiAutomationConnection.java:646)
+11-12 16:14:13.870  9084  9142 W Binder  : 	at android.app.UiAutomationConnection.shutdown(UiAutomationConnection.java:547)
+11-12 16:14:13.870  9084  9142 W Binder  : 	at android.app.IUiAutomationConnection$Stub.onTransact(IUiAutomationConnection.java:402)
+11-12 16:14:13.870  9084  9142 W Binder  : 	at android.os.Binder.execTransactInternal(Binder.java:1344)
+11-12 16:14:13.870  9084  9142 W Binder  : 	at android.os.Binder.execTransact(Binder.java:1275)
+11-12 16:14:13.874  9084  9084 I app_process: System.exit called, status: 0
+11-12 16:14:13.874  9084  9084 I AndroidRuntime: VM exiting with result code 0.
+11-12 16:14:14.388     0     0 I servicemanager: Since 'artd' could not be found, trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+11-12 16:14:13.888   526  1971 V ActivityManager: Got obituary of 9144:dev.mobile.maestro
+11-12 16:14:14.405     0     0 I init    : starting service 'artd'...
+11-12 16:14:13.889   526  1851 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-12 16:14:13.889  1648  2354 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-12 16:14:13.890  1648  1755 I AiAiEcho: Predicting[0]: 
+11-12 16:14:13.890  1648  1755 I AiAiEcho: EchoTargets: 
+11-12 16:14:13.890  1648  1755 I AiAiEcho: Filtered by AiAi flag check: 
+11-12 16:14:13.890  1648  1755 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-12 16:14:13.890  1648  1755 I AiAiEcho: Predicting[0]: 
+11-12 16:14:13.890  1648  1755 I AiAiEcho: EchoTargets: 
+11-12 16:14:13.890  1648  1755 I AiAiEcho: Filtered by AiAi flag check: 
+11-12 16:14:13.890  1648  1755 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-12 16:14:13.891  1648  1755 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-12 16:14:13.891  1648  1755 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-12 16:14:13.891   526  1851 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-12 16:14:13.892   839   839 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-12 16:14:13.894  1764  2315 I A       : NGA enabled in interactor.
+11-12 16:14:13.895  1764  2315 I A       : Nga state changed to NgaStateDetails{state=ENABLED, isSpecialExperience=false}
+11-12 16:14:13.897  1671  5646 I A       : Initializing all components
+11-12 16:14:13.899  1671  5646 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
+11-12 16:14:13.900  1671  5646 I A       : [Memory] eligibility: StashEligibility{6}
+11-12 16:14:14.428     0     0 I init    : ... started service 'artd' has pid 9202
+11-12 16:14:14.429     0     0 I init    : Control message: Processed ctl.interface_start for 'aidl/artd' from pid: 134 (/system/bin/servicemanager)
+11-12 16:14:14.432     0     0 I init    : Untracked pid 9084 exited with status 0
+11-12 16:14:14.434     0     0 I init    : Untracked pid 9084 did not have an associated service entry and will not be reaped
+11-12 16:14:13.921   339   339 I Zygote  : Process 9144 exited due to signal 9 (Killed)
+11-12 16:14:13.922  1648  3052 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-12 16:14:13.923  1648  1755 I AiAiEcho: Predicting[0]: 
+11-12 16:14:13.923  1648  1755 I AiAiEcho: EchoTargets: 
+11-12 16:14:13.923  1648  1755 I AiAiEcho: Filtered by AiAi flag check: 
+11-12 16:14:13.923  1648  1755 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-12 16:14:13.923  1648  1755 I AiAiEcho: Predicting[0]: 
+11-12 16:14:13.924  1648  1755 I AiAiEcho: EchoTargets: 
+11-12 16:14:13.924  1648  1755 I AiAiEcho: Filtered by AiAi flag check: 
+11-12 16:14:13.924   526   526 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-12 16:14:13.925  1648  1755 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-12 16:14:13.925  1648  1755 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-12 16:14:13.926  1648  1755 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-12 16:14:13.926  1671  2220 I A       : onIsEnabledChanged, isEnabled: false
+11-12 16:14:13.927  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.927  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.927  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.927  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.928  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.928  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.928  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.928  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.928  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.928  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.928  1671  2220 I A       : onOpaVisibilityChanged: false
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 I A       : Setting session to type: NO_SESSION
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 I A       : setNavBarVisible: GestureNavBarVisible{navbarVisible=true}
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.929  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.930  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:13.930  1671  2220 I A       : onDisabled. Registered: false
+11-12 16:14:13.930  1671  2220 I A       : State changed: IDLE => IDLE by NGA_STATE_CHANGED and N/A with Optional.empty
+11-12 16:14:13.930  1671  2220 I A       : Recognizer choice: (recognizer_type: 1, recognizer_mode: 1, choice_reason: 4)
+11-12 16:14:13.932  1671  2220 I A       : onActiveStateChangeEvent: IDLE => IDLE
+11-12 16:14:13.932  1671  2220 I A       : #onActiveStateChangeEvent, newState: IDLE, previousState: IDLE.
+11-12 16:14:13.935  1671  2220 I NgaEntryPointEventSendr: setupConnection
+11-12 16:14:13.937   526  1971 W ProcessStats: Tracking association SourceState{1757328 com.google.android.gms/10131 BTop #16804} whose proc state 2 is better than process ProcessState{bf2714f com.google.android.gms.persistent/10131 pkg=com.google.android.gms} proc state 4 (620 skipped)
+11-12 16:14:13.938  1671  2220 I NgaEntryPointEventSendr: State changed: Disconnected => Connecting
+11-12 16:14:13.939   839   839 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-12 16:14:13.955  9202  9202 I artd    : Starting artd
+11-12 16:14:13.960  1671  2219 I A       : Initialize
+11-12 16:14:13.961  9202  9202 I AidlLazyServiceRegistrar: Registering service artd
+11-12 16:14:13.963  1671  2219 I A       : stopListening(NGA_PAUSED_UNKNOWN_REASON, NGA_CREATE), idleOverride=NOT_LISTENING
+11-12 16:14:13.963  1671  2219 I A       : on opa visibility changed false
+11-12 16:14:13.964  1671  2219 I A       : on opa visibility changed false
+11-12 16:14:13.965  1764  1764 I A       : Creating pss binder().
+11-12 16:14:14.480     0     0 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+11-12 16:14:14.484     0     0 I servicemanager: Notifying artd they do (previously: don't) have clients when service is guaranteed to be in use
+11-12 16:14:13.968  9202  9204 I AidlLazyServiceRegistrar: Process has 1 (of 1 available) client(s) in use after notification artd has clients: 1
+11-12 16:14:13.970  1671  2219 I NgaEntryPointEventSendr: onServiceConnected
+11-12 16:14:13.970  1764  2773 I A       : Calling beginBinderSession().
+11-12 16:14:14.001  1671  2220 I A       : Successfully initialized all components
+11-12 16:14:14.001  1764  2773 I A       : beginBinderSession(): calling binder
+11-12 16:14:14.002  1671  2219 I NgaEntryPointEventSendr: State changed: Connecting => Ready
+11-12 16:14:14.004   526  2202 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-12 16:14:14.568     0     0 I logd    : start watching /data/system/packages.list ...
+11-12 16:14:14.570     0     0 I logd    : ReadPackageList, total packages: 201
+11-12 16:14:14.054   526   579 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-12 16:14:14.054   526   579 D PackageManager: Clear ephemeral installer activity
+11-12 16:14:14.054   526  3305 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-12 16:14:14.069  1764  3430 I PBSessionCacheImpl: Deleted sessionId[7759948545149136] from persistence.
+11-12 16:14:14.070  1764  2500 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 60] task was not run. Callback from Service received after client was disposed.
+11-12 16:14:14.071  1671  2220 I NgaEntryPointEventSendr: State changed: Ready => Disconnected (onOpaDisconnected)
+11-12 16:14:14.071   526   579 I ActivityManager: Force stopping dev.mobile.maestro appid=10211 user=0: pkg removed
+11-12 16:14:14.075  1764  2500 W SearchServiceCore: Abort, client detached.
+11-12 16:14:14.087  1057  1057 D CarrierSvcBindHelper: onPackageRemoved: dev.mobile.maestro
+11-12 16:14:14.088  1057  1057 D CarrierSvcBindHelper: No carrier app for: 0
+11-12 16:14:14.098  2657  2657 I ProvidersCache: Updating roots due to change on user 0at content://com.android.externalstorage.documents
+11-12 16:14:14.099   526   555 D ActivityManager: sync unfroze 2657 com.google.android.documentsui for 3
+11-12 16:14:14.100  1029  1029 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_REMOVED
+11-12 16:14:14.101  1029  1029 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_REMOVED
+11-12 16:14:14.102   526   555 D ActivityManager: sync unfroze 2649 com.android.chrome for 3
+11-12 16:14:14.105  1672  1672 W MediaProvider: WorkProfileOwnerApps cache is empty
+11-12 16:14:14.114   839   839 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+11-12 16:14:14.147   526   554 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-12 16:14:14.155   526   763 W WifiService: Couldn't get PackageInfo for package:dev.mobile.maestro
+11-12 16:14:14.155   526   763 D WifiService: Remove settings for package:dev.mobile.maestro
+11-12 16:14:14.155   526   763 D WifiConfigManager: Remove all networks for app ApplicationInfo{26e7124 dev.mobile.maestro}
+11-12 16:14:14.156   526   629 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+11-12 16:14:14.157   526   640 V StorageManagerService: Package dev.mobile.maestro does not have legacy storage
+11-12 16:14:14.159   526   613 I RollbackManager: broadcast=ACTION_PACKAGE_FULLY_REMOVED pkg=dev.mobile.maestro
+11-12 16:14:14.161   526   776 E AppOps  : attributionTag VCN not declared in manifest of android
+11-12 16:14:14.166   526   763 D WifiConfigStore: Writing to stores completed in 6 ms.
+11-12 16:14:14.166   526  1745 D ActivityManager: sync unfroze 8975 com.android.externalstorage for 7
+11-12 16:14:14.169   839   885 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+11-12 16:14:14.171   526   763 I PasspointManager: No app ops listener found for dev.mobile.maestro
+11-12 16:14:14.171   526   763 W WifiService: Couldn't get PackageInfo for package:dev.mobile.maestro
+11-12 16:14:14.171   526   763 D WifiService: Remove settings for package:dev.mobile.maestro
+11-12 16:14:14.171   526   763 D WifiConfigManager: Remove all networks for app ApplicationInfo{72a3f2 dev.mobile.maestro}
+11-12 16:14:14.172   839   885 D StylusManager: Stylus InputDevice changed: 13 virtio_input_multi_touch_10
+11-12 16:14:14.172   839   885 D StylusManager: Stylus InputDevice changed: 12 virtio_input_multi_touch_9
+11-12 16:14:14.173   839   885 D StylusManager: Stylus InputDevice changed: 4 virtio_input_multi_touch_1
+11-12 16:14:14.178   526   763 D WifiConfigStore: Writing to stores completed in 5 ms.
+11-12 16:14:14.178   526   763 I PasspointManager: No app ops listener found for dev.mobile.maestro
+11-12 16:14:14.198   839   885 D StylusManager: Stylus InputDevice changed: 11 virtio_input_multi_touch_8
+11-12 16:14:14.201   839   885 D StylusManager: Stylus InputDevice changed: 9 virtio_input_multi_touch_6
+11-12 16:14:14.201   839   885 D StylusManager: Stylus InputDevice changed: 8 virtio_input_multi_touch_5
+11-12 16:14:14.202   839   885 D StylusManager: Stylus InputDevice changed: 6 virtio_input_multi_touch_3
+11-12 16:14:14.205   526   555 I ActivityManager: Force stopping dev.mobile.maestro.test appid=10212 user=-1: deletePackageX
+11-12 16:14:14.205   526   555 E libprocessgroup: No such cgroup attribute: /sys/fs/cgroup/uid_4294877508/cgroup.freeze
+11-12 16:14:14.205   526   555 W libprocessgroup: Failed to apply Frozen process profile: No such file or directory
+11-12 16:14:14.207   526   555 E libprocessgroup: No such cgroup attribute: /sys/fs/cgroup/uid_4294877508/cgroup.freeze
+11-12 16:14:14.207   526   555 W libprocessgroup: Failed to apply Unfrozen process profile: No such file or directory
+11-12 16:14:14.208   526   526 I Telecom : CarModeTracker: Package dev.mobile.maestro is not tracked.: SSH.oR@Afs🔒
+11-12 16:14:14.210   526   526 I Telecom : InCallController: updateCarModeForConnections: car mode apps: : SSH.oR@Afs🔒
+11-12 16:14:14.210   526   526 I Telecom : InCallController: update carmode current:UserHandle{0} parent:null: SSH.oR@Afs🔒
+11-12 16:14:14.214   526   619 I RoleService: Granting default roles...
+11-12 16:14:14.220   526   526 I ConditionProviders: Disallowing condition provider dev.mobile.maestro (userSet: true)
+11-12 16:14:14.222  5712  5712 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-12 16:14:14.222  5712  5712 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-12 16:14:14.227   526  2072 D SafetySourceDataValidator: No cert check requested for package com.google.android.permissioncontroller
+11-12 16:14:14.230   844  8964 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+11-12 16:14:14.236   844  8964 I Role    : com.google.android.gms not qualified for android.app.role.SYSTEM_CALL_STREAMING due to missing RequiredComponent{mIntentFilterData=IntentFilterData{mAction='android.telecom.CallStreamingService', mCategories='[]', mDataScheme='null', mDataType='null'}, mMinTargetSdkVersion=1, mFlags='0', mPermission='android.permission.BIND_CALL_STREAMING_SERVICE', mQueryFlags=0, mMetaData=[]}
+11-12 16:14:14.236   844  8964 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_CALL_STREAMING
+11-12 16:14:14.237   839   885 D StylusManager: Stylus InputDevice changed: 7 virtio_input_multi_touch_4
+11-12 16:14:14.240   526   555 D ActivityManager: sync unfroze 2017 android.process.media for 3
+11-12 16:14:14.252   335   335 I netd    : tetherGetStats() -> {[]} <0.28ms>
+11-12 16:14:14.778     0     0 I logd    : start watching /data/system/packages.list ...
+11-12 16:14:14.781     0     0 I logd    : ReadPackageList, total packages: 200
+11-12 16:14:14.267   844  8964 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+11-12 16:14:14.267   839   885 D StylusManager: Stylus InputDevice changed: 5 virtio_input_multi_touch_2
+11-12 16:14:14.273  1672  2357 I MediaProvider: Begin Intent { act=android.intent.action.PACKAGE_FULLY_REMOVED dat=package: flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+11-12 16:14:14.275  5695  9228 I ProximityAuth: [RecentAppsMediator] Package removed: (user=UserHandle{0}) dev.mobile.maestro
+11-12 16:14:14.278  5712  9226 I BlockstoreStorage: Clearing all the Blockstore Data for package dev.mobile.maestro [CONTEXT service_id=258 ]
+11-12 16:14:14.278  5712  9226 I BlockstoreStorage: Clearing all the Blockstore Data for 1 packages [CONTEXT service_id=258 ]
+11-12 16:14:14.280  5712  5712 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-12 16:14:14.284  5695  9228 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_REMOVED [CONTEXT service_id=17 ]
+11-12 16:14:14.284   844   844 D PersistedStoragePackageUninstalledReceiver: Received android.intent.action.PACKAGE_FULLY_REMOVED for dev.mobile.maestro for u0
+11-12 16:14:14.298  1672  2357 D MediaProvider: Deleted 0 Android/media items belonging to dev.mobile.maestro on /data/user/0/com.google.android.providers.media.module/databases/external.db
+11-12 16:14:14.301  5712  8004 I Icing   : doRemovePackageData dev.mobile.maestro
+11-12 16:14:14.305   839   885 D StylusManager: Stylus InputDevice changed: 10 virtio_input_multi_touch_7
+11-12 16:14:14.311  5712  9226 W SQLiteLog: (28) double-quoted string literal: "dev.mobile.maestro"
+11-12 16:14:14.312  1672  2357 D MediaGrants: Removed 0 media_grants for 0 user for dev.mobile.maestro. Reason: Package orphaned
+11-12 16:14:14.314   526   579 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-12 16:14:14.314   526   579 D PackageManager: Clear ephemeral installer activity
+11-12 16:14:14.314  1672  2357 I MediaProvider: End Intent { act=android.intent.action.PACKAGE_FULLY_REMOVED dat=package: flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+11-12 16:14:14.316   526  3305 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-12 16:14:14.323   526   579 I ActivityManager: Force stopping dev.mobile.maestro.test appid=10212 user=0: pkg removed
+11-12 16:14:14.328   526   579 E libprocessgroup: No such cgroup attribute: /sys/fs/cgroup/uid_10212/cgroup.freeze
+11-12 16:14:14.328   526   579 W libprocessgroup: Failed to apply Frozen process profile: No such file or directory
+11-12 16:14:14.329   526   579 E libprocessgroup: No such cgroup attribute: /sys/fs/cgroup/uid_10212/cgroup.freeze
+11-12 16:14:14.329   526   579 W libprocessgroup: Failed to apply Unfrozen process profile: No such file or directory
+11-12 16:14:14.348   526   554 I InputMethodManagerService: Input method uninstalled, disabling: ComponentInfo{dev.mobile.maestro/dev.mobile.maestro.input.MaestroInputMethodService}
+11-12 16:14:14.352  5712  9012 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-12 16:14:14.369  1057  1057 D CarrierSvcBindHelper: onPackageRemoved: dev.mobile.maestro.test
+11-12 16:14:14.369  1057  1057 D CarrierSvcBindHelper: No carrier app for: 0
+11-12 16:14:14.378  1029  1029 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_REMOVED
+11-12 16:14:14.380  1029  1029 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_REMOVED
+11-12 16:14:14.380  1672  1672 W MediaProvider: WorkProfileOwnerApps cache is empty
+11-12 16:14:14.391   526   763 W WifiService: Couldn't get PackageInfo for package:dev.mobile.maestro.test
+11-12 16:14:14.397   526   763 D WifiService: Remove settings for package:dev.mobile.maestro.test
+11-12 16:14:14.397   526   763 D WifiConfigManager: Remove all networks for app ApplicationInfo{9a8acf6 dev.mobile.maestro.test}
+11-12 16:14:14.398   526   776 E AppOps  : attributionTag VCN not declared in manifest of android
+11-12 16:14:14.406  5712  9012 I Icing   : Indexing done com.google.android.gms-apps
+11-12 16:14:14.418   526   535 I system_server: Background concurrent copying GC freed 428567(19MB) AllocSpace objects, 34(1304KB) LOS objects, 41% free, 34MB/58MB, paused 205us,59us total 361.660ms
+11-12 16:14:14.419   526   640 V StorageManagerService: Package dev.mobile.maestro.test does not have legacy storage
+11-12 16:14:14.421   526   613 I RollbackManager: broadcast=ACTION_PACKAGE_FULLY_REMOVED pkg=dev.mobile.maestro.test
+11-12 16:14:14.438   526   526 I Telecom : CarModeTracker: Package dev.mobile.maestro.test is not tracked.: SSH.oR@Af4🔒
+11-12 16:14:14.439   526   526 I Telecom : InCallController: updateCarModeForConnections: car mode apps: : SSH.oR@Af4🔒
+11-12 16:14:14.441   526   526 I Telecom : InCallController: update carmode current:UserHandle{0} parent:null: SSH.oR@Af4🔒
+11-12 16:14:14.449   526   629 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+11-12 16:14:14.455   526   763 D WifiConfigStore: Writing to stores completed in 24 ms.
+11-12 16:14:14.459   526   763 I PasspointManager: No app ops listener found for dev.mobile.maestro.test
+11-12 16:14:14.459   526   763 W WifiService: Couldn't get PackageInfo for package:dev.mobile.maestro.test
+11-12 16:14:14.459   526   763 D WifiService: Remove settings for package:dev.mobile.maestro.test
+11-12 16:14:14.460   526   763 D WifiConfigManager: Remove all networks for app ApplicationInfo{5d35071 dev.mobile.maestro.test}
+11-12 16:14:14.462   839   885 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+11-12 16:14:14.476   526   526 I ConditionProviders: Disallowing condition provider dev.mobile.maestro.test (userSet: true)
+11-12 16:14:14.514   839   839 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+11-12 16:14:14.515  1672  2357 I MediaProvider: Begin Intent { act=android.intent.action.PACKAGE_FULLY_REMOVED dat=package: flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+11-12 16:14:14.515  1672  2357 D MediaProvider: Deleted 0 Android/media items belonging to dev.mobile.maestro.test on /data/user/0/com.google.android.providers.media.module/databases/external.db
+11-12 16:14:14.528  1066  1066 D Launcher.Model: package removed received dev.mobile.maestro
+11-12 16:14:14.528  1066  1130 D PackageUpdatedTask: Removing app icondev.mobile.maestro
+11-12 16:14:14.530  1648  1648 I AiAiEcho: AppFetcherImplV2 onPackageRemoved dev.mobile.maestro.
+11-12 16:14:14.534  1066  1130 D ModelWriter: removing items from db . Reason: [removed because the corresponding package or component is removed. mOp=3 removedPackages=[dev.mobile.maestro] removedComponents=[]]
+11-12 16:14:14.542  1672  2357 D MediaGrants: Removed 0 media_grants for 0 user for dev.mobile.maestro.test. Reason: Package orphaned
+11-12 16:14:14.543   526   763 D WifiConfigStore: Writing to stores completed in 80 ms.
+11-12 16:14:14.543   526   763 I PasspointManager: No app ops listener found for dev.mobile.maestro.test
+11-12 16:14:14.544  1672  2357 I MediaProvider: End Intent { act=android.intent.action.PACKAGE_FULLY_REMOVED dat=package: flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+11-12 16:14:14.545   839   885 D StylusManager: Stylus InputDevice changed: 13 virtio_input_multi_touch_10
+11-12 16:14:14.558  1648  1755 I AiAiEcho: [pnb-agg] Reload pnb aggregation on events deleted
+11-12 16:14:14.558  1648  1755 I AiAiEcho: [pnb-agg] pnb aggregation disabled.
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: <DWB> Application not found: dev.mobile.maestro.test
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: android.content.pm.PackageManager$NameNotFoundException: dev.mobile.maestro.test
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at android.app.ApplicationPackageManager.getApplicationInfoAsUser(ApplicationPackageManager.java:507)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at android.app.ApplicationPackageManager.getApplicationInfo(ApplicationPackageManager.java:490)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at android.app.ApplicationPackageManager.getApplicationInfo(ApplicationPackageManager.java:484)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at czo.e(PG:2)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at czo.f(PG:7)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at crm.f(PG:14)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at cdm.apply(PG:74)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at j$.util.stream.i.accept(SourceFile:27)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at j$.util.stream.P0.accept(SourceFile:3)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at j$.util.a.forEachRemaining(SourceFile:20)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at j$.util.stream.c.v(SourceFile:21)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at j$.util.stream.c.C(SourceFile:8)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at j$.util.stream.I0.e(SourceFile:1)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at j$.util.stream.c.F(SourceFile:35)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at j$.util.stream.g1.collect(SourceFile:83)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at bsv.a(PG:14)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at jza.a(PG:30)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at jza.a(PG:42)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at lne.a(PG:1)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at lmk.run(PG:4)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at lng.run(PG:1)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at llo.run(PG:3)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at idn.run(PG:5)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at huo.run(PG:51)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at java.lang.Thread.run(Thread.java:1012)
+11-12 16:14:14.559  1572  1645 W AppInfoHelper: 	at idx.run(PG:5)
+11-12 16:14:14.567   526  2243 D SafetySourceDataValidator: No cert check requested for package com.google.android.permissioncontroller
+11-12 16:14:14.577  1671  1671 I GsaVoiceInteractionSrv: O received Intent { act=android.intent.action.PACKAGE_REMOVED dat=package: flg=0x4000010 (has extras) }
+11-12 16:14:14.579  1671  1671 I GsaVoiceInteractionSrv: O received Intent { act=android.intent.action.PACKAGE_REMOVED dat=package: flg=0x4000010 (has extras) }
+11-12 16:14:14.584   335   335 I netd    : tetherGetStats() -> {[]} <0.29ms>
+11-12 16:14:14.590   839   885 D StylusManager: Stylus InputDevice changed: 12 virtio_input_multi_touch_9
+11-12 16:14:14.591   839   885 D StylusManager: Stylus InputDevice changed: 4 virtio_input_multi_touch_1
+11-12 16:14:14.593   839   885 D StylusManager: Stylus InputDevice changed: 11 virtio_input_multi_touch_8
+11-12 16:14:14.595   839   885 D StylusManager: Stylus InputDevice changed: 9 virtio_input_multi_touch_6
+11-12 16:14:14.597   839   885 D StylusManager: Stylus InputDevice changed: 8 virtio_input_multi_touch_5
+11-12 16:14:14.600  1764  2500 W SearchServiceCore: Abort, client detached.
+11-12 16:14:14.603   839   885 D StylusManager: Stylus InputDevice changed: 6 virtio_input_multi_touch_3
+11-12 16:14:14.604  5712  5712 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-12 16:14:14.604  5712  5712 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-12 16:14:14.604   839   885 D StylusManager: Stylus InputDevice changed: 7 virtio_input_multi_touch_4
+11-12 16:14:14.605   839   885 D StylusManager: Stylus InputDevice changed: 5 virtio_input_multi_touch_2
+11-12 16:14:14.605   839   885 D StylusManager: Stylus InputDevice changed: 10 virtio_input_multi_touch_7
+11-12 16:14:14.608  5712  5712 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-12 16:14:14.608   526   554 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-12 16:14:14.615  5712  9243 I BlockstoreStorage: Clearing all the Blockstore Data for package dev.mobile.maestro.test [CONTEXT service_id=258 ]
+11-12 16:14:14.615  5712  9243 I BlockstoreStorage: Clearing all the Blockstore Data for 1 packages [CONTEXT service_id=258 ]
+11-12 16:14:14.624  1648  1810 I AiAiEcho: EchoSearch: WidgetFetcherImpl is initialized with [33] widgets [reason=package removed for userId: 0]
+11-12 16:14:14.629   844   844 D PersistedStoragePackageUninstalledReceiver: Received android.intent.action.PACKAGE_FULLY_REMOVED for dev.mobile.maestro.test for u0
+11-12 16:14:14.633  5712  9012 I Icing   : doRemovePackageData dev.mobile.maestro.test
+11-12 16:14:14.638  1066  1066 D Launcher.Model: package removed received dev.mobile.maestro.test
+11-12 16:14:14.638  1066  1130 D PackageUpdatedTask: Removing app icondev.mobile.maestro.test
+11-12 16:14:14.640  1066  1130 D ModelWriter: removing items from db . Reason: [removed because the corresponding package or component is removed. mOp=3 removedPackages=[dev.mobile.maestro.test] removedComponents=[]]
+11-12 16:14:14.641  1648  1648 I AiAiEcho: AppFetcherImplV2 onPackageRemoved dev.mobile.maestro.test.
+11-12 16:14:14.645  5712  9244 W SQLiteLog: (28) double-quoted string literal: "dev.mobile.maestro.test"
+11-12 16:14:14.654  5695  9239 I ProximityAuth: [RecentAppsMediator] Package removed: (user=UserHandle{0}) dev.mobile.maestro.test
+11-12 16:14:14.657  5695  9124 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_REMOVED [CONTEXT service_id=17 ]
+11-12 16:14:14.669  1648  1810 I AiAiEcho: EchoSearch: WidgetFetcherImpl is initialized with [33] widgets [reason=package removed for userId: 0]
+11-12 16:14:14.681  5712  8004 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-12 16:14:14.682  5712  8004 I Icing   : Indexing done com.google.android.gms-apps
+11-12 16:14:14.683  1648  1755 I AiAiEcho: [pnb-agg] Reload pnb aggregation on events deleted
+11-12 16:14:14.683  1648  1755 I AiAiEcho: [pnb-agg] pnb aggregation disabled.
+11-12 16:14:14.763  9258  9258 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 16:14:14.768  9258  9258 I AndroidRuntime: Using default boot image
+11-12 16:14:14.768  9258  9258 I AndroidRuntime: Leaving lock profiling enabled
+11-12 16:14:14.770  9258  9258 I app_process: Core platform API reporting enabled, enforcing=false
+11-12 16:14:14.771  9258  9258 I app_process: Using CollectorTypeCC GC.
+11-12 16:14:14.822   839   839 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.focusmode.quicksettings.FocusModeTileService}(0)
+11-12 16:14:14.838  9258  9258 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-12 16:14:14.839   839   839 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.focusmode.quicksettings.FocusModeTileService}(0)
+11-12 16:14:14.849  9258  9258 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 16:14:14.849  9258  9258 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt72l.dat
+11-12 16:14:14.857  9258  9258 W app_process: Unexpected CPU variant for x86: x86_64.
+11-12 16:14:14.857  9258  9258 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+11-12 16:14:14.873  9258  9258 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]} | PCL[])
+11-12 16:14:14.874  9258  9258 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*4168958247]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]}#PCL[/system/framework/android.test.base.jar*836642756]} | PCL[/system/framework/android.test.runner.jar*4168958247])
+11-12 16:14:14.896  9258  9258 W libc    : Access denied finding property "ro.product.name_for_attestation"
+11-12 16:14:14.896  9258  9258 W libc    : Access denied finding property "ro.product.brand_for_attestation"
+11-12 16:14:14.896  9258  9258 W libc    : Access denied finding property "ro.product.model_for_attestation"
+11-12 16:14:14.897  9258  9258 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 16:14:14.884  9258  9258 W main    : type=1400 audit(0.0:129): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-12 16:14:14.908  9258  9258 D UiAutomationConnection: Created on user UserHandle{0}
+11-12 16:14:14.908  9258  9258 I UiAutomation: Initialized for user 0 on display 0
+11-12 16:14:14.908  9258  9258 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+11-12 16:14:14.896  9258  9258 W main    : type=1400 audit(0.0:130): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-12 16:14:14.917   526   919 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+11-12 16:14:14.917   526   919 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation) when called by user 0
+11-12 16:14:14.919   526   919 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-12 16:14:14.896  9258  9258 W main    : type=1400 audit(0.0:131): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-12 16:14:14.920  1648  3052 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-12 16:14:14.921  1648  1755 I AiAiEcho: Predicting[0]: 
+11-12 16:14:14.921  1648  1755 I AiAiEcho: EchoTargets: 
+11-12 16:14:14.921  1648  1755 I AiAiEcho: Filtered by AiAi flag check: 
+11-12 16:14:14.921  1648  1755 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-12 16:14:14.921  9258  9272 V UiAutomation: Init UiAutomation@e9b81dd[id=18, displayId=0, flags=0]
+11-12 16:14:14.921  1648  1755 I AiAiEcho: Predicting[0]: 
+11-12 16:14:14.921  1648  1755 I AiAiEcho: EchoTargets: 
+11-12 16:14:14.921  1648  1755 I AiAiEcho: Filtered by AiAi flag check: 
+11-12 16:14:14.921  1648  1755 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-12 16:14:14.922  1648  1755 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-12 16:14:14.922  1648  1755 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-12 16:14:14.922   839   839 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-12 16:14:14.923   526   919 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-12 16:14:14.926  1764  2299 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-12 16:14:14.926  1764  2299 I A       : Nga state changed to NgaStateDetails{state=DISABLED, isSpecialExperience=false}
+11-12 16:14:14.928  1648  3052 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-12 16:14:14.929   526   526 D BatterySaverPolicy: accessibility changed to true, updating policy.
+11-12 16:14:14.929  1648  1755 I AiAiEcho: Predicting[0]: 
+11-12 16:14:14.929  1648  1755 I AiAiEcho: EchoTargets: 
+11-12 16:14:14.929  1648  1755 I AiAiEcho: Filtered by AiAi flag check: 
+11-12 16:14:14.929  1648  1755 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-12 16:14:14.929  1648  1755 I AiAiEcho: Predicting[0]: 
+11-12 16:14:14.929  1648  1755 I AiAiEcho: EchoTargets: 
+11-12 16:14:14.929  1648  1755 I AiAiEcho: Filtered by AiAi flag check: 
+11-12 16:14:14.929  1648  1755 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-12 16:14:14.930  1648  1755 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-12 16:14:14.931  1648  1755 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-12 16:14:14.931   839   839 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-12 16:14:14.931   526   919 D SafetySourceDataValidator: No cert check requested for package com.google.android.permissioncontroller
+11-12 16:14:14.942  1671  5646 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
+11-12 16:14:14.943  1671  5646 I A       : [Memory] eligibility: StashEligibility{4}
+11-12 16:14:14.943  1671  2220 I A       : Unsubscribed to apa or classic variant change.
+11-12 16:14:15.932  9258  9258 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+11-12 16:14:15.935   526  1851 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-12 16:14:15.935   526  1851 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-12 16:14:15.935  1648  2354 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-12 16:14:15.936  1648  1755 I AiAiEcho: Predicting[0]: 
+11-12 16:14:15.936  1648  1755 I AiAiEcho: EchoTargets: 
+11-12 16:14:15.936  1648  1755 I AiAiEcho: Filtered by AiAi flag check: 
+11-12 16:14:15.936  1648  1755 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-12 16:14:15.936  1648  1755 I AiAiEcho: Predicting[0]: 
+11-12 16:14:15.936  1648  1755 I AiAiEcho: EchoTargets: 
+11-12 16:14:15.936  1648  1755 I AiAiEcho: Filtered by AiAi flag check: 
+11-12 16:14:15.936  1648  1755 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-12 16:14:15.936  1648  1755 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-12 16:14:15.936  1648  1755 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-12 16:14:15.937   839   839 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-12 16:14:15.938  1764  2316 I A       : NGA enabled in interactor.
+11-12 16:14:15.938  1764  2316 I A       : Nga state changed to NgaStateDetails{state=ENABLED, isSpecialExperience=false}
+11-12 16:14:15.940  9258  9258 D AndroidRuntime: Shutting down VM
+11-12 16:14:15.942   526   526 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-12 16:14:15.943  1671  5646 I A       : Initializing all components
+11-12 16:14:15.943  1671  5646 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
+11-12 16:14:15.943  1671  5646 I A       : [Memory] eligibility: StashEligibility{6}
+11-12 16:14:15.943  1671  2220 I A       : onIsEnabledChanged, isEnabled: false
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 I A       : onOpaVisibilityChanged: false
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.943  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.944  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.944  1671  2220 I A       : Setting session to type: NO_SESSION
+11-12 16:14:15.944  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.944  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 I A       : setNavBarVisible: GestureNavBarVisible{navbarVisible=true}
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-12 16:14:15.945  1671  2220 I A       : onDisabled. Registered: false
+11-12 16:14:15.945  1671  2219 I A       : State changed: IDLE => IDLE by NGA_STATE_CHANGED and N/A with Optional.empty
+11-12 16:14:15.945  1671  2219 I A       : Recognizer choice: (recognizer_type: 1, recognizer_mode: 1, choice_reason: 4)
+11-12 16:14:15.946  1671  2219 I A       : onActiveStateChangeEvent: IDLE => IDLE
+11-12 16:14:15.946  1671  2219 I A       : #onActiveStateChangeEvent, newState: IDLE, previousState: IDLE.
+11-12 16:14:15.956  1671  2219 I A       : Initialize
+11-12 16:14:15.957  1671  2219 I A       : stopListening(NGA_PAUSED_UNKNOWN_REASON, NGA_CREATE), idleOverride=NOT_LISTENING
+11-12 16:14:15.957  1671  2219 I A       : on opa visibility changed false
+11-12 16:14:15.963  1671  2219 I A       : on opa visibility changed false
+11-12 16:14:15.963  1671  2219 I NgaEntryPointEventSendr: setupConnection
+11-12 16:14:15.965  1671  2219 I NgaEntryPointEventSendr: State changed: Disconnected => Connecting
+11-12 16:14:15.976  1671  2220 I A       : Successfully initialized all components
+11-12 16:14:15.976  1764  1764 I A       : Creating pss binder().
+11-12 16:14:15.979  1671  2219 I NgaEntryPointEventSendr: onServiceConnected
+11-12 16:14:15.979  1764  5414 I A       : Calling beginBinderSession().
+11-12 16:14:15.980  1764  5414 I A       : beginBinderSession(): calling binder
+11-12 16:14:15.980  1671  2219 I NgaEntryPointEventSendr: State changed: Connecting => Ready
+11-12 16:14:15.988   526  2249 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-12 16:14:15.999  1671  2220 I NgaEntryPointEventSendr: State changed: Ready => Disconnected (onOpaDisconnected)
+11-12 16:14:16.000  1764  3430 I PBSessionCacheImpl: Deleted sessionId[7759948545149139] from persistence.
+11-12 16:14:16.003  1764  2500 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 60] task was not run. Callback from Service received after client was disposed.
+11-12 16:14:16.005  1764  2500 W SearchServiceCore: Abort, client detached.
