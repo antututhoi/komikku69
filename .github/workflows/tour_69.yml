@@ -60,10 +60,16 @@ jobs:
           TOKEN: ${{ github.token }}
         run: |
           sudo apt-get install -y -qq ffmpeg > /dev/null 2>&1 || true
-          for v in out69/*/tour.mp4; do
-            [ -f "$v" ] || continue
-            d=$(dirname "$v"); mkdir -p "$d/frames"
-            ffmpeg -loglevel error -i "$v" -vf "fps=1/3,scale=360:-1" -q:v 6 "$d/frames/f_%03d.jpg" || true
+          for d in out69/*/; do
+            mkdir -p "$d/frames" "$d/shots"
+            for v in "$d"tour_*.mp4; do
+              [ -f "$v" ] || continue; k=$(basename "$v" .mp4)
+              ffmpeg -loglevel error -i "$v" -vf "fps=1/3,scale=360:-1" -q:v 6 "$d/frames/${k}_%03d.jpg" || true
+            done
+            find "$d/m" -name '*.png' 2>/dev/null | while read -r p; do
+              ffmpeg -loglevel error -y -i "$p" -vf "scale=540:-1" -q:v 4 "$d/shots/$(basename "$p" .png).jpg" || true
+            done
+            rm -rf "$d/m"
           done
           mkdir -p /tmp/res && rsync -a --exclude '*.mp4' out69/ /tmp/res/
           cd /tmp/res && git init -q && git checkout -q -b tour69-results

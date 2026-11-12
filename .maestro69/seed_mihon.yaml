@@ -1,0 +1,112 @@
+appId: ${APP_ID}
+---
+# Restore the 20-title backup, update the library, then look around with real entries.
+- tapOn:
+    text: "(?i)^more$"
+    optional: true
+- tapOn:
+    text: "(?i)^backup and restore$"
+    optional: true
+- runFlow:
+    when:
+      notVisible: "(?i)restore backup"
+    commands:
+      - tapOn:
+          text: "(?i)^library$"
+          optional: true
+      - tapOn:
+          text: "More options"
+          optional: true
+      - tapOn:
+          text: "(?i)^settings$"
+          optional: true
+      - tapOn:
+          text: "(?i)^(backup and restore|data and storage)$"
+          optional: true
+- takeScreenshot: 20_backup_screen
+- tapOn: "(?i)^restore backup$"
+- runFlow: open_seed.yaml
+- tapOn:
+    text: "(?i)^restore$"
+    optional: true
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "25000"
+- takeScreenshot: 21_after_restore
+- pressKey: back
+- pressKey: back
+# Trust the MangaDex extension if the app asks
+- tapOn:
+    text: "(?i)^browse$"
+    optional: true
+- tapOn:
+    text: "(?i)^extensions$"
+    optional: true
+- tapOn:
+    text: "(?i)^trust$"
+    optional: true
+- takeScreenshot: 22_extensions
+# Library update (pull down)
+- tapOn:
+    text: "(?i)^library$"
+    optional: true
+- swipe:
+    start: "50%, 30%"
+    end: "50%, 85%"
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "70000"
+- takeScreenshot: 23_library
+- swipe:
+    start: "85%, 55%"
+    end: "15%, 55%"
+- takeScreenshot: 24_library_category2
+- tapOn:
+    text: "(?i)^(updates|recents)$"
+    optional: true
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "3000"
+- takeScreenshot: 25_updates
+- scroll
+- takeScreenshot: 26_updates_scrolled
+# Entry page
+- tapOn:
+    text: "(?i)^library$"
+    optional: true
+- tapOn:
+    point: "25%, 30%"
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "6000"
+- takeScreenshot: 27_entry
+- scroll
+- takeScreenshot: 28_entry_chapters
+# Reader
+- tapOn:
+    text: "(?i)^(start|resume|read|continue|start reading)$"
+    optional: true
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "15000"
+- takeScreenshot: 29_reader
+- tapOn:
+    point: "50%, 50%"
+- takeScreenshot: 30_reader_menu
+- tapOn:
+    point: "50%, 50%"
+- swipe:
+    start: "85%, 50%"
+    end: "15%, 50%"
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "4000"
+- takeScreenshot: 31_reader_next_page
+- pressKey: back
+- pressKey: back

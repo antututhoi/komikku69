@@ -7,11 +7,10 @@ appId: ${APP_ID}
 - takeScreenshot: 01_first_screen
 - runFlow: onboarding.yaml
 - takeScreenshot: 02_after_first_run
-# Main tabs (names differ per app; missing ones are skipped)
 - tapOn: {text: "(?i)^library$", optional: true}
 - waitForAnimationToEnd: {timeout: 3000}
 - takeScreenshot: 03_library
-- tapOn: {text: "(?i)^(favou?rites|favorites)$", optional: true}
+- tapOn: {text: "(?i)^(favou?rites)$", optional: true}
 - waitForAnimationToEnd: {timeout: 3000}
 - takeScreenshot: 04_favourites
 - tapOn: {text: "(?i)^(updates|feed|recents)$", optional: true}
@@ -23,11 +22,15 @@ appId: ${APP_ID}
 - tapOn: {text: "(?i)^(browse|explore|sources)$", optional: true}
 - waitForAnimationToEnd: {timeout: 3000}
 - takeScreenshot: 07_browse
+- runFlow:
+    when:
+      true: ${KIND == 'mihon'}
+    file: seed_mihon.yaml
 - tapOn: {text: "(?i)^(more|settings|menu)$", optional: true}
 - waitForAnimationToEnd: {timeout: 3000}
-- takeScreenshot: 08_more
+- takeScreenshot: 40_more
 - tapOn: {text: "(?i)^settings$", optional: true}
 - waitForAnimationToEnd: {timeout: 3000}
-- takeScreenshot: 09_settings
+- takeScreenshot: 41_settings
 - scroll
-- takeScreenshot: 10_settings_scrolled
+- takeScreenshot: 42_settings_scrolled

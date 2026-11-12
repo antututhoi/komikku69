@@ -1,0 +1,6 @@
+appId: ${APP_ID}
+---
+- extendedWaitUntil:
+    visible: "zz_never_shown_zz"
+    timeout: ${WAIT_MS}
+    optional: true

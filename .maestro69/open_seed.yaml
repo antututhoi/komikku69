@@ -1,0 +1,17 @@
+appId: ${APP_ID}
+---
+# Android file picker: open Downloads/tour/seed.tachibk
+- runFlow:
+    when:
+      notVisible: "seed.tachibk"
+    commands:
+      - tapOn:
+          text: "Show roots"
+          optional: true
+      - tapOn:
+          text: "Downloads"
+          optional: true
+      - tapOn:
+          text: "tour"
+          optional: true
+- tapOn: "seed.tachibk"

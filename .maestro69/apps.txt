@@ -1,11 +1,11 @@
-# name | GitHub repo ("self" = 69-Komikku latest build)
-69-Komikku | self
-Mihon | mihonapp/mihon
-TachiyomiSY | jobobby04/TachiyomiSYPreview
-J2K | Jays2Kings/tachiyomiJ2K
-Kaisoku | glitch-228/Kaisoku
-Kototoro | Kototoro-app/Kototoro
-DropSauce | HuzaifaKhalid1311/DropSauce
-Futon | AppFuton/Futon
-Tsundoku | tsundoku-otaku/tsundoku
-Chimahon | Chimahon/chimahon
+# name | GitHub repo ("self" = 69-Komikku latest build) | type (mihon / kotatsu)
+69-Komikku | self | mihon
+Mihon | mihonapp/mihon | mihon
+TachiyomiSY | jobobby04/TachiyomiSYPreview | mihon
+J2K | Jays2Kings/tachiyomiJ2K | mihon
+Tsundoku | tsundoku-otaku/tsundoku | mihon
+Chimahon | Chimahon/chimahon | mihon
+Kaisoku | glitch-228/Kaisoku | kotatsu
+Kototoro | Kototoro-app/Kototoro | kotatsu
+DropSauce | HuzaifaKhalid1311/DropSauce | kotatsu
+Futon | AppFuton/Futon | kotatsu

@@ -1,0 +1,24 @@
+appId: ${APP_ID}
+---
+# Android folder picker: go to Downloads/tour and use it
+- tapOn:
+    text: "tour"
+    optional: true
+- runFlow:
+    when:
+      notVisible: "seed.tachibk"
+    commands:
+      - tapOn:
+          text: "Show roots"
+          optional: true
+      - tapOn:
+          text: "Downloads"
+          optional: true
+      - tapOn:
+          text: "tour"
+          optional: true
+- tapOn: "(?i)use this folder"
+- tapOn:
+    text: "(?i)^allow$"
+    optional: true
+- waitForAnimationToEnd

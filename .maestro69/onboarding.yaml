@@ -1,11 +1,24 @@
 appId: ${APP_ID}
 ---
-# Taps through first-run screens of any of the apps (each tap is skipped if the button isn't there).
+# First-run screens of any of the apps (every step is skipped when its button isn't there).
 - repeat:
-    times: 6
+    times: 8
     commands:
       - tapOn:
-          text: "(?i)(get started|start|next|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|later|close|dismiss|i understand|proceed|finish)"
+          text: "(?i)^(select a folder|select destination folder)$"
+          optional: true
+      - runFlow:
+          when:
+            visible: "(?i)use this folder"
+          file: pick_folder.yaml
+      - tapOn:
+          text: "(?i)^(get started|next|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|no thanks|later|close|dismiss|i understand|proceed|finish)$"
           optional: true
       - waitForAnimationToEnd:
           timeout: 2500
+# Kaisoku-style welcome sheet: close it
+- runFlow:
+    when:
+      visible: "(?i)please select which content sources"
+    commands:
+      - pressKey: back
