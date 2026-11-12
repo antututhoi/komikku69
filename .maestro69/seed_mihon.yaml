@@ -84,7 +84,27 @@ appId: ${APP_ID}
 - runFlow:
     file: wait.yaml
     env:
-      WAIT_MS: "70000"
+      WAIT_MS: "20000"
+# also start it from the menu (some apps only update one category on pull-down)
+- tapOn:
+    text: "More options"
+    optional: true
+- tapOn:
+    text: "(?i)^update (library|all)$"
+    optional: true
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "8000"
+- swipe:
+    start: "50%, 0%"
+    end: "50%, 60%"
+- takeScreenshot: 22_notifications
+- pressKey: back
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "50000"
 - takeScreenshot: 23_library
 - swipe:
     start: "85%, 55%"
