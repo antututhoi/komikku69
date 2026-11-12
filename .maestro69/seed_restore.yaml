@@ -1,0 +1,122 @@
+appId: ${APP_ID}
+---
+# Restore the 20-title backup, update the library, then look around with real entries.
+# Trust the MangaDex extension first (otherwise its entries show only a number and no chapters)
+- tapOn:
+    text: "(?i)^browse$"
+    optional: true
+- tapOn:
+    text: "(?i)^(manga )?extensions$"
+    optional: true
+- waitForAnimationToEnd
+- tapOn:
+    text: "(?i)^(untrusted|trust)$"
+    optional: true
+- tapOn:
+    text: "(?i)^trust$"
+    optional: true
+- takeScreenshot: 18_extensions
+- launchApp
+- waitForAnimationToEnd
+# Path 1 (Mihon-type): More > Settings > Data and storage
+- tapOn:
+    text: "(?i)^more$"
+    optional: true
+- waitForAnimationToEnd
+- tapOn:
+    text: "(?i)^settings$"
+    optional: true
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element:
+      text: "(?i)^(data and storage|backup and restore)$"
+    optional: true
+- tapOn:
+    text: "(?i)^(data and storage|backup and restore)$"
+    optional: true
+# Path 2 (J2K): Library > ⋮ > Settings > Backup and restore
+- runFlow:
+    when:
+      notVisible: "(?i)restore backup"
+    commands:
+      - pressKey: back
+      - pressKey: back
+      - tapOn:
+          text: "(?i)^library$"
+          optional: true
+      - tapOn:
+          text: "More options"
+          optional: true
+      - tapOn:
+          text: "(?i)^settings$"
+          optional: true
+      - scrollUntilVisible:
+          element:
+            text: "(?i)^(data and storage|backup and restore)$"
+          optional: true
+      - tapOn:
+          text: "(?i)^(data and storage|backup and restore)$"
+          optional: true
+- scrollUntilVisible:
+    element:
+      text: "(?i)^restore backup$"
+    optional: true
+- takeScreenshot: 20_backup_screen
+- tapOn: "(?i)^restore backup$"
+- runFlow: open_seed.yaml
+- tapOn:
+    text: "(?i)^restore$"
+    optional: true
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "25000"
+- takeScreenshot: 21_after_restore
+- pressKey: back
+- pressKey: back
+# Library update (pull down)
+- tapOn:
+    text: "(?i)^library$"
+    optional: true
+- swipe:
+    start: "50%, 30%"
+    end: "50%, 85%"
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "20000"
+# also start it from the menu (some apps only update one category on pull-down)
+- tapOn:
+    text: "More options"
+    optional: true
+- tapOn:
+    text: "(?i)^update (library|all)$"
+    optional: true
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "8000"
+- swipe:
+    start: "50%, 0%"
+    end: "50%, 60%"
+- takeScreenshot: 22_notifications
+- pressKey: back
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "50000"
+- takeScreenshot: 23_library
+- swipe:
+    start: "85%, 55%"
+    end: "15%, 55%"
+- takeScreenshot: 24_library_category2
+- tapOn:
+    text: "(?i)^(updates|recents)$"
+    optional: true
+- runFlow:
+    file: wait.yaml
+    env:
+      WAIT_MS: "3000"
+- takeScreenshot: 25_updates
+- scroll
+- takeScreenshot: 26_updates_scrolled

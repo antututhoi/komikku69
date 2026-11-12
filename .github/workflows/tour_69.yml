@@ -1,13 +1,13 @@
-name: 69 Virtual phone
+name: 69 Virtual phone deep
 
 # Runs only when the tour69 branch is pushed (never touches the mod69 builds).
 on:
   push:
     branches:
-      - tour69
+      - tour69d
 
 concurrency:
-  group: tour69
+  group: tour69d
   cancel-in-progress: true
 
 permissions:
@@ -15,6 +15,10 @@ permissions:
 
 jobs:
   tour:
+    strategy:
+      fail-fast: false
+      matrix:
+        app: [69-Komikku, Mihon, TachiyomiSY, J2K, Tsundoku, Chimahon, Kaisoku, Kototoro, DropSauce, Futon]
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     steps:
@@ -29,6 +33,7 @@ jobs:
       - name: Download the apps
         env:
           GH_TOKEN: ${{ github.token }}
+          APP_ONLY: ${{ matrix.app }}
         run: bash .maestro69/get_apks.sh
 
       - name: Install Maestro (taps and screenshots)
@@ -37,6 +42,8 @@ jobs:
           echo "$HOME/.maestro/bin" >> "$GITHUB_PATH"
 
       - name: Start the virtual phone and run the tour
+        env:
+          APP_NAME: ${{ matrix.app }}
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 34
@@ -45,16 +52,16 @@ jobs:
           profile: pixel_6
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
-          script: bash .maestro69/run_all.sh
+          script: bash .maestro69/run_one.sh
 
       - name: Save screenshots, videos and logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tour-results
+          name: tour-results-${{ matrix.app }}
           path: out69/
 
-      - name: Put screenshots and video frames on the tour69-results branch
+      - name: Put screenshots and video frames on the tour69d-${{ matrix.app }} branch
         if: always()
         env:
           TOKEN: ${{ github.token }}
@@ -70,8 +77,14 @@ jobs:
               ffmpeg -nostdin -loglevel error -y -i "$p" -vf "scale=540:-1" -q:v 4 "$d/shots/$(basename "$p" .png).jpg" || true
             done
             rm -rf "$d/m"
+            mkdir -p "$d/deep"
+            for p in "$d"crawl/*.png; do
+              [ -f "$p" ] || continue
+              ffmpeg -nostdin -loglevel error -y -i "$p" -vf "scale=480:-1" -q:v 5 "$d/deep/$(basename "$p" .png).jpg" || true
+            done
+            rm -f "$d"crawl/*.png
           done
           mkdir -p /tmp/res && rsync -a --exclude '*.mp4' out69/ /tmp/res/
-          cd /tmp/res && git init -q && git checkout -q -b tour69-results
+          cd /tmp/res && git init -q && git checkout -q -b tour69d-${{ matrix.app }}
           git add -A && git -c user.name=tour69 -c user.email=tour69@users.noreply.github.com commit -qm "tour results ${{ github.run_number }}"
-          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" tour69-results
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" tour69d-${{ matrix.app }}

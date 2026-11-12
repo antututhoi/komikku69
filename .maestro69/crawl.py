@@ -1,0 +1,225 @@
+#!/usr/bin/env python3
+"""Walks one app on the virtual phone: every settings page (scrolled to the end), every menu, library/entry/reader layouts.
+Usage: crawl.py OUT_DIR APP_NAME KIND   (KIND = mihon | kotatsu)"""
+import subprocess, sys, os, re, time, hashlib, xml.etree.ElementTree as ET
+
+OUT, APP, KIND = sys.argv[1], sys.argv[2], sys.argv[3]
+os.makedirs(OUT, exist_ok=True)
+T0 = time.time(); BUDGET = 50 * 60
+shots = 0; log = open(os.path.join(OUT, "crawl.txt"), "w")
+W, H = 1080, 2400
+SKIP = re.compile(r"clear|delete|reset|log ?out|sign ?out|remove|wipe|uninstall|factory|biometric|app lock|secure screen|incognito|check for update|install|battery|crash|create backup|restore|erase|purge|cache|empty|stop|quit|exit", re.I)
+
+def L(*a):
+    s = " ".join(str(x) for x in a); print(s, flush=True); log.write(s + "\n"); log.flush()
+def adb(*a, out=False):
+    r = subprocess.run(["adb", *a], stdin=subprocess.DEVNULL, capture_output=True, timeout=60)
+    return r.stdout if out else None
+def over(): return time.time() - T0 > BUDGET
+def tap(x, y): adb("shell", "input", "tap", str(int(x)), str(int(y))); time.sleep(1.3)
+def hold(x, y): adb("shell", "input", "swipe", str(int(x)), str(int(y)), str(int(x)), str(int(y)), "900"); time.sleep(1.3)
+def back(): adb("shell", "input", "keyevent", "4"); time.sleep(1.2)
+def up():   adb("shell", "input", "swipe", "540", "1700", "540", "700", "350"); time.sleep(0.9)
+def down(): adb("shell", "input", "swipe", "540", "700", "540", "1900", "350"); time.sleep(0.9)
+def shot(name):
+    global shots
+    if shots > 420: return
+    shots += 1
+    png = adb("exec-out", "screencap", "-p", out=True)
+    open(os.path.join(OUT, re.sub(r"[^A-Za-z0-9_.-]+", "_", name)[:90] + ".png"), "wb").write(png)
+
+class N:
+    def __init__(s, e, kids): s.e, s.kids = e, kids
+def dump():
+    for _ in range(3):
+        adb("shell", "uiautomator", "dump", "/sdcard/u.xml"); x = adb("exec-out", "cat", "/sdcard/u.xml", out=True)
+        try: return ET.fromstring(x)
+        except Exception: time.sleep(1)
+    return None
+def bounds(e):
+    m = re.match(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]", e.get("bounds", "")); return tuple(map(int, m.groups())) if m else (0, 0, 0, 0)
+def texts(e):
+    r = []
+    for n in e.iter("node"):
+        t = (n.get("text") or n.get("content-desc") or "").strip()
+        if t: r.append(t)
+    return r
+def sig(root):
+    if root is None: return ""
+    return hashlib.md5("|".join(texts(root)).encode()).hexdigest()
+def rows(root, top=300, bottom=2100):
+    """clickable rows in the main area, each with its title text"""
+    res = []
+    if root is None: return res
+    for n in root.iter("node"):
+        if n.get("clickable") != "true": continue
+        x1, y1, x2, y2 = bounds(n)
+        if y2 < top or y1 > bottom or x2 - x1 < 200: continue
+        t = texts(n)
+        if not t: continue
+        res.append(dict(title=t[0], all=t, b=(x1, y1, x2, y2), checkable=n.get("checkable") == "true" or any(k.get("checkable") == "true" for k in n.iter("node"))))
+    return res
+def topbar(root):
+    res = []
+    if root is None: return res
+    for n in root.iter("node"):
+        if n.get("clickable") != "true": continue
+        x1, y1, x2, y2 = bounds(n)
+        if y2 <= 340 and y1 >= 60 and x2 - x1 < 400:
+            res.append(((x1 + x2) // 2, (y1 + y2) // 2, (n.get("content-desc") or " ".join(texts(n)) or "icon")))
+    return res
+def is_dialog(root):
+    t = [x.lower() for x in texts(root)] if root is not None else []
+    return ("cancel" in t or "ok" in t or "dismiss" in t) and len(t) < 40
+
+def page_scroll(prefix, maxn=7):
+    """screenshot the current page, then scroll down until it stops changing"""
+    last = None
+    for i in range(maxn):
+        r = dump(); s = sig(r)
+        if s == last: break
+        shot(f"{prefix}_p{i}"); last = s
+        up()
+    for _ in range(maxn): down()
+
+def settle_top():
+    for _ in range(6): down()
+
+def find_and_tap(title, root=None):
+    """scroll the current list from the top until `title` is visible, then tap it"""
+    settle_top()
+    last = None
+    for _ in range(10):
+        r = dump()
+        for row in rows(r):
+            if row["title"] == title:
+                x1, y1, x2, y2 = row["b"]; tap((x1 + x2) // 2, (y1 + y2) // 2); return True
+        s = sig(r)
+        if s == last: break
+        last = s; up()
+    return False
+
+def list_entries():
+    """all clickable settings rows of the current page (scrolls to the end)"""
+    settle_top(); seen = []; last = None
+    for _ in range(10):
+        r = dump()
+        for row in rows(r):
+            if row["title"] not in [e["title"] for e in seen]: seen.append(row)
+        s = sig(r)
+        if s == last: break
+        last = s; up()
+    settle_top()
+    return seen
+
+def crawl_page(prefix, depth, maxdepth=2):
+    """open every entry of the settings page that is on screen; screenshot each (scrolled); go back"""
+    ents = list_entries(); L("  " * depth, prefix, "entries:", [e["title"] for e in ents])
+    base = sig(dump())
+    for i, e in enumerate(ents):
+        if over(): return
+        if SKIP.search(e["title"]) or e["checkable"]: L("  " * depth, "skip", e["title"]); continue
+        if not find_and_tap(e["title"]): L("  " * depth, "cannot find", e["title"]); continue
+        name = f"{prefix}_{i:02d}_{e['title']}"
+        r = dump()
+        if sig(r) == base: continue
+        if is_dialog(r):
+            shot(name + "_dialog"); back()
+        else:
+            page_scroll(name)
+            if depth < maxdepth and rows(dump()):
+                crawl_page(name[:50], depth + 1, maxdepth)
+            back()
+        if sig(dump()) != base:
+            back()
+            if sig(dump()) != base: L("lost the page, stopping this branch"); return
+
+def open_settings():
+    L("open settings")
+    r = dump()
+    def tap_text(rx):
+        for n in dump().iter("node"):
+            t = n.get("text") or n.get("content-desc") or ""
+            if re.fullmatch(rx, t.strip(), re.I):
+                x1, y1, x2, y2 = bounds(n); tap((x1 + x2) // 2, (y1 + y2) // 2); return True
+        return False
+    if APP == "DropSauce":
+        tap(90, 200); return
+    if APP == "Kototoro":
+        tap_text("home") ; time.sleep(1)
+        return tap_text("settings")
+    for rx in ("more", "more options|menu|more menu"):
+        if tap_text(rx): break
+    if tap_text("settings"): return True
+    for _ in range(4):
+        up()
+        if tap_text("settings"): return True
+    return False
+
+def menus(prefix):
+    """tap every icon in the top bar of the current screen"""
+    r = dump(); base = sig(r)
+    for i, (x, y, d) in enumerate(topbar(r)):
+        if over() or re.search(r"navigate up|back|^$", d, re.I): continue
+        tap(x, y); rr = dump()
+        shot(f"{prefix}_menu{i}_{d}")
+        if is_dialog(rr) is False and sig(rr) != base and not any("clear" in t.lower() for t in texts(rr)[:3]):
+            pass
+        # scroll long popups / sheets
+        up(); shot(f"{prefix}_menu{i}_{d}_b"); down()
+        back()
+        if sig(dump()) != base: back()
+
+def main_tabs():
+    r = dump(); res = []
+    for n in r.iter("node"):
+        if n.get("clickable") == "true":
+            x1, y1, x2, y2 = bounds(n)
+            if y1 > 2100 and x2 - x1 < 400: res.append(((x1 + x2) // 2, (y1 + y2) // 2, n.get("content-desc") or " ".join(texts(n)) or "tab"))
+    return res
+
+def tour_screens():
+    tabs = main_tabs(); L("tabs", tabs)
+    for i, (x, y, d) in enumerate(tabs):
+        if over(): return
+        tap(x, y); time.sleep(1.5)
+        p = f"tab{i}_{d}"; page_scroll(p, 4); menus(p)
+        if re.search("library|favou?rites|home", d, re.I) and KIND == "mihon":
+            tap(300, 700); time.sleep(5); shot(p + "_entry"); page_scroll(p + "_entry", 8); menus(p + "_entry")
+            # chapter list actions: long-press a chapter row
+            hold(540, 1800); shot(p + "_entry_select"); back()
+            # read
+            for rx in ("start|resume|read|continue|start reading",):
+                for n in dump().iter("node"):
+                    t = (n.get("text") or n.get("content-desc") or "").strip()
+                    if re.fullmatch(rx, t, re.I):
+                        x1, y1, x2, y2 = bounds(n); tap((x1 + x2) // 2, (y1 + y2) // 2); break
+            time.sleep(12); shot(p + "_reader"); tap(540, 1200); time.sleep(1.2); shot(p + "_reader_menu")
+            # every icon in the reader bars
+            r = dump(); base = sig(r)
+            for j, (bx, by, bd) in enumerate([t for t in topbar(r)] + [t for t in main_tabs()]):
+                if over(): break
+                tap(bx, by); shot(f"{p}_reader_icon{j}_{bd}")
+                # sheet tabs
+                r2 = dump()
+                for k in range(2):
+                    adb("shell", "input", "swipe", "900", "1800", "200", "1800", "300"); time.sleep(1); shot(f"{p}_reader_icon{j}_{bd}_tab{k+2}")
+                up(); shot(f"{p}_reader_icon{j}_{bd}_scrolled")
+                back(); time.sleep(0.8)
+                if sig(dump()) != base:
+                    tap(540, 1200); time.sleep(1)
+            back(); back(); back()
+        elif i >= 1 and KIND == "kotatsu":
+            pass
+
+L("start", APP, KIND)
+try:
+    if KIND == "mihon":
+        try: tour_screens()
+        except Exception as e: L("screens failed", repr(e))
+    if open_settings():
+        shot("settings_main"); crawl_page("settings", 0)
+    else: L("could not open settings")
+except Exception as e:
+    L("crawl failed", repr(e))
+L("done", shots, "screenshots", int(time.time() - T0), "s")

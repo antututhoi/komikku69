@@ -2,7 +2,7 @@
 # Downloads the newest APK of every app in apps.txt (prefers x86_64, then universal, then arm64).
 set -u
 mkdir -p apks out69
-grep -v '^#' .maestro69/apps.txt | while IFS='|' read -r name repo kind; do
+grep -v '^#' .maestro69/apps.txt | grep -i "^${APP_ONLY:-}" | while IFS='|' read -r name repo kind; do
   name=$(echo "$name" | xargs); repo=$(echo "$repo" | xargs)
   [ -z "$name" ] && continue
   if [ "$repo" = "self" ]; then repo="$GITHUB_REPOSITORY"; rel="tags/mod69-latest"; else rel=""; fi

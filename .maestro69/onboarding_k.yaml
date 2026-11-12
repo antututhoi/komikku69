@@ -1,0 +1,43 @@
+appId: ${APP_ID}
+---
+- repeat:
+    times: 8
+    commands:
+      - tapOn:
+          text: "(?i)^(select a folder|select destination folder)$"
+          optional: true
+      - runFlow:
+          when:
+            visible: "(?i)use this folder"
+          file: pick_folder.yaml
+      - tapOn:
+          text: "(?i)^(get started|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|no thanks|later|close|dismiss|i understand|proceed|finish|start|let's go)$"
+          optional: true
+      - waitForAnimationToEnd:
+          timeout: 1500
+# Kototoro: 4-step wizard, Next button sits at the bottom right
+- repeat:
+    while:
+      visible: "(?i)step \\d of 4"
+    times: 8
+    commands:
+      - tapOn:
+          point: "68%,92%"
+      - waitForAnimationToEnd: {timeout: 1500}
+# Kaisoku: welcome sheet, tap outside it to close
+- runFlow:
+    when:
+      visible: "(?i)please select which content sources"
+    commands:
+      - swipe: {start: "50%,8%", end: "50%,90%"}
+      - waitForAnimationToEnd: {timeout: 1500}
+# DropSauce: welcome pages, round arrow button bottom right
+- repeat:
+    while:
+      visible: "(?i)^welcome$"
+    times: 8
+    commands:
+      - tapOn: {point: "88%,92%"}
+      - waitForAnimationToEnd: {timeout: 1500}
+# Futon: suggestions question
+- tapOn: {text: "(?i)^no thanks$", optional: true}
