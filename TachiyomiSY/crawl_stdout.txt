@@ -1,0 +1,9 @@
+start TachiyomiSY mihon
+open settings
+ settings entries: ['Do Not Disturb, Off', 'Configure AT Translated Set 2 keyboard', 'Manage']
+ skip Do Not Disturb, Off
+open settings
+ cannot find Configure AT Translated Set 2 keyboard
+open settings
+ cannot find Manage
+done 1 screenshots 107 s

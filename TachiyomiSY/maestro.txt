@@ -1,0 +1,88 @@
+Anonymous analytics enabled. To opt out, set MAESTRO_CLI_NO_ANALYTICS environment variable to any value before running Maestro.
+
+Running on test
+ > Flow tour_restore
+Launch app "${APP_ID}" with clear state... COMPLETED
+Wait for animation to end within 10000 ms... COMPLETED
+Take screenshot 01_first_screen... COMPLETED
+Run onboarding.yaml when ${KIND == 'mihon'} is true...
+  Repeat 8 times...
+    Tap on (Optional) "(?i)^(select a folder|select destination folder)$"... WARNED
+    Run pick_folder.yaml when "(?i)use this folder" is visible...
+    Run pick_folder.yaml when "(?i)use this folder" is visible... SKIPPED
+    Tap on (Optional) "(?i)^(get started|next|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|no thanks|later|close|dismiss|cancel|i understand|proceed|wait|finish)$"... COMPLETED
+    Wait for animation to end within 2500 ms... COMPLETED
+      Tap on (Optional) "^Download$"... COMPLETED
+      Run flow when "^tour$" is not visible...
+      Run flow when "^tour$" is not visible... SKIPPED
+      Tap on (Optional) "^tour$"... COMPLETED
+      Wait for animation to end... COMPLETED
+      Tap on "(?i)use this folder"... COMPLETED
+      Tap on (Optional) "(?i)^allow$"... COMPLETED
+      Wait for animation to end... COMPLETED
+  Repeat 8 times... COMPLETED
+  Run flow when "(?i)please select which content sources" is visible...
+  Run flow when "(?i)please select which content sources" is visible... SKIPPED
+Run onboarding.yaml when true is true... COMPLETED
+Run onboarding_k.yaml when ${KIND == 'kotatsu'} is true...
+Run onboarding_k.yaml when false is true... SKIPPED
+Take screenshot 02_after_first_run... COMPLETED
+Tap on (Optional) "(?i)^library$"... COMPLETED
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 03_library... COMPLETED
+Tap on (Optional) "(?i)^(favou?rites)$"... WARNED
+
+
+ Warning: Element not found: Text matching regex: (?i)^(favou?rites)$
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 04_favourites... COMPLETED
+Tap on (Optional) "(?i)^(updates|feed|recents)$"... COMPLETED
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 05_updates... COMPLETED
+Tap on (Optional) "(?i)^history$"... COMPLETED
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 06_history... COMPLETED
+Tap on (Optional) "(?i)^(browse|explore|sources)$"... COMPLETED
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 07_browse... COMPLETED
+Run seed_restore.yaml when ${KIND == 'mihon'} is true...
+  Tap on (Optional) "(?i)^browse$"... COMPLETED
+  Tap on (Optional) "(?i)^(manga )?extensions$"... COMPLETED
+  Wait for animation to end... COMPLETED
+  Tap on (Optional) "(?i)^(untrusted|trust)$"... COMPLETED
+  Tap on (Optional) "(?i)^trust$"... COMPLETED
+  Take screenshot 18_extensions... COMPLETED
+  Launch app "${APP_ID}"... COMPLETED
+  Wait for animation to end... COMPLETED
+  Tap on (Optional) "(?i)^more$"... COMPLETED
+  Wait for animation to end... COMPLETED
+  Tap on (Optional) "(?i)^settings$"... COMPLETED
+  Wait for animation to end... COMPLETED
+  Scrolling DOWN until "(?i)^(data and storage|backup and restore)$" is visible with speed 40, visibility percentage 100%, timeout 20000 ms, with centering disabled... WARNED
+  Tap on (Optional) "(?i)^(data and storage|backup and restore)$"... WARNED
+  Run flow when "(?i)restore backup" is not visible...
+    Press Back key... COMPLETED
+    Press Back key... COMPLETED
+    Tap on (Optional) "(?i)^library$"... WARNED
+    Tap on (Optional) "More options"... WARNED
+    Tap on (Optional) "(?i)^settings$"... WARNED
+    Scrolling DOWN until "(?i)^(data and storage|backup and restore)$" is visible with speed 40, visibility percentage 100%, timeout 20000 ms, with centering disabled... WARNED
+    Tap on (Optional) "(?i)^(data and storage|backup and restore)$"... WARNED
+  Run flow when "(?i)restore backup" is not visible... COMPLETED
+  Scrolling DOWN until "(?i)^restore backup$" is visible with speed 40, visibility percentage 100%, timeout 20000 ms, with centering disabled... WARNED
+  Take screenshot 20_backup_screen... COMPLETED
+  Tap on "(?i)^restore backup$"... FAILED
+Run seed_restore.yaml when true is true... FAILED
+
+Element not found: Text matching regex: (?i)^restore backup$
+
+Element with Text matching regex: (?i)^restore backup$ not found. Check the UI hierarchy in debug artifacts to verify if the element exists.
+
+Possible causes:
+- Element selector may be incorrect - check if there are similar elements with slightly different names/properties.
+- Element may be temporarily unavailable due to loading state.
+- This could be a real regression that needs to be addressed.
+
+==== Debug output (logs & screenshots) ====
+
+/home/runner/work/komikku69/komikku69/out69/TachiyomiSY/m/2026-11-12_221149
