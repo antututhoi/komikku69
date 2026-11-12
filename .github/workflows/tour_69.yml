@@ -20,7 +20,7 @@ jobs:
       matrix:
         app: [69-Komikku, Mihon, TachiyomiSY, J2K, Tsundoku, Chimahon, Kaisoku, Kototoro, DropSauce, Futon]
     runs-on: ubuntu-24.04
-    timeout-minutes: 90
+    timeout-minutes: 110
     steps:
       - uses: actions/checkout@v4
 

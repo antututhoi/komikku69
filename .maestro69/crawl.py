@@ -6,7 +6,7 @@ import subprocess, sys, os, re, time, hashlib, xml.etree.ElementTree as ET
 OUT, APP, KIND = sys.argv[1], sys.argv[2], sys.argv[3]
 PKG = sys.argv[4] if len(sys.argv) > 4 else ""
 os.makedirs(OUT, exist_ok=True)
-T0 = time.time(); BUDGET = 50 * 60
+T0 = time.time(); BUDGET = 70 * 60
 shots = 0; log = open(os.path.join(OUT, "crawl.txt"), "w")
 W, H = 1080, 2400
 SKIP = re.compile(r"clear|delete|reset|log ?out|sign ?out|remove|wipe|uninstall|factory|biometric|app lock|secure screen|incognito|check for update|install|battery|crash|create backup|restore|erase|purge|cache|empty|stop|quit|exit", re.I)
@@ -134,27 +134,40 @@ def on_page(titles):
     settle_top(); vis = set(texts(dump())); first = titles[:4]
     return sum(1 for t in first if t in vis) >= max(1, len(first) // 2)
 
-def crawl_page(prefix, depth, maxdepth=1):
-    """open every entry of the settings page that is on screen; screenshot each (scrolled); go back"""
-    ents = list_entries(); titles = [e["title"] for e in ents]; L("  " * depth, prefix, "entries:", titles)
+def goto(path):
+    """restart the app, open settings and follow the given entries (robust against getting lost)"""
+    adb("shell", "am", "force-stop", PKG); time.sleep(1)
+    adb("shell", "monkey", "-p", PKG, "-c", "android.intent.category.LAUNCHER", "1"); time.sleep(5)
+    if not open_settings(): return False
+    time.sleep(1.5)
+    for t in path:
+        if not find_and_tap(t): return False
+        time.sleep(1.5)
+    return True
+
+def crawl_page(path, depth=0, maxdepth=1):
+    """open every entry of the settings page at `path`; screenshot each one (scrolled to the end)"""
+    if not goto(path): L("cannot reach", path); shot("lost_" + "_".join(path)); return
+    if depth == 0: shot("settings_main")
+    ents = list_entries(); titles = [e["title"] for e in ents]; L("  " * depth, path or "settings", "entries:", titles)
     for i, e in enumerate(ents):
         if over(): return
         if SKIP.search(e["title"]) or e["checkable"]: L("  " * depth, "skip", e["title"]); continue
+        if i and not goto(path): L("cannot reach", path); return
         if not find_and_tap(e["title"]): L("  " * depth, "cannot find", e["title"]); continue
-        name = f"{prefix}_{i:02d}_{e['title']}"
+        name = "settings_" + "_".join(path + [f"{i:02d}", e["title"]])
         r = dump()
-        if on_page(titles) and not is_dialog(r):
-            continue  # nothing opened (a toggle or a chip)
         if is_dialog(r):
-            shot(name + "_dialog"); back()
-        else:
-            page_scroll(name)
-            if depth < maxdepth and rows(dump()):
-                crawl_page(name[:50], depth + 1, maxdepth)
-            back()
-        if not on_page(titles):
-            back()
-            if not on_page(titles): L("lost the page, stopping this branch"); return
+            shot(name + "_dialog"); continue
+        if on_page(titles): continue   # nothing opened (a toggle or a chip)
+        page_scroll(name)
+        if depth < maxdepth and rows(dump()):
+            crawl_page(path + [e["title"]], depth + 1, maxdepth)
+
+def on_page(titles):
+    """true when most of the page's first entries are visible at the top"""
+    settle_top(); vis = set(texts(dump())); first = titles[:4]
+    return sum(1 for t in first if t in vis) >= max(1, len(first) // 2)
 
 def open_settings():
     L("open settings")
@@ -166,7 +179,7 @@ def open_settings():
                 x1, y1, x2, y2 = bounds(n); tap((x1 + x2) // 2, (y1 + y2) // 2); return True
         return False
     if APP == "DropSauce":
-        tap(90, 200); return
+        tap(90, 200); return True
     if APP == "Kototoro":
         tap_text("home") ; time.sleep(1)
         return tap_text("settings")
@@ -251,12 +264,12 @@ def tour_screens():
 
 L("start", APP, KIND)
 try:
-    if KIND == "mihon":
-        try: tour_screens()
-        except Exception as e: L("screens failed", repr(e))
-    if open_settings():
-        shot("settings_main"); crawl_page("settings", 0)
-    else: L("could not open settings")
+    ensure_app()
+    crawl_page([], 0)
 except Exception as e:
-    L("crawl failed", repr(e))
+    L("settings walk failed", repr(e))
+if KIND == "mihon":
+    try:
+        goto([]); back(); ensure_app(); tour_screens()
+    except Exception as e: L("screens failed", repr(e))
 L("done", shots, "screenshots", int(time.time() - T0), "s")
