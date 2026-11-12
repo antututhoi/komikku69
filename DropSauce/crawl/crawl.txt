@@ -1,0 +1,8 @@
+start DropSauce kotatsu
+open settings
+ settings entries: ['Abc', 'System', 'Light', 'Dark', 'Full black for OLED']
+open settings
+open settings
+open settings
+ skip Full black for OLED
+done 1 screenshots 156 s

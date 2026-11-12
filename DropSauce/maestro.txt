@@ -1,0 +1,64 @@
+Anonymous analytics enabled. To opt out, set MAESTRO_CLI_NO_ANALYTICS environment variable to any value before running Maestro.
+
+Running on test
+ > Flow tour_restore
+Launch app "${APP_ID}" with clear state... COMPLETED
+Wait for animation to end within 10000 ms... COMPLETED
+Take screenshot 01_first_screen... COMPLETED
+Run onboarding.yaml when ${KIND == 'mihon'} is true...
+Run onboarding.yaml when false is true... SKIPPED
+Run onboarding_k.yaml when ${KIND == 'kotatsu'} is true...
+  Repeat 8 times...
+    Tap on (Optional) "(?i)^(select a folder|select destination folder)$"... WARNED
+    Run pick_folder.yaml when "(?i)use this folder" is visible...
+    Run pick_folder.yaml when "(?i)use this folder" is visible... SKIPPED
+    Tap on (Optional) "(?i)^(get started|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|no thanks|later|close|dismiss|i understand|proceed|wait|finish|start|let's go)$"... WARNED
+    Wait for animation to end within 1500 ms... COMPLETED
+  Repeat 8 times... COMPLETED
+  Repeat while "(?i)step \d of 4" is visible (up to 8 times)...
+  Repeat while "(?i)step \d of 4" is visible (up to 8 times)... SKIPPED
+  Run flow when "(?i)please select which content sources" is visible...
+  Run flow when "(?i)please select which content sources" is visible... SKIPPED
+  Repeat while "(?i)^welcome$" is visible (up to 8 times)...
+    Tap on point (88%,92%)... COMPLETED
+    Wait for animation to end within 1500 ms... COMPLETED
+  Repeat while "(?i)^welcome$" is visible (up to 8 times)... COMPLETED
+  Tap on (Optional) "(?i)^no thanks$"... WARNED
+Run onboarding_k.yaml when true is true... COMPLETED
+Take screenshot 02_after_first_run... COMPLETED
+Tap on (Optional) "(?i)^library$"... WARNED
+
+
+ Warning: Element not found: Text matching regex: (?i)^library$
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 03_library... COMPLETED
+Tap on (Optional) "(?i)^(favou?rites)$"... WARNED
+
+
+ Warning: Element not found: Text matching regex: (?i)^(favou?rites)$
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 04_favourites... COMPLETED
+Tap on (Optional) "(?i)^(updates|feed|recents)$"... WARNED
+
+
+ Warning: Element not found: Text matching regex: (?i)^(updates|feed|recents)$
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 05_updates... COMPLETED
+Tap on (Optional) "(?i)^history$"... WARNED
+
+
+ Warning: Element not found: Text matching regex: (?i)^history$
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 06_history... COMPLETED
+Tap on (Optional) "(?i)^(browse|explore|sources)$"... WARNED
+
+
+ Warning: Element not found: Text matching regex: (?i)^(browse|explore|sources)$
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 07_browse... COMPLETED
+Run seed_restore.yaml when ${KIND == 'mihon'} is true...
+Run seed_restore.yaml when false is true... SKIPPED
+Tap on (Optional) "(?i)^library$"... WARNED
+
+
+ Warning: Element not found: Text matching regex: (?i)^library$
