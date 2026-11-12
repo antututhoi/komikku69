@@ -16,7 +16,7 @@ def L(*a):
 def adb(*a, out=False):
     r = subprocess.run(["adb", *a], stdin=subprocess.DEVNULL, capture_output=True, timeout=60)
     return r.stdout if out else None
-def over(): return time.time() - T0 > BUDGET
+def over(limit=None): return time.time() - T0 > (limit or BUDGET)
 def tap(x, y): adb("shell", "input", "tap", str(int(x)), str(int(y))); time.sleep(1.3)
 def hold(x, y): adb("shell", "input", "swipe", str(int(x)), str(int(y)), str(int(x)), str(int(y)), "900"); time.sleep(1.3)
 def back():
@@ -151,7 +151,7 @@ def crawl_page(path, depth=0, maxdepth=1):
     if depth == 0: shot("settings_main")
     ents = list_entries(); titles = [e["title"] for e in ents]; L("  " * depth, path or "settings", "entries:", titles)
     for i, e in enumerate(ents):
-        if over(): return
+        if over(35 * 60): return
         if SKIP.search(e["title"]) or e["checkable"]: L("  " * depth, "skip", e["title"]); continue
         if i and not goto(path): L("cannot reach", path); return
         if not find_and_tap(e["title"]): L("  " * depth, "cannot find", e["title"]); continue
