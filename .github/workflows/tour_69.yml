@@ -64,10 +64,10 @@ jobs:
             mkdir -p "$d/frames" "$d/shots"
             for v in "$d"tour_*.mp4; do
               [ -f "$v" ] || continue; k=$(basename "$v" .mp4)
-              ffmpeg -loglevel error -i "$v" -vf "fps=1/3,scale=360:-1" -q:v 6 "$d/frames/${k}_%03d.jpg" || true
+              ffmpeg -nostdin -loglevel error -i "$v" -vf "fps=1/3,scale=360:-1" -q:v 6 "$d/frames/${k}_%03d.jpg" || true
             done
             find "$d/m" -name '*.png' 2>/dev/null | while read -r p; do
-              ffmpeg -loglevel error -y -i "$p" -vf "scale=540:-1" -q:v 4 "$d/shots/$(basename "$p" .png).jpg" || true
+              ffmpeg -nostdin -loglevel error -y -i "$p" -vf "scale=540:-1" -q:v 4 "$d/shots/$(basename "$p" .png).jpg" || true
             done
             rm -rf "$d/m"
           done

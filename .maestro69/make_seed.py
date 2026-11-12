@@ -65,12 +65,40 @@ open("ext_apks/mangadex.apk", "wb").write(get(apk_url))
 repo_meta = json.loads(get(REPO + "/repo.json"))["meta"]
 print("MangaDex ext", apk_url, "source id", source_id)
 
+import struct
+from datetime import datetime
+def chapters_of(mid):
+    """Backup chapters (newest first) from MangaDex's English feed."""
+    feed = []
+    for off in (0, 500):
+        q2 = [("translatedLanguage[]", "en"), ("order[chapter]", "desc"), ("limit", "500"), ("offset", str(off)),
+              ("includeExternalUrl", "0"), ("contentRating[]", "safe"), ("contentRating[]", "suggestive")]
+        try:
+            d = json.loads(get(f"https://api.mangadex.org/manga/{mid}/feed?" + urllib.parse.urlencode(q2)))
+        except Exception as e:
+            print("   feed error", e); break
+        feed += d["data"]; time.sleep(0.4)
+        if len(d["data"]) < 500: break
+    out = []
+    for n, c in enumerate(feed):
+        a = c["attributes"]
+        num = float(a["chapter"]) if a.get("chapter") and a["chapter"].replace(".", "", 1).isdigit() else -1.0
+        name = (f"Vol.{a['volume']} " if a.get("volume") else "") + (f"Ch.{a['chapter']}" if a.get("chapter") else "Oneshot")
+        if a.get("title"): name += " - " + a["title"]
+        up = int(datetime.fromisoformat(a["publishAt"].replace("Z", "+00:00")).timestamp() * 1000)
+        read = n >= 5  # newest 2 come from the update; next 3 stay unread
+        cb = f_str(1, "/chapter/" + c["id"]) + f_str(2, name) + f_int(4, 1 if read else 0)
+        cb += f_int(7, now - 30 * 86400000) + f_int(8, up) + key(9, 5) + struct.pack("<f", num) + f_int(10, n)
+        out.append(cb)
+    print("   chapters", len(out))
+    return out
+
 # --- 20 popular ongoing titles ---
 q = [("limit", "20"), ("status[]", "ongoing"), ("order[followedCount]", "desc"),
      ("availableTranslatedLanguage[]", "en"), ("contentRating[]", "safe"), ("includes[]", "cover_art"),
      ("includes[]", "author"), ("includes[]", "artist"), ("hasAvailableChapters", "true")]
-data = json.loads(get("https://api.mangadex.org/manga?" + urllib.parse.urlencode(q)))["data"]
 now = int(time.time() * 1000)
+data = json.loads(get("https://api.mangadex.org/manga?" + urllib.parse.urlencode(q)))["data"]
 mangas = []
 for i, m in enumerate(data):
     a = m["attributes"]
@@ -88,7 +116,9 @@ for i, m in enumerate(data):
     for t in tags: b += f_str(7, t)
     b += f_int(8, 1)  # ongoing
     if cover: b += f_str(9, f"https://uploads.mangadex.org/covers/{m['id']}/{cover}")
-    b += f_int(13, now - i * 86400000)
+    b += f_int(13, now - 30 * 86400000)
+    for c in chapters_of(m["id"])[2:]:
+        b += f_bytes(16, c)
     b += f_int(17, 1 if i < 12 else 2)  # category order
     b += f_int(100, 1)
     mangas.append(b)

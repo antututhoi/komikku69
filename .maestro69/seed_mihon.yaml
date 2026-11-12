@@ -1,6 +1,23 @@
 appId: ${APP_ID}
 ---
 # Restore the 20-title backup, update the library, then look around with real entries.
+# Trust the MangaDex extension first (otherwise its entries show only a number and no chapters)
+- tapOn:
+    text: "(?i)^browse$"
+    optional: true
+- tapOn:
+    text: "(?i)^extensions$"
+    optional: true
+- waitForAnimationToEnd
+- tapOn:
+    text: "(?i)^(untrusted|trust)$"
+    optional: true
+- tapOn:
+    text: "(?i)^trust$"
+    optional: true
+- takeScreenshot: 18_extensions
+- launchApp
+- waitForAnimationToEnd
 # Path 1 (Mihon-type): More > Settings > Data and storage
 - tapOn:
     text: "(?i)^more$"
@@ -57,17 +74,6 @@ appId: ${APP_ID}
 - takeScreenshot: 21_after_restore
 - pressKey: back
 - pressKey: back
-# Trust the MangaDex extension if the app asks
-- tapOn:
-    text: "(?i)^browse$"
-    optional: true
-- tapOn:
-    text: "(?i)^extensions$"
-    optional: true
-- tapOn:
-    text: "(?i)^trust$"
-    optional: true
-- takeScreenshot: 22_extensions
 # Library update (pull down)
 - tapOn:
     text: "(?i)^library$"
