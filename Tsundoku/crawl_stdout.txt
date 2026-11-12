@@ -1,0 +1,68 @@
+start Tsundoku mihon
+left the app ( mCurrentFocus=Window{16bddbb u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+open settings
+ settings entries: ['Appearance', 'Library', 'Manga Reader', 'Novel Reader', 'Downloads', 'Novel Downloads', 'Translation', 'Tracking', 'Browse', 'Data and storage', 'Security and privacy', 'Advanced']
+open settings
+   ['Appearance'] entries: ['Light', 'Dark', 'System', 'Default', 'Selected', 'Pure black dark mode', 'App language', 'Tablet UI', 'Date format', 'Relative timestamps', 'Render images in manga descriptions', 'Combined library', 'Hide manga-related UI']
+   skip Light
+   skip Dark
+   skip System
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   ['Library'] entries: ['Edit categories', 'Default category', 'Per-category settings for sort', 'Automatic updates', 'Categories', 'Automatically refresh metadata', 'Smart update', 'Skip recently updated entries', 'Show unread count on Updates icon', 'Chapter on swipe to left', 'Chapter on swipe to right', 'Mark duplicate read chapter as read', 'Hide missing chapter indicators', 'Check for existing entries when adding to library', 'Duplicate list order', 'Migrate source list sorting', 'Migrate source list order', 'Show source name in manga details', 'Sort novel tags alphabetically', 'Restore position in completed manga chapters', 'Restore position in completed novel chapters']
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   skip Chapter on swipe to left
+   skip Chapter on swipe to right
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   skip Restore position in completed manga chapters
+   skip Restore position in completed novel chapters
+open settings
+ cannot find Manga Reader
+open settings
+open settings
+   ['Novel Reader'] entries: ['Theme', 'Rendering mode', 'Fullscreen', 'Show progress slider', 'Keep screen on', 'Custom brightness', 'Font family', 'Font Manager', 'Text alignment', 'Force lowercase', 'Use original fonts (WebView only)', 'Volume keys scroll', 'Tap to scroll', 'Swipe navigation', 'Infinite scroll', 'Paged mode (WebView only, experimental)', 'Auto-mark short chapters as read', 'Hide chapter title', 'Block media', 'Text selectable', 'Show raw HTML', 'Source CSS priority', 'Reading status bar']
+   cannot find Theme
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   skip Swipe navigation
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+done 53 screenshots 2168 s
