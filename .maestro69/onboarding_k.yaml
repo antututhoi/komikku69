@@ -1,0 +1,28 @@
+appId: ${APP_ID}
+---
+- repeat:
+    times: 14
+    commands:
+      - tapOn:
+          text: "(?i)^(select a folder|select destination folder)$"
+          optional: true
+      - runFlow:
+          when:
+            visible: "(?i)use this folder"
+          file: pick_folder.yaml
+      - tapOn:
+          text: "(?i)^(get started|next|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|no thanks|later|close|dismiss|cancel|i understand|proceed|finish|start|let's go|enable all)$"
+          optional: true
+      - tapOn:
+          point: "88%,93%"
+          optional: true
+      - waitForAnimationToEnd:
+          timeout: 2000
+- runFlow:
+    when:
+      visible: "(?i)please select which content sources"
+    commands:
+      - swipe: {start: "50%,80%", end: "50%,20%"}
+      - swipe: {start: "50%,80%", end: "50%,20%"}
+      - swipe: {start: "50%,80%", end: "50%,20%"}
+      - takeScreenshot: k0_welcome_bottom

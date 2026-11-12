@@ -1,0 +1,12 @@
+appId: ${APP_ID}
+---
+- tapOn: {text: "(?i)^(browse|explore|sources)$", optional: true}
+- waitForAnimationToEnd: {timeout: 3000}
+- takeScreenshot: k03_explore
+- tapOn: {text: "(?i)search.*", optional: true}
+- inputText: "Blue Lock"
+- pressKey: Enter
+- waitForAnimationToEnd: {timeout: 15000}
+- takeScreenshot: k04_search
+- scroll
+- takeScreenshot: k05_search_scrolled

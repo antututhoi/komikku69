@@ -20,5 +20,3 @@ grep -v '^#' .maestro69/apps.txt | while IFS='|' read -r name repo kind; do
   curl -sSL -o "apks/$name.apk" "$url" && echo "$name: $tag $(basename "$url")" | tee -a out69/apps-found.txt
 done
 
-# 20 ongoing MangaDex titles + the MangaDex extension
-python3 .maestro69/make_seed.py | tee out69/seed.txt

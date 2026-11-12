@@ -1,13 +1,13 @@
-name: 69 Virtual phone
+name: 69 Virtual phone K
 
 # Runs only when the tour69 branch is pushed (never touches the mod69 builds).
 on:
   push:
     branches:
-      - tour69
+      - tour69k
 
 concurrency:
-  group: tour69
+  group: tour69k
   cancel-in-progress: true
 
 permissions:
@@ -54,7 +54,7 @@ jobs:
           name: tour-results
           path: out69/
 
-      - name: Put screenshots and video frames on the tour69-results branch
+      - name: Put screenshots and video frames on the tour69k-results branch
         if: always()
         env:
           TOKEN: ${{ github.token }}
@@ -66,12 +66,12 @@ jobs:
               [ -f "$v" ] || continue; k=$(basename "$v" .mp4)
               ffmpeg -nostdin -loglevel error -i "$v" -vf "fps=1/3,scale=360:-1" -q:v 6 "$d/frames/${k}_%03d.jpg" || true
             done
-            find "$d/m" -name '*.png' 2>/dev/null | while read -r p; do
+            find "$d"/m_* -name '*.png' 2>/dev/null | while read -r p; do
               ffmpeg -nostdin -loglevel error -y -i "$p" -vf "scale=540:-1" -q:v 4 "$d/shots/$(basename "$p" .png).jpg" || true
             done
-            rm -rf "$d/m"
+            rm -rf "$d"/m_*
           done
           mkdir -p /tmp/res && rsync -a --exclude '*.mp4' out69/ /tmp/res/
-          cd /tmp/res && git init -q && git checkout -q -b tour69-results
+          cd /tmp/res && git init -q && git checkout -q -b tour69k-results
           git add -A && git -c user.name=tour69 -c user.email=tour69@users.noreply.github.com commit -qm "tour results ${{ github.run_number }}"
-          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" tour69-results
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" tour69k-results

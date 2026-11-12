@@ -1,0 +1,8 @@
+appId: ${APP_ID}
+---
+- launchApp:
+    clearState: true
+- waitForAnimationToEnd: {timeout: 10000}
+- takeScreenshot: k01_first
+- runFlow: onboarding_k.yaml
+- takeScreenshot: k02_after_onboarding
