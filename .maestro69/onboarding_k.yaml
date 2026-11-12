@@ -29,5 +29,15 @@ appId: ${APP_ID}
     when:
       visible: "(?i)please select which content sources"
     commands:
-      - tapOn: {point: "50%,4%"}
+      - swipe: {start: "50%,8%", end: "50%,90%"}
       - waitForAnimationToEnd: {timeout: 1500}
+# DropSauce: welcome pages, round arrow button bottom right
+- repeat:
+    while:
+      visible: "(?i)^welcome$"
+    times: 8
+    commands:
+      - tapOn: {point: "88%,92%"}
+      - waitForAnimationToEnd: {timeout: 1500}
+# Futon: suggestions question
+- tapOn: {text: "(?i)^no thanks$", optional: true}

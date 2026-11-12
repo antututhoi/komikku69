@@ -3,7 +3,9 @@ appId: ${APP_ID}
 - runFlow:
     when: {true: "${APP_NAME == 'Futon'}"}
     commands:
+      - tapOn: {text: "(?i)^no thanks$", optional: true}
       - tapOn: {id: ".*nav_explore"}
+      - tapOn: {text: "(?i)^no thanks$", optional: true}
 - runFlow:
     when: {true: "${APP_NAME == 'DropSauce'}"}
     commands:
@@ -15,12 +17,16 @@ appId: ${APP_ID}
     commands:
       - tapOn: {id: ".*search_bar"}
 - runFlow:
-    when: {true: "${APP_NAME != 'DropSauce'}"}
+    when: {true: "${APP_NAME == 'Kaisoku' || APP_NAME == 'Futon'}"}
     commands:
       - tapOn: {text: "Search manga"}
+- runFlow:
+    when: {true: "${APP_NAME == 'Kototoro'}"}
+    commands:
+      - tapOn: {text: "Search\\.\\.\\."}
 - inputText: "Blue Lock"
 - pressKey: Enter
 - waitForAnimationToEnd: {timeout: 30000}
 - takeScreenshot: k04_search
-- extendedWaitUntil: {visible: ".*", timeout: 20000}
+
 - takeScreenshot: k05_search_later
