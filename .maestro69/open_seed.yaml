@@ -1,6 +1,16 @@
 appId: ${APP_ID}
 ---
-# Android file picker: open Downloads/tour/seed.tachibk
+# Android file picker: open Download/tour/seed.tachibk
+- runFlow:
+    when:
+      notVisible: "seed.tachibk"
+    commands:
+      - tapOn:
+          text: "^Download$"
+          optional: true
+      - tapOn:
+          text: "^tour$"
+          optional: true
 - runFlow:
     when:
       notVisible: "seed.tachibk"
@@ -9,9 +19,26 @@ appId: ${APP_ID}
           text: "Show roots"
           optional: true
       - tapOn:
-          text: "Downloads"
+          text: "^Downloads$"
           optional: true
       - tapOn:
-          text: "tour"
+          text: "^tour$"
           optional: true
+- runFlow:
+    when:
+      notVisible: "seed.tachibk"
+    commands:
+      - tapOn:
+          text: "Show roots"
+          optional: true
+      - tapOn:
+          text: "sdk_gphone64_x86_64"
+          optional: true
+      - tapOn:
+          text: "^Download$"
+          optional: true
+      - tapOn:
+          text: "^tour$"
+          optional: true
+- takeScreenshot: 19_file_picker
 - tapOn: "seed.tachibk"
