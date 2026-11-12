@@ -153,6 +153,48 @@ def crawl_page(path, depth=0, maxdepth=1):
     if depth == 0: shot("settings_main")
     ents = list_entries(); titles = [e["title"] for e in ents]; L("  " * depth, path or "settings", "entries:", titles)
     for i, e in enumerate(ents):
+        if over(40 * 60): return
+        if SKIP.search(e["title"]) or e["checkable"]: L("  " * depth, "skip", e["title"]); continue
+        if not find_and_tap(e["title"]): L("  " * depth, "cannot find", e["title"]); continue
+        name = "settings_" + "_".join(path + [f"{i:02d}", e["title"]])
+        r = dump()
+        if is_dialog(r):
+            shot(name + "_dialog"); back()
+        elif on_page(titles):
+            continue   # nothing opened (a toggle or a chip)
+        else:
+            page_scroll(name)
+            sub = rows(dump()) if depth < maxdepth else []
+            if sub: crawl_page(path + [e["title"]], depth + 1, maxdepth)
+            back()
+        if not on_page(titles):
+            back()
+            if not on_page(titles) and not goto(path): L("cannot reach", path); return
+
+def on_page(titles):
+    """true when most of the page's first entries are visible at the top"""
+    settle_top(); vis = set(texts(dump())); first = titles[:4]
+    return sum(1 for t in first if t in vis) >= max(1, len(first) // 2)
+
+def goto(path):
+    """restart the app, open settings and follow the given entries (robust against getting lost)"""
+    adb("shell", "input", "keyevent", "3")
+    for pk in ("com.google.android.documentsui", "com.android.documentsui", "com.android.settings"): adb("shell", "am", "force-stop", pk)
+    adb("shell", "am", "force-stop", PKG); time.sleep(1)
+    adb("shell", "monkey", "-p", PKG, "-c", "android.intent.category.LAUNCHER", "1"); time.sleep(5)
+    if not open_settings(): shot("noset_" + "_".join(path)); return False
+    time.sleep(1.5)
+    for t in path:
+        if not find_and_tap(t): shot("nopath_" + "_".join(path)); return False
+        time.sleep(1.5)
+    return True
+
+def crawl_page(path, depth=0, maxdepth=1):
+    """open every entry of the settings page at `path`; screenshot each one (scrolled to the end)"""
+    if not goto(path): L("cannot reach", path); shot("lost_" + "_".join(path)); return
+    if depth == 0: shot("settings_main")
+    ents = list_entries(); titles = [e["title"] for e in ents]; L("  " * depth, path or "settings", "entries:", titles)
+    for i, e in enumerate(ents):
         if over(35 * 60): return
         if SKIP.search(e["title"]) or e["checkable"]: L("  " * depth, "skip", e["title"]); continue
         if i and not goto(path): L("cannot reach", path); return
@@ -245,11 +287,18 @@ def tour_screens():
             # chapter list actions: long-press a chapter row
             hold(540, 1800); shot(p + "_entry_select"); back()
             # read
-            for rx in ("start|resume|read|continue|start reading",):
+            opened = False
+            for n in dump().iter("node"):
+                t = (n.get("text") or n.get("content-desc") or "").strip()
+                if re.fullmatch("start|resume|read|continue|start reading", t, re.I):
+                    x1, y1, x2, y2 = bounds(n); tap((x1 + x2) // 2, (y1 + y2) // 2); opened = True; break
+            if not opened:  # open the first chapter in the list instead
                 for n in dump().iter("node"):
-                    t = (n.get("text") or n.get("content-desc") or "").strip()
-                    if re.fullmatch(rx, t, re.I):
-                        x1, y1, x2, y2 = bounds(n); tap((x1 + x2) // 2, (y1 + y2) // 2); break
+                    if n.get("clickable") != "true": continue
+                    t = texts(n)
+                    x1, y1, x2, y2 = bounds(n)
+                    if t and re.match(r"(vol\.|ch\.|chapter)", t[0], re.I) and 700 < y1 < 2000:
+                        tap((x1 + x2) // 2, (y1 + y2) // 2); break
             time.sleep(12)
             for n in dump().iter("node"):
                 if (n.get("text") or "").strip().lower() == "got it":
