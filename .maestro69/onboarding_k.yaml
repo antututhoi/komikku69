@@ -1,7 +1,7 @@
 appId: ${APP_ID}
 ---
 - repeat:
-    times: 14
+    times: 8
     commands:
       - tapOn:
           text: "(?i)^(select a folder|select destination folder)$"
@@ -11,18 +11,23 @@ appId: ${APP_ID}
             visible: "(?i)use this folder"
           file: pick_folder.yaml
       - tapOn:
-          text: "(?i)^(get started|next|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|no thanks|later|close|dismiss|cancel|i understand|proceed|finish|start|let's go|enable all)$"
-          optional: true
-      - tapOn:
-          point: "88%,93%"
+          text: "(?i)^(get started|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|no thanks|later|close|dismiss|i understand|proceed|finish|start|let's go)$"
           optional: true
       - waitForAnimationToEnd:
-          timeout: 2000
+          timeout: 1500
+# Kototoro: 4-step wizard, Next button sits at the bottom right
+- repeat:
+    while:
+      visible: "(?i)step \\d of 4"
+    times: 8
+    commands:
+      - tapOn:
+          point: "68%,92%"
+      - waitForAnimationToEnd: {timeout: 1500}
+# Kaisoku: welcome sheet, tap outside it to close
 - runFlow:
     when:
       visible: "(?i)please select which content sources"
     commands:
-      - swipe: {start: "50%,80%", end: "50%,20%"}
-      - swipe: {start: "50%,80%", end: "50%,20%"}
-      - swipe: {start: "50%,80%", end: "50%,20%"}
-      - takeScreenshot: k0_welcome_bottom
+      - tapOn: {point: "50%,4%"}
+      - waitForAnimationToEnd: {timeout: 1500}

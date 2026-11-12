@@ -1,12 +1,26 @@
 appId: ${APP_ID}
 ---
-- tapOn: {text: "(?i)^(browse|explore|sources)$", optional: true}
+- runFlow:
+    when: {true: "${APP_NAME == 'Futon'}"}
+    commands:
+      - tapOn: {id: ".*nav_explore"}
+- runFlow:
+    when: {true: "${APP_NAME == 'DropSauce'}"}
+    commands:
+      - tapOn: {point: "78%,93%"}
 - waitForAnimationToEnd: {timeout: 3000}
 - takeScreenshot: k03_explore
-- tapOn: {text: "(?i)search.*", optional: true}
+- runFlow:
+    when: {true: "${APP_NAME == 'DropSauce'}"}
+    commands:
+      - tapOn: {id: ".*search_bar"}
+- runFlow:
+    when: {true: "${APP_NAME != 'DropSauce'}"}
+    commands:
+      - tapOn: {text: "Search manga"}
 - inputText: "Blue Lock"
 - pressKey: Enter
-- waitForAnimationToEnd: {timeout: 15000}
+- waitForAnimationToEnd: {timeout: 30000}
 - takeScreenshot: k04_search
-- scroll
-- takeScreenshot: k05_search_scrolled
+- extendedWaitUntil: {visible: ".*", timeout: 20000}
+- takeScreenshot: k05_search_later

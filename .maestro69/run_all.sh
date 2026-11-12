@@ -11,8 +11,8 @@ while IFS='|' read -r name repo kind <&3; do
   echo "== $name ($pkg)"
   adb install -r -g "$apk" > "$out/install.txt" 2>&1 || { cat "$out/install.txt"; continue; }
   adb logcat -c
-  for f in k1 k2; do
-    timeout 600 maestro test --test-output-dir "$out/m_$f" -e APP_ID="$pkg" \
+  for f in k1 k2 k3; do
+    timeout 600 maestro test --test-output-dir "$out/m_$f" -e APP_ID="$pkg" -e APP_NAME="$name" \
       "$GITHUB_WORKSPACE/.maestro69/$f.yaml" < /dev/null > "$out/maestro_$f.txt" 2>&1
     adb shell uiautomator dump /sdcard/ui.xml < /dev/null > /dev/null 2>&1
     adb pull /sdcard/ui.xml "$out/ui_$f.xml" > /dev/null 2>&1
