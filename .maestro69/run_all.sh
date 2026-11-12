@@ -5,7 +5,8 @@ AAPT=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)aapt
 adb shell mkdir -p /sdcard/Download/tour
 adb push seed.tachibk /sdcard/Download/tour/seed.tachibk > /dev/null
 adb install -r -g ext_apks/mangadex.apk > out69/ext-install.txt 2>&1
-grep -v '^#' .maestro69/apps.txt | while IFS='|' read -r name repo kind; do
+while IFS='|' read -r name repo kind <&3; do
+  case "$name" in \#*|'') continue;; esac
   name=$(echo "$name" | xargs); kind=$(echo "$kind" | xargs)
   apk="apks/$name.apk"; [ -f "$apk" ] || continue
   out="$PWD/out69/$name"; mkdir -p "$out"
@@ -22,4 +23,4 @@ grep -v '^#' .maestro69/apps.txt | while IFS='|' read -r name repo kind; do
   adb shell rm -f /sdcard/tour_*.mp4
   adb logcat -d -t 4000 > "$out/logcat.txt" 2>&1
   adb uninstall "$pkg" > /dev/null 2>&1
-done
+done 3< .maestro69/apps.txt

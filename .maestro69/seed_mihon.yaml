@@ -1,16 +1,29 @@
 appId: ${APP_ID}
 ---
 # Restore the 20-title backup, update the library, then look around with real entries.
+# Path 1 (Mihon-type): More > Settings > Data and storage
 - tapOn:
     text: "(?i)^more$"
     optional: true
+- waitForAnimationToEnd
 - tapOn:
-    text: "(?i)^backup and restore$"
+    text: "(?i)^settings$"
     optional: true
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element:
+      text: "(?i)^(data and storage|backup and restore)$"
+    optional: true
+- tapOn:
+    text: "(?i)^(data and storage|backup and restore)$"
+    optional: true
+# Path 2 (J2K): Library > ⋮ > Settings > Backup and restore
 - runFlow:
     when:
       notVisible: "(?i)restore backup"
     commands:
+      - pressKey: back
+      - pressKey: back
       - tapOn:
           text: "(?i)^library$"
           optional: true
@@ -20,9 +33,17 @@ appId: ${APP_ID}
       - tapOn:
           text: "(?i)^settings$"
           optional: true
-      - tapOn:
-          text: "(?i)^(backup and restore|data and storage)$"
+      - scrollUntilVisible:
+          element:
+            text: "(?i)^(data and storage|backup and restore)$"
           optional: true
+      - tapOn:
+          text: "(?i)^(data and storage|backup and restore)$"
+          optional: true
+- scrollUntilVisible:
+    element:
+      text: "(?i)^restore backup$"
+    optional: true
 - takeScreenshot: 20_backup_screen
 - tapOn: "(?i)^restore backup$"
 - runFlow: open_seed.yaml
