@@ -1,0 +1,33 @@
+appId: ${APP_ID}
+---
+- launchApp:
+    clearState: true
+- waitForAnimationToEnd:
+    timeout: 10000
+- takeScreenshot: 01_first_screen
+- runFlow: onboarding.yaml
+- takeScreenshot: 02_after_first_run
+# Main tabs (names differ per app; missing ones are skipped)
+- tapOn: {text: "(?i)^library$", optional: true}
+- waitForAnimationToEnd: {timeout: 3000}
+- takeScreenshot: 03_library
+- tapOn: {text: "(?i)^(favou?rites|favorites)$", optional: true}
+- waitForAnimationToEnd: {timeout: 3000}
+- takeScreenshot: 04_favourites
+- tapOn: {text: "(?i)^(updates|feed|recents)$", optional: true}
+- waitForAnimationToEnd: {timeout: 3000}
+- takeScreenshot: 05_updates
+- tapOn: {text: "(?i)^history$", optional: true}
+- waitForAnimationToEnd: {timeout: 3000}
+- takeScreenshot: 06_history
+- tapOn: {text: "(?i)^(browse|explore|sources)$", optional: true}
+- waitForAnimationToEnd: {timeout: 3000}
+- takeScreenshot: 07_browse
+- tapOn: {text: "(?i)^(more|settings|menu)$", optional: true}
+- waitForAnimationToEnd: {timeout: 3000}
+- takeScreenshot: 08_more
+- tapOn: {text: "(?i)^settings$", optional: true}
+- waitForAnimationToEnd: {timeout: 3000}
+- takeScreenshot: 09_settings
+- scroll
+- takeScreenshot: 10_settings_scrolled

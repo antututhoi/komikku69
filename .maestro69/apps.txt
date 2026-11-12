@@ -1,0 +1,11 @@
+# name | GitHub repo ("self" = 69-Komikku latest build)
+69-Komikku | self
+Mihon | mihonapp/mihon
+TachiyomiSY | jobobby04/TachiyomiSYPreview
+J2K | Jays2Kings/tachiyomiJ2K
+Kaisoku | glitch-228/Kaisoku
+Kototoro | Kototoro-app/Kototoro
+DropSauce | HuzaifaKhalid1311/DropSauce
+Futon | AppFuton/Futon
+Tsundoku | tsundoku-otaku/tsundoku
+Chimahon | Chimahon/chimahon

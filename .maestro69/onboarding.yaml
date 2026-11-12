@@ -1,0 +1,11 @@
+appId: ${APP_ID}
+---
+# Taps through first-run screens of any of the apps (each tap is skipped if the button isn't there).
+- repeat:
+    times: 6
+    commands:
+      - tapOn:
+          text: "(?i)(get started|start|next|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|later|close|dismiss|i understand|proceed|finish)"
+          optional: true
+      - waitForAnimationToEnd:
+          timeout: 2500

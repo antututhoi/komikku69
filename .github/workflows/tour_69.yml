@@ -1,0 +1,52 @@
+name: 69 Virtual phone
+
+# Runs only when the tour69 branch is pushed (never touches the mod69 builds).
+on:
+  push:
+    branches:
+      - tour69
+
+concurrency:
+  group: tour69
+  cancel-in-progress: true
+
+jobs:
+  tour:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Allow the virtual phone to run fast (KVM)
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Download the apps
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash .maestro69/get_apks.sh
+
+      - name: Install Maestro (taps and screenshots)
+        run: |
+          curl -Ls "https://get.maestro.mobile.dev" | bash
+          echo "$HOME/.maestro/bin" >> "$GITHUB_PATH"
+
+      - name: Start the virtual phone and run the tour
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          script: bash .maestro69/run_all.sh
+
+      - name: Save screenshots, videos and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tour-results
+          path: out69/
