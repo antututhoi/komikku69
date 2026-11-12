@@ -1,0 +1,69 @@
+start Mihon mihon
+left the app ( mCurrentFocus=null ) - relaunching
+open settings
+ settings entries: ['Appearance', 'Library', 'Reader', 'Downloads', 'Tracking', 'Browse', 'Data and storage', 'Security and privacy', 'Advanced', 'About']
+open settings
+   ['Appearance'] entries: ['Light', 'Dark', 'System', 'Default', 'Selected', 'Pure black dark mode', 'App language', 'Tablet UI', 'Date format', 'Time format', 'Relative timestamps']
+   skip Light
+   skip Dark
+   skip System
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   ['Library'] entries: ['Edit categories', 'Default category', 'Per-category settings for sort', 'Automatic updates', 'Categories', 'Automatically refresh metadata', 'Smart update', 'Show unread count on Updates icon', 'Chapter on swipe to left', 'Chapter on swipe to right', 'Mark duplicate read chapter as read']
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   skip Chapter on swipe to left
+   skip Chapter on swipe to right
+open settings
+open settings
+open settings
+   ['Reader'] entries: ['Default reading mode', 'Double tap animation speed', 'Show reading mode', 'Show tap zones overlay', 'Animate page transitions', 'Load ahead only on Wi-Fi', 'Default rotation', 'Background color', 'Fullscreen', 'Show content in cutout area', 'Keep screen on', 'Show page number', 'Flash on page change', 'Skip chapters marked read', 'Skip filtered chapters', 'Skip duplicate chapters', 'Always show chapter transition', 'Tap zones', 'Invert tap zones', 'Scale type', 'Zoom start position', 'Crop borders', 'Automatically zoom into wide images', 'Pan wide images', 'Split wide pages', 'Rotate wide pages to fit', 'Sensitivity for hiding menu on scroll', 'Double tap to zoom', 'Disable zoom out', 'Volume keys', 'Use vertical chapter navigator in', 'Show actions on long tap']
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   cannot find Show content in cutout area
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   ['Downloads'] entries: ['Only on Wi-Fi', 'Save as CBZ archive', 'After manually marked as read', 'After reading automatically delete', 'Allow deleting bookmarked chapters', 'Excluded categories', 'Download new chapters', 'Auto download while reading']
+done 39 screenshots 2126 s
