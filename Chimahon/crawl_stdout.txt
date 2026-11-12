@@ -1,0 +1,69 @@
+start Chimahon mihon
+left the app ( mCurrentFocus=Window{d362933 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+open settings
+ settings entries: ['Appearance', 'Security and privacy', 'Advanced', 'Reader', 'Player', 'Library', 'Downloads', 'Browse', 'Dictionaries and audio', 'Popup dictionary', 'Anki', 'OCR', 'Tracking', 'Connections', 'Data and storage', 'MangaDex']
+open settings
+   ['Appearance'] entries: ['Light', 'Dark', 'System', 'Default', 'Selected', 'Pure black dark mode', 'Theme based on cover', 'Cover based theme style', 'Panorama Cover', 'Align Cover to Top', 'App language', 'Tablet UI', 'Date format', 'Relative timestamps', 'Render images in manga descriptions', 'Start screen', 'Always show nav labels', 'Consolidated library', 'Navigation style', 'Panorama Cover Flow', 'Expand all search filters by default', 'Recommendations in overflow', 'Merge in overflow']
+   skip Light
+   skip Dark
+   skip System
+open settings
+open settings
+open settings
+open settings
+open settings
+   cannot find Cover based theme style
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   ['Security and privacy'] entries: ['Hide notification content', 'Secure screen', 'Set CBZ archive password']
+   skip Secure screen
+   skip Set CBZ archive password
+open settings
+open settings
+   ['Advanced'] entries: ['Share crash logs', 'Debug info', 'Onboarding guide', 'Manage notifications', 'Auto-update app', 'Disable battery optimization', "Don't kill my app!", 'Reindex downloads', 'Clear database', 'Clear anime database', 'Clear novel database', 'Korean parser', 'Clear cookies', 'Clear WebView data', 'DNS over HTTPS (DoH)', 'Default user agent string', 'Refresh library covers', "Preload library's cover color", 'Reset per-series reader settings', 'Update library manga titles to match source', 'Disallow non-ASCII filenames', 'Include chapter URL hash', 'Custom hardware bitmap threshold', 'Use legacy decoder for long strip reader', 'Custom display profile', 'Installer', 'Revoke trusted unknown extensions', 'Data Saver', 'Enable source blacklist', 'Enable delegated sources', 'Log level', 'Encrypt database', 'Open debug menu']
+   skip Share crash logs
+open settings
+open settings
+open settings
+open settings
+   skip Disable battery optimization
+open settings
+open settings
+   skip Clear database
+   skip Clear anime database
+   skip Clear novel database
+open settings
+   skip Clear cookies
+   skip Clear WebView data
+open settings
+open settings
+open settings
+open settings
+   skip Reset per-series reader settings
+open settings
+   skip Disallow non-ASCII filenames
+open settings
+open settings
+open settings
+   skip Custom display profile
+   skip Installer
+open settings
+   skip Data Saver
+open settings
+open settings
+done 48 screenshots 2129 s
