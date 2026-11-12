@@ -1,0 +1,84 @@
+start Kaisoku kotatsu
+open settings
+ settings entries: ['Appearance', 'Manga sources', 'Reader settings', 'Storage and network', 'Downloads', 'Check for new chapters', 'Services', 'Backup and restore', 'About']
+open settings
+   ['Appearance'] entries: ['Animated menus · Beta', 'Blur behind bars · Beta', 'Show in TV launcher · Beta', 'Abc', 'Custom themes', 'Import theme file', 'Delete selected theme', 'Theme', 'Black', 'Pure black bottom navigation', 'Language', 'Preload nearby covers · Beta', 'Show Refresh cover action', 'List mode', 'Grid size', 'Use a fixed number of grid columns', 'Grid columns', 'Category overview · Beta', 'Category links in search', 'Sort favorite categories', 'Ascending category order', 'List long-press delay', 'Show favorites category strip', 'Show new-chapter counters', 'Show visible favorite categories on search results. Tap their names to open the category.', 'Default favorites sorting', 'Show quick filters', 'Jump back to where you left off', 'Show reading progress indicators', 'Badges in lists', 'Sort chapter list by upload date', 'Show a button in History that returns you to the spot you last scrolled to', 'Show chapters on the details page', 'Collapse long description', 'Show pages thumbnails', 'Default tab', 'Use upload dates for chapter lists by default. Reading order and progress stay unchanged. Unknown dates appear last; each title can override this in its chapter menu.', 'Search suggestions', 'Main screen sections', 'Show floating Continue button', 'Show labels in navigation bar', 'Last used', 'Pin navigation UI', 'Floating navigation bar', 'Corner radius', 'Exit confirmation', 'Show recent manga shortcuts', 'Protect the app']
+   skip Animated menus · Beta
+   skip Blur behind bars · Beta
+   skip Show in TV launcher · Beta
+open settings
+open settings
+   skip Import theme file
+   skip Delete selected theme
+open settings
+   skip Black
+   skip Pure black bottom navigation
+open settings
+   skip Preload nearby covers · Beta
+   skip Show Refresh cover action
+open settings
+open settings
+   skip Use a fixed number of grid columns
+open settings
+   skip Category overview · Beta
+   skip Category links in search
+open settings
+   skip Ascending category order
+open settings
+   skip Show favorites category strip
+   skip Show new-chapter counters
+   skip Show visible favorite categories on search results. Tap their names to open the category.
+open settings
+   skip Show quick filters
+   skip Jump back to where you left off
+open settings
+open settings
+   skip Sort chapter list by upload date
+   skip Show a button in History that returns you to the spot you last scrolled to
+   skip Show chapters on the details page
+   skip Collapse long description
+   skip Show pages thumbnails
+open settings
+open settings
+   cannot find Use upload dates for chapter lists by default. Reading order and progress stay unchanged. Unknown dates appear last; each title can override this in its chapter menu.
+open settings
+open settings
+   skip Show floating Continue button
+   skip Show labels in navigation bar
+open settings
+   cannot find Last used
+   skip Pin navigation UI
+   skip Floating navigation bar
+open settings
+   skip Exit confirmation
+   skip Show recent manga shortcuts
+   skip Protect the app
+open settings
+open settings
+   ['Manga sources'] entries: ['Sorting order', 'Default source list order', 'Show novel sources first in Explore', 'Show in grid view', 'Manage sources', 'Manage plugins', 'Auto-update plugins', 'Use Android-installed extensions', 'Show Kaisoku when opening extension files', '220 items', 'Extension loading errors', 'Enable all manga sources', 'Sources catalog', 'Disable NSFW', 'Choose source content classes separately', 'Visible source content', 'Hide broken sources', 'Use saved metadata for unavailable sources', 'Repair broken sources', 'Incognito mode for NSFW manga', 'Choose mirror automatically', 'Handle links']
+open settings
+   skip Show novel sources first in Explore
+   skip Show in grid view
+open settings
+open settings
+   skip Auto-update plugins
+   skip Use Android-installed extensions
+   skip Show Kaisoku when opening extension files
+open settings
+   cannot find 220 items
+open settings
+   skip Enable all manga sources
+open settings
+   skip Disable NSFW
+   skip Choose source content classes separately
+open settings
+   skip Hide broken sources
+   skip Use saved metadata for unavailable sources
+open settings
+   skip Incognito mode for NSFW manga
+   skip Choose mirror automatically
+   skip Handle links
+open settings
+open settings
+   ['Reader settings'] entries: ['Hidden pages · Beta', 'Keep a placeholder for hidden pages', 'Manage hidden pages', 'Retain more adjacent pages · Beta', 'Default mode', 'Autodetect reader mode', 'Scale mode', 'Show zoom buttons', 'Remember reader zoom', 'Webtoon zoom', 'Default webtoon zoom out', 'Gaps in webtoon mode', 'Reader controls in bottom bar', 'Reader actions', 'Ergonomic reader control', 'Rotate wide pages', 'Scroll while holding a page', 'Top row', 'Middle left', 'Middle right', 'Bottom row', 'Enable volume buttons', 'Long-press an edge to scroll until you release. Custom long-press actions take priority; pinch and drag cancel scrolling.', 'Invert navigation controls', 'Page animation', 'Enable pull gesture', '32-bit color mode', 'Default', 'Reduce memory consumption (beta)', 'Suggest another source on errors', 'Source-switch prompts · Beta', 'Animated pages', 'GPU image upscaling (beta)', 'Crop pages', 'Play GIF and WebP pages. Animation pauses offscreen; translations use a still frame. Large animations use a still frame. Zoom and upscaling are unavailable during playback', 'Flash on page change', 'Flash duration', 'Flash every', 'Flash with', 'Fullscreen mode', 'Screen orientation', 'Keep screen on', 'Open reader in a separate task', 'Show information bar in reader', 'Transparent reader information bar', 'Floating bottom bar', 'Reader top bar opacity', 'Reader bottom bar opacity', 'Show chapter change popup', 'Haptic feedback at chapter boundaries']
+done 64 screenshots 2246 s
