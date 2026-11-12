@@ -1,0 +1,105 @@
+start J2K mihon
+open settings
+ settings entries: ['General', 'Appearance', 'Library', 'Reader', 'Downloads', 'Browse', 'Tracking', 'Backup and restore', 'Security and privacy', 'Advanced', 'Search settings']
+open settings
+   ['General'] entries: ['Starting screen', 'Back to start', 'Manage notifications', 'Show recent series', 'Show recently used sources', 'Series shortcuts opens new chapters', 'Auto-update app', 'Date format']
+   skip Back to start
+open settings
+   skip Show recent series
+   skip Show recently used sources
+   skip Series shortcuts opens new chapters
+open settings
+open settings
+open settings
+open settings
+   ['Appearance'] entries: ['Select all', 'Pure White', 'Spring Blossom', 'Strawberry Daiquiri', 'Dark', 'Midnight Dusk', 'Chocolate Strawberries', 'Follow system theme', 'Pure black dark mode', 'Expanded toolbar', 'Theme buttons based on cover', 'Render images in descriptions', 'Show missing chapters', 'Auto-hide bottom navigation', 'Side navigation icon alignment', 'Use side navigation']
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   skip Follow system theme
+   skip Pure black dark mode
+   skip Expanded toolbar
+   skip Theme buttons based on cover
+   skip Render images in descriptions
+   skip Show missing chapters
+   skip Auto-hide bottom navigation
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   ['Downloads'] entries: ['Download location', 'Only download over Wi-Fi', 'Save as CBZ archive', 'Split tall images', 'Remove when marked as read', 'Remove after read', 'Allow deleting bookmarked chapters', 'Download new chapters', 'Auto download while reading', 'Delete removed chapters']
+   skip Download location
+   skip Only download over Wi-Fi
+   skip Save as CBZ archive
+   skip Split tall images
+   skip Remove when marked as read
+   skip Remove after read
+   skip Allow deleting bookmarked chapters
+   skip Download new chapters
+open settings
+   skip Delete removed chapters
+open settings
+open settings
+   ['Browse'] entries: ['Hide entries already in library', 'Show "Duplicate" badge', 'Check for extension updates', 'Extension stores', 'Auto-update extensions', 'Notify extension has been updated', 'All enabled', 'Pinned only', 'Source migration', 'Match pinned sources', 'Match enabled sources', 'Show in sources and extensions lists']
+   skip Hide entries already in library
+   skip Show "Duplicate" badge
+   skip Check for extension updates
+open settings
+open settings
+   skip Notify extension has been updated
+   skip All enabled
+   skip Pinned only
+open settings
+open settings
+open settings
+   skip Show in sources and extensions lists
+open settings
+open settings
+   ['Tracking'] entries: ['Update tracking after reading', 'Update tracking when marked as read', 'MyAnimeList', 'AniList', 'Kitsu', 'MangaUpdates', 'Shikimori', 'Bangumi', 'Hikka', 'MangaBaka']
+   skip Update tracking after reading
+   skip Update tracking when marked as read
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+ skip Backup and restore
+open settings
+open settings
+   ['Security and privacy'] entries: ['Hide notification content', 'Secure screen', 'Send crash reports', 'Allow analytics']
+   skip Hide notification content
+   skip Secure screen
+   skip Send crash reports
+   skip Allow analytics
+open settings
+open settings
+   ['Advanced'] entries: ['Dump crash logs', 'Debug info', 'Disable battery optimization', "Don't kill my app!", 'Check for beta releases', 'Clear chapter cache', 'Refresh the download cache', 'Clean up cached covers', 'Clear cached covers not in library', 'Clean up downloaded chapters', 'Clear WebView data', 'Clear database', 'Clear cookies', 'DNS over HTTPS', 'Default user agent string', 'Installer', 'Revoke trusted unknown extensions', 'Refresh library metadata', 'Refresh tracking metadata']
+   skip Dump crash logs
+open settings
+   skip Disable battery optimization
+open settings
+   skip Check for beta releases
+   skip Clear chapter cache
+   skip Refresh the download cache
+   skip Clean up cached covers
+   skip Clear cached covers not in library
+open settings
+   skip Clear WebView data
+   skip Clear database
+   skip Clear cookies
+open settings
+open settings
+   skip Installer
+open settings
+open settings
+open settings
+open settings
+done 50 screenshots 2126 s
