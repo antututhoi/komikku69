@@ -1,0 +1,82 @@
+start Futon kotatsu
+open settings
+ settings entries: ['Appearance', 'Manga sources', 'Reader settings', 'Storage and network', 'Downloads', 'Check for new chapters', 'Services', 'Backup and restore', 'About', 'Debug']
+open settings
+   ['Appearance'] entries: ['Abc', 'Custom themes', 'Import theme file', 'Delete selected theme', 'Theme', 'Black', 'Language', 'List mode', 'Grid size', 'Show quick filters', 'Show reading progress indicators', 'Badges in lists', 'Collapse long description', 'Show pages thumbnails', 'Default tab', 'Change Home Screen Background Font', 'Search suggestions', 'Main screen sections', 'Show floating Continue button', 'Show labels in navigation bar', 'Pin navigation UI', 'Exit confirmation', 'Show recent manga shortcuts', 'Protect the app']
+open settings
+   skip Import theme file
+   skip Delete selected theme
+open settings
+   skip Black
+open settings
+open settings
+open settings
+   skip Show quick filters
+open settings
+open settings
+   skip Collapse long description
+   skip Show pages thumbnails
+open settings
+open settings
+open settings
+open settings
+   skip Show floating Continue button
+   skip Show labels in navigation bar
+   skip Pin navigation UI
+   skip Exit confirmation
+   skip Show recent manga shortcuts
+   skip Protect the app
+open settings
+open settings
+   ['Manga sources'] entries: ['Sorting order', 'Show in grid view', 'Manage sources', 'Enable all manga sources', 'Sources catalog', 'Extensions manager', 'Disable NSFW', 'Incognito mode for NSFW manga', 'Blacklisted tags', 'Choose mirror automatically', 'Handle links']
+   skip Show in grid view
+open settings
+   skip Enable all manga sources
+open settings
+open settings
+   skip Disable NSFW
+   skip Incognito mode for NSFW manga
+open settings
+   skip Choose mirror automatically
+   skip Handle links
+open settings
+open settings
+   ['Reader settings'] entries: ['Default mode', 'Autodetect reader mode', 'Smart resume', 'Consider a chapter finished based on', 'Completion threshold', 'Wait for chapter updates', 'Scale mode', 'Show zoom buttons', 'Webtoon zoom', 'Percentage', 'Default webtoon zoom out', 'Gaps in webtoon mode', 'Reader controls in bottom bar', 'Whether to show zoom control buttons in the bottom right corner', 'Reader actions', 'Ergonomic reader control', 'Enable volume buttons', 'Invert navigation controls', 'Page animation', 'Enable pull gesture', '32-bit color mode', 'Reduce memory consumption (beta)', 'Swap the direction of volume button and directional hardware key navigation (left/up/down/right)', 'Crop pages', 'Fullscreen mode', 'Screen orientation', 'Keep screen on', 'Reduce offscreen pages quality to use less memory', 'Open reader in a separate task', 'Show information bar in reader', 'Transparent reader information bar', 'Show chapter change popup', 'Background', 'Numbered pages']
+   skip Autodetect reader mode
+   skip Smart resume
+open settings
+open settings
+   skip Wait for chapter updates
+open settings
+   skip Show zoom buttons
+   skip Webtoon zoom
+open settings
+   cannot find Percentage
+open settings
+   skip Gaps in webtoon mode
+open settings
+   skip Whether to show zoom control buttons in the bottom right corner
+open settings
+   skip Ergonomic reader control
+   skip Enable volume buttons
+   skip Invert navigation controls
+open settings
+   skip Enable pull gesture
+   skip 32-bit color mode
+   skip Reduce memory consumption (beta)
+   skip Swap the direction of volume button and directional hardware key navigation (left/up/down/right)
+open settings
+   skip Fullscreen mode
+open settings
+   skip Keep screen on
+   skip Reduce offscreen pages quality to use less memory
+   skip Open reader in a separate task
+   skip Show information bar in reader
+   skip Transparent reader information bar
+   skip Show chapter change popup
+open settings
+   skip Numbered pages
+open settings
+open settings
+   ['Storage and network'] entries: ['Data removal', 'Content preloading', 'Preload pages', 'Proxy', 'DNS over HTTPS', 'GitHub mirror', 'Images optimization proxy', 'Ignore SSL errors', 'Disable connectivity check', 'Block ads in browser']
+done 57 screenshots 2219 s
