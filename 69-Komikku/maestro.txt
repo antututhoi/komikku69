@@ -1,0 +1,111 @@
+Anonymous analytics enabled. To opt out, set MAESTRO_CLI_NO_ANALYTICS environment variable to any value before running Maestro.
+
+Running on test
+ > Flow tour_restore
+Launch app "${APP_ID}" with clear state... COMPLETED
+Wait for animation to end within 10000 ms... COMPLETED
+Take screenshot 01_first_screen... COMPLETED
+Run onboarding.yaml when ${KIND == 'mihon'} is true...
+  Repeat 8 times...
+    Tap on (Optional) "(?i)^(select a folder|select destination folder)$"... WARNED
+    Run pick_folder.yaml when "(?i)use this folder" is visible...
+    Run pick_folder.yaml when "(?i)use this folder" is visible... SKIPPED
+    Tap on (Optional) "(?i)^(get started|next|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|no thanks|later|close|dismiss|cancel|i understand|proceed|wait|finish)$"... COMPLETED
+    Wait for animation to end within 2500 ms... COMPLETED
+      Tap on (Optional) "^Download$"... COMPLETED
+      Run flow when "^tour$" is not visible...
+      Run flow when "^tour$" is not visible... SKIPPED
+      Tap on (Optional) "^tour$"... COMPLETED
+      Wait for animation to end... COMPLETED
+      Tap on "(?i)use this folder"... COMPLETED
+      Tap on (Optional) "(?i)^allow$"... COMPLETED
+      Wait for animation to end... COMPLETED
+  Repeat 8 times... COMPLETED
+  Run flow when "(?i)please select which content sources" is visible...
+  Run flow when "(?i)please select which content sources" is visible... SKIPPED
+Run onboarding.yaml when true is true... COMPLETED
+Run onboarding_k.yaml when ${KIND == 'kotatsu'} is true...
+Run onboarding_k.yaml when false is true... SKIPPED
+Take screenshot 02_after_first_run... COMPLETED
+Tap on (Optional) "(?i)^library$"... COMPLETED
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 03_library... COMPLETED
+Tap on (Optional) "(?i)^(favou?rites)$"... WARNED
+
+
+ Warning: Element not found: Text matching regex: (?i)^(favou?rites)$
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 04_favourites... COMPLETED
+Tap on (Optional) "(?i)^(updates|feed|recents)$"... COMPLETED
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 05_updates... COMPLETED
+Tap on (Optional) "(?i)^history$"... COMPLETED
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 06_history... COMPLETED
+Tap on (Optional) "(?i)^(browse|explore|sources)$"... COMPLETED
+Wait for animation to end within 3000 ms... COMPLETED
+Take screenshot 07_browse... COMPLETED
+Run seed_restore.yaml when ${KIND == 'mihon'} is true...
+  Tap on (Optional) "(?i)^browse$"... COMPLETED
+  Tap on (Optional) "(?i)^(manga )?extensions$"... COMPLETED
+  Wait for animation to end... COMPLETED
+  Tap on (Optional) "(?i)^(untrusted|trust)$"... COMPLETED
+  Tap on (Optional) "(?i)^trust$"... COMPLETED
+  Take screenshot 18_extensions... COMPLETED
+  Launch app "${APP_ID}"... COMPLETED
+  Wait for animation to end... COMPLETED
+  Tap on (Optional) "(?i)^more$"... COMPLETED
+  Wait for animation to end... COMPLETED
+  Tap on (Optional) "(?i)^settings$"... WARNED
+  Wait for animation to end... COMPLETED
+  Scrolling DOWN until "(?i)^(data and storage|backup and restore)$" is visible with speed 40, visibility percentage 100%, timeout 20000 ms, with centering disabled... COMPLETED
+  Tap on (Optional) "(?i)^(data and storage|backup and restore)$"... COMPLETED
+  Run flow when "(?i)restore backup" is not visible...
+  Run flow when "(?i)restore backup" is not visible... SKIPPED
+  Scrolling DOWN until "(?i)^restore backup$" is visible with speed 40, visibility percentage 100%, timeout 20000 ms, with centering disabled... COMPLETED
+  Take screenshot 20_backup_screen... COMPLETED
+  Tap on "(?i)^restore backup$"... COMPLETED
+  Run open_seed.yaml...
+    Wait for animation to end... COMPLETED
+    Assert that (Optional) "seed.tachibk" is visible... COMPLETED
+    Run flow when "seed.tachibk" is not visible...
+    Run flow when "seed.tachibk" is not visible... SKIPPED
+    Assert that (Optional) "seed.tachibk" is visible... COMPLETED
+    Take screenshot 19_file_picker... COMPLETED
+    Tap on "seed.tachibk"... COMPLETED
+  Run open_seed.yaml... COMPLETED
+  Tap on (Optional) "(?i)^restore$"... COMPLETED
+  Run wait.yaml...
+    Assert that (Optional) "zz_never_shown_zz" is visible... WARNED
+  Run wait.yaml... COMPLETED
+  Take screenshot 21_after_restore... COMPLETED
+  Press Back key... COMPLETED
+  Press Back key... COMPLETED
+  Tap on (Optional) "(?i)^library$"... COMPLETED
+  Swipe from (50%, 30%) to (50%, 85%) in 400 ms... COMPLETED
+  Run wait.yaml...
+    Assert that (Optional) "zz_never_shown_zz" is visible... WARNED
+  Run wait.yaml... COMPLETED
+  Tap on (Optional) "More options"... COMPLETED
+  Tap on (Optional) "(?i)^update (library|all)$"... COMPLETED
+  Run wait.yaml...
+    Assert that (Optional) "zz_never_shown_zz" is visible... WARNED
+  Run wait.yaml... COMPLETED
+  Swipe from (50%, 0%) to (50%, 60%) in 400 ms... COMPLETED
+  Take screenshot 22_notifications... COMPLETED
+  Press Back key... COMPLETED
+  Run wait.yaml...
+    Assert that (Optional) "zz_never_shown_zz" is visible... WARNED
+  Run wait.yaml... COMPLETED
+  Take screenshot 23_library... COMPLETED
+  Swipe from (85%, 55%) to (15%, 55%) in 400 ms... COMPLETED
+  Take screenshot 24_library_category2... COMPLETED
+  Tap on (Optional) "(?i)^(updates|recents)$"... COMPLETED
+  Run wait.yaml...
+    Assert that (Optional) "zz_never_shown_zz" is visible... WARNED
+  Run wait.yaml... COMPLETED
+  Take screenshot 25_updates... COMPLETED
+  Scroll vertically... COMPLETED
+  Take screenshot 26_updates_scrolled... COMPLETED
+Run seed_restore.yaml when true is true... COMPLETED
+Tap on (Optional) "(?i)^library$"... COMPLETED

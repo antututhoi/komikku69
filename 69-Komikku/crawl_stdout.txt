@@ -1,0 +1,77 @@
+start 69-Komikku mihon
+open settings
+ settings entries: ['Appearance', 'Library', 'Reader', 'Downloads', 'Tracking', 'Connections', 'Browse', 'Data and storage', 'Security and privacy', 'MangaDex', 'Advanced']
+open settings
+   ['Appearance'] entries: ['Light', 'Dark', 'System', 'Default', 'Selected', 'Main color', 'Second color', 'Save as a theme', 'Save theme to a file', 'Load theme from a file', '69- App font', '69- Display size (whole app)', '69- Floating bottom bar (rounded)', '69- Bottom bar height', '69- Taller title bar', '69- Cover-grow animation', '69- Frosted glass bars', 'Pure black dark mode', 'Theme based on cover', 'Cover based theme style', 'Panorama Cover', 'Align Cover to Top', 'App language', 'Tablet UI', 'Date format', 'Relative timestamps', 'Render images in manga descriptions', 'Show updates in the nav', 'Show history in the nav', 'Always show nav labels', 'Panorama Cover Flow', 'Expand all search filters by default', 'Recommendations in overflow', 'Merge in overflow']
+   skip Light
+   skip Dark
+   skip System
+open settings
+open settings
+open settings
+open settings
+   skip Save as a theme
+   skip Save theme to a file
+   skip Load theme from a file
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   cannot find Cover based theme style
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   ['Library'] entries: ['Edit categories', 'Default category', 'Per-category settings for sort', 'Automatic updates', 'Categories', 'Library dynamic category updates', 'Automatically refresh metadata', 'Smart update', 'Show unread count on Updates icon', 'Show updating progress banner', 'Chapter on swipe to left', 'Chapter on swipe to right', 'Mark duplicate read chapter as read', 'Hide missing chapter indicators', 'Show empty categories during search/filtering', 'Fetch metadata when adding to library', 'Fetch chapters when adding to library', 'Tag sorting tags', '69- Pause between entries when updating', '69- Sources updated at the same time', "69- Sort ignoring 'a / an / the'", '69- Badge on covers', '69- Title lines under covers', '69- Space between covers', '69- Chapters as a grid of numbers (tiles per row)', '69- Corner for the download count', '69- Corner for the unread badge', '69- Corner for the language', '69- Corner for the source icon', '69- All categories on one page', '69- Covers in their own shape (Pinterest grid)', '69- Thin outline around covers', '69- Low-memory library', '69- Chapter pictures', '69- One row per chapter number', '69- Preferred groups', '69- Ask before removing from library', '69- Show date added', '69- Tidy tags']
+open settings
+tabs [(208, 2211, 'Library'), (540, 2211, 'Browse')]
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{78c506b u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+done 103 screenshots 3003 s
