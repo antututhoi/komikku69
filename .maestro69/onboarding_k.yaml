@@ -11,7 +11,7 @@ appId: ${APP_ID}
             visible: "(?i)use this folder"
           file: pick_folder.yaml
       - tapOn:
-          text: "(?i)^(get started|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|no thanks|later|close|dismiss|i understand|proceed|finish|start|let's go)$"
+          text: "(?i)^(get started|continue|skip|accept|agree|allow|ok|okay|done|got it|not now|no thanks|later|close|dismiss|i understand|proceed|wait|finish|start|let's go)$"
           optional: true
       - waitForAnimationToEnd:
           timeout: 1500

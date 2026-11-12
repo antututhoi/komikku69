@@ -40,10 +40,18 @@ def shot(name):
 class N:
     def __init__(s, e, kids): s.e, s.kids = e, kids
 def dump():
-    for _ in range(3):
+    for _ in range(4):
         adb("shell", "uiautomator", "dump", "/sdcard/u.xml"); x = adb("exec-out", "cat", "/sdcard/u.xml", out=True)
-        try: return ET.fromstring(x)
-        except Exception: time.sleep(1)
+        try: root = ET.fromstring(x)
+        except Exception: time.sleep(1); continue
+        t = texts(root)
+        if any("isn't responding" in v or "keeps stopping" in v for v in t):
+            for n in root.iter("node"):
+                if (n.get("text") or "").strip() in ("Wait", "OK", "Close app"):
+                    if (n.get("text") or "").strip() == "Wait":
+                        x1, y1, x2, y2 = bounds(n); adb("shell", "input", "tap", str((x1 + x2) // 2), str((y1 + y2) // 2)); time.sleep(1.5); break
+            continue
+        return root
     return None
 def bounds(e):
     m = re.match(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]", e.get("bounds", "")); return tuple(map(int, m.groups())) if m else (0, 0, 0, 0)
@@ -121,17 +129,22 @@ def list_entries():
     settle_top()
     return seen
 
-def crawl_page(prefix, depth, maxdepth=2):
+def on_page(titles):
+    """true when most of the page's first entries are visible at the top"""
+    settle_top(); vis = set(texts(dump())); first = titles[:4]
+    return sum(1 for t in first if t in vis) >= max(1, len(first) // 2)
+
+def crawl_page(prefix, depth, maxdepth=1):
     """open every entry of the settings page that is on screen; screenshot each (scrolled); go back"""
-    ents = list_entries(); L("  " * depth, prefix, "entries:", [e["title"] for e in ents])
-    base = sig(dump())
+    ents = list_entries(); titles = [e["title"] for e in ents]; L("  " * depth, prefix, "entries:", titles)
     for i, e in enumerate(ents):
         if over(): return
         if SKIP.search(e["title"]) or e["checkable"]: L("  " * depth, "skip", e["title"]); continue
         if not find_and_tap(e["title"]): L("  " * depth, "cannot find", e["title"]); continue
         name = f"{prefix}_{i:02d}_{e['title']}"
         r = dump()
-        if sig(r) == base: continue
+        if on_page(titles) and not is_dialog(r):
+            continue  # nothing opened (a toggle or a chip)
         if is_dialog(r):
             shot(name + "_dialog"); back()
         else:
@@ -139,9 +152,9 @@ def crawl_page(prefix, depth, maxdepth=2):
             if depth < maxdepth and rows(dump()):
                 crawl_page(name[:50], depth + 1, maxdepth)
             back()
-        if sig(dump()) != base:
+        if not on_page(titles):
             back()
-            if sig(dump()) != base: L("lost the page, stopping this branch"); return
+            if not on_page(titles): L("lost the page, stopping this branch"); return
 
 def open_settings():
     L("open settings")
@@ -205,7 +218,7 @@ def tour_screens():
         tap(x, y); time.sleep(1.5)
         p = f"tab{i}_{d}"; page_scroll(p, 4); menus(p)
         if re.search("library|favou?rites|home", d, re.I) and KIND == "mihon":
-            tap(300, 700); time.sleep(5); shot(p + "_entry"); page_scroll(p + "_entry", 8); menus(p + "_entry")
+            tap(108, 2232); time.sleep(1.5); tap(270, 900); time.sleep(6); shot(p + "_entry"); page_scroll(p + "_entry", 8); menus(p + "_entry")
             # chapter list actions: long-press a chapter row
             hold(540, 1800); shot(p + "_entry_select"); back()
             # read
@@ -214,7 +227,11 @@ def tour_screens():
                     t = (n.get("text") or n.get("content-desc") or "").strip()
                     if re.fullmatch(rx, t, re.I):
                         x1, y1, x2, y2 = bounds(n); tap((x1 + x2) // 2, (y1 + y2) // 2); break
-            time.sleep(12); shot(p + "_reader"); tap(540, 1200); time.sleep(1.2); shot(p + "_reader_menu")
+            time.sleep(12)
+            for n in dump().iter("node"):
+                if (n.get("text") or "").strip().lower() == "got it":
+                    x1, y1, x2, y2 = bounds(n); tap((x1 + x2) // 2, (y1 + y2) // 2); break
+            shot(p + "_reader"); tap(540, 1200); time.sleep(1.2); shot(p + "_reader_menu")
             # every icon in the reader bars
             r = dump(); base = sig(r)
             for j, (bx, by, bd) in enumerate([t for t in topbar(r)] + [t for t in main_tabs()]):
