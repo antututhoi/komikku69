@@ -1,0 +1,56 @@
+start 69-Komikku mihon
+open settings
+tabs [(108, 2232, 'Library'), (324, 2232, 'Updates'), (540, 2232, 'History'), (756, 2232, 'Browse')]
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{3614bde u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+done 92 screenshots 1265 s
