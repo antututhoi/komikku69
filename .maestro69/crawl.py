@@ -201,6 +201,8 @@ def menus(prefix):
         tap(x, y); rr = dump()
         shot(f"{prefix}_menu{i}_{d}")
         items = [row for row in rows(rr, top=0, bottom=2400) if row["title"] not in base_titles][:12]
+        if re.search("filter", d, re.I):
+            items = [row for row in items if row["title"] in ("Sort", "Display", "Tags", "Filter")]
         back(); ensure_app()
         for j, it in enumerate(items):
             if over() or SKIP.search(it["title"]) or it["checkable"]: continue
@@ -226,13 +228,19 @@ def main_tabs():
 
 def tour_screens():
     names = ["Library", "Updates", "History", "Browse", "More"]
-    tabs = [(108 + 216 * i, 2232, names[i]) for i in range(5)] if KIND == "mihon" else main_tabs()
+    tabs = sorted(main_tabs(), key=lambda t: t[0])
+    if len(tabs) >= 2:
+        sp = tabs[1][0] - tabs[0][0]
+        if tabs[0][0] > sp * 0.75: tabs.insert(0, (tabs[0][0] - sp, tabs[0][1], "Library"))
+    else:
+        tabs = [(108 + 216 * i, 2232, names[i]) for i in range(5)]
     L("tabs", tabs)
     for i, (x, y, d) in enumerate(tabs):
         if over(): return
         tap(x, y); time.sleep(1.5)
-        p = f"tab{i}_{d}"; page_scroll(p, 4); menus(p)
-        if re.search("library|favou?rites|home", d, re.I) and KIND == "mihon":
+        p = f"tab{i}_{d}"; page_scroll(p, 4)
+        if not (i == 0 and KIND == "mihon"): menus(p)
+        if i == 0 and KIND == "mihon":
             tap(108, 2232); time.sleep(1.5); tap(270, 900); time.sleep(6); shot(p + "_entry"); page_scroll(p + "_entry", 8); menus(p + "_entry")
             # chapter list actions: long-press a chapter row
             hold(540, 1800); shot(p + "_entry_select"); back()
@@ -260,9 +268,8 @@ def tour_screens():
                 back(); time.sleep(0.8)
                 if sig(dump()) != base:
                     tap(540, 1200); time.sleep(1)
-            back(); back(); back()
-        elif i >= 1 and KIND == "kotatsu":
-            pass
+            back(); back(); back(); ensure_app()
+            tap(tabs[0][0], tabs[0][1]); time.sleep(1.5); menus(p)
 
 L("start", APP, KIND)
 try:

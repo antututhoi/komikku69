@@ -18,7 +18,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        app: [69-Komikku, J2K, Futon, Kaisoku, DropSauce]
+        app: [69-Komikku, Mihon, TachiyomiSY, J2K, Tsundoku, Chimahon, Kaisoku, Kototoro, DropSauce, Futon]
     runs-on: ubuntu-24.04
     timeout-minutes: 110
     steps:
