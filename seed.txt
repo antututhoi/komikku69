@@ -1,0 +1,42 @@
+MangaDex ext https://github.com/keiyoushi/extensions/releases/download/d9420cd/tachiyomi-all.mangadex-v1.6.4.apk source id 2499283573021220255
+   chapters 100
+  Kage no Jitsuryokusha ni Naritakute!
+   chapters 0
+  Tensei Shitara Slime datta Ken
+   chapters 15
+  Kumo desu ga, Nani ka?
+   chapters 213
+  Ki ni Natteru Hito ga Otoko ja Nakatta
+   chapters 566
+  Mairimashita! Iruma-kun
+   chapters 105
+  Mieruko-chan
+   chapters 40
+  Akuyaku Reijou Level 99 ~Watashi wa Ura Boss desuga Maou de wa Arimasen~
+   chapters 8
+  Kaoru Hana wa Rin to Saku
+   chapters 84
+  Maou no Ore ga Dorei Elf o Yome ni Shitanda ga, Dou Medereba ii?
+   chapters 82
+  Osoraku Kanojo wa Ore no Aniki o Neratteru
+   chapters 0
+  SPY×FAMILY
+   chapters 146
+  Haimiya-senpai wa Kowakute Kawaii
+   chapters 4
+  Jeonjijeok Dokja Sijeom
+   chapters 41
+  Tsuihou Sareru Tabi ni Skill o Te ni Ireta Ore ga, 100 no Isekai de 2-shuume Musou
+   chapters 82
+  Tensei Kizoku no Isekai Boukenroku ~Jichou wo Shiranai Kamigami no Shito~
+   chapters 103
+  Chiyu Mahou no Machigatta Tsukaikata ~Senjou wo Kakeru Kaifuku Youin~
+   chapters 151
+  The New Gate
+   chapters 42
+  Assassin de Aru Ore no Sutetasu ga Yuusha Yori mo Akiraka ni Tsuyoi Nodaga
+   chapters 1
+  Blue Lock
+   chapters 23
+  Henkyou Mob Kizoku no Uchi ni Totsuidekita Akuyaku Reijou ga, Mechakucha Dekiru Ii Yome nandaga?
+seed.tachibk 20 titles

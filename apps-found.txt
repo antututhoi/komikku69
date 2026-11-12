@@ -1,0 +1,10 @@
+69-Komikku: mod69-latest app-arm64-v8a-release.apk
+Mihon: v0.21.3 mihon-x86_64-v0.21.3.apk
+TachiyomiSY: 615 TachiyomiSY-x86_64-615.apk
+J2K: v1.8.1 tachiyomij2k-x86_64-v1.8.1.apk
+Tsundoku: v0.3.4 tsundoku-x86_64-v0.3.4.apk
+Chimahon: v2.4.9 chimahon-x86_64-v2.4.9.apk
+Kaisoku: v9.8.7-beta7 kaisoku-v9.8.7-beta7-2090-installable.apk
+Kototoro: v2.4.4 Kototoro-2.4.4-x86_64-release.apk
+DropSauce: v1.1.2 DropSauce-v1.1.2.apk
+Futon: nightly-20261103-d8e1f57 app-nightly.apk
