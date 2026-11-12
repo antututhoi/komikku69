@@ -21,5 +21,5 @@ timeout 900 maestro test --test-output-dir "$out/m" -e APP_ID="$pkg" -e KIND="$k
   "$GITHUB_WORKSPACE/.maestro69/tour_restore.yaml" < /dev/null > "$out/maestro.txt" 2>&1
 adb shell am start -n "$(adb shell cmd package resolve-activity --brief "$pkg" < /dev/null | tail -1 | tr -d '\r')" < /dev/null > /dev/null 2>&1
 sleep 4
-python3 -I .maestro69/crawl.py "$out/crawl" "$name" "$kind" < /dev/null > "$out/crawl_stdout.txt" 2>&1
+python3 -I .maestro69/crawl.py "$out/crawl" "$name" "$kind" "$pkg" < /dev/null > "$out/crawl_stdout.txt" 2>&1
 adb logcat -d -t 3000 > "$out/logcat.txt" 2>&1

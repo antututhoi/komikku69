@@ -4,6 +4,7 @@ Usage: crawl.py OUT_DIR APP_NAME KIND   (KIND = mihon | kotatsu)"""
 import subprocess, sys, os, re, time, hashlib, xml.etree.ElementTree as ET
 
 OUT, APP, KIND = sys.argv[1], sys.argv[2], sys.argv[3]
+PKG = sys.argv[4] if len(sys.argv) > 4 else ""
 os.makedirs(OUT, exist_ok=True)
 T0 = time.time(); BUDGET = 50 * 60
 shots = 0; log = open(os.path.join(OUT, "crawl.txt"), "w")
@@ -18,7 +19,15 @@ def adb(*a, out=False):
 def over(): return time.time() - T0 > BUDGET
 def tap(x, y): adb("shell", "input", "tap", str(int(x)), str(int(y))); time.sleep(1.3)
 def hold(x, y): adb("shell", "input", "swipe", str(int(x)), str(int(y)), str(int(x)), str(int(y)), "900"); time.sleep(1.3)
-def back(): adb("shell", "input", "keyevent", "4"); time.sleep(1.2)
+def back():
+    adb("shell", "input", "keyevent", "4"); time.sleep(1.2); ensure_app()
+def ensure_app():
+    if not PKG: return
+    f = (adb("shell", "dumpsys", "window", out=True) or b"").decode(errors="ignore")
+    m = re.search(r"mCurrentFocus=.*", f)
+    if m and PKG not in m.group(0):
+        L("left the app (", m.group(0)[:80], ") - relaunching")
+        adb("shell", "monkey", "-p", PKG, "-c", "android.intent.category.LAUNCHER", "1"); time.sleep(4)
 def up():   adb("shell", "input", "swipe", "540", "1700", "540", "700", "350"); time.sleep(0.9)
 def down(): adb("shell", "input", "swipe", "540", "700", "540", "1900", "350"); time.sleep(0.9)
 def shot(name):
@@ -157,18 +166,27 @@ def open_settings():
     return False
 
 def menus(prefix):
-    """tap every icon in the top bar of the current screen"""
-    r = dump(); base = sig(r)
+    """tap every icon in the top bar; if it opens a menu, open each menu item too"""
+    r = dump(); base = sig(r); base_titles = set(texts(r))
     for i, (x, y, d) in enumerate(topbar(r)):
         if over() or re.search(r"navigate up|back|^$", d, re.I): continue
         tap(x, y); rr = dump()
         shot(f"{prefix}_menu{i}_{d}")
-        if is_dialog(rr) is False and sig(rr) != base and not any("clear" in t.lower() for t in texts(rr)[:3]):
-            pass
-        # scroll long popups / sheets
-        up(); shot(f"{prefix}_menu{i}_{d}_b"); down()
-        back()
-        if sig(dump()) != base: back()
+        items = [row for row in rows(rr, top=0, bottom=2400) if row["title"] not in base_titles][:12]
+        back(); ensure_app()
+        for j, it in enumerate(items):
+            if over() or SKIP.search(it["title"]) or it["checkable"]: continue
+            tap(x, y); rr = dump(); hit = None
+            for row in rows(rr, top=0, bottom=2400):
+                if row["title"] == it["title"]: hit = row
+            if not hit: back(); continue
+            x1, y1, x2, y2 = hit["b"]; tap((x1 + x2) // 2, (y1 + y2) // 2)
+            nm = f"{prefix}_menu{i}_{d}_item{j}_{it['title']}"
+            r3 = dump()
+            if sig(r3) != base:
+                page_scroll(nm, 3)
+                back(); ensure_app()
+                if sig(dump()) != base: back()
 
 def main_tabs():
     r = dump(); res = []
@@ -179,7 +197,9 @@ def main_tabs():
     return res
 
 def tour_screens():
-    tabs = main_tabs(); L("tabs", tabs)
+    names = ["Library", "Updates", "History", "Browse", "More"]
+    tabs = [(108 + 216 * i, 2232, names[i]) for i in range(5)] if KIND == "mihon" else main_tabs()
+    L("tabs", tabs)
     for i, (x, y, d) in enumerate(tabs):
         if over(): return
         tap(x, y); time.sleep(1.5)
