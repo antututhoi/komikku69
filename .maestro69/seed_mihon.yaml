@@ -6,7 +6,7 @@ appId: ${APP_ID}
     text: "(?i)^browse$"
     optional: true
 - tapOn:
-    text: "(?i)^extensions$"
+    text: "(?i)^(manga )?extensions$"
     optional: true
 - waitForAnimationToEnd
 - tapOn:

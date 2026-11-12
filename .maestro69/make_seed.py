@@ -86,7 +86,7 @@ def chapters_of(mid):
         name = (f"Vol.{a['volume']} " if a.get("volume") else "") + (f"Ch.{a['chapter']}" if a.get("chapter") else "Oneshot")
         if a.get("title"): name += " - " + a["title"]
         up = int(datetime.fromisoformat(a["publishAt"].replace("Z", "+00:00")).timestamp() * 1000)
-        read = n >= 5  # newest 2 come from the update; next 3 stay unread
+        read = True  # all read: the newest 2 (left out) arrive as unread updates
         cb = f_str(1, "/chapter/" + c["id"]) + f_str(2, name) + f_int(4, 1 if read else 0)
         cb += f_int(7, now - 30 * 86400000) + f_int(8, up) + key(9, 5) + struct.pack("<f", num) + f_int(10, n)
         out.append(cb)
