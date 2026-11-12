@@ -21,16 +21,49 @@ def f_int(f, v): return key(f, 0) + varint(v)
 def f_bytes(f, b): return key(f, 2) + varint(len(b)) + b
 def f_str(f, s): return f_bytes(f, s.encode())
 
-# --- MangaDex extension + repo from the keiyoushi index ---
+# --- MangaDex extension + repo from the keiyoushi index (protobuf index.pb) ---
 REPO = "https://raw.githubusercontent.com/keiyoushi/extensions/repo"
-index = json.loads(get(REPO + "/index.min.json"))
-ext = next(e for e in index if e["name"].endswith("MangaDex") and e["lang"] in ("all", "en"))
-src = next(s for s in ext["sources"] if s["lang"] == "en")
-source_id = int(src["id"])
+def rv(b, i):
+    n = sh = 0
+    while True:
+        c = b[i]; i += 1; n |= (c & 0x7F) << sh; sh += 7
+        if c < 0x80: return n, i
+def parse(b):
+    i = 0; out = []
+    while i < len(b):
+        k, i = rv(b, i); f, wt = k >> 3, k & 7
+        if wt == 0: v, i = rv(b, i)
+        elif wt == 2:
+            l, i = rv(b, i); v = b[i:i + l]; i += l
+        elif wt == 1: v = b[i:i + 8]; i += 8
+        elif wt == 5: v = b[i:i + 4]; i += 4
+        else: raise ValueError(wt)
+        out.append((f, wt, v))
+    return out
+index = gzip.decompress(get(REPO + "/index.pb"))
+def entries(b):
+    for f, wt, v in parse(b):
+        if wt != 2 or b"eu.kanade.tachiyomi.extension." not in v: continue
+        try: kids = parse(v)
+        except Exception: continue
+        if any(ff == 2 and ww == 2 and vv.startswith(b"eu.kanade.tachiyomi.extension.") for ff, ww, vv in kids):
+            yield v
+        else:
+            yield from entries(v)
+entry = next(v for v in entries(index) if b"extension.all.mangadex\x1a" in v)
+fields = parse(entry)
+apk_url = next(parse(v)[0][2].decode() for f, wt, v in fields if f == 3)
+source_id = None
+for f, wt, v in fields:
+    if f == 8:
+        sub = {ff: vv for ff, ww, vv in parse(v)}
+        if sub.get(3) == b"en":
+            source_id = sub[1]
+            if source_id >= 1 << 63: source_id -= 1 << 64
 os.makedirs("ext_apks", exist_ok=True)
-open("ext_apks/mangadex.apk", "wb").write(get(REPO + "/apk/" + ext["apk"]))
+open("ext_apks/mangadex.apk", "wb").write(get(apk_url))
 repo_meta = json.loads(get(REPO + "/repo.json"))["meta"]
-print("MangaDex ext", ext["apk"], "source id", source_id)
+print("MangaDex ext", apk_url, "source id", source_id)
 
 # --- 20 popular ongoing titles ---
 q = [("limit", "20"), ("status[]", "ongoing"), ("order[followedCount]", "desc"),
