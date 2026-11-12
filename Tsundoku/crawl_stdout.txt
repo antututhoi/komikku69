@@ -1,0 +1,32 @@
+start Tsundoku mihon
+open settings
+tabs [(108, 2232, 'Library'), (324, 2232, 'Updates'), (540, 2232, 'History'), (756, 2232, 'Browse')]
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+left the app ( mCurrentFocus=Window{a215954 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+done 76 screenshots 784 s
