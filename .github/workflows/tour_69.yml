@@ -18,7 +18,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        app: [69-Komikku, Mihon, TachiyomiSY, J2K, Tsundoku, Chimahon, Kaisoku, Kototoro, DropSauce, Futon]
+        app: [69-Komikku, Mihon, TachiyomiSY, J2K, Tsundoku, Chimahon]
+        mode: [settings, screens]
+        include:
+          - {app: Kaisoku, mode: settings}
+          - {app: Kototoro, mode: settings}
+          - {app: DropSauce, mode: settings}
+          - {app: Futon, mode: settings}
     runs-on: ubuntu-24.04
     timeout-minutes: 110
     steps:
@@ -44,6 +50,7 @@ jobs:
       - name: Start the virtual phone and run the tour
         env:
           APP_NAME: ${{ matrix.app }}
+          MODE: ${{ matrix.mode }}
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 34
@@ -58,10 +65,10 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tour-results-${{ matrix.app }}
+          name: tour-results-${{ matrix.app }}-${{ matrix.mode }}
           path: out69/
 
-      - name: Put screenshots and video frames on the tour69d-${{ matrix.app }} branch
+      - name: Put screenshots and video frames on the tour69d-${{ matrix.app }}-${{ matrix.mode }} branch
         if: always()
         env:
           TOKEN: ${{ github.token }}
@@ -85,6 +92,6 @@ jobs:
             rm -f "$d"crawl/*.png
           done
           mkdir -p /tmp/res && rsync -a --exclude '*.mp4' out69/ /tmp/res/
-          cd /tmp/res && git init -q && git checkout -q -b tour69d-${{ matrix.app }}
+          cd /tmp/res && git init -q && git checkout -q -b tour69d-${{ matrix.app }}-${{ matrix.mode }}
           git add -A && git -c user.name=tour69 -c user.email=tour69@users.noreply.github.com commit -qm "tour results ${{ github.run_number }}"
-          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" tour69d-${{ matrix.app }}
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" tour69d-${{ matrix.app }}-${{ matrix.mode }}

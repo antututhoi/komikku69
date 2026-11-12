@@ -5,8 +5,9 @@ import subprocess, sys, os, re, time, hashlib, xml.etree.ElementTree as ET
 
 OUT, APP, KIND = sys.argv[1], sys.argv[2], sys.argv[3]
 PKG = sys.argv[4] if len(sys.argv) > 4 else ""
+MODE = os.environ.get("MODE", "all")
 os.makedirs(OUT, exist_ok=True)
-T0 = time.time(); BUDGET = 70 * 60
+T0 = time.time(); BUDGET = 85 * 60
 shots = 0; log = open(os.path.join(OUT, "crawl.txt"), "w")
 W, H = 1080, 2400
 SKIP = re.compile(r"save|export|import|share|choose|pick|folder|directory|location|set cbz|installer|file|clear|delete|reset|log ?out|sign ?out|remove|wipe|uninstall|factory|biometric|app lock|secure screen|incognito|check for update|install|battery|crash|create backup|restore|erase|purge|cache|empty|stop|quit|exit", re.I)
@@ -28,8 +29,8 @@ def ensure_app():
     if m and PKG not in m.group(0):
         L("left the app (", m.group(0)[:80], ") - relaunching")
         adb("shell", "monkey", "-p", PKG, "-c", "android.intent.category.LAUNCHER", "1"); time.sleep(4)
-def up():   adb("shell", "input", "swipe", "540", "1700", "540", "700", "350"); time.sleep(0.9)
-def down(): adb("shell", "input", "swipe", "540", "700", "540", "1900", "350"); time.sleep(0.9)
+def up():   adb("shell", "input", "swipe", "540", "1700", "540", "700", "250"); time.sleep(0.6)
+def down(): adb("shell", "input", "swipe", "540", "700", "540", "1900", "250"); time.sleep(0.6)
 def shot(name):
     global shots
     if shots > 420: return
@@ -100,21 +101,25 @@ def page_scroll(prefix, maxn=7):
     for _ in range(maxn): down()
 
 def settle_top():
-    for _ in range(6): down()
+    for _ in range(4): down()
 
-def find_and_tap(title, root=None):
-    """scroll the current list from the top until `title` is visible, then tap it"""
-    settle_top()
+def _scan(title):
     last = None
     for _ in range(10):
         r = dump()
         for row in rows(r):
             if row["title"] == title:
                 x1, y1, x2, y2 = row["b"]; tap((x1 + x2) // 2, (y1 + y2) // 2); return True
-        s = sig(r)
-        if s == last: break
-        last = s; up()
+        sg = sig(r)
+        if sg == last: return False
+        last = sg; up()
     return False
+
+def find_and_tap(title, root=None):
+    """tap the row called `title`: look from where we are, then from the top"""
+    if _scan(title): return True
+    settle_top()
+    return _scan(title)
 
 def list_entries():
     """all clickable settings rows of the current page (scrolls to the end)"""
@@ -153,7 +158,7 @@ def crawl_page(path, depth=0, maxdepth=1):
     if depth == 0: shot("settings_main")
     ents = list_entries(); titles = [e["title"] for e in ents]; L("  " * depth, path or "settings", "entries:", titles)
     for i, e in enumerate(ents):
-        if over(40 * 60): return
+        if over(80 * 60): return
         if SKIP.search(e["title"]) or e["checkable"]: L("  " * depth, "skip", e["title"]); continue
         if not find_and_tap(e["title"]): L("  " * depth, "cannot find", e["title"]); continue
         name = "settings_" + "_".join(path + [f"{i:02d}", e["title"]])
@@ -323,10 +328,10 @@ def tour_screens():
 L("start", APP, KIND)
 try:
     ensure_app()
-    crawl_page([], 0)
+    if MODE in ("all", "settings"): crawl_page([], 0)
 except Exception as e:
     L("settings walk failed", repr(e))
-if KIND == "mihon":
+if KIND == "mihon" and MODE in ("all", "screens"):
     try:
         goto([]); back(); ensure_app(); tour_screens()
     except Exception as e: L("screens failed", repr(e))
