@@ -1,0 +1,53 @@
+start TachiyomiSY mihon
+left the app ( mCurrentFocus=Window{f8b6c02 u0 com.google.android.apps.nexuslauncher/com.google ) - relaunching
+open settings
+ settings entries: ['Appearance', 'Library', 'Reader', 'Downloads', 'Tracking', 'Browse', 'Data and storage', 'Security and privacy', 'E-Hentai', 'MangaDex', 'Advanced']
+open settings
+   ['Appearance'] entries: ['Light', 'Dark', 'System', 'Default', 'Selected', 'Pure black dark mode', 'App language', 'Tablet UI', 'Date format', 'Time format', 'Relative timestamps', 'Render images in manga descriptions', 'Show updates in the nav', 'Show history in the nav', 'Always show nav labels', 'Expand all search filters by default', 'Recommendations in overflow', 'Merge in overflow']
+   skip Light
+   skip Dark
+   skip System
+open settings
+open settings
+open settings
+cannot reach ['Appearance']
+open settings
+open settings
+   ['Library'] entries: ['Edit categories', 'Default category', 'Per-category settings for sort', 'Automatic updates', 'Categories', 'Library dynamic category updates', 'Automatically refresh metadata', 'Smart update', 'Show unread count on Updates icon', 'Chapter on swipe to left', 'Chapter on swipe to right', 'Mark duplicate read chapter as read', 'Hide missing chapter indicators', 'Tag sorting tags']
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   skip Chapter on swipe to left
+   skip Chapter on swipe to right
+open settings
+open settings
+open settings
+open settings
+open settings
+   ['Reader'] entries: ['Default reading mode', 'Double tap animation speed', 'Show reading mode', 'Show tap zones overlay', 'Load ahead only on Wi-Fi', 'Default rotation', 'Background color', 'Fullscreen', 'Show content in cutout area', 'Keep screen on', 'Show page number', 'Flash on page change', 'Skip chapters marked read', 'Skip filtered chapters', 'Skip duplicate chapters', 'Always show chapter transition', 'Tap zones', 'Invert tap zones', 'Scale type', 'Zoom start position', 'Crop borders', 'Animate page transitions', 'Automatically zoom into wide images', 'Pan wide images', 'Split wide pages', 'Rotate wide pages to fit', 'Sensitivity for hiding menu on scroll', 'Double tap to zoom', 'Disable zoom out', 'Tap scroll by page', 'Volume keys', 'Use vertical chapter navigator in', 'Show actions on long tap', 'Save pages into separate folders', 'Reader cache size', 'Preserve reading position on read entries', 'Auto Webtoon Mode', 'Reader Bottom Buttons', 'Page layout', 'Invert double pages', 'Center Margin', 'Archive reader mode']
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   cannot find Show content in cutout area
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+tabs [(108, 2247, 'Library Library'), (324, 2247, 'Updates Updates'), (540, 2247, 'History History'), (756, 2247, 'Browse Browse')]
+done 69 screenshots 2587 s
