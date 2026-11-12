@@ -1,44 +1,26 @@
 appId: ${APP_ID}
 ---
-# Android file picker: open Download/tour/seed.tachibk
+# Android file picker: Downloads > tour > seed.tachibk
+- waitForAnimationToEnd
+- extendedWaitUntil:
+    visible: "seed.tachibk"
+    timeout: 3000
+    optional: true
 - runFlow:
     when:
       notVisible: "seed.tachibk"
     commands:
-      - tapOn:
-          text: "^Download$"
-          optional: true
-      - tapOn:
-          text: "^tour$"
-          optional: true
-- runFlow:
-    when:
-      notVisible: "seed.tachibk"
-    commands:
-      - tapOn:
-          text: "Show roots"
-          optional: true
-      - tapOn:
-          text: "^Downloads$"
-          optional: true
+      - tapOn: "Show roots"
+      - waitForAnimationToEnd
+      - tapOn: "^Downloads$"
+      - waitForAnimationToEnd
       - tapOn:
           text: "^tour$"
           optional: true
-- runFlow:
-    when:
-      notVisible: "seed.tachibk"
-    commands:
-      - tapOn:
-          text: "Show roots"
-          optional: true
-      - tapOn:
-          text: "sdk_gphone64_x86_64"
-          optional: true
-      - tapOn:
-          text: "^Download$"
-          optional: true
-      - tapOn:
-          text: "^tour$"
-          optional: true
+      - waitForAnimationToEnd
+- extendedWaitUntil:
+    visible: "seed.tachibk"
+    timeout: 5000
+    optional: true
 - takeScreenshot: 19_file_picker
 - tapOn: "seed.tachibk"
