@@ -2,6 +2,8 @@
 # One app: install, first run (+ restore of the 20 titles for Mihon-type apps), then the deep walk.
 set -u
 name="$APP_NAME"
+adb shell settings put global hide_error_dialogs 1 < /dev/null
+adb shell settings put global window_animation_scale 0 < /dev/null
 AAPT=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)aapt
 kind=$(grep -i "^$name" .maestro69/apps.txt | head -1 | cut -d'|' -f3 | xargs)
 out="$PWD/out69/$name"; mkdir -p "$out"
