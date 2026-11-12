@@ -1,0 +1,83 @@
+start Kototoro kotatsu
+open settings
+ settings entries: ['Appearance', 'Reader settings', 'AI', 'Playback', 'Source preferences & content filters', 'Extension management', 'Downloads', 'Spaces', 'Tracking accounts', 'Synchronization settings', 'Backup and restore', 'Storage and network', 'Check for new chapters', 'Services', 'Help & feedback']
+open settings
+   ['Appearance'] entries: ['Interface style', 'Appearance mode', 'Page background', 'Lists', 'Details', 'Home', 'Interface and behavior', 'Immersive layers', 'Search bar filters', 'Navigation appearance']
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   ['Reader settings'] entries: ['Manga', 'Novel', 'Reader actions', 'Enable volume buttons', 'Invert navigation controls', 'Show floating button labels', 'E-Ink mode', 'Full-screen refresh', 'Swap the direction of volume button and directional hardware key navigation (left/up/down/right)']
+open settings
+open settings
+   skip Enable volume buttons
+   skip Invert navigation controls
+   skip Show floating button labels
+   skip E-Ink mode
+   skip Full-screen refresh
+   skip Swap the direction of volume button and directional hardware key navigation (left/up/down/right)
+open settings
+open settings
+   ['AI'] entries: ['Download and Manage Models', 'API providers', 'Translation', 'Image enhancement', 'TTS Settings', 'Video enhancement']
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   ['Source preferences & content filters'] entries: ['Sorting order', 'Reorder', 'Group sources by language', 'Setup wizard', 'Disable NSFW', 'Incognito mode for NSFW manga', 'Blacklisted tags', 'Highlight dangerous genres', 'Choose mirror automatically', 'Handle links']
+open settings
+   skip Group sources by language
+open settings
+open settings
+   skip Incognito mode for NSFW manga
+open settings
+   skip Highlight dangerous genres
+   skip Choose mirror automatically
+   skip Handle links
+open settings
+open settings
+   ['Extension management'] entries: ['Enable all', 'Disable all', 'Expand all', 'MangaDex', 'All content', 'Manga', 'All sources', 'Mihon']
+open settings
+open settings
+open settings
+   skip All content
+   skip Manga
+   skip All sources
+   skip Mihon
+open settings
+open settings
+   ['Downloads'] entries: ['Local content directories', 'Preferred download format', '1080p, 720p, 480p', 'Download novel illustrations', 'Downloading over cellular network', 'Disable battery optimization', 'Default page save directory', 'Ask for the destination dir every time', 'Create a folder for each manga']
+open settings
+open settings
+   skip Download novel illustrations
+open settings
+   skip Disable battery optimization
+   skip Default page save directory
+   skip Ask for the destination dir every time
+   skip Create a folder for each manga
+open settings
+open settings
+   ['Spaces'] entries: ['Enable Spaces', 'Space button position', 'Manga', 'Novel', 'Anime', 'Add custom space']
+   skip Enable Spaces
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+open settings
+   ['Tracking accounts'] entries: ['Preferred tracking site', 'AniList', 'Kitsu', 'MyAnimeList', 'Shikimori', 'Bangumi', 'MangaUpdates', 'Simkl', 'MangaBaka']
+open settings
+open settings
+open settings
+done 64 screenshots 2108 s
