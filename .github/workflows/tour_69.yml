@@ -10,6 +10,9 @@ concurrency:
   group: tour69
   cancel-in-progress: true
 
+permissions:
+  contents: write
+
 jobs:
   tour:
     runs-on: ubuntu-24.04
@@ -50,3 +53,19 @@ jobs:
         with:
           name: tour-results
           path: out69/
+
+      - name: Put screenshots and video frames on the tour69-results branch
+        if: always()
+        env:
+          TOKEN: ${{ github.token }}
+        run: |
+          sudo apt-get install -y -qq ffmpeg > /dev/null 2>&1 || true
+          for v in out69/*/tour.mp4; do
+            [ -f "$v" ] || continue
+            d=$(dirname "$v"); mkdir -p "$d/frames"
+            ffmpeg -loglevel error -i "$v" -vf "fps=1/3,scale=360:-1" -q:v 6 "$d/frames/f_%03d.jpg" || true
+          done
+          mkdir -p /tmp/res && rsync -a --exclude '*.mp4' out69/ /tmp/res/
+          cd /tmp/res && git init -q && git checkout -q -b tour69-results
+          git add -A && git -c user.name=tour69 -c user.email=tour69@users.noreply.github.com commit -qm "tour results ${{ github.run_number }}"
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" tour69-results
