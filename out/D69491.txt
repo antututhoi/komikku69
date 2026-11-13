@@ -1,0 +1,13 @@
+# block D69491  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.reader.ui.ReaderActivity  time: 11:32:04
+! tapt 'More options' at 985,209
+! tapt 'Read' at 805,2225
+[S   ]  540,1200 t='' d='' id=pager
+[S   ]  540,1200 t='' d='' id=
+[L   ]  540,209  t='' d='' id=toolbar
+[CL  ]   99,209  t='' d='Navigate up' id=
+[    ]  323,183  t='Blue Lock' d='' id=
+[    ]  396,248  t='Vol.18 Ch.150 - Day off' d='' id=
+[C   ]  980,209  t='' d='Options' id=action_reader_menu
+[CL  ]  142,2257 t='' d='Previous chapter' id=button_prev
+[CL  ]  816,2257 t='' d='Next chapter' id=button_next
+[CL  ]  938,2257 t='' d='Chapters' id=button_pages_thumbs
