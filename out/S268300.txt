@@ -1,0 +1,40 @@
+# block S268300  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:13:18
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,403  t='' d='' id=
+[    ]  281,335  t='Category overview · Beta' d='' id=title
+[    ]  450,416  t='Open Favorites as category tiles. Open a tile to see its titles; Back returns he' d='' id=summary
+[k   ]  969,387  t='' d='' id=switchWidget
+[C   ]  540,632  t='' d='' id=
+[    ]  273,580  t='Category links in search' d='' id=title
+[    ]  450,661  t='Show visible favorite categories on search results. Tap their names to open the ' d='' id=summary
+[k   ]  969,632  t='' d='' id=switchWidget
+[C   ]  540,851  t='' d='' id=
+[    ]  269,825  t='Sort favorite categories' d='' id=title
+[    ]  104,879  t='Manual' d='' id=summary
+[C   ]  540,1017 t='' d='' id=
+[    ]  290,1017 t='Ascending category order' d='' id=title
+[xk  ]  969,1017 t='' d='' id=switchWidget
+[C   ]  540,1184 t='' d='' id=
+[    ]  243,1158 t='List long-press delay' d='' id=title
+[    ]  165,1212 t='Follow system' d='' id=summary
+[C   ]  540,1402 t='' d='' id=
+[    ]  324,1350 t='Show favorites category strip' d='' id=title
+[    ]  450,1431 t='When hidden, swipe between categories or use Choose category in the menu.' d='' id=summary
+[xk  ]  969,1402 t='' d='' id=switchWidget
+[C   ]  540,1647 t='' d='' id=
+[    ]  309,1595 t='Show new-chapter counters' d='' id=title
+[    ]  450,1676 t='Hide or show counters on title cards without turning off update checks.' d='' id=summary
+[xk  ]  969,1647 t='' d='' id=switchWidget
+[C   ]  540,1866 t='' d='' id=
+[    ]  276,1840 t='Default favorites sorting' d='' id=title
+[    ]  215,1894 t='Added (Descending)' d='' id=summary
+[C   ]  540,2084 t='' d='' id=
+[    ]  213,2032 t='Show quick filters' d='' id=title
+[    ]  450,2113 t='Provides the ability to filter manga lists by certain parameters' d='' id=summary
+[xk  ]  969,2084 t='' d='' id=switchWidget
+[C   ]  540,2303 t='' d='' id=
+[    ]  346,2277 t='Jump back to where you left off' d='' id=title
+[    ]  450,2353 t='Show a button in History that returns you to the spot you last scrolled to' d='' id=summary
+[xk  ]  969,2329 t='' d='' id=switchWidget
