@@ -732,3 +732,9 @@ up
 up
 === Tsundoku_set_tracking_s5
 up
+=== Tsundoku_back_tracking
+back
+sleep 1
+down
+down
+down
