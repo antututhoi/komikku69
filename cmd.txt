@@ -217,3 +217,9 @@ up
 up
 === set_appearance_s7
 up
+=== nav_library
+back
+sleep 1
+down
+down
+down
