@@ -113,3 +113,7 @@ shot J_library_display_options_tab1
 tapt ^Badges$
 sleep 1
 shot J_library_display_options_badges
+=== J50891
+tapt ^Categories$
+sleep 1
+shot J_library_display_options_categories
