@@ -665,3 +665,5 @@ down
 === Tsundoku_go_library
 tapt ^Library$
 sleep 2
+=== Tsundoku_set_library_s0
+sleep 1
