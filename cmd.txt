@@ -1062,3 +1062,10 @@ shot D_settings_Extensions_p2
 up
 sleep 1
 shot D_settings_Extensions_p3
+=== D69578
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 6
+sleep 4
+tap 91 199
+sleep 3
