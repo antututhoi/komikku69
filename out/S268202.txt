@@ -1,0 +1,3 @@
+# block S268202  focus: PopupWindow:bda29da  time: 11:10:35
+! tapt 'More options' at 1027,211
+[    ]  785,232  t='Open chapter in browser' d='' id=title
