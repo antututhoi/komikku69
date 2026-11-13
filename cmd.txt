@@ -1452,3 +1452,5 @@ sleep 2
 === C61775
 tapt ^OCR$
 sleep 2
+=== C61776
+shot C_settings_OCR_p0
