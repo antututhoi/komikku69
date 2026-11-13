@@ -3897,3 +3897,7 @@ tapt ^Got it$
 sleep 1
 === S49156
 sleep 3
+=== S49157
+tap 540 1200
+sleep 1
+shot SY_reader_hq_menu
