@@ -1174,3 +1174,7 @@ shot C_settings_Downloads_p0
 up
 sleep 1
 shot C_settings_Downloads_p1
+=== C60796
+up
+sleep 1
+shot C_settings_Downloads_p2
