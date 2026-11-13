@@ -1286,3 +1286,8 @@ down
 down
 === x41310
 stop eu.kanade.tachiyomi.sy
+=== K41311
+launch app.komikku.mod69
+sleep 1
+tap 108 2232
+sleep 2
