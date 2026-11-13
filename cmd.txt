@@ -1114,3 +1114,7 @@ tapt ^Services$
 sleep 3
 === D69590
 shot D_settings_Services_p0
+=== D69591
+up
+sleep 1
+shot D_settings_Services_p1
