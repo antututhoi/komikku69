@@ -2656,3 +2656,9 @@ shot P_f
 up
 sleep 1
 shot P_g
+=== P44888
+tapt ^General$
+sleep 1
+up
+sleep 1
+shot P_Gen
