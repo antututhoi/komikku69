@@ -3640,3 +3640,17 @@ shot S_rd_tapzone_Default
 === S47197
 tap 540 1200
 sleep 1
+=== S47198
+tap 540 1200
+sleep 1
+tapt ^Settings$
+sleep 2
+tapt ^General$
+sleep 1
+tapt ^Gray$
+sleep 1
+tap 540 250
+sleep 2
+tap 540 1200
+sleep 2
+shot S_rd_bg_Gray
