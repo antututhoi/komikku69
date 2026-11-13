@@ -1014,3 +1014,5 @@ tapt ^Browse$
 sleep 2
 === Chimahon_set_browse_s0
 sleep 1
+=== Chimahon_set_browse_s1
+up
