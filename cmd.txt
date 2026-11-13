@@ -958,3 +958,10 @@ shot D_reader_options_sheet
 up
 sleep 1
 shot D_reader_options_sheet_2
+=== D69552
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 6
+sleep 4
+tap 91 199
+sleep 3
