@@ -184,3 +184,9 @@ shot J_entry_top
 up
 sleep 2
 shot J_entry_chapters
+=== J51179
+down
+sleep 1
+tapt ^More$
+sleep 2
+shot J_entry_expanded_details
