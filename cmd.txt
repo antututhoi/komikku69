@@ -312,3 +312,11 @@ sleep 8
 tapt ^More options$
 sleep 2
 shot F_details_manga_overflow
+=== F66786
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 6
+tapt ^More options$
+sleep 2
+tapt ^Settings$
+sleep 3
