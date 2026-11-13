@@ -587,3 +587,7 @@ back
 sleep 2
 tap 405 2231
 sleep 4
+=== S268042
+tapt ^Mieruko-chan$
+sleep 10
+shot S2_details_top
