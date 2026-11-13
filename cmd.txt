@@ -118,3 +118,5 @@ tapt ^seed_kotatsu.zip$
 sleep 5
 tapt ^Restore$
 sleep 12
+=== F65816
+shot F_restore_result
