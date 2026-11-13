@@ -780,3 +780,6 @@ sleep 4
 shot restore_opts
 tapt ^Restore$
 sleep 15
+=== m005
+tapt Show roots
+sleep 2
