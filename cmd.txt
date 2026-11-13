@@ -720,3 +720,5 @@ down
 === Tsundoku_go_tracking
 tapt ^Tracking$
 sleep 2
+=== Tsundoku_set_tracking_s0
+sleep 1
