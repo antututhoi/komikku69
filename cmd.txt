@@ -1118,3 +1118,5 @@ tapt ^Reader$
 sleep 2
 === SY_set_reader_s0
 sleep 1
+=== SY_set_reader_s1
+up
