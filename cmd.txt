@@ -378,3 +378,7 @@ shot F_settings_Appearance_p0
 up
 sleep 1
 shot F_settings_Appearance_p1
+=== F67195
+up
+sleep 1
+shot F_settings_Appearance_p2
