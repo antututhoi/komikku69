@@ -103,3 +103,9 @@ sleep 1
 tapt ^Group library by
 sleep 2
 shot J_library_groupby_dialog
+=== J50851
+back
+sleep 1
+tapt ^Display options$
+sleep 2
+shot J_library_display_options_tab1
