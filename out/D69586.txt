@@ -1,0 +1,42 @@
+# block D69586  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:41:37
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Check for new chapters' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,327  t='' d='' id=
+[    ]  288,305  t='Favorites' d='' id=
+[C   ]  540,460  t='' d='' id=
+[    ]  432,441  t='Favorite categories' d='' id=
+[    ]  283,489  t='2 of 2 on' d='' id=
+[C   ]  540,650  t='' d='' id=
+[    ]  454,610  t='Notifications settings' d='' id=
+[    ]  614,678  t='You will receive notifications about updates of manga you are reading' d='' id=
+[C   ]  540,841  t='' d='' id=
+[    ]  443,801  t='Feed swipe gestures' d='' id=
+[    ]  538,869  t='Swipe feed entries to mark them as read or remove them' d='' id=
+[Cxk ]  942,841  t='' d='' id=
+[C   ]  540,1032 t='' d='' id=
+[    ]  461,992  t='Dot instead of a count' d='' id=
+[    ]  538,1060 t='Mark the Feed tab with a plain dot instead of the number of unread updates' d='' id=
+[Ck  ]  942,1032 t='' d='' id=
+[C   ]  540,1223 t='' d='' id=
+[    ]  514,1183 t='Disable NSFW notifications' d='' id=
+[    ]  538,1251 t='Do not show notifications about NSFW manga updates' d='' id=
+[Ck  ]  942,1223 t='' d='' id=
+[C   ]  540,1414 t='' d='' id=
+[    ]  499,1374 t='Failed check notifications' d='' id=
+[    ]  538,1442 t='Notify when new chapters could not be fetched for some manga' d='' id=
+[Ck  ]  942,1414 t='' d='' id=
+[C   ]  540,1603 t='' d='' id=
+[    ]  482,1603 t='Download new chapters' d='' id=
+[C   ]  540,1791 t='' d='' id=
+[    ]  369,1772 t='Smart update' d='' id=
+[    ]  350,1820 t='Check everything' d='' id=
+[    ]  136,1956 t='DEBUG' d='' id=
+[C   ]  540,2091 t='' d='' id=
+[    ]  552,2051 t='Checking for new chapters log' d='' id=
+[    ]  614,2119 t='Debug information about background checks for new chapters' d='' id=
+[C   ]  540,2280 t='' d='' id=
+[    ]  529,2261 t='Disable battery optimization' d='' id=
+[    ]  513,2309 t='Helps with background updates checks' d='' id=
+[    ]  578,2396 t='Some devices have different system behavior, which may break background tasks.' d='' id=
