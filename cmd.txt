@@ -605,3 +605,21 @@ tap 415 88
 sleep 1
 shot entry_interval
 back
+=== r018
+launch app.komikku.mod69
+sleep 2
+tapt ^Library$
+sleep 2
+tap 881 213
+sleep 2
+shot lib_filter
+tapt ^Sort$
+sleep 1
+shot lib_sort
+tapt ^Display$
+sleep 1
+shot lib_display
+up
+shot lib_display2
+up
+shot lib_display3
