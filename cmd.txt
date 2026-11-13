@@ -660,3 +660,23 @@ sleep 2
 shot more_top
 up
 shot more_bottom
+=== r021
+tapt ^Statistics$
+sleep 3
+shot stats1
+up
+shot stats2
+up
+shot stats3
+back
+tapt ^Download queue$
+sleep 2
+shot dlqueue
+back
+tapt ^Browse$
+sleep 1
+tapt ^Sources$
+sleep 2
+tapt ^MangaDex
+sleep 6
+shot source_popular
