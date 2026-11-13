@@ -738,3 +738,6 @@ sleep 1
 down
 down
 down
+=== Tsundoku_go_browse
+tapt ^Browse$
+sleep 2
