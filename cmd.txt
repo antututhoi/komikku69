@@ -858,3 +858,5 @@ sleep 15
 stop app.chimahon
 launch app.chimahon
 sleep 7
+=== C54198
+shot C_library_main
