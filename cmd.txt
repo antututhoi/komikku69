@@ -819,3 +819,7 @@ shot S2_settings_Services_p0
 up
 sleep 1
 shot S2_settings_Services_p1
+=== S268334
+up
+sleep 1
+shot S2_settings_Services_p2
