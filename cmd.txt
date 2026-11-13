@@ -2503,3 +2503,15 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_bg_Auto
+=== K43754
+tap 540 1200
+sleep 1
+tap 929 2275
+sleep 2
+tapt ^General$
+sleep 1
+tapt ^Black$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_bg_Black
