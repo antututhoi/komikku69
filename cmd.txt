@@ -3042,3 +3042,17 @@ sleep 2
 tap 540 1200
 sleep 2
 shot K_rd_toggle_Flash_on_page_change_second_tap
+=== K44979
+tap 540 1200
+sleep 1
+tapt ^Settings$
+sleep 2
+tapt ^General$
+sleep 1
+tapt ^Always show chapter transition$
+sleep 1
+tap 540 250
+sleep 2
+tap 540 1200
+sleep 2
+shot K_rd_toggle_Always_show_chapter_transition_first_tap
