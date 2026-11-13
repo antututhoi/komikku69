@@ -1,0 +1,41 @@
+# block F67205  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:57:01
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,396  t='' d='' id=
+[    ]  262,323  t='Gaps in webtoon mode' d='' id=title
+[    ]  450,403  t='Show vertical gaps between pages in webtoon mode' d='' id=summary
+[k   ]  969,374  t='' d='' id=switchWidget
+[C   ]  540,593  t='' d='' id=
+[    ]  328,567  t='Reader controls in bottom bar' d='' id=title
+[    ]   87,621  t='None' d='' id=summary
+[C   ]  540,785  t='' d='' id=
+[    ]  186,759  t='Reader actions' d='' id=title
+[    ]  415,813  t='Configure actions for tappable screen areas' d='' id=summary
+[C   ]  540,1056 t='' d='' id=
+[    ]  286,951  t='Ergonomic reader control' d='' id=title
+[    ]  450,1085 t='Do not adjust the page switching direction to the reader mode, e. g. pressing th' d='' id=summary
+[k   ]  969,1056 t='' d='' id=switchWidget
+[C   ]  540,1328 t='' d='' id=
+[    ]  261,1302 t='Enable volume buttons' d='' id=title
+[    ]  383,1356 t='Use volume buttons for switching pages' d='' id=summary
+[k   ]  969,1328 t='' d='' id=switchWidget
+[C   ]  540,1573 t='' d='' id=
+[    ]  287,1494 t='Invert navigation controls' d='' id=title
+[    ]  450,1601 t='Swap the direction of volume button and directional hardware key navigation (lef' d='' id=summary
+[k   ]  969,1573 t='' d='' id=switchWidget
+[C   ]  540,1818 t='' d='' id=
+[    ]  193,1792 t='Page animation' d='' id=title
+[    ]  103,1846 t='Default' d='' id=summary
+[C   ]  540,2010 t='' d='' id=
+[    ]  226,1984 t='Enable pull gesture' d='' id=title
+[    ]  440,2038 t='Use pull gesture to switch chapters in webtoon' d='' id=summary
+[k   ]  969,2010 t='' d='' id=switchWidget
+[C   ]  540,2202 t='' d='' id=
+[    ]  213,2176 t='32-bit color mode' d='' id=title
+[    ]  443,2230 t='Reduces banding, but may impact performance' d='' id=summary
+[k   ]  969,2202 t='' d='' id=switchWidget
+[C   ]  540,2349 t='' d='' id=
+[    ]  393,2368 t='Reduce memory consumption (beta)' d='' id=title
+[    ]  450,2398 t='Reduce offscreen pages quality to use less memory' d='' id=summary
+[k   ]  969,2378 t='' d='' id=switchWidget
