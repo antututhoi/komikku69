@@ -1,0 +1,40 @@
+# block D69566  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:36:09
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Reading' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,309  t='' d='' id=
+[    ]  409,406  t='Double-tap zoom' d='' id=
+[    ]  543,454  t='How far a double tap zooms in paged mode' d='' id=
+[C   ]  304,573  t='' d='' id=
+[    ]  305,573  t='Standard' d='' id=
+[C   ]  775,573  t='' d='' id=
+[    ]  775,573  t='Fill screen' d='' id=
+[C   ]  540,768  t='' d='' id=
+[    ]  435,728  t='Show zoom buttons' d='' id=
+[    ]  538,796  t='Whether to show zoom control buttons in the bottom right corner' d='' id=
+[Ck  ]  942,768  t='' d='' id=
+[C   ]  540,959  t='' d='' id=
+[    ]  386,919  t='Webtoon zoom' d='' id=
+[    ]  538,987  t='Allow zoom in gesture or using double tap in webtoon mode' d='' id=
+[Cxk ]  942,959  t='' d='' id=
+[    ]  573,1138 t='Default webtoon zoom out' d='' id=
+[    ]  977,1138 t='0%' d='' id=
+[C   ]  540,1449 t='' d='' id=
+[    ]  472,1409 t='Gaps in webtoon mode' d='' id=
+[    ]  538,1477 t='Show vertical gaps between pages in webtoon mode' d='' id=
+[Ck  ]  942,1449 t='' d='' id=
+[    ]  172,1615 t='CONTROLS' d='' id=
+[C   ]  540,1748 t='' d='' id=
+[    ]  547,1729 t='Reader controls in bottom bar' d='' id=
+[    ]  482,1777 t='Choose the buttons and their order' d='' id=
+[C   ]  540,1936 t='' d='' id=
+[    ]  384,1917 t='Reader actions' d='' id=
+[    ]  548,1965 t='Configure actions for tappable screen areas' d='' id=
+[C   ]  540,2187 t='' d='' id=
+[    ]  501,2086 t='Ergonomic reader control' d='' id=
+[    ]  538,2216 t='Do not adjust the page switching direction to the reader mode, e. g. pressing th' d='' id=
+[Ck  ]  942,2188 t='' d='' id=
+[C   ]  540,2373 t='' d='' id=
+[    ]  468,2395 t='Enable volume buttons' d='' id=
+[Ck  ]  942,2389 t='' d='' id=
