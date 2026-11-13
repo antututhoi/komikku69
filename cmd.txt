@@ -196,3 +196,11 @@ sleep 1
 tap 1016 201
 sleep 2
 shot J_entry_more_menu
+=== J51181
+back
+sleep 1
+up
+sleep 1
+tapt Sort & Filter
+sleep 2
+shot J_entry_sort_filter_sheet
