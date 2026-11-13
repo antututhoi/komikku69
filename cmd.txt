@@ -338,3 +338,9 @@ sleep 2
 sleep 1
 === set_connections_s1
 up
+=== nav_browse
+back
+sleep 1
+down
+down
+down
