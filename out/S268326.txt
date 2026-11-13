@@ -1,0 +1,36 @@
+# block S268326  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:20:36
+! tapt 'Check for new chapters' at 415,1326
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  461,212  t='Check for new chapters' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,431  t='' d='' id=
+[    ]  450,431  t='Check for new chapters and notify about it' d='' id=title
+[xk  ]  927,431  t='' d='' id=switchWidget
+[C   ]  540,689  t='' d='' id=
+[    ]  168,637  t='Only on Wi-Fi' d='' id=title
+[    ]  450,718  t='Do not check for new chapters using metered network connections' d='' id=summary
+[k   ]  969,689  t='' d='' id=switchWidget
+[C   ]  540,908  t='' d='' id=
+[    ]  229,882  t='Frequency of check' d='' id=title
+[    ]  103,936  t='Default' d='' id=summary
+[C   ]  540,1100 t='' d='' id=
+[    ]  205,1074 t='Look for updates' d='' id=title
+[    ]  120,1128 t='Favorites' d='' id=summary
+[C   ]  540,1292 t='' d='' id=
+[    ]  228,1266 t='Favorite categories' d='' id=title
+[    ]  117,1320 t='2 of 2 on' d='' id=summary
+[C   ]  540,1510 t='' d='' id=
+[    ]  249,1458 t='Notifications settings' d='' id=title
+[    ]  540,1539 t='You will receive notifications about updates of manga you are reading' d='' id=summary
+[C   ]  540,1755 t='' d='' id=
+[    ]  303,1703 t='Disable NSFW notifications' d='' id=title
+[    ]  450,1784 t='Do not show notifications about NSFW manga updates' d='' id=summary
+[k   ]  969,1755 t='' d='' id=switchWidget
+[C   ]  540,1974 t='' d='' id=
+[    ]  271,1948 t='Download new chapters' d='' id=title
+[    ]   92,2002 t='Never' d='' id=summary
+[C   ]  540,2192 t='' d='' id=
+[    ]  239,2140 t='Unread updates only' d='' id=title
+[    ]  450,2221 t='Hide opened feed entries without deleting them. Turn off to show all updates aga' d='' id=summary
+[k   ]  969,2192 t='' d='' id=switchWidget
+[    ]  540,2389 t='Debug' d='' id=title
