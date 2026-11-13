@@ -893,3 +893,7 @@ shot D_settings_main
 up
 sleep 1
 shot D_settings_main_2
+=== D69271
+tapt ^Backup and restore$
+sleep 3
+shot D_settings_backup
