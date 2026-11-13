@@ -694,3 +694,5 @@ up
 up
 === Tsundoku_set_manga_reader_s5
 up
+=== Tsundoku_set_manga_reader_s6
+up
