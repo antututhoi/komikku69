@@ -58,3 +58,7 @@ sleep 12
 stop io.github.landwarderer.futon.nightly
 launch io.github.landwarderer.futon.nightly
 sleep 7
+=== F65586
+tapt ^Favorites$
+sleep 4
+shot F_favorites_main
