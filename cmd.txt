@@ -584,3 +584,24 @@ sleep 1
 shot page_layout
 back
 sleep 1
+=== r017
+tap 1007 213
+sleep 1
+shot entry_overflow
+back
+tap 881 213
+sleep 1
+shot entry_filter
+back
+tap 755 213
+sleep 1
+shot entry_download
+back
+tapt ^Tracking$
+sleep 2
+shot entry_tracking
+back
+tap 415 88
+sleep 1
+shot entry_interval
+back
