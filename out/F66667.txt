@@ -1,0 +1,5 @@
+# block F66667  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.main.ui.MainActivity  time: 10:45:26
+! NOT FOUND: ^More options$
+! NOT FOUND: ^List options$
+[S   ]  540,1200 t='' d='' id=pager
+[S   ]  540,1200 t='' d='' id=
