@@ -85,3 +85,11 @@ shot O_ext_manager
 tapt ^Expand$
 sleep 2
 shot O_ext_manager_expanded
+=== O64466
+tapt ^Enable all$
+sleep 2
+tapt ^OK$|^Enable$|^Confirm$|^Yes$
+sleep 3
+back
+sleep 2
+shot O_explore_sources
