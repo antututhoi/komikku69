@@ -1,0 +1,59 @@
+# block O70324  focus: org.skepsun.kototoro/org.skepsun.kototoro.main.ui.MainActivity  time: 11:46:09
+!   bash arg: -p
+  bash arg: org.skepsun.kototoro
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+Events injected: 1
+## Network stats: elapsed time=238ms (0ms mobile, 0ms wifi, 238ms not connected)
+
+! tapt 'Next' at 702,2220
+! tapt 'Next' at 702,2220
+! tapt 'Next' at 702,2220
+! tapt 'Done' at 701,2220
+[    ]  163,348  t='Quick access' d='' id=
+[C   ]  127,493  t='' d='' id=
+[    ]  127,522  t='Wizard' d='' id=
+[C   ]  334,493  t='' d='' id=
+[    ]  334,522  t='Favorites' d='' id=
+[C   ]  541,493  t='' d='' id=
+[    ]  541,522  t='Bookmarks' d='' id=
+[C   ]  747,493  t='' d='' id=
+[    ]  747,522  t='Local storage' d='' id=
+[C   ]  953,493  t='' d='' id=
+[    ]  953,522  t='Downloads' d='' id=
+[C   ]  127,693  t='' d='' id=
+[    ]  127,722  t='Random' d='' id=
+[C   ]  334,693  t='' d='' id=
+[    ]  334,722  t='Extension' d='' id=
+[C   ]  541,693  t='' d='' id=
+[    ]  541,722  t='Translation' d='' id=
+[C   ]  747,693  t='' d='' id=
+[    ]  747,722  t='Reader settings' d='' id=
+[C   ]  953,693  t='' d='' id=
+[    ]  953,722  t='Settings' d='' id=
+[    ]  111,212  t='Home' d='' id=
+[C   ]  496,212  t='' d='' id=
+[    ]  273,212  t='' d='Search' id=
+[    ]  397,212  t='Search…' d='' id=
+[C   ]  861,212  t='' d='' id=
+[    ]  864,212  t='' d='Filter' id=
+[C   ]  985,212  t='' d='' id=
+[    ]  985,212  t='' d='More' id=
+[C   ]  257,2221 t='' d='' id=
+[    ]  257,2192 t='' d='Home' id=
+[    ]  257,2253 t='Home' d='' id=
+[C   ]  398,2221 t='' d='' id=
+[    ]  398,2200 t='' d='History' id=
+[    ]  398,2253 t='History' d='' id=
+[C   ]  540,2221 t='' d='' id=
+[    ]  540,2200 t='' d='Favorites' id=
+[    ]  540,2253 t='Favorites' d='' id=
+[C   ]  682,2221 t='' d='' id=
+[    ]  682,2200 t='' d='Explore' id=
+[    ]  682,2253 t='Explore' d='' id=
+[C   ]  823,2221 t='' d='' id=
+[    ]  823,2200 t='' d='Feed' id=
+[    ]  823,2253 t='Feed' d='' id=
+[C   ] 1027,401  t='' d='' id=
+[    ] 1038,401  t='' d='Current: Manga. Switch space' id=
