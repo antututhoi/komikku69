@@ -27,3 +27,6 @@ tap 887 1149
 sleep 2
 tapt ^Allow$
 sleep 2
+=== b008
+tapt ^Next$
+sleep 1
