@@ -1220,3 +1220,5 @@ down
 === SY_go_e-hentai
 tapt ^E-Hentai$
 sleep 2
+=== SY_set_e-hentai_s0
+sleep 1
