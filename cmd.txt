@@ -272,3 +272,11 @@ shot J_recents_options_history
 tapt ^Updates$
 sleep 1
 shot J_recents_options_updates
+=== J51439
+back
+sleep 1
+tap 1016 201
+sleep 2
+tapt ^Stats$
+sleep 3
+shot J_stats_main
