@@ -135,3 +135,8 @@ sleep 1
 tap 540 2242
 sleep 3
 shot J_recents_main
+=== J50950
+tap 1016 201
+sleep 2
+shot J_recents_more_menu
+back
