@@ -1123,3 +1123,6 @@ tapt ^More$
 sleep 2
 tapt ^Settings$
 sleep 2
+=== C60783
+tapt ^Reader$
+sleep 2
