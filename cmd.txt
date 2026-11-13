@@ -783,3 +783,13 @@ sleep 15
 === m005
 tapt Show roots
 sleep 2
+=== m006
+tap 441 789
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed.tachibk$
+sleep 4
+shot restore_opts
+tapt ^Restore$
+sleep 15
