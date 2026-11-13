@@ -1,0 +1,38 @@
+# block D69137  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.main.ui.welcome.OnboardingActivity  time: 11:25:57
+!   bash arg: -p
+  bash arg: org.haziffe.dropsauce
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+Events injected: 1
+## Network stats: elapsed time=368ms (0ms mobile, 0ms wifi, 368ms not connected)
+
+[S   ]  540,1098 t='' d='' id=
+[    ]  540,548  t='Welcome' d='' id=
+[    ]  540,700  t='Welcome to your free and open-source manga app. Set things up in a minute, then ' d='' id=
+[    ]  243,847  t='Color scheme' d='' id=
+[S   ]  540,1061 t='' d='' id=
+[C   ]  204,1061 t='' d='' id=
+[    ]  146,938  t='Abc' d='' id=
+[    ]  204,1208 t='Totoro' d='' id=
+[C   ]  468,1061 t='' d='' id=
+[    ]  410,938  t='Abc' d='' id=
+[    ]  468,1208 t='Expressive' d='' id=
+[C   ]  732,1061 t='' d='' id=
+[    ]  674,938  t='Abc' d='' id=
+[    ]  732,1208 t='Miku' d='' id=
+[C   ]  951,1061 t='' d='' id=
+[    ]  938,938  t='Abc' d='' id=
+[    ]  992,1208 t='Asuka' d='' id=
+[    ]  150,1351 t='Theme' d='' id=
+[C   ]  240,1475 t='' d='' id=
+[    ]  240,1475 t='System' d='' id=
+[C   ]  540,1475 t='' d='' id=
+[    ]  540,1475 t='Light' d='' id=
+[C   ]  840,1475 t='' d='' id=
+[    ]  840,1475 t='Dark' d='' id=
+[C   ]  540,1682 t='' d='' id=
+[    ]  365,1682 t='Full black for OLED' d='' id=
+[Ck  ]  922,1682 t='' d='' id=
+[C   ]  958,2225 t='' d='' id=
+[    ]  958,2225 t='' d='Next' id=
