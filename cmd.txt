@@ -3489,3 +3489,11 @@ sleep 1
 === S47179
 tap 540 1200
 sleep 1
+=== S47180
+tapt ^Settings$
+sleep 2
+tapt ^Paged \(left to right\)$
+sleep 1
+tap 540 250
+sleep 2
+shot S_rd_mode_Paged_left_to_right
