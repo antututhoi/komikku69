@@ -39,3 +39,7 @@ sleep 2
 tapt ^tour$
 sleep 2
 shot O_restore_files
+=== O64226
+tapt ^seed_kotatsu.zip$
+sleep 5
+shot O_restore_3
