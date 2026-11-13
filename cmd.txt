@@ -1377,3 +1377,7 @@ tapt ^Dictionaries and audio$
 sleep 2
 === C61759
 shot C_settings_Dictionaries_and_audio_p0
+=== C61760
+up
+sleep 1
+shot C_settings_Dictionaries_and_audio_p1
