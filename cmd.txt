@@ -154,3 +154,7 @@ shot J_browse_main
 tapt ^Extensions$
 sleep 3
 shot J_browse_extensions_sheet
+=== J51038
+tapt ^Trust$
+sleep 2
+shot J_ext_trust_dialog
