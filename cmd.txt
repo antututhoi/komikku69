@@ -3090,3 +3090,7 @@ sleep 1
 tap 540 1200
 sleep 1
 shot M_menu
+=== M46092
+tap 540 1200
+sleep 1
+shot M_menu2
