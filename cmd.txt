@@ -1130,3 +1130,7 @@ tapt ^Next$
 sleep 2
 tapt ^Done$
 sleep 6
+=== O70325
+tapt ^Settings$
+sleep 4
+shot O_settings_main
