@@ -1,0 +1,40 @@
+# block F67204  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:56:51
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,355  t='' d='' id=
+[    ]  155,308  t='Scale mode' d='' id=title
+[    ]  122,346  t='Fit center' d='' id=summary
+[C   ]  540,536  t='' d='' id=
+[    ]  231,484  t='Show zoom buttons' d='' id=title
+[    ]  450,565  t='Whether to show zoom control buttons in the bottom right corner' d='' id=summary
+[k   ]  969,536  t='' d='' id=switchWidget
+[C   ]  540,755  t='' d='' id=
+[    ]  186,729  t='Webtoon zoom' d='' id=title
+[    ]  382,783  t='Allow zoom in gesture in webtoon mode' d='' id=summary
+[xk  ]  969,755  t='' d='' id=switchWidget
+[C   ]  540,963  t='' d='' id=
+[    ]  515,900  t='Default webtoon zoom out' d='' id=title
+[    ] 1013,902  t='0%' d='' id=summary
+[C   ]  540,1198 t='' d='' id=
+[    ]  262,1146 t='Gaps in webtoon mode' d='' id=title
+[    ]  450,1227 t='Show vertical gaps between pages in webtoon mode' d='' id=summary
+[k   ]  969,1198 t='' d='' id=switchWidget
+[C   ]  540,1417 t='' d='' id=
+[    ]  328,1391 t='Reader controls in bottom bar' d='' id=title
+[    ]   87,1445 t='None' d='' id=summary
+[C   ]  540,1609 t='' d='' id=
+[    ]  186,1583 t='Reader actions' d='' id=title
+[    ]  415,1637 t='Configure actions for tappable screen areas' d='' id=summary
+[C   ]  540,1880 t='' d='' id=
+[    ]  286,1775 t='Ergonomic reader control' d='' id=title
+[    ]  450,1909 t='Do not adjust the page switching direction to the reader mode, e. g. pressing th' d='' id=summary
+[k   ]  969,1880 t='' d='' id=switchWidget
+[C   ]  540,2152 t='' d='' id=
+[    ]  261,2126 t='Enable volume buttons' d='' id=title
+[    ]  383,2180 t='Use volume buttons for switching pages' d='' id=summary
+[k   ]  969,2152 t='' d='' id=switchWidget
+[C   ]  540,2324 t='' d='' id=
+[    ]  287,2318 t='Invert navigation controls' d='' id=title
+[    ]  450,2373 t='Swap the direction of volume button and directional hardware key navigation (lef' d='' id=summary
+[k   ]  969,2367 t='' d='' id=switchWidget
