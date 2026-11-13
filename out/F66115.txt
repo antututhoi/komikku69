@@ -1,0 +1,32 @@
+# block F66115  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.main.ui.MainActivity  time: 10:35:28
+[S   ]  540,1200 t='' d='' id=
+[C   ]  283,115  t='Local storage' d='' id=button_local
+[C   ]  797,115  t='Bookmarks' d='' id=button_bookmarks
+[C   ]  283,283  t='Random' d='' id=button_random
+[C   ]  797,283  t='Downloads' d='' id=button_downloads
+[    ]  464,432  t='Suggestions' d='' id=textView_title
+[C   ]  983,433  t='More' d='' id=button_more
+[S   ]  540,606  t='' d='' id=pager
+[S   ]  540,606  t='' d='' id=
+[C   ]  540,606  t='' d='' id=
+[    ]  613,558  t='The Emperor Has Returned' d='' id=textView_title
+[    ]  613,645  t='Fantasy, Action, Ongoing, Korean' d='' id=textView_subtitle
+[    ]  443,847  t='Manga sources' d='' id=textView_title
+[C   ]  962,848  t='Catalog' d='' id=button_more
+[CL  ]  150,1081 t='' d='' id=
+[    ]  150,1186 t='Scribble Hub' d='' id=textView_title
+[CL  ]  410,1081 t='' d='' id=
+[    ]  410,1159 t='Royal Road' d='' id=textView_title
+[CL  ]  669,1081 t='' d='' id=
+[    ]  669,1186 t='FreeWebNovel' d='' id=textView_title
+[CL  ]  929,1081 t='' d='' id=
+[    ]  929,1159 t='LNCrawler' d='' id=textView_title
+[CL  ]  150,1410 t='' d='' id=
+[    ]  150,1515 t='Wuxiaworld' d='' id=textView_title
+[CL  ]  410,1410 t='' d='' id=
+[    ]  410,1515 t='Ranobes' d='' id=textView_title
+[CL  ]  669,1410 t='' d='' id=
+[    ]  669,1515 t='Lnori' d='' id=textView_title
+[    ]  539,1199 t='ラ
+ノ
+ベ' d='' id=textViewWatermark
