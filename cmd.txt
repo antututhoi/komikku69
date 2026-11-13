@@ -459,3 +459,6 @@ tapt ^Library$
 sleep 2
 tapt Tensei Shitara Slime
 sleep 6
+=== r002
+up
+sleep 1
