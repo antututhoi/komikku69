@@ -2170,3 +2170,16 @@ sleep 1
 tap 540 130
 sleep 2
 shot K_libover_Continue reading button_toggled
+=== K42832
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 2
+sleep 1
+sleep 2
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+up
+tapt ^Continue reading button$
+tap 540 130
