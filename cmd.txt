@@ -505,3 +505,6 @@ up
 up
 === rd_sheet_mode_s5
 up
+=== r008
+tapt ^General$
+sleep 1
