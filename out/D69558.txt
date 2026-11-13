@@ -1,0 +1,38 @@
+# block D69558  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:34:14
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Appearance' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,429  t='' d='' id=
+[    ]  413,389  t='Show quick filters' d='' id=
+[    ]  538,457  t='Provides the ability to filter manga lists by certain parameters' d='' id=
+[Cxk ]  942,429  t='' d='' id=
+[C   ]  540,651  t='' d='' id=
+[    ]  538,611  t='Jump back to where you left off' d='' id=
+[    ]  538,710  t='Show a button in History that returns you to the spot you last scrolled to' d='' id=
+[Cxk ]  942,651  t='' d='' id=
+[C   ]  540,871  t='' d='' id=
+[    ]  586,852  t='Show reading progress indicators' d='' id=
+[    ]  427,900  t='Percentage read (e.g., 60%)' d='' id=
+[C   ]  540,1059 t='' d='' id=
+[    ]  376,1040 t='Badges in lists' d='' id=
+[    ]  288,1088 t='Favorites' d='' id=
+[    ]  147,1224 t='DETAILS' d='' id=
+[C   ]  540,1357 t='' d='' id=
+[    ]  497,1357 t='Collapse long description' d='' id=
+[Cxk ]  942,1358 t='' d='' id=
+[C   ]  540,1547 t='' d='' id=
+[    ]  479,1507 t='Show pages thumbnails' d='' id=
+[    ]  538,1575 t='Enable the "Pages" tab on the details screen' d='' id=
+[Cxk ]  942,1547 t='' d='' id=
+[C   ]  540,1736 t='' d='' id=
+[    ]  341,1717 t='Default tab' d='' id=
+[    ]  292,1765 t='Last used' d='' id=
+[C   ]  540,1924 t='' d='' id=
+[    ]  510,1905 t='Details screen appearance' d='' id=
+[    ]  555,1953 t='Screen style, backdrop image and blur effect' d='' id=
+[    ]  199,2089 t='MAIN SCREEN' d='' id=
+[C   ]  540,2222 t='' d='' id=
+[    ]  434,2222 t='Search suggestions' d='' id=
+[C   ]  540,2359 t='' d='' id=
+[    ]  451,2391 t='Main screen sections' d='' id=
