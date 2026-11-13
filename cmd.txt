@@ -743,3 +743,5 @@ sleep 3
 === S268315
 tapt ^Storage and network$
 sleep 3
+=== S268316
+shot S2_settings_Storage_and_network_p0
