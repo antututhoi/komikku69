@@ -3909,3 +3909,7 @@ shot SY_reader_hq_menu
 tapt ^Settings$
 sleep 2
 shot SY_reader_hq_sheet_top
+=== S49279
+up
+sleep 1
+shot SY_reader_hq_sheet_p1
