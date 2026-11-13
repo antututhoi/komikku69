@@ -1497,3 +1497,11 @@ sleep 1
 back
 sleep 2
 shot K_libover_Show category tabs_toggled
+=== K41333
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+up
+tapt ^Show\ category\ tabs$
+back
