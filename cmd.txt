@@ -2874,3 +2874,17 @@ shot K_rd_invert_None
 === K44966
 tap 540 1200
 sleep 1
+=== K44967
+tap 540 1200
+sleep 1
+tapt ^Settings$
+sleep 2
+tapt ^General$
+sleep 1
+tapt ^Gray$
+sleep 1
+tap 540 250
+sleep 2
+tap 540 1200
+sleep 2
+shot K_rd_bg_Gray
