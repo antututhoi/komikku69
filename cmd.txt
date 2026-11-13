@@ -495,3 +495,5 @@ tap 929 2275
 sleep 2
 === rd_sheet_mode_s0
 sleep 1
+=== rd_sheet_mode_s1
+up
