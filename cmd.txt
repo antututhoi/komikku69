@@ -520,3 +520,6 @@ stop io.github.landwarderer.futon.nightly
 sh monkey -p io.github.glitch228.kaisoku -c android.intent.category.LAUNCHER 1
 sleep 10
 shot S2_first_run
+=== F67226
+tapt ^Services$
+sleep 3
