@@ -1217,3 +1217,6 @@ sleep 1
 down
 down
 down
+=== SY_go_e-hentai
+tapt ^E-Hentai$
+sleep 2
