@@ -2527,3 +2527,15 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_toggle_Show page number
+=== K43756
+tap 540 1200
+sleep 1
+tap 929 2275
+sleep 2
+tapt ^General$
+sleep 1
+tapt ^Fullscreen$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_toggle_Fullscreen
