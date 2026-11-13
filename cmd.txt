@@ -3070,3 +3070,19 @@ sleep 2
 tap 540 1200
 sleep 2
 shot K_rd_toggle_Always_show_chapter_transition_second_tap
+=== M46025
+stop app.mihon
+launch app.mihon
+sleep 2
+sleep 1
+sleep 2
+tap 376 358
+sleep 2
+tap 540 695
+sleep 5
+up
+sleep 1
+tapt Vol.19 Ch.128
+sleep 8
+tapt ^Got it$
+sleep 1
