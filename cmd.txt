@@ -914,3 +914,9 @@ shot D_restore_need_ext
 tapt ^OK$
 sleep 10
 shot D_restore_after_ok
+=== D69342
+back
+sleep 1
+back
+sleep 3
+shot D_favorites_after_restore
