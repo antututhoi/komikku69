@@ -1354,3 +1354,7 @@ shot C_settings_Browse_p0
 up
 sleep 1
 shot C_settings_Browse_p1
+=== C61755
+up
+sleep 1
+shot C_settings_Browse_p2
