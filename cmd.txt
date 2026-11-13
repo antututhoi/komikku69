@@ -45,3 +45,7 @@ sleep 1
 tapt ^Backup and restore$
 sleep 2
 shot J_settings_backup
+=== J50634
+tapt ^Restore backup$
+sleep 3
+shot J_restore_picker
