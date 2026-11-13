@@ -2642,3 +2642,9 @@ sleep 1
 tap 540 250
 sleep 2
 shot P_d
+=== P44832
+tap 831 2275
+sleep 2
+up
+sleep 1
+shot P_e
