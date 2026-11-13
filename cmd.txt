@@ -843,3 +843,5 @@ down
 === MH_go_reader
 tapt ^Reader$
 sleep 2
+=== MH_set_reader_s0
+sleep 1
