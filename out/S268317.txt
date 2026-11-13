@@ -1,0 +1,35 @@
+# block S268317  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:17:51
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  424,212  t='Storage and network' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,317  t='' d='' id=
+[    ]  169,296  t='Data removal' d='' id=title
+[C   ]  540,435  t='' d='' id=
+[    ]  225,409  t='Content preloading' d='' id=title
+[    ]   92,463  t='Never' d='' id=summary
+[C   ]  540,627  t='' d='' id=
+[    ]  181,601  t='Preload pages' d='' id=title
+[    ]  152,655  t='Only on Wi-Fi' d='' id=summary
+[C   ]  540,819  t='' d='' id=
+[    ]   97,793  t='Proxy' d='' id=title
+[    ]  116,847  t='Disabled' d='' id=summary
+[C   ]  540,1011 t='' d='' id=
+[    ]  204,985  t='DNS over HTTPS' d='' id=title
+[    ]  116,1039 t='Disabled' d='' id=summary
+[C   ]  540,1203 t='' d='' id=
+[    ]  298,1177 t='Images optimization proxy' d='' id=title
+[    ]   87,1231 t='None' d='' id=summary
+[C   ]  540,1421 t='' d='' id=
+[    ]  391,1369 t='Apply DNS and image proxy settings' d='' id=title
+[    ]  540,1450 t='Save the selected options and reconnect idle network connections.' d='' id=summary
+[C   ]  540,1640 t='' d='' id=
+[    ]  308,1614 t='Reset DNS and image proxy' d='' id=title
+[    ]  513,1668 t='Disable DNS over HTTPS and image optimization proxy.' d='' id=summary
+[C   ]  540,1938 t='' d='' id=
+[    ]  209,1806 t='Ignore SSL errors' d='' id=title
+[    ]  450,1966 t='You can disable SSL certificates verification in case you face an SSL-related is' d='' id=summary
+[k   ]  969,1938 t='' d='' id=switchWidget
+[C   ]  540,2270 t='' d='' id=
+[    ]  298,2210 t='Disable connectivity check' d='' id=title
+[    ]  450,2317 t='Skip the connectivity check in case you have issues with it (e.g. going offline ' d='' id=summary
+[k   ]  969,2289 t='' d='' id=switchWidget
