@@ -739,3 +739,8 @@ sleep 2
 === m001
 host u=$(curl -s https://api.github.com/repos/mihonapp/mihon/releases/latest | jq -r '[.assets[]|select(.name|endswith(".apk"))]|(map(select(.name|test("x86_64")))+map(select(.name|test("universal")))+.)[0].browser_download_url'); echo $u; curl -sL "$u" -o /tmp/mihon.apk && adb install -r -g /tmp/mihon.apk
 sh pm list packages -3
+=== m002
+stop app.komikku.mod69
+launch app.mihon
+sleep 3
+shot first
