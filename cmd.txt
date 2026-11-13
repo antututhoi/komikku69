@@ -70,3 +70,8 @@ tapt ^Browse$
 sleep 2
 tapt ^Extensions$
 sleep 3
+=== b018
+tap 976 813
+sleep 2
+tapt ^Trust$
+sleep 3
