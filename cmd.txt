@@ -1484,3 +1484,21 @@ shot C_settings_popup_dictionary
 up
 sleep 1
 shot C_settings_popup_dictionary_2
+=== C62675
+stop app.chimahon
+launch app.chimahon
+sleep 5
+tapt ^More$
+sleep 2
+up
+sleep 1
+tapt ^Settings$
+sleep 2
+up
+sleep 1
+tapt ^OCR$
+sleep 2
+shot C_settings_ocr
+up
+sleep 1
+shot C_settings_ocr_2
