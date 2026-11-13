@@ -1,0 +1,8 @@
+# block F67227  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.main.ui.MainActivity  time: 11:04:06
+[    ]  446,887  t='Restore from backup' d='' id=alertTitle
+[Cxk ]  540,1056 t='Favorite categories' d='' id=
+[Cxk ]  540,1182 t='Favorites' d='' id=
+[Ck  ]  540,1308 t='Merge with existing data' d='' id=checkbox_merge
+[    ]  540,1413 t='Backup date: Nov 13, 2026 10:12 AM' d='' id=textView_subtitle
+[C   ]  621,1540 t='Cancel' d='' id=button_cancel
+[C   ]  829,1540 t='Restore' d='' id=button_restore
