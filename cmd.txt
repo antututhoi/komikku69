@@ -24,3 +24,7 @@ sleep 2
 left
 sleep 2
 shot F_state2
+=== F65473
+tap 476 510
+sleep 3
+shot F_main_history_empty
