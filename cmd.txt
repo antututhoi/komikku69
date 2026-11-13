@@ -886,3 +886,10 @@ shot D_welcome_step5
 tapt ^Confirm$
 sleep 5
 shot D_main
+=== D69251
+tap 91 199
+sleep 3
+shot D_settings_main
+up
+sleep 1
+shot D_settings_main_2
