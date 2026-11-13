@@ -242,3 +242,7 @@ shot F_explore_manga_mode
 tapt ^Favorites$
 sleep 5
 shot F_favorites_grid
+=== F66481
+tapt ^Mieruko-chan$
+sleep 10
+shot F_details_manga_top
