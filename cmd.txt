@@ -1222,3 +1222,5 @@ tapt ^E-Hentai$
 sleep 2
 === SY_set_e-hentai_s0
 sleep 1
+=== SY_set_e-hentai_s1
+up
