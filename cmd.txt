@@ -1020,3 +1020,9 @@ up
 up
 === Chimahon_set_browse_s3
 up
+=== Chimahon_back_browse
+back
+sleep 1
+down
+down
+down
