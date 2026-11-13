@@ -87,3 +87,16 @@ sleep 3
 === b020
 launch app.komikku
 sleep 3
+=== b021
+tapt ^OK$
+tapt ^Next$
+tapt ^Select a folder$
+sleep 3
+tapt ^Movies$
+sleep 2
+tapt USE THIS FOLDER
+sleep 2
+tapt ^ALLOW$
+sleep 2
+tapt ^Next$
+sleep 1
