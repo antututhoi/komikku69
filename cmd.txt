@@ -902,3 +902,9 @@ sleep 2
 sleep 1
 === MH_set_browse_s1
 up
+=== MH_back_browse
+back
+sleep 1
+down
+down
+down
