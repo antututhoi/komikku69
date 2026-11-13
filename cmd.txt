@@ -775,3 +775,7 @@ shot S2_settings_Downloads_p0
 up
 sleep 1
 shot S2_settings_Downloads_p1
+=== S268324
+up
+sleep 1
+shot S2_settings_Downloads_p2
