@@ -424,3 +424,7 @@ shot F_settings_Reader_settings_p2
 up
 sleep 1
 shot F_settings_Reader_settings_p3
+=== F67206
+up
+sleep 1
+shot F_settings_Reader_settings_p4
