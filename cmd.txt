@@ -3847,3 +3847,7 @@ sleep 2
 tapt ^Updates$
 sleep 3
 shot MH_updates_screen_default
+=== M49065
+tap 754 212
+sleep 2
+shot MH_updates_filter_sheet
