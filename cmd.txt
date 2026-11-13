@@ -167,3 +167,8 @@ up
 shot lib_p1
 up
 shot lib_p2
+=== b028
+down
+down
+tapt ^Smart update$
+sleep 2
