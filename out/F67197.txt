@@ -1,0 +1,40 @@
+# block F67197  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:54:59
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,371  t='' d='' id=
+[    ]  271,325  t='Show pages thumbnails' d='' id=title
+[    ]  416,379  t='Enable the "Pages" tab on the details screen' d='' id=summary
+[xk  ]  969,355  t='' d='' id=switchWidget
+[C   ]  540,543  t='' d='' id=
+[    ]  148,517  t='Default tab' d='' id=title
+[    ]  125,571  t='Last used' d='' id=summary
+[    ]  540,727  t='Main screen' d='' id=title
+[C   ]  540,870  t='' d='' id=
+[    ]  417,844  t='Change Home Screen Background Font' d='' id=title
+[    ]   80,898  t='Bold' d='' id=summary
+[C   ]  540,1088 t='' d='' id=
+[    ]  232,1036 t='Search suggestions' d='' id=title
+[    ]  540,1117 t='Manga sources, Genres, Recent queries, Authors, Suggested queries, Recent source' d='' id=summary
+[C   ]  540,1307 t='' d='' id=
+[    ]  247,1281 t='Main screen sections' d='' id=title
+[    ]  312,1335 t='History, Favorites, Explore, Feed' d='' id=summary
+[C   ]  540,1552 t='' d='' id=
+[    ]  331,1473 t='Show floating Continue button' d='' id=title
+[    ]  450,1580 t='Allows to continue reading in a one click. This button will not appear in incogn' d='' id=summary
+[xk  ]  969,1552 t='' d='' id=switchWidget
+[C   ]  540,1771 t='' d='' id=
+[    ]  323,1771 t='Show labels in navigation bar' d='' id=title
+[k   ]  969,1771 t='' d='' id=switchWidget
+[C   ]  540,1964 t='' d='' id=
+[    ]  204,1912 t='Pin navigation UI' d='' id=title
+[    ]  450,1993 t='Do not hide navigation bar and search view on scroll' d='' id=summary
+[k   ]  969,1964 t='' d='' id=switchWidget
+[C   ]  540,2183 t='' d='' id=
+[    ]  206,2157 t='Exit confirmation' d='' id=title
+[    ]  314,2211 t='Press Back twice to exit the app' d='' id=summary
+[k   ]  969,2183 t='' d='' id=switchWidget
+[C   ]  540,2339 t='' d='' id=
+[    ]  329,2349 t='Show recent manga shortcuts' d='' id=title
+[    ]  450,2389 t='Make recent manga available by long pressing on application icon' d='' id=summary
+[xk  ]  969,2369 t='' d='' id=switchWidget
