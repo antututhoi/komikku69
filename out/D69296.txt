@@ -1,0 +1,11 @@
+# block D69296  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:28:54
+! tapt 'Restore from Tachiyomi/Mihon' at 556,1274
+! tapt 'Show roots' at 73,191
+! tapt 'tour' at 221,738
+! tapt 'seed.tachibk' at 788,1186
+[    ]  540,1215 t='Your backup uses these sources. Install their extensions — they're listed under ' d='' id=
+[C   ]  540,1461 t='' d='' id=
+[    ]  540,1461 t='OK' d='' id=
+[    ]  527,991  t='Install extensions' d='' id=
+[C   ]  900,992  t='' d='' id=
+[    ]  901,993  t='' d='Cancel' id=
