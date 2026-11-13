@@ -192,3 +192,12 @@ tap 1007 213
 sleep 40
 host adb logcat -d --pid=$(adb shell pidof app.komikku.mod69) | grep -E 'Worker result|Starting work|Exception' | cut -c1-200
 sleep 2
+=== b031
+tapt ^More$
+sleep 2
+up
+up
+tapt ^Settings$
+sleep 2
+tapt ^Appearance$
+sleep 2
