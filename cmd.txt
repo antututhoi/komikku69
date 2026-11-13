@@ -190,3 +190,9 @@ sleep 1
 tapt ^More$
 sleep 2
 shot J_entry_expanded_details
+=== J51180
+down
+sleep 1
+tap 1016 201
+sleep 2
+shot J_entry_more_menu
