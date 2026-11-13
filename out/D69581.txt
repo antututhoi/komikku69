@@ -1,0 +1,31 @@
+# block D69581  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:40:16
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Downloads' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[    ]  159,364  t='GENERAL' d='' id=
+[C   ]  540,497  t='' d='' id=
+[    ]  484,478  t='Local manga directories' d='' id=
+[    ]  274,526  t='2 items' d='' id=
+[C   ]  540,685  t='' d='' id=
+[    ]  411,666  t='Downloads folder' d='' id=
+[    ]  394,714  t='Internal shared storage' d='' id=
+[C   ]  540,873  t='' d='' id=
+[    ]  517,854  t='Preferred download format' d='' id=
+[    ]  297,902  t='Automatic' d='' id=
+[C   ]  540,1061 t='' d='' id=
+[    ]  598,1042 t='Downloading over cellular network' d='' id=
+[    ]  329,1090 t='Ask every time' d='' id=
+[C   ]  540,1251 t='' d='' id=
+[    ]  493,1211 t='Rebuild Downloads Index' d='' id=
+[    ]  614,1279 t='Scan download folders to verify previous downloads and build index files for com' d='' id=
+[C   ]  540,1442 t='' d='' id=
+[    ]  529,1402 t='Disable battery optimization' d='' id=
+[    ]  614,1470 t='Might help with getting the download started if you have any issues with it' d='' id=
+[    ]  578,1615 t='You can enable download slowdown for each manga source individually in the sourc' d='' id=
+[    ]  207,1768 t='SAVING PAGES' d='' id=
+[C   ]  540,1901 t='' d='' id=
+[    ]  521,1882 t='Default page save directory' d='' id=
+[    ]  274,1930 t='Not set' d='' id=
+[C   ]  540,2089 t='' d='' id=
+[    ]  538,2089 t='Ask for the destination dir every time' d='' id=
+[Cxk ]  942,2090 t='' d='' id=
