@@ -285,3 +285,7 @@ shot F_details_after_reader
 tapt ^More options$
 sleep 2
 shot F_details_manga_overflow
+=== F66642
+tapt ^Got it$
+sleep 1
+shot F_x
