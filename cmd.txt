@@ -1113,3 +1113,6 @@ sleep 1
 down
 down
 down
+=== SY_go_reader
+tapt ^Reader$
+sleep 2
