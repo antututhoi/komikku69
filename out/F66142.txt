@@ -1,0 +1,55 @@
+# block F66142  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.sources.catalog.SourcesCatalogActivity  time: 10:36:26
+[S   ]  540,1200 t='' d='' id=
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  365,212  t='Sources catalog' d='' id=
+[C   ] 1016,211  t='' d='Search' id=action_search
+[S   ]  540,359  t='' d='' id=scrollView_chips
+[CL  ]  266,359  t='Various languages' d='' id=
+[    ]  459,359  t='' d='Remove Various languages' id=
+[CL  ]  621,359  t='New' d='' id=
+[CL  ]  839,359  t='Manga' d='' id=
+[CL  ] 1019,359  t='Comics' d='' id=
+[C   ]  540,496  t='' d='' id=
+[    ]  517,472  t='ComicK' d='' id=textView_title
+[    ]  517,524  t='Manga, Various languages' d='' id=textView_description
+[C   ]  985,496  t='' d='Add' id=imageView_add
+[C   ]  540,643  t='' d='' id=
+[    ]  517,619  t='HoloEarth' d='' id=textView_title
+[    ]  517,671  t='Manga, Various languages' d='' id=textView_description
+[C   ]  985,643  t='' d='Add' id=imageView_add
+[C   ]  540,790  t='' d='' id=
+[    ]  517,766  t='Kagane' d='' id=textView_title
+[    ]  517,818  t='Manga, Various languages' d='' id=textView_description
+[C   ]  985,790  t='' d='Add' id=imageView_add
+[C   ]  540,937  t='' d='' id=
+[    ]  517,913  t='Kiutaku' d='' id=textView_title
+[    ]  517,965  t='Other, Various languages' d='' id=textView_description
+[C   ]  985,937  t='' d='Add' id=imageView_add
+[C   ]  540,1084 t='' d='' id=
+[    ]  517,1060 t='Lunar Manga' d='' id=textView_title
+[    ]  517,1112 t='Manga, Various languages' d='' id=textView_description
+[C   ]  985,1084 t='' d='Add' id=imageView_add
+[C   ]  540,1231 t='' d='' id=
+[    ]  517,1207 t='MahouShoujobu' d='' id=textView_title
+[    ]  517,1259 t='Manga, Various languages' d='' id=textView_description
+[C   ]  985,1231 t='' d='Add' id=imageView_add
+[C   ]  540,1378 t='' d='' id=
+[    ]  517,1354 t='MangaReader.To' d='' id=textView_title
+[    ]  517,1406 t='Manga, Various languages' d='' id=textView_description
+[C   ]  985,1378 t='' d='Add' id=imageView_add
+[C   ]  540,1525 t='' d='' id=
+[    ]  517,1501 t='Manhwa210' d='' id=textView_title
+[    ]  517,1553 t='Manhwa, Various languages' d='' id=textView_description
+[C   ]  985,1525 t='' d='Add' id=imageView_add
+[C   ]  540,1672 t='' d='' id=
+[    ]  517,1648 t='MissKon' d='' id=textView_title
+[    ]  517,1700 t='Other, Various languages' d='' id=textView_description
+[C   ]  985,1672 t='' d='Add' id=imageView_add
+[C   ]  540,1819 t='' d='' id=
+[    ]  517,1795 t='Project Suki' d='' id=textView_title
+[    ]  517,1847 t='Manga, Various languages' d='' id=textView_description
+[C   ]  985,1819 t='' d='Add' id=imageView_add
+[C   ]  540,1966 t='' d='' id=
+[    ]  517,1942 t='XComic' d='' id=textView_title
+[    ]  517,1994 t='Manga, Various languages' d='' id=textView_description
+[C   ]  985,1966 t='' d='Add' id=imageView_add
