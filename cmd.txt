@@ -1085,3 +1085,6 @@ sleep 6
 sleep 4
 tap 91 199
 sleep 3
+=== D69583
+tapt ^Check for new chapters$
+sleep 3
