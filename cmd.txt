@@ -860,3 +860,10 @@ launch app.chimahon
 sleep 7
 === C54198
 shot C_library_main
+=== C54199
+tapt ^Browse$
+sleep 3
+shot C_browse_sources
+tapt ^Extensions$
+sleep 3
+shot C_browse_extensions
