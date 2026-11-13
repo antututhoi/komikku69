@@ -1,0 +1,30 @@
+# block D69492  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.reader.ui.ReaderActivity  time: 11:32:21
+! tapt 'Options' at 980,209
+[C   ]  540,1200 t='' d='' id=touch_outside
+[C   ]  540,957  t='' d='Expanded. Drag handle' id=sh_dragHandle
+[S   ]  540,1688 t='' d='' id=
+[C   ]  180,1191 t='' d='' id=
+[    ]  180,1245 t='Standard' d='' id=
+[C   ]  419,1191 t='' d='' id=
+[    ]  420,1245 t='R-to-L' d='' id=
+[C   ]  659,1191 t='' d='' id=
+[    ]  659,1245 t='Vertical' d='' id=
+[C   ]  899,1191 t='' d='' id=
+[    ]  899,1245 t='Webtoon' d='' id=
+[    ]  512,1373 t='The chosen configuration will be remembered for this manga' d='' id=
+[C   ]  284,1595 t='' d='' id=
+[    ]  284,1566 t='' d='Automatic scroll' id=
+[    ]  284,1644 t='Automatic scroll' d='' id=
+[C   ]  795,1595 t='' d='' id=
+[    ]  795,1566 t='' d='Save page' id=
+[    ]  796,1644 t='Save page' d='' id=
+[C   ]  365,1945 t='' d='' id=
+[    ]  309,1906 t='Settings' d='' id=
+[    ]  400,1974 t='Advanced reader options' d='' id=
+[C   ]  876,1945 t='' d='' id=
+[C   ]  362,2241 t='' d='' id=
+[    ]  281,2241 t='' d='Reading' id=
+[    ]  392,2241 t='Reading' d='' id=
+[C   ]  718,2241 t='' d='' id=
+[    ]  663,2241 t='' d='More' id=
+[    ]  748,2241 t='More' d='' id=
