@@ -797,3 +797,7 @@ shot S2_settings_Check_for_new_chapters_p0
 up
 sleep 1
 shot S2_settings_Check_for_new_chapters_p1
+=== S268329
+up
+sleep 1
+shot S2_settings_Check_for_new_chapters_p2
