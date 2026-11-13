@@ -2575,3 +2575,15 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_filter_Grayscale
+=== K43760
+tap 540 1200
+sleep 1
+tap 929 2275
+sleep 2
+tapt ^Custom filter$
+sleep 1
+tapt ^Inverted$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_filter_Inverted
