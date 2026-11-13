@@ -1,0 +1,36 @@
+# block D69573  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:38:07
+! tapt 'Extensions' at 339,881
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,270  t='' d='Extensions' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1406 t='' d='' id=
+[    ]  159,486  t='CATALOG' d='' id=
+[C   ]  540,619  t='' d='' id=
+[    ]  432,600  t='Manage extensions' d='' id=
+[    ]  474,648  t='Add, remove or update extensions' d='' id=
+[C   ]  540,807  t='' d='' id=
+[    ]  402,788  t='Extension stores' d='' id=
+[    ]  572,836  t='Add, edit, remove, and refresh extension stores' d='' id=
+[C   ]  540,997  t='' d='' id=
+[    ]  479,957  t='Migrate broken sources' d='' id=
+[    ]  614,1025 t='Replace every affected favorite and history entry with the best working alternat' d='' id=
+[C   ]  540,1249 t='' d='' id=
+[    ]  438,1148 t='Sandbox extensions' d='' id=
+[    ]  538,1278 t='Install extensions inside the app's sandboxed storage. No system install permiss' d='' id=
+[Ck  ]  942,1250 t='' d='' id=
+[    ]  196,1477 t='APPEARANCE' d='' id=
+[C   ]  540,1610 t='' d='' id=
+[    ]  366,1591 t='Sorting order' d='' id=
+[    ]  264,1639 t='Name' d='' id=
+[C   ]  540,1798 t='' d='' id=
+[    ]  409,1798 t='Show in grid view' d='' id=
+[Cxk ]  942,1799 t='' d='' id=
+[    ]  132,1963 t='FILTER' d='' id=
+[    ]  450,2078 t='Default browse order' d='' id=
+[    ]  483,2126 t='Applies to every installed extension' d='' id=
+[C   ]  304,2245 t='' d='' id=
+[    ]  304,2245 t='Popular' d='' id=
+[C   ]  775,2245 t='' d='' id=
+[    ]  775,2245 t='Latest' d='' id=
+[C   ]  540,2373 t='' d='' id=
+[    ]  403,2395 t='Show extensions' d='' id=
