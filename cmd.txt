@@ -28,3 +28,7 @@ shot F_state2
 tap 476 510
 sleep 3
 shot F_main_history_empty
+=== F65492
+tapt ^More options$
+sleep 2
+shot F_main_overflow
