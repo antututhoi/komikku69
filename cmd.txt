@@ -1877,3 +1877,11 @@ sleep 1
 up
 tapt ^Show number of items$
 tap 540 130
+=== t001
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 3
+tap 108 2232
+sleep 2
+tap 881 213
+sleep 2
