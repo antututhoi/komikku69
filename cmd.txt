@@ -673,3 +673,7 @@ shot S2_settings_Appearance_p2
 up
 sleep 1
 shot S2_settings_Appearance_p3
+=== S268300
+up
+sleep 1
+shot S2_settings_Appearance_p4
