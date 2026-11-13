@@ -3194,3 +3194,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot M_rd_scale_Original_size
+=== M46126
+tapt ^Settings$
+sleep 2
+up
+tapt ^Smart fit$
+sleep 1
+tap 540 250
+sleep 2
+shot M_rd_scale_Smart_fit
