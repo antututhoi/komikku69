@@ -3851,3 +3851,12 @@ shot MH_updates_screen_default
 tap 754 212
 sleep 2
 shot MH_updates_filter_sheet
+=== M49079
+tapt ^Categories$
+sleep 2
+shot MH_updates_filter_categories
+back
+sleep 1
+tap 880 212
+sleep 3
+shot MH_upcoming_screen
