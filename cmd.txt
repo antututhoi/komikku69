@@ -458,3 +458,13 @@ sleep 2
 tapt ^Select a folder$
 sleep 3
 shot T_x1
+=== T52360
+tapt ^Documents$
+sleep 2
+tapt ^USE THIS FOLDER$
+sleep 2
+tapt ^ALLOW$|^Allow$
+sleep 3
+tapt ^Next$
+sleep 2
+shot T_x2
