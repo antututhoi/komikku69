@@ -134,3 +134,8 @@ text Mieruko
 key 66
 sleep 12
 shot F_search_results
+=== F65963
+sleep 8
+up
+sleep 2
+shot F_search_results2
