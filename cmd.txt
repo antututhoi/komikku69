@@ -19,3 +19,6 @@ tapt USE THIS FOLDER
 sleep 2
 tapt ^ALLOW$
 sleep 2
+=== b006
+tapt ^Next$
+sleep 1
