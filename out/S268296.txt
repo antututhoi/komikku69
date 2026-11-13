@@ -1,0 +1,49 @@
+# block S268296  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:12:27
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,418  t='' d='' id=
+[    ]  266,366  t='Animated menus · Beta' d='' id=title
+[    ]  450,447  t='Reveal popup menus with a rounded animation. Follows the system animation settin' d='' id=summary
+[k   ]  969,418  t='' d='' id=switchWidget
+[C   ]  540,716  t='' d='' id=
+[    ]  260,611  t='Blur behind bars · Beta' d='' id=title
+[    ]  450,745  t='Blur only the main screen content behind the status bar and floating navigation ' d='' id=summary
+[k   ]  969,716  t='' d='' id=switchWidget
+[C   ]  540,1041 t='' d='' id=
+[    ]  298,962  t='Show in TV launcher · Beta' d='' id=title
+[    ]  450,1069 t='Show the existing app entrance in Android TV launchers. The regular launcher is ' d='' id=summary
+[k   ]  969,1041 t='' d='' id=switchWidget
+[    ]  540,1239 t='Color scheme' d='' id=title
+[S   ]  540,1478 t='' d='' id=scrollView
+[C   ]  160,1478 t='' d='' id=
+[C   ]  152,1447 t='' d='' id=card
+[    ]   86,1353 t='Abc' d='' id=
+[    ]  152,1631 t='Totoro' d='' id=textView_title
+[C   ]  405,1478 t='' d='' id=
+[C   ]  405,1447 t='' d='' id=card
+[    ]  339,1353 t='Abc' d='' id=
+[    ]  405,1631 t='Dynamic' d='' id=textView_title
+[C   ]  658,1478 t='' d='' id=
+[C   ]  658,1447 t='' d='' id=card
+[    ]  592,1353 t='Abc' d='' id=
+[    ]  658,1631 t='Expressive (Test)' d='' id=textView_title
+[C   ]  911,1478 t='' d='' id=
+[C   ]  911,1447 t='' d='' id=card
+[    ]  845,1353 t='Abc' d='' id=
+[    ]  911,1631 t='Miku' d='' id=textView_title
+[C   ] 1059,1478 t='' d='' id=
+[C   ] 1067,1447 t='' d='' id=card
+[    ] 1075,1353 t='Abc' d='' id=
+[    ] 1067,1631 t='Asuka' d='' id=textView_title
+[C   ]  540,1795 t='' d='' id=
+[    ]  194,1769 t='Custom themes' d='' id=title
+[    ]  285,1823 t='No custom themes imported' d='' id=summary
+[C   ]  540,2013 t='' d='' id=
+[    ]  208,1961 t='Import theme file' d='' id=title
+[    ]  540,2042 t='Import an Idle Fantasy compatible Material 3 theme JSON. Colors follow its prima' d='' id=summary
+[C   ]  540,2232 t='' d='' id=
+[    ]  258,2206 t='Delete selected theme' d='' id=title
+[    ]  285,2260 t='No custom themes imported' d='' id=summary
+[C   ]  540,2364 t='' d='' id=
+[    ]  109,2385 t='Theme' d='' id=title
