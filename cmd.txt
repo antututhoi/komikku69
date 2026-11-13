@@ -861,3 +861,8 @@ shot S2_settings_Manga_sources_p3
 up
 sleep 1
 shot S2_settings_Manga_sources_p4
+=== D69137
+stop io.github.glitch228.kaisoku
+sh monkey -p org.haziffe.dropsauce -c android.intent.category.LAUNCHER 1
+sleep 10
+shot D_first_run
