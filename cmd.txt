@@ -9,3 +9,8 @@ shot F_after_skip
 === F65112
 tapt ^Next$|^Get Started$|^Done$
 sleep 3
+=== F65113
+tapt ^Next$|^Get Started$|^Done$
+sleep 3
+=== F65352
+shot F_state
