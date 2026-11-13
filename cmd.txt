@@ -813,3 +813,8 @@ sleep 1
 down
 down
 down
+=== C54050
+stop app.tsundoku
+launch app.chimahon
+sleep 8
+shot C_first_run
