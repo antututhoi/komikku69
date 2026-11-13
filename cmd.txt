@@ -113,3 +113,18 @@ tapt ^Restore backup$
 sleep 3
 tapt Show roots
 sleep 2
+=== b023
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tap 783 975
+sleep 4
+tapt ^Restore$
+sleep 15
+back
+sleep 1
+tapt ^Browse$
+sleep 2
+tapt ^Extensions$
+sleep 3
