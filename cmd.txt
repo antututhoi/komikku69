@@ -3126,3 +3126,11 @@ sleep 1
 tap 540 250
 sleep 2
 shot M_rd_mode_Paged_left_to_right
+=== M46118
+tapt ^Settings$
+sleep 2
+tapt ^Paged \(vertical\)$
+sleep 1
+tap 540 250
+sleep 2
+shot M_rd_mode_Paged_vertical
