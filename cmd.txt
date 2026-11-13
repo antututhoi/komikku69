@@ -196,3 +196,10 @@ sleep 1
 tap 675 2263
 sleep 4
 shot F_explore_sources4
+=== F66271
+home
+launch io.github.landwarderer.futon.nightly
+sleep 6
+tap 675 2263
+sleep 4
+shot F_explore_sources4
