@@ -1,0 +1,36 @@
+# block F66543  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.reader.ui.ReaderActivity  time: 10:42:58
+! tapt 'Chapters' at 849,2253
+[C   ]  540,1200 t='' d='' id=touch_outside
+[C   ]  540,670  t='' d='Collapsed. Drag handle' id=sh_dragHandle
+[C   ]  232,817  t='' d='' id=
+[C   ]  359,817  t='' d='' id=
+[S   ]  540,1650 t='' d='' id=pager
+[S   ]  540,1650 t='' d='' id=
+[S   ]  540,1650 t='' d='' id=recyclerView_chapters
+[    ]  477,955  t='Volume 1' d='' id=textView_title
+[CL  ]  540,1095 t='' d='' id=
+[    ]  540,1070 t='Vol 1 Chapter 1' d='' id=textView_title
+[    ]  540,1125 t='#1 • Nov 27, 2018 • Fairy Knight University' d='' id=textView_description
+[CL  ]  540,1263 t='' d='' id=
+[    ]  540,1238 t='Vol 1 Chapter 2' d='' id=textView_title
+[    ]  540,1293 t='#2 • Nov 27, 2018 • Fairy Knight University' d='' id=textView_description
+[CL  ]  540,1431 t='' d='' id=
+[    ]  540,1406 t='Vol 1 Chapter 3' d='' id=textView_title
+[    ]  540,1461 t='#3 • Dec 9, 2018 • Fairy Knight University' d='' id=textView_description
+[CL  ]  540,1599 t='' d='' id=
+[    ]  540,1574 t='Vol 1 Chapter 4' d='' id=textView_title
+[    ]  540,1629 t='#4 • Dec 23, 2018 • Fairy Knight University' d='' id=textView_description
+[CL  ]  540,1767 t='' d='' id=
+[    ]  540,1742 t='Bonus' d='' id=textView_title
+[    ]  540,1797 t='#4.5 • Jan 23, 2019 • Fairy Knight University' d='' id=textView_description
+[CL  ]  540,1935 t='' d='' id=
+[    ]  540,1910 t='Vol 1 Chapter 5' d='' id=textView_title
+[    ]  540,1965 t='#5 • Jan 23, 2019 • Fairy Knight University' d='' id=textView_description
+[CL  ]  540,2103 t='' d='' id=
+[    ]  540,2078 t='Vol 1 Chapter 6' d='' id=textView_title
+[    ]  540,2133 t='#6 • Feb 10, 2019 • Fairy Knight University' d='' id=textView_description
+[CL  ]  540,2271 t='' d='' id=
+[    ]  540,2246 t='Vol 1 Chapter 7' d='' id=textView_title
+[    ]  540,2301 t='#7 • Feb 20, 2019 • Fairy Knight University' d='' id=textView_description
+[CL  ]  540,2377 t='' d='' id=
+[    ]  540,2393 t='Vol 1 Chapter 8' d='' id=textView_title
