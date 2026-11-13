@@ -954,3 +954,5 @@ up
 up
 tapt ^Player$
 sleep 2
+=== Chimahon_set_player_s0
+sleep 1
