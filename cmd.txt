@@ -81,3 +81,7 @@ sleep 3
 tapt ^Extension management$
 sleep 4
 shot O_ext_manager
+=== O64445
+tapt ^Expand$
+sleep 2
+shot O_ext_manager_expanded
