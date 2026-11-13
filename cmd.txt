@@ -88,3 +88,12 @@ shot F_catalog_search2
 tapt ^Various languages$
 sleep 3
 shot F_catalog_search3
+=== F65775
+tapt ^Add$
+sleep 2
+back
+sleep 1
+back
+sleep 1
+back
+sleep 2
