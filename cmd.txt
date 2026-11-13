@@ -292,3 +292,6 @@ tap 1016 201
 sleep 2
 tapt ^Settings$
 sleep 2
+=== J2K_go_general
+tapt ^General$
+sleep 2
