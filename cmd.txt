@@ -357,3 +357,9 @@ up
 up
 === set_browse_s4
 up
+=== nav_data_and_storage
+back
+sleep 1
+down
+down
+down
