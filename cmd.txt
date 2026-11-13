@@ -1102,3 +1102,10 @@ shot D_settings_Check_for_new_chapters_p2
 up
 sleep 1
 shot D_settings_Check_for_new_chapters_p3
+=== D69588
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 6
+sleep 4
+tap 91 199
+sleep 3
