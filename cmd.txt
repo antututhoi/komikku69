@@ -1160,3 +1160,5 @@ tapt ^Tracking$
 sleep 2
 === SY_set_tracking_s0
 sleep 1
+=== SY_set_tracking_s1
+up
