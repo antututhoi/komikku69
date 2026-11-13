@@ -1324,3 +1324,14 @@ shot K_libdisp_sheet_List
 back
 sleep 2
 shot K_libmode_List
+=== K41315
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+tapt ^Cover\-only\ grid$
+sleep 1
+shot K_libdisp_sheet_Cover-only grid
+back
+sleep 2
+shot K_libmode_Cover-only grid
