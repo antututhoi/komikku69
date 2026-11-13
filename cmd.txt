@@ -462,3 +462,12 @@ sleep 6
 === r002
 up
 sleep 1
+=== r003
+back
+sleep 1
+tapt ^Plan to read$
+sleep 2
+tapt ^Blue Lock$
+sleep 6
+up
+sleep 1
