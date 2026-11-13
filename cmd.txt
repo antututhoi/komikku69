@@ -141,3 +141,14 @@ sleep 45
 host adb logcat -d --pid=$(adb shell pidof app.komikku) > /tmp/ctlout/out/log_b024_app.txt; grep -c WM- /tmp/ctlout/out/log_b024_app.txt
 tapt ^Updates$
 sleep 3
+=== b025
+stop app.komikku
+launch app.komikku.mod69
+tapt ^More$
+sleep 2
+tapt ^Settings$
+sleep 2
+tapt ^Library$
+sleep 2
+up
+up
