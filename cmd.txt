@@ -1195,3 +1195,11 @@ shot C_settings_Browse_p0
 up
 sleep 1
 shot C_settings_Browse_p1
+=== C60801
+stop app.chimahon
+launch app.chimahon
+sleep 5
+tapt ^More$
+sleep 2
+tapt ^Settings$
+sleep 2
