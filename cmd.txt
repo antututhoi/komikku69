@@ -636,3 +636,27 @@ sleep 1
 tap 1007 213
 sleep 1
 shot lib_overflow
+=== r020
+back
+tapt ^Updates$
+sleep 2
+shot updates
+tapt ^History$
+sleep 2
+shot history
+tapt ^Browse$
+sleep 2
+tapt ^Sources$
+sleep 2
+shot browse_sources
+tapt ^Feed$
+sleep 2
+shot browse_feed
+tapt ^Migrate$
+sleep 2
+shot browse_migrate
+tapt ^More$
+sleep 2
+shot more_top
+up
+shot more_bottom
