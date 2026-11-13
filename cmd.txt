@@ -480,3 +480,7 @@ shot F_settings_Downloads_p1
 up
 sleep 1
 shot F_settings_Downloads_p2
+=== F67219
+up
+sleep 1
+shot F_settings_Downloads_p3
