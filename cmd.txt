@@ -284,3 +284,11 @@ shot J_stats_main
 tapt View detailed statistics
 sleep 3
 shot J_stats_detailed
+=== J51503
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 4
+tap 1016 201
+sleep 2
+tapt ^Settings$
+sleep 2
