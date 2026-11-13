@@ -65,3 +65,7 @@ sleep 1
 back
 sleep 2
 shot J_x
+=== J50703
+tap 788 1186
+sleep 4
+shot J_restore_dialog
