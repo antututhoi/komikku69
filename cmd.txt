@@ -1079,3 +1079,5 @@ sleep 2
 up
 tapt ^Settings$
 sleep 2
+=== s006
+sleep 1
