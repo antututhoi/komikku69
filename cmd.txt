@@ -4142,3 +4142,5 @@ shot SY_reader_exh_panel_longstrip
 === S50116
 tap 540 1200
 sleep 1
+=== S50117
+shot SY_reader_exh_panel_now
