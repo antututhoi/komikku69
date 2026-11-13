@@ -1348,3 +1348,5 @@ sleep 2
 === C61752
 tapt ^Browse$
 sleep 2
+=== C61753
+shot C_settings_Browse_p0
