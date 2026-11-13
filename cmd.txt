@@ -139,3 +139,7 @@ sleep 8
 up
 sleep 2
 shot F_search_results2
+=== F65988
+tapt ^Search through disabled sources$
+sleep 25
+shot F_search_results3
