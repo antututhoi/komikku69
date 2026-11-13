@@ -1291,3 +1291,14 @@ launch app.komikku.mod69
 sleep 1
 tap 108 2232
 sleep 2
+=== K41312
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+tapt ^Compact\ grid$
+sleep 1
+shot K_libdisp_sheet_Compact grid
+back
+sleep 2
+shot K_libmode_Compact grid
