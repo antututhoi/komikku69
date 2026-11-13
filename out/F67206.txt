@@ -1,0 +1,44 @@
+# block F67206  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:57:15
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,343  t='' d='' id=
+[    ]  193,296  t='Page animation' d='' id=title
+[    ]  103,322  t='Default' d='' id=summary
+[C   ]  540,486  t='' d='' id=
+[    ]  226,460  t='Enable pull gesture' d='' id=title
+[    ]  440,514  t='Use pull gesture to switch chapters in webtoon' d='' id=summary
+[k   ]  969,486  t='' d='' id=switchWidget
+[C   ]  540,678  t='' d='' id=
+[    ]  213,652  t='32-bit color mode' d='' id=title
+[    ]  443,706  t='Reduces banding, but may impact performance' d='' id=summary
+[k   ]  969,678  t='' d='' id=switchWidget
+[C   ]  540,896  t='' d='' id=
+[    ]  393,844  t='Reduce memory consumption (beta)' d='' id=title
+[    ]  450,925  t='Reduce offscreen pages quality to use less memory' d='' id=summary
+[k   ]  969,896  t='' d='' id=switchWidget
+[C   ]  540,1115 t='' d='' id=
+[    ]  152,1089 t='Crop pages' d='' id=title
+[    ]  116,1143 t='Disabled' d='' id=summary
+[C   ]  540,1307 t='' d='' id=
+[    ]  202,1281 t='Fullscreen mode' d='' id=title
+[    ]  378,1335 t='Hide system status and navigation bars' d='' id=summary
+[xk  ]  969,1307 t='' d='' id=switchWidget
+[C   ]  540,1499 t='' d='' id=
+[    ]  218,1473 t='Screen orientation' d='' id=title
+[    ]  103,1527 t='Default' d='' id=summary
+[C   ]  540,1717 t='' d='' id=
+[    ]  190,1665 t='Keep screen on' d='' id=title
+[    ]  450,1746 t='Do not turn the screen off while you're reading manga' d='' id=summary
+[xk  ]  969,1717 t='' d='' id=switchWidget
+[C   ]  540,1962 t='' d='' id=
+[    ]  336,1910 t='Open reader in a separate task' d='' id=title
+[    ]  450,1991 t='Allows you to keep multiple readers with different manga open at the same time' d='' id=summary
+[k   ]  969,1962 t='' d='' id=switchWidget
+[C   ]  540,2207 t='' d='' id=
+[    ]  339,2155 t='Show information bar in reader' d='' id=title
+[    ]  450,2236 t='Show the current time and reading progress at the top of the screen' d='' id=summary
+[xk  ]  969,2207 t='' d='' id=switchWidget
+[C   ]  540,2365 t='' d='' id=
+[    ]  380,2386 t='Transparent reader information bar' d='' id=title
+[xk  ]  969,2368 t='' d='' id=switchWidget
