@@ -1404,3 +1404,7 @@ shot C_settings_Popup_dictionary_p0
 up
 sleep 1
 shot C_settings_Popup_dictionary_p1
+=== C61766
+up
+sleep 1
+shot C_settings_Popup_dictionary_p2
