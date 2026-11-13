@@ -1,0 +1,20 @@
+# block S268201  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.reader.ui.ReaderActivity  time: 11:10:15
+! tapt 'Options' at 985,2221
+[C   ]  540,1200 t='' d='' id=touch_outside
+[C   ]  540,555  t='' d='Expanded. Drag handle' id=sh_dragHandle
+[Ck  ]  540,681  t='Save page' d='' id=button_save_page
+[Ck  ]  540,807  t='Share image' d='' id=button_share_page
+[Ck  ]  540,933  t='Add bookmark' d='' id=button_bookmark
+[Ck  ]  540,1059 t='Preferred image server: Original quality' d='' id=button_image_server
+[    ]  540,1189 t='Read mode' d='' id=
+[Cxk ]  167,1334 t='Standard' d='' id=button_standard
+[Ck  ]  415,1334 t='Right-to-left' d='' id=button_reversed
+[Ck  ]  663,1334 t='Vertical' d='' id=button_vertical
+[Ck  ]  912,1334 t='Webtoon' d='' id=button_webtoon
+[    ]  540,1475 t='The chosen configuration will be remembered for this manga' d='' id=
+[Ck  ]  540,1602 t='Use two pages layout on landscape orientation (beta)' d='' id=switch_double_reader
+[Ck  ]  540,1728 t='Lock screen rotation' d='' id=switch_screen_lock_rotation
+[Ck  ]  540,1854 t='Automatic scroll' d='' id=button_scroll_timer
+[Ck  ]  540,1980 t='Color correction' d='' id=button_color_filter
+[Ck  ]  540,2106 t='GPU image upscaling (beta): Disabled' d='' id=button_upscale
+[Ck  ]  540,2232 t='Settings' d='' id=button_settings
