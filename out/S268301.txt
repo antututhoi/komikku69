@@ -1,0 +1,39 @@
+# block S268301  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:13:31
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,310  t='' d='' id=
+[xk  ]  969,306  t='' d='' id=switchWidget
+[C   ]  540,421  t='' d='' id=
+[    ]  243,395  t='List long-press delay' d='' id=title
+[    ]  165,449  t='Follow system' d='' id=summary
+[C   ]  540,639  t='' d='' id=
+[    ]  324,587  t='Show favorites category strip' d='' id=title
+[    ]  450,668  t='When hidden, swipe between categories or use Choose category in the menu.' d='' id=summary
+[xk  ]  969,639  t='' d='' id=switchWidget
+[C   ]  540,884  t='' d='' id=
+[    ]  309,832  t='Show new-chapter counters' d='' id=title
+[    ]  450,913  t='Hide or show counters on title cards without turning off update checks.' d='' id=summary
+[xk  ]  969,884  t='' d='' id=switchWidget
+[C   ]  540,1103 t='' d='' id=
+[    ]  276,1077 t='Default favorites sorting' d='' id=title
+[    ]  215,1131 t='Added (Descending)' d='' id=summary
+[C   ]  540,1321 t='' d='' id=
+[    ]  213,1269 t='Show quick filters' d='' id=title
+[    ]  450,1350 t='Provides the ability to filter manga lists by certain parameters' d='' id=summary
+[xk  ]  969,1321 t='' d='' id=switchWidget
+[C   ]  540,1566 t='' d='' id=
+[    ]  346,1514 t='Jump back to where you left off' d='' id=title
+[    ]  450,1595 t='Show a button in History that returns you to the spot you last scrolled to' d='' id=summary
+[xk  ]  969,1566 t='' d='' id=switchWidget
+[C   ]  540,1785 t='' d='' id=
+[    ]  364,1759 t='Show reading progress indicators' d='' id=title
+[    ]  151,1813 t='Percent read' d='' id=summary
+[C   ]  540,1977 t='' d='' id=
+[    ]  183,1951 t='Badges in lists' d='' id=title
+[    ]  244,2005 t='Saved manga, Favorites' d='' id=summary
+[    ]  540,2161 t='Details' d='' id=title
+[C   ]  540,2304 t='' d='' id=
+[    ]  343,2278 t='Sort chapter list by upload date' d='' id=title
+[    ]  450,2353 t='Use upload dates for chapter lists by default. Reading order and progress stay u' d='' id=summary
+[k   ]  969,2360 t='' d='' id=switchWidget
