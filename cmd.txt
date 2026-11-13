@@ -26,3 +26,7 @@ sleep 3
 shot O_restore_1
 === O64153
 shot O_w
+=== O64166
+tap 574 1479
+sleep 3
+shot O_restore_2
