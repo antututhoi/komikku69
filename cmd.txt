@@ -680,3 +680,25 @@ sleep 2
 tapt ^MangaDex
 sleep 6
 shot source_popular
+=== r022
+tapt ^Library$
+sleep 2
+tap 540 695
+sleep 5
+up
+tapt Vol.19 Ch.127
+sleep 8
+tap 540 1200
+sleep 1
+tap 929 2275
+sleep 2
+tapt ^Long strip$
+sleep 2
+back
+sleep 2
+up
+sleep 2
+shot longstrip
+rotate 1
+sleep 3
+shot landscape_strip
