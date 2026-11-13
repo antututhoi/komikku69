@@ -1,0 +1,14 @@
+# block S268244  focus: PopupWindow:fbd1502  time: 11:11:06
+!   bash arg: -p
+  bash arg: io.github.glitch228.kaisoku
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+Events injected: 1
+## Network stats: elapsed time=73ms (0ms mobile, 0ms wifi, 73ms not connected)
+
+[    ]  768,264  t='Clear history' d='' id=title
+[    ]  768,390  t='List options' d='' id=title
+[    ]  705,516  t='Incognito mode' d='' id=title
+[k   ]  923,517  t='' d='' id=checkbox
+[    ]  768,642  t='Settings' d='' id=title
