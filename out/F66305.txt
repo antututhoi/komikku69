@@ -1,0 +1,29 @@
+# block F66305  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.details.ui.DetailsActivity  time: 10:38:43
+! tapt 'I Want to Be a Saint, But I Can Only Use Attack Magic!' at 613,949
+[C   ]   73,211  t='' d='Navigate up' id=
+[C   ]  784,211  t='' d='Share' id=action_share
+[C   ]  911,211  t='' d='Download' id=action_save
+[CL  ] 1027,211  t='' d='More options' id=
+[C   ]  204,562  t='' d='' id=imageView_cover
+[C   ]  723,464  t='I Want to Be a Saint, But I Can Only Use Attack Magic!' d='' id=textView_title
+[C   ]  598,675  t='Favorite this' d='' id=chip_favorite
+[    ]  133,886  t='Source' d='' id=textView_source_label
+[C   ]  378,886  t='Lnori' d='' id=textView_source
+[    ]  131,958  t='Author' d='' id=textView_author_label
+[    ]  388,958  t='Aoki Fuyu' d='' id=textView_author
+[    ]  168,1030 t='Translation' d='' id=textView_translation_label
+[    ]  396,1030 t='English' d='' id=textView_translation
+[    ]  150,1102 t='Chapters' d='' id=textView_chapters_label
+[    ]  446,1102 t='2 chapters (6 m)' d='' id=textView_chapters
+[    ]  550,1216 t='Description' d='' id=textView_description_title
+[    ]  540,1309 t='Why can’t my embarrassing past just disappear?!' d='' id=textView_description
+[CL  ]  190,1419 t='Manga Tie-in' d='' id=
+[CL  ]  554,1419 t='Female Protagonist' d='' id=
+[C   ]  540,2221 t='' d='' id=container_bottom_sheet
+[C   ]  540,2106 t='' d='Collapsed. Drag handle' id=sh_dragHandle
+[C   ]  232,2253 t='' d='' id=
+[C   ]  796,2253 t='Read' d='' id=button_read
+[Ck  ]  990,2253 t='' d='Show menu' id=button_read_menu
+[S   ]  540,2368 t='' d='' id=pager
+[S   ]  540,2368 t='' d='' id=
+[    ]  477,2372 t='Volume 1' d='' id=textView_title
