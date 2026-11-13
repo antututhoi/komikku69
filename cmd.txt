@@ -922,3 +922,9 @@ sleep 2
 sleep 1
 === Chimahon_set_appearance_s1
 up
+=== Chimahon_back_appearance
+back
+sleep 1
+down
+down
+down
