@@ -1,3 +1,7 @@
 === j1794550442
 sh pm list packages -3
 sleep 1
+=== J50456
+launch eu.kanade.tachiyomi.j2k
+sleep 6
+shot J_first_run
