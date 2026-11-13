@@ -231,3 +231,9 @@ shot J_reader_display_sheet_paged
 tapt ^Filter$
 sleep 2
 shot J_reader_display_sheet_filter
+=== J51303
+back
+sleep 1
+tapt ^Page layout$
+sleep 2
+shot J_reader_page_layout_menu
