@@ -1140,3 +1140,6 @@ sleep 1
 down
 down
 down
+=== SY_go_downloads
+tapt ^Downloads$
+sleep 2
