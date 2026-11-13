@@ -1,0 +1,12 @@
+# block S267992  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.search.ui.MangaListActivity  time: 11:07:16
+! NOT FOUND: ^Mieruko-chan$
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,275  t='' d='KdtScans' id=collapsingToolbarLayout
+[C   ]  922,359  t='Updated' d='' id=button_order
+[C   ]   73,211  t='' d='Navigate up' id=
+[C   ]  784,211  t='' d='Search' id=action_search
+[C   ]  911,211  t='' d='Random' id=action_random
+[CL  ] 1027,211  t='' d='More options' id=
+[    ]  540,1379 t='You are blocked by the server. Try to use a different network connection (VPN, P' d='' id=textView_error
+[C   ]  540,1615 t='Try again' d='' id=button_retry
+[C   ]  539,1741 t='Open in web browser' d='' id=button_secondary
