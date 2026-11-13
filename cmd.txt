@@ -36,3 +36,7 @@ shot F_main_overflow
 tapt ^Settings$
 sleep 3
 shot F_settings_main
+=== F65527
+tapt ^Backup and restore$
+sleep 2
+shot F_settings_backup
