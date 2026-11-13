@@ -1381,3 +1381,7 @@ shot C_settings_Dictionaries_and_audio_p0
 up
 sleep 1
 shot C_settings_Dictionaries_and_audio_p1
+=== C61761
+up
+sleep 1
+shot C_settings_Dictionaries_and_audio_p2
