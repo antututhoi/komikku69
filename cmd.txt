@@ -3094,3 +3094,19 @@ shot M_menu
 tap 540 1200
 sleep 1
 shot M_menu2
+=== M46113
+stop app.mihon
+launch app.mihon
+sleep 2
+sleep 1
+sleep 2
+tap 376 358
+sleep 2
+tap 540 695
+sleep 5
+up
+sleep 1
+tapt Vol.19 Ch.128
+sleep 8
+tapt ^Got it$
+sleep 1
