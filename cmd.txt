@@ -817,3 +817,5 @@ sleep 2
 sleep 1
 === MH_set_appearance_s1
 up
+=== MH_set_appearance_s2
+up
