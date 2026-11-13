@@ -1213,3 +1213,6 @@ up
 sleep 1
 tapt ^Settings$
 sleep 2
+=== C61722
+tapt ^Appearance$
+sleep 2
