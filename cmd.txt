@@ -793,3 +793,5 @@ sleep 2
 sleep 1
 === Tsundoku_set_advanced_s1
 up
+=== Tsundoku_set_advanced_s2
+up
