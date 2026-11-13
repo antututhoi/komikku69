@@ -74,3 +74,9 @@ shot F_explore_main
 tapt ^Catalog$
 sleep 4
 shot F_catalog
+=== F65711
+tapt ^Search$
+sleep 1
+text MangaDex
+sleep 3
+shot F_catalog_search
