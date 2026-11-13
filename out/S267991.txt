@@ -1,0 +1,70 @@
+# block S267991  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.main.ui.MainActivity  time: 11:06:47
+! tapt 'Enable' at 540,1297
+[S   ]  540,1200 t='' d='' id=
+[S   ]  540,1200 t='' d='' id=recyclerView
+[Cxk ]  105,35   t='All' d='' id=recommendation_all
+[Ck  ]  308,35   t='Manga' d='' id=recommendation_manga
+[Ck  ]  525,35   t='Novels' d='' id=recommendation_novels
+[    ]  540,112  t='Start reading manga and you will get personalized suggestions' d='' id=recommendation_message
+[    ]  443,209  t='Manga sources' d='' id=textView_title
+[C   ]  962,210  t='Catalog' d='' id=button_more
+[CL  ]  150,416  t='' d='' id=
+[    ]  150,521  t='LineWebtoons English' d='' id=textView_title
+[CL  ]  410,416  t='' d='' id=
+[    ]  410,521  t='Manga Ball (English)' d='' id=textView_title
+[CL  ]  669,416  t='' d='' id=
+[    ]  669,521  t='MangaFire English' d='' id=textView_title
+[CL  ]  929,416  t='' d='' id=
+[    ]  929,521  t='MANGA Plus English' d='' id=textView_title
+[CL  ]  150,719  t='' d='' id=
+[    ]  150,824  t='OniSaga (English)' d='' id=textView_title
+[CL  ]  410,719  t='' d='' id=
+[    ]  410,824  t='Webtoons English' d='' id=textView_title
+[CL  ]  669,719  t='' d='' id=
+[    ]  669,824  t='WeebDex (English)' d='' id=textView_title
+[CL  ]  929,719  t='' d='' id=
+[    ]  928,824  t='AllManga' d='' id=textView_title
+[CL  ]  150,1022 t='' d='' id=
+[    ]  150,1127 t='Asura Scans' d='' id=textView_title
+[CL  ]  410,1022 t='' d='' id=
+[    ]  410,1127 t='AthreaScans' d='' id=textView_title
+[CL  ]  669,1022 t='' d='' id=
+[    ]  669,1127 t='Atsu.moe' d='' id=textView_title
+[CL  ]  929,1022 t='' d='' id=
+[    ]  928,1127 t='Atsumaru' d='' id=textView_title
+[CL  ]  150,1325 t='' d='' id=
+[    ]  150,1430 t='BeeToon.net' d='' id=textView_title
+[CL  ]  410,1325 t='' d='' id=
+[    ]  409,1430 t='Chikari' d='' id=textView_title
+[CL  ]  669,1325 t='' d='' id=
+[    ]  669,1430 t='CloneManga' d='' id=textView_title
+[CL  ]  929,1325 t='' d='' id=
+[    ]  929,1430 t='Comix' d='' id=textView_title
+[CL  ]  150,1628 t='' d='' id=
+[    ]  150,1733 t='DemonicScans' d='' id=textView_title
+[CL  ]  410,1628 t='' d='' id=
+[    ]  410,1733 t='DynastyScans' d='' id=textView_title
+[CL  ]  669,1628 t='' d='' id=
+[    ]  669,1733 t='FlameComics' d='' id=textView_title
+[CL  ]  929,1628 t='' d='' id=
+[    ]  929,1733 t='Genz Toons' d='' id=textView_title
+[CL  ]  150,1931 t='' d='' id=
+[    ]  150,2036 t='KappaBeast' d='' id=textView_title
+[CL  ]  410,1931 t='' d='' id=
+[    ]  409,2036 t='KdtScans' d='' id=textView_title
+[CL  ]  669,1931 t='' d='' id=
+[    ]  669,2036 t='MangaCloud' d='' id=textView_title
+[CL  ]  929,1931 t='' d='' id=
+[    ]  929,2036 t='MangaGeko' d='' id=textView_title
+[CL  ]  150,2234 t='' d='' id=
+[    ]  150,2339 t='MangaHere (full site)' d='' id=textView_title
+[CL  ]  410,2234 t='' d='' id=
+[    ]  410,2339 t='MangaHere' d='' id=textView_title
+[CL  ]  669,2234 t='' d='' id=
+[    ]  669,2339 t='MangaK' d='' id=textView_title
+[CL  ]  929,2234 t='' d='' id=
+[    ]  929,2339 t='MangaKatana' d='' id=textView_title
+[CL  ]  150,2393 t='' d='' id=
+[CL  ]  410,2393 t='' d='' id=
+[CL  ]  669,2393 t='' d='' id=
+[CL  ]  929,2393 t='' d='' id=
