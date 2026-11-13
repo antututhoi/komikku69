@@ -260,3 +260,9 @@ shot F_reader_options_sheet
 up
 sleep 1
 shot F_reader_options_sheet_2
+=== F66543
+back
+sleep 1
+tapt ^Chapters$
+sleep 2
+shot F_reader_chapters_sheet
