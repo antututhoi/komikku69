@@ -1203,3 +1203,13 @@ tapt ^More$
 sleep 2
 tapt ^Settings$
 sleep 2
+=== C61721
+stop app.chimahon
+launch app.chimahon
+sleep 5
+tapt ^More$
+sleep 2
+up
+sleep 1
+tapt ^Settings$
+sleep 2
