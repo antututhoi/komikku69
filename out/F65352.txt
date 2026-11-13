@@ -1,0 +1,16 @@
+# block F65352  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.main.ui.MainActivity  time: 10:23:25
+[    ]  424,190  t='Futon Nightly' d='' id=
+[C   ]  964,191  t='Skip' d='' id=buttonSkip
+[S   ]  540,1195 t='' d='' id=viewPager
+[S   ]  540,1195 t='' d='' id=
+[    ]  540,822  t='FREE & OPEN SOURCE' d='' id=textViewBadge
+[    ]  540,907  t='Welcome to Futon' d='' id=textTitle
+[    ]  540,1034 t='Your modern, unified manga and light novel reader for Android.' d='' id=textSubtitle
+[    ]  592,1233 t='Ad-free, fast, and battery-friendly reading' d='' id=textFeature1
+[    ]  592,1359 t='Offline downloads & background chapter updates' d='' id=textFeature2
+[    ]  592,1484 t='Cloud backup and reading progress sync' d='' id=textFeature3
+[C   ]  475,2147 t='' d='' id=dot0
+[C   ]  539,2147 t='' d='' id=dot1
+[C   ]  582,2147 t='' d='' id=dot2
+[C   ]  625,2147 t='' d='' id=dot3
+[C   ]  896,2268 t='Next' d='' id=buttonNext
