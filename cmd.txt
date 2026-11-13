@@ -93,3 +93,9 @@ sleep 4
 tap 889 201
 sleep 2
 shot J_library_filter_expanded
+=== J50803
+tapt ^Group library by
+sleep 2
+shot J_library_groupby_dialog
+back
+sleep 1
