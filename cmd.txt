@@ -32,3 +32,7 @@ shot F_main_history_empty
 tapt ^More options$
 sleep 2
 shot F_main_overflow
+=== F65493
+tapt ^Settings$
+sleep 3
+shot F_settings_main
