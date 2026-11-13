@@ -852,3 +852,9 @@ sleep 2
 tapt ^seed.tachibk$
 sleep 4
 shot C_restore_options
+=== C54197
+tapt ^Restore$
+sleep 15
+stop app.chimahon
+launch app.chimahon
+sleep 7
