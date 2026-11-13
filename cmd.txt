@@ -3905,3 +3905,7 @@ shot SY_reader_hq_menu
 tap 540 1200
 sleep 1
 shot SY_reader_hq_menu
+=== S49159
+tapt ^Settings$
+sleep 2
+shot SY_reader_hq_sheet_top
