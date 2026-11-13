@@ -1,0 +1,12 @@
+# block F66588  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.reader.ui.colorfilter.ColorFilterConfigActivity  time: 10:43:31
+! tapt 'Options' at 975,2253
+! tapt 'Color correction' at 540,2106
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  364,212  t='Color correction' d='' id=
+[C   ]  938,212  t='Done' d='' id=button_done
+[Ck  ]  540,1104 t='Invert colors' d='' id=switch_invert
+[Ck  ]  540,1241 t='Grayscale' d='' id=switch_grayscale
+[    ]  540,1374 t='Brightness' d='' id=textView_brightness
+[    ]  540,1599 t='Contrast' d='' id=textView_contrast
+[Ck  ]  540,1859 t='Yellowish background (blue filter)' d='' id=switch_book
+[C   ]  922,2027 t='Reset' d='' id=button_reset
