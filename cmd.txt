@@ -974,3 +974,5 @@ tapt ^Library$
 sleep 2
 === Chimahon_set_library_s0
 sleep 1
+=== Chimahon_set_library_s1
+up
