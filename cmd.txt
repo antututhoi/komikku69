@@ -1335,3 +1335,13 @@ shot C_settings_Downloads_p2
 up
 sleep 1
 shot C_settings_Downloads_p3
+=== C61751
+stop app.chimahon
+launch app.chimahon
+sleep 5
+tapt ^More$
+sleep 2
+up
+sleep 1
+tapt ^Settings$
+sleep 2
