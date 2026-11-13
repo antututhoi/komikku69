@@ -640,3 +640,10 @@ sh monkey -p io.github.glitch228.kaisoku -c android.intent.category.LAUNCHER 1
 sleep 8
 tap 975 243
 sleep 2
+=== S268245
+tapt ^Settings$
+sleep 3
+shot S2_settings_main
+up
+sleep 1
+shot S2_settings_main_2
