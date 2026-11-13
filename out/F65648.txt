@@ -1,0 +1,5 @@
+# block F65648  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.main.ui.MainActivity  time: 10:27:42
+! tapt 'Explore' at 675,2263
+[    ]  540,1111 t='Do you want to receive personalized manga suggestions?' d='' id=title
+[C   ]  540,1297 t='Enable' d='' id=button1
+[C   ]  540,1460 t='No thanks' d='' id=button3
