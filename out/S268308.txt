@@ -1,0 +1,36 @@
+# block S268308  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:15:32
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,383  t='' d='' id=
+[    ]  155,349  t='Scale mode' d='' id=title
+[    ]  122,403  t='Fit center' d='' id=summary
+[C   ]  540,593  t='' d='' id=
+[    ]  231,541  t='Show zoom buttons' d='' id=title
+[    ]  450,622  t='Whether to show zoom control buttons in the bottom right corner' d='' id=summary
+[k   ]  969,593  t='' d='' id=switchWidget
+[C   ]  540,865  t='' d='' id=
+[    ]  274,786  t='Remember reader zoom' d='' id=title
+[    ]  450,893  t='Reuse your chosen zoom on new pages, separately for each reader mode. The curren' d='' id=summary
+[k   ]  969,865  t='' d='' id=switchWidget
+[C   ]  540,1110 t='' d='' id=
+[    ]  186,1084 t='Webtoon zoom' d='' id=title
+[    ]  382,1138 t='Allow zoom in gesture in webtoon mode' d='' id=summary
+[xk  ]  969,1110 t='' d='' id=switchWidget
+[C   ]  540,1318 t='' d='' id=
+[    ]  515,1255 t='Default webtoon zoom out' d='' id=title
+[    ] 1013,1257 t='0%' d='' id=summary
+[C   ]  540,1553 t='' d='' id=
+[    ]  262,1501 t='Gaps in webtoon mode' d='' id=title
+[    ]  450,1582 t='Show vertical gaps between pages in webtoon mode' d='' id=summary
+[k   ]  969,1553 t='' d='' id=switchWidget
+[C   ]  540,1772 t='' d='' id=
+[    ]  328,1746 t='Reader controls in bottom bar' d='' id=title
+[    ]   87,1800 t='None' d='' id=summary
+[C   ]  540,1964 t='' d='' id=
+[    ]  186,1938 t='Reader actions' d='' id=title
+[    ]  415,1992 t='Configure actions for tappable screen areas' d='' id=summary
+[C   ]  540,2230 t='' d='' id=
+[    ]  286,2130 t='Ergonomic reader control' d='' id=title
+[    ]  450,2264 t='Do not adjust the page switching direction to the reader mode, e. g. pressing th' d='' id=summary
+[k   ]  969,2235 t='' d='' id=switchWidget
