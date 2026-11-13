@@ -398,3 +398,5 @@ down
 === go_mangadex
 tapt ^MangaDex$
 sleep 2
+=== set_mangadex_s0
+sleep 1
