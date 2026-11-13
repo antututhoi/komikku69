@@ -741,3 +741,5 @@ down
 === Tsundoku_go_browse
 tapt ^Browse$
 sleep 2
+=== Tsundoku_set_browse_s0
+sleep 1
