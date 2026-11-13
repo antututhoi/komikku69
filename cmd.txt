@@ -633,3 +633,10 @@ sleep 1
 tapt ^More options$
 sleep 2
 shot S2_reader_overflow
+=== S268244
+stop io.github.glitch228.kaisoku
+sleep 1
+sh monkey -p io.github.glitch228.kaisoku -c android.intent.category.LAUNCHER 1
+sleep 8
+tap 975 243
+sleep 2
