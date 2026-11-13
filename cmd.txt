@@ -492,3 +492,11 @@ shot T_x5
 tapt ^Show roots$
 sleep 2
 shot T_x6
+=== T52490
+tapt ^Downloads$
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed.tachibk$
+sleep 4
+shot T_x7
