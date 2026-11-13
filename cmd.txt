@@ -1005,3 +1005,6 @@ sleep 6
 sleep 4
 tap 91 199
 sleep 3
+=== D69563
+tapt ^Reading$
+sleep 3
