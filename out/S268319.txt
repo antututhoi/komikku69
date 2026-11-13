@@ -1,0 +1,30 @@
+# block S268319  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:18:15
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  424,212  t='Storage and network' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,408  t='' d='' id=
+[    ]  450,387  t='You can disable SSL certificates verification in case you face an SSL-related is' d='' id=summary
+[k   ]  969,338  t='' d='' id=switchWidget
+[C   ]  540,669  t='' d='' id=
+[    ]  298,590  t='Disable connectivity check' d='' id=title
+[    ]  450,697  t='Skip the connectivity check in case you have issues with it (e.g. going offline ' d='' id=summary
+[k   ]  969,669  t='' d='' id=switchWidget
+[C   ]  540,940  t='' d='' id=
+[    ]  242,888  t='Block ads in browser' d='' id=title
+[    ]  450,969  t='Block advertisement in the built-in browser (beta)' d='' id=summary
+[k   ]  969,940  t='' d='' id=switchWidget
+[C   ]  540,1212 t='' d='' id=
+[    ]  250,1133 t='Auto-solve Cloudflare' d='' id=title
+[    ]  450,1240 t='Experimental: automatically tap the Cloudflare verification checkbox when a chal' d='' id=summary
+[k   ]  969,1212 t='' d='' id=switchWidget
+[    ]  540,1449 t='FlareSolverr (Beta)' d='' id=title
+[C   ]  540,1724 t='' d='' id=
+[    ]  200,1566 t='Use FlareSolverr' d='' id=title
+[    ]  450,1753 t='Beta: solve Cloudflare challenges through a FlareSolverr server you run on your ' d='' id=summary
+[k   ]  969,1724 t='' d='' id=switchWidget
+[C   ]  540,2049 t='' d='' id=
+[    ]  187,2023 t='Server address' d='' id=title
+[    ]  248,2077 t='http://localhost:8191/v1' d='' id=summary
+[C   ]  540,2241 t='' d='' id=
+[    ]  173,2215 t='Timeout (ms)' d='' id=title
+[    ]   96,2269 t='60000' d='' id=summary
