@@ -24,3 +24,5 @@ shot O_restore_1
 tapt ^Restore from backup$ 2
 sleep 3
 shot O_restore_1
+=== O64153
+shot O_w
