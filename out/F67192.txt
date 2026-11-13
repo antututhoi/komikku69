@@ -1,0 +1,53 @@
+# block F67192  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:53:57
+! tapt 'Appearance' at 304,366
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[    ]  540,345  t='Color scheme' d='' id=title
+[S   ]  540,584  t='' d='' id=scrollView
+[C   ]  160,584  t='' d='' id=
+[C   ]  152,553  t='' d='' id=card
+[    ]   86,459  t='Abc' d='' id=
+[    ]  152,737  t='Totoro' d='' id=textView_title
+[C   ]  405,584  t='' d='' id=
+[C   ]  405,553  t='' d='' id=card
+[    ]  339,459  t='Abc' d='' id=
+[    ]  405,737  t='Dynamic' d='' id=textView_title
+[C   ]  658,584  t='' d='' id=
+[C   ]  658,553  t='' d='' id=card
+[    ]  592,459  t='Abc' d='' id=
+[    ]  658,737  t='Expressive (Test)' d='' id=textView_title
+[C   ]  911,584  t='' d='' id=
+[C   ]  911,553  t='' d='' id=card
+[    ]  845,459  t='Abc' d='' id=
+[    ]  911,737  t='Miku' d='' id=textView_title
+[C   ] 1059,584  t='' d='' id=
+[C   ] 1067,553  t='' d='' id=card
+[    ] 1075,459  t='Abc' d='' id=
+[    ] 1067,737  t='Asuka' d='' id=textView_title
+[C   ]  540,901  t='' d='' id=
+[    ]  194,875  t='Custom themes' d='' id=title
+[    ]  285,929  t='No custom themes imported' d='' id=summary
+[C   ]  540,1093 t='' d='' id=
+[    ]  208,1067 t='Import theme file' d='' id=title
+[    ]  534,1121 t='Import an Idle Fantasy compatible Material 3 theme JSON' d='' id=summary
+[C   ]  540,1285 t='' d='' id=
+[    ]  258,1259 t='Delete selected theme' d='' id=title
+[    ]  285,1313 t='No custom themes imported' d='' id=summary
+[C   ]  540,1477 t='' d='' id=
+[    ]  109,1451 t='Theme' d='' id=title
+[    ]  165,1505 t='Follow system' d='' id=summary
+[C   ]  540,1669 t='' d='' id=
+[    ]   95,1643 t='Black' d='' id=title
+[    ]  360,1697 t='Uses less power on AMOLED screens' d='' id=summary
+[k   ]  969,1669 t='' d='' id=switchWidget
+[C   ]  540,1861 t='' d='' id=
+[    ]  137,1835 t='Language' d='' id=title
+[    ]  165,1889 t='Follow system' d='' id=summary
+[    ]  540,2045 t='Manga list' d='' id=title
+[C   ]  540,2188 t='' d='' id=
+[    ]  138,2162 t='List mode' d='' id=title
+[    ]   77,2216 t='Grid' d='' id=summary
+[C   ]  540,2342 t='' d='' id=
+[    ]  493,2333 t='Grid size' d='' id=title
+[    ]  991,2335 t='100%' d='' id=summary
