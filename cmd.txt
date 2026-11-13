@@ -565,3 +565,7 @@ shot S2_main
 tap 405 2231
 sleep 5
 shot S2_favorites_main
+=== S267946
+tap 675 2231
+sleep 5
+shot S2_explore_main
