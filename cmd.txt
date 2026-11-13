@@ -3000,3 +3000,17 @@ sleep 2
 tap 540 1200
 sleep 2
 shot K_rd_toggle_Keep_screen_on_first_tap
+=== K44976
+tap 540 1200
+sleep 1
+tapt ^Settings$
+sleep 2
+tapt ^General$
+sleep 1
+tapt ^Keep screen on$
+sleep 1
+tap 540 250
+sleep 2
+tap 540 1200
+sleep 2
+shot K_rd_toggle_Keep_screen_on_second_tap
