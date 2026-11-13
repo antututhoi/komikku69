@@ -49,3 +49,13 @@ shot J_settings_backup
 tapt ^Restore backup$
 sleep 3
 shot J_restore_picker
+=== J50652
+tap 73 191
+sleep 2
+tapt ^Downloads?$
+sleep 2
+tapt ^tour$
+sleep 2
+tapt seed.tachibk
+sleep 4
+shot J_restore_dialog
