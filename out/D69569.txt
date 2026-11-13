@@ -1,0 +1,45 @@
+# block D69569  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:36:53
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Reading' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,341  t='' d='' id=
+[    ]  390,300  t='Page animation' d='' id=
+[    ]  274,328  t='Default' d='' id=
+[C   ]  540,489  t='' d='' id=
+[    ]  428,449  t='Enable pull gesture' d='' id=
+[    ]  538,517  t='Use pull gesture to switch chapters in webtoon' d='' id=
+[Ck  ]  942,489  t='' d='' id=
+[    ]  134,655  t='IMAGE' d='' id=
+[C   ]  540,790  t='' d='' id=
+[    ]  413,750  t='32-bit color mode' d='' id=
+[    ]  538,818  t='Reduces banding, but may impact performance' d='' id=
+[Ck  ]  942,790  t='' d='' id=
+[C   ]  540,1001 t='' d='' id=
+[    ]  353,941  t='AI upscaling' d='' id=
+[    ]  538,1030 t='Sharpen low-resolution pages on the GPU using an Anime4K-based shader. Android 1' d='' id=
+[Ck  ]  942,1002 t='' d='' id=
+[C   ]  540,1244 t='' d='' id=
+[    ]  538,1204 t='Reduce memory consumption' d='' id=
+[    ]  538,1303 t='Reduce offscreen pages quality to use less memory' d='' id=
+[Ck  ]  942,1244 t='' d='' id=
+[C   ]  540,1464 t='' d='' id=
+[    ]  346,1464 t='Crop pages' d='' id=
+[C   ]  540,1654 t='' d='' id=
+[    ]  377,1614 t='Fit wide pages' d='' id=
+[    ]  538,1682 t='Make double-page spreads in paged mode fill a portrait screen' d='' id=
+[Ck  ]  942,1654 t='' d='' id=
+[    ]  158,1772 t='Method' d='' id=
+[C   ]  304,1879 t='' d='' id=
+[    ]  305,1879 t='Rotate' d='' id=
+[C   ]  775,1879 t='' d='' id=
+[    ]  775,1879 t='Split in two' d='' id=
+[    ]  258,1996 t='Rotation direction' d='' id=
+[C   ]  304,2103 t='' d='' id=
+[    ]  304,2103 t='Clockwise' d='' id=
+[C   ]  775,2103 t='' d='' id=
+[    ]  775,2103 t='Counter-clockwise' d='' id=
+[    ]  149,2273 t='DISPLAY' d='' id=
+[C   ]  540,2357 t='' d='' id=
+[    ]  399,2379 t='Fullscreen mode' d='' id=
+[Cxk ]  942,2373 t='' d='' id=
