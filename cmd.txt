@@ -1429,3 +1429,14 @@ sleep 1
 up
 tapt ^Language$
 back
+=== K41326
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+up
+tapt ^Use\ language\ icon$
+sleep 1
+back
+sleep 2
+shot K_libover_Use language icon_toggled
