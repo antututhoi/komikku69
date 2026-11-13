@@ -897,3 +897,15 @@ shot D_settings_main_2
 tapt ^Backup and restore$
 sleep 3
 shot D_settings_backup
+=== D69296
+tapt ^Restore from Tachiyomi/Mihon$
+sleep 3
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed.tachibk$
+sleep 8
+shot D_restore_mihon
