@@ -838,3 +838,17 @@ sleep 2
 tapt ^Next$
 sleep 2
 shot C_onboard_last
+=== C54149
+tapt ^Restore backup$
+sleep 3
+tapt ^Restore backup$
+sleep 3
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed.tachibk$
+sleep 4
+shot C_restore_options
