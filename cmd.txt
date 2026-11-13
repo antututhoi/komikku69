@@ -25,3 +25,7 @@ shot J_more_menu
 tapt ^Settings$
 sleep 2
 shot J_settings_main
+=== J50544
+tapt ^Data and storage$
+sleep 2
+shot J_settings_data
