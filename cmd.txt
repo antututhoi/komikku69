@@ -2862,3 +2862,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_invert_Both
+=== K44965
+tapt ^Settings$
+sleep 2
+up
+tapt ^None$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_invert_None
