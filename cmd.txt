@@ -1004,3 +1004,6 @@ sleep 1
 down
 down
 down
+=== Chimahon_go_browse
+tapt ^Browse$
+sleep 2
