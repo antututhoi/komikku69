@@ -1,0 +1,25 @@
+# block D69271  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:28:07
+! tapt 'Backup and restore' at 433,1464
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,270  t='' d='Backup and restore' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[    ]  278,486  t='BACKUP AND RESTORE' d='' id=
+[C   ]  540,619  t='' d='' id=
+[    ]  435,600  t='Create data backup' d='' id=
+[    ]  558,648  t='Save your library, history and settings to a file' d='' id=
+[C   ]  540,807  t='' d='' id=
+[    ]  391,788  t='Restore backup' d='' id=
+[    ]  479,836  t='Restore previously created backup' d='' id=
+[C   ]  540,995  t='' d='' id=
+[    ]  408,976  t='Periodic backups' d='' id=
+[    ]  548,1024 t='Automatically create backups on a schedule' d='' id=
+[    ]  186,1160 t='OTHER APPS' d='' id=
+[C   ]  540,1293 t='' d='' id=
+[    ]  556,1274 t='Restore from Tachiyomi/Mihon' d='' id=
+[    ]  575,1322 t='Import a backup created by Tachiyomi or Mihon' d='' id=
+[C   ]  540,1483 t='' d='' id=
+[    ]  472,1443 t='Migrate Kotatsu library' d='' id=
+[    ]  614,1511 t='Move a restored Kotatsu backup onto your installed extensions' d='' id=
+[C   ]  540,1674 t='' d='' id=
+[    ]  404,1634 t='Export for Mihon' d='' id=
+[    ]  614,1702 t='Save your favourites and reading progress as a Mihon backup file' d='' id=
