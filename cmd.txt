@@ -103,3 +103,7 @@ sleep 8
 shot O_source_list
 === O64586
 shot O_source_list
+=== h1794564605
+host adb devices
+sh dumpsys window | grep mCurrentFocus
+sh uptime
