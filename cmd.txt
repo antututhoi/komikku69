@@ -521,3 +521,10 @@ sleep 1
 up
 === rd_sheet_filter_s2
 up
+=== r010
+back
+sleep 1
+back
+sleep 1
+hold 540 1200 1000
+sleep 2
