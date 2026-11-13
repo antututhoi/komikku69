@@ -679,3 +679,6 @@ sleep 1
 down
 down
 down
+=== Tsundoku_go_manga_reader
+tapt ^Manga Reader$
+sleep 2
