@@ -1,0 +1,17 @@
+# block D69163  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.main.ui.welcome.OnboardingActivity  time: 11:26:16
+! tapt 'Next' at 958,2225
+[S   ]  540,1098 t='' d='' id=
+[    ]  540,548  t='Storage and permissions' d='' id=
+[    ]  540,762  t='Choose where downloads are saved, or continue with the default. You can also gra' d='' id=
+[    ]  241,975  t='Downloads folder' d='' id=
+[    ]  266,1036 t='Internal shared storage' d='' id=
+[C   ]  540,1136 t='' d='' id=
+[    ]  573,1136 t='Select destination folder' d='' id=
+[C   ]  540,1343 t='' d='' id=
+[    ]  545,1343 t='Allow extension installs' d='' id=
+[C   ]  540,1474 t='' d='' id=
+[    ]  542,1474 t='Allow notifications' d='' id=
+[C   ]  540,1605 t='' d='' id=
+[    ]  545,1605 t='Disable battery optimization' d='' id=
+[C   ]  958,2225 t='' d='' id=
+[    ]  958,2225 t='' d='Next' id=
