@@ -1,0 +1,13 @@
+# block F66030  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.search.ui.multi.SearchActivity  time: 10:34:30
+[S   ]  540,1200 t='' d='' id=
+[    ]  427,51   t='Royal Road' d='' id=textView_title
+[S   ]  540,382  t='' d='' id=recyclerView
+[CL  ]  188,382  t='' d='' id=
+[    ]  188,578  t='Viewy' d='' id=textView_title
+[CL  ]  523,382  t='' d='' id=
+[    ]  523,578  t='Untitled' d='' id=textView_title
+[CL  ]  858,382  t='' d='' id=
+[    ]  858,578  t='Fubuki no Kusari' d='' id=textView_title
+[CL  ] 1058,382  t='' d='' id=
+[    ] 1066,578  t='Of Life and Death' d='' id=textView_title
+[C   ]  956,57   t='Show all' d='' id=button_more
