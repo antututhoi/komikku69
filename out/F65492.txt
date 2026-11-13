@@ -1,0 +1,7 @@
+# block F65492  focus: PopupWindow:3472c35  time: 10:25:02
+! tapt 'More options' at 975,243
+[    ]  768,264  t='Clear history' d='' id=title
+[    ]  768,390  t='List options' d='' id=title
+[    ]  705,516  t='Incognito mode' d='' id=title
+[k   ]  923,517  t='' d='' id=checkbox
+[    ]  768,642  t='Settings' d='' id=title
