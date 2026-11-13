@@ -1,0 +1,28 @@
+# block S268324  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:19:40
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  301,212  t='Downloads' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,337  t='' d='' id=
+[    ]  168,316  t='Ask every time' d='' id=summary
+[    ]  613,525  t='You can enable download slowdown for each manga source individually in the sourc' d='' id=summary
+[C   ]  540,794  t='' d='' id=
+[    ]  314,742  t='Disable battery optimization' d='' id=title
+[    ]  540,823  t='Might help with getting the download started if you have any issues with it' d='' id=summary
+[    ]  540,1005 t='Download pacing' d='' id=title
+[C   ]  540,1148 t='' d='' id=
+[    ]  356,1122 t='Minimum image-request interval' d='' id=title
+[    ]  211,1176 t='Use source settings' d='' id=summary
+[C   ]  540,1340 t='' d='' id=
+[    ]  323,1314 t='Delay between chapter starts' d='' id=title
+[    ]  174,1368 t='No added delay' d='' id=summary
+[C   ]  540,1532 t='' d='' id=
+[    ]  238,1506 t='Concurrent chapters' d='' id=title
+[    ]  197,1560 t='No additional limit' d='' id=summary
+[    ]  540,1748 t='Chapter delay and concurrency apply to all downloads. Paused chapters keep their' d='' id=summary
+[    ]  540,1957 t='Saving pages' d='' id=title
+[C   ]  540,2100 t='' d='' id=
+[    ]  306,2074 t='Default page save directory' d='' id=title
+[    ]  104,2128 t='Not set' d='' id=summary
+[C   ]  540,2266 t='' d='' id=
+[    ]  397,2266 t='Ask for the destination dir every time' d='' id=title
+[xk  ]  969,2266 t='' d='' id=switchWidget
