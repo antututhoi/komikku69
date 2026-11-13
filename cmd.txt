@@ -3185,3 +3185,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot M_rd_scale_Fit_height
+=== M46125
+tapt ^Settings$
+sleep 2
+up
+tapt ^Original size$
+sleep 1
+tap 540 250
+sleep 2
+shot M_rd_scale_Original_size
