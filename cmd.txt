@@ -45,3 +45,6 @@ tapt ^tour$
 sleep 2
 tapt seed.tachibk
 sleep 3
+=== b012
+tapt Show roots
+sleep 2
