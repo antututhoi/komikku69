@@ -345,3 +345,6 @@ sh monkey -p io.github.landwarderer.futon.nightly -c android.intent.category.LAU
 sleep 6
 sh dumpsys window | grep mCurrentFocus
 sh logcat -d -t 400 *:E | grep -i -m5 'futon\|FATAL'
+=== F67085
+sleep 2
+shot F_now
