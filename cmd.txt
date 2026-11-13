@@ -451,3 +451,11 @@ sleep 2
 sleep 1
 === set_about_s1
 up
+=== r001
+back
+back
+back
+tapt ^Library$
+sleep 2
+tapt Tensei Shitara Slime
+sleep 6
