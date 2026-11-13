@@ -203,3 +203,7 @@ sleep 6
 tap 675 2263
 sleep 4
 shot F_explore_sources4
+=== F66305
+tapt ^I Want to Be a Saint
+sleep 8
+shot F_details_top
