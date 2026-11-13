@@ -1,0 +1,13 @@
+# block D69164  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.main.ui.welcome.OnboardingActivity  time: 11:26:33
+! tapt 'Next' at 958,2225
+[S   ]  540,1098 t='' d='' id=
+[    ]  540,548  t='Sync & Restore' d='' id=
+[    ]  540,731  t='Sign in with Google to sync your library across devices, or restore a backup to ' d='' id=
+[C   ]  540,942  t='' d='' id=
+[    ]  573,942  t='Sign in with Google' d='' id=
+[C   ]  540,1157 t='' d='' id=
+[    ]  573,1157 t='Restore Kotatsu backup' d='' id=
+[C   ]  540,1299 t='' d='' id=
+[    ]  573,1299 t='Restore Tachi favorites' d='' id=
+[C   ]  958,2225 t='' d='' id=
+[    ]  958,2225 t='' d='Next' id=
