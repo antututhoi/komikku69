@@ -33,3 +33,6 @@ sleep 1
 === b009
 tapt ^Restore backup$
 sleep 3
+=== b010
+tap 788 401
+sleep 3
