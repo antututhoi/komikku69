@@ -879,3 +879,7 @@ sleep 1
 tapt ^Dictionary$
 sleep 3
 shot C_dictionary_tab
+=== C54285
+tapt ^More$
+sleep 2
+shot C_more_main
