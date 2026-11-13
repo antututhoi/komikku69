@@ -1278,3 +1278,9 @@ sleep 2
 sleep 1
 === SY_set_about_s1
 up
+=== SY_back_about
+back
+sleep 1
+down
+down
+down
