@@ -1,0 +1,36 @@
+# block F67219  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 11:00:48
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  301,212  t='Downloads' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,386  t='' d='' id=
+[    ]  314,313  t='Disable battery optimization' d='' id=title
+[    ]  540,382  t='Might help with getting the download started if you have any issues with it' d='' id=summary
+[    ]  540,564  t='Saving pages' d='' id=title
+[C   ]  540,707  t='' d='' id=
+[    ]  306,681  t='Default page save directory' d='' id=title
+[    ]  104,735  t='Not set' d='' id=summary
+[C   ]  540,873  t='' d='' id=
+[    ]  397,873  t='Ask for the destination dir every time' d='' id=title
+[xk  ]  969,873  t='' d='' id=switchWidget
+[    ]  540,1032 t='Download scheduling and limits' d='' id=title
+[C   ]  540,1175 t='' d='' id=
+[    ]  328,1149 t='Download only when charging' d='' id=title
+[    ]  434,1203 t='Connect to a power source to start downloads' d='' id=summary
+[k   ]  969,1175 t='' d='' id=switchWidget
+[C   ]  540,1393 t='' d='' id=
+[    ]  212,1341 t='Smart Downloads' d='' id=title
+[    ]  450,1422 t='Automatically download next chapters and delete read ones' d='' id=summary
+[k   ]  969,1393 t='' d='' id=switchWidget
+[C   ]  540,1612 t='' d='' id=
+[    ]  236,1586 t='Off-peak downloads' d='' id=title
+[    ]  361,1640 t='Download only during specified hours' d='' id=summary
+[k   ]  969,1612 t='' d='' id=switchWidget
+[C   ]  540,1804 t='' d='' id=
+[    ]  137,1778 t='Start time' d='' id=title
+[    ]   90,1832 t='00:00' d='' id=summary
+[C   ]  540,1996 t='' d='' id=
+[    ]  127,1970 t='End time' d='' id=title
+[    ]   90,2024 t='06:00' d='' id=summary
+[C   ]  540,2214 t='' d='' id=
+[    ]  230,2162 t='Storage quota (MB)' d='' id=title
+[    ]  540,2243 t='Limit total download size. 0 for unlimited. Current oldest chapters will be dele' d='' id=summary
