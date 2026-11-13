@@ -259,3 +259,5 @@ sleep 1
 up
 === set_reader_s2
 up
+=== set_reader_s3
+up
