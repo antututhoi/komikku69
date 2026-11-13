@@ -3086,3 +3086,7 @@ tapt Vol.19 Ch.128
 sleep 8
 tapt ^Got it$
 sleep 1
+=== M46026
+tap 540 1200
+sleep 1
+shot M_menu
