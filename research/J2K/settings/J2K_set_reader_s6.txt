@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,27   t='' d='' id=
+[    ]   87,6    t='None' d='' id=summary
+[C   ]  540,151  t='' d='' id=
+[    ]  386,125  t='Sensitivity for hiding menu on scroll' d='' id=title
+[    ]   77,179  t='Low' d='' id=summary
+[C   ]  540,317  t='' d='' id=
+[    ]  167,317  t='Crop borders' d='' id=title
+[k   ]  969,317  t='' d='' id=switchWidget
+[    ]  478,458  t='Side padding' d='' id=slider_title
+[    ]  987,458  t='None' d='' id=slider_value
+[C   ]  540,741  t='' d='' id=
+[    ]  155,715  t='Page layout' d='' id=title
+[    ]  142,769  t='Single page' d='' id=summary
+[C   ]  540,907  t='' d='' id=
+[    ]  233,907  t='Invert double pages' d='' id=title
+[k   ]  969,907  t='' d='' id=switchWidget
+[C   ]  540,1048 t='' d='' id=
+[    ]  202,1048 t='Enable zoom out' d='' id=title
+[k   ]  969,1048 t='' d='' id=switchWidget
+[    ]  540,1207 t='Navigation' d='' id=title
+[C   ]  540,1324 t='' d='' id=
+[    ]  165,1324 t='Volume keys' d='' id=title
+[k   ]  969,1324 t='' d='' id=switchWidget
+[C   ]  540,1491 t='' d='' id=
+[    ]  316,1465 t='Use vertical progress bar for' d='' id=title
+[    ]  291,1519 t='Webtoon, Continuous vertical' d='' id=summary
+[    ]  489,1657 t='Vertical bar height' d='' id=slider_title
+[    ]  997,1657 t='65%' d='' id=slider_value
+[    ]  210,1914 t='Place vertical bar' d='' id=title
+[Ck  ]  680,1914 t='Left' d='' id=button_start
+[Cxk ]  922,1914 t='Right' d='' id=button_end
+[    ]  540,2073 t='Downloading' d='' id=title
+[    ]  453,2190 t='Page preload amount' d='' id=slider_title
+[    ]  961,2190 t='6 pages' d='' id=slider_value
+[    ]  540,2297 t='The amount of pages to preload when reading. Higher values will result in a smoo' d='' id=slider_subtitle

@@ -1,0 +1,38 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,375  t='' d='' id=
+[    ]  320,375  t='Update progress after reading' d='' id=
+[C   ]  540,554  t='' d='' id=
+[    ]  401,533  t='Update progress when marked as read' d='' id=
+[    ]   95,591  t='Always' d='' id=
+[C   ]  540,775  t='' d='' id=
+[    ]  447,733  t='Minimum chapters before tracking (Manga)' d='' id=
+[    ]  540,812  t='Number of chapters that must be read before auto-tracking starts for manga (0 = ' d='' id=
+[C   ]  540,1017 t='' d='' id=
+[    ]  446,975  t='Minimum chapters before tracking (Novels)' d='' id=
+[    ]  540,1054 t='Number of chapters that must be read before auto-tracking starts for novels (0 =' d='' id=
+[    ]  113,1201 t='Trackers' d='' id=
+[C   ]  540,1333 t='' d='' id=
+[    ]  105,1333 t='' d='MangaBaka' id=
+[    ]  322,1333 t='MangaBaka' d='' id=
+[C   ]  540,1501 t='' d='' id=
+[    ]  105,1501 t='' d='MyAnimeList' id=
+[    ]  335,1501 t='MyAnimeList' d='' id=
+[C   ]  540,1669 t='' d='' id=
+[    ]  105,1669 t='' d='AniList' id=
+[    ]  276,1669 t='AniList' d='' id=
+[C   ]  540,1837 t='' d='' id=
+[    ]  105,1837 t='' d='Kitsu' id=
+[    ]  258,1837 t='Kitsu' d='' id=
+[C   ]  540,2005 t='' d='' id=
+[    ]  105,2005 t='' d='MangaUpdates' id=
+[    ]  353,2005 t='MangaUpdates' d='' id=
+[C   ]  540,2210 t='' d='' id=
+[    ]  395,2168 t='Mark chapters as read on MangaBaka' d='' id=
+[    ]  429,2247 t='Automatically mark chapters as read when you read them in the app' d='' id=
+[C   ]  540,2365 t='' d='' id=
+[    ]  195,2386 t='Sync reading list' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  256,212  t='Tracking' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

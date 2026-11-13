@@ -1,0 +1,334 @@
+##### Appearance
+Theme
+Light
+Dark
+System
+Default
+Dynamic
+Custom Theme
+Cotton Candy
+Pure black dark mode
+Manga Info
+Theme based on cover
+Cover based theme style
+Vibrant
+Panorama Cover
+Show cover in landscape mode if it's a wide image
+Align Cover to Top
+Show the cover aligned to the top alongside manga info
+Appearance
+Display
+App language
+Tablet UI
+Auto
+Date format
+Default (11/13/26)
+Relative timestamps
+"Today" instead of "11/13/26"
+Render images in manga descriptions
+Navbar
+Start screen
+Library
+Always show nav labels
+Consolidated library
+Combine manga, anime, and novels into a single library tab with a mode selector
+Navigation style
+Customize tab bar layout
+Fork Settings
+Panorama Cover Flow
+Show panorama cover in Global Search & Suggestions
+Expand all search filters by default
+Recommendations in overflow
+Put the recommendations button in the overflow menu instead of on the entry page
+Merge in overflow
+Put the merge button in the overflow menu instead of on the entry page
+Previews row count
+4 rows
+##### Reader
+Default reading mode
+Paged (right to left)
+Double tap animation speed
+Normal
+Show reading mode
+Briefly show current mode when reader is opened
+Show tap zones overlay
+Briefly show when reader is opened
+Smaller tap zones
+Force horizontal seekbar
+Removes vertical seekbar entirely in favour of horizontal
+Show vertical seekbar in landscape
+Enables vertical seekbar when in landscape
+Left-handed vertical seekbar
+Switches which side the seekbar is on
+Display
+Default rotation
+Free
+Background color
+Black
+Reader
+Fullscreen
+Show content in cutout area
+Keep screen on
+Startup delay
+Show page number
+E-Ink
+Flash on page change
+Reduces ghosting on e-ink displays
+Flash on scroll/movement
+E-Ink mode
+Disables reader movement animations and lowers swipe thresholds for e-ink displa
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+Paged
+Tap zones
+Disabled
+Scale type
+Fit screen
+Zoom start position
+Automatic
+Crop borders
+Animate page transitions
+Automatically zoom into wide images
+Wide images zoom mode
+Disable zoom in
+Double tap to zoom
+Split wide pages
+Rotate wide pages to fit
+Long strip
+Smart scale on wide screen
+Apply Smart scale to Long strip with gaps
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Pinch to zoom
+Disable zoom out
+Long strip with gaps
+Tap scroll by page
+Tapping will scroll by page instead of screen size when this option is enabled
+##### Library
+Categories
+Edit categories
+2 categories
+Default category
+Always ask
+Default anime category
+Always ask
+Default novel category
+Always ask
+Per-category settings for sort
+Global update
+Automatic updates
+Off
+Anime categories
+Include: All
+Manga categories
+Include: All
+Novel categories
+Include: All
+Library
+Library dynamic category updates
+Always launch global updates
+Automatically refresh metadata
+Check for new cover and details when updating library
+Smart update
+Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip 
+Anime smart update
+Skip anime with unseen episodes, Skip entries with "Completed" status, Skip unst
+Novels Smart update
+Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip 
+Show unread count on Updates icon
+Show updating progress banner
+Seasons
+Update seasons during library update
+Behavior
+Chapter on swipe to left
+Bookmark chapter
+Chapter on swipe to right
+Mark as read
+Mark duplicate read chapter as read
+None
+Hide missing chapter indicators
+Show empty categories during search/filtering
+Fetch metadata when adding to library
+Automatically fetches the metadata of a new manga when adding it to the library
+Fetch chapters when adding to library
+Automatically fetches the chapter list of a new manga when adding it to the libr
+Sorting Settings
+Tag sorting tags
+0 tags in sorting list. This adds a option in the library to sort by a priority 
+##### Downloads
+Only on Wi-Fi
+Save as CBZ archive
+Split tall images
+Improves reader performance
+Concurrent source downloads
+5
+Concurrent page downloads
+Pages downloaded simultaneously per source
+5
+Delete chapters
+After manually marked as read
+After reading automatically delete
+Disabled
+Allow deleting bookmarked chapters
+Excluded categories
+None
+Auto-download
+Downloads
+Download new chapters
+Download ahead
+Auto download while reading
+Only works if the current chapter + the next one are already downloaded.
+Download cache renew interval
+Download cache renew interval
+1 hour
+If set to "manual", either refresh each manga or using the "Reindex downloads" a
+External downloader
+Download with an external app
+##### Browse
+Sources
+Suggestions
+Show source-website's Suggestions while viewing entry
+Expand Suggestions
+If turned off, Suggestions won't automatically load & show expanded
+Home from Suggestions
+Show an icon while browsing Suggestions to navigate directly back to Home
+Edit categories
+0 categories
+Filter sources in categories
+Filter the sources that are in categories, making the sources not get put under 
+Replace latest button
+Replace latest button with a custom browse view that includes both latest and br
+Local source hidden folders
+Allow local source to read hidden folders
+Feed
+Hide Feed tab
+Browse
+Feed tab position
+Do you want the feed tab to be the first tab in browse? This will make it the de
+Hide entries already in library
+Search history
+Search history
+Remember recent searches across screens
+Extension stores
+1 store
+Anime Extension repos
+0 stores
+Novel Extension repos
+0 stores
+NSFW (18+) sources
+Show in sources and extensions lists
+Requires app restart to take effect
+This does not prevent unofficial or potentially incorrectly flagged extensions f
+##### Dictionaries and audio
+Dictionary profiles
+Active profile: Default
+Default
++
+Language: Any (All)
+Scan: Auto (word for non-CJK)
+Search: Auto (word for non-CJK)
+Imported dictionaries
+Import dictionary
+Import a Yomitan dictionary ZIP file
+No dictionaries imported yet
+Updates
+Auto-update dictionaries
+Off
+Check for updates
+Not checked yet
+Word Audio
+Enable Word Audio
+Dictionaries and audio
+Show audio buttons in dictionary entries
+Autoplay
+Automatically play the first audio found
+Local Audio (android.db)
+Online Sources
+Add Source
+Name
+URL Template ({term}, {reading})
+##### Popup dictionary
+General
+Appearance
+Theme, date & time format
+Security and privacy
+App lock, secure screen
+Advanced
+Dump crash logs, battery optimizations
+Media
+Reader
+Reading mode, display, navigation
+Player
+Orientation, gestures, subtitles, audio
+Library
+Categories, global update, chapter swipe
+Downloads
+Automatic download, download ahead
+Browse
+Sources, extensions, global search
+Learning
+Dictionaries and audio
+Import, manage Yomitan dictionaries
+Settings
+Popup dictionary
+Layout, theme, content
+Anki
+Deck, fields, export
+OCR
+Engine, appearance, cache
+Sync
+Tracking
+One-way progress sync, enhanced sync
+Connections
+Discord, more to come..
+Data and storage
+Manual & automatic backups, storage space
+MangaDex
+MangaDex login, follows sync
+About
+Chimahon Stable 2.4.9
+##### Anki
+General
+Appearance
+Theme, date & time format
+Security and privacy
+App lock, secure screen
+Advanced
+Dump crash logs, battery optimizations
+Media
+Reader
+Reading mode, display, navigation
+Player
+Orientation, gestures, subtitles, audio
+Library
+Categories, global update, chapter swipe
+Downloads
+Automatic download, download ahead
+Browse
+Sources, extensions, global search
+Learning
+Dictionaries and audio
+Import, manage Yomitan dictionaries
+Settings
+Popup dictionary
+Layout, theme, content
+Anki
+Deck, fields, export
+OCR
+Engine, appearance, cache
+Sync
+Tracking
+One-way progress sync, enhanced sync
+Connections
+Discord, more to come..
+Data and storage
+Manual & automatic backups, storage space
+MangaDex
+MangaDex login, follows sync
+About
+Chimahon Stable 2.4.9

@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,143  t='' d='' id=
+[    ]  429,87   t='Update library manga titles to match source' d='' id=
+[    ]  429,203  t='Warning: if a manga is renamed, it will be removed from the download queue (if p' d='' id=
+[C   ]  540,492  t='' d='' id=
+[    ]  314,366  t='Disallow non-ASCII filenames' d='' id=
+[    ]  429,529  t='Ensures compatibility with certain storage media that don't support Unicode. Whe' d='' id=
+[    ]  100,792  t='Reader' d='' id=
+[C   ]  540,961  t='' d='' id=
+[    ]  371,919  t='Custom hardware bitmap threshold' d='' id=
+[    ]  522,998  t='If reader loads a blank image incrementally reduce the threshold.
+Selected: Defa' d='' id=
+[C   ]  540,1203 t='' d='' id=
+[    ]  412,1161 t='Use legacy decoder for long strip reader' d='' id=
+[    ]  429,1240 t='Affects performance. Only enable if reducing bitmap threshold doesn't fix blank ' d='' id=
+[C   ]  540,1403 t='' d='' id=
+[    ]  250,1403 t='Custom display profile' d='' id=
+[    ]  170,1577 t='Novel WebView' d='' id=
+[C   ]  540,1767 t='' d='' id=
+[    ]  263,1704 t='WebView console client' d='' id=
+[    ]  429,1804 t='Attach a Chrome WebView client so JS alert/confirm/prompt dialogs and file picke' d='' id=
+[C   ]  540,2030 t='' d='' id=
+[    ]  300,1988 t='Use classic TTS notification' d='' id=
+[    ]  429,2067 t='Plain notification with a progress bar instead of lockscreen/Bluetooth media con' d='' id=
+[    ]  134,2246 t='Extensions' d='' id=
+[C   ]  540,2347 t='' d='' id=
+[    ]  116,2368 t='Installer' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

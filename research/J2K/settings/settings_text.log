@@ -1,0 +1,568 @@
+##### General
+Starting screen
+Last used (Library or Recents)
+Back to start
+Pressing back goes to the starting screen before exiting the app
+Manage notifications
+App shortcuts
+Show recent series
+Includes recently read, updated, and added series
+Show recently used sources
+Series shortcuts opens new chapters
+When there
+Auto-updates
+Auto-update app
+Over Wi-Fi only
+Locale
+General
+General
+-----
+Starting screen
+Last used (Library or Recents)
+Back to start
+Pressing back goes to the starting screen before exiting the app
+Manage notifications
+App shortcuts
+Show recent series
+Includes recently read, updated, and added series
+Show recently used sources
+Series shortcuts opens new chapters
+When there
+Auto-updates
+Auto-update app
+Over Wi-Fi only
+Locale
+Date format
+System default
+Language
+System default
+General
+-----
+##### Appearance
+App theme
+Light theme
+A Brighter You (Dynamic)
+Pure White
+Spring Blossom
+Strawberry Daiquiri
+Dark theme
+A Calmer You (Dynamic)
+Dark
+Midnight Dusk
+Chocolate Strawberries
+Follow system theme
+Pure black dark mode
+Expanded toolbar
+Show a larger, expanded toolbar at the top of most pages (does not show on small
+Appearance
+Appearance
+-----
+A Calmer You (Dynamic)
+Dark
+Midnight Dusk
+Chocolate Strawberries
+Follow system theme
+Pure black dark mode
+Expanded toolbar
+Show a larger, expanded toolbar at the top of most pages (does not show on small
+Details page
+Theme buttons based on cover
+Render images in descriptions
+Show images embedded in Markdown-formatted descriptions
+Show missing chapters
+Show a divider for missing chapters in the chapter list, and a subtitle beside t
+Navigation
+Auto-hide bottom navigation
+Hides when scrolling
+Side navigation icon alignment
+Center
+Use side navigation
+Default behavior
+By default, side navigation is used for certain phones and small tablets when in
+-----
+Follow system theme
+Pure black dark mode
+Expanded toolbar
+Show a larger, expanded toolbar at the top of most pages (does not show on small
+Details page
+Theme buttons based on cover
+Render images in descriptions
+Show images embedded in Markdown-formatted descriptions
+Show missing chapters
+Show a divider for missing chapters in the chapter list, and a subtitle beside t
+Navigation
+Auto-hide bottom navigation
+Hides when scrolling
+Side navigation icon alignment
+Center
+Use side navigation
+Default behavior
+By default, side navigation is used for certain phones and small tablets when in
+-----
+##### Library
+General
+Sort by ignoring articles
+When sorting alphabetically, sort ignoring articles (a, an, the) at the start of
+Search suggestions
+Search tips will show up periodically. Long press the suggestion to search it.
+Display options
+Can also be found by expanding library filters
+Mark duplicate read chapter as read
+Never
+Categories
+Edit categories
+2 categories
+Default category
+Last used
+Global updates
+Library update frequency
+Daily
+Library
+Library
+-----
+Search suggestions
+Search tips will show up periodically. Long press the suggestion to search it.
+Display options
+Can also be found by expanding library filters
+Mark duplicate read chapter as read
+Never
+Categories
+Edit categories
+2 categories
+Default category
+Last used
+Global updates
+Library update frequency
+Daily
+Device restrictions
+Restrictions: Wi-Fi
+Skip updating titles
+With unread chapter(s), That haven
+Categories
+Automatically refresh covers
+Refresh covers in library as well when updating library
+-----
+##### Reader
+General
+Default reading mode
+Right to left
+Double tap animation speed
+Normal
+Animate page transitions
+Buttons at bottom of reader
+View chapters, Open in WebView, Crop borders (Webtoon), Page layout, Display opt
+Certain buttons can be found in other places if disabled here
+Display
+Default orientation
+Free
+Background color
+Smart (based on page)
+Fullscreen
+Keep screen on
+Reader
+Reader
+-----
+Display
+Default orientation
+Free
+Background color
+Smart (based on page)
+Fullscreen
+Keep screen on
+Show page number
+Cutout area behavior (Landscape)
+Pad cutout areas
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+If disabled, the transition page will be skipped if the next chapter is loaded
+Paged
+Tap zones
+Default
+Invert tap zones
+None
+-----
+Show page number
+Cutout area behavior (Landscape)
+Pad cutout areas
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+If disabled, the transition page will be skipped if the next chapter is loaded
+Paged
+Tap zones
+Default
+Invert tap zones
+None
+Scale type
+Fit screen
+Cutout area behavior
+Cutout area behavior only applies in portrait mode with certain scale types
+Zoom into double page spreads
+Zoom start position
+Automatic
+-----
+Invert tap zones
+None
+Scale type
+Fit screen
+Cutout area behavior
+Cutout area behavior only applies in portrait mode with certain scale types
+Zoom into double page spreads
+Zoom start position
+Automatic
+Crop borders
+Navigate to pan
+Page layoutBETA
+Automatic (based on orientation)
+While using automatic page layout, you can still switch between layouts while re
+Split double pages in portrait
+Invert double pages
+Webtoon
+Tap zones
+Default
+Invert tap zones
+None
+-----
+Automatic
+Crop borders
+Navigate to pan
+Page layoutBETA
+Automatic (based on orientation)
+While using automatic page layout, you can still switch between layouts while re
+Split double pages in portrait
+Invert double pages
+Webtoon
+Tap zones
+Default
+Invert tap zones
+None
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Side padding
+None
+Page layout
+Single page
+-----
+Split double pages in portrait
+Invert double pages
+Webtoon
+Tap zones
+Default
+Invert tap zones
+None
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Side padding
+None
+Page layout
+Single page
+Invert double pages
+Enable zoom out
+Navigation
+Volume keys
+Use vertical progress bar for
+Webtoon, Continuous vertical
+Vertical bar height
+65%
+-----
+None
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Side padding
+None
+Page layout
+Single page
+Invert double pages
+Enable zoom out
+Navigation
+Volume keys
+Use vertical progress bar for
+Webtoon, Continuous vertical
+Vertical bar height
+65%
+Place vertical bar
+Left
+Right
+Downloading
+Page preload amount
+6 pages
+The amount of pages to preload when reading. Higher values will result in a smoo
+-----
+Page layout
+Single page
+Invert double pages
+Enable zoom out
+Navigation
+Volume keys
+Use vertical progress bar for
+Webtoon, Continuous vertical
+Vertical bar height
+65%
+Place vertical bar
+Left
+Right
+Downloading
+Page preload amount
+6 pages
+The amount of pages to preload when reading. Higher values will result in a smoo
+Actions
+Show on long press
+Save pages in separate folders
+Creates folders according to manga title
+-----
+##### Downloads
+Download location
+/storage/emulated/0/TachiyomiJ2K/downloads
+Only download over Wi-Fi
+Save as CBZ archive
+Split tall images
+Improves reader performance
+Concurrent source downloads
+5 sources
+Concurrent page downloads
+5 pages
+Pages downloaded simultaneously per source
+Remove after read
+Remove when marked as read
+Remove after read
+Never
+Allow deleting bookmarked chapters
+Downloads
+Downloads
+-----
+Only download over Wi-Fi
+Save as CBZ archive
+Split tall images
+Improves reader performance
+Concurrent source downloads
+5 sources
+Concurrent page downloads
+5 pages
+Pages downloaded simultaneously per source
+Remove after read
+Remove when marked as read
+Remove after read
+Never
+Allow deleting bookmarked chapters
+Download new chapters
+Download new chapters
+Download ahead
+Auto download while reading
+Never
+Only works on entries in library and if the current chapter plus the next one ar
+-----
+Concurrent source downloads
+5 sources
+Concurrent page downloads
+5 pages
+Pages downloaded simultaneously per source
+Remove after read
+Remove when marked as read
+Remove after read
+Never
+Allow deleting bookmarked chapters
+Download new chapters
+Download new chapters
+Download ahead
+Auto download while reading
+Never
+Only works on entries in library and if the current chapter plus the next one ar
+Automatic removal
+Delete removed chapters
+Delete downloaded chapters if the source has removed the chapter online
+-----
+##### Browse
+Hide entries already in library
+Show "Duplicate" badge
+Display a "Duplicate" badge for entries already in library from another extensio
+Extensions
+Check for extension updates
+Extension stores
+Auto-update extensions
+Over Wi-Fi only
+Some extensions may not be auto-updated if they were installed outside this app
+Notify extension has been updated
+Global search
+Sources to search
+All enabled
+Pinned only
+Migration
+Browse
+Browse
+-----
+Display a "Duplicate" badge for entries already in library from another extensio
+Extensions
+Check for extension updates
+Extension stores
+Auto-update extensions
+Over Wi-Fi only
+Some extensions may not be auto-updated if they were installed outside this app
+Notify extension has been updated
+Global search
+Sources to search
+All enabled
+Pinned only
+Migration
+Source migration
+Match pinned sources
+Only enable your pinned sources for migration
+Match enabled sources
+Only enable your currently enabled sources for migration
+You can also migrate by selecting entries in your library
+NSFW (18+) sources
+Show in sources and extensions lists
+-----
+Extension stores
+Auto-update extensions
+Over Wi-Fi only
+Some extensions may not be auto-updated if they were installed outside this app
+Notify extension has been updated
+Global search
+Sources to search
+All enabled
+Pinned only
+Migration
+Source migration
+Match pinned sources
+Only enable your pinned sources for migration
+Match enabled sources
+Only enable your currently enabled sources for migration
+You can also migrate by selecting entries in your library
+NSFW (18+) sources
+Show in sources and extensions lists
+Requires app restart to take effect
+This does not prevent unofficial or potentially incorrectly flagged extensions f
+-----
+##### Tracking
+Update tracking after reading
+Update tracking when marked as read
+Services
+MyAnimeList
+AniList
+Kitsu
+MangaUpdates
+Shikimori
+Bangumi
+Hikka
+MangaBaka
+One-way sync to update the chapter progress in tracking services. Set up trackin
+Tracking
+Tracking
+-----
+Update tracking after reading
+Update tracking when marked as read
+Services
+MyAnimeList
+AniList
+Kitsu
+MangaUpdates
+Shikimori
+Bangumi
+Hikka
+MangaBaka
+One-way sync to update the chapter progress in tracking services. Set up trackin
+Enhanced services
+Services that provide enhanced features for specific sources. Entries are automa
+-----
+##### Security and privacy
+Hide notification content
+Secure screen
+Incognito mode
+Secure screen hides app contents when switching apps and block screenshots
+Analytics and crash logs
+Send crash reports
+Helps fix any bugs. No sensitive data will be sent
+Allow analytics
+Send anonymized usage data to help improve app features
+Sending crash logs and analytics will allow us to identify and fix issues, impro
+Security and privacy
+Security and privacy
+-----
+##### Advanced
+Dump crash logs
+Saves error logs to a file for sharing with the developers
+Debug info
+Background activity
+Disable battery optimization
+Disable this if you are experiencing issues with updating or restoring your libr
+Don
+Some manufacturers have additional app restrictions that kill background service
+Check for beta releases
+Try new features before they
+Data Management
+Clear chapter cache
+Used: 5.10 MB
+Refresh the download cache
+This will force the download cache to recalculate. Useful if you modified downlo
+Advanced
+Advanced
+-----
+Check for beta releases
+Try new features before they
+Data Management
+Clear chapter cache
+Used: 5.10 MB
+Refresh the download cache
+This will force the download cache to recalculate. Useful if you modified downlo
+Clean up cached covers
+Delete old and unused cached covers of entries in your library that has been upd
+Clear cached covers not in library
+Clean up downloaded chapters
+Delete non-existent, partially downloaded, and read chapter folders
+Clear WebView data
+Clear database
+Delete history for entries that are not saved in your library
+Network
+Clear cookies
+DNS over HTTPS
+Disabled
+-----
+Clean up downloaded chapters
+Delete non-existent, partially downloaded, and read chapter folders
+Clear WebView data
+Clear database
+Delete history for entries that are not saved in your library
+Network
+Clear cookies
+DNS over HTTPS
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+Extensions
+Installer
+Default
+Revoke trusted unknown extensions
+Library
+Refresh library metadata
+Updates covers, genres, description and entries status information
+Refresh tracking metadata
+Updates status, score and last chapter read from the tracking services
+-----
+Delete non-existent, partially downloaded, and read chapter folders
+Clear WebView data
+Clear database
+Delete history for entries that are not saved in your library
+Network
+Clear cookies
+DNS over HTTPS
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+Extensions
+Installer
+Default
+Revoke trusted unknown extensions
+Library
+Refresh library metadata
+Updates covers, genres, description and entries status information
+Refresh tracking metadata
+Updates status, score and last chapter read from the tracking services
+-----

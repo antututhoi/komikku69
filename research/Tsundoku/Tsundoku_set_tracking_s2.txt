@@ -1,0 +1,41 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,51   t='' d='' id=
+[    ]  195,9    t='Sync reading list' d='' id=
+[    ]  399,40   t='Keep reading list status in sync with MangaBaka' d='' id=
+[C   ]  540,187  t='' d='' id=
+[    ]  105,187  t='' d='Shikimori' id=
+[    ]  299,187  t='Shikimori' d='' id=
+[C   ]  540,355  t='' d='' id=
+[    ]  105,355  t='' d='Bangumi' id=
+[    ]  294,355  t='Bangumi' d='' id=
+[C   ]  540,523  t='' d='' id=
+[    ]  105,523  t='' d='Hikka' id=
+[    ]  264,523  t='Hikka' d='' id=
+[    ]  540,817  t='One-way sync to update the chapter progress in external tracker services. Set up' d='' id=
+[    ]  165,1017 t='Novel Trackers' d='' id=
+[C   ]  540,1149 t='' d='' id=
+[    ]  105,1149 t='' d='NovelUpdates' id=
+[    ]  343,1149 t='NovelUpdates' d='' id=
+[C   ]  540,1354 t='' d='' id=
+[    ]  415,1312 t='Mark chapters as read on NovelUpdates' d='' id=
+[    ]  429,1391 t='Automatically mark chapters as read when you read them in the app' d='' id=
+[C   ]  540,1575 t='' d='' id=
+[    ]  195,1554 t='Sync reading list' d='' id=
+[    ]  415,1612 t='Keep reading list status in sync with NovelUpdates' d='' id=
+[C   ]  540,1775 t='' d='' id=
+[    ]  236,1754 t='Custom list mapping' d='' id=
+[    ]  364,1812 t='Map statuses to custom NovelUpdates lists' d='' id=
+[C   ]  540,1975 t='' d='' id=
+[    ]  252,1954 t='Configure list mapping' d='' id=
+[    ]  328,2012 t='Choose which list each status maps to' d='' id=
+[C   ]  540,2159 t='' d='' id=
+[    ]  105,2159 t='' d='NovelList' id=
+[    ]  299,2159 t='NovelList' d='' id=
+[C   ]  540,2321 t='' d='' id=
+[    ]  371,2322 t='Mark chapters as read on NovelList' d='' id=
+[    ]  429,2379 t='Automatically mark chapters as read when you read them in the app' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  256,212  t='Tracking' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

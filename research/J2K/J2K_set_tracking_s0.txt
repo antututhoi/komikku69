@@ -1,0 +1,29 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,626  t='' d='' id=
+[    ]  323,626  t='Update tracking after reading' d='' id=title
+[xk  ]  969,626  t='' d='' id=switchWidget
+[C   ]  540,767  t='' d='' id=
+[    ]  405,767  t='Update tracking when marked as read' d='' id=title
+[k   ]  969,767  t='' d='' id=switchWidget
+[    ]  540,926  t='Services' d='' id=title
+[C   ]  540,1057 t='' d='' id=
+[    ]  593,1056 t='MyAnimeList' d='' id=title
+[C   ]  540,1225 t='' d='' id=
+[    ]  593,1224 t='AniList' d='' id=title
+[C   ]  540,1393 t='' d='' id=
+[    ]  593,1392 t='Kitsu' d='' id=title
+[C   ]  540,1561 t='' d='' id=
+[    ]  593,1560 t='MangaUpdates' d='' id=title
+[C   ]  540,1729 t='' d='' id=
+[    ]  593,1728 t='Shikimori' d='' id=title
+[C   ]  540,1897 t='' d='' id=
+[    ]  593,1896 t='Bangumi' d='' id=title
+[C   ]  540,2065 t='' d='' id=
+[    ]  593,2064 t='Hikka' d='' id=title
+[C   ]  540,2233 t='' d='' id=
+[    ]  593,2232 t='MangaBaka' d='' id=title
+[    ]  613,2379 t='One-way sync to update the chapter progress in tracking services. Set up trackin' d='' id=summary
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  258,201  t='Tracking' d='' id=toolbar_title
+[    ]  540,468  t='Tracking' d='' id=big_title

@@ -1,0 +1,21 @@
+[C   ]  540,626  t='' d='' id=
+[    ]  279,626  t='Hide notification content' d='' id=title
+[k   ]  969,626  t='' d='' id=switchWidget
+[C   ]  540,793  t='' d='' id=
+[    ]  179,767  t='Secure screen' d='' id=title
+[    ]  174,821  t='Incognito mode' d='' id=summary
+[    ]  613,983  t='Secure screen hides app contents when switching apps and block screenshots' d='' id=summary
+[    ]  540,1165 t='Analytics and crash logs' d='' id=title
+[C   ]  540,1334 t='' d='' id=
+[    ]  224,1282 t='Send crash reports' d='' id=title
+[    ]  450,1363 t='Helps fix any bugs. No sensitive data will be sent' d='' id=summary
+[xk  ]  969,1334 t='' d='' id=switchWidget
+[C   ]  540,1579 t='' d='' id=
+[    ]  187,1527 t='Allow analytics' d='' id=title
+[    ]  450,1608 t='Send anonymized usage data to help improve app features' d='' id=summary
+[xk  ]  969,1579 t='' d='' id=switchWidget
+[    ]  613,1822 t='Sending crash logs and analytics will allow us to identify and fix issues, impro' d='' id=summary
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  405,201  t='Security and privacy' d='' id=toolbar_title
+[    ]  540,468  t='Security and privacy' d='' id=big_title

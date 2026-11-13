@@ -1,0 +1,466 @@
+add_repo	Add store index
+add_repo_message	Paste the store\'s index.min.json or index.pb link
+add_store	Add store
+auto_update	Auto-update
+available_to_install	Available to install
+back_to_top	Back to top
+bar_blur	Blur behind bars
+bar_blur_summary	Blur the content behind the status bar and the navigation bar
+broken_sources_migration_started	Source migration started in the background
+cancel_tests	Cancel tests
+category_download_summary	Save new chapters to your device as soon as they are found
+category_order	Arrange categories
+category_order_reset	Category order set to Random
+category_shelf_summary	Show this category as a row on the Shelf
+category_tracker_summary	Include this category when checking sources for new chapters
+change_info	Change info
+change_repo	Change store index
+chapter_jump_disable_confirm	Turn off
+chapter_jump_disable_message	Any chapter you open will be marked as your reading progress. You can turn this back on in reader settings.
+chapter_jump_disable_title	Turn off this popup?
+chapter_jump_dont_show_again	Don\'t show this again
+chapter_jump_message	You left off somewhere else. Take a peek without losing your place, or move your reading progress here.
+chapter_jump_move	Move progress here
+chapter_jump_peek	Just peek
+chapter_jump_setting_summary	Ask whether to peek or move progress when opening a chapter away from where you left off
+chapter_jump_setting_title	Chapter jump popup
+chapter_jump_title	Jump to this chapter?
+chapter_no_content	This chapter has no content. The source returned nothing
+chapter_no_pages	This chapter has no pages. It may be locked, or the source returned nothing
+chapters_read_d	%1$d chapters
+chapters_read_d_of_d	%1$d / %2$d chapters
+click_edit_icon_add_extension_repo	Click on the edit icon to add a store index url
+confirm_pin	Confirm PIN
+confirm_pin_hint	Re-enter your PIN
+content_filter_all	Show all
+content_filter_mixed	SFW & Mixed
+content_filter_sfw	SFW only
+content_warning_mixed	Mixed
+copy_details	Copy details
+copy_store_url	Copy store index URL
+cover_source_file	Image file
+cover_source_gallery	From gallery
+cover_source_page	Manga page
+cover_source_url	Enter URL
+create_backup_summary	Save your library, history and settings to a file
+create_pin	Create PIN
+create_pin_hint	Enter at least 4 digits
+customize	Customize
+date_created	Date created
+debug_logs	Debug logs
+default_category_sort	Sort manga in all categories
+delete_all_chapters	Delete all chapters
+delete_read_chapters_auto_summary	Deletes downloaded chapters as you finish reading them
+delete_read_chapters_keep	Safety margin
+delete_read_chapters_keep_immediate	A chapter is deleted as soon as you open the next one
+delete_read_chapters_keep_summary	Keeps %d chapter behind your reading position
+details_appearance	Details screen appearance
+details_appearance_summary	Screen style, backdrop image and blur effect
+details_backdrop	Set large cover as backdrop
+details_backdrop_blur	Backdrop blur
+details_backdrop_summary	Show a large cover image at the top as a backdrop image (like Tachiyomi)
+details_ui	Details screen style
+details_ui_compact	Compact
+details_ui_expressive	Centralized
+developer_status_blocked	Blocked
+developer_status_passed	Passed
+developer_status_running	Testing
+developer_status_skipped	Skipped
+developer_testing_tools	Developer testing tools
+developer_testing_tools_summary	Test installed extensions
+developer_tools_no_extensions	No installed extensions were found.
+developer_tools_progress	%1$d of %2$d extensions tested
+developer_tools_summary	%1$d tested · %2$d passed · %3$d blocked · %4$d errors
+dictionary	Dictionary
+dictionary_error	Could not load definition. Check your connection.
+dictionary_example	Example
+dictionary_not_found	No definition found.
+dictionary_source	Definitions from Free Dictionary API
+dictionary_synonyms	Synonyms
+double_tap_zoom	Double-tap zoom
+double_tap_zoom_fill	Fill screen
+double_tap_zoom_standard	Standard
+double_tap_zoom_summary	How far a double tap zooms in paged mode
+download_chapters_failed	%1$d chapter failed to download: %2$s
+downloads_only	Downloads only
+duplicates_check	Check for duplicates
+duplicates_check_summary	Warn when a title you are adding is already in your library
+duplicates_migrate_progress	Migrate progress
+duplicates_remaining	%1$d more title to review
+duplicates_replaced	Replaced %1$s: %2$s → %3$s
+duplicates_skip	Don\'t add
+duplicates_stop_checking	Stop checking for duplicates
+duplicates_summary	\"%1$s\" looks like something you already have.
+duplicates_title	Already in your library
+edit_store	Edit store
+enter_pin	Enter PIN
+epub_align_justified	Justified
+epub_align_side	Side
+epub_bionic_reading	Bionic reading
+epub_color_hex	Hex
+epub_color_saturation	Saturation
+epub_font_choose	Choose font
+epub_font_custom	Custom
+epub_font_family	Font
+epub_font_invalid	That file is not a compatible font.
+epub_font_mono	Mono
+epub_font_sans	Sans
+epub_font_serif	Serif
+epub_horizontal_margin	Horizontal margins
+epub_line_height	Line spacing
+epub_mode_paged_ltr	LTR
+epub_mode_paged_rtl	RTL
+epub_mode_scroll	Scroll
+epub_no_search_results	No matches found
+epub_paged_tap_gestures	Paged tap zones
+epub_paged_tap_gestures_summary	Left: previous · Center: controls · Right: next
+epub_paragraph_spacing	Paragraph spacing
+epub_publisher_style	Use book formatting
+epub_publisher_style_disabled_note	Turn off book formatting to use the disabled text options.
+epub_read_mode	Read mode
+epub_reading_direction	Direction
+epub_search_book	Search book
+epub_search_hint	Enter text to find
+epub_text_alignment	Text alignment
+epub_text_size	Text size
+epub_text_tab	Text
+epub_theme_background	Background
+epub_theme_custom	Custom
+epub_theme_highlighter	Highlighter
+epub_theme_preview	Preview
+epub_theme_preview_highlighted	comfortable
+epub_theme_preview_text	A quiet page for comfortable reading.
+epub_theme_system	Follow system
+epub_theme_text	Text
+epub_tools_tab	Tools
+epub_untitled_chapter	Untitled chapter
+epub_vertical_margin	Vertical margins
+error_disclaimer_captcha_required	Open the source and open any manga to verify captcha
+exclude_novels_from_suggestions	Do not suggest novels
+exclude_novels_from_suggestions_summary	Sources categorized as novels will not be used for suggestions
+exclude_nsfw_from_suggestions_unavailable	Install a manga extension rated safe to use this
+explore_language_note	Sources that support more than one language show only your selected language here. You can change the language anytime in the source\'s settings.
+explore_tab_order	Show first
+export_epub	Export as EPUB
+export_epub_done	Exported as EPUB
+export_epub_failed	Export failed
+export_epub_nothing	Download the chapters first — only downloaded chapters can be exported
+export_to_mihon	Export for Mihon
+export_to_mihon_done	Exported %1$d titles
+export_to_mihon_done_partial	Exported %1$d titles, skipped %2$d without a Mihon extension
+export_to_mihon_summary	Save your favourites and reading progress as a Mihon backup file
+ext_auto_update_summary	Install extension updates silently as soon as they are detected, with a daily background check.
+ext_auto_update_title	Auto-update extensions
+ext_update_notifications_summary	Show a notification when installed extensions have updates available.
+ext_update_notifications_title	Notify about extension updates
+extension_download_failed	Extension download failed. Check your connection and try again.
+extension_filters	Extension Filter
+extension_hidden	Extension hidden from Explore
+extension_install_permission_required_message	Enable \"Install unknown apps\" for this app to install or update extensions.
+extension_install_permission_required_title	Allow app installs
+extension_update_available_summary	A newer version of this extension is available. Updating keeps this source working properly.
+extension_updated	Extension updated
+extension_updates_available	Extension updates available
+extension_updates_available_message	%d extension update is ready to install
+extensions_default_sort	Default browse order
+extensions_default_sort_summary	Applies to every installed extension
+extensions_hidden	Extensions hidden from Explore
+extensions_repo_load_error	Failed to load store index. Check URL and try again.
+extensions_repo_required	Store index url required
+extensions_to_install_message	Your backup uses these sources. Install their extensions — they\'re listed under \"Recommended for your library\" in the extension store:\n\n%1$s
+extensions_to_install_title	Install extensions
+eye_reminder	Eye health reminder
+eye_reminder_interval	Remind me after
+eye_reminder_summary	Remind me after %s of reading
+eye_reminder_text	You\'ve been reading for %s. Take a short break and give your eyes some rest.
+eye_reminder_title	Time to rest your eyes
+failed_checks_notification	Failed check notifications
+failed_checks_notification_summary	Notify when new chapters could not be fetched for some manga
+favorite	Favorite
+feed_counter_dot	Dot instead of a count
+feed_counter_dot_summary	Mark the Feed tab with a plain dot instead of the number of unread updates
+feed_entry_removed	Removed
+feed_gestures_tip	Swipe an entry right to remove it from the feed, or left to mark it as read. You can turn these gestures off in Settings › Check for new chapters.
+feed_gestures_tip_title	Swipe gestures
+feed_swipe_gestures	Feed swipe gestures
+feed_swipe_gestures_summary	Swipe feed entries to mark them as read or remove them
+filter_by_language	Filter by language
+filter_name_exists	A filter with this name already exists
+fix_selected_sources	Fix %d source
+github	GitHub
+github_star_note	Enjoying the app? Star it on GitHub — it helps other readers find it.
+haptic_feedback	Haptic feedback
+haptic_feedback_summary	Vibrate on taps, toggles, sliders and gestures
+hide_status_bar	Hide status bar
+hide_status_bar_summary	Hides the Android status bar across the entire app
+highlight	Highlight
+highlight_added	Highlight added
+highlight_in_novels	Highlight when reading novels
+highlights	Highlights
+highlights_removed	Highlights removed
+import_from_tracker	Import from tracker
+import_from_tracker_empty	This manga is not linked to any tracker
+import_from_tracker_hint	The values are filled into the editor, so you can check them before saving.
+increase_cover_spacing	Increase cover spacing
+insert_search_query	Insert into search
+install_extension_mentioned_above_to_read	Install the extension mentioned above to read
+install_extension_to_read_manga	Install the extension to read this manga
+intercept_cloudflare	Bypass Cloudflare via Interception
+intercept_cloudflare_summary	Try this if the source gets stuck on the Cloudflare check forever
+interval	Interval
+invalid_url	Only HTTPS URLs are allowed
+items_per_row	%d per row
+keep_current_store	Keep current
+kotatsu_migration_complete	Migration finished
+kotatsu_migration_done_all	Migrated %1$d manga onto your installed extensions.
+kotatsu_migration_done_pending	Converted %1$d of %2$d manga. Install these extensions to read them — they\'re listed under \"Recommended for your library\" in the extension store:\n\n%3$s
+kotatsu_migration_missing_extensions	Install these extensions to read them: %1$s
+kotatsu_migration_progress	Migrating… %1$d/%2$d
+kotatsu_migration_result	Converted %1$d of %2$d manga
+kotatsu_migration_running	Migrating Kotatsu library…
+kotatsu_migration_started	Migrating your library…
+local_library_only	Local library only
+lock_method_device	Device biometric & lock
+lock_method_message	How would you like to unlock the app?
+lock_method_pin	Custom PIN
+lock_method_title	Choose a lock method
+lock_timeout_10_seconds	10 seconds
+lock_timeout_1_minute	1 minute
+lock_timeout_5_minutes	5 minutes
+lock_timeout_instant	Instant
+manage_extensions	Manage extensions
+manage_extensions_summary	Add, remove or update extensions
+manage_manga_extensions_from_settings_icon	Install manga or novel extensions from the manage option to start reading
+manage_stores_summary	Add, edit, remove, and refresh extension stores
+manga_count	%d manga
+manga_failed_to_fetch_new_chapters	%1$d manga failed to fetch new chapters.
+manga_updated	%1$d manga updated
+mark_as	Mark as
+mark_as_unread_prompt	Reset the reading progress of the selected manga to 0%?
+marked_as_read	Marked as read
+merge_scanlators	Merge scanlators
+merge_scanlators_summary	Ticked scanlators show as one combined chapter list.
+migrate_broken_sources	Migrate broken sources
+migrate_broken_sources_description	Select the sources you want to repair. Every manga from those sources in favorites or history will be checked and, when broken, migrated to the best working alt
+migrate_broken_sources_summary	Replace every affected favorite and history entry with the best working alternative
+migrate_from_kotatsu	Migrate Kotatsu library
+migrate_from_kotatsu_confirm	This moves your restored Kotatsu library onto the matching installed extensions, carrying over favourites, history, bookmarks and tracking. It only takes a mome
+migrate_from_kotatsu_summary	Move a restored Kotatsu backup onto your installed extensions
+migration_in_progress	Migrating…
+migration_information	Migration information
+migration_progress_pattern	%1$d / %2$d
+migration_progress_summary	%1$d replaced, %2$d failed
+minutes_per_chapter_short	%1$s min/ch
+missing_extension_source_pattern	Missing extension (%s)
+multi_language_sources	Multi-language sources
+no_extension_store_found	No store found
+no_extension_store_found_summary	Tap the edit icon to add an extension store.
+no_extension_updates	All installed extensions are up to date.
+no_extensions_installed	No extensions installed
+no_external_source_installed	No external source found
+no_filters_available	This source has no filters
+no_highlights_summary	Hold and select any text while reading to highlight it
+no_highlights_yet	No highlights yet
+no_novel_extension_installed	No novel extension found
+no_repo_detected	No store index url detected
+no_source	No source
+no_sources_to_migrate	No catalog sources found
+no_sources_to_migrate_summary	Sources will appear here when favorites or history contain manga from them.
+not_completed	Not completed
+nsfw_filter	NSFW filter
+number_of_items	Number of items
+onboarding_default_destination	Using default app storage
+onboarding_discord	Join Discord
+onboarding_finish_description	Join the DropSauce community and visit our website to stay up to date.
+onboarding_finish_title	All set
+onboarding_full_black_oled	Full black for OLED
+onboarding_permission_install	Allow extension installs
+onboarding_restore_dropsauce	Restore Kotatsu backup
+onboarding_restore_tachiyomi	Restore Tachi favorites
+onboarding_select_destination	Select destination folder
+onboarding_storage_permissions_description	Choose where downloads are saved, or continue with the default. You can also grant extension install, notifications, and battery optimization access.
+onboarding_storage_permissions_title	Storage and permissions
+onboarding_sync_description	Sign in with Google to sync your library across devices, or restore a backup to pick up where you left off.
+onboarding_sync_title	Sync & Restore
+onboarding_visit_website	Visit website
+onboarding_welcome_description	Welcome to your free and open-source manga app. Set things up in a minute, then start reading.
+original_cover	Original cover
+other_apps	Other apps
+peek_mode	Peeking
+peek_mode_hint	Peeking — your progress won\'t change
+periodic_backups_summary	Automatically create backups on a schedule
+pick_cover_url	Enter image URL
+pick_from_gallery	Pick from gallery
+pins_mismatch	PINs don\'t match
+preview	Preview
+private_extension_install_failed	Failed to install sandbox extension: %1$s
+private_extensions	Sandbox extensions
+private_extensions_disabled	Sandbox mode is off
+private_extensions_enabled	Sandbox mode is on
+private_extensions_migration_message	This will download and install %1$d extension(s) as sandbox extensions. A configured extension repo is required.
+private_extensions_migration_title	Switch to sandbox mode?
+private_extensions_no_repo	Configure an extension repo to install sandbox extensions.
+private_extensions_summary	Install extensions inside the app\'s sandboxed storage. No system install permissions needed, updates are automatic, and extensions are invisible to other apps.
+private_mode_auto_update_note	Auto-update is always on in sandbox mode. Extensions update silently without prompts as soon as updates are detected.
+r_to_l	R-to-L
+reader_controls_in_bottom_bar_summary	Choose the buttons and their order
+reader_settings_summary	Advanced reader options
+reading_indicator_chapters	Chapters read (e.g., 12/30)
+reading_indicator_disabled	@string/disabled
+reading_indicator_percent	Percentage read (e.g., 60%)
+reading_rate	Reading rate
+rebuild_downloads_index	Rebuild Downloads Index
+rebuild_downloads_index_completed	Downloads index rebuilt: %1$d folders updated
+rebuild_downloads_index_started	Rebuilding downloads index…
+rebuild_downloads_index_summary	Scan download folders to verify previous downloads and build index files for compatibility.
+rebuild_keep_on	Keep on %1$s
+rebuild_migrate_to	Migrate to %1$s
+rebuild_source_mismatch_message	This local manga \"%1$s\" comes from %2$s, while your favorite comes from %3$s. Do you wish to migrate to %2$s or keep on %3$s?
+rebuild_source_mismatch_title	Source Mismatch
+recommended	Recommended
+recommended_extension_subtitle	Needed by manga in your library
+recommended_to_install	Recommended for your library
+refresh_stores	Refresh stores
+remove_from_favourites_and_history	Remove from favorites and history
+remove_from_favourites_and_history_confirm	Remove the selected manga from both favorites and history?
+remove_highlight	Remove highlight?
+remove_highlight_action	Remove highlight
+remove_repo	Remove store index
+remove_store	Remove store
+remove_store_warning	Extensions installed from this store will remain installed, but they will not receive updates until you re-add the store or replace their store.
+replace_extension_store_message	%1$s is currently installed from %2$s. Replace it with the version from %3$s?
+replace_extension_store_title	Replace extension store?
+replace_store	Replace
+replace_unavailable	Can\'t replace
+require_unlock_after	Require unlock after
+require_unlock_summary	Lock the app with device authentication or a custom PIN
+require_unlock_unavailable	Set a screen lock in system settings to enable this option
+restore_from_tachiyomi	Restore from Tachiyomi/Mihon
+restore_report_restored_simple	Restored items: %1$d manga
+restore_tachiyomi_summary	Import a backup created by Tachiyomi or Mihon
+reverse_list	Reverse List
+rotate_wide_pages	Fit wide pages
+rotate_wide_pages_direction	Rotation direction
+rotate_wide_pages_summary	Make double-page spreads in paged mode fill a portrait screen
+rotation_clockwise	Clockwise
+rotation_counter_clockwise	Counter-clockwise
+share_page	Share page
+shizuku_install_failed	Silent installation failed. %1$s
+shizuku_invalid_package	The downloaded extension APK is invalid or has an unexpected package name.
+shizuku_not_installed	Shizuku is not installed. Install it, start it, then try again.
+shizuku_not_running	Shizuku is not running. Start the Shizuku app first.
+shizuku_permission_denied	Shizuku permission was denied. Allow DropSauce in Shizuku and try again.
+shizuku_summary	Grant privileged access via Shizuku for silent, no-prompt installs
+shizuku_title	Shizuku installer (Beta)
+show_extensions	Show extensions
+show_whole_page	Show whole page
+smart_update_completed	Skip completed (never checked again)
+smart_update_skip_completed	Skipped: completed
+smart_update_skip_unread	Skipped: unread chapters
+smart_update_skip_unstarted	Skipped: not started
+smart_update_summary	Check everything
+smart_update_unread	Skip while new chapters are unread
+smart_update_unstarted	Skip not started yet
+sort_ascending	%s (ascending)
+sort_chapters_by_date	Sort by date
+sort_descending	%s (descending)
+sort_section_source	Server-side
+source_settings_app	App-side settings
+source_settings_extension	Server-side settings
+source_sort_broken_warning	This sorting order is broken. Reverted to the default sorting order
+split_page_again	Split page again
+stats_categories_all	All categories
+stats_categories_selected	%1$d category
+stats_chapters_read	Chapters read
+stats_daily_average	Daily average
+stats_days	%1$d day
+stats_longest_streak	Best %d
+stats_pages_read	Pages read
+stats_range_3months	Last 13 weeks
+stats_range_all	All time
+stats_range_day	Last 24 hours
+stats_range_month	Last 30 days
+stats_range_months	Last %1$d month
+stats_range_week	Last 7 days
+stats_range_year	Last 12 months
+stats_since	since %s
+stats_titles	%1$d title
+stats_top_manga	Top manga
+stats_under_minute	<1 m
+stop_update	Stop update
+store_already_added	This store is already added
+store_available	Store available
+store_kind_mixed	Manga & novels
+store_kind_novel	Novels
+store_unavailable	This store could not be refreshed. Showing its last available catalog.
+stores_supported_kinds_note	This app supports Mihon manga extensions, Tsundoku novel extensions and LNReader novel plugins. Add a store index url and the type is detected automatically.
+sync_completed	Synced with Google Drive
+sync_content_bookmarks	Bookmarks
+sync_content_covers	Custom covers & overrides
+sync_content_favourites	Favorites & categories
+sync_content_feed	Feed (new chapters)
+sync_content_history	History & reading progress
+sync_content_settings	Settings, sources & extension stores
+sync_content_stats	Reading statistics
+sync_content_tracking	Tracking (MAL, AniList…)
+sync_data_deleted	Sync data deleted from Google Drive
+sync_delete_confirm_message	This deletes the synced data from your Google Drive. Your devices keep their data and upload it again the next time they sync. Continue?
+sync_delete_data	Delete all sync data
+sync_delete_data_summary	Remove the synced data from your Google Drive
+sync_hide_email	Hide email
+sync_legacy_device	A device with an older version of DropSauce is still syncing. Update it so it also gets the changes made here.
+sync_progress_from_tracking	Sync progress from tracking services
+sync_progress_from_tracking_summary	When refreshing manga, advance local reading progress to match linked services
+sync_section_sync_info	What you choose above is saved in your Google Drive and kept the same on all your devices. Sign in on a new device to get it all back. Sync runs by itself whene
+sync_show_email	Show email
+sync_sign_in_required	Sync paused — Google sign-in required
+sync_sign_in_required_text	Tap to open sync settings and sign in again
+sync_tap_retry	Tap to try again
+sync_tap_to_sync	Tap to sync now
+sync_up_to_date	Up to date
+sync_what	What to sync
+tap_sentence_to_highlight	Tap a sentence to highlight it
+tap_to_review_affected_manga	Tap to review affected manga.
+test_all_extensions	Test all extensions
+test_extension	Test this extension
+text_feed_holder_primary	Nothing new to read
+text_to_speech	Text to speech
+theme_name_amber	Amber
+theme_name_lime	Remon
+theme_name_shana	Shana
+theme_name_sky	Sky
+title_over_cover	Show title over cover
+title_tap_to_read	Tap title to read
+title_tap_to_read_summary	In favorites and history, tapping a manga\'s name opens the reader directly
+total_read_time	Total read time
+tracking_progress_synced	Reading progress synced up to chapter %1$d
+tts_customize_voices	Customize voices
+tts_get_more_voices	Get more voices
+tts_next_sentence	Next sentence
+tts_playing	Playing
+tts_preview_voice	Play a sample
+tts_previous_sentence	Previous sentence
+tts_speed_value	%1$.2fx
+tts_tap_hint	Tap any paragraph to read from there
+tts_unavailable	No text-to-speech engine is available
+tts_voice	Voice
+tts_voice_female	Female
+tts_voice_male	Male
+tts_voice_needs_internet	needs internet
+tts_voice_sample	This is how this voice sounds.
+ui_scale	Display size
+ui_scale_larger	Larger
+ui_scale_largest	Largest
+ui_scale_smaller	Smaller
+ui_scale_smallest	Smallest
+ui_scaling_tip	The app now sizes itself to your screen instead of using one fixed size for every phone. If it doesn\'t feel right, adjust it with the UI scale slider in Settin
+ui_scaling_tip_title	Sizing has changed
+unhide	Unhide
+unlock_app	Unlock app
+updates_available	Updates available
+use_legacy_navigation_bar	Use legacy navigation bar
+use_legacy_navigation_bar_summary	Show Android\'s default bottom navigation style
+wide_pages_method	Method
+wide_pages_rotate	Rotate
+wide_pages_split	Split in two
+wrong_pin	Wrong PIN

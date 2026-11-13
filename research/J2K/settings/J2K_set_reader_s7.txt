@@ -1,0 +1,34 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,86   t='' d='' id=
+[    ]  155,50   t='Page layout' d='' id=title
+[    ]  142,104  t='Single page' d='' id=summary
+[C   ]  540,242  t='' d='' id=
+[    ]  233,242  t='Invert double pages' d='' id=title
+[k   ]  969,242  t='' d='' id=switchWidget
+[C   ]  540,383  t='' d='' id=
+[    ]  202,383  t='Enable zoom out' d='' id=title
+[k   ]  969,383  t='' d='' id=switchWidget
+[    ]  540,542  t='Navigation' d='' id=title
+[C   ]  540,659  t='' d='' id=
+[    ]  165,659  t='Volume keys' d='' id=title
+[k   ]  969,659  t='' d='' id=switchWidget
+[C   ]  540,826  t='' d='' id=
+[    ]  316,800  t='Use vertical progress bar for' d='' id=title
+[    ]  291,854  t='Webtoon, Continuous vertical' d='' id=summary
+[    ]  489,992  t='Vertical bar height' d='' id=slider_title
+[    ]  997,992  t='65%' d='' id=slider_value
+[    ]  210,1249 t='Place vertical bar' d='' id=title
+[Ck  ]  680,1249 t='Left' d='' id=button_start
+[Cxk ]  922,1249 t='Right' d='' id=button_end
+[    ]  540,1408 t='Downloading' d='' id=title
+[    ]  453,1525 t='Page preload amount' d='' id=slider_title
+[    ]  961,1525 t='6 pages' d='' id=slider_value
+[    ]  540,1632 t='The amount of pages to preload when reading. Higher values will result in a smoo' d='' id=slider_subtitle
+[    ]  540,1957 t='Actions' d='' id=title
+[C   ]  540,2074 t='' d='' id=
+[    ]  229,2074 t='Show on long press' d='' id=title
+[xk  ]  969,2074 t='' d='' id=switchWidget
+[C   ]  540,2241 t='' d='' id=
+[    ]  339,2215 t='Save pages in separate folders' d='' id=title
+[    ]  385,2269 t='Creates folders according to manga title' d='' id=summary
+[k   ]  969,2241 t='' d='' id=switchWidget

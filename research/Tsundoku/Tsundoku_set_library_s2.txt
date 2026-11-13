@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  114,57   t='Behavior' d='' id=
+[C   ]  540,205  t='' d='' id=
+[    ]  263,184  t='Chapter on swipe to left' d='' id=
+[    ]  226,242  t='Bookmark chapter' d='' id=
+[C   ]  540,405  t='' d='' id=
+[    ]  275,384  t='Chapter on swipe to right' d='' id=
+[    ]  139,442  t='Mark as read' d='' id=
+[C   ]  540,605  t='' d='' id=
+[    ]  377,584  t='Mark duplicate read chapter as read' d='' id=
+[    ]   81,642  t='None' d='' id=
+[C   ]  540,784  t='' d='' id=
+[    ]  338,784  t='Hide missing chapter indicators' d='' id=
+[C   ]  540,1021 t='' d='' id=
+[    ]  429,979  t='Check for existing entries when adding to library' d='' id=
+[    ]  429,1095 t='Warn about possible duplicates already in your library before adding' d='' id=
+[C   ]  540,1279 t='' d='' id=
+[    ]  217,1258 t='Duplicate list order' d='' id=
+[    ]  147,1316 t='Alphabetically' d='' id=
+[C   ]  540,1479 t='' d='' id=
+[    ]  286,1458 t='Migrate source list sorting' d='' id=
+[    ]  147,1516 t='Alphabetically' d='' id=
+[C   ]  540,1679 t='' d='' id=
+[    ]  269,1658 t='Migrate source list order' d='' id=
+[    ]  119,1716 t='Ascending' d='' id=
+[C   ]  540,1900 t='' d='' id=
+[    ]  316,1858 t='Sort novel tags alphabetically' d='' id=
+[    ]  429,1937 t='Sort tags on novel detail page by name instead of source order' d='' id=
+[C   ]  540,2179 t='' d='' id=
+[    ]  429,2137 t='Restore position in completed novel chapters' d='' id=
+[    ]  429,2253 t='Resume novel chapters from where you left off even when already marked as read' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Reset to defaults' id=

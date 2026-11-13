@@ -1,0 +1,3098 @@
+_continue_play	Continue playing
+_new	New
+_s_deleted_from_local_storage	\"%s\" deleted from local storage
+about_app_translation	Translation
+about_app_translation_summary	Translate this app
+about_author	by skepsun
+about_discord	Discord Server
+about_donate	Donate
+about_donate_afdian	Support on Afdian
+about_group_support	Support
+account_already_exists	Account already exists
+action_auto_restore	Auto restore
+action_auto_upload	Auto upload
+action_manual_restore	Manual restore
+action_manual_upload	Manual upload
+action_upload	Upload
+add_custom_space	Add custom space
+add_extension_repository	Add repository
+add_extension_repository_message	Paste a compatible repository URL. Both the repository root and a URL ending with index.min.json are supported.
+add_repository	Add repository
+add_repository_prompt	Add URL, file, or pasted repository
+add_repository_with_kind	Add %1$s
+add_source	Add source
+add_source_menu	New source
+add_tag_pattern	Add “%1$s”
+adult	Adult
+adult_content_filtering	Adult content filtering
+advanced_search	Advanced search
+ai	AI
+ai_api_open_settings_hint	API is not fully configured yet. You can set endpoint and key on the next page.
+ai_api_provider_custom	Custom
+ai_api_settings	API providers
+ai_api_settings_summary	Configure provider presets, endpoints, keys, and remote model selection
+ai_api_settings_summary_format	%1$s, %2$s\nCurrent mode: %3$s, model: %4$s
+ai_api_status_configured	Configured
+ai_api_status_not_configured	Not configured
+ai_api_usage_summary_api_only	Current translation mode is API only. Every translation request will use the configured remote provider.
+ai_api_usage_summary_local_first	Current translation mode is Local first. API settings are used only when local translation is unavailable or unsupported.
+ai_api_usage_summary_local_only	Current translation mode is Local only. These API settings are kept for later use, but they are not used right now.
+ai_image_enhancement_settings	Image enhancement
+ai_image_enhancement_summary	Configure reader-side AI super resolution and cache behavior
+ai_image_enhancement_summary_disabled	Disabled, %1$s
+ai_image_enhancement_summary_enabled	Enabled, %1$s
+ai_local_models	AI models
+ai_models_summary_format	%1$d/%2$d downloaded\nOCR %3$d/%4$d, translation %5$d/%6$d, bubble %7$d/%8$d
+ai_section_core	Models and API
+ai_section_image	Image enhancement
+ai_section_translation	Translation and language
+ai_section_video	Video enhancement
+ai_settings	AI
+ai_settings_entry_summary	Manage translation, image enhancement, video enhancement, and AI model features
+ai_translation_summary_configured	Configured, %1$s\n%2$s -> %3$s
+ai_translation_summary_disabled	Disabled, %1$s\n%2$s -> %3$s
+ai_translation_summary_enabled	Enabled, %1$s\n%2$s -> %3$s
+ai_video_enhancement_settings	Video enhancement
+ai_video_enhancement_summary	Configure video super resolution modes and advanced shader selection
+ai_video_enhancement_summary_format	Current mode: %1$s\nShader: %2$s
+al_category_anime_airing	Airing Schedule
+al_category_anime_favourites	Most Favourited Series
+al_category_anime_movies	Trending Movies
+al_category_anime_popular	Popular Anime
+al_category_anime_series	Top Rated Series
+al_category_anime_top	Top Rated Anime
+al_category_anime_trending	Trending Anime
+al_category_anime_upcoming	Upcoming Anime
+al_category_manga_favourites	Most Favourited Manga
+al_category_manga_manhwa	Trending Manhwa
+al_category_manga_novels	Trending Novels
+al_category_manga_popular	Popular Manga
+al_category_manga_top	Top Rated Manga
+al_category_manga_trending	Trending Manga
+aliases_for_tag	Aliases · %1$s
+all_content	All content
+all_sources_enabled	All sources are enabled
+allow_unstable_updates	Allow unstable updates
+allow_unstable_updates_summary	Receive notifications about unstable builds
+alternatives_hint	Tap to preview · Long press to migrate
+anime_count_short	Anime %1$d
+anime_offline_database	Anime Offline Database
+anime_offline_database_summary_installed	Installed %1$s • updated %2$s
+anime_offline_database_summary_installed_unknown	Installed locally
+anime_offline_database_summary_not_installed	Not downloaded yet
+anime_offline_database_summary_not_installed_checked	Not downloaded • last checked %1$s
+anime_offline_database_update_channel_description	Shows background download progress for the anime cross-site offline database.
+anime_offline_database_update_checking	Checking for a newer cross-site anime index
+anime_offline_database_update_progress	Downloading %1$d MB / %2$d MB
+anime_offline_database_update_started	Started checking for anime offline database updates
+anime_offline_database_update_title	Updating anime offline database
+aniyomi_available_extensions	Aniyomi Available Extensions
+aniyomi_extension_count	%d extension(s) loaded
+aniyomi_extension_repositories	Aniyomi Repositories
+aniyomi_extensions	Aniyomi Extensions
+aniyomi_extensions_summary	Manage Aniyomi extension sources
+aniyomi_source_count	%d source(s) available
+aniyomi_sources	Aniyomi
+aniyomi_sources_directory	Aniyomi Extensions Directory
+app_update_mirror_summary	Used for this update download and saved as the global GitHub mirror.
+app_update_source	Update source
+app_update_source_checking	Checking API…
+app_update_source_gitcode	GitCode (Mainland China route)
+app_update_source_gitcode_summary	Release route optimized for users in Mainland China.
+app_update_source_github	GitHub (global route)
+app_update_source_github_summary	Global release route. You can select a GitHub proxy below when direct access is slow or unavailable.
+app_update_source_latency	API response: %1$d ms
+app_update_source_no_release	The selected source did not return a newer installable version. Try the other source.
+app_update_source_saved_summary	Your choice is saved. API response time is for reference only and does not represent actual APK download speed.
+app_update_source_unavailable	API currently unavailable
+appearance_badges_group_summary	Configure the information shown in each corner of list cards
+appearance_behavior_section	Interaction and behavior
+appearance_color_scheme_ios_note	iOS style defaults to iOS Blue; you can change the color scheme here.
+appearance_details_summary	Content, controls, panorama cover, and dock
+appearance_group_content_display	Content display
+appearance_group_details	Details
+appearance_group_details_content	Content and controls
+appearance_group_details_visual	Visual presentation
+appearance_group_glass_tuner	Glass finish tuner
+appearance_group_glass_tuner_summary	Fine-grained control over every Backdrop glass parameter, per component role
+appearance_group_home	Home
+appearance_group_home_display	Home presentation
+appearance_group_immersive	Immersive layers
+appearance_group_interface	Interface
+appearance_group_interface_and_behavior	Interface and behavior
+appearance_group_interface_components	Interface components
+appearance_group_list_information	List information
+appearance_group_list_interaction	List interaction and motion
+appearance_group_list_layout	List layout
+appearance_group_lists	Lists
+appearance_group_main_content	Home content and actions
+appearance_group_tablet_list	Tablet list behavior
+appearance_group_text_and_language	Text and language
+appearance_group_theme_and_color	Theme and color
+appearance_home_summary	Hero display, suggestions, and shortcuts
+appearance_immersive_summary	Tint and blur under the top and bottom bars, and blur quality
+appearance_interface_behavior_summary	Text, language, interface components, behavior, and privacy
+appearance_ios_font_note	iOS style currently uses %1$s by default; you can change it here.
+appearance_lists_summary	List layout, interaction, indicators, and badges
+appearance_mode	Appearance mode
+appearance_navigation_group	Navigation appearance
+appearance_navigation_group_summary	Pinning, labels, floating and layered surfaces, and dimensions
+appearance_recommended_for_style	Recommended for %1$s
+appearance_search_filters_group_summary	Language, content type, and source-tag controls
+appearance_style_custom_override	Current %1$s style default is %2$s; manual value is active
+appearance_style_default_value	Current %1$s style default: %2$s
+appearance_style_override_note	Effective in the current %1$s style: %2$s
+appwidget_recent_description	Your recently read manga
+appwidget_shelf_description	Manga from your favorites
+auth_complete	Authorized
+auth_title	Authentication
+availability_filter_title	Declared availability
+available_d	Available: %1$d
+available_extension_count	%d available
+available_extension_update_count	%d updates
+available_sources_count	%1$d available
+avif_animation_downsampling	Allow reducing AVIF animation resolution
+avif_animation_downsampling_summary	Reduces resolution to keep animations playing within the budget. Disabled by default to preserve original resolution; animations whose two playback buffers exce
+avif_animation_memory_auto	Automatic (%1$d MiB recommended)
+avif_animation_memory_limit	AVIF memory limit per animation
+avif_animation_memory_limit_summary	Limits the displayed and preloaded frames of each animation. Spare budget preloads more frames to smooth playback. Multiple pages, encoded input and decoder wor
+avif_animation_recommended	Use recommended AVIF settings
+avif_animation_recommended_summary	Use an automatic %1$d MiB budget based on this device’s RAM and app memory limit, and preserve original resolution.
+background_artwork_blur	Background image blur
+background_artwork_blur_summary	Adjust the blur applied to the background image
+background_artwork_not_selected	No image selected
+background_artwork_opacity	Background image opacity
+background_artwork_opacity_summary	Adjust how visible the background image is
+background_artwork_overlay_strength	Overlay strength
+background_artwork_overlay_strength_summary	Adjust the intensity relative to the current theme overlay
+background_artwork_select	Select background image
+background_artwork_source	Artwork source
+background_artwork_source_summary	Choose which cover or image is used for the app background
+background_style	Page background
+background_style_summary	Choose a standard theme background or blurred artwork
+backup_failed_check_notification	Backup blocked. Check the notification for repair steps.
+backup_guard_missing_anchor_contents	Restore blocked: the saved reading state points to works that are missing from the backup (%1$s). The backup is incomplete; try a newer backup file.
+backup_information	Create a full backup for local storage or WebDAV restore.
+backup_orphan_dialog_message	Some reading data points to a work that no longer exists. You can continue by leaving these records out of this backup. Your local data will not be deleted.
+backup_orphan_dialog_warning	Only the records listed here will be left out of this backup. This may prevent their progress, favourites, or statistics from being restored on another device.
+backup_orphan_discard_and_continue	Leave these records out and continue
+backup_orphan_more_items	%1$d more records are not shown
+backup_orphan_notification_disabled	Backup found records without an owning work. Enable backup notifications and try again to review them.
+backup_orphan_review_action	Review and continue
+backup_orphan_review_summary	Found %1$d active records whose work is missing
+backup_orphan_review_title	Backup needs your attention
+backup_orphan_source	Source: %1$s
+backup_orphan_state_favourite	Favourite
+backup_orphan_state_history	Reading progress
+backup_orphan_state_statistics	Reading statistics
+backup_orphan_unknown_work	Unknown work
+backup_periodic_explain_keep_local_copy_off	When local copy is off, periodic task uploads only to remote; local last backup time may be empty
+backup_periodic_last_local_empty	Local copy disabled; no local backup time
+backup_restored_background	The backup will be restored in the background
+backup_tg_check	Check if API works
+backup_tg_echo	Test message
+backup_tg_id_not_set	Chat ID is not set
+badge_bottom_left	Bottom-left badges
+badge_bottom_right	Bottom-right badges
+badge_favorite	Favorite
+badge_invalid	Invalid
+badge_saved	Saved
+badge_score	Score (from tracker)
+badge_search_only	Search Only
+badge_top_left	Top-left badges
+badge_top_right	Top-right badges
+badge_tracker	Tracking site icons
+badge_valid	Valid
+bangumi	Bangumi
+bangumi_recommendations_load_failed_hint	Failed to load Bangumi recommendations. Try a VPN or select another mirror in Settings - Storage & network.
+basic_info	Basic info
+batch_no_selection	Please select a source first
+bg_artwork_source_custom	Custom image
+bg_artwork_source_last_favourite	Recently favorited
+bg_artwork_source_last_read	Recently read
+bg_artwork_source_last_updated	Recently updated
+bg_artwork_source_random_suggestion	Random suggestion
+bg_style_artwork_blur	Blurred artwork
+bg_style_artwork_blur_summary	Use a softened cover image as the app background
+bg_style_artwork_gallery	Artwork gallery
+bg_style_artwork_gallery_summary	Keep the artwork clearly visible behind layered translucent surfaces
+bg_style_default	Standard background
+bg_style_default_summary	Use the standard background defined by the interface style
+bind_manga_success	Bound to \"%s\" successfully
+blacklisted_tags	Blacklisted tags
+blacklisted_tags_summary	Exclude content containing these tags from lists and search results
+bookmark_position	Bookmark position
+bookmark_preview_unavailable	Unable to load bookmark preview
+bookmarks_header_subtitle	Your collection of memorable moments and notes
+bookmarks_header_title	Bookmarks & Highlights
+browse_available_extensions	Browse available extensions
+browse_display_options_summary	This option has moved to Browse page search bar > More > Display options.
+browse_more_tracking_recommendations	Show more tracking web recommendations
+browse_more_tracking_recommendations_summary	Show additional tracking rows below content sources on the Browse page. When disabled, the hero stays visible and content sources stay expanded.
+browse_tracking_recommendations	Show tracking web recommendations
+browse_tracking_recommendations_summary	Show recommendation rows from tracking websites on the Browse page. When disabled, Browse only shows content sources.
+browser_counts_pattern	%1$d updates · %2$d available
+built_in_sources	Built-in
+built_in_sources_directory	Built-in Sources
+built_in_space	Built in
+bypass_cloudflare	Bypass Cloudflare
+bypass_cloudflare_summary	Replay the main page request without some browser client hint headers for sources that need it.
+cache	Cache
+cache_limit_applies_on_restart	Takes full effect after app restart
+cache_limits	Cache limits
+cache_limits_quick_presets	Quick Presets
+cache_limits_total_quota	Total Quota: %s
+cache_preset_balanced	Balanced
+cache_preset_compact	Compact
+cache_preset_performance	Performance
+cancel_translation	Cancel translation
+cancel_update_all_extensions	Cancel update all
+cancel_update_all_packages	Cancel update all
+captcha_solving	Solving captcha automatically…
+card_progress_chapters_left	%1$d ch. left
+card_progress_chapters_read	%1$d ch. read
+card_progress_percent_left	%1$d%% left
+card_progress_percent_read	%1$d%% read
+card_progress_style	Card progress style
+card_progress_style_bottom_bar	Bottom progress bar
+card_progress_style_circular_badge	Corner circular badge
+cast_failed	Failed to cast
+cast_no_wifi	Not connected to WiFi
+cast_stopped	Cast stopped
+cast_to_device	Cast to device
+casting_to	Casting to %s
+catalog	Catalog
+category_hidden_from_shelf	Hidden from the shelf
+chapter_download_delay	Chapter download delay
+chapter_range_selection_hint	Tip: select two chapters, then long-press a visible chapter between them to fill the range.
+chapter_selection_hint_tv	Use the download button on a chapter row to pick chapters one by one.
+chapter_show_download_button	Show download buttons
+chapter_show_thumbnails	Show chapter thumbnails
+chapter_show_translate_button	Show translate buttons
+chapter_statistics	Chapter statistics
+chapter_thumbnails_cache_limit	Chapter thumbnails cache limit
+chapters_count_info	%d chapters
+chapters_left	Chapters left
+chapters_read	Chapters read
+chapters_read_short	Chapters %1$d
+check_updates	Check updates
+checking_for_backups	Checking for backups…
+checking_for_updates	Checking for updates…
+choose_categories_to_show	Categories to show
+choose_cover	Choose image
+clear_chapter_thumbnails	Clear chapter thumbnails
+clear_crash_logs	Clear all crash logs
+clear_crash_logs_confirm	Delete all recorded crash logs?
+clear_danmaku_cache	Clear danmaku cache
+clear_favicons_cache	Clear favicons cache
+clear_local_manga_storage	Clear local manga
+clear_local_manga_storage_prompt	Delete all locally saved and imported manga files? This cannot be undone.
+clear_local_novel_storage	Clear local novels
+clear_local_novel_storage_prompt	Delete all locally saved and imported novel files? This cannot be undone.
+clear_local_video_storage	Clear local videos
+clear_local_video_storage_prompt	Delete all locally saved and imported video files? This cannot be undone.
+clear_novel_cache	Clear novel cache
+clear_source_cookies_summary	Clear cookies for specified domain only. In most cases will invalidate authorization
+clear_torrent_cache	Clear torrent cache
+clear_translation	Clear translation
+clear_translation_cache	Clear Translation Cache
+clear_tts_audio_cache	Clear TTS audio cache
+clear_video_cache	Clear video cache
+clear_video_proxy_cache	Clear video proxy cache
+cloudstream_extension_repositories	Cloudstream Repositories
+cloudstream_newpipe_required	This extension needs NewPipe classes that the NewPipe bundled with Kototoro does not have, so it cannot play videos. Try updating the extension or Kototoro.
+cloudstream_plugin_reloaded	%1$s was reloaded to apply its settings
+compact_movie_grid	Compact movie
+configured_repositories	Configured repositories
+content_type_filter	Content type
+content_type_hentai_manga	Adult Manga
+content_type_hentai_novel	Adult Novel
+content_type_hentai_video	Adult Video
+content_types	Content types
+continue_reading	Continue reading
+continuous_horizontal	Continuous horizontal
+continuous_horizontal_reversed	Read right to left
+cookies_saved	Cookies saved
+crash_copy_text	Something went wrong. Tap “Copy” to copy the crash report to your clipboard, then send it to the developers.
+crash_log_detail	Crash log detail
+crash_logs	Crash logs
+crash_logs_cleared	Crash logs cleared
+crash_logs_summary	View and share crash reports without adb
+crash_report_copied	Crash report copied to clipboard.
+crash_report_copy_failed	Could not copy the crash report.
+create_or_restore_backup	Create or restore a backup
+crop_and_annotate	Crop & note
+crop_and_annotate_summary	Crop panel screenshot and add thought note
+crop_include_next_page	Add next page
+crop_include_previous_page	Add previous page
+crop_stitch_right_to_left	Right to left
+crop_stitch_top_to_bottom	Top to bottom
+current_progress	Current progress
+custom	Custom
+custom_cover_failed	Could not read this image
+custom_cover_summary	Replaces the automatic stack of member covers for this category
+custom_space_limit	Up to %1$d custom spaces
+custom_space_rule_summary	%1$d content types · %2$d languages · %3$d source types
+custom_spaces	Space definitions
+danmaku_cache	Danmaku cache
+danmaku_cache_limit	Danmaku cache limit
+data_and_privacy	Data and privacy
+data_deletion	Data deletion
+data_restored	Restored
+data_restored_success_legacy_jar_hint	All data was restored. Legacy backup detected, compatible JAR repositories were added.
+data_restored_with_errors_legacy_jar_hint	The data was restored, but there are errors. Compatible JAR repositories were added for a legacy backup.
+default_s	Default: %s
+delete_custom_space	Delete custom space
+delete_custom_space_message	Delete “%1$s” and its saved navigation state?
+delete_repository_message	Delete %1$s and its imported source records where applicable?
+delete_repository_title	Delete repository
+delete_selected	Delete selected
+deleting_plugin	Deleting %s…
+deselect_all	Deselect all
+details_additional_metadata	Additional metadata
+details_character_role_label	Role
+details_character_voice_actors	CV: %1$s
+details_character_voice_actors_label	Voice actors
+details_character_voice_actors_more	CV: %1$s +%2$d
+details_comments	Comments
+details_copy_title	Copy title
+details_entity_metadata	Metadata source
+details_entity_metadata_binding	Metadata binding
+details_entity_metadata_sheet_hint	Choose where the title, summary and tags shown for this title come from. This only affects what is displayed.
+details_metadata_binding_unavailable	No metadata binding
+details_metadata_chapter_hint	Metadata chapters are for browsing info and chapter pages only. They do not open the reader or player directly.
+details_metadata_chapters	Metadata chapters
+details_metadata_source	Metadata Source
+details_metadata_source_label	Metadata source: %1$s
+details_metadata_source_login_hint	Search and local binding work without login. Sign in to auto-link online progress.
+details_no_comments	No comments yet.
+details_no_reviews	No reviews yet.
+details_open_character_site	Open character page
+details_open_comments_site	Site comments
+details_open_review	Open review
+details_open_reviews_site	Site reviews
+details_original_language_short	Original
+details_playback_chapters	Playback chapters
+details_playback_language	Playback language
+details_playback_language_short	Playback
+details_playback_source	Playback Source
+details_rating	Rating
+details_rating_and_status	Rating and status
+details_rating_requires_tracking	Bind this work in a logged-in tracking source before rating
+details_rating_value	%1$s / 10
+details_reading_chapters	Reading chapters
+details_reading_language	Reading language
+details_reading_source	Reading Source
+details_reading_source_sheet_hint	You are using this %1$s. To switch, search other sources below and migrate: history, favourites and progress move to the new source.
+details_reading_source_unavailable	Unavailable
+details_reading_status	Reading status
+details_recommendations	Recommendations
+details_related_works	Related works
+details_remove_metadata_binding	Remove metadata binding
+details_review_reply_count	%1$d replies
+details_reviews	Reviews
+details_search_result_latest_chapter	Latest: Chapter %1$s
+details_show_original	Show original
+details_show_translation	Show translation
+details_source_search_no_results_group	No results
+details_source_search_no_visible_results	No visible results. Disable Hide empty sources to inspect unavailable or empty sources.
+details_temporary_read_only_notice	Temporary preview. Metadata source and reading source cannot be changed here.
+details_title_copied	Title copied to clipboard
+details_tracking_suggestion_ignore	Not the same work
+details_tracking_suggestion_summary	Found a highly similar item on %1$s: %2$s
+details_tracking_suggestion_title	Possible tracking match
+details_tracking_suggestion_view	View candidate
+details_translate_button_visible	Show translate button in details
+details_translate_button_visible_summary	Show the translation action on the work details page when translation is available
+details_translate_title_and_description_hint	Translate title and description
+dictionary_empty_query	Enter a word to look up
+dictionary_manage_rules	Manage dictionaries
+dictionary_no_enabled_rules	No dictionary rules are enabled
+dictionary_query_label	Word or text
+dictionary_rule_add_title	Add dictionary rule
+dictionary_rule_edit_title	Edit dictionary rule
+dictionary_rule_show_label	Display rule (optional)
+dictionary_rule_url_label	URL rule
+dictionary_rules	Dictionary rules
+dictionary_rules_empty	No dictionary rules yet
+dictionary_rules_summary	Manage online dictionaries used by text selection lookup
+dictionary_title	Dictionary
+directory_usage_pattern	%1$s used, %2$s available
+directory_used_pattern	%1$s used
+disable_auto_apply	Disable auto-apply
+disable_bookmarks_nsfw	Hide from Bookmarks and Notes
+disable_bookmarks_nsfw_summary	Hide adult contents from Bookmarks and Notes
+disable_captcha_auto_solve	Disable automatic CAPTCHA solving
+disable_captcha_auto_solve_summary	Don\'t try to solve CAPTCHA silently in the background. You will be asked to solve it manually instead.
+disable_captcha_notifications	Disable captcha notifications
+disable_captcha_notifications_summary	You will not receive notifications about solving CAPTCHA for this source but this can lead to breaking background operations (checking for new chapters, obtaini
+disable_favourites_nsfw	Hide from Favourites
+disable_favourites_nsfw_summary	Hide adult contents from Favourites
+disable_feed_nsfw	Hide from Feed
+disable_feed_nsfw_summary	Hide adult contents from Feed
+disable_history_nsfw	Hide from History
+disable_history_nsfw_summary	Hide adult contents from History
+disable_nsfw_summary	Disable NSFW sources and hide adult manga from list if possible
+disable_selected	Disable selected
+disable_sources_and_browse_nsfw	Hide from sources and browse content
+disable_suggestions_nsfw	Hide from Suggestions
+disable_suggestions_nsfw_summary	Hide adult contents from Suggestions
+disable_updates_nsfw	Hide from Updates
+disable_updates_nsfw_summary	Hide adult contents from Updates
+discord_logout_summary	Clear the saved Discord authorization
+discover	Discover
+discover_bind_local	Bind local
+discover_empty_anilist_airing_text	AniList returned no airing entries for the selected date. Try another day.
+discover_empty_anilist_airing_title	No AniList schedule for this date
+discover_empty_simkl_airing_text	Simkl returned no airing entries for the selected date. Try another day.
+discover_empty_simkl_airing_title	No Simkl schedule for this date
+discover_empty_text	Trending discovery is currently available from Bangumi by default.
+discover_empty_title	Nothing to discover yet
+discover_empty_tracking_seasonal_text	This site returned no seasonal entries for %1$s. Try another date in a different quarter.
+discover_empty_tracking_seasonal_title	No seasonal titles for %1$s
+discover_local_linked	Linked to local content
+discover_local_unlinked	No local content linked yet
+discover_manage_binding	Manage binding
+discover_no_summary	No summary available
+discover_open_local	Open local
+discover_open_site	Open site
+discover_rank_value	Rank #%1$d
+discover_score	%1$.1f
+discover_search_empty_text	Try another query or switch site.
+discover_search_empty_title	Nothing found
+discover_service_search_only	%1$s · Search only
+discover_tags	Tags
+discover_total_episodes	Episodes
+display_options	Display options
+domain	Domain
+domain_manga	Manga source domain
+domain_novel	Novel source domain
+domain_video	Video source domain
+dont_check	Don\'t check
+double_page_cover_page	First page as cover (solo)
+double_page_foldable	Two pages on foldables
+double_page_landscape	Two pages in landscape
+double_page_mode	Two-page mode
+download_align_reader	Align download with reader
+download_align_reader_summary	Use reader threads and disable download request delay
+download_auto_retry	Auto retry on network error
+download_auto_retry_summary	Retry the task automatically instead of pausing
+download_automatic_strategy_summary	Download speed, concurrency and retries are managed automatically for reliability and source protection.
+download_max_active_series	Concurrent series downloads
+download_max_active_series_summary	Series downloading at the same time (default 4)
+download_max_active_series_uncapped	Uncapped
+download_max_active_series_warning_message	Activating uncapped concurrent downloads will cause aggressive, rapid requests to the source\'s website. This behavior is often detected as a DDoS attack and HI
+download_max_active_series_warning_title	⚠️ DANGER: Risk of Permanent Ban
+download_novel_images	Download novel illustrations
+download_novel_images_summary	Include images embedded in novel chapters for offline reading.
+download_option_all_unread_b	All unread chapters (%s)
+download_option_manual_selection	Select chapters manually
+download_option_whole_manga_manga	Whole manga
+download_option_whole_manga_novel	Whole novel
+download_option_whole_manga_video	Whole video
+download_partial	Partially completed
+download_request_delay	Download request delay
+download_request_delay_summary	Spacing between requests to sources that ask to be slowed down (default 1600 ms, 0 turns it off)
+download_retry_count	Download retry count
+download_retry_count_summary	Retries for a failed page before the download pauses (default 2)
+download_retry_delay	Download retry delay
+download_retry_delay_summary	Wait between retries; a server\'s Retry-After takes precedence (default 2000 ms)
+download_speed_and_retries	Speed and retries
+download_video_quality	Default download video quality
+download_video_quality_summary	Enter quality preferences from highest to lowest, separated by commas.
+downloads_wifi_only_summary	Stop downloading when switching to a mobile network
+duplicate_add_anyway	Favourite anyway
+duplicate_dont_ask	Don\'t ask again
+duplicate_read_percent	Read %d%%
+duplicate_read_to	Read to ch. %s
+duplicate_source_broken	Source broken
+duplicate_subtitle	Favouriting: %1$s · %2$s · %3$d ch.
+duplicate_switch_source	Switch to this source
+duplicate_title	This may already be in your library
+duplicates_accept	Accept
+duplicates_complete_status	Completed. Found %1$d duplicate groups.
+duplicates_finder	Duplicates Finder
+duplicates_group_delete_label	Delete: %1$s (%2$s)
+duplicates_group_keep_label	Keep: %1$s (%2$s)
+duplicates_no_found	No duplicates found.
+duplicates_probing_status	Probing source: %1$s…
+duplicates_scan	Scan
+duplicates_scanning_status	Scanning favourites…
+duplicates_summary_text	Found %1$d duplicate entries across %2$d series.\nSuccessfully deduplicated %3$d series.
+duplicates_summary_title	Deduplication Complete
+duplicates_tolerance_label	Fuzzy Tolerance: %1$d%%
+e_ink	E-Ink
+edit_custom_space	Edit custom space
+edit_source	Edit source
+eink_mode	E-Ink mode
+eink_mode_summary	Optimizes paged reading for E-Ink displays without changing your saved animation setting
+eink_refresh	Full-screen refresh
+eink_refresh_color	Refresh color
+eink_refresh_duration	Refresh duration
+eink_refresh_every	Refresh interval
+eink_refresh_summary	Briefly replaces the page with a solid color after page changes to reduce ghosting
+email_enter_hint	Enter your email to continue
+enable_all_sources	Enable all content sources
+enable_all_sources_summary	All available content sources will be enabled permanently
+enable_auto_apply	Auto-apply on open
+enable_kotatsu_sources	Enable Internal Sources
+enable_kotatsu_sources_summary	Enable sources from the internal parsers repository
+enable_logging	Enable logging
+enable_logging_summary	Record some actions for debug purposes. Don\'t turn it on if you\'re not sure what you\'re doing
+enable_selected	Enable selected
+enable_source	Enable source
+enable_source_manga	Enable manga source
+enable_source_novel	Enable novel source
+enable_source_video	Enable video source
+enabled_sources	Enabled sources
+enter_source_url	Enter source URL
+entity_graph_section_created_works	Created Works
+entity_graph_section_creators	Creators
+entity_graph_section_parent_work	Parent Work
+entity_graph_section_related_entities	Related Entities
+entity_graph_section_voice_actors	Voice Actors
+entity_graph_section_voiced_characters	Voiced Characters
+entity_graph_section_voiced_works	Voiced Works
+entity_graph_type_character	Character
+entity_graph_type_organization	Organization
+entity_graph_type_person	Person
+entity_graph_type_work	Work
+episode_number_format	Episode %1$s\n\n%2$s
+episodes_watched_short	Episodes %1$d
+epub_cd_chapter_group_collapsed	Collapsed
+epub_cd_chapter_group_expanded	Expanded
+epub_cd_chapter_group_header	Chapter group: %s
+epub_cd_download_chapter	Download EPUB chapter
+epub_cd_internal_chapter	EPUB internal chapter %d
+epub_cd_loading_progress	Loading progress: %d%%
+epub_cd_normal_chapter	Online chapter
+epub_chapter_title	EPUB Chapter Title
+epub_download_link	EPUB Download Link
+epub_download_service_label	EPUB download
+epub_ebook_description	EPUB Ebook: %s
+epub_error_chapter_not_found	Chapter does not exist: %d
+epub_error_corrupted_file	EPUB file is corrupted and cannot be read: %s
+epub_error_file_not_found	EPUB file not found, it may have been deleted: %s
+epub_error_index_out_of_bounds	Chapter index out of range: %1$d (total %2$d chapters)
+epub_error_insufficient_storage	Insufficient storage space. Required: %1$s, Available: %2$s
+epub_error_invalid_chapter_id	Invalid chapter ID: %d
+epub_error_invalid_format	EPUB file format is invalid and cannot be parsed
+epub_error_invalid_url	Invalid chapter URL format: %s
+epub_error_load_failed	Failed to load chapter: %d
+epub_error_malformed_html	HTML format error in chapter %d
+epub_error_mapping_insert_failed	Failed to save chapter mapping: %d
+epub_error_migration_failed	Database upgrade failed: version %1$d → %2$d
+epub_error_missing_components	EPUB file is missing required component: %s
+epub_error_permission_denied	No access permission: %s
+epub_error_query_failed	Database query failed
+epub_error_read_failed	Failed to read EPUB file: %s
+epub_error_unexpected	An unknown error occurred: %s
+epub_error_unsupported_version	Unsupported EPUB version: %s
+epub_error_write_failed	Failed to write EPUB file: %s
+epub_extracting_chapters	Extracting chapters…
+epub_group_download_links	Download Links
+epub_group_online_chapters	Online Chapters
+epub_internal_chapter	EPUB Internal Chapter
+epub_legacy_file_indicator	Legacy file (needs migration)
+epub_loading	Loading EPUB…
+epub_migration_complete	Migration complete: %d files migrated
+epub_migration_failed	Migration failed for some files
+epub_migration_in_progress	Migrating legacy EPUB files…
+epub_parsing	Parsing EPUB file…
+error_cannot_write_to_storage	Cannot write to the download directory. Check its access permission, free space, or pick another folder in settings
+error_database_error	Database error during \'%s\'
+error_duplicate_source_id	Source with ID \'%s\' already exists
+error_fetching_url	Error fetching content: %s
+error_import_failed	Import failed
+error_invalid_json_format	Invalid JSON format at position %1$d: %2$s
+error_invalid_rule_syntax	Invalid rule syntax: %1$s (rule: \'%2$s\')
+error_json_parsing_failed	Failed to parse JSON configuration
+error_loading_file	Error loading file: %s
+error_missing_required_field	Required field \'%s\' is missing
+error_network_error	Network error accessing \'%s\'
+error_no_valid_sources	No valid sources found in JSON
+error_source_validation_failed	Source validation failed
+exclude_nsfw_from_history	Exclude NSFW manga from history
+exclude_nsfw_from_history_summary	Manga marked as NSFW will never be added to the history and your progress will not be saved
+explore_url	Explore URL
+export_aniyomi_backup	Export Aniyomi backup
+export_aniyomi_backup_empty	No compatible Mihon or Aniyomi source favorites or history available to export
+export_aniyomi_backup_saved	Aniyomi backup saved (%1$d entries)
+export_aniyomi_backup_summary	Export favorites, categories, and reading progress for Mihon manga sources and Aniyomi anime sources.
+export_backup_choose_target_app	Choose target app
+export_backup_for_other_apps	Export backup for another app
+export_backup_for_other_apps_summary	Choose a target app and create a compatible backup: Kotatsu, Mihon, Aniyomi, or Usagi.
+export_kotatsu_backup	Export Kotatsu backup
+export_kotatsu_backup_saved	Kotatsu backup saved
+export_kotatsu_backup_summary	Create a separate legacy backup for Kotatsu-family apps without Kototoro-specific sections.
+export_mihon_backup	Export Mihon backup
+export_mihon_backup_empty	No Mihon-source favorites or history available to export
+export_mihon_backup_saved	Mihon backup saved (%1$d entries)
+export_mihon_backup_summary	Export favorites, categories, and reading progress for Mihon-source entries only.
+export_sources	Export sources
+export_success_count	Successfully exported %d sources
+export_usagi_backup	Export Usagi backup
+export_usagi_backup_empty	No compatible manga favorites or history available to export
+export_usagi_backup_saved	Usagi backup saved (%1$d entries)
+export_usagi_backup_summary	Export manga favorites, categories, history, tracking, bookmarks, and statistics for Usagi.
+extension_download_progress	Downloading %1$d%%
+extension_install_and_enable	Install and enable
+extension_install_behavior	Extension installation behavior
+extension_install_behavior_batch_title	Apply to all sources
+extension_install_behavior_per_source	Per-source configuration
+extension_install_behavior_sheet_summary	Choose how to handle extension sources when installing or importing
+extension_install_choice_message	This extension provides %1$d source(s). Choose whether to enable them after installation.
+extension_install_choice_message_unknown	Choose whether to enable the imported sources after installation.
+extension_install_choice_title	Install %1$s
+extension_install_mode_local_apk	Install mode: local APK
+extension_install_mode_system	Install mode: system
+extension_install_only	Install only
+extension_install_remember_choice	Remember for all %1$s extensions
+extension_management	Extension management
+extension_management_summary	Enable and test sources, manage repositories and extension packages
+extension_repo_added_message	Added %1$s
+extension_repo_already_exists_message	Repository already exists
+extension_repo_count	%d repositor(y/ies)
+extension_repo_duplicate_fingerprint_message	Signing fingerprint already used by %1$s
+extension_repo_invalid_url_message	Invalid repository URL
+extension_repo_removed_message	Removed %1$s
+extension_repository_last_refreshed_message	Last refreshed %1$s
+extension_repository_refresh_failed_message	Failed to refresh repository metadata
+extension_repository_url_hint	https://example.org/extensions/index.min.json
+extension_repository_url_required	Repository URL is required
+extension_settings	Extension settings
+extension_source_count	%d source(s)
+extension_update_all_cancelled	Extension update queue cancelled
+extension_update_all_complete	Finished preparing all extension updates
+extension_update_failed	Failed to prepare update for %1$s
+extensions	APK extension
+extensions_summary_pattern	Mihon %1$d · Aniyomi %2$d · IReader %3$d
+external_backup_section_title	Export/import backups for other apps
+external_import_result_consolidation_pending	Some duplicated works could not be merged yet; they may appear several times in categories. A retry runs automatically on the next app start.
+external_import_result_failed	%1$d entries could not be matched to any source and were skipped.
+external_import_result_summary	Imported %1$d favorites and %2$d history entries.
+external_import_result_title	External backup imported
+external_import_result_uninstalled_header	Sources not installed — favorites were imported as-is. Install the matching extension to re-link them:
+external_import_result_uninstalled_item	• %1$s — %2$d entries
+fast_forward	Fast forward
+favicons_cache	Favicons cache
+favicons_cache_limit	Favicons cache limit
+favorite_count	Favorites
+favorites_tabs_position	Favorites categories position
+favorites_tabs_position_bottom_rail	Below top bar (tabs rail)
+favorites_tabs_position_inline_rail	Inline tabs rail
+favorites_tabs_position_title_dropdown	Title dropdown menu
+favourite_categories_in_space	Categories to show in this Space
+favourite_categories_in_space_hint	Categories are shared by every Space. This only changes which of them are listed here, so the same category can be shown in one Space and hidden in another. A S
+favourite_duplicate_candidate_message	"%1$s" may already exist in your library:\n\n%2$s\n\nContinue adding it as a separate source entry?
+favourite_duplicate_candidate_title	Possible duplicate
+favourite_search_category	%1$s (%2$d)
+favourites_group_adult	Adult favorites
+favourites_group_general	Favorites
+favourites_hidden_adult_subtitle	Disable "Hide adult content" in settings to show them
+favourites_hidden_adult_title	Adult favorites are hidden
+favourites_no_updates	No new chapters found
+favourites_shelf_summary	Total %1$d works
+favourites_shelf_title	Continue reading
+favourites_shelf_toggle	Show continue reading shelf
+favourites_shelf_updated	%1$d updated
+favourites_updates_found	Found new chapters in %1$d works (%2$d total)
+feed_timeline_updates	%1$d update
+feed_visible_entries	Visible entries limit
+feed_will_update_soon	Feed update will start soon
+fetching_content	Fetching content…
+fetching_video_quality	Fetching video qualities…
+file_loaded_successfully	File loaded successfully
+filter_enabled	Enabled
+filter_explore_disabled	Explore disabled
+filter_explore_enabled	Explore enabled
+filter_extensions_by_language	Filter extensions by language
+filter_extensions_by_language_summary	Only show Mihon and Aniyomi extensions that match your selected content languages
+filter_extensions_by_language_with_value	Filter extensions: %1$s
+filter_extensions_by_selected_content_languages	Filter extensions: selected content languages
+filter_group_content_rating	Rating
+filter_group_publication_status	Release
+filter_group_selected_count	%1$s · %2$d
+filter_invalid	Invalid
+filter_name	Filter name
+filter_need_login	Need login
+filter_no_group	No group
+filter_overwrite_confirm	A filter named \"%s\" already exists. Do you want to overwrite it?
+filter_properties	Attributes
+fit_page_thumbnails	Fit page thumbnails
+folder_multiple_manga	Folder (multiple manga)
+folder_multiple_manga_import_description	Select a folder containing multiple manga. Each subdirectory will be imported as a separate manga.
+folder_multiple_novel	Folder (multiple novels)
+folder_multiple_video	Folder (multiple series)
+folder_single_manga	Folder (single manga)
+folder_single_manga_import_description	Select a folder containing one manga. Subdirectories will be treated as chapters.
+folder_single_novel	Folder (single novel)
+folder_single_video	Folder (single series)
+follow_system	Follow system
+font_download_failed	Unable to download %1$s. Using the system font.
+font_download_ready	%1$s font is ready
+font_downloading	Downloading %1$s font…
+font_downloads	Font downloads
+font_preset_alimama_fang_yuan_ti_vf	Alimama FangYuanTi (rounded)
+font_preset_gen_ryu_min_tw_s2t	GenRyuMin TW (Simplified to Traditional)
+font_preset_inter	Inter
+font_preset_kai_gen_gothic_tw_s2t	KaiGen Gothic TW (Simplified to Traditional)
+font_preset_lxgw_wenkai	LXGW WenKai
+font_preset_noto_sans	Noto Sans
+font_preset_noto_sans_cjk_sc	Noto Sans CJK SC
+font_preset_sarasa_gothic	Sarasa UI Gothic
+font_preset_source_han_serif_sc	Source Han Serif SC
+font_preset_system	System default
+fuzzy_duplicates_fix	Fuzzy Duplicator Fix
+github_mirror_native	Direct connection (no mirror)
+glass_material_cupertino_regular	Cupertino Regular
+glass_material_cupertino_thick	Cupertino Thick
+glass_material_cupertino_thin	Cupertino Thin
+glass_material_cupertino_ultra_thin	Cupertino Ultra Thin
+glass_material_family_cupertino	Cupertino
+glass_material_family_fluent	Fluent
+glass_material_family_haze	Haze
+glass_material_family_kototoro	Kototoro (Recommended)
+glass_material_fluent_accent_acrylic_base	Fluent Accent Acrylic Base
+glass_material_fluent_accent_acrylic_default	Fluent Accent Acrylic Default
+glass_material_fluent_acrylic_base	Fluent Acrylic Base
+glass_material_fluent_acrylic_default	Fluent Acrylic Default
+glass_material_fluent_mica	Fluent Mica
+glass_material_fluent_mica_alt	Fluent Mica Alt
+glass_material_fluent_thin_acrylic	Fluent Thin Acrylic
+glass_material_haze_regular	Haze Regular
+glass_material_haze_thick	Haze Thick
+glass_material_haze_thin	Haze Thin
+glass_material_haze_ultra_thick	Haze Ultra Thick
+glass_material_haze_ultra_thin	Haze Ultra Thin
+glass_material_kototoro	Kototoro (Recommended)
+global_tag_blacklist_active	Enabled · %1$d tags selected
+global_tag_blacklist_inactive	Not enabled · No tags selected
+google_drive_sync	Google Drive sync
+google_drive_sync_unregistered_build_error	Google Drive sync is not supported in development/nightly builds. Please use official release builds or WebDAV sync.
+got_it	Got it
+grid_aspect_ratio	Grid ratio
+grid_size_columns_hint	~%1$d columns
+group_by	Group by
+group_by_origin	Group by origin
+group_by_type	Group by type
+group_sources_by_language	Group sources by language
+group_sources_by_language_summary	Display content sources grouped by their locale language rather than a flat list.
+handle_links	Handle links
+handle_links_summary	Handle manga links from external applications (e.g. web browser). You may also need to enable it manually in the application\'s system settings
+help_and_feedback	Help & feedback
+hide_empty_sources	Hide empty sources
+hide_read_chapters	Hide read chapters
+hide_search_filter	Hide search filters
+hide_search_filter_summary	Hide the content and source filter icons from the main search bar.
+history_grouped_sources	%1$d source
+home	Home
+home_enabled_sources	%1$d enabled source
+home_greeting_afternoon	Good afternoon
+home_greeting_evening	Good evening
+home_greeting_explore	Explore
+home_greeting_morning	Good morning
+home_greeting_reading_prompt	Discover what to read today
+home_hero_background_blurred	Blurred artwork
+home_hero_background_cover_split	Cover split
+home_hero_background_immersive	Immersive artwork
+home_hero_background_plain	Theme surface
+home_hero_background_tonal	Tonal color
+home_hero_layout_details	Details
+home_hero_layout_editorial	Editorial
+home_hero_layout_minimal_progress	Minimal progress
+home_hero_layout_standard	Standard
+home_hero_layout_text_quote	Text excerpt
+home_hero_local_subtitle	Pick up where you left off, or jump back into what you opened recently.
+home_hero_mode_fixed	Fixed
+home_hero_mode_mixed	Curated mix
+home_hero_style_cinematic	Tonal poster
+home_hero_style_classic	Classic
+home_hero_style_editorial	Editorial
+home_hero_style_gallery	Immersive artwork
+home_hero_style_minimal	Minimal progress
+home_hero_style_mixed	Curated mix
+home_hero_style_poster_focus	Poster focus
+home_hero_style_text_quote	Literary excerpt
+home_library_overview	Library overview
+home_overview_title	At a glance
+home_placeholder_subtitle	See your recent reading, updates, library, sync, and sources in one place.
+home_placeholder_title	Reading dashboard
+home_quick_access_subtitle	Open app-wide preferences without leaving the dashboard.
+home_quick_action_extensions	Extension
+home_quick_action_wizard	Wizard
+home_rail_rows_per_page	Rows per page
+home_recent_empty_subtitle	Start reading to populate this card
+home_recent_open_details	Open details
+home_recent_searches	Recent searches
+home_resume_empty_subtitle	Your latest reading progress will appear here
+home_resume_empty_title	Nothing to resume
+home_resume_progress	Progress %1$d%%
+home_resume_title	Continue reading
+home_source_breakdown_empty	No enabled sources in this group
+home_source_breakdown_item	%1$s · %2$d
+home_sync_last_upload	Last upload %1$s
+home_sync_status_auto	WebDAV Auto Sync
+home_sync_status_not_configured	Not configured
+home_sync_status_ready	WebDAV Sync Ready
+home_sync_subtitle_configure	Open settings to configure
+home_sync_subtitle_ready	Ready
+home_updates_empty_subtitle	Tracked items with new chapters will appear here
+image_caches	Image and reader caches
+image_post_processing	Image post-processing
+image_post_processing_original	Original
+image_post_processing_result	Result
+image_server	Preferred image server
+images_procy_description	Use the wsrv.nl service to reduce traffic usage and speed up image loading if possible
+import_backup_aniyomi_family	Aniyomi family
+import_backup_aniyomi_family_summary	Aniyomi, Anikku, or Animiru manga and anime backup.
+import_backup_choose_source_app	Choose source app
+import_backup_from_other_apps	Import backup from other apps
+import_backup_from_other_apps_combined_summary	%1$s\n%2$s: %3$s
+import_backup_from_other_apps_summary	Import favorites and history from Mihon-family, Aniyomi-family, or Venera backup files.
+import_backup_mihon_family	Mihon family
+import_backup_mihon_family_summary	Mihon, TachiyomiSY, Komikku, or Neko manga backup.
+import_backup_scope_summary	This version restores favorites, history, and imported reading progress metadata.
+import_backup_started_background	The external backup will be imported in the background
+import_backup_supported_apps_summary	Mihon, Komikku, Aniyomi, Anikku, Animiru, Venera
+import_backup_venera	Venera
+import_backup_venera_summary	Venera ZIP backup.
+import_button	Import
+import_compatible_backup	Import from other apps
+import_compatible_backup_summary	Import a backup from Mihon, Aniyomi or Venera.
+import_completed_with_count	Imported %1$d comics
+import_content_type	Content Type
+import_content_type_auto	Auto-detect
+import_error	Import error: %s
+import_favourites	Import site favourites
+import_favourites_auth_expired	Login status has expired, please re-login
+import_favourites_done	Import finished
+import_favourites_no_available	No logged-in sources available
+import_favourites_none_selected	No source selected
+import_favourites_progress	Importing from %1$s…
+import_favourites_title	Select sources to import
+import_file	Import file
+import_file_description	Select one or more files to import. Each file will be recognized as an individual item.
+import_file_description_manga	Select one or more .cbz or .zip files. Each file will be recognized as a separate manga.
+import_file_description_novel	Select one or more .epub or .txt files. Each file is imported as one novel. EPUB chapters are recognized when reading; a .txt file is treated as a single chapte
+import_file_description_video	Select one or more video files (.mp4, .mkv, etc.). Each file is imported as a separate anime.
+import_folder_multiple	Folder (multiple items)
+import_folder_multiple_description	Select a folder containing multiple series. Each subdirectory will be imported separately.
+import_folder_multiple_description_manga	Select a folder containing multiple manga. Each subdirectory and each top-level .cbz or .zip file will be imported as a separate manga.
+import_folder_multiple_description_novel	Select a folder containing multiple novels. Each subdirectory and each top-level .epub or .txt file will be imported as a separate novel.
+import_folder_multiple_description_video	Select a folder containing multiple anime series. Each subdirectory and each top-level video file will be imported as a separate series.
+import_folder_single	Folder (single item)
+import_folder_single_description	Select a folder containing one series. Files inside will be treated as chapters or episodes.
+import_folder_single_description_manga	Select a folder containing one manga. Subdirectories will be treated as chapters.
+import_folder_single_description_novel	Select a folder containing one novel. .txt files inside will be imported as chapters; each .epub file will be treated as a volume while preserving its internal 
+import_folder_single_description_video	Select a folder containing one anime series. Each video file inside is an episode.
+import_from_url	From Online URL
+import_json	Import Legado
+import_json_sources	Import JSON Sources
+import_json_sources_summary	Import Legado, TVBox, or JavaScript source configurations
+import_legacy_sync	Import old sync
+import_local_jar	Import local JAR
+importing_	Importing…
+include_disabled_sources	Include disabled sources
+incompatible_extension	Incompatible
+incompatible_extension_message	%1$s %2$s cannot be installed because its library version (%3$s) is outside Kototoro\'s supported range.
+incompatible_section	Incompatible
+installed_section_count	%d installed
+installed_version_pattern	Installed: %s
+installing_plugin	Installing %s…
+interface_style	Interface style
+interface_style_ios	ios (modern)
+interface_style_ios_summary	Rounder controls, quieter surfaces, Backdrop glass, and softer menus
+interface_style_material3	md3 (legacy)
+interface_style_material3_expressive	md3 expressive
+interface_style_material3_expressive_summary	Larger adaptive controls, emphasized shapes, and bolder type hierarchy
+interface_style_material3_summary	Android-native controls, spacing, and surfaces
+invalid_domain_message	Invalid domain
+invalid_port_number	Invalid port number
+invalid_server_address_message	Invalid server address
+invert_selection	Invert selection
+ireader_extension_repositories	IReader Extension repositories
+ireader_sources	IReader
+jar_extension_repositories	JAR Repositories
+jar_manage_sources	Jar Source Management
+jar_plugins_updates_available	JAR Plugins have updates available!
+jar_plugins_updating	Updating JAR Plugins...
+jar_priority_order_summary	Comma-separated JAR prefixes. When multiple parsers share the same name, only the parser from the highest ranking repository is exposed. Example: kototoro-parse
+jar_priority_order_title	Plugin Deduplication Priority Sequence
+json_content_required	JSON content is required
+json_sources	JSON
+json_sources_directory	JSON Sources
+json_sources_summary	Manage imported JSON sources
+jump_points	Jump points
+kitsu_action_character_page	Character page
+kitsu_action_person_page	Person page
+kitsu_category_action	Action
+kitsu_category_adventure	Adventure
+kitsu_category_comedy	Comedy
+kitsu_category_drama	Drama
+kitsu_category_ecchi	Ecchi
+kitsu_category_fantasy	Fantasy
+kitsu_category_horror	Horror
+kitsu_category_isekai	Isekai
+kitsu_category_romance	Romance
+kitsu_category_sci_fi	Science Fiction
+kitsu_category_slice_of_life	Slice of Life
+kitsu_category_supernatural	Supernatural
+kitsu_category_trending_anime	Trending Anime
+kitsu_category_trending_manga	Trending Manga
+kitsu_dub_de	German dub
+kitsu_dub_en	English dub
+kitsu_dub_es	Spanish dub
+kitsu_dub_fr	French dub
+kitsu_dub_it	Italian dub
+kitsu_dub_ja	Japanese dub
+kitsu_dub_ko	Korean dub
+kitsu_dub_pt_br	Portuguese dub
+kitsu_episode_length_value	%1$d min per episode
+kitsu_info_description_source	Description source
+kitsu_info_end_date	End date
+kitsu_info_episode_length	Duration
+kitsu_info_episodes	Episodes
+kitsu_info_japanese_name	Japanese name
+kitsu_info_other_names	Other names
+kitsu_info_popularity_rank	Popularity rank
+kitsu_info_rating_rank	Rating rank
+kitsu_relation_adaptation	Adaptation
+kitsu_relation_alternative_setting	Alternative setting
+kitsu_relation_alternative_version	Alternative version
+kitsu_relation_character	Character
+kitsu_relation_full_story	Full story
+kitsu_relation_parent_story	Parent story
+kitsu_relation_summary	Summary
+kitsu_role_main	Main
+kitsu_role_supporting	Supporting
+kitsu_section_staff_works	Staff works
+kitsu_section_voice_actors	Voice actors
+kitsu_section_voiced_works	Voiced works
+kitsu_status_current	Airing
+kitsu_status_tba	TBA
+kitsu_status_unreleased	Unreleased
+kitsu_title_english	English
+kitsu_title_japanese	Japanese
+kitsu_title_romaji	Japanese (Romaji)
+kitsu_voiced_character	Voiced character · %1$s
+languages	Languages
+legado_browser_verification_done	Browser verification finished, cookies synced
+legado_browser_verification_failed	Could not open the browser: %1$s
+legado_browser_verification_started	Opening the browser for verification…
+library_duplicates_chapters	%d ch.
+library_duplicates_entries	%d entry
+library_duplicates_hint	Tap a card to choose which entry to keep. Merging moves categories, notes, stats and tracking to it and keeps the furthest reading progress
+library_duplicates_keep	Keep
+library_duplicates_merge_all	Merge %d group
+library_duplicates_merge_all_message	Each group is merged into its highlighted entry. The other entries leave favourites and history; downloads are kept.
+library_duplicates_merged	Merged %d group. No duplicates left
+library_duplicates_none	No duplicate favourites found
+library_duplicates_not_duplicates	Not duplicates
+library_search_active	Showing matches for “%1$s”
+library_search_all_sources	Search content sources for “%1$s”
+library_search_apply	Filter %1$s by “%2$s”
+library_search_matches	Matches in %1$s
+library_search_no_matches	Nothing in %1$s matches. Try fewer words, or search content sources instead.
+library_search_placeholder	Search in %1$s
+library_search_scope_chip	In %1$s
+library_search_show_all	Show all of %1$s
+light_indicator	LED indicator
+link_content_folder	Link a folder
+link_content_folder_summary	Grant folder access to read its contents directly, without copying them.
+lnreader_plugins	LNReader Plugins
+loading_circle_style_thick_straight	Thick Straight
+loading_circle_style_thick_wavy	Thick Wavy
+loading_circle_style_thin_straight	Thin Straight
+loading_circle_style_thin_wavy	Thin Wavy
+loading_mihon_extensions	Loading Mihon extensions…
+local_apk_hot_reload	Local APK hot reload
+local_content_deleted_pattern	%1$s cleared: %2$s, freed %3$s
+local_content_directories	Local content directories
+local_download_batch	Batch actions
+local_download_chapters_count	%1$d chapters
+local_download_chapters_progress	%1$d/%2$d chapters
+local_download_failed	%1$d failed
+local_download_idle	View tasks and download history
+local_download_loading	Loading download tasks…
+local_download_manager	Download manager
+local_download_more	+%1$d more
+local_download_pause_all	Pause all
+local_download_paused	%1$d paused
+local_download_progress	%1$s · %2$d%%
+local_download_queued	%1$d queued
+local_download_recent	Recent downloads
+local_download_resume_all	Resume / retry all
+local_download_running	%1$d active
+local_download_storage_free	%1$s free
+local_download_storage_used	%1$s downloaded
+local_file	Local file
+local_manga_storage	Local manga
+local_novel_storage	Local novels
+local_storage_header_subtitle	Manage downloaded works and storage
+local_storage_header_title	Local Storage & Offline
+local_video_storage	Local videos
+login_with_browser	Log in with browser
+mal_category_anime_airing	Airing
+mal_category_anime_favorite	Most Favorited Anime
+mal_category_anime_movie	Top Movies
+mal_category_anime_ova	Top OVA
+mal_category_anime_popular	Most Popular Anime
+mal_category_anime_special	Top Specials
+mal_category_anime_top	Top Anime
+mal_category_anime_tv	Top TV Series
+mal_category_manga_doujin	Top Doujinshi
+mal_category_manga_favorite	Most Favorited Manga
+mal_category_manga_manga	Top Manga Series
+mal_category_manga_manhua	Top Manhua
+mal_category_manga_manhwa	Top Manhwa
+mal_category_manga_novels	Top Novels
+mal_category_manga_oneshots	Top One-shots
+mal_category_manga_popular	Most Popular Manga
+mal_category_manga_top	Top Manga
+mal_category_seasonal	Seasonal Anime
+manage_extension_repositories	Manage repositories
+manage_groups	Group management
+manage_language_presets	Manage language presets
+manage_sources	Manage content sources
+manga_count_short	Manga %1$d
+manga_error_description_pattern	Error details:<br><tt>%1$s</tt><br><br>1. Try to <a href="%2$s">open manga in a web browser</a> to ensure it is available on its source<br>2. Make sure you are 
+manga_note_hint	Write your thoughts or dialogue quote (optional)…
+manga_note_saved	Panel note saved
+manga_shelf	Shelf
+manga_with_downloaded_chapters	Manga with downloaded chapters
+mangabaka	MangaBaka
+mangabaka_access_token	Personal access token
+mangabaka_auth_failed	Could not sign in or load your library. Check your token, permissions and connection, then try again.
+mangabaka_browser_login	Sign in with your browser
+mangabaka_create_token	Create a token on MangaBaka
+mangabaka_token_hint	Create a personal access token in MangaBaka account settings and paste it here. This token grants full access to your MangaBaka account.
+mangaupdates	MangaUpdates
+mark_as_completed	Mark as completed
+mark_as_nsfw	Mark as NSFW
+mark_as_safe	Mark as non-NSFW
+mean_score_short	Mean %1$s
+media_universe_empty	No history or favorites yet
+media_universe_history_and_favorites	History and favorites
+media_universe_title	Media universe
+merge_branch_chapters	Merge branch chapters
+migration_abandon	Abandon
+migration_action_migrate_now	Migrate this one now
+migration_action_open	Open original
+migration_candidates_empty	No candidates. Edit the keywords and tap search
+migration_candidates_title	Candidates
+migration_chapters	%1$s · %2$d ch.
+migration_clear_visible	Clear shown
+migration_completed_summary	Success: %1$d, Reused: %2$d, Added: %3$d, Failed: %4$d, Not found: %5$d
+migration_config_categories_locked	Categories are always kept
+migration_config_data	Also migrate
+migration_config_family	%1$s · %2$d entries
+migration_config_family_sources	%1$s · %2$d entries · search in order
+migration_config_from_sources	%1$s and %2$d sources in total
+migration_config_match	Matching
+migration_config_sources	Search these sources (in order)
+migration_config_subtitle	%1$s · from %2$s
+migration_config_title	Migrate %d entries
+migration_confirm_copy	Old entries stay in your library.
+migration_confirm_replace	Old entries will be removed from favourites and history.
+migration_confirm_skipped	%d entries without a match will be skipped.
+migration_confirm_title	Migrate %d entries?
+migration_copy_n	Copy %d
+migration_deep_search	Deep search
+migration_deep_search_summary	Try shortened titles when the full title finds nothing. Slower
+migration_duplicate_check	Check for duplicates when favouriting
+migration_error_challenge	Blocked by a verification challenge (e.g. Cloudflare). Opening the site in the browser may help
+migration_error_http	The site answered HTTP %d
+migration_error_network	Network error or timeout
+migration_error_parse	The site layout changed and can no longer be parsed
+migration_exit_message	Matching results will be lost.
+migration_exit_title	Abandon this migration?
+migration_extra_query	Extra search keywords
+migration_filter_all	All %d
+migration_filter_fewer	Fewer chapters %d
+migration_filter_matched	Matched %d
+migration_filter_not_found	Not found %d
+migration_filter_unselected	Unselected
+migration_flag_progress	Reading progress
+migration_flag_stats	Reading stats
+migration_flag_tracking	Tracking & sync
+migration_health_banner	%1$d source may be broken, affecting %2$d favourites
+migration_health_banner_action	Migrate these %d
+migration_health_banner_disable	Don\'t show again
+migration_health_banner_setting	Broken source warnings
+migration_health_broken	Marked broken
+migration_health_broken_summary	The extension repository marks this source broken
+migration_health_details_warning	This source may be broken (%s)
+migration_health_disabled_summary	%d favourite · turned off in sources, still opens and checks for updates
+migration_health_failing	Updates failing
+migration_health_hint	%d source may be broken
+migration_health_needs_attention	Needs attention
+migration_health_suspicious	Intermittent failures
+migration_health_suspicious_summary	Some update checks failed recently; this is often a temporary network problem on this device
+migration_health_uninstalled_summary	Extension removed or source deleted
+migration_hide_unmatched	Hide entries with no match
+migration_hide_without_updates	Hide entries without new chapters
+migration_item_failed	Failed: %s
+migration_item_not_found	Not found
+migration_match_first_hit	First match
+migration_match_first_hit_desc	In order, stop at the first match. Faster
+migration_match_most_chapters	Most chapters
+migration_match_most_chapters_desc	Search every source, pick the most chapters. Slower
+migration_migrate_n	Migrate %d
+migration_migrating	Migrating…
+migration_more_candidates	%d more candidates ›
+migration_next_with_count	Next · %d
+migration_no_available_sources	No enabled sources of this type yet
+migration_no_sources	No migratable sources found in favorites
+migration_no_target_sources_selected	Select at least one target source
+migration_pick_source	Pick at least one source
+migration_progress	Migrated %1$d / %2$d
+migration_progress_detail	Completed: %1$d / %2$d\nFailed: %3$d\nNot found: %4$d
+migration_result	Done: %1$d succeeded, %2$d failed
+migration_same_source_error	From and To sources must be different
+migration_scope_selected_count	Selected favorites: %1$d
+migration_search_hint	Search in target sources
+migration_select_enabled	Enabled
+migration_select_none	Clear
+migration_select_source	Select source…
+migration_select_target_sources	Select target sources
+migration_select_visible	Select shown
+migration_selected_count	%d selected
+migration_selected_of	%1$d of %2$d selected
+migration_sources_fast_scroll	Fast scroll sources
+migration_sources_picker_hint	Sources are searched in the order you tick them
+migration_sources_summary	%1$s · %2$d in total
+migration_sources_title	Migrate by source
+migration_start	Start matching
+migration_status_active	Migrating: %1$s
+migration_status_attached	Added
+migration_status_failed	Failed
+migration_status_not_found	Not found
+migration_status_reused	Reused
+migration_status_searching	Matching…
+migration_status_success	Success
+migration_status_waiting	Waiting
+migration_tap_to_search	Tap to search manually
+migration_title_progress	Matching %1$d / %2$d
+migration_visible_count	Showing %1$d of %2$d sources
+mihon_available_extensions	Mihon Available Extensions
+mihon_extension_count	%d extension(s) loaded
+mihon_extension_error	Failed to load extension: %s
+mihon_extension_repositories	Mihon Repositories
+mihon_extensions	Mihon Extensions
+mihon_extensions_summary	Manage Mihon extension sources
+mihon_source_count	%d source(s) available
+mihon_sources	Mihon
+mihon_sources_directory	Mihon Extensions Directory
+milliseconds_value	%1$d ms
+mirror_probe_action	Test mirror connectivity
+mirror_probe_cancel	Cancel test
+mirror_probe_fastest_badge	Fastest
+mirror_probe_finished	Fastest: %1$s (%2$d ms) · %3$d/%4$d reachable
+mirror_probe_none_available	No mirror reachable
+mirror_probe_running	Testing mirrors (%1$d/%2$d)…
+mirror_probe_select_fastest	Select fastest
+mirror_probe_short_action	Test
+mirror_probe_summary	Fetch a tiny file through each mirror to measure latency.
+mirror_probe_timeout	timeout
+mirror_switching	Choose mirror automatically
+mirror_switching_summary	Automatically switch domains for content sources on errors if mirrors are available
+mirror_sync_cancel	Cancel sync
+mirror_sync_failed	Mirror list sync failed: %1$s
+mirror_sync_failed_summary	Sync failed
+mirror_sync_in_progress	Syncing mirror list…
+mirror_sync_keep_last	Sync failed; keeping the last list
+mirror_sync_last_updated	Last synced: list v%1$s
+mirror_sync_never	Mirror list not synced yet
+mirror_sync_no_manifest	No mirror list published for this branch yet — using the built-in list
+mirror_sync_no_manifest_summary	No published list yet (built-in list in use)
+mirror_sync_success	Mirror list updated: v%1$s (%2$d mirrors)
+mirror_sync_term	Update mirror list
+mirror_sync_url_default	Default: %1$s
+mirror_sync_url_summary	Leave blank to use the default non-GitHub address (jsDelivr).
+mirror_sync_url_title	Mirror list URL (optional)
+miscellaneous	Miscellaneous
+modern_details_dock	Modern details dock
+modern_details_dock_summary	Use a modern dock with clearer selection states and a focused primary action
+more_filters	More filters
+moved_to_top	Moved to top
+movie_count_short	Movies %1$d
+movie_grid	Movie
+mu_category_alphabetical	Alphabetical
+mu_category_by_year	By Year
+mu_category_daily_releases	Daily Updates
+mu_category_recently_updated	Recently Updated
+mu_category_top_rated	Top Rated
+multi_language_short	MIX
+native_sources	Native Sources
+network	Network
+network_cache	Network cache
+network_cache_limit	Network cache limit
+network_group_proxy_mirrors	Proxy and mirrors
+network_group_security	Security and filtering
+network_unavailable_hint	Turn on Wi-Fi or mobile network to read manga online
+new_sources_text	New content sources are available
+no_aliases	No aliases
+no_aniyomi_extensions	No Aniyomi extensions
+no_aniyomi_extensions_text	Install Aniyomi extensions to watch anime online
+no_available_extensions	No available extensions
+no_available_extensions_language_filtered_text	No extensions match the current language filter.
+no_available_extensions_no_repo_text	No repository is configured yet. Add one from the menu first.
+no_available_extensions_text	Pull to refresh after your repositories finish syncing.
+no_crash_logs	No crash logs recorded
+no_dlna_devices_found	No DLNA devices found
+no_extension_repositories	No repositories configured
+no_extension_repositories_text	Add a compatible Mihon or Aniyomi repository to load available extensions.
+no_extension_updates_available	No extension updates available
+no_external_player	No external player found
+no_jump_points	No jump points yet
+no_local_content_deleted	No local content deleted
+no_manga_sources	No content sources
+no_manga_sources_catalog_text	There are no sources available in this section, or all of it might have been already added.\nStay tuned
+no_manga_sources_text	Enable content sources to browse content online
+no_mihon_extensions	No Mihon extensions installed
+no_mihon_extensions_text	Install Mihon extension APKs from the Keiyoushi repository to add sources
+no_novel_sources	No novel sources
+no_novel_sources_text	Enable novel sources to browse novels online
+no_packages_found	No packages found
+no_packages_found_desc	Try adjusting your filters or add more repositories
+no_reading_record	No reading record yet
+no_sources_found	No sources found
+no_sources_found_desc	Try adjusting your filters or search query
+no_video_loaded	No video loaded
+no_video_sources	No video sources
+no_video_sources_text	Enable video sources to browse videos online
+not_set	Not set
+not_signed_in	Not signed in
+not_specified	Not specified
+notification_sound	Notification sound
+novel	Novel
+novel_ai_ask_context_label	Nearby context is used to improve the answer but is not shown
+novel_ai_ask_failed	AI request failed: %s
+novel_ai_ask_hint	What do you want to ask?
+novel_ai_ask_loading	Thinking…
+novel_ai_ask_not_configured	Configure an AI translation API first in AI settings
+novel_ai_ask_selected_label	Selected text
+novel_ai_ask_send	Ask
+novel_ai_ask_suggestions	Try asking
+novel_ai_ask_title	Ask AI about this book
+novel_ai_question_chapter_role	What role does this passage play in the chapter?
+novel_ai_question_character_motivation	What are the characters’ emotions and motivations here?
+novel_ai_question_explain_details	Explain the metaphors, foreshadowing, or difficult parts.
+novel_ai_question_summary	What is the main point of this passage?
+novel_book_styles	Book Layout (EPUB headings, alignment, emphasis)
+novel_bookmark_added	Bookmark added
+novel_bookmark_failed	Bookmark operation failed: %s
+novel_bookmark_position_unavailable	The bookmarked text has changed or cannot be located
+novel_bookmark_removed	Bookmark removed
+novel_cache_limit	Novel cache limit
+novel_cannot_add_bookmark	Cannot add bookmark
+novel_chapter_not_downloaded	This chapter has not been downloaded yet
+novel_chapters_count	%1$d Chapters
+novel_chapters_locate_current	Locate current chapter
+novel_dual_page_mode	Dual-Page Mode (Landscape/Tablet)
+novel_epub_download_guide	To read this volume, please download it first:\n\n1. Go back to the details page\n2. Find this volume and tap download (or use batch download)\n3. Wait for the 
+novel_epub_index_invalid	Invalid chapter index
+novel_epub_load_failed	Cannot load EPUB chapter: %s
+novel_epub_not_found	EPUB file not found, it may have been deleted
+novel_epub_parse_failed	Failed to parse EPUB file
+novel_epub_url_invalid	Invalid chapter URL format
+novel_epub_volume_name_format	Volume: %s
+novel_epub_volume_not_downloaded_title	This EPUB volume has not been downloaded yet
+novel_excerpt_background_dusk	Dusk blue
+novel_excerpt_background_ink	Ink black
+novel_excerpt_background_label	Background
+novel_excerpt_background_mist	Mist gray
+novel_excerpt_background_paper	Paper
+novel_excerpt_background_tea	Tea brown
+novel_excerpt_background_white	Pure white
+novel_excerpt_hide_options	Hide settings
+novel_excerpt_label_excerpted_on	Excerpted on %1$s
+novel_excerpt_label_excerpted_on_vertical	%1$s · Excerpted
+novel_excerpt_note_with_idea	Idea: %1$s
+novel_excerpt_save_to_gallery	Save to gallery
+novel_excerpt_saved	Saved to gallery
+novel_excerpt_share_failed	Could not create the excerpt image
+novel_excerpt_template_calendar	Calendar
+novel_excerpt_template_classic	Classic
+novel_excerpt_template_ink_white	Ink and White
+novel_excerpt_template_jinshu	Brocade Letter
+novel_excerpt_template_label	Template
+novel_excerpt_template_manuscript	Manuscript
+novel_excerpt_template_shadow	Quiet Shadow
+novel_excerpt_title	Book excerpt
+novel_excerpt_toggle_options	Change style
+novel_excerpt_user_nickname	Reader name
+novel_first_chapter	Already at the first chapter
+novel_first_line_indent	First-line Indent
+novel_font	Font
+novel_font_size	Text Size
+novel_fullscreen_mode	Immersive Reading
+novel_last_chapter	Already at the last chapter
+novel_line_spacing	Line Height
+novel_load_chapter_failed	Failed to load chapter: %s
+novel_load_chapters_failed	Failed to load chapter list: %s
+novel_loading_epub_chapter	Loading EPUB chapter…
+novel_loading_online_chapter	Loading chapter from network…
+novel_local_chapter_not_found	Local chapter file not found: %1$s
+novel_margin_horizontal	Horizontal Margins
+novel_margin_vertical	Vertical Margins
+novel_margins	Page Margins
+novel_marking_chapter	Chapter %1$d
+novel_marking_color_blue	Elegant blue
+novel_marking_color_green	Fresh green
+novel_marking_color_orange	Warm orange
+novel_marking_color_pink	Soft pink
+novel_marking_color_yellow	Classic yellow
+novel_marking_create_excerpt	Turn into excerpt
+novel_marking_deleted	Item deleted
+novel_marking_detail_subtitle	Chapter %1$d · updated %2$s
+novel_marking_detail_title	Note details
+novel_marking_edit_note	Edit note
+novel_marking_edit_note_title	Edit note
+novel_marking_locate_original	Locate in text
+novel_marking_no_note	No note added
+novel_marking_style_highlight	Highlighter
+novel_marking_style_underline	Straight line
+novel_marking_style_wavy	Wavy line
+novel_marking_tab_bookmarks	Bookmarks
+novel_marking_tab_highlights	Highlights
+novel_markings_empty	No notes or highlights yet
+novel_markings_summary	%1$d saved items
+novel_markings_title	Notes and highlights
+novel_mode_scroll	Scroll
+novel_page_turn_animation	Page Turn Animation
+novel_page_turn_simulation	Simulation
+novel_page_turn_slide	Slide
+novel_paragraph_spacing	Paragraph Spacing
+novel_paragraph_spacing_follow_line	Follow line height
+novel_paragraph_spacing_value	%1$d lines
+novel_preview_body	The rain had stopped, but the street still held a quiet sheen. He looked up, took a breath, and stepped forward.
+novel_preview_body_secondary	雨已经停了，街面却还留着一层安静的微光。他抬起头，缓缓吸了一口气，然后向前走去。
+novel_preview_caption	Live preview
+novel_preview_title	Chapter One
+novel_pull_to_bookmark	Pull down to add bookmark
+novel_pull_to_remove_bookmark	Pull down to remove bookmark
+novel_read_aloud	Read aloud
+novel_reader_assistance_section	Reading assistance
+novel_reader_bookmark_current	Add bookmark at current position
+novel_reader_bookmarks_notes	Bookmarks and notes
+novel_reader_bookmarks_notes_summary	View and manage this book’s highlights, notes, and bookmarks
+novel_reader_brightness_section	Brightness and theme
+novel_reader_cache	Novel cache
+novel_reader_chapter_index	Chapter index
+novel_reader_chapter_position	%1$d / %2$d
+novel_reader_content_search_chapter_fallback	Chapter %1$d
+novel_reader_content_search_empty_hint	Enter a keyword to find matching passages
+novel_reader_content_search_empty_title	Search the book
+novel_reader_content_search_hint	Search in chapter text
+novel_reader_content_search_no_results	No matching passages
+novel_reader_content_search_result_count	%1$d results
+novel_reader_current_chapter	Current chapter
+novel_reader_display_section	Display and layout
+novel_reader_follow_system_brightness	Follow system brightness
+novel_reader_font_lxgw_wenkai	LXGW WenKai
+novel_reader_font_noto_sans	Source Han Sans
+novel_reader_font_source_han_serif	Source Han Serif
+novel_reader_font_system_cursive	System handwriting
+novel_reader_font_system_monospace	System monospace
+novel_reader_font_system_sans	System sans-serif
+novel_reader_font_system_serif	System serif
+novel_reader_no_chapters	No chapters
+novel_reader_no_matching_notes	No matching notes
+novel_reader_notes_counts	%1$d highlights · %2$d notes · %3$d bookmarks
+novel_reader_notes_search_hint	Search notes or highlights…
+novel_reader_notes_sort_chapter	By chapter
+novel_reader_notes_sort_time	By time
+novel_reader_page_section	Page behavior
+novel_reader_palette_section	Reading palette
+novel_reader_quick_actions	Quick actions
+novel_reader_replace_scope_content	Body
+novel_reader_replace_scope_title_content	Title / body
+novel_reader_replace_summary	Custom text replacement rules
+novel_reader_reset_confirm	Reset all reader settings?
+novel_reader_tab_page	Page
+novel_reader_tab_tools	Tools
+novel_reader_tab_translation	Translation
+novel_reader_tab_translation_tools	Translation & tools
+novel_reader_tab_typography	Typography
+novel_reader_tools_section	Translation and tools
+novel_reader_translation_cache_cleared	Translation cache cleared
+novel_reader_translation_cache_hint	Translation results are stored in this book
+novel_reader_translation_enabled	Translate text
+novel_reader_translation_failed	Translation failed: %1$s
+novel_reader_translation_no_content	No chapter text to translate
+novel_reader_translation_no_result	No translation was returned. Check the engine configuration in Settings → AI translation
+novel_reader_translation_not_configured	Set up a translation engine (API or local ONNX model) in Settings → AI translation first
+novel_reader_translation_section	Translation
+novel_reader_translation_start	Start translation
+novel_reader_tts_no_http_config	No online voice configurations imported yet. Import one in Settings
+novel_reader_tts_no_system_voice	No system voices available
+novel_reader_tts_not_ready	Text-to-speech is not ready yet
+novel_reader_tts_notification_reading	Reading aloud…
+novel_reader_tts_start_failed	Failed to start text-to-speech: %1$s
+novel_reader_tts_summary	Voice, speed, and speaker settings
+novel_reader_typography_section	Typography
+novel_reader_untitled	Untitled book
+novel_reader_update_settings_failed	Failed to update settings: %1$s
+novel_release_to_bookmark	Release to add bookmark
+novel_release_to_remove_bookmark	Release to remove bookmark
+novel_save_location	Novel downloads folder
+novel_selection_ask_ai	Ask AI
+novel_selection_copied	Selected text copied
+novel_selection_excerpt	Book excerpt
+novel_selection_expand_thought	Expand full note
+novel_selection_highlight	Highlight
+novel_selection_highlight_added	Highlight added
+novel_selection_highlight_removed	Highlight removed
+novel_selection_highlighted	Highlighted
+novel_selection_listen	Listen
+novel_selection_my_thought	My note
+novel_selection_note	Note
+novel_selection_note_hint	Write a note
+novel_selection_note_saved	Note saved
+novel_selection_note_title	Add note
+novel_selection_position_unavailable	This selection cannot be located in the chapter
+novel_selection_text	Selected text
+novel_selection_updated_at	Updated %1$s
+novel_selection_write_idea	Write idea
+novel_show_reading_status	Show Reading Status
+novel_text_direction	Text direction
+novel_text_direction_rtl	Right to left
+novel_theme_moss	Moss
+novel_theme_paper	Paper
+novel_theme_preset	Reading Theme
+novel_theme_sepia	Sepia
+novel_theme_slate	Slate
+novel_translate	Translate
+novel_translation_bilingual	Bilingual
+novel_translation_display_mode	Translation Display Mode
+novel_translation_only	Translation Only
+novel_translation_progress_complete	Novel translation complete (%1$d/%2$d paragraphs)
+novel_translation_progress_started	Novel translation started (%1$d/%2$d paragraphs)
+novel_translation_progress_update	Novel translation progress %1$d/%2$d paragraphs
+novel_transparent_status_bar	Subtle Reading Status Bar
+nsfw_16	16+
+nsfw_filter_title	Adult content
+obtain	Obtain
+old_chapters_in_total	%1$d old chapter in total
+onboard_text	Select languages which you want to read manga. You can change it later in settings.
+open_daily_schedule	Open daily schedule
+open_external_player	Open in external player
+open_in_browser_unavailable	This content has no web page to open
+open_in_reader_browser	Open in built-in browser
+open_local_source_in_browser	Open local source page in browser
+open_metadata_in_browser	Open metadata page in browser
+open_playback_page_in_browser	Open playback page in browser
+open_reading_page_in_browser	Open reading page in browser
+open_telegram_bot	Open the Telegram bot
+open_telegram_bot_summary	Press to open chat with Kototoro Backup Bot
+open_website	Open website
+or	OR
+order_manual	Custom order
+overwrite	Overwrite
+package_download_progress	Downloading %1$d%%
+packages	Packages
+packages_missing_sources_add_repo	Add a repository to find them, for example:
+packages_missing_sources_hint	%1$d missing sources are not covered by your repositories:
+packages_recommended_caption	Extensions for sources used by your favourites or history that are not installed
+packages_recommended_count	%1$d packages
+packages_recommended_covers	Covers missing: %1$s
+packages_recommended_header	Recommended
+packages_recommended_missing_count	%1$d missing sources
+packages_tab_title	Packages (%1$d)
+packup_creation_failed	Failed to create backup
+page_save_manga_title_length	Manga title length in saved filenames
+page_save_manga_title_length_summary	Number of manga title characters kept in saved image filenames (12–64)
+pages	Pages
+pages_cache_limit	Pages cache limit
+pages_save_per_manga_folder	Create a folder for each manga
+pages_save_per_manga_folder_summary	Pages saved to the default directory go into a subfolder named after the manga
+pages_value	Every page
+panorama_animation_off	Motion off
+panorama_animation_on	Motion on
+panorama_animation_reduced_effects_summary	Motion is paused while Reduce visual effects is enabled
+panorama_mode_full_screen	Full screen
+panorama_mode_half_screen	Half screen
+panorama_preset_balanced	Balanced
+panorama_preset_clear	Clear
+panorama_preset_custom	Custom
+panorama_preset_soft	Soft
+panorama_settings_advanced	Advanced settings
+panorama_settings_effect	Effect
+panorama_settings_entry_summary	%1$s · %2$s effect · %3$s
+panorama_settings_layout_mode	Cover range
+panorama_settings_restore_default	Restore balanced effect
+panorama_settings_style	Cover effect
+password_length_hint	The password must be 4 characters or more
+passwords_mismatch	Mismatching passwords
+paste_content	Paste content
+paste_js_content	Paste JavaScript source content
+paste_json_content	Paste source content
+paste_legado_content	Paste Legado content
+paste_repository_with_kind	Paste %1$s
+paste_tvbox_content	Paste TVBox content
+percent_left	Percent left
+percent_read	Percent read
+periodical_backup_group_schedule	Backup schedule
+play	Play
+playback_settings	Playback
+plugin_missing_host_classes	%1$s cannot be installed because it depends on unsupported %2$s host classes:\n%3$s
+popularity	Popularity
+pref_app_font_preset	App font
+pref_app_font_preset_summary	Font used by the Material 3 interface style
+pref_bangumi_mirror	Bangumi Mirror
+pref_bangumi_mirror_custom_api_base	Custom Bangumi mirror API URL
+pref_bangumi_mirror_custom_api_base_summary	Optional API base URL, for example https://api.bangumi.pro. Leave blank to infer it from the web base URL.
+pref_bangumi_mirror_custom_base	Custom Bangumi mirror base URL
+pref_bangumi_mirror_custom_base_summary	Enter the web base URL, for example https://bangumi.pro. The API host is inferred as api.<host> unless you set it below.
+pref_bangumi_mirror_summary	Use a mirror for public Bangumi search, browsing, and details. OAuth authorization still uses the official site.
+pref_blur_mode	Glass material
+pref_blur_mode_summary	Choose a glass material preset for blur radius and noise tuning
+pref_browse_panorama_blend_height	Browse panorama transition height
+pref_browse_panorama_gradient_alpha	Browse panorama gradient intensity
+pref_cloudflare_strategy	Cloudflare auto-resolve strategy
+pref_cloudflare_strategy_summary	How Cloudflare challenges are handled: manual in-app browser, Mihon/Komikku-style automatic WebView solving, or the archived WebView transport.
+pref_details_panorama_limit_to_info_card_midpoint	Stop details panorama at info card midpoint
+pref_details_panorama_limit_to_info_card_midpoint_summary	Fade the details panorama out so it fully settles by the middle of the basic info panel
+pref_details_panorama_scroll_linked	Scroll details panorama with content
+pref_details_panorama_scroll_linked_summary	Make the details panorama move together with page scrolling instead of staying fixed in place. This disables the normal scroll fade-out.
+pref_doh_custom_ips	Custom DoH IPs (comma separated)
+pref_doh_custom_url	Custom DoH URL
+pref_expressive_app_font_preset	iOS font
+pref_expressive_app_font_preset_summary	Font used by the iOS interface style
+pref_github_mirror	GitHub Download Mirror
+pref_github_mirror_summary	Select a proxy mirror if GitHub Raw is blocked in your network.
+pref_glass_blur_quality	Blur quality
+pref_glass_blur_quality_balanced	Balanced
+pref_glass_blur_quality_performance	Performance
+pref_glass_blur_quality_quality	Quality
+pref_glass_blur_quality_summary	Resolution that glass and edge blur are computed from. Lower saves GPU and battery; higher keeps text that leaves the blur sharper
+pref_glass_blur_strength	Glass blur radius
+pref_glass_blur_strength_summary	Sets the final blur radius used by the current glass material preset, in dp
+pref_glass_custom_preset_name	Custom %1$d
+pref_glass_delete_preset	Delete preset
+pref_glass_delete_preset_message	Delete %1$s?
+pref_glass_edge_blur	Edge blur
+pref_glass_edge_blur_summary	Blurs the content under the top and bottom bars and fades it out; requires Android 12 or later
+pref_glass_effect	Frosted-glass blur
+pref_glass_effect_summary	Blur content behind supported Compose surfaces
+pref_glass_follow_global	Follow global
+pref_glass_follow_global_summary_value	Follows global · %1$s
+pref_glass_highlight_style_ambient	Ambient
+pref_glass_highlight_style_plain	Plain
+pref_glass_immersive_bottom	Bottom immersive layer
+pref_glass_immersive_bottom_summary	Tint and blur the content around the bottom bar; the floating glass bar reads fine without it
+pref_glass_immersive_strength	Immersive tint strength
+pref_glass_immersive_strength_summary	Controls the top and bottom immersive tint intensity independently of the selected material preset
+pref_glass_immersive_top	Top immersive layer
+pref_glass_immersive_top_summary	Tint and blur the content under the status bar and top bar
+pref_glass_import_presets	Import
+pref_glass_local_overrides_count	%1$d local override(s)
+pref_glass_noise_strength	Glass noise factor
+pref_glass_noise_strength_summary	Sets the final noise amount applied to the current glass material preset, from 0.00 to 1.00
+pref_glass_param_blur_radius	Blur radius
+pref_glass_param_brightness	Brightness
+pref_glass_param_chromatic_aberration	Chromatic aberration
+pref_glass_param_depth_effect	Depth effect
+pref_glass_param_glass_enabled	Glass material
+pref_glass_param_hairline	Hairline
+pref_glass_param_hairline_alpha	Hairline strength
+pref_glass_param_highlight_style	Highlight style
+pref_glass_param_lens_amount	Refraction amount
+pref_glass_param_lens_height	Refraction height
+pref_glass_param_press_chromatic	Press chromatic aberration
+pref_glass_param_press_highlight	Press highlight
+pref_glass_param_press_inner_alpha	Press inner shadow strength
+pref_glass_param_press_inner_radius	Press inner shadow radius
+pref_glass_param_press_lens	Press refraction boost
+pref_glass_param_press_scale	Press scale
+pref_glass_param_rim	Edge highlight
+pref_glass_param_rim_alpha	Edge highlight strength
+pref_glass_param_saturation	Saturation
+pref_glass_param_shadow	Shadow
+pref_glass_param_shadow_alpha	Shadow strength
+pref_glass_param_shadow_offset	Shadow offset
+pref_glass_param_shadow_radius	Shadow radius
+pref_glass_param_surface_alpha	Surface opacity
+pref_glass_param_vibrancy	Vibrancy
+pref_glass_preset	Preset
+pref_glass_preset_clean	Clean glass
+pref_glass_preset_control_center	Control Center
+pref_glass_preset_custom	Custom
+pref_glass_preset_depth	Depth
+pref_glass_preset_eco	Eco glass
+pref_glass_preset_liquid	Liquid sample
+pref_glass_preset_reader	Reader glass
+pref_glass_preset_refraction	Refraction
+pref_glass_preset_soft	Soft
+pref_glass_presets_export_empty	No saved presets to export
+pref_glass_presets_exported	Presets copied to clipboard
+pref_glass_presets_import_invalid	Clipboard contains no valid preset data
+pref_glass_presets_imported	Imported %1$d preset(s)
+pref_glass_preview	Live preview
+pref_glass_preview_backdrop_gray	Light gray
+pref_glass_preview_backdrop_oled	OLED
+pref_glass_restore_defaults	Restore defaults
+pref_glass_restore_defaults_message	Restore the global baseline and every component override to their original appearance?
+pref_glass_role_delta	Role deltas
+pref_glass_role_section_hint	Per-role overrides — every parameter can follow the global baseline or be tuned here
+pref_glass_save_preset	Save as preset
+pref_glass_scope_bottom_bar	Bottom navigation
+pref_glass_scope_bottom_bar_desc	Bottom-navigation dock (floating capsule / full-width)
+pref_glass_scope_bottom_panel	Bottom panel
+pref_glass_scope_bottom_panel_desc	Bottom panels on details and reader screens
+pref_glass_scope_global	Global baseline
+pref_glass_scope_global_desc	Baseline every role falls back to unless overridden
+pref_glass_scope_menu	Menus
+pref_glass_scope_menu_desc	Dropdown menus and popovers
+pref_glass_scope_pill	Pill controls
+pref_glass_scope_pill_desc	Small capsules: favourites group, compact tab rails, top-bar button groups, bottom-nav selected indicator, reader/novel toolbars, space switcher
+pref_glass_scope_top_bar	Top bar
+pref_glass_scope_top_bar_desc	Wide top-bar glass (e.g. the settings top bar)
+pref_haze_opacity	Glass surface opacity
+pref_haze_opacity_summary	Controls glass surface opacity independently of the selected material preset, even when blur is off
+pref_home_hero_background	Card background
+pref_home_hero_content_layout	Information layout
+pref_home_hero_mode	Carousel mode
+pref_home_hero_mode_summary	Choose automatic selection, a fixed combination, or a curated mix
+pref_home_hero_style	Home carousel style
+pref_home_hero_style_summary	Choose how featured items are arranged on the home screen
+pref_huggingface_mirror	HuggingFace Mirror
+pref_huggingface_mirror_summary	Select a proxy mirror to accelerate HuggingFace downloads.
+pref_list_to_details_transition	List-to-details transition
+pref_list_to_details_transition_hero	Hero expand (default)
+pref_list_to_details_transition_legacy	Legacy page slide
+pref_list_to_details_transition_summary	Choose how the cover morphs when you open a work from a list.
+pref_loading_circle_style	Loading indicator and progress bar style
+pref_loading_circle_style_summary	Controls the appearance of loading spinners and progress bars.
+pref_material_expressive_components	Material 3 Expressive components
+pref_material_expressive_components_summary	Use Expressive styles for View-based buttons, toolbars, search bars, sliders, and navigation components. Restarts the current screen
+pref_nav_accent_sample_blue	Sample blue accent
+pref_nav_accent_sample_blue_summary	Tint the selected navigation content with the sample\'s accent blue instead of the theme accent
+pref_nav_capsule	Capsule background
+pref_nav_capsule_summary	Wrap the selected item in a capsule pill; keep it off to highlight with the accent color only
+pref_nav_floating	Floating navigation bar
+pref_nav_floating_adaptive_width	Adaptive floating navigation width
+pref_nav_floating_adaptive_width_summary	Reduce the floating navigation bar width when fewer navigation items are shown
+pref_nav_floating_height	Floating navigation bar height
+pref_nav_floating_height_summary	Floating bar thickness (height in dp)
+pref_nav_floating_summary	Add a margin around the bottom navigation bar so it appears floating
+pref_nav_full_width	Full-width navigation bar
+pref_nav_full_width_summary	Stretch the floating navigation bar across the full screen width
+pref_nav_height	Navigation bar height
+pref_nav_height_summary	Bar thickness (height in dp) — this is what makes the bar "thick" or "thin"
+pref_nav_indicator_style	Navigation indicator style
+pref_nav_indicator_style_labels_below	Labels below icons
+pref_nav_indicator_style_labels_right	Labels at the right of icons
+pref_nav_indicator_style_summary	How the selected item is highlighted in the floating navigation bar
+pref_nav_labels_always_visible	Always show navigation labels
+pref_nav_labels_always_visible_summary	Show the label on every navigation item instead of only the selected one
+pref_nav_layered_surface	Layered surfaces
+pref_nav_layered_surface_summary	Add rounded elevated surfaces around the top and navigation bars
+pref_panorama_animation	Panorama cover animation
+pref_panorama_animation_speed	Panorama animation speed
+pref_panorama_animation_summary	Enable subtle motion for animated panorama cover backgrounds
+pref_panorama_blur	Cover blur intensity
+pref_panorama_downsample	Reduce panorama cover resolution
+pref_panorama_downsample_summary	Downscale the background image before blurring to reduce GPU and memory overhead
+pref_panorama_extra_height	Extra cover height (dp)
+pref_panorama_gradient_alpha	Edge gradient intensity
+pref_panorama_top_opacity	Top opacity
+pref_panorama_top_opacity_summary	Control the cover visibility at the top; the bottom always remains fully transparent
+pref_panorama_transition_intensity	Panorama cover transition range
+pref_panorama_transition_intensity_summary	Control how early the cover starts fading; the bottom always fades out completely
+pref_popup_radius	Popup menu corner radius
+pref_rail_animation_intensity	List slide animation intensity
+pref_rail_animation_intensity_summary	Adjusts how strongly horizontal and vertical content cards translate, fade, and scale while sliding.
+pref_reader_toolbar_floating	Floating bottom toolbar
+pref_reader_toolbar_floating_summary	Make the reader bottom toolbar float above the screen edge
+pref_reduce_visual_effects	Reduce visual effects
+pref_reduce_visual_effects_summary	Recommended for lower-end devices. Disable Backdrop glass, Hero transitions, and panorama background motion without changing their individual settings
+pref_tablet_list_filter_panel	Open filter panel on entering list
+pref_tablet_list_filter_panel_summary	On tablets, open the filter drawer when opening a source list.
+pref_tablet_list_preview	List preview mode
+pref_tablet_list_preview_card	Preview card on tap
+pref_tablet_list_preview_card_summary	On tablets, tapping a work in a list opens a preview card over the list; tap it again for details. When off, a tap opens details.
+pref_tablet_list_preview_floating	Floating preview
+pref_tablet_list_preview_side_pane	Right-side preview
+pref_tablet_list_preview_summary	Choose off, a persistent right-side preview, or a floating preview card on large screens.
+pref_tablet_nav_bar_left	Navigation bar on the left
+pref_tablet_nav_bar_left_summary	On tablets, place the vertical navigation bar along the left edge instead of the right
+pref_tablet_nav_labels	Navigation bar labels
+pref_tablet_nav_labels_summary	On tablets, show a label under each destination in the vertical navigation bar
+pref_vertical_list_rail_animation	Vertical list card animation
+pref_vertical_list_rail_animation_summary	Applies the slide animation to vertical card lists. Turn it off if scrolling feels janky.
+preferred_tracking_site	Preferred tracking site
+preferred_tracking_site_summary	Select the default tracking site for discovery
+prefetch_limit	Prefetch limit
+prefetch_limit_summary	Number of pages to prefetch ahead (1-20)
+preload_pages	Preload pages
+prepare_super_resolution	Prepare super resolution
+prepare_translation	Prepare translation
+presentation_mode_auto	Automatic (device based)
+presentation_mode_restore_standard	Use standard interface
+presentation_mode_standard	Standard
+presentation_mode_summary	Choose automatic, standard, or TV presentation for every screen.
+presentation_mode_tv	TV
+preset_repositories	Recommended & preset repositories
+preview_details_unavailable	More details are temporarily unavailable.
+preview_first_chapters	First chapters
+preview_latest_chapters	Latest chapters
+protect_application	Protect the app
+protect_application_subtitle	Enter a password to start the app with
+protect_application_summary	Ask for password when starting Kototoro
+quality_select	Select quality
+quick_access	Quick access
+quick_duplicates_fix	Quick Duplicates Fix
+quote_dialogue	Subtitle Quote
+rank	Rank
+read_more	Read more
+reader_a11y_page_position	Page %1$d of %2$d
+reader_a11y_page_position_spread	Pages %1$d–%2$d of %3$d
+reader_autoscroll	Auto scroll
+reader_autoscroll_fab	Show floating button
+reader_autoscroll_pause_on_tap	Stop on screen tap
+reader_autoscroll_pause_on_ui	Pause when controls are visible
+reader_background	Reader background
+reader_background_theme	Follow app theme
+reader_chapter_title_at_bottom	Show chapter title at the bottom
+reader_chapter_title_at_bottom_summary	Moves the work and chapter title from the top bar to above the progress bar, within thumb reach
+reader_chapter_toast	Show chapter change popup
+reader_chapter_toast_summary	Show a pop-up message with a chapter title when it is changed
+reader_chapters_reversed	Reverse chapter order for this title
+reader_control_labels	Show floating button labels
+reader_control_labels_summary	Show action names in floating buttons in the manga and novel readers
+reader_dual_page	Two-page spread in landscape / on large screens
+reader_experimental_paged_scene_engine	Modern Paged/Double-page renderer (Experimental)
+reader_experimental_paged_scene_engine_summary	Use high-performance Paged Scene engine with tiled multi-LOD rendering for paged and double-page modes
+reader_experimental_scene_engine	Modern Webtoon renderer (ADR 0002)
+reader_experimental_scene_engine_summary	Use high-performance Scene engine with zero-CLS layout and tiled rendering for continuous webtoon reading
+reader_floating_controls	Reader floating buttons
+reader_floating_controls_summary	Select up to %1$d floating buttons
+reader_font_size	Font size
+reader_info_bar_cutout_avoidance	Avoid display cutout (experimental)
+reader_info_bar_cutout_avoidance_summary	Experimental: move reader information away from camera cutouts and notches
+reader_info_bar_layout	Information bar layout
+reader_info_bar_layout_centered	Centered
+reader_info_bar_layout_split	Split sides
+reader_info_bar_layout_split_leading_progress	Split sides, progress on the left
+reader_info_bar_transparent	Transparent reader information bar
+reader_line_height	Line spacing
+reader_margins	Margins
+reader_mode_default	Default (left to right)
+reader_mode_rtl	Right to left
+reader_mode_vertical	Top to bottom (paged)
+reader_mode_vertical_continuous	Top to bottom (continuous)
+reader_more_tab_layout	Layout
+reader_more_tab_page	Page
+reader_more_tab_tools	Tools
+reader_more_tab_translation	Translation
+reader_page_turning_mode	Page turning mode
+reader_panel_section_performance	Performance
+reader_panel_section_renderer	Renderer
+reader_panel_section_two_pages	Two pages
+reader_progress_template	Chapter %1$d/%2$d · %3$d%%
+reader_reduce_page_preloading	Reduce page preloading (beta)
+reader_reduce_page_preloading_summary	Keep fewer pages outside the viewport. This does not reduce visible image quality, but adjacent pages may take longer to appear
+reader_scene_renderer_paged	Paged scene renderer
+reader_scene_renderer_webtoon	Webtoon scene renderer
+reader_settings	Reader settings
+reader_settings_group_controls	Controls
+reader_settings_group_display	Display and information
+reader_settings_group_performance	Performance and network
+reader_settings_group_zoom_scroll	Zoom and scrolling
+reader_slider	Show page switching slider
+reader_spread_left_page	Left page (page %1$d)
+reader_spread_page_choice	Which page?
+reader_spread_right_page	Right page (page %1$d)
+reader_super_resolution	AI Super Resolution
+reader_super_resolution_anime4k_mode	Anime4K Mode
+reader_super_resolution_cache	SR image cache
+reader_super_resolution_cache_cleared	Cleared SR image cache
+reader_super_resolution_cache_limit	Cache Buffer Limit
+reader_super_resolution_cache_limit_1024	1 GB
+reader_super_resolution_cache_limit_2048	2 GB
+reader_super_resolution_cache_limit_256	256 MB
+reader_super_resolution_cache_limit_512	512 MB
+reader_super_resolution_cache_limit_summary	Limits space for upscaled images (Current setting: %1$s)
+reader_super_resolution_cache_limit_unlimited	Unlimited
+reader_super_resolution_clear_cache	Clear SR Cache
+reader_super_resolution_clear_cache_summary	Manually clear all upscaled images from local storage
+reader_super_resolution_engine	Super Resolution Engine
+reader_super_resolution_model	Neural Model
+reader_super_resolution_model_nose	Nose Mode (Denoise only)
+reader_super_resolution_model_pro	Pro Mode (Aggressive noise reduction)
+reader_super_resolution_model_se	SE Mode (General enhancement)
+reader_super_resolution_noise	Noise Level
+reader_super_resolution_noise_0	Low (0)
+reader_super_resolution_noise_1	Medium (1)
+reader_super_resolution_noise_2	High (2)
+reader_super_resolution_noise_3	Ultra (3)
+reader_super_resolution_noise_n1	None (-1)
+reader_super_resolution_summary	Upscales images using RealCUGAN (may consume significantly more battery and performance)
+reader_threads	Reader threads
+reader_threads_summary	Number of pages loaded concurrently while reading (1-10)
+reader_translation_action	Manga translation
+reader_translation_action_disable	Turn off manga translation
+reader_translation_action_settings	Manga translation settings
+reader_translation_action_setup	Set up manga translation
+reader_translation_advanced_settings	Advanced model settings
+reader_translation_api_custom_headers	Custom Headers (JSON)
+reader_translation_api_custom_headers_summary	Add custom HTTP headers in JSON format (e.g. {\"Model\": \"gpt-4\"})
+reader_translation_api_endpoint	Translation API endpoint
+reader_translation_api_endpoint_missing	Please set translation API endpoint first
+reader_translation_api_endpoint_summary	LibreTranslate-compatible endpoint, e.g. https://example.com/translate
+reader_translation_api_get_key	Get API key
+reader_translation_api_get_key_summary	Open the official registration and API key page for this provider
+reader_translation_api_key	Translation API key
+reader_translation_api_key_summary	Optional, supports Authorization and X-API-Key headers
+reader_translation_api_model	Online translation model
+reader_translation_api_model_summary	Model name for OpenAI-compatible chat/completions, e.g. gpt-4o-mini
+reader_translation_api_models_fetch	Test connection and choose model
+reader_translation_api_models_fetch_failed	Failed to fetch model list
+reader_translation_api_models_fetch_summary	Test the current key with the provider model list, then choose an available model
+reader_translation_api_models_pick_title	Pick a model
+reader_translation_api_open_docs	Provider documentation
+reader_translation_api_open_docs_summary	Open the official API documentation
+reader_translation_api_provider_alibaba	Alibaba Cloud
+reader_translation_api_provider_anthropic	Anthropic
+reader_translation_api_provider_baidu	Baidu: ERNIE
+reader_translation_api_provider_custom	Custom (manual)
+reader_translation_api_provider_deepseek	DeepSeek
+reader_translation_api_provider_gemini	Google Gemini
+reader_translation_api_provider_minimax	MiniMax: M2.5
+reader_translation_api_provider_moonshot	Moonshot AI
+reader_translation_api_provider_openai	OpenAI
+reader_translation_api_provider_openrouter	OpenRouter
+reader_translation_api_provider_preset	LLM provider preset
+reader_translation_api_provider_preset_summary	Auto-fill endpoint and default model for common OpenAI-compatible providers
+reader_translation_api_provider_zhipu	Zhipu AI
+reader_translation_bubble_detector_enabled	Use bubble detector as a post-OCR helper
+reader_translation_bubble_detector_enabled_summary	Run the optional detector after page OCR to help assign text blocks into bubbles for translation and rendering. It is not the primary OCR entry point.
+reader_translation_bubble_detector_nms	Bubble detection NMS threshold
+reader_translation_bubble_detector_nms_summary	Controls the strictness of suppressing overlapping bubbles. A lower value removes duplicate boxes aggressively, while a higher value preserves naturally touchin
+reader_translation_bubble_grouping_enabled	Enable bubble-assisted grouping
+reader_translation_bubble_grouping_enabled_no_detector	Enable bubble-assisted grouping
+reader_translation_bubble_grouping_enabled_summary	After text detection, recognition, and merge, let the optional bubble detector attach merged text units to bubbles for translation and rendering. Disable this t
+reader_translation_bubble_grouping_enabled_summary_no_detector	After text detection, recognition, and merge, keep merged text units as the translation input. Enable a bubble detector to allow post-OCR bubble-assisted groupi
+reader_translation_bubble_grouping_tuning	Text merge strictness
+reader_translation_bubble_grouping_tuning_summary	Controls how aggressively nearby OCR text blocks are merged before translation
+reader_translation_bubble_yolo_url	YOLO model custom URL
+reader_translation_bubble_yolo_url_summary	Custom download link for the bubble detector ONNX model
+reader_translation_bypass_hint	Current manga language already matches target (%1$s). Translation is skipped.
+reader_translation_bypass_hint_default	This manga already matches target language. Translation will be skipped.
+reader_translation_debug_logs	Translation debug logs
+reader_translation_debug_logs_summary	Print concise OCR/translation logs to Logcat
+reader_translation_det_download_success	Detection model downloaded
+reader_translation_e2e_api_concurrency	API parallel translation concurrency
+reader_translation_e2e_api_concurrency_summary	How many pages can be translated in parallel. Increase carefully to avoid rate limits.
+reader_translation_e2e_api_intro_summary	Runs OCR understanding and translation in a single multimodal request. Local OCR models and the two-stage translation pipeline are bypassed.
+reader_translation_e2e_api_intro_title	End-to-End API
+reader_translation_e2e_api_provider_gemini	Gemini
+reader_translation_e2e_api_provider_ollama	Ollama
+reader_translation_e2e_api_settings_summary	Configure endpoint, key, model, and concurrency for multimodal OCR + translation
+reader_translation_e2e_api_settings_title	End-to-End API Settings
+reader_translation_enabled	Auto translate pages
+reader_translation_enabled_summary	Use on-device OCR and translation, with optional API fallback
+reader_translation_languages_swapped	Languages swapped: %1$s → %2$s
+reader_translation_layer_failed	Translation layer generation failed
+reader_translation_layer_generating	Translation layer is being generated
+reader_translation_layer_not_ready	Translation layer is not ready yet
+reader_translation_local_model_mlkit	ML Kit (on-device default)
+reader_translation_long_press_hint	Long press Translation for language shortcuts
+reader_translation_manage_ocr_models	Download and Manage Models
+reader_translation_manage_ocr_models_summary	Download and manage text detection and recognition, local translation, and optional bubble detector models
+reader_translation_mode	Translation mode
+reader_translation_mode_api_only	API only
+reader_translation_mode_local_first	Local first, then API
+reader_translation_mode_local_only	Local only
+reader_translation_mode_switched_original	Showing original image
+reader_translation_mode_switched_translated	Showing translated image
+reader_translation_model_delete_confirm	Are you sure you want to delete %1$s?
+reader_translation_model_deleted	%1$s deleted.
+reader_translation_model_download_channel_description	Shows background download progress for local AI models.
+reader_translation_model_download_started_background	Download started in the background. You can check progress in the notification.
+reader_translation_model_downloading_kb	Downloading package… %1$d KB
+reader_translation_model_downloading_percent	Downloading package… %1$d%%
+reader_translation_ocr_advanced_settings	Advanced OCR settings
+reader_translation_ocr_advanced_settings_summary	Choose text detection and recognition models
+reader_translation_ocr_det_mlkit	ML Kit (Google on-device, no download)
+reader_translation_ocr_det_model_selection	Text detection model
+reader_translation_ocr_det_model_selection_summary	Select the model used to locate text regions on the page. Bubble/text detectors can also be used as the positioning stage.
+reader_translation_ocr_detector_models_title	Text Detection Models
+reader_translation_ocr_engine	Text extraction method
+reader_translation_ocr_engine_mlkit	ML Kit (on-device, no download)
+reader_translation_ocr_engine_paddle	Local model OCR
+reader_translation_ocr_mode	OCR mode
+reader_translation_ocr_mode_advanced_summary	Uses the 2024-12-25 detector and automatic language-specific recognition
+reader_translation_ocr_mode_basic	Basic
+reader_translation_ocr_mode_basic_summary	Uses ML Kit on-device recognition with no manual model setup
+reader_translation_ocr_model_det_autodetect	Auto Detect
+reader_translation_ocr_model_det_selection	Detection model selection
+reader_translation_ocr_model_det_title	Text Detection Models
+reader_translation_ocr_model_download_now	Download Now
+reader_translation_ocr_model_onnx_automatic	ONNX Automatic
+reader_translation_ocr_model_paddle_selection	Local OCR model selection
+reader_translation_ocr_model_rec_autodetect	Auto Select
+reader_translation_ocr_model_rec_description	Offline text recognition model optimized for Japanese manga
+reader_translation_ocr_model_rec_ppocr_v5	PP-OCRv5 Rec (follow Det model)
+reader_translation_ocr_model_rec_selection	Recognition model selection
+reader_translation_ocr_model_rec_title	MangaOCR (Text Recognition)
+reader_translation_ocr_model_selection_not_downloaded_suffix	" (⚠️ Not Downloaded)"
+reader_translation_ocr_model_status_not_downloaded	Not downloaded
+reader_translation_ocr_models_group_title	Text Detection and Recognition Models
+reader_translation_ocr_models_title	Local Model Management
+reader_translation_ocr_pack_download	Download models
+reader_translation_ocr_pack_message	Advanced OCR needs five offline models for text detection and automatic language recognition. The mode will switch only after every model is downloaded and veri
+reader_translation_ocr_pack_ready	Advanced OCR is ready
+reader_translation_ocr_pack_started	Advanced OCR models are downloading in the background
+reader_translation_ocr_pack_title	Download advanced OCR models?
+reader_translation_ocr_pipeline_bubble_detector_first	Bubble Detector First
+reader_translation_ocr_pipeline_hybrid	Hybrid
+reader_translation_ocr_pipeline_page_text_first	Page Text First
+reader_translation_ocr_pipeline_strategy	OCR pipeline strategy
+reader_translation_ocr_rec_model_auto	Auto (select by manga language)
+reader_translation_ocr_rec_model_auto_summary	Selects by the manga translation language first, then its source language: Japanese uses MangaOCR, Korean uses PP-OCRv5 Korean, Thai uses PP-OCRv5 Thai, Latin-s
+reader_translation_ocr_recognizer_model_selection	Text recognition model
+reader_translation_ocr_recognizer_models_title	Text Recognition Models
+reader_translation_onnx_bubble_detector_models_title	Bubble Detector Models
+reader_translation_onnx_bubble_model_selection	Bubble detector model
+reader_translation_onnx_bubble_model_selection_summary	Select the model used to locate dialogue bubbles. Intelligent models handle complex pages better, while general models maximize compatibility.
+reader_translation_onnx_download_success	Model downloaded
+reader_translation_onnx_model_selection	Local translation model
+reader_translation_onnx_models_title	Local Translation Models
+reader_translation_onnx_super_resolution_models_title	Super Resolution Models
+reader_translation_open_api_settings	Online Translation Service
+reader_translation_open_api_settings_summary	Configure endpoint, API key, provider preset, and remote translation model
+reader_translation_overlay_compactness	Non-bubble overlay compactness
+reader_translation_overlay_compactness_summary	Controls how tightly translated overlays fit text outside speech bubbles
+reader_translation_paddle_cls_model_sha256	Orientation classifier model SHA256
+reader_translation_paddle_cls_model_url	Orientation classifier model URL
+reader_translation_paddle_cls_model_version	Orientation classifier model version
+reader_translation_paddle_det_model_sha256	Detection model SHA256
+reader_translation_paddle_det_model_url	Detection model URL
+reader_translation_paddle_det_model_version	Detection model version
+reader_translation_paddle_download_done	Downloaded: %1$s
+reader_translation_paddle_download_failed	Download failed: %1$s
+reader_translation_paddle_download_failed_toast	Local OCR model download failed
+reader_translation_paddle_download_missing	Please select model and URL/version first
+reader_translation_paddle_download_now	Download local OCR models now
+reader_translation_paddle_download_now_summary	Tap to download and prepare the model files needed for local text detection and recognition
+reader_translation_paddle_download_progress_bytes	Downloading… %1$d KB
+reader_translation_paddle_download_progress_percent	Downloading… %1$d%%
+reader_translation_paddle_download_starting	Starting download…
+reader_translation_paddle_download_success	Local OCR models downloaded
+reader_translation_paddle_model_components_summary	Local OCR usually needs detection and recognition models, with an optional orientation classifier. If these fields are filled, they override the single package 
+reader_translation_paddle_model_path	Local OCR model directory
+reader_translation_paddle_model_path_summary	Use this when model files already exist locally, for example /sdcard/... or an assets path like models/ch_PP-OCRv4
+reader_translation_paddle_model_sha256	Model package SHA256
+reader_translation_paddle_model_sha256_default	
+reader_translation_paddle_model_sha256_summary	Optional but recommended, leave empty to skip hash verification
+reader_translation_paddle_model_url	Local OCR model package URL
+reader_translation_paddle_model_url_default	https://github.com/skepsun/PaddleOCR_Models/releases/download/v1.0/ch_PP-OCRv4_mobile_det.zip
+reader_translation_paddle_model_url_summary	Used when the model directory is empty. The app downloads and extracts the package, which must contain det.nb, rec.nb, and cls.nb
+reader_translation_paddle_model_version	Local OCR model version
+reader_translation_paddle_model_version_default	v4_mobile
+reader_translation_paddle_model_version_summary	Version tag used for local cache, e.g. ppocrv4-20260306
+reader_translation_paddle_ocr_only	Only show OCR models
+reader_translation_paddle_ocr_only_summary	Filter official list to OCR-focused models only (recommended)
+reader_translation_paddle_official_model_id	Official recognition model list
+reader_translation_paddle_official_model_id_summary	Pick from the official model list to auto-fill the download URL and version
+reader_translation_paddle_rec_model_sha256	Recognition model SHA256
+reader_translation_paddle_rec_model_url	Recognition model URL
+reader_translation_paddle_rec_model_version	Recognition model version
+reader_translation_page_log_empty	No translation log for this page yet.
+reader_translation_page_log_title	Page %1$d translation log
+reader_translation_pipeline_mode	Pipeline mode
+reader_translation_pipeline_mode_end_to_end_api	End-to-End API (Vision GenAI)
+reader_translation_pipeline_mode_two_stage	Two-stage (Local OCR + API Translation)
+reader_translation_progress_complete	Chapter translation complete (%1$d/%2$d)
+reader_translation_progress_complete_partial	Chapter translation complete (%1$d succeeded, %2$d failed)
+reader_translation_progress_started	Chapter translation started (%1$d/%2$d)
+reader_translation_progress_update	Chapter translation progress %1$d/%2$d
+reader_translation_quality_filter_enabled	Translation quality filter
+reader_translation_quality_filter_enabled_summary	Hide translations that look garbled, unchanged, or likely OCR noise. Disable to render all non-empty translations.
+reader_translation_quick_actions	Translation quick actions
+reader_translation_quick_change_source	Change source language
+reader_translation_quick_change_target	Change target language
+reader_translation_quick_swap_languages	Swap source and target
+reader_translation_rec_download_done	Downloaded: %1$s
+reader_translation_rec_download_failed	Download failed: %1$s
+reader_translation_rec_download_failed_toast	Recognition model download failed
+reader_translation_rec_download_missing	Please enter model URL first
+reader_translation_rec_download_now	Download recognition model now
+reader_translation_rec_download_now_summary	Tap to download the selected recognition model for offline manga translation
+reader_translation_rec_download_progress_bytes	Downloading… %1$d KB
+reader_translation_rec_download_progress_percent	Downloading… %1$d%%
+reader_translation_rec_download_starting	Starting recognition model download…
+reader_translation_rec_download_success	Recognition model downloaded
+reader_translation_render_pending	Generating translated layer…
+reader_translation_render_style	Translation render style
+reader_translation_render_style_compact_overlay	Compact dark overlay
+reader_translation_render_style_replace	Replace text area
+reader_translation_retranslate	Retranslate
+reader_translation_retranslate_chapter_started	Chapter retranslating started
+reader_translation_retranslate_current_chapter	Retranslate current chapter
+reader_translation_retranslate_current_page	Retranslate current page
+reader_translation_retranslate_started	Retranslation started
+reader_translation_retry_failed_none	No failed page to retry
+reader_translation_retry_failed_pages	Retry failed pages
+reader_translation_retry_failed_started	Retrying failed pages
+reader_translation_retry_this_page	Retry this page
+reader_translation_section_api	Online Translation (API)
+reader_translation_section_bubble	Bubble detection and overlay
+reader_translation_section_local_models	OCR and local models
+reader_translation_section_ocr	Text Detection and Recognition
+reader_translation_section_translation	Local Translation
+reader_translation_settings_advanced	Advanced settings
+reader_translation_settings_entry_summary	Configure text detection and recognition, local translation models, online translation services, and bubble detection
+reader_translation_show_translated	Show translated layer
+reader_translation_show_translated_summary	Toggle between original image and translated rendering
+reader_translation_source_lang	Source language
+reader_translation_source_lang_summary	Use Automatic to follow the current manga/source language shown on the details page
+reader_translation_source_lang_updated	Source language: %1$s
+reader_translation_status_compact	Translating %1$d/%2$d
+reader_translation_swap_auto_unsupported	Set a fixed source language before swapping
+reader_translation_tab_logs	Tasks & Logs
+reader_translation_target_lang	Target language
+reader_translation_target_lang_updated	Target language: %1$s
+reader_translation_task_bench_conc_title	[Comparison Conclusion]
+reader_translation_task_bench_dist_fail_code	Fail Code
+reader_translation_task_bench_dist_ocr	OCR
+reader_translation_task_bench_dist_ocr_cache	OCR Cache Hit
+reader_translation_task_bench_dist_ocr_sel	Selected OCR
+reader_translation_task_bench_dist_pipe	OCR Pipeline
+reader_translation_task_bench_dist_pipe_fb	Pipeline Fallback
+reader_translation_task_bench_dist_render	Rendering
+reader_translation_task_bench_dist_render_cache	Render Cache Hit
+reader_translation_task_bench_dist_roi_box	ROI-first Boxes
+reader_translation_task_bench_dist_total	Total Time
+reader_translation_task_bench_dist_trans	Translation
+reader_translation_task_bench_roi_avg	Avg Boxes=%1$s
+reader_translation_task_bench_roi_fb	, Fallback=%1$s
+reader_translation_task_bench_roi_hits	, Direct Hit=%1$s
+reader_translation_task_bench_roi_out	Gen Output=%1$s
+reader_translation_task_bench_roi_pages	ROI-first Pg=%1$s
+reader_translation_task_bench_roi_reason	Main FB Reason=%1$s
+reader_translation_task_bench_roi_res_1	Current sample shows ROI-first can directly generate outputs on some pages.
+reader_translation_task_bench_roi_res_2	Current sample mostly relies on page-first fallback. ROI-first is conservative fallback.
+reader_translation_task_bench_roi_res_3	Current sample shows ROI-first is active, but stability is insufficient to replace page-first.
+reader_translation_task_bench_sampled	Sampled: %1$d/%2$d pg
+reader_translation_task_bench_title	[Chapter Baseline]
+reader_translation_task_benchmark_empty	No benchmark samples yet.
+reader_translation_task_benchmark_item	Chapter benchmark\n%1$s
+reader_translation_task_benchmark_title	Chapter benchmark
+reader_translation_task_detail_title	Page %1$d · %2$s
+reader_translation_task_diag_baseline	[Chapter Translation Baseline Export]
+reader_translation_task_diag_config	Config: %1$s
+reader_translation_task_diag_device	Device: %1$s
+reader_translation_task_diag_empty	<empty>
+reader_translation_task_diag_fail_code	Fail Code: %1$s
+reader_translation_task_diag_fail_reason	Fail Reason: %1$s
+reader_translation_task_diag_failed	Processing Failed
+reader_translation_task_diag_lang	Lang: %1$s -> %2$s
+reader_translation_task_diag_local_done	Local Translation Done=%1$d/%2$d
+reader_translation_task_diag_local_req	Local Translation Requests=%1$d
+reader_translation_task_diag_local_stat	Local Trans: Req %1$d, Done %2$d/%3$d
+reader_translation_task_diag_manga	Manga: %1$s
+reader_translation_task_diag_ocr_attempt	OCR Attempt: %1$s
+reader_translation_task_diag_ocr_param	OCR Config: %1$s
+reader_translation_task_diag_panel	[Translation Diagnostics]
+reader_translation_task_diag_perf	Performance Metrics:
+reader_translation_task_diag_render_bubble	Render Bubbles: %1$d
+reader_translation_task_diag_render_done	Rendering Done=%1$d
+reader_translation_task_diag_sample	Sample OCR/Trans:
+reader_translation_task_diag_sample_out	[out] %1$s
+reader_translation_task_diag_sample_src	%1$d. [src] %2$s
+reader_translation_task_diag_start	Start Processing
+reader_translation_task_diag_time	Time: %1$s
+reader_translation_task_diag_timeline	Timeline: %1$s
+reader_translation_task_filter_current	Filter: %1$s
+reader_translation_task_filter_exception	Exception
+reader_translation_task_filter_failed	Failed
+reader_translation_task_filter_ocr_empty	OCR empty
+reader_translation_task_filter_ocr_engine	OCR engine failed
+reader_translation_task_filter_render_filtered	Render filtered
+reader_translation_task_filter_title	Filter page tasks
+reader_translation_task_filter_translate_empty	Translation empty
+reader_translation_task_item	P%1$d [%2$s] %3$s\n%4$s
+reader_translation_task_panel_empty	No page tasks in current chapter.
+reader_translation_task_panel_empty_for_filter	No tasks for filter: %1$s
+reader_translation_task_panel_summary	Pages: %1$d | Ready: %2$d | Running: %3$d | Failed: %4$d
+reader_translation_task_panel_title	Translation task panel
+reader_translation_task_stat_bubble	Bubbles: %1$s
+reader_translation_task_stat_hit	Hit
+reader_translation_task_stat_miss	Miss
+reader_translation_task_stat_ocr	OCR: %1$sms
+reader_translation_task_stat_ocr_block	OCR Text Blocks: %1$s
+reader_translation_task_stat_ocr_cache	OCR Cache: %1$s
+reader_translation_task_stat_ocr_eng	OCR Engine: %1$s
+reader_translation_task_stat_pipe_fb	Pipeline Fallback: %1$s
+reader_translation_task_stat_pipe_strat	OCR Pipeline: %1$s
+reader_translation_task_stat_render	Render: %1$sms
+reader_translation_task_stat_render_bubble	Rendered Bubbles: %1$s
+reader_translation_task_stat_render_cache	Render Cache: %1$s
+reader_translation_task_stat_roi_box	ROI-first boxes: %1$s
+reader_translation_task_stat_total	Total Time: %1$sms
+reader_translation_task_stat_trans	Trans: %1$sms
+reader_translation_task_state_failed	Failed
+reader_translation_task_state_generating	Running
+reader_translation_task_state_ready	Ready
+reader_translation_toggle_show_original	Show original image
+reader_translation_toggle_show_translated	Show translated image
+reader_translation_tools	Translation tools
+reader_translation_tuning_balanced	Balanced
+reader_translation_tuning_relaxed	Relaxed
+reader_translation_tuning_strict	Strict
+reader_translation_view_logs_summary	View per-page translation progress, benchmarks, and logs
+reader_translation_view_page_log	View page translation log
+reading_chapter_record_format	%1$d sessions · %2$s
+reading_days	Reading days
+reading_status_completed	Finished reading
+reading_status_re_reading	Re-reading
+recent_manga	Recent
+recent_reading	Recent reading
+recent_webdav_action	Recent WebDAV action
+recommendation_manga	recommended manga
+recommendation_novel	recommended novels
+recommendation_video	recommended videos
+recommended_repositories	Recommended Repositories
+refresh_filters	Refresh filters
+refresh_packages	Refresh packages
+refresh_repositories	Refresh repositories
+related_works	Related Works
+remote_url	Remote URL
+remove_custom_cover	Reset cover
+remove_from_favourites	Remove from favorites
+rename	Rename
+reorder_hint	Drag the handle or long-press an item to reorder, then save.
+reorder_select_category_hint	Please select a specific category to reorder
+repeat_password	Repeat the password
+replace_rule_add	Add rule
+replace_rule_add_summary	Create a replacement or filtering rule
+replace_rule_all_disabled	All replacement rules disabled
+replace_rule_all_enabled	All replacement rules enabled
+replace_rule_book_disabled	Replacement rules disabled for this book
+replace_rule_book_enabled	Apply replacement rules for this book
+replace_rule_book_toggle	Apply replacement rules for this book
+replace_rule_deleted	Rule deleted
+replace_rule_disable_all	Disable all rules
+replace_rule_disable_all_summary	Temporarily stop applying replacement rules
+replace_rule_edit	Edit rule
+replace_rule_effective_empty	No matching replacement rules
+replace_rule_effective_summary	Rules matching this book: %d
+replace_rule_effective_title	Effective replacement rules
+replace_rule_empty	No replacement rules
+replace_rule_empty_summary	Add a rule or import a Legado rule file to process novel chapters
+replace_rule_enable_all	Enable all rules
+replace_rule_enable_all_summary	Apply every valid rule when its scope matches
+replace_rule_exclude_scope	Excluded source or book
+replace_rule_export	Export rules
+replace_rule_export_summary	Export rules in a compatible JSON format
+replace_rule_import	Import Legado rules
+replace_rule_import_summary	Import a JSON array exported by Legado or Kototoro
+replace_rule_imported	Imported %d rules
+replace_rule_invalid	Pattern is empty or not a valid regular expression
+replace_rule_mode_regex	Regex
+replace_rule_mode_text	Plain text
+replace_rule_order	Order
+replace_rule_pattern	Pattern
+replace_rule_preview	Preview
+replace_rule_preview_hint	Enter sample text to verify the rule before saving
+replace_rule_preview_input	Sample input
+replace_rule_preview_output	Result
+replace_rule_regex	Regular expression
+replace_rule_replacement	Replacement
+replace_rule_saved	Rule saved
+replace_rule_scope	Included source or book
+replace_rule_scope_content	Apply to content
+replace_rule_scope_hint	Optional; separate multiple values with commas
+replace_rule_scope_title	Apply to titles
+replace_rule_search	Search rules
+replace_rule_timeout	Timeout (ms)
+replace_rules	Text replacement rules
+replace_rules_actions	Rule management
+replace_rules_summary	Clean novel text with ordered, source-compatible rules
+repositories	Repositories
+repositories_tab_title	Repositories (%1$d)
+repository_location_inline	Inline
+repository_location_preset	Preset
+repository_source	Repository source
+repository_url	Repository URL
+restore_auth_restart_hint	Login credentials restored. Please restart the app to apply.
+restore_backup	Restore from backup
+restore_jump_point	Tap to restore the position before this jump
+restore_kototoro_backup_summary	Restore a Kototoro backup from any version, or a Kotatsu backup. The format is detected automatically.
+restore_mode_merge_with_existing	Merge with existing data
+restore_mode_merge_with_existing_summary	Keep current data and add or update entries from the backup; nothing is deleted
+restore_mode_replace_existing	Replace existing data
+restore_mode_replace_existing_summary	Sections being restored are cleared first; favourites and history missing from the backup are removed
+restore_resumed_hint	Restore continued from where it was interrupted; already-restored sections were kept.
+reverse	Reverse
+reverse_landscape	Reverse landscape
+reverse_order	Reverse Order
+rewind	Rewind
+rules	Rules
+runs_on_app_start	Runs when the application starts
+save_manga_confirm	Save selected manga? This may consume traffic and disk space
+save_manga_manga	Download manga
+save_manga_novel	Download novel
+save_manga_video	Download video
+save_note	Save note
+saved	Saved
+saved_filters	Saved filters
+scrobbler_search_auth_hint	Search works without login. Sign in to link with %s.
+search_and_bind_local	Search and bind locally
+search_content	Search content
+search_content_kind	Select search scope
+search_disabled_sources	Search through disabled sources
+search_displayed_results	%1$d shown
+search_favourites	Search favorites…
+search_json_source	Search Legado sources
+search_loaded_results	Loaded %1$d results
+search_loading_remote_suggestions	Looking up works, people and characters…
+search_loading_suggestions	Loading suggestions…
+search_local_suggestions	Local content
+search_no_suggestions	No suggestions. Confirm your search to look through content sources.
+search_only_badge	S
+search_refreshing_results	Updating results…
+search_remote_suggestions_failed	Online suggestions are unavailable. You can still search content sources.
+search_retry_failed_sources	Retry failed sources
+search_source_type_count	%1$d source types
+search_sources	Search sources
+search_sources_failed	Failed sources: %1$d
+search_sources_packages_repositories	Search sources, packages, repositories
+search_sources_progress	Sources searched: %1$d/%2$d
+search_url	Search URL
+select_count_format	of %d
+select_date	Select date
+select_file	Select File
+select_file_or_enter_url	Please select a file or enter a source URL
+selected_content_languages	Selected content languages
+selected_count	%d selected
+send	Send
+send_backups_telegram	Send backups in Telegram
+send_backups_webdav	Upload backups to WebDAV
+server_address	Server address
+settings_section_accounts_data	Accounts & data
+settings_section_content_sources	Content & sources
+settings_section_reading_interface	Reading & interface
+settings_section_system_services	System & services
+settings_source_action_failed	Failed
+settings_source_book_variables_summary	Caps how many chapters are loaded, which aggregate sources commonly need. -1 means unlimited; leave blank to leave it unset.
+settings_source_book_variables_title	Book variable (custom) default
+settings_source_check_login_title	Check login state
+settings_source_clear_login_summary	Clears this source\'s sourceVariable, loginInfo and login form cache
+settings_source_clear_login_title	Clear login information
+settings_source_cleared	Cleared
+settings_source_compat_summary	This extension has custom settings that are not ported to Compose yet, so only the entries that map safely are shown.
+settings_source_compat_title	Compatibility notice
+settings_source_integer_required	Enter a whole number (may be blank)
+settings_source_legado_login_title	Login (Legado)
+settings_source_legado_runtime_title	Runtime (Legado)
+settings_source_legado_variables_title	Legado variables
+settings_source_runtime_dir_summary	Toggles the standalone runtime debug path used for the Legado catalogue and detail flow.
+settings_source_runtime_dir_title	Resolve through the runtime directory
+settings_source_variables_summary	Controls how many books the list loads (scripts usually read the trailing number). Leave blank to leave it unset.
+settings_source_variables_title	Source variables
+setup_wizard	Setup wizard
+setup_wizard_summary	Select content languages and types. This will reset the list of enabled sources.
+share_backup	Share backup
+share_logs	Share logs
+share_sources	Share sources
+shared_element_transitions	Smooth cover transitions
+shared_element_transitions_summary	Enables fluid \"Hero\" animation when navigating from content lists to the details page, morphing the list cover image into the detail cover image.
+shiki_category_anime_ongoing	Ongoing Anime
+shiki_category_anime_popular	Popular Anime
+shiki_category_anime_ranked	Top Anime
+shiki_category_anime_upcoming	Upcoming Anime
+shiki_category_manga_popular	Popular Manga
+shiki_category_manga_ranked	Top Manga
+shiki_category_seasonal	Seasonal Anime
+show_aliases	Show aliases
+show_all_categories	Show all categories
+show_broken_sources	Show broken/unavailable sources
+show_broken_sources_summary	Allow viewing and using parser extensions marked as broken
+show_empty_sources	Show empty sources
+show_extensions_in_grid	Show extensions in two columns
+show_extensions_in_list	Show extensions in one column
+show_extra_info_on_cards	Extra info
+show_less	Show Less
+show_more	Show More
+show_reading_indicators_summary	Show percentage read in history and favorites
+show_slider	Show slider
+show_source_on_cards	Show source icon & language on cards
+show_suspicious_content	Show suspicious content
+show_updated	Show updated
+sideload_extension	Sideload
+sign_in_in_settings	Sign in in settings
+silent	Silent
+simkl	Simkl
+simkl_category_anime_airing	Airing Anime
+simkl_category_anime_popular	Popular Anime
+simkl_category_anime_premieres	Anime Premieres
+simkl_category_anime_trending	Trending Anime
+simkl_category_movies_popular	Popular Movies
+simkl_category_movies_trending	Trending Movies
+simkl_category_tv_airing	Airing TV Shows
+simkl_category_tv_premieres	TV Premieres
+simple	Simple
+skip_no_explore_sources	Skip sources without browsing rules (search only)
+skip_unreachable_sources	Skip unreachable sources (skip if homepage is inaccessible)
+sort_and_language	Sorting and language
+sort_by	Sort by
+sort_by_enabled	Sort by enabled
+sort_by_name	Sort by name
+sort_by_popularity_label	Popularity
+sort_by_ranking	Ranking
+sort_by_rating	Rating
+source	Source
+source_broken	Broken
+source_broken_warning	This manga source has been marked as broken. Some features may not work
+source_count	%d source
+source_deleted	Source deleted
+source_disabled	Source disabled
+source_empty_badge	Empty source
+source_empty_badge_short	Empty
+source_enabled	Source enabled
+source_group_aniyomi	Aniyomi Extensions
+source_group_external	External Sources
+source_group_hentai_manga	Adult Manga Sources
+source_group_hentai_novel	Adult Novel Sources
+source_group_hentai_video	Adult Video Sources
+source_group_javascript	JavaScript Sources
+source_group_legado	Legado Sources
+source_group_lnreader	LNReader Sources
+source_group_manga	Manga Sources
+source_group_mihon	Mihon Extensions
+source_group_native	Native Sources
+source_group_novel	Novel Sources
+source_group_other	Other Sources
+source_group_other_json	Other JSON Sources
+source_group_tvbox	TVBox Sources
+source_group_video	Video Sources
+source_lock_filter_locked	Locked
+source_lock_filter_title	Lock status
+source_lock_filter_unlocked	Unlocked
+source_mark_available	Mark available
+source_mark_empty	Mark empty
+source_migration_concurrency	Search concurrency: %1$d
+source_migration_concurrency_label	Concurrency
+source_migration_error_no_target_sources	No target sources configured.
+source_migration_error_preview_scope_mismatch	Accepted candidates do not match the current favorites scope. Build the preview again.
+source_migration_from_label	From source
+source_migration_to_label	To source
+source_name	Source name
+source_origins	Source origins
+source_preferences	Source preferences & content filters
+source_preferences_summary	Sorting, grouping, adult content filters and tag blacklist
+source_tag_json	Legado
+source_test_action	Test sources
+source_test_availability_filter_title	Test availability
+source_test_completed	Source test completed: %1$d available, %2$d unavailable
+source_test_completed_with_unverified	Source test completed: %1$d available, %2$d unavailable, %3$d unverified
+source_test_unavailable	Unavailable
+source_type	Source Type
+source_type_aniyomi	Aniyomi
+source_type_aniyomi_apk	Aniyomi APK
+source_type_builtin_short	Native
+source_type_cloudstream	Cloudstream
+source_type_filter	Source type
+source_type_ireader	IReader
+source_type_ireader_apk	IReader APK
+source_type_jar	JAR
+source_type_js	JavaScript (Venera)
+source_type_js_source	JS source
+source_type_legado	Legado
+source_type_legado_json	Legado JSON
+source_type_lnreader	LNReader
+source_type_mihon	Mihon
+source_type_mihon_apk	Mihon APK
+source_type_native	Built-in
+source_type_tsundoku	Tsundoku
+source_type_tsundoku_apk	Tsundoku APK
+source_type_tvbox	TVBox
+source_type_tvbox_json	TVBox JSON
+source_types	Source types
+source_untested	Untested
+source_url	Source URL
+sources_catalog	Sources catalog
+sources_disabled	Sources disabled
+sources_imported_successfully	Successfully imported %d source
+sources_reorder_tip	Tap and hold on an item to reorder them
+sources_tab_title	Sources (%1$d)
+space_anime	Anime
+space_content_types_required_hint	Select at least one content type
+space_continue_content_description	Continue %1$s
+space_immersive_switch_enabled	Switch in readers and players
+space_immersive_switch_enabled_summary	Allow space switching from details, readers, and the video player
+space_languages_hint	Leave empty to include all languages
+space_novel	Novel
+space_persistent_navigation_enabled	Remember navigation per space
+space_persistent_navigation_enabled_summary	Restore each space to its most recent page and navigation stack
+space_recent_context	Recent: %1$s
+space_route_preferences_enabled	Remember page preferences per space
+space_route_preferences_enabled_summary	Keep supported page filters and layout choices separate for each space
+space_source_types_hint	Leave empty to include all source types
+space_switch_failed	Could not save progress. Space was not changed.
+space_switch_unavailable	Space switching is not available right now.
+space_switcher_content_description	Current: %1$s. Switch space
+space_switcher_enabled	Show space switcher
+space_switcher_enabled_summary	Show the space switch button throughout the app
+space_switcher_position	Space button position
+space_switcher_position_center_left	Center left
+space_switcher_position_center_right	Center right
+space_switcher_title	Switch space
+space_workbench_summary	Switch context or continue where you left off
+space_workbench_title	Space Workbench
+spaces	Spaces
+spaces_enabled	Enable Spaces
+spaces_enabled_summary	Keep each media space isolated with its own active context
+spaces_settings_summary	Separate manga, novels, and anime into independent contexts
+speed_value	x%.1f
+split_by_translations	Split by translations
+split_by_translations_summary	Show chapters with different translations separately, rather than in one list
+split_double_pages	Split double pages
+statistics_pending_short	Statistics pending
+stats_active_days	Active days
+stats_activity	Activity
+stats_activity_days	Last %1$d days
+stats_chapters_count	%1$d chapters
+stats_content_breakdown	Time by content type
+stats_duration_hours	%1$d h
+stats_duration_hours_minutes	%1$d h %2$d min
+stats_duration_minutes	%1$d min
+stats_episodes_count	%1$d episodes
+stats_hour_range	%1$02d:00–%2$02d:00
+stats_kind_novel	Novels
+stats_pages_count	%1$d pages
+stats_peak_period	Peak · %1$s
+stats_sessions	Sessions
+stats_sessions_count	%1$d sessions
+stats_streak	%1$d-day streak
+stats_time_distribution	Reading times
+stats_time_distribution_subtitle	%1$s activity grouped by time of day
+stats_time_late_night	Late night
+stats_time_midnight	Midnight
+stats_time_noon	Noon
+stats_top_works	Most enjoyed
+stats_total_time	Total focused time
+stats_unit_episodes	Episodes
+stats_unit_pages	Pages
+stats_works	Works
+strict_language_filter	Strict language filter
+strict_language_filter_summary	Hide extensions with unspecified or multiple languages
+suggest_new_sources	Suggest new sources after app update
+suggest_new_sources_summary	Prompt to enable newly added sources after updating the application
+suggestions_disabled_sources_summary	Show suggestions from all content sources, including disabled ones
+suggestions_excluded_sources	Excluded sources
+suggestions_excluded_sources_summary	Do not fetch suggestions from selected sources
+suggestions_header_subtitle	Curated recommendations based on reading taste
+suggestions_header_title	Discover & For You
+suggestions_preferred_genres	Preferred genres
+suggestions_preferred_genres_summary	Specify genres that you want to see prioritized in the suggestions
+suggestions_preferred_sources	Preferred sources
+suggestions_preferred_sources_summary	Prioritize suggestions from selected sources
+super_resolution_prepared	Super resolution prepared
+super_resolution_processing_	Upscaling…
+supported_apps	Supported apps
+sync	Synchronization
+sync_account	Signed in
+sync_auth	Login to sync account
+sync_auth_hint	You can sign in into an existing account or create a new one
+sync_auto_backup_enable	Enable automatic backups
+sync_auto_backup_enable_summary	Create local backups on a schedule. WebDAV backup can reuse them when keeping a local copy.
+sync_backend_switch_google_drive_confirm	WebDAV backup is currently enabled. Enabling Google Drive sync will turn off WebDAV backup, auto backup, and auto restore so the app does not mix two remote sna
+sync_backend_switch_google_drive_title	Switch to Google Drive sync?
+sync_backend_switch_webdav_confirm	Google Drive sync is currently enabled. Enabling WebDAV backup will turn off Google Drive sync while keeping your Google sign-in.
+sync_backend_switch_webdav_title	Switch to WebDAV backup?
+sync_delete_remote_data	Clear remote sync data
+sync_delete_remote_data_confirm	Delete the current remote Google Drive sync snapshot? Local data and older legacy snapshots will stay unchanged. After restoring a clean backup, run Sync now to
+sync_delete_remote_data_summary	Delete the current Google Drive sync snapshot. Older legacy snapshots are not changed.
+sync_extensions_restore_incomplete	Library synced. These extensions could not be restored: %1$s. Install them again from their repositories; their cloud records have been kept.
+sync_favourites	Sync site favourites
+sync_favourites_done	Sync completed
+sync_favourites_none_selected	No source selected
+sync_favourites_progress	Syncing %1$s…
+sync_favourites_skip_no_category	Skip %1$s (no local category)
+sync_favourites_source_done	Synced %1$s
+sync_favourites_title	Select sources to sync
+sync_favourites_warning	This will overwrite remote favourites. Make sure you have imported site favourites before syncing.
+sync_frequency	Sync frequency
+sync_google_drive_enable	Enable Google Drive sync
+sync_google_drive_enable_summary	Use Google Drive as the active sync backend. Turning it on disables WebDAV sync actions to avoid mixing remote snapshots. Your Google sign-in is kept when this 
+sync_host_description	You can use a self-hosted synchronization server or a default one. Don\'t change this if you\'re not sure what you\'re doing.
+sync_import_legacy_remote_data	Import old Google Drive sync
+sync_import_legacy_remote_data_confirm	Only continue if you are certain the old sync snapshot was not polluted by an older app version. If it was polluted, history records may be imported as favourit
+sync_import_legacy_remote_data_summary	Read the old sync snapshot once, convert it to the current format, then upload a current snapshot.
+sync_last	Last synced: %s
+sync_local_backup_section	Local backup
+sync_never	Not synced yet
+sync_not_supported	Sync is not supported for this service
+sync_on_start_summary	Runs a background sync when the app starts, with a cooldown to avoid frequent Drive requests.
+sync_settings	Synchronization settings
+sync_settings_summary	Merge favorites, history, subscriptions, and update records across devices.
+sync_sign_in	Prepare Google Drive sync
+sync_sign_in_summary	Uses Google Drive app data with the minimum Drive appdata permission to sync subscriptions and update records. Kototoro cannot access your Drive files.
+sync_sign_out	Sign out
+sync_syncing	Syncing…
+sync_title	Sync your data
+sync_webdav_enable	Enable WebDAV backup
+sync_webdav_enable_summary	Upload and restore full backup packages manually or during the daily backup task.
+sync_wifi_only	Sync only over Wi-Fi
+tablet_ui_mode	Tablet layout detection
+tablet_ui_mode_disabled	Off (always use phone layout)
+tablet_ui_mode_relaxed	Relaxed (wide portrait counts)
+tablet_ui_mode_strict	Strict (original Kotatsu)
+tags	Tags
+tags_warnings	Highlight dangerous genres
+tags_warnings_summary	Highlight genres that may be inappropriate for most users
+telegram_chat_id	Telegram chat ID
+telegram_chat_id_summary	Enter the chat ID where backups should be sent
+telegram_group	Telegram group
+telegram_integration	Telegram integration
+test	Test
+test_failed	Test failed: %s
+test_parser	Test manga source
+test_success	Test success
+theme	Appearance mode
+theme_name_expressive	Expressive (Test)
+theme_name_ios	iOS Blue
+thumbnails_cache	Thumbnails cache
+thumbnails_cache_limit	Thumbnails cache limit
+timeline	Timeline
+to_top	To top
+top_bar_style	Top bar style
+top_bar_style_compact	Compact icon
+top_bar_style_expanded_search	Expanded search bar
+torrent_cache	Torrent cache
+torrent_cache_limit	Torrent cache limit
+torrent_seeders_connected	Connected seeds: %1$d
+torrent_seeders_total	Seeds: %1$d
+torrent_stream_failed	Unable to start torrent stream
+torrent_stream_rejected	Torrent streaming was not enabled for this playback session
+torrent_stream_title	Stream torrent
+torrent_stream_warning	Torrent streaming shares data with other peers and may expose your IP address. Continue only if you understand the privacy and legal implications.
+total_reading_time	Total time
+tracker_failed_in_a_row	Failed %1$d time in a row
+tracker_failing_titles	Titles that keep failing
+tracker_failing_titles_summary	%1$d title failed %2$d checks or more in a row
+tracker_mark_duplicates_read	Mark repeated chapters as read
+tracker_mark_duplicates_read_summary	New chapters with the number of a chapter you have read count as read
+tracker_next_check	Next check %s
+tracker_progress_summary	New chapters: %1$d · Failed: %2$d · Skipped: %3$d
+tracker_skip_completed	Skip completed titles
+tracker_skip_completed_summary	Don\'t check titles their source marks as completed
+tracking_accounts	Tracking accounts
+tracking_auto_match_action	Open suggested match
+tracking_auto_match_text	Suggested match: %1$s (%2$.0f%%)
+tracking_bind_suggestion_action	Bind suggested match
+tracking_linked_match_text	Linked match: %1$s
+tracking_manage_binding_action	Manage binding
+tracking_match_actions_title	Tracking match
+tracking_open_linked_match_action	Open linked match
+tracking_remove_binding_action	Remove association
+tracking_season_fall	Fall
+tracking_season_label	%1$s %2$d
+tracking_season_spring	Spring
+tracking_season_summer	Summer
+tracking_season_winter	Winter
+tracking_source	Tracking Source
+translate	Translate
+translate_chapter	Translate chapter
+translate_chapter_again	Translate again
+translate_chapter_again_summary	This chapter is already translated. Translating again replaces the saved translation for the current settings.
+translate_title	Translate title
+translating	Translating…
+translating_	Translating…
+translation	Translation
+translation_cancelled	Translation cancelled
+translation_failed	Translation failed
+translation_prepared	Translation prepared
+translation_settings	Translation
+trust_and_add	Trust and add
+trust_extension_repository	Trust repository fingerprint
+trust_extension_repository_message	Repository: %1$s\nWebsite: %2$s\nSHA-256 fingerprint:\n%3$s\n\nVerify this fingerprint with the publisher before trusting this repository.
+tts_audio_cache	TTS audio cache
+tts_audio_cache_limit	TTS audio cache limit
+tts_clipboard_empty	Clipboard is empty
+tts_enable	Enable TTS system
+tts_engine_legado	Legado Network TTS
+tts_engine_service_label	TTS engine
+tts_engine_system	System TTS (Native)
+tts_engine_type	TTS engine type
+tts_legado_configuration	Legado network TTS configuration
+tts_legado_import_clipboard	Import from clipboard
+tts_legado_import_clipboard_summary	Import a Legado TTS HTTP JSON config from your clipboard
+tts_legado_import_dialog_message	Enter the URL pointing to a Legado TTS JSON configuration.
+tts_legado_import_dialog_title	Import Legado JSON
+tts_legado_import_download_failed	Download failed: %1$s
+tts_legado_import_empty	No readable Legado configuration found in JSON
+tts_legado_import_parse_failed	Failed to parse Legado JSON
+tts_legado_import_success	Imported %1$d Legado config(s)
+tts_legado_import_url	Import from URL
+tts_legado_import_url_summary	Import Legado configurations from a remote JSON list
+tts_legado_manage_delete_action	Delete selected
+tts_legado_manage_delete_title	Manage sources (select to delete)
+tts_legado_manage_sources	Manage imported sources
+tts_legado_manage_sources_summary_count	%1$d imported source(s)
+tts_legado_manage_sources_summary_empty	No imported sources yet
+tts_legado_sources_deleted	Deleted %1$d source(s)
+tts_legado_sources_empty	No imported sources to manage
+tts_legado_voice	Active Legado source
+tts_legado_voice_unavailable	Import a Legado configuration first
+tts_pitch	Speech pitch
+tts_section_voice_subtitle	Voice & subtitle (TTS)
+tts_settings_summary	Configure TTS engines, voices, and imported web sources
+tts_settings_title	TTS Settings
+tts_speed	Speech speed
+tts_system_configuration	System TTS configuration
+tts_system_voice	System voice
+tts_system_voice_fallback	Using language fallback for OEM TTS compatibility
+tts_system_voice_unavailable	No compatible voices found
+tts_test	Test voice
+tts_test_failed	Test failed: %1$s
+tts_test_generating	Generating test voice…
+tts_test_phrase	This is a short test phrase to verify the selected voice is working correctly.
+tts_test_running_summary	Generating test voice…
+tts_test_summary	Play a short test phrase using the current engine and voice
+tv_count_short	TV %1$d
+tv_episodes_watched_short	TV eps %1$d
+tvbox_repository_selector	TVBox repository: %1$s
+tvbox_root_spider_title	Root spider
+tvbox_runtime_candidates_title	Runtime candidates
+tvbox_runtime_strategy_none	No local TVBox spider runtime is available yet. Only direct media, playlists, or CMS fallback can be used.
+tvbox_runtime_strategy_title	Runtime strategy
+tvbox_site_api_title	Site API
+tvbox_site_jar_title	Site jar
+tvbox_site_key_title	Site key
+tvbox_site_type_title	Site type
+tvbox_source_locator_title	Imported from
+tvbox_source_zh_warning	These sources usually only support Chinese websites.
+tvbox_support_status_bridgeable	Current build can try direct media, playlists, or some CMS candidates from this site. Spider/jar/csp behavior depends on the local runtime path.
+tvbox_support_status_direct	Current build supports direct media and playlist-based TVBox sources.
+tvbox_support_status_guard_native	This TVBox site has signals of a Guard-native spider JAR. Local support is limited and may fail when the JAR depends on native Guard checks, framework hooks, or
+tvbox_support_status_ordinary_jar	This TVBox site appears to use an ordinary spider JAR or csp entry. Current build has a local JAR runtime path, but compatibility still depends on the spider AP
+tvbox_support_status_partial_runtime	Current build can try direct media, playlists, and a subset of CMS-style TVBox sources.
+tvbox_support_status_quickjs_partial	Current build provides a basic QuickJS bridge for TVBox type=4 sources. Home/category/detail/play may work, but advanced JS runtime features are still incomplet
+tvbox_support_status_spider	This TVBox site depends on spider or csp runtime.
+tvbox_support_status_spider_bridge	This TVBox site depends on spider, jar, or csp. Current local runtime support is partial; check runtime diagnostics when loading fails.
+tvbox_support_status_title	Support status
+unified_sources_cannot_import_json	Cannot import JSON content for %1$s
+unified_sources_cannot_open_repository_file	Cannot open repository file
+unified_sources_cannot_open_selected_file	Cannot open selected file
+unified_sources_cannot_open_selected_jar	Cannot open selected JAR
+unified_sources_collapse_all	Collapse all
+unified_sources_delete_selected_message	Delete %1$d package(s) for the selected sources?
+unified_sources_delete_selected_no_packages	No removable packages were found in the current selection.
+unified_sources_delete_selected_only_skipped_jars	The selection contains JAR sources. Their packages were skipped to avoid accidental removal: %1$s
+unified_sources_delete_selected_with_skipped_jars	Delete %1$d package(s) for the selected sources?\n\nJAR packages were skipped to avoid accidental removal: %2$s
+unified_sources_disable_all_confirmation	Disable all %1$d sources in the current filter?
+unified_sources_empty_response_body	Empty response body
+unified_sources_enable_all_confirmation	Enable all %1$d sources in the current filter?
+unified_sources_expand_all	Expand all
+unified_sources_http_error	HTTP %1$d
+unified_sources_imported_plugin	Imported plugin: %1$s
+unified_sources_imported_sources	%1$d source(s) imported
+unified_sources_lnreader_repo_browser_managed	LNReader repositories are used by the plugin browser
+unified_sources_mark_as_nsfw	Mark as NSFW
+unified_sources_mark_as_sfw	Mark as non-NSFW
+unified_sources_mark_nsfw	Mark NSFW
+unified_sources_native_no_repository	Native sources do not use repositories
+unified_sources_package_effective_count	%1$d/%2$d active
+unified_sources_package_group_count	%1$d sources
+unified_sources_package_installed	Package installed
+unified_sources_refresh_partial_failed	Some repositories failed to refresh: %1$s
+unified_sources_refresh_timeout	Refresh timed out. Check your network and try again.
+unified_sources_repository_added	Repository added
+unified_sources_repository_already_exists	Repository already exists
+unified_sources_repository_cannot_refresh	Repository cannot be refreshed
+unified_sources_repository_deleted	Repository deleted
+unified_sources_repository_last_refresh_failed	Last refresh failed: %1$s
+unified_sources_repository_manual_refresh_only	This repository cannot be refreshed automatically
+unified_sources_repository_not_configured	Repository is not configured
+unified_sources_repository_refreshed	Repository refreshed
+unified_sources_repository_sources_deleted	Repository sources deleted
+unified_sources_set_nsfw	Set NSFW…
+unified_sources_set_nsfw_title	Set NSFW for selected sources
+unified_sources_shadowed_count	%1$d shadowed
+unified_sources_shadowed_notice	Only currently active source implementations are shown here. %1$d same-name implementation(s) are hidden because a higher-priority package overrides them.
+unified_sources_unmark_nsfw	Remove NSFW
+unified_sources_unsupported_repository_kind	Unsupported extension repository kind: %1$s
+unread_updates	Unread updates
+unstable_feature	Unstable feature
+unstable_feature_summary	This function is experimental. Please make sure you have a backup to avoid data loss
+unsupported_novel_source	This novel source is not supported
+unsupported_video_source	This video source is not supported
+untitled_content	Untitled
+update_all_available_banner	%1$d extension updates available
+update_chapter_details	Chapter details
+update_chapters_available	Chapter updates available
+update_pending_chapters	%1$d unread chapters
+update_sideload_extension	Update sideload
+update_source_time	Source updated: %1$s
+update_source_time_partial	Some times unknown
+update_source_time_unknown	Source update time unknown
+updated_header_all_read	Mark all read
+updated_header_summary	%1$d works updated · %2$d new chapters
+updated_header_title	Updates Pulse
+updated_header_up_to_date	All caught up
+updated_header_up_to_date_subtitle	Pull down to check for latest chapters
+updates_check_in_progress	An update check is already in progress
+updates_check_still_running	Update check is still running in the background
+updates_check_too_soon	Checked recently, please try again in a moment
+url_afdian	https://www.ifdian.net/a/kototoro
+url_donate	https://ko-fi.com/skepsun
+use_fingerprint	Use biometric if available
+use_setup_wizard_languages	Use wizard languages
+username_password_enter_hint	Enter your username and password to continue
+users	Users
+validate_selected	Validate selected
+vibration	Vibration
+video_add_note	Add note
+video_aspect_ratio	Aspect Ratio
+video_aspect_ratio_fill	Fill
+video_aspect_ratio_fit	Fit
+video_audio_track	Audio Track
+video_auto_next	Auto Play Next
+video_background	Playback background
+video_brightness	Brightness %1$s%%
+video_cache_size	Cache size (MB)
+video_cache_size_summary	%1$d MB
+video_caches	Video caches
+video_controls_alpha	Controls opacity (%)
+video_danmaku_badge	Dan
+video_danmaku_enabled	Show Danmaku
+video_danmaku_max_bottom_lines	Max Bottom Lines
+video_danmaku_max_screen	Max Danmaku Amount
+video_danmaku_max_scroll_lines	Max Scroll Lines
+video_danmaku_max_top_lines	Max Top Lines
+video_danmaku_opacity	Danmaku Opacity
+video_danmaku_settings	Danmaku Settings
+video_danmaku_show_bottom	Show Bottom Danmaku
+video_danmaku_show_scroll	Show Scroll Danmaku
+video_danmaku_show_top	Show Top Danmaku
+video_danmaku_size	Danmaku Size
+video_danmaku_source_bilibili	Bilibili
+video_danmaku_source_dandan	DanDanPlay
+video_danmaku_source_qq	QQ Video
+video_danmaku_sources	Sources Filter
+video_danmaku_speed	Danmaku Speed
+video_danmaku_stroke	Danmaku Stroke
+video_decoder_hardware	Hardware decoding
+video_decoder_hardware_only	Hardware only
+video_decoder_hardware_preferred	Prefer hardware (recommended)
+video_decoder_mode	Video decoder
+video_decoder_software	Software decoding
+video_decoder_software_preferred	Prefer software
+video_default_speed	Default Speed
+video_detail	Video Details
+video_double_tap_seek	Double Tap Seek
+video_enhancement_algorithm	Algorithm
+video_enhancement_algorithm_anime4k	Anime4K (animation)
+video_enhancement_algorithm_fsr	AMD FSR 1.0 (general)
+video_enhancement_anime4k_fast	Efficiency
+video_enhancement_anime4k_preset	Anime4K preset
+video_enhancement_anime4k_quality	Quality
+video_enhancement_enabled	Enable for this video
+video_enhancement_fsr_sharpness	FSR sharpness: %1$d%%
+video_enhancement_fsr_sharpness_search	FSR sharpness
+video_enhancement_power_warning	Enhancement increases power use and heat, and may stutter on slower devices.
+video_enhancement_remember	Remember across videos
+video_fallback_conservative_mode	This device is using a conservative playback mode for better compatibility
+video_fallback_renderer_downgraded	Switched to a more compatible renderer to improve playback
+video_fallback_super_res_disabled	Super resolution was temporarily disabled to improve playback stability
+video_fast_forward_time	Fast forward %1$s s
+video_gpu_next_disabled_super_resolution	GPU Next is incompatible with Anime4K. Video super resolution was turned off.
+video_gradient_alpha	Video gradient opacity (%)
+video_info_audio_codec	Audio Codec: %s
+video_info_chapter	Chapter: %s
+video_info_compat_error_count	Compatibility Errors: %d
+video_info_current_decoder	Current Decoder: %s
+video_info_current_renderer	Current Renderer: %s
+video_info_decoding_setting	Decoding Setting: %s
+video_info_device_tier	Device Tier: %s
+video_info_effective_renderer	Effective Renderer: %s
+video_info_effective_super_res	Effective Super Resolution: %s
+video_info_fallback_count	Fallback Count: %d
+video_info_fps	FPS: %s
+video_info_hits	Hits: %d
+video_info_hw_decoding	Hardware Decoding
+video_info_last_failure_category	Last Failure Category: %s
+video_info_last_failure_detail	Last Failure Detail: %s
+video_info_last_failure_trigger	Last Failure Trigger: %s
+video_info_last_fallback_reason	Last Fallback Reason: %s
+video_info_misses	Misses: %d
+video_info_network_error_count	Network/Source Errors: %d
+video_info_playback_diagnostics	Playback Diagnostics:
+video_info_proxy_stats	Local Proxy Cache Stats:
+video_info_renderer_setting	Renderer Setting: %s
+video_info_resolution	Resolution: %s
+video_info_source	Source: %s
+video_info_startup_timeouts	Startup Timeouts: %d
+video_info_sw_decoding	Software Decoding
+video_info_title	Title: %s
+video_info_unknown_error_count	Unknown Errors: %d
+video_info_url	URL: %s
+video_info_video_codec	Video Codec: %s
+video_info_write_bytes	Write Bytes: %s
+video_info_writes	Writes: %d
+video_landscape_sensor	Landscape Sensor Mode
+video_mark_intro	Intro
+video_mark_outro	Outro
+video_mpv_conf	Edit mpv.conf
+video_mpv_conf_guide	<![CDATA[<b>Common options:</b><br/>• <tt>deband=yes</tt> (Reduce banding artifacts)<br/>• <tt>interpolation=yes</tt> (Smooth playback)<br/>• <tt>hwdec=mediacod
+video_mpv_conf_hint	One option per line. Changes apply the next time the video player starts.
+video_mpv_conf_reset	mpv.conf reset. Reopen the player to apply changes.
+video_mpv_conf_saved	mpv.conf saved. Reopen the player to apply changes.
+video_no_audio_tracks	No audio tracks available
+video_no_subtitle_tracks	No subtitle tracks available
+video_note_hint	Write your thoughts or commentary on this scene…
+video_note_saved	Video note saved
+video_note_title	Video Note
+video_orientation	Player orientation
+video_picture_in_picture	Picture in Picture
+video_play	Play
+video_play_pause	Play/Pause
+video_playback_cache	Video playback cache
+video_playback_cache_limit	Video playback cache limit
+video_playback_speed	Playback Speed
+video_player_native_init_failed	Video playback engine failed to initialize on this device. Check bundled native libraries and C++ runtime packaging.
+video_proxy_cache	Video proxy cache
+video_proxy_cache_limit	Video proxy cache limit
+video_quality	Quality
+video_quality_line	Line %1$d
+video_reload	Reload
+video_renderer_auto	Auto (GPU)
+video_renderer_gpu	GPU
+video_renderer_gpu_next	GPU Next (Vulkan)
+video_renderer_mediacodec_embed	MediaCodec Embed
+video_renderer_mode	Video renderer
+video_rewind_time	Rewind %1$s s
+video_save_location	Video downloads folder
+video_screen_lock	Lock
+video_screen_unlock	Unlock
+video_screenshot	Screenshot
+video_seek_backward_time	Rewind Time
+video_seek_forward_10s	Fast forward 10 seconds
+video_seek_forward_time	Fast Forward Time
+video_seek_rewind_10s	Rewind 10 seconds
+video_send_danmaku_hint	Send Danmaku…
+video_skip_intro_cleared	Intro skip cleared
+video_skip_intro_set	Intro skip set at %s
+video_skip_outro_cleared	Outro skip cleared
+video_skip_outro_set	Outro skip set at %s
+video_skipping_intro	Skipping intro…
+video_skipping_outro	Skipping outro…
+video_subtitle_embedded	Embedded
+video_subtitle_external	External
+video_subtitle_track	Subtitle Track
+video_super_resolution	Super resolution
+video_super_resolution_advanced_settings	Advanced settings
+video_super_resolution_advanced_shader	Advanced shader
+video_super_resolution_balanced	Balanced
+video_super_resolution_custom_settings	Select Shaders (Comma Separated)
+video_super_resolution_disabled_gpu_next	Anime4K is incompatible with GPU Next. Video output was switched to GPU.
+video_super_resolution_mode	Mode
+video_super_resolution_mode_a	Mode A
+video_super_resolution_mode_a_desc	Pros: Reduces compression artifacts, rebuilds lines, reduces blur, reduces noise.\nCons: May amplify ringing, banding, and blur textures.
+video_super_resolution_mode_aa	Mode A+A
+video_super_resolution_mode_aa_desc	Pros: Enhanced Mode A effect.\nCons: Slower than Mode A, may cause severe ringing, banding, and aliasing.
+video_super_resolution_mode_b	Mode B
+video_super_resolution_mode_b_desc	Pros: Reduces compression artifacts, partially rebuilds lines, partially reduces blur, reduces ringing, reduces aliasing, reduces noise.\nCons: Some artifacts m
+video_super_resolution_mode_bb	Mode B+B
+video_super_resolution_mode_bb_desc	Pros: Enhanced Mode B effect.\nCons: Same as Mode B, slower than Mode B.
+video_super_resolution_mode_c	Mode C
+video_super_resolution_mode_c_desc	Pros: Reduces noise.\nCons: Amplifies existing ringing and resampling artifacts.
+video_super_resolution_mode_ca	Mode C+A
+video_super_resolution_mode_ca_desc	Pros: Enhanced Mode C effect.\nCons: Same as Mode C, slower than Mode C.
+video_super_resolution_mode_custom	Custom
+video_super_resolution_mode_custom_desc	Select specific Anime4K operators to build your own preset.
+video_super_resolution_performance	Performance
+video_super_resolution_quality	Quality
+video_super_resolution_shader_desc_anime4k_autodownscalepre_x2	Automatically downscale to 1080p if resolution is higher
+video_super_resolution_shader_desc_anime4k_autodownscalepre_x4	Automatically downscale to 720p if resolution is higher
+video_super_resolution_shader_desc_anime4k_clamp_highlights	Clamp highlights to prevent clipping when restoring or upscaling
+video_super_resolution_shader_desc_anime4k_restore_cnn_m	CNN based line restoration and blur/noise reduction (Medium configuration)
+video_super_resolution_shader_desc_anime4k_restore_cnn_s	CNN based line restoration and blur/noise reduction (Small configuration, faster)
+video_super_resolution_shader_desc_anime4k_restore_cnn_vl	CNN based line restoration and blur/noise reduction (Very Large configuration, slowest)
+video_super_resolution_shader_desc_anime4k_upscale_cnn_x2_m	CNN based x2 upscaler (Medium configuration)
+video_super_resolution_shader_desc_anime4k_upscale_cnn_x2_s	CNN based x2 upscaler (Small configuration, faster)
+video_super_resolution_shader_desc_anime4k_upscale_cnn_x2_vl	CNN based x2 upscaler (Very Large configuration, slowest)
+video_super_resolution_submode	Submode
+video_super_resolution_submode_balanced	Balanced
+video_super_resolution_submode_format	Submode: %1$s
+video_super_resolution_submode_performance	Performance
+video_super_resolution_submode_quality	Quality
+video_swipe_seek_range	Swipe seek range
+video_swipe_seek_range_full	Whole video per screen width
+video_swipe_seek_range_minutes	%1$d min per screen width
+video_volume	Volume %1$s%%
+video_volume_boost	Volume Boost
+view_all	View all
+voice_search	Voice search
+webdav_auto_restore	Auto restore on startup
+webdav_auto_restore_summary	On the first app startup of each day, merges the latest WebDAV backup once, then uploads the merged snapshot back to WebDAV.
+webdav_auto_sync	Auto backup to WebDAV
+webdav_auto_sync_summary	Uploads a backup package to WebDAV on unmetered networks, at most once per day.
+webdav_connection_check_in_progress	Checking WebDAV connection…
+webdav_integration	WebDAV backup
+webdav_keep_local_copy	Keep local copy after uploading
+webdav_keep_local_copy_summary	Save a local copy of the backup when uploading to WebDAV. Disable to upload-only without retaining local file.
+webdav_legacy_restore_block_summary	This device was restored from an older backup format. Automatic WebDAV upload is temporarily blocked to avoid overwriting newer remote data. Review the restored
+webdav_password	WebDAV password
+webdav_remote_backup_deleted	Remote WebDAV backup deleted
+webdav_remote_backup_status_restorable	Restorable
+webdav_remote_backup_status_unknown	Not checked
+webdav_remote_backup_status_unrestorable	Cannot restore safely
+webdav_remote_backups_clear	Clear remote WebDAV backups
+webdav_remote_backups_clear_confirm	Delete all Kototoro backup files from the configured WebDAV path? Local data will not be changed.
+webdav_remote_backups_clear_summary	Delete all Kototoro backup files on the configured WebDAV path. Local data is not changed.
+webdav_remote_backups_cleared	Remote WebDAV backups cleared
+webdav_remote_backups_inspect	Check remote backups
+webdav_remote_backups_inspect_summary	Download and verify whether each remote backup can be safely restored.
+webdav_remote_backups_loading	Loading WebDAV backups…
+webdav_remote_backups_refresh	Manage remote backups
+webdav_remote_backups_refresh_summary	List WebDAV backups for manual restore or deletion.
+webdav_remote_path	Remote path
+webdav_restore_in_progress	Restoring latest backup from WebDAV…
+webdav_restore_mode_merge	Merge restore
+webdav_restore_mode_replace	Replace package
+webdav_restore_mode_summary	Replace clears matching local restore targets first. Merge keeps local state and combines newer compatible WebDAV state.
+webdav_restore_mode_title	Choose restore mode
+webdav_restore_now	Restore latest backup
+webdav_restore_success	Data restored from WebDAV
+webdav_restore_success_legacy_jar_hint	Data restored from WebDAV. Compatible JAR repositories were added for a legacy backup.
+webdav_sync_attention_title	Sync attention
+webdav_upload_in_progress	Uploading backup to WebDAV…
+webdav_upload_now	Upload backup now
+webdav_upload_success	Backup uploaded to WebDAV
+webdav_upload_success_local_copy_failed	Backup uploaded to WebDAV (local copy failed)
+webdav_username	WebDAV username
+webtoon_volume_key_scroll_distance	Volume key scroll distance
+webtoon_volume_key_scroll_distance_summary	Percentage of the viewport scrolled by each volume key press in webtoon mode
+welcome_action_cancel_install	Cancel installation
+welcome_action_configure_repos	Configure selected repositories
+welcome_action_install_count	Install %1$d extensions
+welcome_action_retry_failed	Retry failed
+welcome_appearance_summary	Choose the visual style, navigation transitions, and details page panorama behavior. These options can be changed later in Appearance settings.
+welcome_appearance_title	Customize the interface
+welcome_config_cancelled	Repository configuration cancelled
+welcome_done_advice_body	1. Confirm the issue using the original host app of the extension — for example a Mihon-type source should be tested in the Mihon app.\n2. If the problem also h
+welcome_done_advice_summary	A short troubleshooting path, so the right people see the report.
+welcome_done_advice_title	If a source does not work
+welcome_done_body_finished	Kototoro did not add any sources during setup. You can add your own repositories and sources any time in Settings › Content sources (Extension Management).
+welcome_done_json_note	JSON-based types (Legado / TVBox / LNReader) are imported automatically; if you also added other JSON repositories, import them in Extension Management.
+welcome_done_partial_detail	Succeeded %1$d · Failed %2$d · Cancelled %3$d. You can retry the failed items.
+welcome_done_partial_title	Finished with some failures
+welcome_done_skipped	You chose to skip the batch install. Head to Extension Management whenever you are ready.
+welcome_done_skipped_title	Setup finished
+welcome_done_success_detail	%1$d extensions installed. Matching sources are enabled.
+welcome_done_success_title	All set
+welcome_done_summary	Your setup summary and a few tips.
+welcome_done_summary_finished	The wizard is done — no repositories or sources were added automatically.
+welcome_done_summary_text	Succeeded %1$d · Failed %2$d · Cancelled %3$d. Sources matching your selected content types and languages are enabled.
+welcome_done_title	Almost there
+welcome_done_title_finished	Setup complete
+welcome_ecosystem_manga	Manga: JAR parsers, Mihon, IReader, LNReader
+welcome_ecosystem_novel	Novel: Legado, IReader, LNReader
+welcome_ecosystem_video	Video: Aniyomi, TVBox, Cloudstream
+welcome_ecosystems_summary	Kototoro supports multiple plugin source families for reading and watching. Start with the recommended repositories here, then fine-tune them later in extension
+welcome_ecosystems_title	Source ecosystem
+welcome_glass_preset_summary	Pick the glass finish preset for the iOS style. Refraction is the default and can be fine-tuned later in Appearance settings.
+welcome_glass_preset_title	Glass finish
+welcome_install_done_message	Succeeded %1$d · Failed %2$d · Cancelled %3$d.\n\nSources matching your selected content formats and languages are enabled. Legado / TVBox / LNReader sources we
+welcome_install_done_title	Installation finished
+welcome_install_kinds_empty	No repositories configured yet. Go back and add repositories first.
+welcome_install_kinds_summary	Only the types you checked will be handled. Unchecked ones (e.g. Mihon, if you prefer doing it later) stay for you to install in Extension Management.
+welcome_install_kinds_title	Source types to install
+welcome_install_mode_sideload	Sideload (built-in, recommended)
+welcome_install_mode_summary	For Mihon, Aniyomi, IReader and Tsundoku packages.
+welcome_install_mode_system	System installer
+welcome_install_mode_title	APK install mode
+welcome_install_nsfw_summary	Off by default — adult-only packages are filtered out of the installation list.
+welcome_install_nsfw_title	Include NSFW content
+welcome_install_plan_conditions	%1$d language(s) · %2$d content format(s)
+welcome_install_plan_empty	No packages to install. Add repositories in the first step, or select more languages.
+welcome_install_plan_summary	Will install %1$d package(s): %2$s.
+welcome_install_progress	Installed %1$d / %2$d
+welcome_install_section_summary	Packages are matched by the languages above, then enabled by the content formats you pick.
+welcome_install_section_title	Install matching extensions
+welcome_install_skip	Skip installation — I\'ll do it in Extension Management later
+welcome_install_start	Start install
+welcome_install_state_completed	Done
+welcome_install_state_failed	Failed
+welcome_install_state_queued	Queued
+welcome_install_step_summary	Pick which source types and settings to use, then let Kototoro download and install everything in the background.
+welcome_install_step_title	Batch install extensions
+welcome_install_system_launch_failed	Could not launch the system installer: %1$s
+welcome_intro_app_title	Kototoro · Open-source reader
+welcome_intro_body	Kototoro is an open-source multimedia reader / player. It supports a wide ecosystem of community extensions, but it does not bundle any content sources of its o
+welcome_intro_concepts_title	Three concepts, in 30 seconds
+welcome_intro_continue	I understand — continue
+welcome_intro_disclaimer	Use of third-party extensions is entirely at your own risk: runtime behaviour, legality and content are not controlled by the Kototoro project.
+welcome_intro_extension_body	One installable package inside a repository — a JAR, an APK or a JSON list. Installed extensions give Kototoro the ability to read or play from a site.
+welcome_intro_extension_label	Extension
+welcome_intro_repo_body	A URL to a third-party collection of extensions, maintained by an independent community (for example Mihon repos, TVBox lists or LNReader plugin repos).
+welcome_intro_repo_label	Repository
+welcome_intro_source_body	One concrete content source you see in the app after an extension is installed or imported — for example a specific manga or video website.
+welcome_intro_source_label	Source
+welcome_intro_summary	Choose how you want to read and watch. Kototoro now uses plugin-based source families for manga, novels, and video, including JAR, Mihon, Aniyomi, IReader, Lega
+welcome_intro_title	Set up Kototoro
+welcome_jar_install_failed	Kototoro: Parser network loading failed (%1$s), please try again or go to settings to switch proxy mirrors
+welcome_jar_install_success	Kototoro: Successfully fetched and mounted %1$d latest parser engines from cloud network!
+welcome_jar_install_up_to_date	Kototoro: Cloud verification complete, local parsers are up to date! (Loaded %1$d sources in total)
+welcome_languages_dialog_title	Select languages
+welcome_languages_edit	Choose languages
+welcome_languages_group_multilingual	Multilingual
+welcome_languages_group_other	Other languages
+welcome_languages_search_hint	Search languages
+welcome_languages_selected_count	%1$d selected
+welcome_languages_summary_more	%1$s and %2$d more
+welcome_mirror_summary	Applied to GitHub repository and download links.
+welcome_open_extension_management	Open extension manager
+welcome_permissions_battery_action	Allow
+welcome_permissions_battery_failed	Could not open battery settings: %1$s
+welcome_permissions_battery_summary	Keeps background downloads and updates running when the screen is off or the device is idle.
+welcome_permissions_battery_title	Background survival
+welcome_permissions_note	These are optional but recommended. You can also change them later from the system settings.
+welcome_permissions_notifications_summary	Shows download, update and player notifications.
+welcome_permissions_notifications_title	Notifications
+welcome_permissions_packages_summary	Lets Kototoro detect already-installed extensions and the host apps (Mihon, Aniyomi, …). Declared in the manifest and granted automatically.
+welcome_permissions_packages_title	Installed apps
+welcome_permissions_summary	A few optional permissions keep downloads, updates and the server-like features reliable.
+welcome_permissions_title	Permissions & background survival
+welcome_plugin_acknowledge	I understand these third-party repositories are configured at my own risk.
+welcome_plugin_repositories	Plugin repositories
+welcome_plugins_configured	Configured %1$d new source/repository type(s): %2$s. Packages are not downloaded yet — install matchings ones on the next step.
+welcome_plugins_configured_none	No source or repository could be configured. Check your network or pick different repositories and try again.
+welcome_plugins_disclaimer	These extension repositories are maintained by independent online communities. The Kototoro developers have no affiliation, control, or association with these t
+welcome_plugins_repo_kototoro	Kototoro Parsers
+welcome_plugins_repo_redo	Redo Parsers
+welcome_plugins_repo_uma	UMA (Tsuki Parsers)
+welcome_plugins_repo_yakateam	Yakateam Parsers
+welcome_plugins_start_btn	Configure repositories
+welcome_plugins_summary	Initialize the recommended plugin repositories now so Explore is usable immediately. Advanced repository changes can be done later in extension management.
+welcome_plugins_title	Initialize Plugin Sources
+welcome_preferences_summary	Choose languages and content types. You can change this later in source settings.
+welcome_ready_summary	Setup is complete. Kototoro will enable sources matching your selected languages and formats. You can run this wizard again from Settings > Content sources > Se
+welcome_repo_fetch_failed	Fetch failed
+welcome_repos_configured_message	Configured %1$d repository type(s): %2$s.\n\nNext, pick which source types to batch-install: JAR / APK / Cloudstream packages are downloaded and installed, and 
+welcome_repos_configured_title	Repositories configured
+welcome_repos_selected_count	%1$d / %2$d selected
+welcome_restore_summary	Already used Kototoro before? Restore a backup, sign in to sync, or add local folders first.
+welcome_source_formats_summary	These filters decide which source families are enabled after setup.
+welcome_source_formats_title	Pick content formats
+welcome_sources_kinds_title	Source types
+welcome_spaces_summary	Spaces give manga, novels, and anime independent navigation, browsing preferences, and reading or playback context. Advanced options and custom spaces are avail
+welcome_spaces_title	Separate your spaces
+welcome_status_analyzing	Analyzing available languages and content types…
+welcome_status_building_plan	Building the install plan…
+welcome_status_reading_repos	Configuring repositories…
+welcome_step_counter	Step %1$d of %2$d
+welcome_step_preferences	Preferences
+welcome_step_ready	Ready
+welcome_text	Please select which content sources you would like to enable. This can also be configured later in settings
+work_info	Work Info
+you_may_like	You May Also Like

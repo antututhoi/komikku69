@@ -1,0 +1,39 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,42   t='' d='' id=
+[    ]  129,21   t='Automatic' d='' id=summary
+[C   ]  540,154  t='' d='' id=
+[    ]  167,154  t='Crop borders' d='' id=title
+[k   ]  969,154  t='' d='' id=switchWidget
+[C   ]  540,295  t='' d='' id=
+[    ]  193,295  t='Navigate to pan' d='' id=title
+[xk  ]  969,295  t='' d='' id=switchWidget
+[C   ]  540,462  t='' d='' id=
+[    ]  194,436  t='Page layoutBETA' d='' id=title
+[    ]  323,490  t='Automatic (based on orientation)' d='' id=summary
+[    ]  613,678  t='While using automatic page layout, you can still switch between layouts while re' d='' id=summary
+[C   ]  540,869  t='' d='' id=
+[    ]  320,869  t='Split double pages in portrait' d='' id=title
+[k   ]  969,869  t='' d='' id=switchWidget
+[C   ]  540,1010 t='' d='' id=
+[    ]  233,1010 t='Invert double pages' d='' id=title
+[k   ]  969,1010 t='' d='' id=switchWidget
+[    ]  540,1169 t='Webtoon' d='' id=title
+[C   ]  540,1312 t='' d='' id=
+[    ]  140,1286 t='Tap zones' d='' id=title
+[    ]  103,1340 t='Default' d='' id=summary
+[C   ]  540,1504 t='' d='' id=
+[    ]  196,1478 t='Invert tap zones' d='' id=title
+[    ]   87,1532 t='None' d='' id=summary
+[C   ]  540,1696 t='' d='' id=
+[    ]  386,1670 t='Sensitivity for hiding menu on scroll' d='' id=title
+[    ]   77,1724 t='Low' d='' id=summary
+[C   ]  540,1862 t='' d='' id=
+[    ]  167,1862 t='Crop borders' d='' id=title
+[k   ]  969,1862 t='' d='' id=switchWidget
+[    ]  478,2003 t='Side padding' d='' id=slider_title
+[    ]  987,2003 t='None' d='' id=slider_value
+[C   ]  540,2286 t='' d='' id=
+[    ]  155,2260 t='Page layout' d='' id=title
+[    ]  142,2314 t='Single page' d='' id=summary
+[C   ]  540,2391 t='' d='' id=
+[k   ]  969,2394 t='' d='' id=switchWidget

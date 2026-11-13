@@ -1,0 +1,32 @@
+[S   ]  540,1316 t='' d='' id=apps_list_view
+[CL  ]  177,604  t='69-Komikku' d='69-Komikku' id=icon
+[CL  ]  419,604  t='Calendar' d='Calendar' id=icon
+[CL  ]  660,604  t='Camera' d='Camera' id=icon
+[CL  ]  902,604  t='Chimahon' d='Chimahon' id=icon
+[CL  ]  177,919  t='Chrome' d='Chrome' id=icon
+[CL  ]  419,919  t='Clock' d='Clock' id=icon
+[CL  ]  660,919  t='Contacts' d='Contacts' id=icon
+[CL  ]  902,919  t='Drive' d='Drive' id=icon
+[CL  ]  177,1234 t='Files' d='Files' id=icon
+[CL  ]  419,1234 t='Gmail' d='Gmail' id=icon
+[CL  ]  660,1234 t='Google' d='Google' id=icon
+[CL  ]  902,1234 t='Maps' d='Maps' id=icon
+[CL  ]  177,1549 t='Messages' d='Messages' id=icon
+[CL  ]  419,1549 t='Phone' d='Phone' id=icon
+[CL  ]  660,1549 t='Photos' d='Photos' id=icon
+[CL  ]  902,1549 t='Settings' d='Settings' id=icon
+[CL  ]  177,1864 t='TachiJ2K' d='TachiJ2K' id=icon
+[CL  ]  419,1864 t='TMoble' d='TMoble' id=icon
+[CL  ]  660,1864 t='Tsundoku' d='Tsundoku' id=icon
+[CL  ]  902,1864 t='YouTube' d='YouTube' id=icon
+[CL  ]  177,2179 t='YT Music' d='YT Music' id=icon
+[CL  ]  177,283  t='YouTube' d='YouTube' id=icon
+[CL  ]  418,283  t='Settings' d='Settings' id=icon
+[CL  ]  660,283  t='Photos' d='Photos' id=icon
+[CL  ]  902,283  t='Gmail' d='Gmail' id=icon
+[    ]  540,228  t='' d='Search' id=search_container_all_apps
+[C   ]  172,228  t='' d='Google app' id=g_icon
+[CL  ]  540,228  t='Search apps, web and more' d='' id=input
+[C   ]  782,228  t='' d='Voice search' id=mic_icon
+[C   ]  908,228  t='' d='Google Lens' id=lens_icon
+[    ]  540,1232 t='' d='Home' id=

@@ -1,0 +1,32 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  158,231  t='Sources' d='' id=
+[C   ]  540,358  t='' d='' id=
+[    ]  310,358  t='Hide entries already in library' d='' id=
+[C   ]  540,537  t='' d='' id=
+[    ]  190,516  t='Page load delay' d='' id=
+[    ]  427,574  t='Delay between loading pages (helps with rate limits)' d='' id=
+[C   ]  540,737  t='' d='' id=
+[    ]  222,716  t='Show page number' d='' id=
+[    ]  411,774  t='Display current page number with jump navigation' d='' id=
+[C   ]  540,958  t='' d='' id=
+[    ]  212,916  t='Skip cover loading' d='' id=
+[    ]  429,995  t='Don't load cover images in browse to save bandwidth' d='' id=
+[C   ]  540,1200 t='' d='' id=
+[    ]  277,1158 t='Confirm back after pages' d='' id=
+[    ]  540,1237 t='Show confirmation dialog when going back after loading many pages' d='' id=
+[C   ]  540,1421 t='' d='' id=
+[    ]  197,1400 t='Extension stores' d='' id=
+[    ]   94,1458 t='1 store' d='' id=
+[C   ]  540,1621 t='' d='' id=
+[    ]  248,1600 t='Novel extension repos' d='' id=
+[    ]  418,1658 t='Manage JS plugin and novel extension repositories' d='' id=
+[    ]  212,1816 t='NSFW (18+) sources' d='' id=
+[C   ]  540,1964 t='' d='' id=
+[    ]  385,1943 t='Show in sources and extensions lists' d='' id=
+[    ]  295,2001 t='Requires app restart to take effect' d='' id=
+[    ]  540,2253 t='This does not prevent unofficial or potentially incorrectly flagged extensions f' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  243,212  t='Browse' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Reset to defaults' id=

@@ -1,0 +1,27 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,6    t='' d='' id=
+[C   ]  540,112  t='' d='' id=
+[    ]  195,91   t='Sync reading list' d='' id=
+[    ]  382,149  t='Keep reading list status in sync with NovelList' d='' id=
+[C   ]  540,296  t='' d='' id=
+[    ]  105,296  t='' d='RanobeDB' id=
+[    ]  308,296  t='RanobeDB' d='' id=
+[C   ]  540,501  t='' d='' id=
+[    ]  382,459  t='Mark chapters as read on RanobeDB' d='' id=
+[    ]  429,538  t='Automatically mark chapters/volumes as read when you read them in the app' d='' id=
+[C   ]  540,722  t='' d='' id=
+[    ]  195,701  t='Sync reading list' d='' id=
+[    ]  388,759  t='Keep reading list status in sync with RanobeDB' d='' id=
+[    ]  540,1011 t='Login via WebView. Cookies will be automatically extracted after successful logi' d='' id=
+[    ]  237,1190 t='Source-defined trackers' d='' id=
+[C   ]  540,1359 t='' d='' id=
+[    ]  349,1317 t='Run source trackers on migration' d='' id=
+[    ]  429,1396 t='Fire source-defined tracker events when migrating or quick-migrating an entry' d='' id=
+[    ]  540,1711 t='Some sources implement their own tracking. They are notified when you mark chapt' d='' id=
+[    ]  195,1932 t='Enhanced trackers' d='' id=
+[    ]  540,2211 t='Provides enhanced features for specific sources. Entries are automatically track' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  256,212  t='Tracking' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

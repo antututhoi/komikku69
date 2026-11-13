@@ -1,0 +1,27 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,50   t='' d='' id=
+[    ]  323,29   t='Update tracking after reading' d='' id=title
+[xk  ]  969,46   t='' d='' id=switchWidget
+[C   ]  540,170  t='' d='' id=
+[    ]  405,170  t='Update tracking when marked as read' d='' id=title
+[k   ]  969,170  t='' d='' id=switchWidget
+[    ]  540,329  t='Services' d='' id=title
+[C   ]  540,460  t='' d='' id=
+[    ]  593,459  t='MyAnimeList' d='' id=title
+[C   ]  540,628  t='' d='' id=
+[    ]  593,627  t='AniList' d='' id=title
+[C   ]  540,796  t='' d='' id=
+[    ]  593,795  t='Kitsu' d='' id=title
+[C   ]  540,964  t='' d='' id=
+[    ]  593,963  t='MangaUpdates' d='' id=title
+[C   ]  540,1132 t='' d='' id=
+[    ]  593,1131 t='Shikimori' d='' id=title
+[C   ]  540,1300 t='' d='' id=
+[    ]  593,1299 t='Bangumi' d='' id=title
+[C   ]  540,1468 t='' d='' id=
+[    ]  593,1467 t='Hikka' d='' id=title
+[C   ]  540,1636 t='' d='' id=
+[    ]  593,1635 t='MangaBaka' d='' id=title
+[    ]  613,1840 t='One-way sync to update the chapter progress in tracking services. Set up trackin' d='' id=summary
+[    ]  540,2049 t='Enhanced services' d='' id=title
+[    ]  613,2216 t='Services that provide enhanced features for specific sources. Entries are automa' d='' id=summary

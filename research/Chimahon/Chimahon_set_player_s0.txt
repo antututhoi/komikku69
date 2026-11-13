@@ -1,0 +1,42 @@
+[S   ]  540,1276 t='' d='' id=
+[S   ]  540,1276 t='' d='' id=
+[CL  ]  190,660  t='' d='' id=
+[    ]  190,843  t='Mieruko-chan' d='' id=
+[CL  ]  540,660  t='' d='' id=
+[    ]  540,819  t='Maou no Ore ga Dorei Elf o Yome ni Shitanda ga, Dou Medereba ii?' d='' id=
+[CL  ]  890,659  t='' d='' id=
+[    ]  890,817  t='Mairimashita! Iruma-kun' d='' id=
+[CL  ]  190,1159 t='' d='' id=
+[    ]  190,1328 t='Kumo desu ga, Nani ka?' d='' id=
+[CL  ]  540,1159 t='' d='' id=
+[    ]  540,1328 t='Ki ni Natteru Hito ga Otoko ja Nakatta' d='' id=
+[CL  ]  890,1158 t='' d='' id=
+[    ]  890,1326 t='Kaoru Hana wa Rin to Saku' d='' id=
+[CL  ]  190,1668 t='' d='' id=
+[    ]  190,1837 t='Kage no Jitsuryokusha ni Naritakute!' d='' id=
+[CL  ]  540,1668 t='' d='' id=
+[    ]  540,1837 t='Haimiya-senpai wa Kowakute Kawaii' d='' id=
+[CL  ]  890,1667 t='' d='' id=
+[    ]  890,1835 t='Akuyaku Reijou Level 99 ~Watashi wa Ura Boss desuga Maou de wa Arimasen~' d='' id=
+[    ]  118,358  t='Reading' d='' id=
+[C   ]  376,359  t='' d='' id=
+[    ]  376,358  t='Plan to read' d='' id=
+[C   ]  167,212  t='' d='' id=
+[    ]  130,212  t='Manga' d='' id=
+[CL  ]  755,213  t='' d='' id=
+[    ]  754,212  t='' d='Search' id=
+[CL  ]  881,213  t='' d='' id=
+[    ]  880,212  t='' d='Filter' id=
+[CL  ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='More options' id=
+[C   ]  964,2011 t='' d='' id=
+[    ]  964,2011 t='' d='Add' id=
+[    ]  108,2274 t='Library' d='' id=
+[C   ]  324,2232 t='' d='' id=
+[    ]  324,2274 t='History' d='' id=
+[C   ]  540,2232 t='' d='' id=
+[    ]  540,2274 t='Browse' d='' id=
+[C   ]  756,2232 t='' d='' id=
+[    ]  755,2274 t='Dictionary' d='' id=
+[C   ]  972,2232 t='' d='' id=
+[    ]  971,2274 t='More' d='' id=

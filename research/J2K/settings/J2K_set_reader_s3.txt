@@ -1,0 +1,40 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,48   t='' d='' id=
+[    ]  196,1    t='Invert tap zones' d='' id=title
+[    ]   87,28   t='None' d='' id=summary
+[C   ]  540,192  t='' d='' id=
+[    ]  142,166  t='Scale type' d='' id=title
+[    ]  126,220  t='Fit screen' d='' id=summary
+[C   ]  540,410  t='' d='' id=
+[    ]  242,358  t='Cutout area behavior' d='' id=title
+[    ]  540,439  t='Cutout area behavior only applies in portrait mode with certain scale types' d='' id=summary
+[C   ]  540,603  t='' d='' id=
+[    ]  346,603  t='Zoom into double page spreads' d='' id=title
+[k   ]  969,603  t='' d='' id=switchWidget
+[C   ]  540,770  t='' d='' id=
+[    ]  232,744  t='Zoom start position' d='' id=title
+[    ]  129,798  t='Automatic' d='' id=summary
+[C   ]  540,936  t='' d='' id=
+[    ]  167,936  t='Crop borders' d='' id=title
+[k   ]  969,936  t='' d='' id=switchWidget
+[C   ]  540,1077 t='' d='' id=
+[    ]  193,1077 t='Navigate to pan' d='' id=title
+[xk  ]  969,1077 t='' d='' id=switchWidget
+[C   ]  540,1244 t='' d='' id=
+[    ]  194,1218 t='Page layoutBETA' d='' id=title
+[    ]  323,1272 t='Automatic (based on orientation)' d='' id=summary
+[    ]  613,1460 t='While using automatic page layout, you can still switch between layouts while re' d='' id=summary
+[C   ]  540,1651 t='' d='' id=
+[    ]  320,1651 t='Split double pages in portrait' d='' id=title
+[k   ]  969,1651 t='' d='' id=switchWidget
+[C   ]  540,1792 t='' d='' id=
+[    ]  233,1792 t='Invert double pages' d='' id=title
+[k   ]  969,1792 t='' d='' id=switchWidget
+[    ]  540,1951 t='Webtoon' d='' id=title
+[C   ]  540,2094 t='' d='' id=
+[    ]  140,2068 t='Tap zones' d='' id=title
+[    ]  103,2122 t='Default' d='' id=summary
+[C   ]  540,2286 t='' d='' id=
+[    ]  196,2260 t='Invert tap zones' d='' id=title
+[    ]   87,2314 t='None' d='' id=summary
+[C   ]  540,2391 t='' d='' id=

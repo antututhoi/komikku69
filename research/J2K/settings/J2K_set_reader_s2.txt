@@ -1,0 +1,42 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,14   t='' d='' id=
+[xk  ]  969,10   t='' d='' id=switchWidget
+[C   ]  540,99   t='' d='' id=
+[    ]  226,99   t='Show page number' d='' id=title
+[xk  ]  969,99   t='' d='' id=switchWidget
+[C   ]  540,266  t='' d='' id=
+[    ]  368,240  t='Cutout area behavior (Landscape)' d='' id=title
+[    ]  186,294  t='Pad cutout areas' d='' id=summary
+[    ]  540,450  t='Reading' d='' id=title
+[C   ]  540,567  t='' d='' id=
+[    ]  300,567  t='Skip chapters marked read' d='' id=title
+[k   ]  969,567  t='' d='' id=switchWidget
+[C   ]  540,708  t='' d='' id=
+[    ]  247,708  t='Skip filtered chapters' d='' id=title
+[xk  ]  969,708  t='' d='' id=switchWidget
+[C   ]  540,849  t='' d='' id=
+[    ]  268,849  t='Skip duplicate chapters' d='' id=title
+[k   ]  969,849  t='' d='' id=switchWidget
+[C   ]  540,1042 t='' d='' id=
+[    ]  342,990  t='Always show chapter transition' d='' id=title
+[    ]  450,1071 t='If disabled, the transition page will be skipped if the next chapter is loaded' d='' id=summary
+[xk  ]  969,1042 t='' d='' id=switchWidget
+[    ]  540,1253 t='Paged' d='' id=title
+[C   ]  540,1396 t='' d='' id=
+[    ]  140,1370 t='Tap zones' d='' id=title
+[    ]  103,1424 t='Default' d='' id=summary
+[C   ]  540,1588 t='' d='' id=
+[    ]  196,1562 t='Invert tap zones' d='' id=title
+[    ]   87,1616 t='None' d='' id=summary
+[C   ]  540,1780 t='' d='' id=
+[    ]  142,1754 t='Scale type' d='' id=title
+[    ]  126,1808 t='Fit screen' d='' id=summary
+[C   ]  540,1998 t='' d='' id=
+[    ]  242,1946 t='Cutout area behavior' d='' id=title
+[    ]  540,2027 t='Cutout area behavior only applies in portrait mode with certain scale types' d='' id=summary
+[C   ]  540,2191 t='' d='' id=
+[    ]  346,2191 t='Zoom into double page spreads' d='' id=title
+[k   ]  969,2191 t='' d='' id=switchWidget
+[C   ]  540,2331 t='' d='' id=
+[    ]  232,2332 t='Zoom start position' d='' id=title
+[    ]  129,2380 t='Automatic' d='' id=summary

@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,243  t='' d='' id=
+[    ]  189,217  t='Starting screen' d='' id=title
+[    ]  299,271  t='Last used (Library or Recents)' d='' id=summary
+[C   ]  540,461  t='' d='' id=
+[    ]  165,409  t='Back to start' d='' id=title
+[    ]  450,490  t='Pressing back goes to the starting screen before exiting the app' d='' id=summary
+[xk  ]  969,461  t='' d='' id=switchWidget
+[C   ]  540,654  t='' d='' id=
+[    ]  245,654  t='Manage notifications' d='' id=title
+[    ]  540,813  t='App shortcuts' d='' id=title
+[C   ]  540,982  t='' d='' id=
+[    ]  225,930  t='Show recent series' d='' id=title
+[    ]  450,1011 t='Includes recently read, updated, and added series' d='' id=summary
+[xk  ]  969,982  t='' d='' id=switchWidget
+[C   ]  540,1175 t='' d='' id=
+[    ]  311,1175 t='Show recently used sources' d='' id=title
+[xk  ]  969,1175 t='' d='' id=switchWidget
+[C   ]  540,1368 t='' d='' id=
+[    ]  398,1316 t='Series shortcuts opens new chapters' d='' id=title
+[    ]  450,1397 t='When there's no new chapters, the series' details will open instead' d='' id=summary
+[xk  ]  969,1368 t='' d='' id=switchWidget
+[    ]  540,1579 t='Auto-updates' d='' id=title
+[C   ]  540,1722 t='' d='' id=
+[    ]  202,1696 t='Auto-update app' d='' id=title
+[    ]  168,1750 t='Over Wi-Fi only' d='' id=summary
+[    ]  540,1906 t='Locale' d='' id=title
+[C   ]  540,2049 t='' d='' id=
+[    ]  157,2023 t='Date format' d='' id=title
+[    ]  170,2077 t='System default' d='' id=summary
+[C   ]  540,2241 t='' d='' id=
+[    ]  137,2215 t='Language' d='' id=title
+[    ]  170,2269 t='System default' d='' id=summary
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  246,201  t='General' d='' id=toolbar_title

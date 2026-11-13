@@ -31,3 +31,7 @@ Updated: 13 Nov 2026. Method: remote-controlled virtual phone on GitHub (branch 
 - Mihon: DONE. 19 differing items, all classified; board rows added: CMP-U4, CMP-RD-1, CMP-RD-2, CMP-SR-2 (CMP-SR-1, CMP-UI-1, CMP-UI-2 existed).
 - SY: DONE (code + phone). New: autoscroll gestures (CMP-RD-3), edit-info hints/collate tags (CMP-L4).
 - Phone session 2 started with: 69-Komikku, J2K, Tsundoku, Chimahon.
+- J2K: DONE (research/J2K/inventory.md, 45 pictures). Rows: CMP-OT-1, CMP-LB-1, CMP-LB-2, CMP-UI-3, CMP-D5, VIS-6; pictures added to CMP-L3.
+- Tsundoku: DONE (research/Tsundoku/inventory.md, 22 pictures). Rows: CMP-LB-3, CMP-LB-4, CMP-OT-2.
+- Chimahon: DONE (research/Chimahon/inventory.md, 60 pictures). Rows: CMP-UI-4, CMP-UI-5, CMP-RD-4, CMP-OT-3, CMP-OT-4, CMP-SR-3.
+- Phone session 3 started with: 69-Komikku, Kototoro, Kaisoku, Futon, DropSauce (Kotatsu family; shared-core list inv/kotatsu_core.txt).

@@ -1,0 +1,29 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[    ]  435,62   t='Concurrent source downloads' d='' id=slider_title
+[    ]  943,62   t='5 sources' d='' id=slider_value
+[    ]  453,319  t='Concurrent page downloads' d='' id=slider_title
+[    ]  961,319  t='5 pages' d='' id=slider_value
+[    ]  433,373  t='Pages downloaded simultaneously per source' d='' id=slider_subtitle
+[    ]  540,645  t='Remove after read' d='' id=title
+[C   ]  540,762  t='' d='' id=
+[    ]  330,762  t='Remove when marked as read' d='' id=title
+[k   ]  969,762  t='' d='' id=switchWidget
+[C   ]  540,929  t='' d='' id=
+[    ]  219,903  t='Remove after read' d='' id=title
+[    ]   92,957  t='Never' d='' id=summary
+[C   ]  540,1095 t='' d='' id=
+[    ]  394,1095 t='Allow deleting bookmarked chapters' d='' id=title
+[k   ]  969,1095 t='' d='' id=switchWidget
+[    ]  540,1254 t='Download new chapters' d='' id=title
+[C   ]  540,1371 t='' d='' id=
+[    ]  271,1371 t='Download new chapters' d='' id=title
+[k   ]  969,1371 t='' d='' id=switchWidget
+[    ]  540,1530 t='Download ahead' d='' id=title
+[C   ]  540,1673 t='' d='' id=
+[    ]  319,1647 t='Auto download while reading' d='' id=title
+[    ]   92,1701 t='Never' d='' id=summary
+[    ]  613,1863 t='Only works on entries in library and if the current chapter plus the next one ar' d='' id=summary
+[    ]  540,2045 t='Automatic removal' d='' id=title
+[C   ]  540,2214 t='' d='' id=
+[    ]  283,2162 t='Delete removed chapters' d='' id=title
+[    ]  540,2243 t='Delete downloaded chapters if the source has removed the chapter online' d='' id=summary

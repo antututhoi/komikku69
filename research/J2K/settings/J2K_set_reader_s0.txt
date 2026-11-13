@@ -1,0 +1,32 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[    ]  540,644  t='General' d='' id=title
+[C   ]  540,787  t='' d='' id=
+[    ]  249,761  t='Default reading mode' d='' id=title
+[    ]  141,815  t='Right to left' d='' id=summary
+[C   ]  540,979  t='' d='' id=
+[    ]  311,953  t='Double tap animation speed' d='' id=title
+[    ]  104,1007 t='Normal' d='' id=summary
+[C   ]  540,1145 t='' d='' id=
+[    ]  284,1145 t='Animate page transitions' d='' id=title
+[xk  ]  969,1145 t='' d='' id=switchWidget
+[C   ]  540,1338 t='' d='' id=
+[    ]  308,1286 t='Buttons at bottom of reader' d='' id=title
+[    ]  540,1367 t='View chapters, Open in WebView, Crop borders (Webtoon), Page layout, Display opt' d='' id=summary
+[    ]  613,1555 t='Certain buttons can be found in other places if disabled here' d='' id=summary
+[    ]  540,1737 t='Display' d='' id=title
+[C   ]  540,1880 t='' d='' id=
+[    ]  221,1854 t='Default orientation' d='' id=title
+[    ]   79,1908 t='Free' d='' id=summary
+[C   ]  540,2072 t='' d='' id=
+[    ]  211,2046 t='Background color' d='' id=title
+[    ]  237,2100 t='Smart (based on page)' d='' id=summary
+[C   ]  540,2238 t='' d='' id=
+[    ]  142,2238 t='Fullscreen' d='' id=title
+[xk  ]  969,2238 t='' d='' id=switchWidget
+[C   ]  540,2354 t='' d='' id=
+[    ]  190,2375 t='Keep screen on' d='' id=title
+[xk  ]  969,2358 t='' d='' id=switchWidget
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  238,201  t='Reader' d='' id=toolbar_title
+[    ]  540,468  t='Reader' d='' id=big_title

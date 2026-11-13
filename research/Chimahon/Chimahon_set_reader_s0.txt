@@ -1,0 +1,40 @@
+[S   ]  540,1063 t='' d='' id=
+[C   ]  540,44   t='' d='' id=
+[    ]  328,2    t='Downloaded only' d='' id=
+[    ]  399,26   t='Filters all entries in your library' d='' id=
+[C   ]  540,189  t='' d='' id=
+[    ]  314,168  t='Incognito mode' d='' id=
+[    ]  338,226  t='Pauses reading history' d='' id=
+[C   ]  540,410  t='' d='' id=
+[    ]  300,368  t='Screen lookup' d='' id=
+[    ]  492,447  t='OCR text from other apps with a floating capture button' d='' id=
+[C   ]  540,613  t='' d='' id=
+[    ]  324,613  t='Download queue' d='' id=
+[C   ]  540,771  t='' d='' id=
+[    ]  269,771  t='Categories' d='' id=
+[C   ]  540,929  t='' d='' id=
+[    ]  256,929  t='Statistics' d='' id=
+[C   ]  540,1087 t='' d='' id=
+[    ]  362,1087 t='Library update errors' d='' id=
+[C   ]  540,1245 t='' d='' id=
+[    ]  328,1245 t='Data and storage' d='' id=
+[C   ]  540,1403 t='' d='' id=
+[    ]  246,1403 t='Updates' d='' id=
+[C   ]  540,1564 t='' d='' id=
+[    ]  245,1564 t='Settings' d='' id=
+[C   ]  540,1722 t='' d='' id=
+[    ]  224,1722 t='About' d='' id=
+[C   ]  540,1880 t='' d='' id=
+[    ]  211,1880 t='Help' d='' id=
+[C   ]  540,2023 t='' d='' id=
+[    ]  470,2022 t='' d='Star Me' id=
+[    ]  577,2022 t='Star Me' d='' id=
+[C   ]  108,2232 t='' d='' id=
+[    ]  108,2274 t='Library' d='' id=
+[C   ]  324,2232 t='' d='' id=
+[    ]  324,2274 t='History' d='' id=
+[C   ]  540,2232 t='' d='' id=
+[    ]  540,2274 t='Browse' d='' id=
+[C   ]  756,2232 t='' d='' id=
+[    ]  755,2274 t='Dictionary' d='' id=
+[    ]  971,2274 t='More' d='' id=

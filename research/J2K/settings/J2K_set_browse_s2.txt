@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,62   t='' d='' id=
+[    ]  202,53   t='Extension stores' d='' id=title
+[C   ]  540,220  t='' d='' id=
+[    ]  271,194  t='Auto-update extensions' d='' id=title
+[    ]  168,248  t='Over Wi-Fi only' d='' id=summary
+[    ]  613,410  t='Some extensions may not be auto-updated if they were installed outside this app' d='' id=summary
+[C   ]  540,574  t='' d='' id=
+[    ]  376,574  t='Notify extension has been updated' d='' id=title
+[xk  ]  969,574  t='' d='' id=switchWidget
+[    ]  540,733  t='Global search' d='' id=title
+[    ]  215,850  t='Sources to search' d='' id=title
+[Cxk ]  630,850  t='All enabled' d='' id=button_start
+[Ck  ]  904,850  t='Pinned only' d='' id=button_end
+[    ]  540,1009 t='Migration' d='' id=title
+[C   ]  540,1126 t='' d='' id=
+[    ]  207,1126 t='Source migration' d='' id=title
+[C   ]  540,1293 t='' d='' id=
+[    ]  255,1267 t='Match pinned sources' d='' id=title
+[    ]  433,1321 t='Only enable your pinned sources for migration' d='' id=summary
+[C   ]  540,1485 t='' d='' id=
+[    ]  266,1459 t='Match enabled sources' d='' id=title
+[    ]  523,1513 t='Only enable your currently enabled sources for migration' d='' id=summary
+[    ]  613,1675 t='You can also migrate by selecting entries in your library' d='' id=summary
+[    ]  540,1857 t='NSFW (18+) sources' d='' id=title
+[C   ]  540,2000 t='' d='' id=
+[    ]  396,1974 t='Show in sources and extensions lists' d='' id=title
+[    ]  334,2028 t='Requires app restart to take effect' d='' id=summary
+[xk  ]  969,2000 t='' d='' id=switchWidget
+[    ]  613,2216 t='This does not prevent unofficial or potentially incorrectly flagged extensions f' d='' id=summary

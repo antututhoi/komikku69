@@ -1,0 +1,40 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,77   t='' d='' id=
+[    ]  320,77   t='Split double pages in portrait' d='' id=title
+[k   ]  969,77   t='' d='' id=switchWidget
+[C   ]  540,218  t='' d='' id=
+[    ]  233,218  t='Invert double pages' d='' id=title
+[k   ]  969,218  t='' d='' id=switchWidget
+[    ]  540,377  t='Webtoon' d='' id=title
+[C   ]  540,520  t='' d='' id=
+[    ]  140,494  t='Tap zones' d='' id=title
+[    ]  103,548  t='Default' d='' id=summary
+[C   ]  540,712  t='' d='' id=
+[    ]  196,686  t='Invert tap zones' d='' id=title
+[    ]   87,740  t='None' d='' id=summary
+[C   ]  540,904  t='' d='' id=
+[    ]  386,878  t='Sensitivity for hiding menu on scroll' d='' id=title
+[    ]   77,932  t='Low' d='' id=summary
+[C   ]  540,1070 t='' d='' id=
+[    ]  167,1070 t='Crop borders' d='' id=title
+[k   ]  969,1070 t='' d='' id=switchWidget
+[    ]  478,1211 t='Side padding' d='' id=slider_title
+[    ]  987,1211 t='None' d='' id=slider_value
+[C   ]  540,1494 t='' d='' id=
+[    ]  155,1468 t='Page layout' d='' id=title
+[    ]  142,1522 t='Single page' d='' id=summary
+[C   ]  540,1660 t='' d='' id=
+[    ]  233,1660 t='Invert double pages' d='' id=title
+[k   ]  969,1660 t='' d='' id=switchWidget
+[C   ]  540,1801 t='' d='' id=
+[    ]  202,1801 t='Enable zoom out' d='' id=title
+[k   ]  969,1801 t='' d='' id=switchWidget
+[    ]  540,1960 t='Navigation' d='' id=title
+[C   ]  540,2077 t='' d='' id=
+[    ]  165,2077 t='Volume keys' d='' id=title
+[k   ]  969,2077 t='' d='' id=switchWidget
+[C   ]  540,2244 t='' d='' id=
+[    ]  316,2218 t='Use vertical progress bar for' d='' id=title
+[    ]  291,2272 t='Webtoon, Continuous vertical' d='' id=summary
+[    ]  489,2391 t='Vertical bar height' d='' id=slider_title
+[    ]  997,2391 t='65%' d='' id=slider_value

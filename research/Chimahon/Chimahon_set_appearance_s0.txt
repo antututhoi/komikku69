@@ -1,0 +1,41 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,57   t='' d='' id=
+[    ]  273,15   t='Downloads' d='' id=
+[    ]  449,52   t='Automatic download, download ahead' d='' id=
+[C   ]  540,215  t='' d='' id=
+[    ]  238,166  t='Browse' d='' id=
+[    ]  423,252  t='Sources, extensions, global search' d='' id=
+[    ]  114,378  t='Learning' d='' id=
+[C   ]  540,526  t='' d='' id=
+[    ]  376,505  t='Dictionaries and audio' d='' id=
+[    ]  441,563  t='Import, manage Yomitan dictionaries' d='' id=
+[C   ]  540,726  t='' d='' id=
+[    ]  326,705  t='Popup dictionary' d='' id=
+[    ]  336,763  t='Layout, theme, content' d='' id=
+[C   ]  540,926  t='' d='' id=
+[    ]  208,905  t='Anki' d='' id=
+[    ]  309,963  t='Deck, fields, export' d='' id=
+[C   ]  540,1126 t='' d='' id=
+[    ]  209,1105 t='OCR' d='' id=
+[    ]  363,1163 t='Engine, appearance, cache' d='' id=
+[    ]   82,1289 t='Sync' d='' id=
+[C   ]  540,1437 t='' d='' id=
+[    ]  248,1416 t='Tracking' d='' id=
+[    ]  456,1474 t='One-way progress sync, enhanced sync' d='' id=
+[C   ]  540,1637 t='' d='' id=
+[    ]  285,1616 t='Connections' d='' id=
+[    ]  344,1674 t='Discord, more to come..' d='' id=
+[C   ]  540,1837 t='' d='' id=
+[    ]  328,1816 t='Data and storage' d='' id=
+[    ]  495,1874 t='Manual & automatic backups, storage space' d='' id=
+[C   ]  540,2037 t='' d='' id=
+[    ]  268,2016 t='MangaDex' d='' id=
+[    ]  388,2074 t='MangaDex login, follows sync' d='' id=
+[C   ]  540,2237 t='' d='' id=
+[    ]  224,2216 t='About' d='' id=
+[    ]  334,2274 t='Chimahon Stable 2.4.9' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  252,212  t='Settings' d='' id=
+[CL  ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Search' id=

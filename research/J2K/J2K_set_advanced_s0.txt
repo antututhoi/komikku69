@@ -1,0 +1,28 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,652  t='' d='' id=
+[    ]  203,626  t='Dump crash logs' d='' id=title
+[    ]  517,680  t='Saves error logs to a file for sharing with the developers' d='' id=summary
+[C   ]  540,818  t='' d='' id=
+[    ]  146,818  t='Debug info' d='' id=title
+[    ]  540,977  t='Background activity' d='' id=title
+[C   ]  540,1146 t='' d='' id=
+[    ]  314,1094 t='Disable battery optimization' d='' id=title
+[    ]  540,1175 t='Disable this if you are experiencing issues with updating or restoring your libr' d='' id=summary
+[C   ]  540,1418 t='' d='' id=
+[    ]  205,1339 t='Don't kill my app!' d='' id=title
+[    ]  540,1446 t='Some manufacturers have additional app restrictions that kill background service' d='' id=summary
+[C   ]  540,1716 t='' d='' id=
+[    ]  270,1637 t='Check for beta releases' d='' id=title
+[    ]  450,1744 t='Try new features before they're officially released. Beta releases may be unstab' d='' id=summary
+[k   ]  969,1716 t='' d='' id=switchWidget
+[    ]  540,1953 t='Data Management' d='' id=title
+[C   ]  540,2096 t='' d='' id=
+[    ]  234,2070 t='Clear chapter cache' d='' id=title
+[    ]  166,2124 t='Used: 5.10 MB' d='' id=summary
+[C   ]  540,2296 t='' d='' id=
+[    ]  314,2262 t='Refresh the download cache' d='' id=title
+[    ]  540,2345 t='This will force the download cache to recalculate. Useful if you modified downlo' d='' id=summary
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  275,201  t='Advanced' d='' id=toolbar_title
+[    ]  540,468  t='Advanced' d='' id=big_title

@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,47   t='' d='' id=
+[    ]  285,26   t='Only download over Wi-Fi' d='' id=title
+[xk  ]  969,43   t='' d='' id=switchWidget
+[C   ]  540,164  t='' d='' id=
+[    ]  237,164  t='Save as CBZ archive' d='' id=title
+[xk  ]  969,164  t='' d='' id=switchWidget
+[C   ]  540,331  t='' d='' id=
+[    ]  197,305  t='Split tall images' d='' id=title
+[    ]  296,359  t='Improves reader performance' d='' id=summary
+[k   ]  969,331  t='' d='' id=switchWidget
+[    ]  435,497  t='Concurrent source downloads' d='' id=slider_title
+[    ]  943,497  t='5 sources' d='' id=slider_value
+[    ]  453,754  t='Concurrent page downloads' d='' id=slider_title
+[    ]  961,754  t='5 pages' d='' id=slider_value
+[    ]  433,808  t='Pages downloaded simultaneously per source' d='' id=slider_subtitle
+[    ]  540,1080 t='Remove after read' d='' id=title
+[C   ]  540,1197 t='' d='' id=
+[    ]  330,1197 t='Remove when marked as read' d='' id=title
+[k   ]  969,1197 t='' d='' id=switchWidget
+[C   ]  540,1364 t='' d='' id=
+[    ]  219,1338 t='Remove after read' d='' id=title
+[    ]   92,1392 t='Never' d='' id=summary
+[C   ]  540,1530 t='' d='' id=
+[    ]  394,1530 t='Allow deleting bookmarked chapters' d='' id=title
+[k   ]  969,1530 t='' d='' id=switchWidget
+[    ]  540,1689 t='Download new chapters' d='' id=title
+[C   ]  540,1806 t='' d='' id=
+[    ]  271,1806 t='Download new chapters' d='' id=title
+[k   ]  969,1806 t='' d='' id=switchWidget
+[    ]  540,1965 t='Download ahead' d='' id=title
+[C   ]  540,2108 t='' d='' id=
+[    ]  319,2082 t='Auto download while reading' d='' id=title
+[    ]   92,2136 t='Never' d='' id=summary
+[    ]  613,2298 t='Only works on entries in library and if the current chapter plus the next one ar' d='' id=summary

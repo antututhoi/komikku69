@@ -1,0 +1,41 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[    ]  540,124  t='Display' d='' id=title
+[C   ]  540,267  t='' d='' id=
+[    ]  221,241  t='Default orientation' d='' id=title
+[    ]   79,295  t='Free' d='' id=summary
+[C   ]  540,459  t='' d='' id=
+[    ]  211,433  t='Background color' d='' id=title
+[    ]  237,487  t='Smart (based on page)' d='' id=summary
+[C   ]  540,625  t='' d='' id=
+[    ]  142,625  t='Fullscreen' d='' id=title
+[xk  ]  969,625  t='' d='' id=switchWidget
+[C   ]  540,766  t='' d='' id=
+[    ]  190,766  t='Keep screen on' d='' id=title
+[xk  ]  969,766  t='' d='' id=switchWidget
+[C   ]  540,907  t='' d='' id=
+[    ]  226,907  t='Show page number' d='' id=title
+[xk  ]  969,907  t='' d='' id=switchWidget
+[C   ]  540,1074 t='' d='' id=
+[    ]  368,1048 t='Cutout area behavior (Landscape)' d='' id=title
+[    ]  186,1102 t='Pad cutout areas' d='' id=summary
+[    ]  540,1258 t='Reading' d='' id=title
+[C   ]  540,1375 t='' d='' id=
+[    ]  300,1375 t='Skip chapters marked read' d='' id=title
+[k   ]  969,1375 t='' d='' id=switchWidget
+[C   ]  540,1516 t='' d='' id=
+[    ]  247,1516 t='Skip filtered chapters' d='' id=title
+[xk  ]  969,1516 t='' d='' id=switchWidget
+[C   ]  540,1657 t='' d='' id=
+[    ]  268,1657 t='Skip duplicate chapters' d='' id=title
+[k   ]  969,1657 t='' d='' id=switchWidget
+[C   ]  540,1850 t='' d='' id=
+[    ]  342,1798 t='Always show chapter transition' d='' id=title
+[    ]  450,1879 t='If disabled, the transition page will be skipped if the next chapter is loaded' d='' id=summary
+[xk  ]  969,1850 t='' d='' id=switchWidget
+[    ]  540,2061 t='Paged' d='' id=title
+[C   ]  540,2204 t='' d='' id=
+[    ]  140,2178 t='Tap zones' d='' id=title
+[    ]  103,2232 t='Default' d='' id=summary
+[C   ]  540,2350 t='' d='' id=
+[    ]  196,2370 t='Invert tap zones' d='' id=title
+[    ]   87,2399 t='None' d='' id=summary

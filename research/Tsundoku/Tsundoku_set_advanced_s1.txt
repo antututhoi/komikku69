@@ -1,0 +1,38 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,33   t='' d='' id=
+[    ]  143,12   t='Debug info' d='' id=
+[C   ]  540,146  t='' d='' id=
+[    ]  207,146  t='Onboarding guide' d='' id=
+[C   ]  540,304  t='' d='' id=
+[    ]  239,304  t='Manage notifications' d='' id=
+[    ]  205,446  t='Background activity' d='' id=
+[C   ]  540,594  t='' d='' id=
+[    ]  304,573  t='Disable battery optimization' d='' id=
+[    ]  423,631  t='Helps with background library updates and backups' d='' id=
+[C   ]  540,815  t='' d='' id=
+[    ]  199,773  t='Don't kill my app!' d='' id=
+[    ]  540,852  t='Some manufacturers have additional app restrictions that kill background service' d='' id=
+[    ]   82,1031 t='Data' d='' id=
+[C   ]  540,1179 t='' d='' id=
+[    ]  224,1158 t='Reindex downloads' d='' id=
+[    ]  359,1216 t='Force app to recheck downloaded chapters' d='' id=
+[C   ]  540,1379 t='' d='' id=
+[    ]  182,1358 t='Clear database' d='' id=
+[    ]  469,1416 t='Delete history for entries that are not saved in your library' d='' id=
+[C   ]  540,1579 t='' d='' id=
+[    ]  223,1558 t='Database statistics' d='' id=
+[    ]  337,1616 t='Show detailed database size breakdown' d='' id=
+[C   ]  540,1800 t='' d='' id=
+[    ]  257,1758 t='Database maintenance' d='' id=
+[    ]  540,1837 t='ANALYZE, REINDEX, and VACUUM. VACUUM temporarily needs free space equal to the d' d='' id=
+[C   ]  540,2021 t='' d='' id=
+[    ]  261,2000 t='Normalize manga URLs' d='' id=
+[    ]  477,2058 t='Removes trailing slashes from all manga URLs in database' d='' id=
+[C   ]  540,2221 t='' d='' id=
+[    ]  320,2200 t='Remove duplicate URL entries' d='' id=
+[    ]  497,2258 t='Unfavorite manga that would conflict after URL normalization' d='' id=
+[C   ]  540,2360 t='' d='' id=
+[    ]  243,2381 t='Delete all translations' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

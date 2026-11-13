@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,30   t='' d='' id=
+[    ]   96,9    t='Default' d='' id=
+[C   ]  540,160  t='' d='' id=
+[    ]  191,139  t='Invert tap zones' d='' id=
+[    ]  163,339  t='Side padding' d='' id=
+[    ]  997,339  t='0%' d='' id=
+[C   ]  540,649  t='' d='' id=
+[    ]  372,628  t='Sensitivity for hiding menu on scroll' d='' id=
+[    ]   73,686  t='Low' d='' id=
+[C   ]  540,828  t='' d='' id=
+[    ]  163,828  t='Crop borders' d='' id=
+[C   ]  540,986  t='' d='' id=
+[    ]  195,986  t='Split wide pages' d='' id=
+[C   ]  540,1144 t='' d='' id=
+[    ]  262,1144 t='Rotate wide pages to fit' d='' id=
+[C   ]  540,1302 t='' d='' id=
+[    ]  225,1302 t='Double tap to zoom' d='' id=
+[C   ]  540,1460 t='' d='' id=
+[    ]  205,1460 t='Disable zoom out' d='' id=
+[    ]  132,1634 t='Navigation' d='' id=
+[C   ]  540,1761 t='' d='' id=
+[    ]  160,1761 t='Volume keys' d='' id=
+[C   ]  540,1940 t='' d='' id=
+[    ]  340,1919 t='Use vertical chapter navigator in' d='' id=
+[    ]   81,1977 t='None' d='' id=
+[    ]  106,2135 t='Actions' d='' id=
+[C   ]  540,2262 t='' d='' id=
+[    ]  277,2262 t='Show actions on long tap' d='' id=
+[C   ]  540,2370 t='' d='' id=
+[    ]  347,2391 t='Save pages into separate folders' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Reset to defaults' id=

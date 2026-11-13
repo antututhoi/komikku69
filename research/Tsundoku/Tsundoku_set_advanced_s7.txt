@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,7    t='' d='' id=
+[C   ]  540,93   t='' d='' id=
+[    ]  250,93   t='Custom display profile' d='' id=
+[    ]  170,267  t='Novel WebView' d='' id=
+[C   ]  540,457  t='' d='' id=
+[    ]  263,394  t='WebView console client' d='' id=
+[    ]  429,494  t='Attach a Chrome WebView client so JS alert/confirm/prompt dialogs and file picke' d='' id=
+[C   ]  540,720  t='' d='' id=
+[    ]  300,678  t='Use classic TTS notification' d='' id=
+[    ]  429,757  t='Plain notification with a progress bar instead of lockscreen/Bluetooth media con' d='' id=
+[    ]  134,936  t='Extensions' d='' id=
+[C   ]  540,1084 t='' d='' id=
+[    ]  116,1063 t='Installer' d='' id=
+[    ]  166,1121 t='PackageInstaller' d='' id=
+[C   ]  540,1263 t='' d='' id=
+[    ]  377,1263 t='Revoke trusted unknown extensions' d='' id=
+[C   ]  540,1505 t='' d='' id=
+[    ]  345,1421 t='Use native cheerio for JS plugins' d='' id=
+[    ]  429,1542 t='Experimental: parse plugin HTML with bundled real cheerio (full API) instead of ' d='' id=
+[    ]  148,1763 t='Mass import' d='' id=
+[C   ]  540,1932 t='' d='' id=
+[    ]  255,1890 t='Separate queue per file' d='' id=
+[    ]  429,1969 t='When importing multiple files at once, add each file as its own queue instead of' d='' id=
+[C   ]  540,2195 t='' d='' id=
+[    ]  186,2132 t='Split by domain' d='' id=
+[    ]  429,2232 t='Put each website's URLs in its own queue. Streamed to disk so large files won't ' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

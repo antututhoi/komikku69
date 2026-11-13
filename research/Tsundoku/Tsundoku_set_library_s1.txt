@@ -1,0 +1,38 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,108  t='' d='' id=
+[    ]  336,53   t='Automatically refresh metadata' d='' id=
+[    ]  429,132  t='Check for new cover and details when updating library' d='' id=
+[C   ]  540,337  t='' d='' id=
+[    ]  169,295  t='Smart update' d='' id=
+[    ]  540,374  t='Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip ' d='' id=
+[C   ]  540,558  t='' d='' id=
+[    ]  311,537  t='Skip recently updated entries' d='' id=
+[    ]  479,595  t='Skip entries that were recently updated during bulk updates' d='' id=
+[C   ]  540,737  t='' d='' id=
+[    ]  377,737  t='Show unread count on Updates icon' d='' id=
+[    ]  114,911  t='Behavior' d='' id=
+[C   ]  540,1059 t='' d='' id=
+[    ]  263,1038 t='Chapter on swipe to left' d='' id=
+[    ]  178,1096 t='Bookmark chapter' d='' id=
+[C   ]  540,1259 t='' d='' id=
+[    ]  275,1238 t='Chapter on swipe to right' d='' id=
+[    ]  139,1296 t='Mark as read' d='' id=
+[C   ]  540,1459 t='' d='' id=
+[    ]  377,1438 t='Mark duplicate read chapter as read' d='' id=
+[    ]   81,1496 t='None' d='' id=
+[C   ]  540,1638 t='' d='' id=
+[    ]  338,1638 t='Hide missing chapter indicators' d='' id=
+[C   ]  540,1875 t='' d='' id=
+[    ]  429,1833 t='Check for existing entries when adding to library' d='' id=
+[    ]  429,1949 t='Warn about possible duplicates already in your library before adding' d='' id=
+[C   ]  540,2133 t='' d='' id=
+[    ]  217,2112 t='Duplicate list order' d='' id=
+[    ]  147,2170 t='Alphabetically' d='' id=
+[C   ]  540,2316 t='' d='' id=
+[    ]  286,2312 t='Migrate source list sorting' d='' id=
+[    ]  147,2370 t='Alphabetically' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Reset to defaults' id=

@@ -1,0 +1,31 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[    ]  540,644  t='General' d='' id=title
+[C   ]  540,813  t='' d='' id=
+[    ]  272,761  t='Sort by ignoring articles' d='' id=title
+[    ]  450,842  t='When sorting alphabetically, sort ignoring articles (a, an, the) at the start of' d='' id=summary
+[k   ]  969,813  t='' d='' id=switchWidget
+[C   ]  540,1058 t='' d='' id=
+[    ]  232,1006 t='Search suggestions' d='' id=title
+[    ]  450,1087 t='Search tips will show up periodically. Long press the suggestion to search it.' d='' id=summary
+[k   ]  969,1058 t='' d='' id=switchWidget
+[C   ]  540,1277 t='' d='' id=
+[    ]  190,1251 t='Display options' d='' id=title
+[    ]  426,1305 t='Can also be found by expanding library filters' d='' id=summary
+[C   ]  540,1469 t='' d='' id=
+[    ]  389,1443 t='Mark duplicate read chapter as read' d='' id=title
+[    ]   92,1497 t='Never' d='' id=summary
+[    ]  540,1653 t='Categories' d='' id=title
+[C   ]  540,1796 t='' d='' id=
+[    ]  187,1770 t='Edit categories' d='' id=title
+[    ]  148,1824 t='2 categories' d='' id=summary
+[C   ]  540,1988 t='' d='' id=
+[    ]  201,1962 t='Default category' d='' id=title
+[    ]  125,2016 t='Last used' d='' id=summary
+[    ]  540,2172 t='Global updates' d='' id=title
+[C   ]  540,2309 t='' d='' id=
+[    ]  282,2289 t='Library update frequency' d='' id=title
+[    ]   84,2343 t='Daily' d='' id=summary
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  235,201  t='Library' d='' id=toolbar_title
+[    ]  540,468  t='Library' d='' id=big_title

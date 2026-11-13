@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,28   t='' d='' id=
+[    ]   81,7    t='None' d='' id=
+[    ]  163,135  t='Side padding' d='' id=
+[    ]  997,129  t='0%' d='' id=
+[C   ]  540,445  t='' d='' id=
+[    ]  372,424  t='Sensitivity for hiding menu on scroll' d='' id=
+[    ]   73,482  t='Low' d='' id=
+[C   ]  540,624  t='' d='' id=
+[    ]  163,624  t='Crop borders' d='' id=
+[C   ]  540,782  t='' d='' id=
+[    ]  195,782  t='Split wide pages' d='' id=
+[C   ]  540,940  t='' d='' id=
+[    ]  262,940  t='Rotate wide pages to fit' d='' id=
+[C   ]  540,1098 t='' d='' id=
+[    ]  225,1098 t='Double tap to zoom' d='' id=
+[C   ]  540,1256 t='' d='' id=
+[    ]  205,1256 t='Disable zoom out' d='' id=
+[    ]  132,1430 t='Navigation' d='' id=
+[C   ]  540,1557 t='' d='' id=
+[    ]  160,1557 t='Volume keys' d='' id=
+[C   ]  540,1736 t='' d='' id=
+[    ]  340,1715 t='Use vertical chapter navigator in' d='' id=
+[    ]   81,1773 t='None' d='' id=
+[    ]  106,1931 t='Actions' d='' id=
+[C   ]  540,2058 t='' d='' id=
+[    ]  277,2058 t='Show actions on long tap' d='' id=
+[C   ]  540,2237 t='' d='' id=
+[    ]  347,2216 t='Save pages into separate folders' d='' id=
+[    ]  344,2274 t='Creates folders according to entries' title' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Reset to defaults' id=

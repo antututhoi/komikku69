@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,652  t='' d='' id=
+[    ]  220,626  t='Download location' d='' id=title
+[    ]  449,680  t='/storage/emulated/0/TachiyomiJ2K/downloads' d='' id=summary
+[C   ]  540,818  t='' d='' id=
+[    ]  285,818  t='Only download over Wi-Fi' d='' id=title
+[xk  ]  969,818  t='' d='' id=switchWidget
+[C   ]  540,959  t='' d='' id=
+[    ]  237,959  t='Save as CBZ archive' d='' id=title
+[xk  ]  969,959  t='' d='' id=switchWidget
+[C   ]  540,1126 t='' d='' id=
+[    ]  197,1100 t='Split tall images' d='' id=title
+[    ]  296,1154 t='Improves reader performance' d='' id=summary
+[k   ]  969,1126 t='' d='' id=switchWidget
+[    ]  435,1292 t='Concurrent source downloads' d='' id=slider_title
+[    ]  943,1292 t='5 sources' d='' id=slider_value
+[    ]  453,1549 t='Concurrent page downloads' d='' id=slider_title
+[    ]  961,1549 t='5 pages' d='' id=slider_value
+[    ]  433,1603 t='Pages downloaded simultaneously per source' d='' id=slider_subtitle
+[    ]  540,1875 t='Remove after read' d='' id=title
+[C   ]  540,1992 t='' d='' id=
+[    ]  330,1992 t='Remove when marked as read' d='' id=title
+[k   ]  969,1992 t='' d='' id=switchWidget
+[C   ]  540,2159 t='' d='' id=
+[    ]  219,2133 t='Remove after read' d='' id=title
+[    ]   92,2187 t='Never' d='' id=summary
+[C   ]  540,2325 t='' d='' id=
+[    ]  394,2325 t='Allow deleting bookmarked chapters' d='' id=title
+[k   ]  969,2325 t='' d='' id=switchWidget
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  291,201  t='Downloads' d='' id=toolbar_title
+[    ]  540,468  t='Downloads' d='' id=big_title

@@ -1,0 +1,38 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[    ]  540,644  t='App theme' d='' id=title
+[    ]  561,730  t='Light theme' d='' id=light_theme
+[S   ]  540,1006 t='' d='' id=theme_recycler
+[CL  ]  155,1006 t='' d='' id=
+[    ]  230,839  t='' d='Select all' id=checkbox
+[    ]  155,1201 t='A Brighter You (Dynamic)' d='' id=theme_name_text
+[CL  ]  444,1006 t='' d='' id=
+[    ]  444,1201 t='Pure White' d='' id=theme_name_text
+[CL  ]  733,1006 t='' d='' id=
+[    ]  733,1201 t='Spring Blossom' d='' id=theme_name_text
+[CL  ]  979,1006 t='' d='' id=
+[    ]  987,1201 t='Strawberry Daiquiri' d='' id=theme_name_text
+[    ]  561,1282 t='Dark theme' d='' id=dark_theme
+[S   ]  540,1558 t='' d='' id=theme_recycler_dark
+[CL  ]  155,1558 t='' d='' id=
+[    ]  230,1391 t='' d='Select all' id=checkbox
+[    ]  155,1753 t='A Calmer You (Dynamic)' d='' id=theme_name_text
+[CL  ]  444,1558 t='' d='' id=
+[    ]  444,1753 t='Dark' d='' id=theme_name_text
+[CL  ]  733,1558 t='' d='' id=
+[    ]  733,1753 t='Midnight Dusk' d='' id=theme_name_text
+[CL  ]  979,1558 t='' d='' id=
+[    ]  987,1753 t='Chocolate Strawberries' d='' id=theme_name_text
+[C   ]  540,1865 t='' d='' id=
+[    ]  247,1865 t='Follow system theme' d='' id=title
+[xk  ]  969,1865 t='' d='' id=switchWidget
+[C   ]  540,2006 t='' d='' id=
+[    ]  252,2006 t='Pure black dark mode' d='' id=title
+[k   ]  969,2006 t='' d='' id=switchWidget
+[C   ]  540,2226 t='' d='' id=
+[    ]  210,2147 t='Expanded toolbar' d='' id=title
+[    ]  450,2254 t='Show a larger, expanded toolbar at the top of most pages (does not show on small' d='' id=summary
+[xk  ]  969,2226 t='' d='' id=switchWidget
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  302,201  t='Appearance' d='' id=toolbar_title
+[    ]  540,468  t='Appearance' d='' id=big_title

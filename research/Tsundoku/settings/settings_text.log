@@ -1,0 +1,643 @@
+##### Appearance
+Theme
+Light
+Dark
+System
+Default
+Dynamic
+Catppuccin
+Green Apple
+Pure black dark mode
+Display
+App language
+Tablet UI
+Auto
+Date format
+Default (11/13/26)
+Relative timestamps
+"Today" instead of "11/13/26"
+Appearance
+-----
+Default
+Dynamic
+Catppuccin
+Green Apple
+Pure black dark mode
+Display
+App language
+Tablet UI
+Auto
+Date format
+Default (11/13/26)
+Relative timestamps
+"Today" instead of "11/13/26"
+Render images in manga descriptions
+Library layout
+Combined library
+Merge Novels and Manga into a single Library tab
+Hide manga-related UI
+Hide manga library tab, manga browse tabs, and manga settings.
+Appearance
+-----
+Default
+Dynamic
+Catppuccin
+Green Apple
+Pure black dark mode
+Display
+App language
+Tablet UI
+Auto
+Date format
+Default (11/13/26)
+Relative timestamps
+"Today" instead of "11/13/26"
+Render images in manga descriptions
+Library layout
+Combined library
+Merge Novels and Manga into a single Library tab
+Hide manga-related UI
+Hide manga library tab, manga browse tabs, and manga settings.
+Appearance
+-----
+##### Library
+Categories
+Edit categories
+2 categories
+Default category
+Always ask
+Per-category settings for sort
+Global update
+Automatic updates
+Off
+Categories
+Automatically refresh metadata
+Check for new cover and details when updating library
+Smart update
+Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip 
+Skip recently updated entries
+Skip entries that were recently updated during bulk updates
+Show unread count on Updates icon
+Library
+-----
+Automatically refresh metadata
+Check for new cover and details when updating library
+Smart update
+Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip 
+Skip recently updated entries
+Skip entries that were recently updated during bulk updates
+Show unread count on Updates icon
+Behavior
+Chapter on swipe to left
+Bookmark chapter
+Chapter on swipe to right
+Mark as read
+Mark duplicate read chapter as read
+None
+Hide missing chapter indicators
+Check for existing entries when adding to library
+Warn about possible duplicates already in your library before adding
+Duplicate list order
+Alphabetically
+Migrate source list sorting
+Alphabetically
+Library
+-----
+Behavior
+Chapter on swipe to left
+Bookmark chapter
+Chapter on swipe to right
+Mark as read
+Mark duplicate read chapter as read
+None
+Hide missing chapter indicators
+Check for existing entries when adding to library
+Warn about possible duplicates already in your library before adding
+Duplicate list order
+Alphabetically
+Migrate source list sorting
+Alphabetically
+Migrate source list order
+Ascending
+Sort novel tags alphabetically
+Sort tags on novel detail page by name instead of source order
+Restore position in completed novel chapters
+Resume novel chapters from where you left off even when already marked as read
+Library
+-----
+##### Manga Reader
+Default reading mode
+Paged (right to left)
+Double tap animation speed
+Normal
+Show reading mode
+Briefly show current mode when reader is opened
+Show tap zones overlay
+Briefly show when reader is opened
+Animate page transitions
+Display
+Default rotation
+Free
+Background color
+Black
+Fullscreen
+Show content in cutout area
+Keep screen on
+Show page number
+Reader
+-----
+Background color
+Black
+Fullscreen
+Show content in cutout area
+Keep screen on
+Show page number
+E-Ink
+Flash on page change
+Reduces ghosting on e-ink displays
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+Paged
+Tap zones
+Default
+Invert tap zones
+Reader
+-----
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+Paged
+Tap zones
+Default
+Invert tap zones
+None
+Scale type
+Fit screen
+Zoom start position
+Automatic
+Crop borders
+Automatically zoom into wide images
+Pan wide images
+Split wide pages
+Rotate wide pages to fit
+Long strip
+Tap zones
+Default
+Reader
+-----
+Automatically zoom into wide images
+Pan wide images
+Split wide pages
+Rotate wide pages to fit
+Long strip
+Tap zones
+Default
+Invert tap zones
+None
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Split wide pages
+Rotate wide pages to fit
+Double tap to zoom
+Disable zoom out
+Reader
+-----
+Default
+Invert tap zones
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Split wide pages
+Rotate wide pages to fit
+Double tap to zoom
+Disable zoom out
+Navigation
+Volume keys
+Use vertical chapter navigator in
+None
+Actions
+Show actions on long tap
+Save pages into separate folders
+Reader
+-----
+None
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Split wide pages
+Rotate wide pages to fit
+Double tap to zoom
+Disable zoom out
+Navigation
+Volume keys
+Use vertical chapter navigator in
+None
+Actions
+Show actions on long tap
+Save pages into separate folders
+Creates folders according to entries
+Reader
+-----
+##### Downloads
+Only on Wi-Fi
+Save as CBZ archive
+Split tall images
+Improves reader performance
+Concurrent source downloads
+5
+Concurrent page downloads
+Pages downloaded simultaneously per source
+5
+Delete chapters
+After manually marked as read
+After reading automatically delete
+Disabled
+Allow deleting bookmarked chapters
+Excluded categories
+None
+Auto-download
+Downloads
+-----
+Concurrent source downloads
+5
+Concurrent page downloads
+Pages downloaded simultaneously per source
+5
+Delete chapters
+After manually marked as read
+After reading automatically delete
+Disabled
+Allow deleting bookmarked chapters
+Excluded categories
+None
+Auto-download
+Download new chapters
+Download ahead
+Auto download while reading
+Disabled
+Only works if the current chapter + the next one are already downloaded.
+Downloads
+-----
+##### Tracking
+Update progress after reading
+Update progress when marked as read
+Always
+Minimum chapters before tracking (Manga)
+Number of chapters that must be read before auto-tracking starts for manga (0 = 
+Minimum chapters before tracking (Novels)
+Number of chapters that must be read before auto-tracking starts for novels (0 =
+Trackers
+MangaBaka
+MyAnimeList
+AniList
+Kitsu
+MangaUpdates
+Mark chapters as read on MangaBaka
+Automatically mark chapters as read when you read them in the app
+Sync reading list
+Tracking
+-----
+AniList
+Kitsu
+MangaUpdates
+Mark chapters as read on MangaBaka
+Automatically mark chapters as read when you read them in the app
+Sync reading list
+Keep reading list status in sync with MangaBaka
+Shikimori
+Bangumi
+Hikka
+One-way sync to update the chapter progress in external tracker services. Set up
+Novel Trackers
+NovelUpdates
+Mark chapters as read on NovelUpdates
+Automatically mark chapters as read when you read them in the app
+Sync reading list
+Tracking
+-----
+Sync reading list
+Keep reading list status in sync with MangaBaka
+Shikimori
+Bangumi
+Hikka
+One-way sync to update the chapter progress in external tracker services. Set up
+Novel Trackers
+NovelUpdates
+Mark chapters as read on NovelUpdates
+Automatically mark chapters as read when you read them in the app
+Sync reading list
+Keep reading list status in sync with NovelUpdates
+Custom list mapping
+Map statuses to custom NovelUpdates lists
+Configure list mapping
+Choose which list each status maps to
+NovelList
+Mark chapters as read on NovelList
+Automatically mark chapters as read when you read them in the app
+Tracking
+-----
+Keep reading list status in sync with NovelUpdates
+Custom list mapping
+Map statuses to custom NovelUpdates lists
+Configure list mapping
+Choose which list each status maps to
+NovelList
+Mark chapters as read on NovelList
+Automatically mark chapters as read when you read them in the app
+Sync reading list
+Keep reading list status in sync with NovelList
+RanobeDB
+Mark chapters as read on RanobeDB
+Automatically mark chapters/volumes as read when you read them in the app
+Sync reading list
+Keep reading list status in sync with RanobeDB
+Login via WebView. Cookies will be automatically extracted after successful logi
+Source-defined trackers
+Run source trackers on migration
+Fire source-defined tracker events when migrating or quick-migrating an entry
+Tracking
+-----
+Sync reading list
+Keep reading list status in sync with NovelList
+RanobeDB
+Mark chapters as read on RanobeDB
+Automatically mark chapters/volumes as read when you read them in the app
+Sync reading list
+Keep reading list status in sync with RanobeDB
+Login via WebView. Cookies will be automatically extracted after successful logi
+Source-defined trackers
+Run source trackers on migration
+Fire source-defined tracker events when migrating or quick-migrating an entry
+Some sources implement their own tracking. They are notified when you mark chapt
+Enhanced trackers
+Provides enhanced features for specific sources. Entries are automatically track
+Tracking
+-----
+##### Browse
+Sources
+Hide entries already in library
+Page load delay
+Delay between loading pages (helps with rate limits)
+Show page number
+Display current page number with jump navigation
+Skip cover loading
+Don
+Confirm back after pages
+Show confirmation dialog when going back after loading many pages
+Extension stores
+1 store
+Novel extension repos
+Manage JS plugin and novel extension repositories
+NSFW (18+) sources
+Show in sources and extensions lists
+Requires app restart to take effect
+This does not prevent unofficial or potentially incorrectly flagged extensions f
+Browse
+-----
+Sources
+Hide entries already in library
+Page load delay
+Delay between loading pages (helps with rate limits)
+Show page number
+Display current page number with jump navigation
+Skip cover loading
+Don
+Confirm back after pages
+Show confirmation dialog when going back after loading many pages
+Extension stores
+1 store
+Novel extension repos
+Manage JS plugin and novel extension repositories
+NSFW (18+) sources
+Show in sources and extensions lists
+Requires app restart to take effect
+This does not prevent unofficial or potentially incorrectly flagged extensions f
+Browse
+-----
+##### Data and storage
+Storage location
+/storage/emulated/0/Documents
+Used for automatic backups, chapter downloads, and local source.
+Backup and restore
+Create backup
+Restore backup
+Import LNReader backup
+Import novels from an LNReader backup file (.zip)
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Storage usage
+/storage/emulated/0
+Available: 4.63 GB / Total: 6.23 GB
+Clear chapter cache
+Used: 31 B
+Data and storage
+-----
+Used for automatic backups, chapter downloads, and local source.
+Backup and restore
+Create backup
+Restore backup
+Import LNReader backup
+Import novels from an LNReader backup file (.zip)
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Storage usage
+/storage/emulated/0
+Available: 4.63 GB / Total: 6.23 GB
+Clear chapter cache
+Used: 31 B
+Clear chapter cache on app launch
+Export
+Library List
+Data and storage
+-----
+##### Security and privacy
+Security
+Hide notification content
+Secure screen
+Incognito mode
+Secure screen hides app contents when switching apps and block screenshots
+Analytics and Crash logs
+Send crash logs
+Send anonymized crash logs to the developers.
+Allow analytics
+Send anonymized usage data to improve app features.
+Sending crash logs and analytics will allow us to identify and fix issues, impro
+Security and privacy
+-----
+##### Advanced
+Share crash logs
+Saves error logs to a file for sharing with the developers
+Verbose logging
+Print verbose logs to system log (reduces app performance)
+Show source name in manga details
+Display source name under status on manga details screen
+Experimental: paginate library (reduce memory)
+Load each category a page at a time (default 300, newest first) and load more as
+Debug info
+Onboarding guide
+Manage notifications
+Background activity
+Disable battery optimization
+Helps with background library updates and backups
+Don
+Some manufacturers have additional app restrictions that kill background service
+Advanced
+-----
+Debug info
+Onboarding guide
+Manage notifications
+Background activity
+Disable battery optimization
+Helps with background library updates and backups
+Don
+Some manufacturers have additional app restrictions that kill background service
+Data
+Reindex downloads
+Force app to recheck downloaded chapters
+Clear database
+Delete history for entries that are not saved in your library
+Database statistics
+Show detailed database size breakdown
+Database maintenance
+ANALYZE, REINDEX, and VACUUM. VACUUM temporarily needs free space equal to the d
+Normalize manga URLs
+Removes trailing slashes from all manga URLs in database
+Remove duplicate URL entries
+Unfavorite manga that would conflict after URL normalization
+Delete all translations
+Advanced
+-----
+Database maintenance
+ANALYZE, REINDEX, and VACUUM. VACUUM temporarily needs free space equal to the d
+Normalize manga URLs
+Removes trailing slashes from all manga URLs in database
+Remove duplicate URL entries
+Unfavorite manga that would conflict after URL normalization
+Delete all translations
+Deletes all downloaded translations
+Migrate quotes to portable storage
+Move id-based quote files to the source/title layout
+Migrate translations to portable storage
+Move id-based translation files to the source/novel/language layout
+Clear temp files
+Clears temporary files from app cache (epub exports, network cache, etc.)
+Bulk remove by URL
+Remove or move multiple entries from library by URL list
+Normalize tags
+Trims whitespace and removes duplicate tags (case-insensitive)
+Normalize tags when updating entry
+Apply the same normalization automatically when entry details are fetched/update
+Reset settings to default
+Resets all app settings to their default values (library data is preserved)
+Advanced
+-----
+Bulk remove by URL
+Remove or move multiple entries from library by URL list
+Normalize tags
+Trims whitespace and removes duplicate tags (case-insensitive)
+Normalize tags when updating entry
+Apply the same normalization automatically when entry details are fetched/update
+Reset settings to default
+Resets all app settings to their default values (library data is preserved)
+Networking
+Clear cookies
+Clear WebView data
+DNS over HTTPS (DoH)
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+Clear rate limit history
+Resets tracked per-host request pacing state. Safe to use any time; the next req
+Library
+Refresh library covers
+Reset per-series reader settings
+Advanced
+-----
+Networking
+Clear cookies
+Clear WebView data
+DNS over HTTPS (DoH)
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+Clear rate limit history
+Resets tracked per-host request pacing state. Safe to use any time; the next req
+Library
+Refresh library covers
+Reset per-series reader settings
+Resets reading mode and orientation of all series
+Update library manga titles to match source
+Warning: if a manga is renamed, it will be removed from the download queue (if p
+Disallow non-ASCII filenames
+Ensures compatibility with certain storage media that don
+Advanced
+-----
+Update library manga titles to match source
+Warning: if a manga is renamed, it will be removed from the download queue (if p
+Disallow non-ASCII filenames
+Ensures compatibility with certain storage media that don
+Reader
+Custom hardware bitmap threshold
+Use legacy decoder for long strip reader
+Affects performance. Only enable if reducing bitmap threshold doesn
+Custom display profile
+Novel WebView
+WebView console client
+Attach a Chrome WebView client so JS alert/confirm/prompt dialogs and file picke
+Use classic TTS notification
+Plain notification with a progress bar instead of lockscreen/Bluetooth media con
+Extensions
+Installer
+Advanced
+-----
+Custom hardware bitmap threshold
+Use legacy decoder for long strip reader
+Affects performance. Only enable if reducing bitmap threshold doesn
+Custom display profile
+Novel WebView
+WebView console client
+Attach a Chrome WebView client so JS alert/confirm/prompt dialogs and file picke
+Use classic TTS notification
+Plain notification with a progress bar instead of lockscreen/Bluetooth media con
+Extensions
+Installer
+PackageInstaller
+Revoke trusted unknown extensions
+Use native cheerio for JS plugins
+Experimental: parse plugin HTML with bundled real cheerio (full API) instead of 
+Mass import
+Separate queue per file
+When importing multiple files at once, add each file as its own queue instead of
+Advanced
+-----
+Custom display profile
+Novel WebView
+WebView console client
+Attach a Chrome WebView client so JS alert/confirm/prompt dialogs and file picke
+Use classic TTS notification
+Plain notification with a progress bar instead of lockscreen/Bluetooth media con
+Extensions
+Installer
+PackageInstaller
+Revoke trusted unknown extensions
+Use native cheerio for JS plugins
+Experimental: parse plugin HTML with bundled real cheerio (full API) instead of 
+Mass import
+Separate queue per file
+When importing multiple files at once, add each file as its own queue instead of
+Split by domain
+Put each website
+Advanced
+-----

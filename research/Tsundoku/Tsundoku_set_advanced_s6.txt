@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,83   t='' d='' id=
+[    ]  371,20   t='Custom hardware bitmap threshold' d='' id=
+[    ]  522,82   t='If reader loads a blank image incrementally reduce the threshold.
+Selected: Defa' d='' id=
+[C   ]  540,287  t='' d='' id=
+[    ]  412,245  t='Use legacy decoder for long strip reader' d='' id=
+[    ]  429,324  t='Affects performance. Only enable if reducing bitmap threshold doesn't fix blank ' d='' id=
+[C   ]  540,487  t='' d='' id=
+[    ]  250,487  t='Custom display profile' d='' id=
+[    ]  170,661  t='Novel WebView' d='' id=
+[C   ]  540,851  t='' d='' id=
+[    ]  263,788  t='WebView console client' d='' id=
+[    ]  429,888  t='Attach a Chrome WebView client so JS alert/confirm/prompt dialogs and file picke' d='' id=
+[C   ]  540,1114 t='' d='' id=
+[    ]  300,1072 t='Use classic TTS notification' d='' id=
+[    ]  429,1151 t='Plain notification with a progress bar instead of lockscreen/Bluetooth media con' d='' id=
+[    ]  134,1330 t='Extensions' d='' id=
+[C   ]  540,1478 t='' d='' id=
+[    ]  116,1457 t='Installer' d='' id=
+[    ]  166,1515 t='PackageInstaller' d='' id=
+[C   ]  540,1657 t='' d='' id=
+[    ]  377,1657 t='Revoke trusted unknown extensions' d='' id=
+[C   ]  540,1899 t='' d='' id=
+[    ]  345,1815 t='Use native cheerio for JS plugins' d='' id=
+[    ]  429,1936 t='Experimental: parse plugin HTML with bundled real cheerio (full API) instead of ' d='' id=
+[    ]  148,2157 t='Mass import' d='' id=
+[C   ]  540,2302 t='' d='' id=
+[    ]  255,2284 t='Separate queue per file' d='' id=
+[    ]  429,2360 t='When importing multiple files at once, add each file as its own queue instead of' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

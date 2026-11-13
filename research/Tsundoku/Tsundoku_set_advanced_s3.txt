@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,57   t='' d='' id=
+[    ]  226,15   t='Bulk remove by URL' d='' id=
+[    ]  459,52   t='Remove or move multiple entries from library by URL list' d='' id=
+[C   ]  540,215  t='' d='' id=
+[    ]  232,194  t='Normalize tags' d='' id=
+[    ]  564,252  t='Trims whitespace and removes duplicate tags (case-insensitive)' d='' id=
+[C   ]  540,436  t='' d='' id=
+[    ]  378,394  t='Normalize tags when updating entry' d='' id=
+[    ]  429,473  t='Apply the same normalization automatically when entry details are fetched/update' d='' id=
+[C   ]  540,678  t='' d='' id=
+[    ]  270,636  t='Reset settings to default' d='' id=
+[    ]  540,715  t='Resets all app settings to their default values (library data is preserved)' d='' id=
+[    ]  137,894  t='Networking' d='' id=
+[C   ]  540,1021 t='' d='' id=
+[    ]  167,1021 t='Clear cookies' d='' id=
+[C   ]  540,1179 t='' d='' id=
+[    ]  229,1179 t='Clear WebView data' d='' id=
+[C   ]  540,1358 t='' d='' id=
+[    ]  260,1337 t='DNS over HTTPS (DoH)' d='' id=
+[    ]  106,1395 t='Disabled' d='' id=
+[C   ]  540,1579 t='' d='' id=
+[    ]  271,1537 t='Default user agent string' d='' id=
+[    ]  540,1616 t='Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome' d='' id=
+[C   ]  540,1842 t='' d='' id=
+[    ]  245,1779 t='Clear rate limit history' d='' id=
+[    ]  540,1879 t='Resets tracked per-host request pacing state. Safe to use any time; the next req' d='' id=
+[    ]   99,2079 t='Library' d='' id=
+[C   ]  540,2206 t='' d='' id=
+[    ]  243,2206 t='Refresh library covers' d='' id=
+[C   ]  540,2342 t='' d='' id=
+[    ]  337,2363 t='Reset per-series reader settings' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

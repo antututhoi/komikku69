@@ -1,0 +1,32 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  533,119  t='Used for automatic backups, chapter downloads, and local source.' d='' id=
+[    ]  250,245  t='Backup and restore' d='' id=
+[C   ]  540,398  t='' d='' id=
+[Ck  ]  290,398  t='' d='' id=
+[    ]  291,398  t='Create backup' d='' id=
+[Ck  ]  788,398  t='' d='' id=
+[    ]  788,398  t='Restore backup' d='' id=
+[C   ]  540,603  t='' d='' id=
+[    ]  275,582  t='Import LNReader backup' d='' id=
+[    ]  411,640  t='Import novels from an LNReader backup file (.zip)' d='' id=
+[C   ]  540,803  t='' d='' id=
+[    ]  309,782  t='Automatic backup frequency' d='' id=
+[    ]  152,840  t='Every 12 hours' d='' id=
+[    ]  540,1155 t='You should keep copies of backups in other places as well. Backups may contain s' d='' id=
+[    ]  161,1397 t='Storage usage' d='' id=
+[C   ]  540,1561 t='' d='' id=
+[    ]  214,1513 t='/storage/emulated/0' d='' id=
+[    ]  296,1615 t='Available: 4.63 GB / Total: 6.23 GB' d='' id=
+[C   ]  540,1778 t='' d='' id=
+[    ]  227,1757 t='Clear chapter cache' d='' id=
+[    ]  121,1815 t='Used: 31 B' d='' id=
+[C   ]  540,1957 t='' d='' id=
+[    ]  363,1957 t='Clear chapter cache on app launch' d='' id=
+[    ]   96,2131 t='Export' d='' id=
+[C   ]  540,2258 t='' d='' id=
+[    ]  145,2258 t='Library List' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  364,212  t='Data and storage' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

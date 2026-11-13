@@ -1,0 +1,352 @@
+_new	New
+_s_deleted_from_local_storage	\"%s\" deleted from local storage
+about_app_translation	Translation
+about_app_translation_summary	Translate this app
+about_onboarding	Replay Intro Walkthrough
+about_onboarding_summary	Learn how to use Futon, dual modes, and source extensions
+account_already_exists	Account already exists
+add_extension_repo_hint	Repository URL
+add_folder	Add Folder
+all_sources_enabled	All sources are enabled
+allow_unstable_updates	Allow unstable updates
+allow_unstable_updates_summary	Check for nightly builds in addition to stable releases
+appwidget_recent_description	Your recently read manga
+appwidget_shelf_description	Manga from your favorites
+auth_complete	Authorized
+available_d	Available: %1$d
+backup_information	You can create backup of your history and favorites and restore it
+backup_restored_background	The backup will be restored in the background
+backup_tg_check	Check if API works
+backup_tg_echo	Test message
+backup_tg_id_not_set	Chat ID is not set
+best_match	Best match
+captcha_auto_solve	Solve CAPTCHAs automatically (experimental)
+captcha_auto_solve_summary	Try to pass Cloudflare checks silently when you open a catalog, a manga or a chapter. It can still be turned off for a single source in its settings
+captcha_solving	Solving captcha automatically…
+catalog	Catalog
+chapters_left	Chapters left
+chapters_read	Chapters read
+choose_source	Choose source
+clear_queue	Clear queue
+clear_source_cookies_summary	Clear cookies for specified domain only. In most cases will invalidate authorization
+closest_chapter_count	Closest chapter count
+compare_source_matches	Compare source matches
+crash_reporting	Crash Reporting
+crash_reporting_summary	Send anonymous crash logs to help improve the app. Takes effect after restart.
+create_or_restore_backup	Create or restore a backup
+create_preset	New preset
+current_cover	Current cover
+custom_theme_delete	Delete selected theme
+custom_theme_delete_confirm	Delete “%1$s”?
+custom_theme_import	Import theme file
+custom_theme_import_failed	Could not import this theme file
+custom_theme_import_summary	Import an Idle Fantasy compatible Material 3 theme JSON
+custom_theme_imported	Theme imported and applied
+custom_themes	Custom themes
+custom_themes_none	No custom themes imported
+data_and_privacy	Data and privacy
+data_deletion	Data deletion
+data_restored	Restored
+default_s	Default: %s
+delete_chapter	Delete chapter
+delete_chapter_confirm	Delete chapter \"%1$s\" from local storage?
+delete_downloaded_files	Also delete downloaded files from storage
+directory_inaccessible	This directory is inaccessible. Please check permissions or re-add it.
+disable_captcha_auto_solve	Disable automatic CAPTCHA solving
+disable_captcha_auto_solve_summary	Don\'t try to solve CAPTCHA silently. You will be asked to solve it manually instead.
+disable_captcha_notifications	Disable captcha notifications
+disable_captcha_notifications_summary	You will not receive notifications about solving CAPTCHA for this source but this can lead to breaking background operations (checking for new chapters, obtaini
+disable_nsfw_summary	Disable NSFW sources and hide adult manga from list if possible
+disabled_sources	Disabled sources
+domain	Domain
+domain_manga	Manga source domain
+dont_check	Don\'t check
+double_page_cover_page	First page as cover (solo)
+download_off_peak	Off-peak downloads
+download_off_peak_end	End time
+download_off_peak_end_description	When downloads must stop
+download_off_peak_start	Start time
+download_off_peak_start_description	When downloads can start
+download_off_peak_summary	Download only during specified hours
+download_only_on_charging_summary	Connect to a power source to start downloads
+download_option_all_unread_b	All unread chapters (%s)
+download_option_manual_selection	Select chapters manually
+download_option_whole_manga_manga	Whole manga
+download_quota_reached	Storage quota reached. Downloads paused.
+download_scheduling_and_limits	Download scheduling and limits
+download_storage_quota	Storage quota (MB)
+download_storage_quota_summary	Limit total download size. 0 for unlimited. Current oldest chapters will be deleted if exceeded.
+downloads_charging_only	Download only when charging
+downloads_charging_only_summary	Items will only be downloaded when the device is charging
+downloads_wifi_only_summary	Stop downloading when switching to a mobile network
+e_ink	E-Ink
+edit_preset	Edit preset
+email_enter_hint	Enter your email to continue
+enable_all_sources	Enable all manga sources
+enable_all_sources_summary	All available manga sources will be enabled permanently
+enable_logging	Enable logging
+enable_logging_summary	Record some actions for debug purposes. Don\'t turn it on if you\'re not sure what you\'re doing
+enable_source	Enable source
+enable_source_manga	Enable manga source
+enabled_sources	Enabled sources
+error_quota_too_low	Storage quota cannot be lower than current usage
+exclude_nsfw_from_history	Exclude NSFW manga from history
+exclude_nsfw_from_history_summary	Manga marked as NSFW will never be added to the history and your progress will not be saved
+exclude_nsfw_from_shortcuts	Hide NSFW from shortcuts
+exclude_nsfw_from_shortcuts_summary	Adult manga will not appear in the shortcut menu shown when you long press the app icon
+extension_repo_add_success	Repository added
+extension_repo_remove_confirm	Remove %s?
+extension_repos_empty	No repositories added. Add a repository URL above to browse extensions.
+extension_repos_header	Repositories
+extensions_manager	Extensions manager
+extensions_manager_summary	Manage, install and uninstall extensions from repositories
+failed_to_add_repo	Failed to add repository: %s
+feed_will_update_soon	Feed update will start soon
+filter_overwrite_confirm	A filter named \"%s\" already exists. Do you want to overwrite it?
+flash_on_page_change_summary	Refresh the screen with a short full-screen flash to reduce ghosting on E-Ink displays
+follow_system	Follow system
+github_download_warning	Downloading from GitHub will bypass security checks performed by IzzyOnDroid and Fdroid.
+github_mirror_ghproxy	GHProxy (mirror.ghproxy.com)
+github_mirror_ghproxy_net	GHProxy.net (ghproxy.net)
+github_mirror_keiyoushi	Keiyoushi
+github_mirror_kkgithub	KKGitHub (raw.kkgithub.com)
+github_mirror_native	Native
+github_mirror_title	GitHub mirror
+got_it	Got it
+handle_links	Handle links
+handle_links_summary	Handle manga links from external applications (e.g. web browser). You may also need to enable it manually in the application\'s system settings
+handle_remaining_manually	Handle remaining titles manually
+handle_remaining_manually_summary	Choose a source separately for each remaining title
+has_chapters	Has chapters
+hide_empty_sources	Hide empty sources
+hide_results_without_chapters	Hide results without chapters
+home_background_font	Change Home Screen Background Font
+home_background_font_bold	Bold
+home_background_font_extra_bold	Extra Bold
+home_background_font_light_thin	Light Thin
+image_server	Preferred image server
+images_procy_description	Use the wsrv.nl service to reduce traffic usage and speed up image loading if possible
+include_disabled_sources	Include disabled sources
+invalid_domain_message	Invalid domain
+invalid_port_number	Invalid port number
+invalid_repo_url	Invalid repository URL
+invalid_server_address_message	Invalid server address
+languages	Languages
+light_indicator	LED indicator
+light_novels	Light Novels
+list	Liste
+manage_sources	Manage sources
+manga_error_description_pattern	Error details:<br><tt>%1$s</tt><br><br>1. Try to <a href="%2$s">open manga in a web browser</a> to ensure it is available on its source<br>2. Make sure you are 
+manga_shelf	Shelf
+manga_unavailable_hint	Alternatives searches the other enabled sources for the same title, so you can carry on reading where you left off.
+manga_unavailable_message	\"%1$s\" could not be loaded from %2$s. It may have been removed or moved to another address.
+manga_unavailable_message_no_source	\"%1$s\" could not be loaded. It may have been removed or moved to another address.
+manga_unavailable_search_alternatives	Find on other sources
+manga_unavailable_title	Content unavailable
+manga_with_downloaded_chapters	Manga with downloaded chapters
+mark_as_completed	Mark as completed
+merge_with_existing_data	Merge with existing data
+migration_unavailable_no_chapters	Migration unavailable because this result has no chapters
+migration_unavailable_search_in_progress	Migration unavailable while search results are updating
+milliseconds_pattern	%1$d ms
+mirror_switching	Choose mirror automatically
+mirror_switching_summary	Automatically switch domains for manga sources on errors if mirrors are available
+most_chapters	Most chapters
+moved_to_top	Moved to top
+network	Network
+network_unavailable_hint	Turn on Wi-Fi or mobile network to read manga online
+new_sources_text	New manga sources are available
+no_alternative_covers	No other covers found for this title
+no_manga_sources	No manga sources
+no_manga_sources_catalog_text	There are no sources available in this section, or all of it might have been already added.\nStay tuned
+no_manga_sources_text	Enable manga sources to read manga online
+no_presets_text	Create a preset to quickly switch between different source configurations
+notification_sound	Notification sound
+novel_align_justify	Justify
+novel_alignment	Text Alignment
+novel_explore_title	Light Novel Sources
+novel_font_custom	Custom Font (.ttf/.otf)
+novel_font_default	System Default
+novel_font_family	Font Family
+novel_font_monospace	Monospace
+novel_font_sans_serif	Sans-Serif
+novel_font_serif	Serif
+novel_font_size	Font Size
+novel_import_file	Import Novel (.epub, .pdf)
+novel_line_spacing	Line Spacing
+novel_no_novels	No light novels found
+novel_page_margin	Page Margins
+novel_paragraph_margin	Paragraph Spacing
+novel_scroll_continuous	Continuous Scroll
+novel_text_color	Text Color
+novel_theme_custom	Custom
+novel_theme_oled	OLED
+novel_theme_sepia	Sepia
+nsfw_16	16+
+obtain	Obtain
+onboard_text	Select languages which you want to read manga. You can change it later in settings.
+onboarding_page1_badge	FREE & OPEN SOURCE
+onboarding_page1_feature1	Ad-free, fast, and battery-friendly reading
+onboarding_page1_feature2	Offline downloads & background chapter updates
+onboarding_page1_feature3	Cloud backup and reading progress sync
+onboarding_page1_subtitle	Your modern, unified manga and light novel reader for Android.
+onboarding_page1_title	Welcome to Futon
+onboarding_page2_badge	MANGA & LIGHT NOVELS
+onboarding_page2_feature1	Manga reader with Webtoon, paged, and continuous scrolling
+onboarding_page2_feature2	Novel reader with customizable typography, spacing, and fonts
+onboarding_page2_feature3	Seamless one-tap mode switching right on your home screen
+onboarding_page2_subtitle	Switch effortlessly between graphic manga and rich text light novels.
+onboarding_page2_title	Dual Reading Modes
+onboarding_page3_badge	SOURCES & EXTENSIONS
+onboarding_page3_nsfw_desc	Adult (18+) content sources are disabled by default for privacy and safety. You can adjust content filters anytime in Settings.
+onboarding_page3_nsfw_title	NSFW is Disabled by Default
+onboarding_page3_quick_action	Configure Extension Repos Now
+onboarding_page3_repo_desc	Add third-party extension repository URLs (such as Keiyoushi) in Settings → Sources to browse online catalogs.
+onboarding_page3_repo_title	Tachiyomi / Mihon Repositories
+onboarding_page3_subtitle	Connect to diverse online catalogs via Tachiyomi & Mihon extensions.
+onboarding_page3_title	Sources & Repositories
+onboarding_page4_badge	READY TO READ
+onboarding_page4_feature1	Filter sources by your spoken languages
+onboarding_page4_feature2	Organize favorites into custom categories
+onboarding_page4_feature3	Tap Get Started below to begin your journey
+onboarding_page4_subtitle	Next, you can choose your preferred languages and content categories.
+onboarding_page4_title	You\'re All Set!
+open_in_browser	Open in web browser
+open_telegram_bot	Open the Telegram bot
+open_telegram_bot_summary	Press to open chat with Futon Backup Bot
+overwrite	Overwrite
+packup_creation_failed	Failed to create backup
+password_length_hint	The password must be 4 characters or more
+passwords_mismatch	Mismatching passwords
+percent_format	%d%%
+percent_left	Percent left
+percent_read	Percent read
+popularity	Popularity
+preload_pages	Preload pages
+preparing_search	Preparing search…
+preset_activated	Preset activated
+preset_deactivated	Preset deactivated
+preset_deleted	Preset deleted
+preset_languages	Languages
+preset_name	Preset name
+protect_application	Protect the app
+protect_application_subtitle	Enter a password to start the app with
+protect_application_summary	Ask for password when starting Futon
+queue_all_unread_from_favorites	Download unread from favorites
+read_more	Read more
+reader_chapter_toast	Show chapter change popup
+reader_chapter_toast_summary	Show a pop-up message with a chapter title when it is changed
+reader_info_bar_transparent	Transparent reader information bar
+reader_settings	Reader settings
+reader_slider	Show page switching slider
+recent_manga	Recent
+recently_read_manga	Recently read manga
+recommendation_manga	recommended manga
+remove_downloads_confirm	Remove selected downloads?
+rename	Rename
+repeat_password	Repeat the password
+replace	Replace
+replace_source	Replace source
+repo_already_exists	Repository already exists
+rescan	Rescan
+rescan_completed	Rescan completed
+rescan_started	Rescan started
+restore_backup	Restore from backup
+reverse	Reverse
+runs_on_app_start	Runs when the application starts
+same_content_type	Same content type
+same_content_type_as_current	Same content type as current
+same_language	Same language
+same_language_as_current	Same language as current
+save_manga_confirm	Save selected manga? This may consume traffic and disk space
+saved_filters	Saved filters
+search_disabled_sources	Search through disabled sources
+search_manga	Search manga
+search_results_count	%1$d result
+searching_sources_progress	%1$d/%2$d sources
+select_files	Select Files
+send	Send
+send_backups_telegram	Send backups in Telegram
+server_address	Server address
+share_backup	Share backup
+share_logs	Share logs
+show_reading_indicators_summary	Show percentage read in history and favorites
+show_slider	Show slider
+show_suspicious_content	Show suspicious content
+show_updated	Show updated
+silent	Silent
+simple	Simple
+smart_downloads	Smart Downloads
+smart_downloads_summary	Automatically download next chapters and delete read ones
+source	Source
+source_broken_warning	This manga source has been marked as broken. Some features may not work
+source_disabled	Source disabled
+source_enabled	Source enabled
+source_match_rate_summary	%1$d of %2$d titles matched
+source_presets	Source presets
+source_priority	Source priority
+source_replacement_batch_completed	%1$d titles replaced; %2$d still need a source
+source_replacement_confirm	Move every matched title to %s? Reading progress, favourites and tracking move with them.
+source_replacement_empty_summary	Change the search title or choose a source to search manually
+source_replacement_remaining_checks	%1$d sources · %2$d checks left
+source_replacement_remaining_mix	%1$d ranked sources left · %2$d title checks left
+source_replacement_remaining_replacements	%d replacements left
+source_replacement_remaining_titles	%d titles left
+source_replacement_step_applying	Step 4 of 4 · Applying matched replacements
+source_replacement_step_comparing	Step 1 of 4 · Comparing %d titles
+source_replacement_step_matching	Step 2 of 4 · Matching %s
+source_replacement_step_preparing	Step 1 of 4 · Preparing source comparison…
+source_replacement_step_smart_mix	Step 3 of 4 · Smart mix with %s
+source_replacement_subtitle_batch	%1$s (%2$d/%3$d) • %4$s
+source_replacement_summary_many_message	%d titles were moved to working sources.
+source_replacement_summary_many_title	Replacement complete
+source_replacement_summary_mix	Replacement mix
+source_replacement_summary_one_message	One title was moved to a working source.
+source_replacement_summary_one_title	Source replaced
+source_replacement_summary_replaced	Replaced
+source_replacement_summary_source_item	%1$s · %2$d
+source_replacement_summary_sources	Sources used
+source_replacement_summary_title	Replacement summary
+source_replacement_summary_zero_message	No library entries needed to be changed.
+source_replacement_summary_zero_title	Everything is already set
+source_selected	Source: %s
+sources_catalog	Sources catalog
+sources_count	%1$d source
+sources_disabled	Sources disabled
+sources_reorder_tip	Tap and hold on an item to reorder them
+speed_value	x%.1f
+split_by_translations	Split by translations
+split_by_translations_summary	Show chapters with different translations separately, rather than in one list
+spotlight_switcher_got_it	Got it
+spotlight_switcher_tag	Use this to switch between manga and novels
+suggest_new_sources	Suggest new sources after app update
+suggest_new_sources_summary	Prompt to enable newly added sources after updating the application
+suggestions_disabled_sources_summary	Show suggestions from all manga sources, including disabled ones
+sync	Synchronization
+sync_auth	Login to sync account
+sync_auth_hint	You can sign in into an existing account or create a new one
+sync_host_description	You can use a self-hosted synchronization server or a default one. Don\'t change this if you\'re not sure what you\'re doing.
+sync_settings	Synchronization settings
+sync_title	Sync your data
+tags_blacklist	Blacklisted tags
+tags_blacklist_summary	Exclude manga containing these tags from lists and search results
+telegram_chat_id	Telegram chat ID
+telegram_chat_id_summary	Enter the chat ID where backups should be sent
+telegram_group	Telegram group
+telegram_integration	Telegram integration
+test_parser	Test manga source
+theme_name_custom	Custom
+theme_name_expressive	Expressive (Test)
+to_top	To top
+top_source_matches	Top source matches
+tracker_captcha_recheck	Re-check after solving a CAPTCHA
+tracker_captcha_recheck_summary	Check the manga that needed a CAPTCHA again as soon as it is solved
+translation	Translation
+unstable_feature	Unstable feature
+unstable_feature_summary	This function is experimental. Please make sure you have a backup to avoid data loss
+update_removed	Update removed
+use_fingerprint	Use biometric if available
+use_this_cover	Use this cover
+vibration	Vibration
+voice_search	Voice search
+welcome_text	Please select which content sources you would like to enable. This can also be configured later in settings

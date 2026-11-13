@@ -1,0 +1,134 @@
+about_onboarding	Replay Intro Walkthrough
+about_onboarding_summary	Learn how to use Futon, dual modes, and source extensions
+add_extension_repo_hint	Repository URL
+add_folder	Add Folder
+captcha_auto_solve	Solve CAPTCHAs automatically (experimental)
+captcha_auto_solve_summary	Try to pass Cloudflare checks silently when you open a catalog, a manga or a chapter. It can still be turned off for a single source in its settings
+clear_queue	Clear queue
+crash_reporting	Crash Reporting
+crash_reporting_summary	Send anonymous crash logs to help improve the app. Takes effect after restart.
+create_preset	New preset
+custom_theme_delete	Delete selected theme
+custom_theme_delete_confirm	Delete “%1$s”?
+custom_theme_import	Import theme file
+custom_theme_import_failed	Could not import this theme file
+custom_theme_import_summary	Import an Idle Fantasy compatible Material 3 theme JSON
+custom_theme_imported	Theme imported and applied
+custom_themes	Custom themes
+custom_themes_none	No custom themes imported
+delete_chapter	Delete chapter
+delete_chapter_confirm	Delete chapter \"%1$s\" from local storage?
+delete_downloaded_files	Also delete downloaded files from storage
+directory_inaccessible	This directory is inaccessible. Please check permissions or re-add it.
+disabled_sources	Disabled sources
+download_off_peak	Off-peak downloads
+download_off_peak_end	End time
+download_off_peak_end_description	When downloads must stop
+download_off_peak_start	Start time
+download_off_peak_start_description	When downloads can start
+download_off_peak_summary	Download only during specified hours
+download_only_on_charging_summary	Connect to a power source to start downloads
+download_quota_reached	Storage quota reached. Downloads paused.
+download_scheduling_and_limits	Download scheduling and limits
+download_storage_quota	Storage quota (MB)
+download_storage_quota_summary	Limit total download size. 0 for unlimited. Current oldest chapters will be deleted if exceeded.
+downloads_charging_only	Download only when charging
+downloads_charging_only_summary	Items will only be downloaded when the device is charging
+edit_preset	Edit preset
+error_quota_too_low	Storage quota cannot be lower than current usage
+exclude_nsfw_from_shortcuts	Hide NSFW from shortcuts
+exclude_nsfw_from_shortcuts_summary	Adult manga will not appear in the shortcut menu shown when you long press the app icon
+extension_repo_add_success	Repository added
+extension_repo_remove_confirm	Remove %s?
+extension_repos_empty	No repositories added. Add a repository URL above to browse extensions.
+extension_repos_header	Repositories
+extensions_manager	Extensions manager
+extensions_manager_summary	Manage, install and uninstall extensions from repositories
+failed_to_add_repo	Failed to add repository: %s
+github_download_warning	Downloading from GitHub will bypass security checks performed by IzzyOnDroid and Fdroid.
+github_mirror_ghproxy	GHProxy (mirror.ghproxy.com)
+github_mirror_ghproxy_net	GHProxy.net (ghproxy.net)
+github_mirror_keiyoushi	Keiyoushi
+github_mirror_kkgithub	KKGitHub (raw.kkgithub.com)
+github_mirror_title	GitHub mirror
+has_chapters	Has chapters
+home_background_font	Change Home Screen Background Font
+home_background_font_bold	Bold
+home_background_font_extra_bold	Extra Bold
+home_background_font_light_thin	Light Thin
+invalid_repo_url	Invalid repository URL
+light_novels	Light Novels
+migration_unavailable_no_chapters	Migration unavailable because this result has no chapters
+migration_unavailable_search_in_progress	Migration unavailable while search results are updating
+no_presets_text	Create a preset to quickly switch between different source configurations
+novel_align_justify	Justify
+novel_alignment	Text Alignment
+novel_explore_title	Light Novel Sources
+novel_font_custom	Custom Font (.ttf/.otf)
+novel_font_default	System Default
+novel_font_family	Font Family
+novel_font_monospace	Monospace
+novel_font_sans_serif	Sans-Serif
+novel_font_serif	Serif
+novel_import_file	Import Novel (.epub, .pdf)
+novel_no_novels	No light novels found
+novel_page_margin	Page Margins
+novel_paragraph_margin	Paragraph Spacing
+novel_scroll_continuous	Continuous Scroll
+novel_text_color	Text Color
+novel_theme_custom	Custom
+novel_theme_oled	OLED
+onboarding_page1_badge	FREE & OPEN SOURCE
+onboarding_page1_feature1	Ad-free, fast, and battery-friendly reading
+onboarding_page1_feature2	Offline downloads & background chapter updates
+onboarding_page1_feature3	Cloud backup and reading progress sync
+onboarding_page1_subtitle	Your modern, unified manga and light novel reader for Android.
+onboarding_page1_title	Welcome to Futon
+onboarding_page2_badge	MANGA & LIGHT NOVELS
+onboarding_page2_feature1	Manga reader with Webtoon, paged, and continuous scrolling
+onboarding_page2_feature2	Novel reader with customizable typography, spacing, and fonts
+onboarding_page2_feature3	Seamless one-tap mode switching right on your home screen
+onboarding_page2_subtitle	Switch effortlessly between graphic manga and rich text light novels.
+onboarding_page2_title	Dual Reading Modes
+onboarding_page3_badge	SOURCES & EXTENSIONS
+onboarding_page3_nsfw_desc	Adult (18+) content sources are disabled by default for privacy and safety. You can adjust content filters anytime in Settings.
+onboarding_page3_nsfw_title	NSFW is Disabled by Default
+onboarding_page3_quick_action	Configure Extension Repos Now
+onboarding_page3_repo_desc	Add third-party extension repository URLs (such as Keiyoushi) in Settings → Sources to browse online catalogs.
+onboarding_page3_repo_title	Tachiyomi / Mihon Repositories
+onboarding_page3_subtitle	Connect to diverse online catalogs via Tachiyomi & Mihon extensions.
+onboarding_page3_title	Sources & Repositories
+onboarding_page4_badge	READY TO READ
+onboarding_page4_feature1	Filter sources by your spoken languages
+onboarding_page4_feature2	Organize favorites into custom categories
+onboarding_page4_feature3	Tap Get Started below to begin your journey
+onboarding_page4_subtitle	Next, you can choose your preferred languages and content categories.
+onboarding_page4_title	You\'re All Set!
+preparing_search	Preparing search…
+preset_activated	Preset activated
+preset_deactivated	Preset deactivated
+preset_deleted	Preset deleted
+preset_languages	Languages
+preset_name	Preset name
+queue_all_unread_from_favorites	Download unread from favorites
+remove_downloads_confirm	Remove selected downloads?
+repo_already_exists	Repository already exists
+rescan	Rescan
+rescan_completed	Rescan completed
+rescan_started	Rescan started
+same_content_type	Same content type
+same_language	Same language
+search_results_count	%1$d result
+searching_sources_progress	%1$d/%2$d sources
+select_files	Select Files
+smart_downloads	Smart Downloads
+smart_downloads_summary	Automatically download next chapters and delete read ones
+source_replacement_confirm	Move every matched title to %s? Reading progress, favourites and tracking move with them.
+sources_count	%1$d source
+spotlight_switcher_got_it	Got it
+spotlight_switcher_tag	Use this to switch between manga and novels
+tags_blacklist	Blacklisted tags
+tags_blacklist_summary	Exclude manga containing these tags from lists and search results
+theme_name_custom	Custom
+tracker_captcha_recheck	Re-check after solving a CAPTCHA
+tracker_captcha_recheck_summary	Check the manga that needed a CAPTCHA again as soon as it is solved

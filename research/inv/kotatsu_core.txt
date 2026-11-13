@@ -1,0 +1,584 @@
+_import	Import
+access_denied_403	Access denied (403)
+adblock	Block ads in browser
+adblock_summary	Block advertisement in the built-in browser (beta)
+add_new_category	New category
+add_to_favourites	Favorite this
+added_long_ago	Added long ago
+additional_action_required	Additional action is required
+address	Address
+all_favourites	All favorites
+all_languages	All languages
+all_time	All time
+allow_always	Allow always
+allow_once	Allow once
+alternatives	Alternatives
+anilist	AniList
+any	Any
+app_update_available	A new version of the app is available
+app_version	Version %s
+ask_every_time	Ask every time
+ask_for_dest_dir_every_time	Ask for the destination dir every time
+auth_not_supported_by	Logging in on %s is not supported
+auth_required	Sign in to view this content
+authorization_optional	Authorization (optional)
+authors	Authors
+auto_double_foldable	Auto Two-Page On Foldable
+automatic_scroll	Automatic scroll
+available_pattern	%1$s available
+background	Background
+backup_date_	Backup date: %s
+backup_frequency	Backup creation frequency
+backup_saved	Backup saved
+backups_output_directory	Backups output directory
+badges_in_lists	Badges in lists
+black_dark_theme_summary	Uses less power on AMOLED screens
+blocked_by_server_message	You are blocked by the server. Try to use a different network connection (VPN, Proxy, etc.)
+book_effect	Yellowish background (blue filter)
+bookmark_add	Add bookmark
+bookmark_added	Bookmark added
+bookmark_remove	Remove bookmark
+bookmark_removed	Bookmark removed
+bookmarks	Bookmarks
+bookmarks_removed	Bookmarks removed
+breadcrumbs_separator	<![CDATA[" > "]]>
+brightness	Brightness
+by_name_reverse	Name reversed
+by_rating	Rating
+by_relevance	Relevance
+cancel_all_downloads_confirm	All active downloads will be cancelled, partially downloaded data will be lost
+canceled	Canceled
+cannot_find_available_storage	No available storage
+captcha_required	CAPTCHA required
+captcha_required_message	This source requires solving a captcha to continue
+captcha_required_summary	%s requires a captcha to be resolved to work properly
+captcha_solve	Solve
+categories_delete_confirm	Are you sure you want to delete the selected favorite categories?\nAll manga in it will be lost and this cannot be undone.
+category_hidden_done	This category was hidden from the main screen and is accessible through Menu → Manage categories
+change_cover	Change cover
+changelog	Changelog
+changelog_summary	Changes history for recently released versions
+chapter_d_of_d	Chapter %1$d of %2$d
+chapter_is_missing	The chapter is missing
+chapter_number	Chapter %s
+chapter_selection_hint	You can select chapters to download by long click on item in the chapter list.
+chapter_volume_number	Vol %1$s Chapter %2$s
+chapters_and_pages	Chapters and pages
+chapters_deleted_pattern	Removed %1$s, cleared %2$s
+chapters_empty	No chapters in this manga
+chapters_grid_view	Grid view
+chapters_load_failed	Failed to load chapter list
+chapters_will_removed_background	Chapters will be removed in the background
+check_for_new_chapters	Check for new chapters
+check_for_new_chapters_disabled	Checking for new chapters is disabled
+check_new_chapters_title	Check for new chapters and notify about it
+clear	Clear
+clear_all_history	Clear all history
+clear_browser_data	Clear browser data
+clear_browser_data_summary	Clear browser data such as cache and cookies. Warning: Authorization in manga sources may become invalid
+clear_cookies_summary	Can help in case of some issues. All authorizations will be invalidated
+clear_database_summary	Delete information about manga that is not used
+clear_feed	Clear feed
+clear_network_cache	Clear network cache
+clear_new_chapters_counters	Also clear information about new chapters
+clear_pages_cache	Clear page cache
+clear_search_history	Clear search history
+clear_stats	Clear statistics
+clear_stats_confirm	Do you really want to clear all reading statistics? This action cannot be undone.
+clear_thumbs_cache	Clear thumbnails cache
+clear_updates_feed	Clear updates feed
+collapse	Collapse
+collapse_long_description	Collapse long description
+color_correction	Color correction
+color_correction_apply_text	These settings can be applied globally or only to the current manga. If applied globally, individual settings will not be overridden.
+color_theme	Color scheme
+comics_archive	Comics archive
+comics_archive_import_description	You can select one or more .cbz or .zip files, each file will be recognized as a separate manga.
+compact	Compact
+computing_	Computing…
+config_reset_confirm	Reset settings to default values? This action cannot be undone.
+confirm	Confirm
+confirm_exit	Press "Back" again to exit
+connection_ok	Connection is OK
+content_rating	Content rating
+content_type_comics	Comics
+content_type_hentai	Hentai
+content_type_novel	Novel
+content_type_one_shot	One shot
+contrast	Contrast
+crash_text	Something went wrong. Please submit a bug report to the developers to help us fix it.
+create_backup	Create data backup
+create_category	New category
+create_shortcut	Create shortcut
+crop_pages	Crop pages
+data_not_restored	Data was not restored
+data_not_restored_text	Make sure you have selected the correct backup file
+data_removal	Data removal
+data_restored_success	All data was restored
+data_restored_with_errors	The data was restored, but there are errors
+debug	Debug
+default_mode	Default mode
+default_page_save_dir	Default page save directory
+default_tab	Default tab
+default_webtoon_zoom_out	Default webtoon zoom out
+delete_manga	Delete manga
+delete_old_backups	Delete old backups
+delete_old_backups_summary	Automatically delete old backup files to save storage space
+delete_read_chapters	Delete read chapters
+delete_read_chapters_auto	Delete read chapters automatically
+delete_read_chapters_prompt	This will permanently delete all chapters marked as read from your local storage. You can re-download it later, but the imported chapters may be lost forever
+delete_read_chapters_summary	Delete chapters you have already read from local storage to free up space
+demographic_josei	Josei
+demographic_kodomo	Kodomo
+demographic_seinen	Seinen
+demographic_shoujo	Shoujo
+demographic_shounen	Shounen
+demographics	Demographics
+description	Description
+destination_directory	Destination directory
+detailed_list	Detailed list
+details	Details
+detect_reader_mode	Autodetect reader mode
+detect_reader_mode_summary	Automatically detect if manga is webtoon
+directories	Directories
+disable_battery_optimization_summary	Helps with background updates checks
+disable_battery_optimization_summary_downloads	Might help with getting the download started if you have any issues with it
+disable_connectivity_check	Disable connectivity check
+disable_connectivity_check_summary	Skip the connectivity check in case you have issues with it (e.g. going offline mode even though the network is connected)
+disable_nsfw	Disable NSFW
+disable_nsfw_notifications	Disable NSFW notifications
+disable_nsfw_notifications_summary	Do not show notifications about NSFW manga updates
+discard	Discard
+discord_rpc_description	Reading manga on Futon - a manga reader app
+discord_rpc_summary	Show your reading status on Discord
+discord_token	Discord Token
+discord_token_description	Enter your Discord Token or click %s to get it using browser
+discord_token_hint	Paste your Discord Token here
+discord_token_summary	Enter your Discord Token to enable Rich Presence
+dns_over_https	DNS over HTTPS
+done	Done
+dont_allow	Don\'t allow
+dont_ask_again	Don\'t ask again
+download_added	Download added
+download_cellular_confirm	Allow downloads over cellular network?
+download_default_directory	Default directory for downloading manga
+download_option_all_chapters	All chapters with translation %s
+download_option_all_unread	All unread chapters
+download_option_first_n_chapters	First %s
+download_option_next_unread_n_chapters	Next unread %s
+download_option_whole_manga	The whole manga
+download_over_cellular	Downloading over cellular network
+download_slowdown	Download slowdown
+download_slowdown_summary	Helps avoid blocking your IP address
+download_started	Download started
+downloads_background	Background downloads
+downloads_cancelled	Downloads have been cancelled
+downloads_paused	Downloads have been paused
+downloads_removed	Downloads have been removed
+downloads_resumed	Downloads have been resumed
+downloads_settings_info	You can enable download slowdown for each manga source individually in the source settings if you are having problems with server-side blocking
+downloads_wifi_only	Download only via Wi-Fi
+edit_category	Edit category
+email_password_enter_hint	Enter your email and password to continue
+empty	Empty
+empty_favourite_categories	No favorite categories
+empty_stats_text	There are no statistics for the selected period
+enable	Enable
+enable_pull_gesture_summary	Use pull gesture to switch chapters in webtoon
+enable_pull_gesture_title	Enable pull gesture
+enabled	Enabled
+enabled_d_of_d	%1$d of %2$d on
+enhanced_colors	32-bit color mode
+enhanced_colors_summary	Reduces banding, but may impact performance
+enter_name	Enter name
+enter_password	Enter password
+error_connection_reset	Connection reset by remote host
+error_corrupted_file	Invalid data is returned or file is corrupted
+error_corrupted_zip	Corrupted ZIP archive (%s)
+error_details	Error details
+error_disclaimer_app_outdated	It looks like your version of Futon is out of date. Please install the latest version to get all available fixes.
+error_disclaimer_manga	Try to open manga in a web browser to ensure it is available on its source.
+error_disclaimer_report	You can submit a bug report to the developers. This will help us investigate and fix the issue.
+error_filter_locale_genre_not_supported	Filtering by both genres and locale is not supported by this source
+error_filter_states_genre_not_supported	Filtering by both genres and states is not supported by this source
+error_image_format	Unsupported image format: %s
+error_multiple_genres_not_supported	Filtering by multiple genres is not supported by this manga source
+error_multiple_states_not_supported	Filtering by multiple states is not supported by this manga source
+error_no_data_received	No data was received from server
+error_no_space_left	No space left on device
+error_non_file_uri	The selected path cannot be used because it does not denote a file or directory
+error_not_image	Invalid format: expected image but got %s
+error_occurred	An error occurred
+error_search_not_supported	Search is not supported by this manga source
+exclude_nsfw_from_suggestions	Do not suggest NSFW manga
+exclude_nsfw_from_suggestions_summary	Adult manga will not be shown in suggestions. This option may work inaccurate with some sources
+exit_confirmation	Exit confirmation
+exit_confirmation_summary	Press "Back" twice to exit the app
+expand	Expand
+explore	Explore
+external_source	External/plugin
+external_storage	External storage
+favourites	Favorites
+favourites_categories	Favorite categories
+favourites_category_empty	Empty category
+file_not_found	File not found
+filter_search_warning	This source does not support search with filters. Your filters have been cleared
+find_similar	Find similar
+fix	Fix
+fixed	Fixed successfully
+fixing_manga	Fixing manga
+folder_with_images	Folder with images
+folder_with_images_import_description	You can select a directory with archives or images. Each archive (or subdirectory) will be recognized as a chapter.
+fraction_pattern	%1$d/%2$d
+frequency_every_day	Every day
+frequency_of_check	Frequency of check
+frequency_once_per_month	Once per month
+frequency_once_per_week	Once per week
+frequency_twice_per_month	Twice per month
+fullscreen_mode	Fullscreen mode
+genres	Genres
+genres_exclude	Exclude genres
+genres_search_hint	Start typing the genre name
+globally	Globally
+grid	Grid
+grid_size	Grid size
+hide_from_main_screen	Hide from main screen
+history_cleared	History cleared
+history_is_empty	No history yet
+history_shortcuts	Show recent manga shortcuts
+history_shortcuts_summary	Make recent manga available by long pressing on application icon
+hours	%1$d hour
+hours_minutes_short	%1$d h %2$d m
+hours_short	%d h
+ignore_ssl_errors	Ignore SSL errors
+ignore_ssl_errors_summary	You can disable SSL certificates verification in case you face an SSL-related issues when accessing network resources. This may affect your security. Applicatio
+images_proxy_title	Images optimization proxy
+import_completed	Import completed
+import_completed_hint	You can delete the original file from storage to save space
+import_will_start_soon	Import will start soon
+importing_manga	Importing manga
+in_progress	In progress
+incognito	Incognito
+incognito_for_nsfw	Incognito mode for NSFW manga
+incognito_mode_hint	Your reading progress will not be saved
+incognito_mode_hint_nsfw	This manga may contain adult content. Do you want to use incognito mode?
+internal_storage	Internal storage
+invalid_proxy_configuration	Invalid proxy configuration
+invalid_token	Invalid token: %s
+invalid_value_message	Invalid value
+invert_colors	Invert colors
+items	%1$d item
+items_limit_exceeded	No more items can be added
+keep_screen_on_summary	Do not turn the screen off while you\'re reading manga
+kitsu	Kitsu
+last_2_hours	Last 2 hours
+last_successful_backup	Last successful backup: %s
+less_frequently	Less frequently
+less_than_minute	Less than a minute
+link_to_manga_in_app	Link to manga in Futon
+link_to_manga_on_s	Link to manga on %s
+list_ellipsize_pattern	(+%d)
+list_mode	List mode
+list_options	List options
+local_manga_directories	Local manga directories
+local_manga_processing	Saved manga processing
+local_storage	Local storage
+local_storage_cleanup	Local storage cleanup
+location	Location
+lock_screen_rotation	Lock screen rotation
+logged_in_as	Logged in as %s
+long_ago	Long ago
+long_ago_read	Long time ago read
+long_tap_action	Long tap action
+low_rating	Low rating
+main_screen	Main screen
+main_screen_fab	Show floating Continue button
+main_screen_fab_summary	Allows to continue reading in a one click. This button will not appear in incognito mode or when the history is empty
+main_screen_sections	Main screen sections
+mal	MyAnimeList
+manage	Manage
+manage_categories	Manage categories
+manga_fix_prompt	This function will find alternative sources for the selected manga. The task will take some time and will proceed in the background
+manga_list	Manga list
+manga_migration	Manga migration
+manga_override_hint	These changes will affect how manga is displayed in the app
+manga_replaced	Manga \"%1$s\" (%2$s) replaced with \"%3$s\" (%4$s)
+manga_restricted_description	This manga is not available to read in this source. Try searching for it in other sources or opening it in a browser for more information
+manga_save_location	Downloads folder
+mark_as_completed_prompt	Mark selected manga as completely read?\n\nWarning: current reading progress will be lost.
+mark_as_current	Mark as current
+max_backups_count	Max number of backups
+migrate_confirmation	Manga \"%1$s\" from \"%2$s\" will be replaced with \"%3$s\" from \"%4$s\" in your history and favorites (if present)
+migration_completed	Migration completed
+minutes	%1$d minute
+minutes_seconds_short	%1$d m %2$d s
+minutes_short	%d m
+month	Month
+more_frequently	More frequently
+multiple_cbz_files	Multiple CBZ files
+network_error	Network error
+network_unavailable	Network is not available
+new_chapters_pattern	%1$s: %2$d
+new_version_s	New version: %s
+no_access_to_file	You have no access to this file or directory
+no_bookmarks_summary	You can create bookmark while reading manga
+no_bookmarks_yet	No bookmarks yet
+no_chapters	No chapters
+no_chapters_deleted	No chapters have been deleted
+no_chapters_in_manga	This manga does not contain any chapters
+no_fix_required	No fix required for \"%s\"
+no_manga_sources_found	No available manga sources found by your query
+no_thanks	No thanks
+no_update_available	No updates available
+no_write_permission_to_file	Does not have permission to write a file
+not_available	Not available
+not_found_404	Content not found or removed
+not_in_favorites	Not in favorites
+nothing_found	Nothing found
+nothing_here	There is nothing here
+notifications	Notifications
+notifications_enable	Enable notifications
+notifications_settings	Notifications settings
+on_device	On device
+online_variant	Online variant
+operation_not_supported	This operation is not supported
+options	Options
+order_added	Added
+original_language	Original language
+other_cache	Other cache
+other_manga	Other manga
+other_storage	Other storage
+page_saved	Page saved
+page_switch_timer	The page will switch every ~%d seconds
+pages_animation	Page animation
+pages_cache	Pages cache
+pages_read_s	Pages read: %s
+pages_saved	Pages saved
+pages_saving	Saving pages
+pages_slider	Page switch slider
+percent_string_pattern	%1$s%%
+periodic_backups	Periodic backups
+periodic_backups_enable	Enable periodic backups
+pick_custom_directory	Pick custom directory
+pick_custom_file	Pick custom file
+pick_manga_page	Pick manga page
+pin_navigation_ui	Pin navigation UI
+pin_navigation_ui_summary	Do not hide navigation bar and search view on scroll
+pinned_sources_only	Pinned sources only
+plugin_incompatible	Incompatible plugin or internal error. Make sure you are using the latest version of the plugin and Futon
+plugin_incompatible_with_cause	Plugin error: %s\n Make sure you are using the latest version of the plugin and Futon
+popular_in_hour	Popular this hour
+popular_in_month	Popular this month
+popular_in_week	Popular this week
+popular_in_year	Popular this year
+popular_today	Popular today
+port	Port
+preferred_download_format	Preferred download format
+prefetch_content	Content preloading
+preparing_	Preparing…
+privacy	Privacy
+private_app_directory_warning	This directory with all data will be deleted if you uninstall the application
+proxy	Proxy
+pull_bottom_no_next	No next chapter
+pull_to_next_chapter	Release to open next chapter
+pull_to_prev_chapter	Release to open previous chapter
+pull_top_no_prev	No previous chapter
+queued	Queued
+rating	Rating
+rating_adult	Adult
+rating_safe	Safe
+rating_suggestive	Suggestive
+read_later	Read later
+read_mode	Read mode
+reader_actions	Reader actions
+reader_actions_summary	Configure actions for tappable screen areas
+reader_control_ltr	Ergonomic reader control
+reader_control_ltr_summary	Do not adjust the page switching direction to the reader mode, e. g. pressing the right key always switches to the next page. This option affects only hardware 
+reader_controls_in_bottom_bar	Reader controls in bottom bar
+reader_fullscreen_summary	Hide system status and navigation bars
+reader_info_bar	Show information bar in reader
+reader_info_bar_summary	Show the current time and reading progress at the top of the screen
+reader_info_pattern	Ch. %1$d/%2$d Pg. %3$d/%4$d
+reader_mode_hint	The chosen configuration will be remembered for this manga
+reader_multitask	Open reader in a separate task
+reader_multitask_summary	Allows you to keep multiple readers with different manga open at the same time
+reader_navigation_inverted	Invert navigation controls
+reader_navigation_inverted_summary	Swap the direction of volume button and directional hardware key navigation (left/up/down/right)
+reader_optimize	Reduce memory consumption (beta)
+reader_optimize_summary	Reduce offscreen pages quality to use less memory
+reader_zoom_buttons	Show zoom buttons
+reader_zoom_buttons_summary	Whether to show zoom control buttons in the bottom right corner
+reading_s	Reading %s
+reading_stats	Reading statistics
+reading_time_estimation	Show estimated reading time
+reading_time_estimation_summary	The time estimation value may be inaccurate
+recent_queries	Recent queries
+recent_sources	Recent sources
+recently_added	Recently added
+related_manga	Related manga
+related_manga_summary	Show a list of related manga. In some cases it may be inaccurate or missing
+remote_sources	Manga sources
+removal_completed	Removal completed
+remove_completed	Remove completed
+remove_completed_downloads_confirm	Your downloads history will be permanently deleted. No downloaded files will be affected
+remove_from_history	Remove from history
+removed_from_favourites	Removed from favorites
+removed_from_history	Removed from history
+reorder	Reorder
+report	Report
+reset_filter	Reset filter
+restore_summary	Restore previously created backup
+right_to_left	Right-to-left
+rotate_screen	Rotate screen
+rpc_skip_nsfw_summary	Do not use RPC for adult content
+save_filter	Save filter
+save_manga	Save manga
+save_page	Save page
+saved_manga	Saved manga
+scale_mode	Scale mode
+screen_orientation	Screen orientation
+screen_rotation_locked	Screen rotation has been locked
+screen_rotation_unlocked	Screen rotation has been unlocked
+screenshots_allow	Allow
+screenshots_block_all	Always block
+screenshots_block_incognito	Block when incognito mode
+screenshots_block_nsfw	Block on NSFW
+screenshots_policy	Screenshot policy
+scrobbler_auth_intro	Sign in to set up integration with %s. This will allow you to track your manga reading progress and status
+scrobbler_auth_required	Sign in to %s to continue
+scrobbling_empty_hint	To track reading progress, select Menu → Track on the manga details screen.
+search_chapters	Find chapter
+search_everywhere	Search everywhere
+search_hint	Enter manga title, genre or source name
+search_history_cleared	Cleared
+search_on_s	Search on %s
+search_results	Search results
+search_suggestions	Search suggestions
+select_range	Select range
+server_error	Server side error (%1$d). Please try again later
+settings_apply_restart_required	Please restart the application to apply these changes
+sfw	SFW
+share_image	Share image
+share_s	Share %s
+shikimori	Shikimori
+show	Show
+show_all	Show all
+show_floating_control_button	Show floating control button
+show_in_grid_view	Show in grid view
+show_labels_in_navbar	Show labels in navigation bar
+show_menu	Show menu
+show_notification_new_chapters_off	You will not receive notifications but new chapters will be highlighted in the lists
+show_notification_new_chapters_on	You will receive notifications about updates of manga you are reading
+show_on_shelf	Show on the Shelf
+show_pages_numbers	Numbered pages
+show_pages_numbers_summary	Show page numbers in bottom corner
+show_pages_thumbs	Show pages thumbnails
+show_pages_thumbs_summary	Enable the \"Pages\" tab on the details screen
+show_quick_filters	Show quick filters
+show_quick_filters_summary	Provides the ability to filter manga lists by certain parameters
+show_reading_indicators	Show reading progress indicators
+single_cbz_file	Single CBZ file
+size_s	Size: %s
+sort_order	Sorting order
+source_code	Source code
+source_pinned	Source pinned
+source_unpinned	Source unpinned
+sources_pinned	Sources pinned
+sources_unpinned	Sources unpinned
+speed	Speed
+standard	Standard
+start_download	Start download
+state	State
+stats_cleared	Statistics cleared
+status_planned	Planned
+status_re_reading	Re-reading
+storage_and_network	Storage and network
+stuck	Stuck
+suggested_queries	Suggested queries
+suggestion_manga	Suggestion: %s
+suggestions_enable	Enable suggestions
+suggestions_enable_prompt	Do you want to receive personalized manga suggestions?
+suggestions_excluded_genres	Exclude genres
+suggestions_excluded_genres_summary	Specify genres that you do not want to see in the suggestions
+suggestions_info	All data is only analyzed locally on this device and never sent anywhere.
+suggestions_notifications_summary	Sometimes show notifications with suggested manga
+suggestions_summary	Suggest manga based on your preferences
+suggestions_unavailable_text	Suggestions feature is disabled
+suggestions_updating	Suggestions updating
+suggestions_wifi_only_summary	Do not update suggestions using metered network connections
+switch_pages	Switch pages
+switch_pages_volume_buttons	Enable volume buttons
+switch_pages_volume_buttons_summary	Use volume buttons for switching pages
+tap_action	Tap action
+tap_to_try_again	Tap to try again
+test_connection	Test connection
+text_clear_cookies_prompt	You will be logged out from all sources
+text_clear_search_history_prompt	Remove all recent search queries permanently?
+text_clear_updates_feed_prompt	Clear all update history permanently?
+text_delete_local_manga	Permanently delete \"%s\" from device?
+text_delete_local_manga_batch	Delete selected items from device permanently?
+text_downloads_list_holder	You don\'t have any downloads
+text_empty_holder_primary	It\'s kind of empty here…
+text_empty_holder_secondary_filtered	There are no manga matching the filters you selected
+text_feed_holder	New chapters of what you are reading are shown here
+text_file_not_supported	Either pick a ZIP or CBZ file.
+text_file_sizes	B|kB|MB|GB|TB
+text_history_holder_primary	What you read will be displayed here
+text_history_holder_secondary	Find what to read in the «Explore» section
+text_local_holder_primary	Save something first
+text_local_holder_secondary	Save something from an online catalog or import it from a file.
+text_search_holder_secondary	Try to reformulate the query.
+text_suggestion_holder	Start reading manga and you will get personalized suggestions
+text_unsaved_changes_prompt	Save or discard unsaved changes\?
+theme_name_asuka	Asuka
+theme_name_itsuka	Itsuka
+theme_name_kanade	Kanade
+theme_name_mamimi	Mamimi
+theme_name_miku	Miku
+theme_name_mion	Mion
+theme_name_rikka	Rikka
+theme_name_sakura	Sakura
+theme_name_totoro	Totoro
+this_manga	This manga
+this_month	This month
+three_months	Three months
+toggle_ui	Show/hide UI
+too_many_requests_message	Too many requests. Try again later
+too_many_requests_message_retry	Too many requests. Try again after %s
+track_sources	Look for updates
+tracker_debug_info	Checking for new chapters log
+tracker_debug_info_summary	Debug information about background checks for new chapters
+tracker_warning	Some devices have different system behavior, which may break background tasks.
+tracker_wifi_only_summary	Do not check for new chapters using metered network connections
+try_again	Try again
+two_page_scroll_sensitivity	Two-Page Scroll Sensitivity
+unavailable	Unavailable
+unnamed_chapter	Unnamed chapter
+unpopular	Unpopular
+unsupported_backup_message	Please select a proper Futon backup file
+unsupported_source	This manga source is not supported
+updated	Updated
+updated_long_ago	Updated long ago
+updates_feed_cleared	Cleared
+use_default_cover	Use default cover
+use_two_pages_landscape	Use two pages layout on landscape orientation (beta)
+user_agent	UserAgent header
+user_manual	User manual
+various_languages	Various languages
+volume_	Volume %d
+volume_unknown	Unknown volume
+web_view_unavailable	WebView not available: check if WebView provider is installed
+webtoon_gaps	Gaps in webtoon mode
+webtoon_gaps_summary	Show vertical gaps between pages in webtoon mode
+webtoon_zoom	Webtoon zoom
+webtoon_zoom_summary	Allow zoom in gesture in webtoon mode
+week	Week
+wrong_password	Wrong password
+year	Year
+years	Years
+you_have_not_favourites_yet	No favorites yet
+zoom_in	Zoom in
+zoom_mode_fit_center	Fit center
+zoom_mode_fit_height	Fit to height
+zoom_mode_fit_width	Fit to width
+zoom_mode_keep_start	Keep at start

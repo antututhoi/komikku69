@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,396  t='' d='' id=
+[    ]  194,375  t='Storage location' d='' id=
+[    ]  287,433  t='/storage/emulated/0/Documents' d='' id=
+[    ]  533,664  t='Used for automatic backups, chapter downloads, and local source.' d='' id=
+[    ]  202,790  t='Backup and restore' d='' id=
+[C   ]  540,943  t='' d='' id=
+[Ck  ]  290,943  t='' d='' id=
+[    ]  291,943  t='Create backup' d='' id=
+[Ck  ]  788,943  t='' d='' id=
+[    ]  788,943  t='Restore backup' d='' id=
+[C   ]  540,1148 t='' d='' id=
+[    ]  275,1127 t='Import LNReader backup' d='' id=
+[    ]  411,1185 t='Import novels from an LNReader backup file (.zip)' d='' id=
+[C   ]  540,1348 t='' d='' id=
+[    ]  309,1327 t='Automatic backup frequency' d='' id=
+[    ]  152,1385 t='Every 12 hours' d='' id=
+[    ]  540,1700 t='You should keep copies of backups in other places as well. Backups may contain s' d='' id=
+[    ]  161,1942 t='Storage usage' d='' id=
+[C   ]  540,2106 t='' d='' id=
+[    ]  214,2058 t='/storage/emulated/0' d='' id=
+[    ]  296,2160 t='Available: 4.63 GB / Total: 6.23 GB' d='' id=
+[C   ]  540,2311 t='' d='' id=
+[    ]  227,2302 t='Clear chapter cache' d='' id=
+[    ]  121,2360 t='Used: 31 B' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  364,212  t='Data and storage' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

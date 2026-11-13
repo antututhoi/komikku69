@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,72   t='' d='' id=
+[    ]  540,51   t='Delete non-existent, partially downloaded, and read chapter folders' d='' id=summary
+[C   ]  540,215  t='' d='' id=
+[    ]  235,215  t='Clear WebView data' d='' id=title
+[C   ]  540,382  t='' d='' id=
+[    ]  187,356  t='Clear database' d='' id=title
+[    ]  531,410  t='Delete history for entries that are not saved in your library' d='' id=summary
+[    ]  540,566  t='Network' d='' id=title
+[C   ]  540,683  t='' d='' id=
+[    ]  173,683  t='Clear cookies' d='' id=title
+[C   ]  540,850  t='' d='' id=
+[    ]  204,824  t='DNS over HTTPS' d='' id=title
+[    ]  116,878  t='Disabled' d='' id=summary
+[C   ]  540,1095 t='' d='' id=
+[    ]  279,1016 t='Default user agent string' d='' id=title
+[    ]  540,1123 t='Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome' d='' id=summary
+[    ]  540,1332 t='Extensions' d='' id=title
+[C   ]  540,1475 t='' d='' id=
+[    ]  121,1449 t='Installer' d='' id=title
+[    ]  103,1503 t='Default' d='' id=summary
+[C   ]  540,1641 t='' d='' id=
+[    ]  388,1641 t='Revoke trusted unknown extensions' d='' id=title
+[    ]  540,1800 t='Library' d='' id=title
+[C   ]  540,1969 t='' d='' id=
+[    ]  280,1917 t='Refresh library metadata' d='' id=title
+[    ]  540,1998 t='Updates covers, genres, description and entries status information' d='' id=summary
+[C   ]  540,2214 t='' d='' id=
+[    ]  297,2162 t='Refresh tracking metadata' d='' id=title
+[    ]  540,2243 t='Updates status, score and last chapter read from the tracking services' d='' id=summary

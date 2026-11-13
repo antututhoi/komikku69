@@ -1,0 +1,44 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[S   ]  540,114  t='' d='' id=theme_recycler_dark
+[CL  ]  155,114  t='' d='' id=
+[    ]  155,186  t='A Calmer You (Dynamic)' d='' id=theme_name_text
+[CL  ]  444,114  t='' d='' id=
+[    ]  444,186  t='Dark' d='' id=theme_name_text
+[CL  ]  733,114  t='' d='' id=
+[    ]  733,186  t='Midnight Dusk' d='' id=theme_name_text
+[CL  ]  979,114  t='' d='' id=
+[    ]  987,186  t='Chocolate Strawberries' d='' id=theme_name_text
+[C   ]  540,298  t='' d='' id=
+[    ]  247,298  t='Follow system theme' d='' id=title
+[xk  ]  969,298  t='' d='' id=switchWidget
+[C   ]  540,439  t='' d='' id=
+[    ]  252,439  t='Pure black dark mode' d='' id=title
+[k   ]  969,439  t='' d='' id=switchWidget
+[C   ]  540,659  t='' d='' id=
+[    ]  210,580  t='Expanded toolbar' d='' id=title
+[    ]  450,687  t='Show a larger, expanded toolbar at the top of most pages (does not show on small' d='' id=summary
+[xk  ]  969,659  t='' d='' id=switchWidget
+[    ]  540,896  t='Details page' d='' id=title
+[C   ]  540,1013 t='' d='' id=
+[    ]  339,1013 t='Theme buttons based on cover' d='' id=title
+[xk  ]  969,1013 t='' d='' id=switchWidget
+[C   ]  540,1206 t='' d='' id=
+[    ]  334,1154 t='Render images in descriptions' d='' id=title
+[    ]  450,1235 t='Show images embedded in Markdown-formatted descriptions' d='' id=summary
+[xk  ]  969,1206 t='' d='' id=switchWidget
+[C   ]  540,1478 t='' d='' id=
+[    ]  266,1399 t='Show missing chapters' d='' id=title
+[    ]  450,1506 t='Show a divider for missing chapters in the chapter list, and a subtitle beside t' d='' id=summary
+[xk  ]  969,1478 t='' d='' id=switchWidget
+[    ]  540,1715 t='Navigation' d='' id=title
+[C   ]  540,1858 t='' d='' id=
+[    ]  316,1832 t='Auto-hide bottom navigation' d='' id=title
+[    ]  219,1886 t='Hides when scrolling' d='' id=summary
+[xk  ]  969,1858 t='' d='' id=switchWidget
+[C   ]  540,2050 t='' d='' id=
+[    ]  337,2024 t='Side navigation icon alignment' d='' id=title
+[    ]   98,2078 t='Center' d='' id=summary
+[C   ]  540,2242 t='' d='' id=
+[    ]  230,2216 t='Use side navigation' d='' id=title
+[    ]  182,2270 t='Default behavior' d='' id=summary
+[    ]  613,2390 t='By default, side navigation is used for certain phones and small tablets when in' d='' id=summary

@@ -1,0 +1,39 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,276  t='' d='' id=
+[S   ]  540,255  t='' d='' id=
+[C   ]  191,186  t='' d='' id=
+[    ]  191,458  t='Default' d='' id=
+[C   ]  511,186  t='' d='' id=
+[    ]  511,458  t='Dynamic' d='' id=
+[C   ]  831,186  t='' d='' id=
+[    ]  831,458  t='Catppuccin' d='' id=
+[C   ] 1046,186  t='' d='' id=
+[    ] 1041,458  t='Green Apple' d='' id=
+[C   ]  540,632  t='' d='' id=
+[    ]  244,632  t='Pure black dark mode' d='' id=
+[    ]  103,806  t='Display' d='' id=
+[C   ]  540,933  t='' d='' id=
+[    ]  170,933  t='App language' d='' id=
+[C   ]  540,1112 t='' d='' id=
+[    ]  124,1091 t='Tablet UI' d='' id=
+[    ]   77,1149 t='Auto' d='' id=
+[C   ]  540,1312 t='' d='' id=
+[    ]  154,1291 t='Date format' d='' id=
+[    ]  180,1349 t='Default (11/13/26)' d='' id=
+[C   ]  540,1512 t='' d='' id=
+[    ]  233,1491 t='Relative timestamps' d='' id=
+[    ]  261,1549 t='"Today" instead of "11/13/26"' d='' id=
+[C   ]  540,1691 t='' d='' id=
+[    ]  393,1691 t='Render images in manga descriptions' d='' id=
+[    ]  154,1865 t='Library layout' d='' id=
+[C   ]  540,2013 t='' d='' id=
+[    ]  200,1992 t='Combined library' d='' id=
+[    ]  409,2050 t='Merge Novels and Manga into a single Library tab' d='' id=
+[C   ]  540,2234 t='' d='' id=
+[    ]  249,2192 t='Hide manga-related UI' d='' id=
+[    ]  429,2271 t='Hide manga library tab, manga browse tabs, and manga settings.' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  299,212  t='Appearance' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Reset to defaults' id=

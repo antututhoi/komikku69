@@ -1,0 +1,38 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,17   t='' d='' id=
+[C   ]  540,155  t='' d='' id=
+[    ]  257,113  t='Database maintenance' d='' id=
+[    ]  588,192  t='ANALYZE, REINDEX, and VACUUM. VACUUM temporarily needs free space equal to the d' d='' id=
+[C   ]  540,376  t='' d='' id=
+[    ]  261,355  t='Normalize manga URLs' d='' id=
+[    ]  477,413  t='Removes trailing slashes from all manga URLs in database' d='' id=
+[C   ]  540,576  t='' d='' id=
+[    ]  320,555  t='Remove duplicate URL entries' d='' id=
+[    ]  497,613  t='Unfavorite manga that would conflict after URL normalization' d='' id=
+[C   ]  540,776  t='' d='' id=
+[    ]  243,755  t='Delete all translations' d='' id=
+[    ]  306,813  t='Deletes all downloaded translations' d='' id=
+[C   ]  540,976  t='' d='' id=
+[    ]  366,955  t='Migrate quotes to portable storage' d='' id=
+[    ]  420,1013 t='Move id-based quote files to the source/title layout' d='' id=
+[C   ]  540,1197 t='' d='' id=
+[    ]  412,1155 t='Migrate translations to portable storage' d='' id=
+[    ]  540,1234 t='Move id-based translation files to the source/novel/language layout' d='' id=
+[C   ]  540,1439 t='' d='' id=
+[    ]  187,1397 t='Clear temp files' d='' id=
+[    ]  540,1476 t='Clears temporary files from app cache (epub exports, network cache, etc.)' d='' id=
+[C   ]  540,1660 t='' d='' id=
+[    ]  226,1639 t='Bulk remove by URL' d='' id=
+[    ]  459,1697 t='Remove or move multiple entries from library by URL list' d='' id=
+[C   ]  540,1860 t='' d='' id=
+[    ]  184,1839 t='Normalize tags' d='' id=
+[    ]  516,1897 t='Trims whitespace and removes duplicate tags (case-insensitive)' d='' id=
+[C   ]  540,2081 t='' d='' id=
+[    ]  378,2039 t='Normalize tags when updating entry' d='' id=
+[    ]  429,2118 t='Apply the same normalization automatically when entry details are fetched/update' d='' id=
+[C   ]  540,2301 t='' d='' id=
+[    ]  270,2281 t='Reset settings to default' d='' id=
+[    ]  540,2359 t='Resets all app settings to their default values (library data is preserved)' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

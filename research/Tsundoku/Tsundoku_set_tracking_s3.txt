@@ -1,0 +1,37 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,33   t='' d='' id=
+[    ]  415,12   t='Keep reading list status in sync with NovelUpdates' d='' id=
+[C   ]  540,167  t='' d='' id=
+[    ]  236,146  t='Custom list mapping' d='' id=
+[    ]  412,204  t='Map statuses to custom NovelUpdates lists' d='' id=
+[C   ]  540,367  t='' d='' id=
+[    ]  252,346  t='Configure list mapping' d='' id=
+[    ]  328,404  t='Choose which list each status maps to' d='' id=
+[C   ]  540,551  t='' d='' id=
+[    ]  105,551  t='' d='NovelList' id=
+[    ]  299,551  t='NovelList' d='' id=
+[C   ]  540,756  t='' d='' id=
+[    ]  371,714  t='Mark chapters as read on NovelList' d='' id=
+[    ]  429,793  t='Automatically mark chapters as read when you read them in the app' d='' id=
+[C   ]  540,977  t='' d='' id=
+[    ]  195,956  t='Sync reading list' d='' id=
+[    ]  382,1014 t='Keep reading list status in sync with NovelList' d='' id=
+[C   ]  540,1161 t='' d='' id=
+[    ]  105,1161 t='' d='RanobeDB' id=
+[    ]  308,1161 t='RanobeDB' d='' id=
+[C   ]  540,1366 t='' d='' id=
+[    ]  382,1324 t='Mark chapters as read on RanobeDB' d='' id=
+[    ]  429,1403 t='Automatically mark chapters/volumes as read when you read them in the app' d='' id=
+[C   ]  540,1587 t='' d='' id=
+[    ]  195,1566 t='Sync reading list' d='' id=
+[    ]  388,1624 t='Keep reading list status in sync with RanobeDB' d='' id=
+[    ]  540,1876 t='Login via WebView. Cookies will be automatically extracted after successful logi' d='' id=
+[    ]  237,2055 t='Source-defined trackers' d='' id=
+[C   ]  540,2224 t='' d='' id=
+[    ]  349,2182 t='Run source trackers on migration' d='' id=
+[    ]  429,2261 t='Fire source-defined tracker events when migrating or quick-migrating an entry' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  256,212  t='Tracking' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

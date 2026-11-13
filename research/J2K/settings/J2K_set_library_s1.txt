@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,90   t='' d='' id=
+[    ]  232,17   t='Search suggestions' d='' id=title
+[    ]  450,86   t='Search tips will show up periodically. Long press the suggestion to search it.' d='' id=summary
+[k   ]  969,60   t='' d='' id=switchWidget
+[C   ]  540,276  t='' d='' id=
+[    ]  190,250  t='Display options' d='' id=title
+[    ]  426,304  t='Can also be found by expanding library filters' d='' id=summary
+[C   ]  540,468  t='' d='' id=
+[    ]  389,442  t='Mark duplicate read chapter as read' d='' id=title
+[    ]   92,496  t='Never' d='' id=summary
+[    ]  540,652  t='Categories' d='' id=title
+[C   ]  540,795  t='' d='' id=
+[    ]  187,769  t='Edit categories' d='' id=title
+[    ]  148,823  t='2 categories' d='' id=summary
+[C   ]  540,987  t='' d='' id=
+[    ]  201,961  t='Default category' d='' id=title
+[    ]  125,1015 t='Last used' d='' id=summary
+[    ]  540,1171 t='Global updates' d='' id=title
+[C   ]  540,1314 t='' d='' id=
+[    ]  282,1288 t='Library update frequency' d='' id=title
+[    ]   84,1342 t='Daily' d='' id=summary
+[C   ]  540,1506 t='' d='' id=
+[    ]  222,1480 t='Device restrictions' d='' id=title
+[    ]  196,1534 t='Restrictions: Wi-Fi' d='' id=summary
+[C   ]  540,1724 t='' d='' id=
+[    ]  227,1672 t='Skip updating titles' d='' id=title
+[    ]  540,1753 t='With unread chapter(s), That haven't been started, With "Completed" status' d='' id=summary
+[C   ]  540,1969 t='' d='' id=
+[    ]  147,1917 t='Categories' d='' id=title
+[    ]  163,1998 t='Include: All
+Exclude: None' d='' id=summary
+[C   ]  540,2214 t='' d='' id=
+[    ]  319,2162 t='Automatically refresh covers' d='' id=title
+[    ]  450,2243 t='Refresh covers in library as well when updating library' d='' id=summary
+[xk  ]  969,2214 t='' d='' id=switchWidget

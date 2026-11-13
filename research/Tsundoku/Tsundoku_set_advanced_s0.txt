@@ -1,0 +1,29 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,396  t='' d='' id=
+[    ]  197,375  t='Share crash logs' d='' id=
+[    ]  457,433  t='Saves error logs to a file for sharing with the developers' d='' id=
+[C   ]  540,617  t='' d='' id=
+[    ]  194,575  t='Verbose logging' d='' id=
+[    ]  429,654  t='Print verbose logs to system log (reduces app performance)' d='' id=
+[C   ]  540,859  t='' d='' id=
+[    ]  379,817  t='Show source name in manga details' d='' id=
+[    ]  429,896  t='Display source name under status on manga details screen' d='' id=
+[C   ]  540,1201 t='' d='' id=
+[    ]  429,1096 t='Experimental: paginate library (reduce memory)' d='' id=
+[    ]  429,1275 t='Load each category a page at a time (default 300, newest first) and load more as' d='' id=
+[C   ]  540,1501 t='' d='' id=
+[    ]  143,1501 t='Debug info' d='' id=
+[C   ]  540,1659 t='' d='' id=
+[    ]  207,1659 t='Onboarding guide' d='' id=
+[C   ]  540,1817 t='' d='' id=
+[    ]  239,1817 t='Manage notifications' d='' id=
+[    ]  205,1959 t='Background activity' d='' id=
+[C   ]  540,2107 t='' d='' id=
+[    ]  304,2086 t='Disable battery optimization' d='' id=
+[    ]  423,2144 t='Helps with background library updates and backups' d='' id=
+[C   ]  540,2303 t='' d='' id=
+[    ]  199,2286 t='Don't kill my app!' d='' id=
+[    ]  540,2361 t='Some manufacturers have additional app restrictions that kill background service' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

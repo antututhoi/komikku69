@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=recycler_view
+[C   ]  540,118  t='' d='' id=
+[    ]  270,18   t='Check for beta releases' d='' id=title
+[    ]  450,115  t='Try new features before they're officially released. Beta releases may be unstab' d='' id=summary
+[k   ]  969,87   t='' d='' id=switchWidget
+[    ]  540,324  t='Data Management' d='' id=title
+[C   ]  540,467  t='' d='' id=
+[    ]  234,441  t='Clear chapter cache' d='' id=title
+[    ]  166,495  t='Used: 5.10 MB' d='' id=summary
+[C   ]  540,712  t='' d='' id=
+[    ]  314,633  t='Refresh the download cache' d='' id=title
+[    ]  540,740  t='This will force the download cache to recalculate. Useful if you modified downlo' d='' id=summary
+[C   ]  540,1010 t='' d='' id=
+[    ]  270,931  t='Clean up cached covers' d='' id=title
+[    ]  540,1038 t='Delete old and unused cached covers of entries in your library that has been upd' d='' id=summary
+[C   ]  540,1281 t='' d='' id=
+[    ]  362,1229 t='Clear cached covers not in library' d='' id=title
+[    ]  477,1310 t='Delete all covers cached that are not in your library 
+Currently using: 0 B' d='' id=summary
+[C   ]  540,1526 t='' d='' id=
+[    ]  338,1474 t='Clean up downloaded chapters' d='' id=title
+[    ]  540,1555 t='Delete non-existent, partially downloaded, and read chapter folders' d='' id=summary
+[C   ]  540,1719 t='' d='' id=
+[    ]  235,1719 t='Clear WebView data' d='' id=title
+[C   ]  540,1886 t='' d='' id=
+[    ]  187,1860 t='Clear database' d='' id=title
+[    ]  531,1914 t='Delete history for entries that are not saved in your library' d='' id=summary
+[    ]  540,2070 t='Network' d='' id=title
+[C   ]  540,2187 t='' d='' id=
+[    ]  173,2187 t='Clear cookies' d='' id=title
+[C   ]  540,2329 t='' d='' id=
+[    ]  204,2328 t='DNS over HTTPS' d='' id=title
+[    ]  116,2378 t='Disabled' d='' id=summary
