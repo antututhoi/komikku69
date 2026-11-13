@@ -215,3 +215,14 @@ back
 sleep 1
 back
 sleep 2
+=== F66332
+tapt ^Catalog$
+sleep 4
+tapt ^Remove English$
+sleep 2
+tapt ^Various languages$
+sleep 3
+tapt ^Search$
+sleep 1
+text MangaDex
+sleep 3
