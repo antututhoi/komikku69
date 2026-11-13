@@ -3266,3 +3266,6 @@ sleep 1
 tap 540 250
 sleep 2
 shot M_rd_tapzone_Default
+=== M46134
+tap 540 1200
+sleep 1
