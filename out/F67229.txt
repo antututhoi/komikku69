@@ -1,0 +1,4 @@
+# block F67229  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.main.ui.MainActivity  time: 11:05:02
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,1311 t='What you read will be displayed here' d='' id=textPrimary
+[    ]  539,1454 t='Find what to read in the «Explore» section' d='' id=textSecondary
