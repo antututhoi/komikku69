@@ -237,3 +237,9 @@ sleep 1
 tapt ^Page layout$
 sleep 2
 shot J_reader_page_layout_menu
+=== J51304
+back
+sleep 1
+tapt ^View chapters$
+sleep 2
+shot J_reader_chapters_sheet
