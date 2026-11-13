@@ -1,0 +1,37 @@
+# block D69251  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:27:45
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Settings' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[C   ]  980,209  t='' d='Search' id=action_search
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,369  t='' d='' id=
+[    ]  418,336  t='Google Drive sync' d='' id=
+[    ]  499,384  t='Sign in with Google, Background sync' d='' id=
+[C   ]  540,543  t='' d='' id=
+[    ]  353,524  t='Appearance' d='' id=
+[    ]  433,572  t='Theme, List mode, Language' d='' id=
+[C   ]  540,731  t='' d='' id=
+[    ]  339,712  t='Extensions' d='' id=
+[    ]  561,760  t='Manage extensions, NSFW filter, Sorting order' d='' id=
+[C   ]  540,919  t='' d='' id=
+[    ]  309,900  t='Reading' d='' id=
+[    ]  507,948  t='Read mode, Scale mode, Switch pages' d='' id=
+[C   ]  540,1107 t='' d='' id=
+[    ]  449,1088 t='Storage and network' d='' id=
+[    ]  528,1136 t='Storage usage, Proxy, Content preloading' d='' id=
+[C   ]  540,1295 t='' d='' id=
+[    ]  341,1276 t='Downloads' d='' id=
+[    ]  534,1324 t='Downloads folder, Download only via Wi-Fi' d='' id=
+[C   ]  540,1483 t='' d='' id=
+[    ]  433,1464 t='Backup and restore' d='' id=
+[    ]  337,1512 t='Restore backup' d='' id=
+[C   ]  540,1671 t='' d='' id=
+[    ]  478,1652 t='Check for new chapters' d='' id=
+[    ]  514,1700 t='Look for updates, Notifications settings' d='' id=
+[C   ]  540,1859 t='' d='' id=
+[    ]  313,1840 t='Services' d='' id=
+[    ]  383,1888 t='Suggestions, Tracking' d='' id=
+[C   ]  540,2047 t='' d='' id=
+[    ]  287,2028 t='About' d='' id=
+[    ]  249,2076 t='1.1.2' d='' id=
+[    ]  578,2218 t='Enjoying the app? Star it on GitHub — it helps other readers find it.' d='' id=
