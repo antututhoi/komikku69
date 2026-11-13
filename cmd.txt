@@ -1074,3 +1074,5 @@ up
 up
 tapt ^Anki$
 sleep 2
+=== Chimahon_set_anki_s0
+sleep 1
