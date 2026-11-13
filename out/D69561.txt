@@ -1,0 +1,41 @@
+# block D69561  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:34:51
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Appearance' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,345  t='' d='' id=
+[    ]  538,332  t='Allows to continue reading in a one click. This button will not appear in incogn' d='' id=
+[Cxk ]  942,273  t='' d='' id=
+[C   ]  540,495  t='' d='' id=
+[    ]  536,495  t='Show labels in navigation bar' d='' id=
+[Cxk ]  942,496  t='' d='' id=
+[C   ]  540,685  t='' d='' id=
+[    ]  500,645  t='Use legacy navigation bar' d='' id=
+[    ]  538,713  t='Show Android's default bottom navigation style' d='' id=
+[Ck  ]  942,685  t='' d='' id=
+[C   ]  540,876  t='' d='' id=
+[    ]  398,836  t='Blur behind bars' d='' id=
+[    ]  538,904  t='Blur the content behind the status bar and the navigation bar' d='' id=
+[Cxk ]  942,876  t='' d='' id=
+[C   ]  540,1067 t='' d='' id=
+[    ]  402,1027 t='Pin navigation UI' d='' id=
+[    ]  538,1095 t='Do not hide navigation bar and search view on scroll' d='' id=
+[Cxk ]  942,1067 t='' d='' id=
+[C   ]  540,1256 t='' d='' id=
+[    ]  409,1237 t='Exit confirmation' d='' id=
+[    ]  457,1285 t='Press Back twice to exit the app' d='' id=
+[Ck  ]  942,1257 t='' d='' id=
+[C   ]  540,1477 t='' d='' id=
+[    ]  538,1437 t='Show recent manga shortcuts' d='' id=
+[    ]  538,1536 t='Make recent manga available by long pressing on application icon' d='' id=
+[Cxk ]  942,1477 t='' d='' id=
+[    ]  151,1674 t='PRIVACY' d='' id=
+[C   ]  540,1809 t='' d='' id=
+[    ]  382,1769 t='Require unlock' d='' id=
+[    ]  538,1837 t='Lock the app with device authentication or a custom PIN' d='' id=
+[Ck  ]  942,1809 t='' d='' id=
+[    ]  440,1979 t='Require unlock after' d='' id=
+[    ]  272,2027 t='Instant' d='' id=
+[C   ]  540,2186 t='' d='' id=
+[    ]  415,2167 t='Screenshot policy' d='' id=
+[    ]  261,2215 t='Allow' d='' id=
