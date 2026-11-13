@@ -1020,3 +1020,26 @@ shot rsheet
 host u=$(curl -s 'https://api.github.com/repos/jobobby04/TachiyomiSYPreview/releases?per_page=5' | jq -r '[.[0].assets[]|select(.name|endswith(".apk"))]|(map(select(.name|test("x86_64")))+map(select(.name|test("universal")))+.)[0].browser_download_url'); echo $u; curl -sL "$u" -o /tmp/sy.apk && adb install -r -g /tmp/sy.apk
 stop app.mihon
 sh pm list packages -3
+=== s002
+launch eu.kanade.tachiyomi.sy
+sleep 3
+tapt ^Cancel$
+tapt ^OK$
+sleep 1
+tapt ^Next$
+tapt ^Select a folder$
+sleep 3
+tapt ^Pictures$
+sleep 2
+tapt USE THIS FOLDER
+sleep 2
+tapt ^ALLOW$
+sleep 2
+tapt ^Next$
+sleep 1
+tap 887 1149
+sleep 2
+tapt ^Allow$
+sleep 1
+tapt ^Next$
+sleep 1
