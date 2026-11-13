@@ -1,2 +1,6 @@
 === k1794563883
 sh pm list packages -3
+=== O64034
+launch org.skepsun.kototoro
+sleep 10
+shot O_first_run
