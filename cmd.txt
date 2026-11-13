@@ -207,3 +207,11 @@ shot F_explore_sources4
 tapt ^I Want to Be a Saint
 sleep 8
 shot F_details_top
+=== F66331
+tapt ^More options$
+sleep 2
+shot F_details_overflow
+back
+sleep 1
+back
+sleep 2
