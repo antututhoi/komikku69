@@ -523,3 +523,17 @@ shot S2_first_run
 === F67226
 tapt ^Services$
 sleep 3
+=== S267791
+tapt ^Various languages$
+sleep 1
+tapt ^Restore from backup$
+sleep 3
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed_kotatsu.zip$
+sleep 5
+shot S2_restore_dialog
