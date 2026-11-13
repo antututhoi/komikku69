@@ -3838,3 +3838,12 @@ sleep 2
 shot S_rd_toggle_Always_show_chapter_transition_second_tap
 === ping1794548989
 shot ping
+=== M49031
+stop app.mihon
+launch app.mihon
+sleep 2
+sleep 1
+sleep 2
+tapt ^Updates$
+sleep 3
+shot MH_updates_screen_default
