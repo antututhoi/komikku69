@@ -62,3 +62,7 @@ sleep 7
 tapt ^Favorites$
 sleep 4
 shot F_favorites_main
+=== F65648
+tapt ^Explore$
+sleep 4
+shot F_explore_main
