@@ -5,3 +5,9 @@ sleep 1
 launch eu.kanade.tachiyomi.j2k
 sleep 6
 shot J_first_run
+=== J50480
+back
+sleep 1
+tap 1016 201
+sleep 2
+shot J_more_menu
