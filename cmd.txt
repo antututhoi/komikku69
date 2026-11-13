@@ -468,3 +468,7 @@ sleep 3
 tapt ^Next$
 sleep 2
 shot T_x2
+=== T52397
+tapt ^Next$
+sleep 2
+shot T_x3
