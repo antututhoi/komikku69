@@ -280,3 +280,7 @@ sleep 2
 tapt ^Stats$
 sleep 3
 shot J_stats_main
+=== J51440
+tapt View detailed statistics
+sleep 3
+shot J_stats_detailed
