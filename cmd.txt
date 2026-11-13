@@ -33,3 +33,9 @@ shot O_restore_2
 === O64184
 tapt ^Show roots$
 sleep 2
+=== O64202
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+shot O_restore_files
