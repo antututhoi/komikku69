@@ -641,3 +641,7 @@ shot T_history_main
 tapt ^More$
 sleep 2
 shot T_more_main
+=== T53051
+tapt ^Settings$
+sleep 2
+shot T_settings_main
