@@ -555,3 +555,9 @@ sleep 1
 shot F_settings_Services_p2
 === S267899
 shot S2_main
+=== S267922
+stop io.github.glitch228.kaisoku
+sleep 1
+sh monkey -p io.github.glitch228.kaisoku -c android.intent.category.LAUNCHER 1
+sleep 8
+shot S2_main
