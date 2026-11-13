@@ -232,3 +232,5 @@ sleep 1
 up
 === set_library_s2
 up
+=== set_library_s3
+up
