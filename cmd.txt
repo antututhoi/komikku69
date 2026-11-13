@@ -1081,3 +1081,6 @@ tapt ^Settings$
 sleep 2
 === s006
 sleep 1
+=== SY_go_appearance
+tapt ^Appearance$
+sleep 2
