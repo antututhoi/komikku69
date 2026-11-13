@@ -435,3 +435,5 @@ sleep 2
 sleep 1
 === J2K_set_advanced_s1
 up
+=== J2K_set_advanced_s2
+up
