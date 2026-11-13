@@ -409,3 +409,9 @@ sleep 1
 up
 === J2K_set_tracking_s2
 up
+=== J2K_back_tracking
+back
+sleep 1
+down
+down
+down
