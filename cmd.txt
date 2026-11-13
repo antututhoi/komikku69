@@ -645,3 +645,6 @@ shot T_more_main
 tapt ^Settings$
 sleep 2
 shot T_settings_main
+=== Tsundoku_go_appearance
+tapt ^Appearance$
+sleep 2
