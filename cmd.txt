@@ -228,3 +228,13 @@ text MangaDex
 sleep 3
 === F66333
 shot F_cat_md
+=== F66423
+back
+sleep 1
+back
+sleep 1
+back
+sleep 2
+tapt ^Manga$
+sleep 4
+shot F_explore_manga_mode
