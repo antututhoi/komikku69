@@ -170,3 +170,5 @@ tapt ^Remove English$
 sleep 2
 tapt ^Various languages$
 sleep 3
+=== F66142
+shot F_cat_various
