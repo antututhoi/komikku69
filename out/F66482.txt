@@ -1,0 +1,11 @@
+# block F66482  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.reader.ui.ReaderActivity  time: 10:42:13
+! tapt 'Read' at 796,2253
+[S   ]  540,1200 t='' d='' id=pager
+[S   ]  540,1200 t='' d='' id=
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  333,183  t='Mieruko-chan' d='' id=
+[    ]  304,250  t='Vol 1 Chapter 1' d='' id=
+[CL  ]  105,2253 t='' d='Previous chapter' id=button_prev
+[CL  ]  723,2253 t='' d='Next chapter' id=button_next
+[CL  ]  849,2253 t='' d='Chapters' id=button_pages_thumbs
+[CL  ]  975,2253 t='' d='Options' id=button_options
