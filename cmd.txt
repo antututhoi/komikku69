@@ -1088,3 +1088,5 @@ sleep 3
 === D69583
 tapt ^Check for new chapters$
 sleep 3
+=== D69584
+shot D_settings_Check_for_new_chapters_p0
