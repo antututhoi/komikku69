@@ -1177,3 +1177,5 @@ tapt ^Browse$
 sleep 2
 === SY_set_browse_s0
 sleep 1
+=== SY_set_browse_s1
+up
