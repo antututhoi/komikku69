@@ -843,3 +843,5 @@ sleep 3
 === S268338
 tapt ^Manga sources$
 sleep 3
+=== S268339
+shot S2_settings_Manga_sources_p0
