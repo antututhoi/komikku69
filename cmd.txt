@@ -3483,3 +3483,6 @@ tapt ^Got it$
 sleep 1
 === S47177
 sleep 3
+=== S47178
+tap 540 1200
+sleep 1
