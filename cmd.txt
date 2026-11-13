@@ -3269,3 +3269,17 @@ shot M_rd_tapzone_Default
 === M46134
 tap 540 1200
 sleep 1
+=== M46135
+tap 540 1200
+sleep 1
+tapt ^Settings$
+sleep 2
+tapt ^General$
+sleep 1
+tapt ^Gray$
+sleep 1
+tap 540 250
+sleep 2
+tap 540 1200
+sleep 2
+shot M_rd_bg_Gray
