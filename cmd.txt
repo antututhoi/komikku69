@@ -2972,3 +2972,17 @@ sleep 2
 tap 540 1200
 sleep 2
 shot K_rd_toggle_Fullscreen_first_tap
+=== K44974
+tap 540 1200
+sleep 1
+tapt ^Settings$
+sleep 2
+tapt ^General$
+sleep 1
+tapt ^Fullscreen$
+sleep 1
+tap 540 250
+sleep 2
+tap 540 1200
+sleep 2
+shot K_rd_toggle_Fullscreen_second_tap
