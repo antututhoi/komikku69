@@ -4041,3 +4041,15 @@ up
 up
 sleep 1
 shot SY_reader_hq_general_end
+=== S49672
+tapt ^Settings$
+sleep 2
+up
+up
+up
+up
+up
+sleep 1
+tapt ^Add shader$
+sleep 2
+shot SY_reader_hq_add_shader
