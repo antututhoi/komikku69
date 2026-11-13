@@ -1,0 +1,39 @@
+# block F67203  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:56:38
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,389  t='' d='' id=
+[    ]  399,360  t='Consider a chapter finished based on' d='' id=title
+[    ]  139,414  t='Percentage' d='' id=summary
+[C   ]  540,578  t='' d='' id=
+[    ]  249,552  t='Completion threshold' d='' id=title
+[    ]  536,606  t='At least 90% of pages reached, including the current page.' d='' id=summary
+[C   ]  540,823  t='' d='' id=
+[    ]  279,744  t='Wait for chapter updates' d='' id=title
+[    ]  393,851  t='Wait for Futon to check for chapter updates before choosing where to continue.' d='' id=summary
+[C   ]  849,823  t='' d='About waiting for chapter updates' id=preference_help
+[k   ]  975,823  t='' d='' id=switchWidget
+[C   ]  540,1068 t='' d='' id=
+[    ]  155,1042 t='Scale mode' d='' id=title
+[    ]  122,1096 t='Fit center' d='' id=summary
+[C   ]  540,1286 t='' d='' id=
+[    ]  231,1234 t='Show zoom buttons' d='' id=title
+[    ]  450,1315 t='Whether to show zoom control buttons in the bottom right corner' d='' id=summary
+[k   ]  969,1286 t='' d='' id=switchWidget
+[C   ]  540,1505 t='' d='' id=
+[    ]  186,1479 t='Webtoon zoom' d='' id=title
+[    ]  382,1533 t='Allow zoom in gesture in webtoon mode' d='' id=summary
+[xk  ]  969,1505 t='' d='' id=switchWidget
+[C   ]  540,1713 t='' d='' id=
+[    ]  515,1650 t='Default webtoon zoom out' d='' id=title
+[    ] 1013,1652 t='0%' d='' id=summary
+[C   ]  540,1948 t='' d='' id=
+[    ]  262,1896 t='Gaps in webtoon mode' d='' id=title
+[    ]  450,1977 t='Show vertical gaps between pages in webtoon mode' d='' id=summary
+[k   ]  969,1948 t='' d='' id=switchWidget
+[C   ]  540,2167 t='' d='' id=
+[    ]  328,2141 t='Reader controls in bottom bar' d='' id=title
+[    ]   87,2195 t='None' d='' id=summary
+[C   ]  540,2331 t='' d='' id=
+[    ]  186,2333 t='Reader actions' d='' id=title
+[    ]  415,2381 t='Configure actions for tappable screen areas' d='' id=summary
