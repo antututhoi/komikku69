@@ -815,3 +815,7 @@ tapt ^Services$
 sleep 3
 === S268332
 shot S2_settings_Services_p0
+=== S268333
+up
+sleep 1
+shot S2_settings_Services_p1
