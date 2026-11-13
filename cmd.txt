@@ -2269,3 +2269,15 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_mode_Paged (left to right)
+=== K43735
+tap 540 1200
+sleep 1
+tap 929 2275
+sleep 2
+tapt ^Reading mode$
+sleep 1
+tapt ^Paged (right to left)$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_mode_Paged (right to left)
