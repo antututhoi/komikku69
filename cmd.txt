@@ -597,3 +597,12 @@ shot T_library_tags_tab
 tapt ^Extensions$
 sleep 2
 shot T_library_extensions_tab
+=== T52923
+stop app.tsundoku
+launch app.tsundoku
+sleep 5
+tapt ^More options$
+sleep 2
+tapt ^Find Duplicates$
+sleep 3
+shot T_duplicates_start
