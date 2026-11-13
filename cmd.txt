@@ -519,3 +519,7 @@ launch app.tsundoku
 sleep 6
 === T52566
 shot T_library_main
+=== T52623
+tapt ^Browse$
+sleep 3
+shot T_browse_sources
