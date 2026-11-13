@@ -56,3 +56,6 @@ sleep 2
 === b014
 tap 783 975
 sleep 4
+=== b015
+tapt ^Restore$
+sleep 15
