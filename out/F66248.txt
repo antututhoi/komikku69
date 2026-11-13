@@ -1,0 +1,39 @@
+# block F66248  focus: com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity  time: 10:37:44
+[CL  ]  177,469  t='YouTube' d='YouTube' id=
+[CL  ]  419,469  t='Settings' d='Settings' id=
+[CL  ]  660,469  t='Photos' d='Photos' id=
+[CL  ]  902,469  t='Gmail' d='Gmail' id=
+[C   ]  540,726  t='' d='' id=
+[    ]  141,726  t='0' d='' id=icon
+[    ]  242,726  t='0' d='Search null' id=title
+[C   ]  540,873  t='' d='' id=
+[    ]  141,873  t='1' d='' id=icon
+[    ]  242,873  t='1' d='Search null' id=title
+[C   ]  540,1020 t='' d='' id=
+[    ]  141,1020 t='2' d='' id=icon
+[    ]  242,1020 t='2' d='Search null' id=title
+[C   ]  540,1167 t='' d='' id=
+[    ]  141,1167 t='3' d='' id=icon
+[    ]  242,1167 t='3' d='Search null' id=title
+[C   ]  540,1314 t='' d='' id=
+[    ]  141,1314 t='4' d='' id=icon
+[    ]  242,1314 t='4' d='Search null' id=title
+[C   ]  540,1461 t='' d='' id=
+[    ]  141,1461 t='5' d='' id=icon
+[    ]  242,1461 t='5' d='Search null' id=title
+[C   ]  540,1608 t='' d='' id=
+[    ]  141,1608 t='6' d='' id=icon
+[    ]  242,1608 t='6' d='Search null' id=title
+[C   ]  540,1755 t='' d='' id=
+[    ]  141,1755 t='7' d='' id=icon
+[    ]  242,1755 t='7' d='Search null' id=title
+[C   ]  540,1902 t='' d='' id=
+[    ]  141,1902 t='8' d='' id=icon
+[    ]  242,1902 t='8' d='Search null' id=title
+[C   ]  540,2049 t='' d='' id=
+[    ]  141,2049 t='9' d='' id=icon
+[    ]  242,2049 t='9' d='Search null' id=title
+[    ]  540,228  t='' d='Search' id=search_container_all_apps
+[C   ]  130,228  t='' d='Google app' id=g_icon
+[CL  ]  618,228  t='Search apps, web and more' d='' id=input
+[    ]  540,1232 t='' d='Home' id=
