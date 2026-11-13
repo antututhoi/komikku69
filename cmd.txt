@@ -4094,3 +4094,8 @@ sleep 1
 tap 540 360
 sleep 2
 shot SY_reader_exh_panel
+=== S49954
+sh am force-stop com.google.android.documentsui
+sh am force-stop com.android.documentsui
+home
+sleep 1
