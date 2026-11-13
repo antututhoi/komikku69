@@ -2632,3 +2632,7 @@ shot P_a
 tap 540 1200
 sleep 1
 shot P_b
+=== P44790
+tap 831 2275
+sleep 2
+shot P_c
