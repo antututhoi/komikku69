@@ -1237,3 +1237,5 @@ tapt ^MangaDex$
 sleep 2
 === SY_set_mangadex_s0
 sleep 1
+=== SY_set_mangadex_s1
+up
