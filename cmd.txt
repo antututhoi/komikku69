@@ -99,3 +99,7 @@ sleep 2
 shot J_library_groupby_dialog
 back
 sleep 1
+=== J50850
+tapt ^Group library by
+sleep 2
+shot J_library_groupby_dialog
