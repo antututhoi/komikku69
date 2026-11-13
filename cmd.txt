@@ -172,3 +172,17 @@ down
 down
 tapt ^Smart update$
 sleep 2
+=== b029
+tap 540 1390
+tapt ^OK$
+sleep 1
+back
+back
+tapt ^Library$
+sleep 2
+host adb logcat -c
+swipe 540 700 540 1800 400
+sleep 40
+host adb logcat -d --pid=$(adb shell pidof app.komikku.mod69) | grep -E 'Worker result|Starting work' 
+tapt ^Updates$
+sleep 3
