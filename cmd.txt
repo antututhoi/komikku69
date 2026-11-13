@@ -1245,3 +1245,6 @@ sleep 1
 down
 down
 down
+=== SY_go_advanced
+tapt ^Advanced$
+sleep 2
