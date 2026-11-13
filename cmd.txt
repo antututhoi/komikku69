@@ -647,3 +647,12 @@ shot S2_settings_main
 up
 sleep 1
 shot S2_settings_main_2
+=== S268294
+stop io.github.glitch228.kaisoku
+launch io.github.glitch228.kaisoku
+sleep 6
+sleep 3
+tap 975 243
+sleep 2
+tap 768 642
+sleep 3
