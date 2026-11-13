@@ -1,0 +1,36 @@
+# block S268332  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:22:16
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  266,212  t='Services' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,366  t='' d='' id=
+[    ]  196,366  t='Synchronization' d='' id=title
+[C   ]  540,559  t='' d='' id=
+[    ]  262,507  t='Remote libraries · Beta' d='' id=title
+[    ]  540,588  t='Connect to OPDS or Komga. Browsing and downloads are user initiated; server prog' d='' id=summary
+[C   ]  540,778  t='' d='' id=
+[    ]  152,752  t='Community' d='' id=title
+[    ]  457,806  t='Optional ratings, comments and source reliability' d='' id=summary
+[C   ]  540,970  t='' d='' id=
+[    ]  162,944  t='Suggestions' d='' id=title
+[    ]  110,998  t='Enabled' d='' id=summary
+[C   ]  540,1188 t='' d='' id=
+[    ]  187,1136 t='Related manga' d='' id=title
+[    ]  450,1217 t='Show a list of related manga. In some cases it may be inaccurate or missing' d='' id=summary
+[xk  ]  969,1188 t='' d='' id=switchWidget
+[C   ]  540,1407 t='' d='' id=
+[C   ]  428,1407 t='' d='' id=press_container
+[    ]  215,1381 t='Reading statistics' d='' id=title
+[    ]  116,1435 t='Disabled' d='' id=summary
+[k   ]  969,1407 t='' d='' id=switchWidget
+[C   ]  540,1599 t='' d='' id=
+[    ]  323,1573 t='Show estimated reading time' d='' id=title
+[    ]  422,1627 t='The time estimation value may be inaccurate' d='' id=summary
+[xk  ]  969,1599 t='' d='' id=switchWidget
+[    ]  540,1783 t='Tracking' d='' id=title
+[C   ]  540,1979 t='' d='' id=
+[    ]  344,1900 t='Combined tracker search · Beta' d='' id=title
+[    ]  450,2007 t='Search your list, reading sources and the selected tracker catalogue together. Q' d='' id=summary
+[k   ]  969,1979 t='' d='' id=switchWidget
+[C   ]  540,2264 t='' d='' id=
+[    ]  381,2198 t='Review restored tracker links · Beta' d='' id=title
+[    ]  540,2313 t='Restored links stay inactive on this device until you verify the account and con' d='' id=summary
