@@ -1398,3 +1398,5 @@ sleep 2
 === C61763
 tapt ^Popup dictionary$
 sleep 2
+=== C61764
+shot C_settings_Popup_dictionary_p0
