@@ -1274,3 +1274,5 @@ up
 up
 tapt ^About$
 sleep 2
+=== SY_set_about_s0
+sleep 1
