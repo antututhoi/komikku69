@@ -1,0 +1,45 @@
+# block D69571  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:37:22
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Reading' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,317  t='' d='' id=
+[C   ]  540,442  t='' d='' id=
+[    ]  377,402  t='Fit wide pages' d='' id=
+[    ]  538,470  t='Make double-page spreads in paged mode fill a portrait screen' d='' id=
+[Ck  ]  942,442  t='' d='' id=
+[    ]  158,560  t='Method' d='' id=
+[C   ]  304,667  t='' d='' id=
+[    ]  305,667  t='Rotate' d='' id=
+[C   ]  775,667  t='' d='' id=
+[    ]  775,667  t='Split in two' d='' id=
+[    ]  258,784  t='Rotation direction' d='' id=
+[C   ]  304,891  t='' d='' id=
+[    ]  304,891  t='Clockwise' d='' id=
+[C   ]  775,891  t='' d='' id=
+[    ]  775,891  t='Counter-clockwise' d='' id=
+[    ]  149,1061 t='DISPLAY' d='' id=
+[C   ]  540,1194 t='' d='' id=
+[    ]  399,1175 t='Fullscreen mode' d='' id=
+[    ]  512,1223 t='Hide system status and navigation bars' d='' id=
+[Cxk ]  942,1195 t='' d='' id=
+[C   ]  540,1382 t='' d='' id=
+[    ]  423,1363 t='Screen orientation' d='' id=
+[    ]  274,1411 t='Default' d='' id=
+[C   ]  540,1572 t='' d='' id=
+[    ]  387,1532 t='Keep screen on' d='' id=
+[    ]  538,1600 t='Do not turn the screen off while you're reading manga' d='' id=
+[Cxk ]  942,1572 t='' d='' id=
+[C   ]  540,1794 t='' d='' id=
+[    ]  538,1754 t='Open reader in a separate task' d='' id=
+[    ]  538,1853 t='Allows you to keep multiple readers with different manga open at the same time' d='' id=
+[Ck  ]  942,1794 t='' d='' id=
+[    ]  206,1991 t='READING INFO' d='' id=
+[C   ]  540,2157 t='' d='' id=
+[    ]  538,2117 t='Show information bar in reader' d='' id=
+[    ]  538,2216 t='Show the current time and reading progress at the top of the screen' d='' id=
+[Cxk ]  942,2157 t='' d='' id=
+[C   ]  540,2343 t='' d='' id=
+[    ]  446,2339 t='Chapter jump popup' d='' id=
+[    ]  538,2384 t='Ask whether to peek or move progress when opening a chapter away from where you ' d='' id=
+[Cxk ]  942,2369 t='' d='' id=
