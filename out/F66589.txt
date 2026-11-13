@@ -1,0 +1,5 @@
+# block F66589  focus: ImmersiveModeConfirmation  time: 10:43:55
+! NOT FOUND: ^More options$
+[    ]  540,360  t='Viewing full screen' d='' id=immersive_cling_title
+[    ]  540,500  t='To exit, swipe down from the top.' d='' id=immersive_cling_description
+[C   ]  859,655  t='Got it' d='' id=ok
