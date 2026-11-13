@@ -1069,3 +1069,8 @@ down
 === Chimahon_go_anki
 tapt ^Anki$
 sleep 2
+=== Chimahon_go2_anki
+up
+up
+tapt ^Anki$
+sleep 2
