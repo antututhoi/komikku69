@@ -1,0 +1,40 @@
+# block D69555  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:33:40
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Appearance' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[S   ]  540,399  t='' d='' id=
+[C   ]  194,399  t='' d='' id=
+[    ]  194,490  t='Totoro' d='' id=
+[C   ]  458,399  t='' d='' id=
+[    ]  458,490  t='Expressive' d='' id=
+[C   ]  722,399  t='' d='' id=
+[    ]  722,490  t='Miku' d='' id=
+[C   ]  951,399  t='' d='' id=
+[    ]  986,490  t='Asuka' d='' id=
+[    ]  136,612  t='THEME' d='' id=
+[C   ]  540,745  t='' d='' id=
+[    ]  295,726  t='Theme' d='' id=
+[    ]  275,774  t='System' d='' id=
+[    ]  279,914  t='Black' d='' id=
+[    ]  495,962  t='Uses less power on AMOLED screens' d='' id=
+[Ck  ]  942,934  t='' d='' id=
+[C   ]  540,1121 t='' d='' id=
+[    ]  328,1102 t='Language' d='' id=
+[    ]  275,1150 t='System' d='' id=
+[    ]  533,1299 t='Display size' d='' id=
+[    ]  937,1299 t='Default' d='' id=
+[C   ]  540,1610 t='' d='' id=
+[    ]  399,1570 t='Haptic feedback' d='' id=
+[    ]  538,1638 t='Vibrate on taps, toggles, sliders and gestures' d='' id=
+[Cxk ]  942,1610 t='' d='' id=
+[C   ]  540,1801 t='' d='' id=
+[    ]  386,1761 t='Hide status bar' d='' id=
+[    ]  538,1829 t='Hides the Android status bar across the entire app' d='' id=
+[Ck  ]  942,1801 t='' d='' id=
+[    ]  187,1967 t='MANGA LIST' d='' id=
+[C   ]  540,2100 t='' d='' id=
+[    ]  328,2081 t='List mode' d='' id=
+[    ]  253,2129 t='Grid' d='' id=
+[    ]  513,2278 t='Grid size' d='' id=
+[    ]  917,2278 t='3 per row' d='' id=
