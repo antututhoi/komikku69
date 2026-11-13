@@ -1302,3 +1302,14 @@ shot K_libdisp_sheet_Compact grid
 back
 sleep 2
 shot K_libmode_Compact grid
+=== K41313
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+tapt ^Comfortable\ grid$
+sleep 1
+shot K_libdisp_sheet_Comfortable grid
+back
+sleep 2
+shot K_libmode_Comfortable grid
