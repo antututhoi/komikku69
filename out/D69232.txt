@@ -1,0 +1,22 @@
+# block D69232  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.main.ui.MainActivity  time: 11:27:26
+! tapt 'Confirm' at 958,2225
+[C   ]   91,199  t='' d='Settings' id=button_settings
+[C   ]  540,199  t='Search anything' d='' id=search_bar
+[    ]  540,199  t='Search anything' d='' id=open_search_bar_text_view
+[C   ]  989,199  t='' d='More' id=button_overflow
+[L   ]  168,362  t='' d='All favorites' id=
+[    ]  168,361  t='All favorites' d='' id=
+[CL  ]  421,362  t='' d='Read later' id=
+[    ]  421,361  t='Read later' d='' id=
+[S   ]  540,1411 t='' d='' id=pager
+[S   ]  540,1411 t='' d='' id=
+[    ]  540,1404 t='It's kind of empty here...' d='' id=textPrimary
+[    ]  539,1510 t='No favorites yet' d='' id=textSecondary
+[    ]  326,2235 t='' d='Favorites' id=
+[    ]  366,2235 t='Favorites' d='' id=
+[C   ]  559,2235 t='' d='' id=
+[    ]  559,2235 t='' d='Feed' id=
+[C   ]  702,2235 t='' d='' id=
+[    ]  702,2235 t='' d='History' id=
+[C   ]  845,2235 t='' d='' id=
+[    ]  845,2235 t='' d='Explore' id=
