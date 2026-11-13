@@ -1098,3 +1098,7 @@ shot D_settings_Check_for_new_chapters_p1
 up
 sleep 1
 shot D_settings_Check_for_new_chapters_p2
+=== D69587
+up
+sleep 1
+shot D_settings_Check_for_new_chapters_p3
