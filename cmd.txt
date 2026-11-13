@@ -747,3 +747,9 @@ sleep 1
 up
 === Tsundoku_set_browse_s2
 up
+=== Tsundoku_back_browse
+back
+sleep 1
+down
+down
+down
