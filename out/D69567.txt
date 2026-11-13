@@ -1,0 +1,38 @@
+# block D69567  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:36:23
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Reading' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[    ]  573,292  t='Default webtoon zoom out' d='' id=
+[C   ]  540,576  t='' d='' id=
+[    ]  472,536  t='Gaps in webtoon mode' d='' id=
+[    ]  538,604  t='Show vertical gaps between pages in webtoon mode' d='' id=
+[Ck  ]  942,576  t='' d='' id=
+[    ]  172,742  t='CONTROLS' d='' id=
+[C   ]  540,875  t='' d='' id=
+[    ]  547,856  t='Reader controls in bottom bar' d='' id=
+[    ]  482,904  t='Choose the buttons and their order' d='' id=
+[C   ]  540,1063 t='' d='' id=
+[    ]  384,1044 t='Reader actions' d='' id=
+[    ]  548,1092 t='Configure actions for tappable screen areas' d='' id=
+[C   ]  540,1314 t='' d='' id=
+[    ]  501,1213 t='Ergonomic reader control' d='' id=
+[    ]  538,1343 t='Do not adjust the page switching direction to the reader mode, e. g. pressing th' d='' id=
+[Ck  ]  942,1315 t='' d='' id=
+[C   ]  540,1565 t='' d='' id=
+[    ]  468,1546 t='Enable volume buttons' d='' id=
+[    ]  517,1594 t='Use volume buttons for switching pages' d='' id=
+[Ck  ]  942,1566 t='' d='' id=
+[C   ]  540,1775 t='' d='' id=
+[    ]  501,1715 t='Invert navigation controls' d='' id=
+[    ]  538,1804 t='Swap the direction of volume button and directional hardware key navigation (lef' d='' id=
+[Ck  ]  942,1776 t='' d='' id=
+[C   ]  540,1985 t='' d='' id=
+[    ]  390,1966 t='Page animation' d='' id=
+[    ]  274,2014 t='Default' d='' id=
+[C   ]  540,2175 t='' d='' id=
+[    ]  428,2135 t='Enable pull gesture' d='' id=
+[    ]  538,2203 t='Use pull gesture to switch chapters in webtoon' d='' id=
+[Ck  ]  942,2175 t='' d='' id=
+[    ]  134,2341 t='IMAGE' d='' id=
+[C   ]  540,2391 t='' d='' id=
