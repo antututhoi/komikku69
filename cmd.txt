@@ -37,3 +37,7 @@ shot J_settings_backup
 tapt ^Restore backup$
 sleep 3
 shot J_restore_picker
+=== J50605
+sh appops set eu.kanade.tachiyomi.j2k MANAGE_EXTERNAL_STORAGE allow
+tapt ^Cancel$
+sleep 1
