@@ -1458,3 +1458,7 @@ shot C_settings_OCR_p0
 up
 sleep 1
 shot C_settings_OCR_p1
+=== C61778
+up
+sleep 1
+shot C_settings_OCR_p2
