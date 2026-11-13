@@ -1,0 +1,35 @@
+# block S268310  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:15:56
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,385  t='' d='' id=
+[    ]  186,352  t='Reader actions' d='' id=title
+[    ]  415,406  t='Configure actions for tappable screen areas' d='' id=summary
+[C   ]  540,649  t='' d='' id=
+[    ]  286,544  t='Ergonomic reader control' d='' id=title
+[    ]  450,678  t='Do not adjust the page switching direction to the reader mode, e. g. pressing th' d='' id=summary
+[k   ]  969,649  t='' d='' id=switchWidget
+[C   ]  540,947  t='' d='' id=
+[    ]  220,895  t='Rotate wide pages' d='' id=title
+[    ]  540,976  t='Turn landscape pages upright for reading. Original files and reading progress st' d='' id=summary
+[    ]  540,1158 t='Hold-to-scroll' d='' id=title
+[C   ]  540,1354 t='' d='' id=
+[    ]  299,1275 t='Scroll while holding a page' d='' id=title
+[    ]  450,1382 t='Long-press an edge to scroll until you release. Custom long-press actions take p' d='' id=summary
+[k   ]  969,1354 t='' d='' id=switchWidget
+[C   ]  540,1599 t='' d='' id=
+[    ]  119,1573 t='Top row' d='' id=title
+[    ]  178,1627 t='Scroll backward' d='' id=summary
+[C   ]  540,1791 t='' d='' id=
+[    ]  146,1765 t='Middle left' d='' id=title
+[    ]  178,1819 t='Scroll backward' d='' id=summary
+[C   ]  540,1983 t='' d='' id=
+[    ]  158,1957 t='Middle right' d='' id=title
+[    ]  162,2011 t='Scroll forward' d='' id=summary
+[C   ]  540,2175 t='' d='' id=
+[    ]  153,2149 t='Bottom row' d='' id=title
+[    ]  162,2203 t='Scroll forward' d='' id=summary
+[C   ]  540,2335 t='' d='' id=
+[    ]  261,2341 t='Enable volume buttons' d='' id=title
+[    ]  383,2385 t='Use volume buttons for switching pages' d='' id=summary
+[k   ]  969,2352 t='' d='' id=switchWidget
