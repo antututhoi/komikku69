@@ -1008,3 +1008,11 @@ shot reader
 tap 540 1200
 sleep 2
 shot reader_menu
+=== m012
+sleep 4
+tap 540 1200
+sleep 2
+shot rmenu
+tap 929 2275
+sleep 2
+shot rsheet
