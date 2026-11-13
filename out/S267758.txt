@@ -1,0 +1,61 @@
+# block S267758  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.main.ui.MainActivity  time: 11:03:07
+!   bash arg: -p
+  bash arg: io.github.glitch228.kaisoku
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+Events injected: 1
+## Network stats: elapsed time=102ms (0ms mobile, 0ms wifi, 102ms not connected)
+
+[C   ]  540,1200 t='' d='' id=touch_outside
+[C   ]  540,670  t='' d='Collapsed. Drag handle' id=sh_dragHandle
+[S   ]  540,1566 t='' d='' id=scrollView
+[    ]  540,772  t='Welcome' d='' id=textView_welcome_title
+[S   ]  540,895  t='' d='' id=
+[C   ]  278,895  t='Restore from backup' d='' id=chip_backup
+[C   ]  779,895  t='Login to sync account' d='' id=chip_sync
+[C   ] 1062,895  t='Local manga directories' d='' id=chip_directories
+[    ]  540,1031 t='Please select which content sources you would like to enable. This can also be c' d='' id=textView_hint
+[    ]  540,1150 t='Languages' d='' id=textView_locales_title
+[CLxk]  255,1260 t='Various languages' d='' id=
+[CLxk]  612,1260 t='English' d='' id=
+[CL  ]  841,1263 t='العربية' d='' id=
+[CL  ]  176,1372 t='Български' d='' id=
+[CL  ]  415,1375 t='বাংলা' d='' id=
+[CL  ]  615,1372 t='Català' d='' id=
+[CL  ]  834,1372 t='Čeština' d='' id=
+[CL  ]  135,1478 t='Dansk' d='' id=
+[CL  ]  359,1478 t='Deutsch' d='' id=
+[CL  ]  609,1478 t='Ελληνικά' d='' id=
+[CL  ]  855,1478 t='Español' d='' id=
+[CL  ]  127,1587 t='فارسی' d='' id=
+[CL  ]  327,1584 t='Suomi' d='' id=
+[CL  ]  553,1584 t='Français' d='' id=
+[CL  ]  763,1587 t='हिन्दी' d='' id=
+[CL  ]  145,1696 t='Magyar' d='' id=
+[CL  ]  390,1696 t='Indonesia' d='' id=
+[CL  ]  643,1696 t='Íslenska' d='' id=
+[CL  ]  877,1696 t='Italiano' d='' id=
+[CL  ]  132,1805 t='עברית' d='' id=
+[CL  ]  339,1807 t='日本語' d='' id=
+[CL  ]  593,1805 t='Ქართული' d='' id=
+[CL  ]  832,1805 t='ಕನ್ನಡ' d='' id=
+[CL  ]  134,1919 t='한국어' d='' id=
+[CL  ]  353,1914 t='Lietuvių' d='' id=
+[CL  ]  604,1917 t='മലയാളം' d='' id=
+[CL  ]  854,1914 t='Монгол' d='' id=
+[CL  ]  143,2020 t='Melayu' d='' id=
+[CL  ]  355,2023 t='မြန်မာ' d='' id=
+[CL  ]  551,2023 t='नेपाली' d='' id=
+[CL  ]  793,2020 t='Nederlands' d='' id=
+[CL  ]  133,2126 t='Norsk' d='' id=
+[CL  ]  338,2126 t='Polski' d='' id=
+[CL  ]  578,2126 t='Português' d='' id=
+[CL  ]  835,2126 t='Română' d='' id=
+[CL  ]  155,2232 t='Русский' d='' id=
+[CL  ]  421,2232 t='Slovenčina' d='' id=
+[CL  ]  713,2232 t='Slovenščina' d='' id=
+[CL  ]  130,2338 t='Shqip' d='' id=
+[CL  ]  345,2338 t='Српски' d='' id=
+[CL  ]  583,2338 t='Svenska' d='' id=
+[CL  ]  810,2341 t='தமிழ்' d='' id=
