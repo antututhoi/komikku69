@@ -408,3 +408,6 @@ sleep 1
 down
 down
 down
+=== go_advanced
+tapt ^Advanced$
+sleep 2
