@@ -1,0 +1,34 @@
+# block F67213  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:59:12
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  424,212  t='Storage and network' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,363  t='' d='' id=
+[    ]  225,316  t='Content preloading' d='' id=title
+[    ]   92,362  t='Never' d='' id=summary
+[C   ]  540,526  t='' d='' id=
+[    ]  181,500  t='Preload pages' d='' id=title
+[    ]  152,554  t='Only on Wi-Fi' d='' id=summary
+[C   ]  540,718  t='' d='' id=
+[    ]   97,692  t='Proxy' d='' id=title
+[    ]  116,746  t='Disabled' d='' id=summary
+[C   ]  540,910  t='' d='' id=
+[    ]  204,884  t='DNS over HTTPS' d='' id=title
+[    ]  116,938  t='Disabled' d='' id=summary
+[C   ]  540,1102 t='' d='' id=
+[    ]  173,1076 t='GitHub mirror' d='' id=title
+[    ]  124,1130 t='Keiyoushi' d='' id=summary
+[C   ]  540,1294 t='' d='' id=
+[    ]  298,1268 t='Images optimization proxy' d='' id=title
+[    ]   87,1322 t='None' d='' id=summary
+[C   ]  540,1592 t='' d='' id=
+[    ]  209,1460 t='Ignore SSL errors' d='' id=title
+[    ]  450,1620 t='You can disable SSL certificates verification in case you face an SSL-related is' d='' id=summary
+[k   ]  969,1592 t='' d='' id=switchWidget
+[C   ]  540,1943 t='' d='' id=
+[    ]  298,1864 t='Disable connectivity check' d='' id=title
+[    ]  450,1971 t='Skip the connectivity check in case you have issues with it (e.g. going offline ' d='' id=summary
+[k   ]  969,1943 t='' d='' id=switchWidget
+[C   ]  540,2214 t='' d='' id=
+[    ]  242,2162 t='Block ads in browser' d='' id=title
+[    ]  450,2243 t='Block advertisement in the built-in browser (beta)' d='' id=summary
+[k   ]  969,2214 t='' d='' id=switchWidget
