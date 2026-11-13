@@ -791,3 +791,5 @@ sleep 3
 === S268326
 tapt ^Check for new chapters$
 sleep 3
+=== S268327
+shot S2_settings_Check_for_new_chapters_p0
