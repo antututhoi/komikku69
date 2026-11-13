@@ -1,0 +1,37 @@
+# block S268305  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:14:54
+! tapt 'Reader settings' at 340,750
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,498  t='' d='' id=
+[    ]  236,366  t='Hidden pages · Beta' d='' id=title
+[    ]  450,526  t='Hide pages you do not want to see again, such as an ad page. Only a page whose f' d='' id=summary
+[k   ]  969,498  t='' d='' id=switchWidget
+[C   ]  540,822  t='' d='' id=
+[    ]  394,770  t='Keep a placeholder for hidden pages' d='' id=title
+[    ]  450,851  t='Instead of leaving a hidden page out, keep its place with a tap-to-show placehol' d='' id=summary
+[k   ]  969,822  t='' d='' id=switchWidget
+[C   ]  540,1041 t='' d='' id=
+[    ]  254,1015 t='Manage hidden pages' d='' id=title
+[    ]  287,1069 t='Choose pages to show again' d='' id=summary
+[C   ]  540,1312 t='' d='' id=
+[    ]  372,1207 t='Retain more adjacent pages · Beta' d='' id=title
+[    ]  450,1341 t='With sufficient memory, keep up to two more pages on each side in paged mode, or' d='' id=summary
+[k   ]  969,1312 t='' d='' id=switchWidget
+[C   ]  540,1584 t='' d='' id=
+[    ]  171,1558 t='Default mode' d='' id=title
+[    ]  119,1612 t='Standard' d='' id=summary
+[C   ]  540,1776 t='' d='' id=
+[    ]  276,1750 t='Autodetect reader mode' d='' id=title
+[    ]  395,1804 t='Automatically detect if manga is webtoon' d='' id=summary
+[xk  ]  969,1776 t='' d='' id=switchWidget
+[C   ]  540,1968 t='' d='' id=
+[    ]  155,1942 t='Scale mode' d='' id=title
+[    ]  122,1996 t='Fit center' d='' id=summary
+[C   ]  540,2186 t='' d='' id=
+[    ]  231,2134 t='Show zoom buttons' d='' id=title
+[    ]  450,2215 t='Whether to show zoom control buttons in the bottom right corner' d='' id=summary
+[k   ]  969,2186 t='' d='' id=switchWidget
+[C   ]  540,2354 t='' d='' id=
+[    ]  274,2375 t='Remember reader zoom' d='' id=title
+[k   ]  969,2397 t='' d='' id=switchWidget
