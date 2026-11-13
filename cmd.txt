@@ -3981,3 +3981,20 @@ tap 540 1200
 sleep 1
 sh nohup sh -c 'sleep 2; input swipe 250 1200 900 1200 1800; sleep 1; input swipe 900 1200 250 1200 1800' >/dev/null 2>&1 &
 rec SY_reader_anim_Page_flip 7
+=== S49334
+tap 540 1200
+sleep 1
+tapt ^Settings$
+sleep 2
+up
+up
+up
+sleep 1
+tapt ^Stack \(left\)$
+sleep 1
+tap 540 250
+sleep 1
+tap 540 1200
+sleep 1
+sh nohup sh -c 'sleep 2; input swipe 250 1200 900 1200 1800; sleep 1; input swipe 900 1200 250 1200 1800' >/dev/null 2>&1 &
+rec SY_reader_anim_Stack_left 7
