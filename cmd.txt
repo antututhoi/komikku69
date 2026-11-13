@@ -1885,3 +1885,11 @@ tap 108 2232
 sleep 2
 tap 881 213
 sleep 2
+=== t002
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 3
+tap 881 213
+sleep 2
+tapt ^Display$
+sleep 1
