@@ -1,0 +1,39 @@
+# block D69587  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:41:51
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Check for new chapters' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,315  t='' d='' id=
+[    ]  283,293  t='2 of 2 on' d='' id=
+[C   ]  540,437  t='' d='' id=
+[    ]  454,397  t='Notifications settings' d='' id=
+[    ]  614,465  t='You will receive notifications about updates of manga you are reading' d='' id=
+[C   ]  540,628  t='' d='' id=
+[    ]  443,588  t='Feed swipe gestures' d='' id=
+[    ]  538,656  t='Swipe feed entries to mark them as read or remove them' d='' id=
+[Cxk ]  942,628  t='' d='' id=
+[C   ]  540,819  t='' d='' id=
+[    ]  461,779  t='Dot instead of a count' d='' id=
+[    ]  538,847  t='Mark the Feed tab with a plain dot instead of the number of unread updates' d='' id=
+[Ck  ]  942,819  t='' d='' id=
+[C   ]  540,1010 t='' d='' id=
+[    ]  514,970  t='Disable NSFW notifications' d='' id=
+[    ]  538,1038 t='Do not show notifications about NSFW manga updates' d='' id=
+[Ck  ]  942,1010 t='' d='' id=
+[C   ]  540,1201 t='' d='' id=
+[    ]  499,1161 t='Failed check notifications' d='' id=
+[    ]  538,1229 t='Notify when new chapters could not be fetched for some manga' d='' id=
+[Ck  ]  942,1201 t='' d='' id=
+[C   ]  540,1390 t='' d='' id=
+[    ]  482,1390 t='Download new chapters' d='' id=
+[C   ]  540,1578 t='' d='' id=
+[    ]  369,1559 t='Smart update' d='' id=
+[    ]  350,1607 t='Check everything' d='' id=
+[    ]  136,1743 t='DEBUG' d='' id=
+[C   ]  540,1878 t='' d='' id=
+[    ]  552,1838 t='Checking for new chapters log' d='' id=
+[    ]  614,1906 t='Debug information about background checks for new chapters' d='' id=
+[C   ]  540,2067 t='' d='' id=
+[    ]  529,2048 t='Disable battery optimization' d='' id=
+[    ]  513,2096 t='Helps with background updates checks' d='' id=
+[    ]  578,2218 t='Some devices have different system behavior, which may break background tasks.' d='' id=
