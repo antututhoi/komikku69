@@ -1,0 +1,4 @@
+# block S267946  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.main.ui.MainActivity  time: 11:06:22
+[    ]  540,1111 t='Do you want to receive personalized manga suggestions?' d='' id=title
+[C   ]  540,1297 t='Enable' d='' id=button1
+[C   ]  540,1460 t='No thanks' d='' id=button3
