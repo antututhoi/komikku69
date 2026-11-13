@@ -2835,3 +2835,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_tapzone_Default
+=== K44962
+tapt ^Settings$
+sleep 2
+up
+tapt ^Horizontal$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_invert_Horizontal
