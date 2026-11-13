@@ -1080,3 +1080,9 @@ sleep 1
 up
 === Chimahon_set_anki_s2
 up
+=== Chimahon_back_anki
+back
+sleep 1
+down
+down
+down
