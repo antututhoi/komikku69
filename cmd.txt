@@ -1345,3 +1345,6 @@ up
 sleep 1
 tapt ^Settings$
 sleep 2
+=== C61752
+tapt ^Browse$
+sleep 2
