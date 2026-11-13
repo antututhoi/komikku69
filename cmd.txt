@@ -395,3 +395,6 @@ sleep 1
 down
 down
 down
+=== go_mangadex
+tapt ^MangaDex$
+sleep 2
