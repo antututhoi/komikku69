@@ -346,3 +346,5 @@ sleep 2
 sleep 1
 === J2K_set_reader_s1
 up
+=== J2K_set_reader_s2
+up
