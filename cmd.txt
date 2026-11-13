@@ -127,3 +127,10 @@ sleep 7
 tapt ^Favorites$
 sleep 4
 shot F_favorites_main
+=== F65931
+tapt ^Search manga$
+sleep 2
+text Mieruko
+key 66
+sleep 12
+shot F_search_results
