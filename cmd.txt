@@ -623,3 +623,7 @@ sleep 5
 tap 188 700
 sleep 6
 shot T_entry_top
+=== T52985
+tapt ^More options$
+sleep 2
+shot T_entry_overflow_menu
