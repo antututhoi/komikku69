@@ -1078,3 +1078,5 @@ sleep 2
 sleep 1
 === Chimahon_set_anki_s1
 up
+=== Chimahon_set_anki_s2
+up
