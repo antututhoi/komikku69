@@ -900,3 +900,5 @@ tapt ^Browse$
 sleep 2
 === MH_set_browse_s0
 sleep 1
+=== MH_set_browse_s1
+up
