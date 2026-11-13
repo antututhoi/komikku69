@@ -140,3 +140,9 @@ tap 1016 201
 sleep 2
 shot J_recents_more_menu
 back
+=== J50984
+tap 180 2242
+sleep 2
+tap 1012 751
+sleep 3
+shot J_library_updating
