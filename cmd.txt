@@ -86,3 +86,10 @@ shot J_library_filter_sheet_open
 up
 sleep 1
 shot J_library_filter_sheet_scrolled
+=== J50802
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 4
+tap 889 201
+sleep 2
+shot J_library_filter_expanded
