@@ -1,0 +1,28 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  172,40   t='Delete chapters' d='' id=
+[C   ]  540,167  t='' d='' id=
+[    ]  390,167  t='After manually marked as read' d='' id=
+[C   ]  540,346  t='' d='' id=
+[    ]  419,325  t='After reading automatically delete' d='' id=
+[    ]  169,383  t='Disabled' d='' id=
+[C   ]  540,525  t='' d='' id=
+[    ]  445,525  t='Allow deleting bookmarked chapters' d='' id=
+[C   ]  540,704  t='' d='' id=
+[    ]  293,683  t='Excluded categories' d='' id=
+[    ]  144,741  t='None' d='' id=
+[    ]  168,899  t='Auto-download' d='' id=
+[C   ]  540,1026 t='' d='' id=
+[    ]  329,1026 t='Download new chapters' d='' id=
+[    ]  181,1200 t='Download ahead' d='' id=
+[C   ]  540,1348 t='' d='' id=
+[    ]  374,1327 t='Auto download while reading' d='' id=
+[    ]  169,1385 t='Disabled' d='' id=
+[    ]  540,1637 t='Only works if the current chapter + the next one are already downloaded.' d='' id=
+[    ]  300,1816 t='Download cache renew interval' d='' id=
+[C   ]  540,1964 t='' d='' id=
+[    ]  394,1943 t='Download cache renew interval' d='' id=
+[    ]  153,2001 t='1 hour' d='' id=
+[    ]  540,2253 t='If set to "manual", either refresh each manga or using the "Reindex downloads" a' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  289,212  t='Downloads' d='' id=

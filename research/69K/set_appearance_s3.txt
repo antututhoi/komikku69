@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,61   t='' d='' id=
+[    ]  313,19   t='69- Frosted glass bars' d='' id=
+[    ]  129,60   t='Off' d='' id=
+[C   ]  540,202  t='' d='' id=
+[    ]  324,202  t='Pure black dark mode' d='' id=
+[    ]  137,376  t='Manga Info' d='' id=
+[C   ]  540,503  t='' d='' id=
+[    ]  316,503  t='Theme based on cover' d='' id=
+[C   ]  540,682  t='' d='' id=
+[    ]  334,661  t='Cover based theme style' d='' id=
+[    ]  159,719  t='Vibrant' d='' id=
+[C   ]  540,903  t='' d='' id=
+[    ]  260,861  t='Panorama Cover' d='' id=
+[    ]  461,940  t='Show cover in landscape mode if it's a wide image' d='' id=
+[C   ]  540,1145 t='' d='' id=
+[    ]  274,1103 t='Align Cover to Top' d='' id=
+[    ]  461,1182 t='Show the cover aligned to the top alongside manga info' d='' id=
+[    ]  103,1361 t='Display' d='' id=
+[C   ]  540,1488 t='' d='' id=
+[    ]  233,1488 t='App language' d='' id=
+[C   ]  540,1667 t='' d='' id=
+[    ]  187,1646 t='Tablet UI' d='' id=
+[    ]  140,1704 t='Auto' d='' id=
+[C   ]  540,1867 t='' d='' id=
+[    ]  217,1846 t='Date format' d='' id=
+[    ]  243,1904 t='Default (11/13/26)' d='' id=
+[C   ]  540,2067 t='' d='' id=
+[    ]  296,2046 t='Relative timestamps' d='' id=
+[    ]  324,2104 t='"Today" instead of "11/13/26"' d='' id=
+[C   ]  540,2246 t='' d='' id=
+[    ]  456,2246 t='Render images in manga descriptions' d='' id=
+[    ]  101,2397 t='Navbar' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  299,212  t='Appearance' d='' id=

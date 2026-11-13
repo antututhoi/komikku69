@@ -1,0 +1,38 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,31   t='' d='' id=
+[    ]  461,10   t='On mobile data only the next 2 pages are loaded in advance (saves data)' d='' id=
+[C   ]  540,205  t='' d='' id=
+[    ]  334,142  t='69- Info line in the reader' d='' id=
+[    ]  461,242  t='Entry and chapter names at the top; battery, chapter x / y and time at the botto' d='' id=
+[C   ]  540,447  t='' d='' id=
+[    ]  260,426  t='69- Clock format' d='' id=
+[    ]  246,484  t='Same as the phone' d='' id=
+[C   ]  540,668  t='' d='' id=
+[    ]  479,626  t='69- Order of the reader's bottom buttons' d='' id=
+[    ]  571,705  t='Move the buttons up or down. Which buttons show is set in "Reader bottom buttons' d='' id=
+[C   ]  540,910  t='' d='' id=
+[    ]  392,868  t='69- Zoom buttons in the reader' d='' id=
+[    ]  461,947  t='Round + and - buttons on the right side of the screen' d='' id=
+[C   ]  540,1131 t='' d='' id=
+[    ]  292,1110 t='69- Maximum zoom' d='' id=
+[    ]  123,1168 t='5x' d='' id=
+[C   ]  540,1373 t='' d='' id=
+[    ]  377,1310 t='69- Reader in its own window' d='' id=
+[    ]  461,1410 t='Opens the reader as a separate window in the recent apps list, so you can switch' d='' id=
+[C   ]  540,1615 t='' d='' id=
+[    ]  342,1594 t='69- Page translation: how' d='' id=
+[    ]  517,1652 t='Google, free, on the phone (needs Google Play services)' d='' id=
+[C   ]  540,1815 t='' d='' id=
+[    ]  313,1794 t='69- Translate pages to' d='' id=
+[    ]  160,1852 t='English' d='' id=
+[C   ]  540,2015 t='' d='' id=
+[    ]  230,1994 t='69- AI service' d='' id=
+[    ]  214,2052 t='Google Gemini' d='' id=
+[C   ]  540,2236 t='' d='' id=
+[    ]  195,2194 t='69- AI key' d='' id=
+[    ]  571,2273 t='Your key from aistudio.google.com (Gemini) or platform.openai.com. Stays on this' d='' id=
+[C   ]  540,2378 t='' d='' id=
+[    ]  318,2399 t='69- AI model (optional)' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

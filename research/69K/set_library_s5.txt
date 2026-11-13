@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,75   t='' d='' id=
+[    ]  354,33   t='69- Title lines under covers' d='' id=
+[    ]  159,87   t='Default' d='' id=
+[C   ]  540,250  t='' d='' id=
+[    ]  366,229  t='69- Space between covers' d='' id=
+[    ]  206,287  t='4 dp (normal)' d='' id=
+[C   ]  540,450  t='' d='' id=
+[    ]  555,429  t='69- Chapters as a grid of numbers (tiles per row)' d='' id=
+[    ]  225,487  t='Off (normal list)' d='' id=
+[C   ]  540,650  t='' d='' id=
+[    ]  423,629  t='69- Corner for the download count' d='' id=
+[    ]  162,687  t='Top left' d='' id=
+[C   ]  540,850  t='' d='' id=
+[    ]  401,829  t='69- Corner for the unread badge' d='' id=
+[    ]  162,887  t='Top left' d='' id=
+[C   ]  540,1050 t='' d='' id=
+[    ]  359,1029 t='69- Corner for the language' d='' id=
+[    ]  172,1087 t='Top right' d='' id=
+[C   ]  540,1250 t='' d='' id=
+[    ]  381,1229 t='69- Corner for the source icon' d='' id=
+[    ]  172,1287 t='Top right' d='' id=
+[C   ]  540,1492 t='' d='' id=
+[    ]  386,1429 t='69- All categories on one page' d='' id=
+[    ]  461,1529 t='One scrolling page with a header per category. Tap a header to fold it. Tap "Lib' d='' id=
+[C   ]  540,1813 t='' d='' id=
+[    ]  461,1750 t='69- Covers in their own shape (Pinterest grid)' d='' id=
+[    ]  461,1887 t='In grid views, tall and wide covers keep their real shape and are packed togethe' d='' id=
+[C   ]  540,2071 t='' d='' id=
+[    ]  386,2071 t='69- Thin outline around covers' d='' id=
+[C   ]  540,2275 t='' d='' id=
+[    ]  325,2229 t='69- Low-memory library' d='' id=
+[    ]  461,2329 t='Keeps fewer covers in memory and uses lighter picture colors, for big libraries ' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=

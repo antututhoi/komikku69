@@ -1,0 +1,34 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,396  t='' d='' id=
+[    ]  306,375  t='Default reading mode' d='' id=
+[    ]  251,433  t='Paged (right to left)' d='' id=
+[C   ]  540,596  t='' d='' id=
+[    ]  366,575  t='Double tap animation speed' d='' id=
+[    ]  160,633  t='Normal' d='' id=
+[C   ]  540,817  t='' d='' id=
+[    ]  290,775  t='Show reading mode' d='' id=
+[    ]  461,854  t='Briefly show current mode when reader is opened' d='' id=
+[C   ]  540,1038 t='' d='' id=
+[    ]  324,1017 t='Show tap zones overlay' d='' id=
+[    ]  367,1075 t='Briefly show when reader is opened' d='' id=
+[C   ]  540,1217 t='' d='' id=
+[    ]  272,1217 t='Smaller tap zones' d='' id=
+[C   ]  540,1417 t='' d='' id=
+[    ]  334,1375 t='Force horizontal seekbar' d='' id=
+[    ]  461,1454 t='Removes vertical seekbar entirely in favour of horizontal' d='' id=
+[C   ]  540,1638 t='' d='' id=
+[    ]  432,1617 t='Show vertical seekbar in landscape' d='' id=
+[    ]  426,1675 t='Enables vertical seekbar when in landscape' d='' id=
+[C   ]  540,1838 t='' d='' id=
+[    ]  369,1817 t='Left-handed vertical seekbar' d='' id=
+[    ]  385,1875 t='Switches which side the seekbar is on' d='' id=
+[    ]  103,2001 t='Display' d='' id=
+[C   ]  540,2149 t='' d='' id=
+[    ]  250,2128 t='Default rotation' d='' id=
+[    ]  137,2186 t='Free' d='' id=
+[C   ]  540,2324 t='' d='' id=
+[    ]  269,2328 t='Background color' d='' id=
+[    ]  146,2382 t='Black' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

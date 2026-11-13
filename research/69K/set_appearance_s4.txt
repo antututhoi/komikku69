@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,103  t='' d='' id=
+[    ]  260,43   t='Panorama Cover' d='' id=
+[    ]  461,122  t='Show cover in landscape mode if it's a wide image' d='' id=
+[C   ]  540,327  t='' d='' id=
+[    ]  274,285  t='Align Cover to Top' d='' id=
+[    ]  461,364  t='Show the cover aligned to the top alongside manga info' d='' id=
+[    ]  103,543  t='Display' d='' id=
+[C   ]  540,670  t='' d='' id=
+[    ]  233,670  t='App language' d='' id=
+[C   ]  540,849  t='' d='' id=
+[    ]  187,828  t='Tablet UI' d='' id=
+[    ]  140,886  t='Auto' d='' id=
+[C   ]  540,1049 t='' d='' id=
+[    ]  217,1028 t='Date format' d='' id=
+[    ]  243,1086 t='Default (11/13/26)' d='' id=
+[C   ]  540,1249 t='' d='' id=
+[    ]  296,1228 t='Relative timestamps' d='' id=
+[    ]  324,1286 t='"Today" instead of "11/13/26"' d='' id=
+[C   ]  540,1428 t='' d='' id=
+[    ]  456,1428 t='Render images in manga descriptions' d='' id=
+[    ]  101,1602 t='Navbar' d='' id=
+[C   ]  540,1729 t='' d='' id=
+[    ]  332,1729 t='Show updates in the nav' d='' id=
+[C   ]  540,1887 t='' d='' id=
+[    ]  319,1887 t='Show history in the nav' d='' id=
+[C   ]  540,2045 t='' d='' id=
+[    ]  326,2045 t='Always show nav labels' d='' id=
+[    ]  152,2219 t='Fork Settings' d='' id=
+[C   ]  540,2333 t='' d='' id=
+[    ]  309,2346 t='Panorama Cover Flow' d='' id=
+[    ]  461,2391 t='Show panorama cover in Global Search & Suggestions' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  299,212  t='Appearance' d='' id=

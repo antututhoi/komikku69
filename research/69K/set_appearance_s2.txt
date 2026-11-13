@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,24   t='' d='' id=
+[    ]  421,3    t='69- Floating bottom bar (rounded)' d='' id=
+[C   ]  540,149  t='' d='' id=
+[    ]  308,128  t='69- Bottom bar height' d='' id=
+[    ]  177,186  t='Normal' d='' id=
+[C   ]  540,328  t='' d='' id=
+[    ]  266,328  t='69- Taller title bar' d='' id=
+[C   ]  540,549  t='' d='' id=
+[    ]  345,486  t='69- Cover-grow animation' d='' id=
+[    ]  461,586  t='When you open an entry from the library grid, its cover grows into the entry pag' d='' id=
+[C   ]  540,791  t='' d='' id=
+[    ]  313,770  t='69- Frosted glass bars' d='' id=
+[    ]  129,828  t='Off' d='' id=
+[C   ]  540,970  t='' d='' id=
+[    ]  307,970  t='Pure black dark mode' d='' id=
+[    ]  137,1144 t='Manga Info' d='' id=
+[C   ]  540,1271 t='' d='' id=
+[    ]  316,1271 t='Theme based on cover' d='' id=
+[C   ]  540,1450 t='' d='' id=
+[    ]  334,1429 t='Cover based theme style' d='' id=
+[    ]  159,1487 t='Vibrant' d='' id=
+[C   ]  540,1671 t='' d='' id=
+[    ]  260,1629 t='Panorama Cover' d='' id=
+[    ]  461,1708 t='Show cover in landscape mode if it's a wide image' d='' id=
+[C   ]  540,1913 t='' d='' id=
+[    ]  274,1871 t='Align Cover to Top' d='' id=
+[    ]  461,1950 t='Show the cover aligned to the top alongside manga info' d='' id=
+[    ]  103,2129 t='Display' d='' id=
+[C   ]  540,2256 t='' d='' id=
+[    ]  233,2256 t='App language' d='' id=
+[C   ]  540,2367 t='' d='' id=
+[    ]  187,2388 t='Tablet UI' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  299,212  t='Appearance' d='' id=

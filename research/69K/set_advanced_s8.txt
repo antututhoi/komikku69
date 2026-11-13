@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,5    t='' d='' id=
+[    ]  134,105  t='Extensions' d='' id=
+[C   ]  540,253  t='' d='' id=
+[    ]  196,232  t='Installer' d='' id=
+[    ]  229,290  t='PackageInstaller' d='' id=
+[    ]  540,542  t='Avoid using Private Installer because it's not stable yet, will lead to really s' d='' id=
+[C   ]  540,768  t='' d='' id=
+[    ]  445,705  t='69- Update extensions automatically' d='' id=
+[    ]  461,805  t='When the daily check finds extension updates, they are installed right away (sil' d='' id=
+[C   ]  540,989  t='' d='' id=
+[    ]  440,989  t='Revoke trusted unknown extensions' d='' id=
+[    ]  132,1163 t='Data Saver' d='' id=
+[C   ]  540,1311 t='' d='' id=
+[    ]  206,1290 t='Data Saver' d='' id=
+[    ]  537,1348 t='Compress images before downloading or loading in reader' d='' id=
+[    ]  171,1506 t='Developer tools' d='' id=
+[C   ]  540,1675 t='' d='' id=
+[    ]  412,1633 t='Enable integrated hentai features' d='' id=
+[    ]  461,1712 t='This is a experimental feature that will disable all hentai features if toggled ' d='' id=
+[C   ]  540,1938 t='' d='' id=
+[    ]  319,1875 t='Enable source blacklist' d='' id=
+[    ]  461,1975 t='Hide extensions/sources that are incompatible with 69-Komikku. Force-restart app' d='' id=
+[C   ]  540,2222 t='' d='' id=
+[    ]  345,2159 t='Enable delegated sources' d='' id=
+[    ]  461,2259 t='Apply 69-Komikku enhancements to the following sources if they are installed: Pu' d='' id=
+[C   ]  540,2382 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

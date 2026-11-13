@@ -1,0 +1,54 @@
+[C   ]  540,1232 t='' d='' id=
+[C   ]  540,1437 t='' d='' id=
+[    ]  180,599  t='Reading mode' d='' id=
+[C   ]  540,600  t='' d='' id=
+[    ]  540,599  t='General' d='' id=
+[C   ]  900,600  t='' d='' id=
+[    ]  900,599  t='Custom filter' d='' id=
+[S   ]  540,1501 t='' d='' id=
+[S   ]  540,1501 t='' d='' id=
+[    ]  540,739  t='For this series' d='' id=
+[    ]  540,844  t='Reading mode' d='' id=
+[Cxk ]  164,960  t='' d='' id=
+[    ]  164,960  t='Default' d='' id=
+[Ck  ]  488,960  t='' d='' id=
+[    ]  488,960  t='Paged (left to right)' d='' id=
+[Ck  ]  264,1086 t='' d='' id=
+[    ]  264,1086 t='Paged (right to left)' d='' id=
+[Ck  ]  657,1086 t='' d='' id=
+[    ]  657,1086 t='Paged (vertical)' d='' id=
+[Ck  ]  187,1212 t='' d='' id=
+[    ]  187,1212 t='Long strip' d='' id=
+[Ck  ]  541,1212 t='' d='' id=
+[    ]  541,1212 t='Long strip with gaps' d='' id=
+[    ]  540,1353 t='Rotation' d='' id=
+[Cxk ]  164,1469 t='' d='' id=
+[    ]  164,1469 t='Default' d='' id=
+[Ck  ]  365,1469 t='' d='' id=
+[    ]  365,1469 t='Free' d='' id=
+[Ck  ]  569,1469 t='' d='' id=
+[    ]  569,1469 t='Portrait' d='' id=
+[Ck  ]  826,1469 t='' d='' id=
+[    ]  826,1469 t='Landscape' d='' id=
+[Ck  ]  229,1595 t='' d='' id=
+[    ]  229,1595 t='Locked portrait' d='' id=
+[Ck  ]  605,1595 t='' d='' id=
+[    ]  605,1595 t='Locked landscape' d='' id=
+[Ck  ]  236,1721 t='' d='' id=
+[    ]  236,1721 t='Reverse portrait' d='' id=
+[    ]  540,1862 t='Paged' d='' id=
+[    ]  540,1967 t='Tap zones' d='' id=
+[Cxk ]  164,2083 t='' d='' id=
+[    ]  164,2083 t='Default' d='' id=
+[Ck  ]  403,2083 t='' d='' id=
+[    ]  403,2083 t='L shaped' d='' id=
+[Ck  ]  665,2083 t='' d='' id=
+[    ]  665,2083 t='Kindle-ish' d='' id=
+[Ck  ]  892,2083 t='' d='' id=
+[    ]  892,2083 t='Edge' d='' id=
+[Ck  ]  219,2209 t='' d='' id=
+[    ]  219,2209 t='Right and Left' d='' id=
+[Ck  ]  510,2209 t='' d='' id=
+[    ]  510,2209 t='Disabled' d='' id=
+[Ck  ]  782,2209 t='' d='' id=
+[    ]  782,2209 t='69- My own' d='' id=

@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,89   t='' d='' id=
+[    ]  303,26   t='Replace latest button' d='' id=
+[    ]  461,94   t='Replace latest button with a custom browse view that includes both latest and br' d='' id=
+[C   ]  540,278  t='' d='' id=
+[    ]  363,257  t='Local source hidden folders' d='' id=
+[    ]  408,315  t='Allow local source to read hidden folders' d='' id=
+[    ]  190,473  t='69- Browse extras' d='' id=
+[C   ]  540,642  t='' d='' id=
+[    ]  361,600  t='69- Open sources on Latest' d='' id=
+[    ]  461,679  t='Tapping a source opens its Latest list first (when the source has one)' d='' id=
+[C   ]  540,884  t='' d='' id=
+[    ]  505,842  t='69- Flip the chapter order for these sources' d='' id=
+[    ]  571,921  t='For sources that list chapters backwards. Pull to refresh an entry's chapters af' d='' id=
+[C   ]  540,1126 t='' d='' id=
+[    ]  251,1084 t='Test all sources' d='' id=
+[    ]  571,1163 t='Opens the popular list of every source you use and tells you which ones are brok' d='' id=
+[C   ]  540,1368 t='' d='' id=
+[    ]  326,1326 t='Hide sources that failed' d='' id=
+[    ]  571,1405 t='Hides the sources that failed the last test (you can show them again in Browse →' d='' id=
+[C   ]  540,1610 t='' d='' id=
+[    ]  312,1568 t='Sources I mark as 18+' d='' id=
+[    ]  571,1647 t='Hidden when "Show 18+ sources" is off; also hidden from Discord when that option' d='' id=
+[    ]   82,1826 t='Feed' d='' id=
+[C   ]  540,1953 t='' d='' id=
+[    ]  234,1953 t='Hide Feed tab' d='' id=
+[C   ]  540,2195 t='' d='' id=
+[    ]  266,2111 t='Feed tab position' d='' id=
+[    ]  461,2232 t='Do you want the feed tab to be the first tab in browse? This will make it the de' d='' id=
+[C   ]  540,2379 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  243,212  t='Browse' d='' id=

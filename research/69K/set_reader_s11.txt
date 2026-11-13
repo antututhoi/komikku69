@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,64   t='' d='' id=
+[    ]  461,43   t='Slowly download the entire chapter while reading instead of just loading the pag' d='' id=
+[C   ]  540,313  t='' d='' id=
+[    ]  337,208  t='69- Low memory mode' d='' id=
+[    ]  461,350  t='For weak phones or long webtoons that stutter or close: preloads at most 3 pages' d='' id=
+[    ]  152,592  t='Fork Settings' d='' id=
+[C   ]  540,866  t='' d='' id=
+[    ]  282,719  t='Skip queue on retry' d='' id=
+[    ]  461,903  t='Normally, pressing the retry button on a failed download will wait until the dow' d='' id=
+[C   ]  540,1208 t='' d='' id=
+[    ]  461,1208 t='Preserve reading position on read entries' d='' id=
+[C   ]  540,1445 t='' d='' id=
+[    ]  296,1403 t='Auto Webtoon Mode' d='' id=
+[    ]  461,1482 t='Use auto webtoon mode for entries that are detected to likely use the long strip' d='' id=
+[C   ]  540,1666 t='' d='' id=
+[    ]  323,1645 t='Reader Bottom Buttons' d='' id=
+[    ]  542,1703 t='Customize what buttons appear at the bottom of the reader' d='' id=
+[C   ]  540,1887 t='' d='' id=
+[    ]  215,1845 t='Page layout' d='' id=
+[    ]  571,1924 t='While using automatic page layout, you can still switch between layouts while re' d='' id=
+[C   ]  540,2087 t='' d='' id=
+[    ]  288,2087 t='Invert double pages' d='' id=
+[C   ]  540,2266 t='' d='' id=
+[    ]  236,2245 t='Center Margin' d='' id=
+[    ]  567,2303 t='Insert spacer to accommodate deadspace on foldable devices.' d='' id=
+[C   ]  540,2383 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

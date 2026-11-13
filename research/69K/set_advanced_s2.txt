@@ -1,0 +1,31 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,12   t='' d='' id=
+[C   ]  540,146  t='' d='' id=
+[    ]  348,104  t='69- Clean up the database' d='' id=
+[    ]  571,183  t='Makes the library database smaller and faster. A notification shows the sizes wh' d='' id=
+[C   ]  540,388  t='' d='' id=
+[    ]  286,346  t='69- Clear all caches' d='' id=
+[    ]  571,425  t='Empties the page cache and the picture cache. Downloads and your library are not' d='' id=
+[    ]  137,604  t='Networking' d='' id=
+[C   ]  540,731  t='' d='' id=
+[    ]  230,731  t='Clear cookies' d='' id=
+[C   ]  540,889  t='' d='' id=
+[    ]  292,889  t='Clear WebView data' d='' id=
+[C   ]  540,1068 t='' d='' id=
+[    ]  323,1047 t='DNS over HTTPS (DoH)' d='' id=
+[    ]  169,1105 t='Disabled' d='' id=
+[C   ]  540,1289 t='' d='' id=
+[    ]  334,1247 t='Default user agent string' d='' id=
+[    ]  571,1326 t='Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome' d='' id=
+[C   ]  540,1552 t='' d='' id=
+[    ]  266,1489 t='69- GitHub mirror' d='' id=
+[    ]  571,1589 t='For when GitHub is blocked. An address that is put in front of GitHub links (ext' d='' id=
+[C   ]  540,1878 t='' d='' id=
+[    ]  383,1773 t='69- Picture proxy (saves data)' d='' id=
+[    ]  571,1915 t='Experimental. Sends pictures through a compressing service. Write its address wi' d='' id=
+[C   ]  540,2204 t='' d='' id=
+[    ]  498,2141 t='69- FlareSolverr server (Cloudflare checks)' d='' id=
+[    ]  571,2241 t='Address of a FlareSolverr server you run, e.g. http://192.168.1.5:8191. Sites wi' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

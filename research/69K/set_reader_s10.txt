@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  106,2    t='Actions' d='' id=
+[C   ]  540,105  t='' d='' id=
+[    ]  340,105  t='Show actions on long tap' d='' id=
+[C   ]  540,284  t='' d='' id=
+[    ]  410,263  t='Save pages into separate folders' d='' id=
+[    ]  407,321  t='Creates folders according to entries' title' d='' id=
+[    ]  198,479  t='Page Downloading' d='' id=
+[C   ]  540,690  t='' d='' id=
+[    ]  307,606  t='Page Preload amount' d='' id=
+[    ]  571,727  t='The amount of pages to preload when reading. Higher values will result in a smoo' d='' id=
+[C   ]  540,995  t='' d='' id=
+[    ]  275,932  t='Download threads' d='' id=
+[    ]  571,1032 t='Higher values can speed up image downloading significantly, but can also trigger' d='' id=
+[C   ]  540,1279 t='' d='' id=
+[    ]  274,1216 t='Reader cache size' d='' id=
+[    ]  571,1316 t='The amount of images to save on device while reading. Higher values will result ' d='' id=
+[C   ]  540,1563 t='' d='' id=
+[    ]  331,1500 t='Aggressively load pages' d='' id=
+[    ]  461,1600 t='Slowly download the entire chapter while reading instead of just loading the pag' d='' id=
+[C   ]  540,1889 t='' d='' id=
+[    ]  320,1784 t='69- Low memory mode' d='' id=
+[    ]  461,1926 t='For weak phones or long webtoons that stutter or close: preloads at most 3 pages' d='' id=
+[    ]  152,2168 t='Fork Settings' d='' id=
+[C   ]  540,2308 t='' d='' id=
+[    ]  282,2295 t='Skip queue on retry' d='' id=
+[    ]  461,2366 t='Normally, pressing the retry button on a failed download will wait until the dow' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

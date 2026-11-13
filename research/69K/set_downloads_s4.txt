@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,123  t='' d='' id=
+[    ]  444,41   t='69- Keep downloads when migrating' d='' id=
+[    ]  461,141  t='Downloaded chapters move to the new entry (matched by chapter number) instead of' d='' id=
+[C   ]  540,404  t='' d='' id=
+[    ]  461,362  t='69- Scanlator name in chapter folder names' d='' id=
+[    ]  461,478  t='On: "Group_Chapter 1". Off: "Chapter 1". Chapters downloaded either way are stil' d='' id=
+[C   ]  540,704  t='' d='' id=
+[    ]  444,641  t='69- Short file names (Windows-safe)' d='' id=
+[    ]  461,741  t='Cuts long entry and chapter folder names so Windows can copy them. A short code ' d='' id=
+[C   ]  540,946  t='' d='' id=
+[    ]  301,925  t='69- Max name length' d='' id=
+[    ]  205,983  t='80 (30 – 200)' d='' id=
+[C   ]  540,1167 t='' d='' id=
+[    ]  402,1125 t='69- Rename existing downloads' d='' id=
+[    ]  571,1204 t='Renames downloaded folders and .cbz files to the settings above. Shows progress ' d='' id=
+[C   ]  540,1409 t='' d='' id=
+[    ]  540,1367 t='69- Make all downloads smaller (on the phone)' d='' id=
+[    ]  571,1446 t='Resizes and re-saves the downloaded pages as WebP with the settings above. Nothi' d='' id=
+[    ]  321,1609 t='Concurrent source downloads' d='' id=
+[    ] 1011,1609 t='5' d='' id=
+[    ]  304,1898 t='Concurrent page downloads' d='' id=
+[    ]  381,1956 t='Pages downloaded simultaneously per source' d='' id=
+[    ] 1011,1919 t='5' d='' id=
+[    ]  172,2213 t='Delete chapters' d='' id=
+[C   ]  540,2330 t='' d='' id=
+[    ]  390,2340 t='After manually marked as read' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  289,212  t='Downloads' d='' id=

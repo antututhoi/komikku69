@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,102  t='' d='' id=
+[    ]  306,42   t='Refresh library covers' d='' id=
+[    ]  571,121  t='Downloads the covers again from the sources. Covers you set yourself are kept.' d='' id=
+[C   ]  540,326  t='' d='' id=
+[    ]  308,284  t='69- Back up all covers' d='' id=
+[    ]  571,363  t='Saves the covers of all library entries (also your own covers) into one ZIP file' d='' id=
+[C   ]  540,526  t='' d='' id=
+[    ]  365,526  t='69- Restore covers from ZIP' d='' id=
+[C   ]  540,747  t='' d='' id=
+[    ]  541,684  t='69- Import covers from another Komikku folder' d='' id=
+[    ]  571,784  t='Pick the old app's folder (e.g. app.komikku.beta or its "covers" folder). Covers' d='' id=
+[C   ]  540,968  t='' d='' id=
+[    ]  361,968  t='Preload library's cover color' d='' id=
+[C   ]  540,1147 t='' d='' id=
+[    ]  400,1126 t='Reset per-series reader settings' d='' id=
+[    ]  469,1184 t='Resets reading mode and orientation of all series' d='' id=
+[C   ]  540,1405 t='' d='' id=
+[    ]  461,1363 t='Update library manga titles to match source' d='' id=
+[    ]  461,1479 t='Warning: if a manga is renamed, it will be removed from the download queue (if p' d='' id=
+[C   ]  540,1789 t='' d='' id=
+[    ]  377,1642 t='Disallow non-ASCII filenames' d='' id=
+[    ]  461,1826 t='Ensures compatibility with certain storage media that don't support Unicode. Whe' d='' id=
+[    ]  135,2110 t='Downloads' d='' id=
+[C   ]  540,2279 t='' d='' id=
+[    ]  342,2237 t='Include chapter URL hash' d='' id=
+[    ]  461,2337 t='Append the first six characters of the chapter URL's MD5 hash to the chapter fil' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

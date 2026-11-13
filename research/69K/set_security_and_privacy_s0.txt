@@ -1,0 +1,12 @@
+[    ]  109,359  t='Security' d='' id=
+[C   ]  540,486  t='' d='' id=
+[    ]  334,486  t='Hide notification content' d='' id=
+[C   ]  540,665  t='' d='' id=
+[    ]  236,644  t='Secure screen' d='' id=
+[    ]  220,702  t='Incognito mode' d='' id=
+[C   ]  540,844  t='' d='' id=
+[    ]  348,844  t='Set CBZ archive password' d='' id=
+[    ]  540,1112 t='Secure screen hides app contents when switching apps and block screenshots' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  401,212  t='Security and privacy' d='' id=

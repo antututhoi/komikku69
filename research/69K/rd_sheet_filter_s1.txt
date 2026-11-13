@@ -1,0 +1,26 @@
+[C   ]  540,148  t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  326,185  t='The New Gate' d='' id=
+[    ]  264,248  t='Vol.19 Ch.128' d='' id=
+[CL  ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Bookmark chapter' id=
+[C   ]  540,360  t='' d='' id=
+[C   ]   85,2128 t='' d='' id=
+[    ]   84,2127 t='' d='Next chapter' id=
+[    ]  874,2127 t='18' d='' id=
+[    ]  208,2127 t='18' d='' id=
+[C   ]  997,2128 t='' d='' id=
+[    ]  996,2127 t='' d='Previous chapter' id=
+[C   ]  153,2275 t='' d='' id=
+[    ]  152,2274 t='' d='Chapters' id=
+[C   ]  347,2275 t='' d='' id=
+[    ]  346,2274 t='' d='Open in WebView' id=
+[C   ]  541,2275 t='' d='' id=
+[    ]  540,2274 t='' d='Crop borders' id=
+[C   ]  735,2275 t='' d='' id=
+[    ]  734,2274 t='' d='Page layout' id=
+[C   ]  929,2275 t='' d='' id=
+[    ]  928,2274 t='' d='Settings' id=
+[S   ]  540,1200 t='' d='' id=reader_pager
+[C   ]  540,1200 t='' d='' id=

@@ -1,0 +1,44 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,246  t='' d='' id=
+[S   ]  540,225  t='' d='' id=
+[C   ]  191,156  t='' d='' id=
+[    ]  191,398  t='Default' d='' id=
+[C   ]  511,156  t='' d='' id=
+[    ]  511,398  t='Dynamic' d='' id=
+[C   ]  831,156  t='' d='' id=
+[    ]  831,398  t='Custom Theme' d='' id=
+[C   ] 1046,156  t='' d='' id=
+[    ] 1041,398  t='Cotton Candy' d='' id=
+[    ]  187,545  t='69- My themes' d='' id=
+[    ]  540,619  t='Pick a main and a second color, then save it with a name. Tap a saved theme to u' d='' id=
+[C   ]  218,767  t='' d='' id=
+[    ]  244,766  t='Main color' d='' id=
+[C   ]  593,767  t='' d='' id=
+[    ]  601,766  t='Second color' d='' id=
+[C   ]  239,893  t='' d='' id=
+[    ]  239,892  t='Save as a theme' d='' id=
+[C   ]  265,1040 t='' d='' id=
+[    ]  265,1039 t='Save theme to a file' d='' id=
+[C   ]  755,1040 t='' d='' id=
+[    ]  755,1039 t='Load theme from a file' d='' id=
+[C   ]  540,1223 t='' d='' id=
+[    ]  220,1202 t='69- App font' d='' id=
+[    ]  159,1260 t='Default' d='' id=
+[C   ]  540,1423 t='' d='' id=
+[    ]  366,1402 t='69- Display size (whole app)' d='' id=
+[    ]  160,1460 t='Normal' d='' id=
+[C   ]  540,1602 t='' d='' id=
+[    ]  421,1602 t='69- Floating bottom bar (rounded)' d='' id=
+[C   ]  540,1781 t='' d='' id=
+[    ]  308,1760 t='69- Bottom bar height' d='' id=
+[    ]  160,1818 t='Normal' d='' id=
+[C   ]  540,1960 t='' d='' id=
+[    ]  266,1960 t='69- Taller title bar' d='' id=
+[C   ]  540,2181 t='' d='' id=
+[    ]  345,2118 t='69- Cover-grow animation' d='' id=
+[    ]  461,2218 t='When you open an entry from the library grid, its cover grows into the entry pag' d='' id=
+[C   ]  540,2361 t='' d='' id=
+[    ]  313,2382 t='69- Frosted glass bars' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  299,212  t='Appearance' d='' id=

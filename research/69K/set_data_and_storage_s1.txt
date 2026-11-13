@@ -1,0 +1,34 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  533,35   t='Used for automatic backups, chapter downloads, and local source.' d='' id=
+[    ]  202,161  t='Backup and restore' d='' id=
+[C   ]  540,330  t='' d='' id=
+[    ]  359,288  t='69- Import reading from PC' d='' id=
+[    ]  571,367  t='Pick 69-komikku-pc-progress.json (next to your backups) to bring back the chapte' d='' id=
+[C   ]  540,614  t='' d='' id=
+[    ]  369,530  t='69- Import from another app' d='' id=
+[    ]  571,651  t='Kotatsu (and apps like it) backup .zip, Venera backup, or a .txt list with one t' d='' id=
+[C   ]  540,882  t='' d='' id=
+[Ck  ]  290,882  t='' d='' id=
+[    ]  291,882  t='Create backup' d='' id=
+[Ck  ]  788,882  t='' d='' id=
+[    ]  788,882  t='Restore backup' d='' id=
+[C   ]  540,1087 t='' d='' id=
+[    ]  372,1066 t='Automatic backup frequency' d='' id=
+[    ]  215,1124 t='Every 12 hours' d='' id=
+[    ]  540,1439 t='You should keep copies of backups in other places as well. Backups may contain s' d='' id=
+[C   ]  540,1665 t='' d='' id=
+[    ]  402,1665 t='Show restoring progress banner' d='' id=
+[    ]  161,1839 t='Storage usage' d='' id=
+[C   ]  540,2003 t='' d='' id=
+[    ]  214,1955 t='/storage/emulated/0' d='' id=
+[    ]  296,2057 t='Available: 4.92 GB / Total: 6.23 GB' d='' id=
+[C   ]  540,2220 t='' d='' id=
+[    ]  290,2199 t='Clear chapter cache' d='' id=
+[    ]  184,2257 t='Used: 31 B' d='' id=
+[C   ]  540,2360 t='' d='' id=
+[    ]  342,2381 t='Clear page preview cache' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  364,212  t='Data and storage' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

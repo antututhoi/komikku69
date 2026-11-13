@@ -1,0 +1,32 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,65   t='' d='' id=
+[    ]  301,23   t='69- Max name length' d='' id=
+[    ]  205,67   t='80 (30 – 200)' d='' id=
+[C   ]  540,251  t='' d='' id=
+[    ]  419,209  t='69- Rename existing downloads' d='' id=
+[    ]  571,288  t='Renames downloaded folders and .cbz files to the settings above. Shows progress ' d='' id=
+[C   ]  540,493  t='' d='' id=
+[    ]  540,451  t='69- Make all downloads smaller (on the phone)' d='' id=
+[    ]  571,530  t='Resizes and re-saves the downloaded pages as WebP with the settings above. Nothi' d='' id=
+[    ]  321,693  t='Concurrent source downloads' d='' id=
+[    ] 1011,693  t='5' d='' id=
+[    ]  304,982  t='Concurrent page downloads' d='' id=
+[    ]  381,1040 t='Pages downloaded simultaneously per source' d='' id=
+[    ] 1011,1003 t='5' d='' id=
+[    ]  172,1297 t='Delete chapters' d='' id=
+[C   ]  540,1424 t='' d='' id=
+[    ]  390,1424 t='After manually marked as read' d='' id=
+[C   ]  540,1603 t='' d='' id=
+[    ]  419,1582 t='After reading automatically delete' d='' id=
+[    ]  169,1640 t='Disabled' d='' id=
+[C   ]  540,1782 t='' d='' id=
+[    ]  445,1782 t='Allow deleting bookmarked chapters' d='' id=
+[C   ]  540,1961 t='' d='' id=
+[    ]  293,1940 t='Excluded categories' d='' id=
+[    ]  144,1998 t='None' d='' id=
+[    ]  168,2156 t='Auto-download' d='' id=
+[C   ]  540,2283 t='' d='' id=
+[    ]  329,2283 t='Download new chapters' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  289,212  t='Downloads' d='' id=

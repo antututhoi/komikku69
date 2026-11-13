@@ -1,0 +1,37 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,375  t='' d='' id=
+[    ]  447,375  t='Open track menu on adding to library' d='' id=
+[C   ]  540,533  t='' d='' id=
+[    ]  383,533  t='Update progress after reading' d='' id=
+[C   ]  540,754  t='' d='' id=
+[    ]  563,691  t='69- Update trackers only after this many chapters' d='' id=
+[    ]  571,791  t='Reading progress is sent to your trackers only once you have read this many chap' d='' id=
+[C   ]  540,996  t='' d='' id=
+[    ]  464,975  t='Update progress when marked as read' d='' id=
+[    ]  158,1033 t='Always' d='' id=
+[C   ]  540,1175 t='' d='' id=
+[    ]  420,1175 t='Auto sync progress from Trackers' d='' id=
+[C   ]  540,1396 t='' d='' id=
+[    ]  450,1333 t='Select entries using source metadata' d='' id=
+[    ]  461,1433 t='Automatically selects the matching title if the source provides links to tracker' d='' id=
+[    ]  113,1601 t='Trackers' d='' id=
+[C   ]  540,1733 t='' d='' id=
+[    ]  105,1733 t='' d='MyAnimeList' id=
+[    ]  603,1733 t='MyAnimeList' d='' id=
+[C   ]  540,1901 t='' d='' id=
+[    ]  105,1901 t='' d='AniList' id=
+[    ]  603,1901 t='AniList' d='' id=
+[C   ]  540,2069 t='' d='' id=
+[    ]  105,2069 t='' d='Kitsu' id=
+[    ]  603,2069 t='Kitsu' d='' id=
+[C   ]  540,2237 t='' d='' id=
+[    ]  105,2237 t='' d='MangaUpdates' id=
+[    ]  603,2237 t='MangaUpdates' d='' id=
+[C   ]  540,2360 t='' d='' id=
+[    ]  105,2371 t='' d='Shikimori' id=
+[    ]  603,2384 t='Shikimori' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  256,212  t='Tracking' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

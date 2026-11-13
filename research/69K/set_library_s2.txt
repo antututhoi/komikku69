@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,55   t='' d='' id=
+[    ]  440,13   t='Mark duplicate read chapter as read' d='' id=
+[    ]  144,48   t='None' d='' id=
+[C   ]  540,190  t='' d='' id=
+[    ]  417,190  t='Hide missing chapter indicators' d='' id=
+[C   ]  540,385  t='' d='' id=
+[    ]  461,385  t='Show empty categories during search/filtering' d='' id=
+[C   ]  540,659  t='' d='' id=
+[    ]  461,617  t='Fetch metadata when adding to library' d='' id=
+[    ]  461,733  t='Automatically fetches the metadata of a new manga when adding it to the library' d='' id=
+[C   ]  540,938  t='' d='' id=
+[    ]  454,896  t='Fetch chapters when adding to library' d='' id=
+[    ]  461,975  t='Automatically fetches the chapter list of a new manga when adding it to the libr' d='' id=
+[    ]  175,1154 t='Sorting Settings' d='' id=
+[C   ]  540,1344 t='' d='' id=
+[    ]  257,1281 t='Tag sorting tags' d='' id=
+[    ]  571,1381 t='0 tags in sorting list. This adds a option in the library to sort by a priority ' d='' id=
+[    ]  312,1581 t='69- Library and entry page extras' d='' id=
+[C   ]  540,1750 t='' d='' id=
+[    ]  494,1708 t='69- Pause between entries when updating' d='' id=
+[    ]  571,1787 t='Waits a little before each entry of a source is checked. Gentler for sources tha' d='' id=
+[C   ]  540,1971 t='' d='' id=
+[    ]  459,1950 t='69- Sources updated at the same time' d='' id=
+[    ]  533,2008 t='Lower = slower but gentler on your phone and the sources' d='' id=
+[C   ]  540,2192 t='' d='' id=
+[    ]  372,2150 t='69- Sort ignoring 'a / an / the'' d='' id=
+[    ]  461,2229 t='Alphabetical sort skips these words at the start of titles' d='' id=
+[C   ]  540,2356 t='' d='' id=
+[    ]  295,2377 t='69- Badge on covers' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=

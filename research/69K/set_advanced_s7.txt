@@ -1,0 +1,31 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  100,4    t='Reader' d='' id=
+[C   ]  540,171  t='' d='' id=
+[    ]  434,108  t='Custom hardware bitmap threshold' d='' id=
+[    ]  571,208  t='If reader loads a blank image incrementally reduce the threshold.
+Selected: Defa' d='' id=
+[C   ]  540,471  t='' d='' id=
+[    ]  461,429  t='Use legacy decoder for long strip reader' d='' id=
+[    ]  461,545  t='Affects performance. Only enable if reducing bitmap threshold doesn't fix blank ' d='' id=
+[C   ]  540,708  t='' d='' id=
+[    ]  313,708  t='Custom display profile' d='' id=
+[    ]  134,882  t='Extensions' d='' id=
+[C   ]  540,1030 t='' d='' id=
+[    ]  179,1009 t='Installer' d='' id=
+[    ]  229,1067 t='PackageInstaller' d='' id=
+[    ]  540,1319 t='Avoid using Private Installer because it's not stable yet, will lead to really s' d='' id=
+[C   ]  540,1545 t='' d='' id=
+[    ]  445,1482 t='69- Update extensions automatically' d='' id=
+[    ]  461,1582 t='When the daily check finds extension updates, they are installed right away (sil' d='' id=
+[C   ]  540,1766 t='' d='' id=
+[    ]  440,1766 t='Revoke trusted unknown extensions' d='' id=
+[    ]  132,1940 t='Data Saver' d='' id=
+[C   ]  540,2088 t='' d='' id=
+[    ]  206,2067 t='Data Saver' d='' id=
+[    ]  537,2125 t='Compress images before downloading or loading in reader' d='' id=
+[    ]  171,2283 t='Developer tools' d='' id=
+[C   ]  540,2365 t='' d='' id=
+[    ]  412,2386 t='Enable integrated hentai features' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

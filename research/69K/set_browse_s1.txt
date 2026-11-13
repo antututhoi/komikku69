@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,9    t='' d='' id=
+[C   ]  540,140  t='' d='' id=
+[    ]  333,98   t='Home from Suggestions' d='' id=
+[    ]  461,177  t='Show an icon while browsing Suggestions to navigate directly back to Home' d='' id=
+[C   ]  540,361  t='' d='' id=
+[    ]  244,340  t='Edit categories' d='' id=
+[    ]  197,398  t='0 categories' d='' id=
+[C   ]  540,603  t='' d='' id=
+[    ]  356,540  t='Filter sources in categories' d='' id=
+[    ]  461,640  t='Filter the sources that are in categories, making the sources not get put under ' d='' id=
+[C   ]  540,866  t='' d='' id=
+[    ]  303,824  t='Replace latest button' d='' id=
+[    ]  461,903  t='Replace latest button with a custom browse view that includes both latest and br' d='' id=
+[C   ]  540,1087 t='' d='' id=
+[    ]  363,1066 t='Local source hidden folders' d='' id=
+[    ]  408,1124 t='Allow local source to read hidden folders' d='' id=
+[    ]  190,1282 t='69- Browse extras' d='' id=
+[C   ]  540,1451 t='' d='' id=
+[    ]  361,1409 t='69- Open sources on Latest' d='' id=
+[    ]  461,1488 t='Tapping a source opens its Latest list first (when the source has one)' d='' id=
+[C   ]  540,1693 t='' d='' id=
+[    ]  505,1651 t='69- Flip the chapter order for these sources' d='' id=
+[    ]  571,1730 t='For sources that list chapters backwards. Pull to refresh an entry's chapters af' d='' id=
+[C   ]  540,1935 t='' d='' id=
+[    ]  251,1893 t='Test all sources' d='' id=
+[    ]  571,1972 t='Opens the popular list of every source you use and tells you which ones are brok' d='' id=
+[C   ]  540,2177 t='' d='' id=
+[    ]  326,2135 t='Hide sources that failed' d='' id=
+[    ]  571,2214 t='Hides the sources that failed the last test (you can show them again in Browse →' d='' id=
+[C   ]  540,2349 t='' d='' id=
+[    ]  312,2370 t='Sources I mark as 18+' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  243,212  t='Browse' d='' id=

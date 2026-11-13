@@ -1,0 +1,1073 @@
+##### Library
+Categories
+Edit categories
+2 categories
+Default category
+Always ask
+Per-category settings for sort
+Global update
+Automatic updates
+Off
+Categories
+Library dynamic category updates
+Always launch global updates
+Automatically refresh metadata
+Check for new cover and details when updating library
+Smart update
+Skip entries with "Completed" status, Skip entries with unread chapter(s), Skip 
+Show unread count on Updates icon
+Library
+-----
+Library dynamic category updates
+Always launch global updates
+Automatically refresh metadata
+Check for new cover and details when updating library
+Smart update
+Skip entries with "Completed" status, Skip entries with unread chapter(s), Skip 
+Show unread count on Updates icon
+Show updating progress banner
+Behavior
+Chapter on swipe to left
+Bookmark chapter
+Chapter on swipe to right
+Mark as read
+Mark duplicate read chapter as read
+None
+Hide missing chapter indicators
+Show empty categories during search/filtering
+Fetch metadata when adding to library
+Automatically fetches the metadata of a new manga when adding it to the library
+Library
+-----
+Mark duplicate read chapter as read
+None
+Hide missing chapter indicators
+Show empty categories during search/filtering
+Fetch metadata when adding to library
+Automatically fetches the metadata of a new manga when adding it to the library
+Fetch chapters when adding to library
+Automatically fetches the chapter list of a new manga when adding it to the libr
+Sorting Settings
+Tag sorting tags
+0 tags in sorting list. This adds a option in the library to sort by a priority 
+69- Library and entry page extras
+69- Pause between entries when updating
+Waits a little before each entry of a source is checked. Gentler for sources tha
+69- Sources updated at the same time
+Lower = slower but gentler on your phone and the sources
+69- Sort ignoring 
+Alphabetical sort skips these words at the start of titles
+69- Badge on covers
+Library
+-----
+Fetch chapters when adding to library
+Automatically fetches the chapter list of a new manga when adding it to the libr
+Sorting Settings
+Tag sorting tags
+0 tags in sorting list. This adds a option in the library to sort by a priority 
+69- Library and entry page extras
+69- Pause between entries when updating
+Waits a little before each entry of a source is checked. Gentler for sources tha
+69- Sources updated at the same time
+Lower = slower but gentler on your phone and the sources
+69- Sort ignoring 
+Alphabetical sort skips these words at the start of titles
+69- Badge on covers
+What the unread badge shows. It still needs 
+69- Title lines under covers
+Default
+69- Space between covers
+4 dp (normal)
+69- Chapters as a grid of numbers (tiles per row)
+Off (normal list)
+69- Corner for the download count
+Library
+-----
+69- Pause between entries when updating
+Waits a little before each entry of a source is checked. Gentler for sources tha
+69- Sources updated at the same time
+Lower = slower but gentler on your phone and the sources
+69- Sort ignoring 
+Alphabetical sort skips these words at the start of titles
+69- Badge on covers
+What the unread badge shows. It still needs 
+69- Title lines under covers
+Default
+69- Space between covers
+4 dp (normal)
+69- Chapters as a grid of numbers (tiles per row)
+Off (normal list)
+69- Corner for the download count
+Top left
+69- Corner for the unread badge
+Top left
+69- Corner for the language
+Top right
+69- Corner for the source icon
+Top right
+69- All categories on one page
+One scrolling page with a header per category. Tap a header to fold it. Tap "Lib
+Library
+-----
+69- Title lines under covers
+Default
+69- Space between covers
+4 dp (normal)
+69- Chapters as a grid of numbers (tiles per row)
+Off (normal list)
+69- Corner for the download count
+Top left
+69- Corner for the unread badge
+Top left
+69- Corner for the language
+Top right
+69- Corner for the source icon
+Top right
+69- All categories on one page
+One scrolling page with a header per category. Tap a header to fold it. Tap "Lib
+69- Covers in their own shape (Pinterest grid)
+In grid views, tall and wide covers keep their real shape and are packed togethe
+69- Thin outline around covers
+69- Low-memory library
+Keeps fewer covers in memory and uses lighter picture colors, for big libraries 
+Library
+-----
+Top left
+69- Corner for the language
+Top right
+69- Corner for the source icon
+Top right
+69- All categories on one page
+One scrolling page with a header per category. Tap a header to fold it. Tap "Lib
+69- Covers in their own shape (Pinterest grid)
+In grid views, tall and wide covers keep their real shape and are packed togethe
+69- Thin outline around covers
+69- Low-memory library
+Keeps fewer covers in memory and uses lighter picture colors, for big libraries 
+69- Chapter pictures
+Downloaded chapters show a small picture of their first page in the chapter list
+69- One row per chapter number
+When several groups uploaded the same chapter, the entry page shows only one cop
+69- Preferred groups
+Group (scanlator) names, separated by commas, best first. Used for "One row per 
+Library
+-----
+69- Covers in their own shape (Pinterest grid)
+In grid views, tall and wide covers keep their real shape and are packed togethe
+69- Thin outline around covers
+69- Low-memory library
+Keeps fewer covers in memory and uses lighter picture colors, for big libraries 
+69- Chapter pictures
+Downloaded chapters show a small picture of their first page in the chapter list
+69- One row per chapter number
+When several groups uploaded the same chapter, the entry page shows only one cop
+69- Preferred groups
+Group (scanlator) names, separated by commas, best first. Used for "One row per 
+69- Ask before removing from library
+On an entry
+69- Show date added
+Shows when the entry was added to your library on its page
+69- Tidy tags
+Shows tags with the same capital letters, without duplicates, sorted A-Z
+Library
+-----
+##### Reader
+Default reading mode
+Paged (right to left)
+Double tap animation speed
+Normal
+Show reading mode
+Briefly show current mode when reader is opened
+Show tap zones overlay
+Briefly show when reader is opened
+Smaller tap zones
+Force horizontal seekbar
+Removes vertical seekbar entirely in favour of horizontal
+Show vertical seekbar in landscape
+Enables vertical seekbar when in landscape
+Left-handed vertical seekbar
+Switches which side the seekbar is on
+Display
+Default rotation
+Free
+Background color
+Black
+Reader
+-----
+Show tap zones overlay
+Briefly show when reader is opened
+Smaller tap zones
+Force horizontal seekbar
+Removes vertical seekbar entirely in favour of horizontal
+Show vertical seekbar in landscape
+Enables vertical seekbar when in landscape
+Left-handed vertical seekbar
+Switches which side the seekbar is on
+Display
+Default rotation
+Free
+Background color
+Black
+Fullscreen
+Show content in cutout area
+Keep screen on
+Show page number
+E-Ink
+Flash on page change
+Reader
+-----
+Left-handed vertical seekbar
+Switches which side the seekbar is on
+Display
+Default rotation
+Free
+Background color
+Black
+Fullscreen
+Show content in cutout area
+Keep screen on
+Show page number
+E-Ink
+Flash on page change
+Reduces ghosting on e-ink displays
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+Reader
+-----
+Show content in cutout area
+Keep screen on
+Show page number
+E-Ink
+Flash on page change
+Reduces ghosting on e-ink displays
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+Paged
+Tap zones
+Default
+Invert tap zones
+None
+Scale type
+Fit screen
+Zoom start position
+Reader
+-----
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+Paged
+Tap zones
+Default
+Invert tap zones
+None
+Scale type
+Fit screen
+Zoom start position
+Automatic
+Crop borders
+Animate page transitions
+Automatically zoom into wide images
+Wide images zoom mode
+Fit screen
+Reader
+-----
+Automatic
+Crop borders
+Animate page transitions
+Automatically zoom into wide images
+Wide images zoom mode
+Fit screen
+Disable zoom in
+Double tap to zoom
+Pan wide images
+Split wide pages
+Rotate wide pages to fit
+Long strip
+Tap zones
+Default
+Invert tap zones
+None
+Smart scale on wide screen
+Fit screen
+Apply Smart scale to Long strip with gaps
+Reader
+-----
+Double tap to zoom
+Pan wide images
+Split wide pages
+Rotate wide pages to fit
+Long strip
+Tap zones
+Default
+Invert tap zones
+None
+Smart scale on wide screen
+Fit screen
+Apply Smart scale to Long strip with gaps
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Split wide pages
+Reader
+-----
+Tap zones
+Default
+Invert tap zones
+None
+Smart scale on wide screen
+Fit screen
+Apply Smart scale to Long strip with gaps
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Split wide pages
+Rotate wide pages to fit
+Double tap to zoom
+Pinch to zoom
+Disable zoom out
+Animate page transitions
+Reader
+-----
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Split wide pages
+Rotate wide pages to fit
+Double tap to zoom
+Pinch to zoom
+Disable zoom out
+Animate page transitions
+Long strip with gaps
+Tap scroll by page
+Tapping will scroll by page instead of screen size when this option is enabled
+Crop borders
+Navigation
+Volume keys
+Actions
+Reader
+-----
+Double tap to zoom
+Pinch to zoom
+Disable zoom out
+Animate page transitions
+Long strip with gaps
+Tap scroll by page
+Tapping will scroll by page instead of screen size when this option is enabled
+Crop borders
+Navigation
+Volume keys
+Actions
+Show actions on long tap
+Save pages into separate folders
+Creates folders according to entries
+Page Downloading
+Page Preload amount
+The amount of pages to preload when reading. Higher values will result in a smoo
+Reader
+-----
+Actions
+Show actions on long tap
+Save pages into separate folders
+Creates folders according to entries
+Page Downloading
+Page Preload amount
+The amount of pages to preload when reading. Higher values will result in a smoo
+Download threads
+Higher values can speed up image downloading significantly, but can also trigger
+Reader cache size
+The amount of images to save on device while reading. Higher values will result 
+Aggressively load pages
+Slowly download the entire chapter while reading instead of just loading the pag
+69- Low memory mode
+For weak phones or long webtoons that stutter or close: preloads at most 3 pages
+Fork Settings
+Skip queue on retry
+Normally, pressing the retry button on a failed download will wait until the dow
+Reader
+-----
+Slowly download the entire chapter while reading instead of just loading the pag
+69- Low memory mode
+For weak phones or long webtoons that stutter or close: preloads at most 3 pages
+Fork Settings
+Skip queue on retry
+Normally, pressing the retry button on a failed download will wait until the dow
+Preserve reading position on read entries
+Auto Webtoon Mode
+Use auto webtoon mode for entries that are detected to likely use the long strip
+Reader Bottom Buttons
+Customize what buttons appear at the bottom of the reader
+Page layout
+While using automatic page layout, you can still switch between layouts while re
+Invert double pages
+Center Margin
+Insert spacer to accommodate deadspace on foldable devices.
+Reader
+-----
+Normally, pressing the retry button on a failed download will wait until the dow
+Preserve reading position on read entries
+Auto Webtoon Mode
+Use auto webtoon mode for entries that are detected to likely use the long strip
+Reader Bottom Buttons
+Customize what buttons appear at the bottom of the reader
+Page layout
+While using automatic page layout, you can still switch between layouts while re
+Invert double pages
+Center Margin
+Insert spacer to accommodate deadspace on foldable devices.
+Archive reader mode
+The way in which images inside archives, such as CBZ or CBR, are being loaded
+69- Reader extras
+69- Avoid the camera notch only when sideways
+The page stays under the notch in portrait but moves away from it when you turn 
+69- Load pages ahead only on Wi-Fi
+Reader
+-----
+Reader Bottom Buttons
+Customize what buttons appear at the bottom of the reader
+Page layout
+While using automatic page layout, you can still switch between layouts while re
+Invert double pages
+Center Margin
+Insert spacer to accommodate deadspace on foldable devices.
+Archive reader mode
+The way in which images inside archives, such as CBZ or CBR, are being loaded
+69- Reader extras
+69- Avoid the camera notch only when sideways
+The page stays under the notch in portrait but moves away from it when you turn 
+69- Load pages ahead only on Wi-Fi
+On mobile data only the next 2 pages are loaded in advance (saves data)
+69- Info line in the reader
+Entry and chapter names at the top; battery, chapter x / y and time at the botto
+69- Clock format
+Same as the phone
+69- Order of the reader
+Move the buttons up or down. Which buttons show is set in "Reader bottom buttons
+Reader
+-----
+On mobile data only the next 2 pages are loaded in advance (saves data)
+69- Info line in the reader
+Entry and chapter names at the top; battery, chapter x / y and time at the botto
+69- Clock format
+Same as the phone
+69- Order of the reader
+Move the buttons up or down. Which buttons show is set in "Reader bottom buttons
+69- Zoom buttons in the reader
+Round + and - buttons on the right side of the screen
+69- Maximum zoom
+5x
+69- Reader in its own window
+Opens the reader as a separate window in the recent apps list, so you can switch
+69- Page translation: how
+Google, free, on the phone (needs Google Play services)
+69- Translate pages to
+English
+69- AI service
+Google Gemini
+69- AI key
+Your key from aistudio.google.com (Gemini) or platform.openai.com. Stays on this
+69- AI model (optional)
+Reader
+-----
+##### Downloads
+Only on Wi-Fi
+Save as CBZ archive
+Split tall images
+Improves reader performance
+69- Download speed limit
+Caps all downloads together so browsing and streaming stay fast
+69- Pause before each picture
+Gentler for sources that block fast downloads
+69- Tries again after a failed picture
+3 (normal)
+69- Page quality of downloads
+Original (as the source sends it)
+69- Max page width
+1080 px (0 = no limit)
+69- Max page height
+0 px (0 = no limit)
+69- Don
+Pages much taller than wide (or much wider than tall) are kept as they are
+69- WebP quality
+Downloads
+-----
+69- Download speed limit
+Caps all downloads together so browsing and streaming stay fast
+69- Pause before each picture
+Gentler for sources that block fast downloads
+69- Tries again after a failed picture
+3 (normal)
+69- Page quality of downloads
+Original (as the source sends it)
+69- Max page width
+1080 px (0 = no limit)
+69- Max page height
+0 px (0 = no limit)
+69- Don
+Pages much taller than wide (or much wider than tall) are kept as they are
+69- WebP quality
+80 (1 – 100)
+69- Redownload everything downloaded – smaller
+69- Redownload everything downloaded – original
+69- Download into category folders
+New downloads go to downloads/(category)/(entry) instead of the source
+Downloads
+-----
+69- Max page width
+1080 px (0 = no limit)
+69- Max page height
+0 px (0 = no limit)
+69- Don
+Pages much taller than wide (or much wider than tall) are kept as they are
+69- WebP quality
+80 (1 – 100)
+69- Redownload everything downloaded – smaller
+69- Redownload everything downloaded – original
+69- Download into category folders
+New downloads go to downloads/(category)/(entry) instead of the source
+69- Sort downloads by a backup file
+Pick a backup (.tachibk): each entry
+69- Fix download folders
+Puts every library entry
+69- Move existing downloads into category folders
+Moves every library entry
+Downloads
+-----
+69- Sort downloads by a backup file
+Pick a backup (.tachibk): each entry
+69- Fix download folders
+Puts every library entry
+69- Move existing downloads into category folders
+Moves every library entry
+69- Keep downloads when migrating
+Downloaded chapters move to the new entry (matched by chapter number) instead of
+69- Scanlator name in chapter folder names
+On: "Group_Chapter 1". Off: "Chapter 1". Chapters downloaded either way are stil
+69- Short file names (Windows-safe)
+Cuts long entry and chapter folder names so Windows can copy them. A short code 
+69- Max name length
+80 (30 – 200)
+69- Rename existing downloads
+Renames downloaded folders and .cbz files to the settings above. Shows progress 
+69- Make all downloads smaller (on the phone)
+Resizes and re-saves the downloaded pages as WebP with the settings above. Nothi
+Downloads
+-----
+69- Keep downloads when migrating
+Downloaded chapters move to the new entry (matched by chapter number) instead of
+69- Scanlator name in chapter folder names
+On: "Group_Chapter 1". Off: "Chapter 1". Chapters downloaded either way are stil
+69- Short file names (Windows-safe)
+Cuts long entry and chapter folder names so Windows can copy them. A short code 
+69- Max name length
+80 (30 – 200)
+69- Rename existing downloads
+Renames downloaded folders and .cbz files to the settings above. Shows progress 
+69- Make all downloads smaller (on the phone)
+Resizes and re-saves the downloaded pages as WebP with the settings above. Nothi
+Concurrent source downloads
+5
+Concurrent page downloads
+Pages downloaded simultaneously per source
+5
+Delete chapters
+After manually marked as read
+Downloads
+-----
+69- Max name length
+80 (30 – 200)
+69- Rename existing downloads
+Renames downloaded folders and .cbz files to the settings above. Shows progress 
+69- Make all downloads smaller (on the phone)
+Resizes and re-saves the downloaded pages as WebP with the settings above. Nothi
+Concurrent source downloads
+5
+Concurrent page downloads
+Pages downloaded simultaneously per source
+5
+Delete chapters
+After manually marked as read
+After reading automatically delete
+Disabled
+Allow deleting bookmarked chapters
+Excluded categories
+None
+Auto-download
+Download new chapters
+Downloads
+-----
+Concurrent page downloads
+Pages downloaded simultaneously per source
+5
+Delete chapters
+After manually marked as read
+After reading automatically delete
+Disabled
+Allow deleting bookmarked chapters
+Excluded categories
+None
+Auto-download
+Download new chapters
+Download ahead
+Auto download while reading
+Disabled
+Only works if the current chapter + the next one are already downloaded.
+Download cache renew interval
+Download cache renew interval
+1 hour
+Downloads
+-----
+Delete chapters
+After manually marked as read
+After reading automatically delete
+Disabled
+Allow deleting bookmarked chapters
+Excluded categories
+None
+Auto-download
+Download new chapters
+Download ahead
+Auto download while reading
+Disabled
+Only works if the current chapter + the next one are already downloaded.
+Download cache renew interval
+Download cache renew interval
+1 hour
+If set to "manual", either refresh each manga or using the "Reindex downloads" a
+Downloads
+-----
+##### Tracking
+Open track menu on adding to library
+Update progress after reading
+69- Update trackers only after this many chapters
+Reading progress is sent to your trackers only once you have read this many chap
+Update progress when marked as read
+Always
+Auto sync progress from Trackers
+Select entries using source metadata
+Automatically selects the matching title if the source provides links to tracker
+Trackers
+MyAnimeList
+AniList
+Kitsu
+MangaUpdates
+Shikimori
+Tracking
+-----
+Auto sync progress from Trackers
+Select entries using source metadata
+Automatically selects the matching title if the source provides links to tracker
+Trackers
+MyAnimeList
+AniList
+Kitsu
+MangaUpdates
+Shikimori
+Bangumi
+One-way sync to update the chapter progress in external tracker services. Set up
+Enhanced trackers
+Provides enhanced features for specific sources. Entries are automatically track
+Tracking
+-----
+##### Connections
+Special Services
+Discord
+This Discord Service works through token logging. Use at your own risk. Your tok
+Connections
+-----
+##### Browse
+Sources
+Suggestions
+Show source-website
+Expand Suggestions
+If turned off, Suggestions won
+Home from Suggestions
+Show an icon while browsing Suggestions to navigate directly back to Home
+Edit categories
+0 categories
+Filter sources in categories
+Filter the sources that are in categories, making the sources not get put under 
+Replace latest button
+Replace latest button with a custom browse view that includes both latest and br
+Local source hidden folders
+Allow local source to read hidden folders
+69- Browse extras
+69- Open sources on Latest
+Tapping a source opens its Latest list first (when the source has one)
+Browse
+-----
+Home from Suggestions
+Show an icon while browsing Suggestions to navigate directly back to Home
+Edit categories
+0 categories
+Filter sources in categories
+Filter the sources that are in categories, making the sources not get put under 
+Replace latest button
+Replace latest button with a custom browse view that includes both latest and br
+Local source hidden folders
+Allow local source to read hidden folders
+69- Browse extras
+69- Open sources on Latest
+Tapping a source opens its Latest list first (when the source has one)
+69- Flip the chapter order for these sources
+For sources that list chapters backwards. Pull to refresh an entry
+Test all sources
+Opens the popular list of every source you use and tells you which ones are brok
+Hide sources that failed
+Hides the sources that failed the last test (you can show them again in Browse →
+Sources I mark as 18+
+Browse
+-----
+Replace latest button
+Replace latest button with a custom browse view that includes both latest and br
+Local source hidden folders
+Allow local source to read hidden folders
+69- Browse extras
+69- Open sources on Latest
+Tapping a source opens its Latest list first (when the source has one)
+69- Flip the chapter order for these sources
+For sources that list chapters backwards. Pull to refresh an entry
+Test all sources
+Opens the popular list of every source you use and tells you which ones are brok
+Hide sources that failed
+Hides the sources that failed the last test (you can show them again in Browse →
+Sources I mark as 18+
+Hidden when "Show 18+ sources" is off; also hidden from Discord when that option
+Feed
+Hide Feed tab
+Feed tab position
+Do you want the feed tab to be the first tab in browse? This will make it the de
+Browse
+-----
+Hide sources that failed
+Hides the sources that failed the last test (you can show them again in Browse →
+Sources I mark as 18+
+Hidden when "Show 18+ sources" is off; also hidden from Discord when that option
+Feed
+Hide Feed tab
+Feed tab position
+Do you want the feed tab to be the first tab in browse? This will make it the de
+Hide entries already in library
+Sources
+Hide entries already in library
+Extension stores
+1 store
+NSFW (18+) sources
+Show in sources and extensions lists
+Requires app restart to take effect
+This does not prevent unofficial or potentially incorrectly flagged extensions f
+Browse
+-----
+##### Data and storage
+Storage location
+/storage/emulated/0/Documents
+69- Folder / file picker
+69-Material Files. Used for the storage folder, backups, covers, CSV export and 
+Used for automatic backups, chapter downloads, and local source.
+Backup and restore
+69- Import reading from PC
+Pick 69-komikku-pc-progress.json (next to your backups) to bring back the chapte
+69- Import from another app
+Kotatsu (and apps like it) backup .zip, Venera backup, or a .txt list with one t
+Create backup
+Restore backup
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Data and storage
+-----
+Used for automatic backups, chapter downloads, and local source.
+Backup and restore
+69- Import reading from PC
+Pick 69-komikku-pc-progress.json (next to your backups) to bring back the chapte
+69- Import from another app
+Kotatsu (and apps like it) backup .zip, Venera backup, or a .txt list with one t
+Create backup
+Restore backup
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Show restoring progress banner
+Storage usage
+/storage/emulated/0
+Available: 4.92 GB / Total: 6.23 GB
+Clear chapter cache
+Used: 31 B
+Clear page preview cache
+Data and storage
+-----
+Create backup
+Restore backup
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Show restoring progress banner
+Storage usage
+/storage/emulated/0
+Available: 4.92 GB / Total: 6.23 GB
+Clear chapter cache
+Used: 31 B
+Clear page preview cache
+Used: 31 B
+Clear chapter cache on app launch
+Export
+Library List
+Sync
+Service
+Off
+Data and storage
+-----
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Show restoring progress banner
+Storage usage
+/storage/emulated/0
+Available: 4.92 GB / Total: 6.23 GB
+Clear chapter cache
+Used: 31 B
+Clear page preview cache
+Used: 31 B
+Clear chapter cache on app launch
+Export
+Library List
+Sync
+Service
+Off
+Data and storage
+-----
+##### Security and privacy
+Security
+Hide notification content
+Secure screen
+Incognito mode
+Set CBZ archive password
+Secure screen hides app contents when switching apps and block screenshots
+Security and privacy
+-----
+##### MangaDex
+MangaDex Login
+Preferred MangaDex source
+Set your chosen MangaDex source, this will be used for follows and a bunch more 
+Sync MangaDex entries to your library
+Pulls entries from MangaDex into your library if they are not already added.
+Sync library entries to MangaDex
+Syncs any non MdList tracked entries to MangaDex as reading.
+MangaDex
+-----
+##### Advanced
+Share crash logs
+Saves error logs to a file for sharing with the developers
+Debug info
+Onboarding guide
+Manage notifications
+Auto-update app
+Restrictions: Only on Wi-Fi
+Background activity
+Disable battery optimization
+Helps with background library updates and backups
+Don
+Some manufacturers have additional app restrictions that kill background service
+Data
+Reindex downloads
+Force app to recheck downloaded chapters
+Clear database
+Delete history for entries that are not saved in your library
+69- Clean up the database
+Advanced
+-----
+Don
+Some manufacturers have additional app restrictions that kill background service
+Data
+Reindex downloads
+Force app to recheck downloaded chapters
+Clear database
+Delete history for entries that are not saved in your library
+69- Clean up the database
+Makes the library database smaller and faster. A notification shows the sizes wh
+69- Clear all caches
+Empties the page cache and the picture cache. Downloads and your library are not
+Networking
+Clear cookies
+Clear WebView data
+DNS over HTTPS (DoH)
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+69- GitHub mirror
+For when GitHub is blocked. An address that is put in front of GitHub links (ext
+Advanced
+-----
+69- Clean up the database
+Makes the library database smaller and faster. A notification shows the sizes wh
+69- Clear all caches
+Empties the page cache and the picture cache. Downloads and your library are not
+Networking
+Clear cookies
+Clear WebView data
+DNS over HTTPS (DoH)
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+69- GitHub mirror
+For when GitHub is blocked. An address that is put in front of GitHub links (ext
+69- Picture proxy (saves data)
+Experimental. Sends pictures through a compressing service. Write its address wi
+69- FlareSolverr server (Cloudflare checks)
+Address of a FlareSolverr server you run, e.g. http://192.168.1.5:8191. Sites wi
+Advanced
+-----
+Clear WebView data
+DNS over HTTPS (DoH)
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+69- GitHub mirror
+For when GitHub is blocked. An address that is put in front of GitHub links (ext
+69- Picture proxy (saves data)
+Experimental. Sends pictures through a compressing service. Write its address wi
+69- FlareSolverr server (Cloudflare checks)
+Address of a FlareSolverr server you run, e.g. http://192.168.1.5:8191. Sites wi
+Library
+Refresh library covers
+Downloads the covers again from the sources. Covers you set yourself are kept.
+69- Back up all covers
+Saves the covers of all library entries (also your own covers) into one ZIP file
+69- Restore covers from ZIP
+69- Import covers from another Komikku folder
+Pick the old app
+Advanced
+-----
+Refresh library covers
+Downloads the covers again from the sources. Covers you set yourself are kept.
+69- Back up all covers
+Saves the covers of all library entries (also your own covers) into one ZIP file
+69- Restore covers from ZIP
+69- Import covers from another Komikku folder
+Pick the old app
+Preload library
+Reset per-series reader settings
+Resets reading mode and orientation of all series
+Update library manga titles to match source
+Warning: if a manga is renamed, it will be removed from the download queue (if p
+Disallow non-ASCII filenames
+Ensures compatibility with certain storage media that don
+Downloads
+Include chapter URL hash
+Append the first six characters of the chapter URL
+Advanced
+-----
+Preload library
+Reset per-series reader settings
+Resets reading mode and orientation of all series
+Update library manga titles to match source
+Warning: if a manga is renamed, it will be removed from the download queue (if p
+Disallow non-ASCII filenames
+Ensures compatibility with certain storage media that don
+Downloads
+Include chapter URL hash
+Append the first six characters of the chapter URL
+Reader
+Custom hardware bitmap threshold
+Use legacy decoder for long strip reader
+Affects performance. Only enable if reducing bitmap threshold doesn
+Custom display profile
+Advanced
+-----
+Ensures compatibility with certain storage media that don
+Downloads
+Include chapter URL hash
+Append the first six characters of the chapter URL
+Reader
+Custom hardware bitmap threshold
+Use legacy decoder for long strip reader
+Affects performance. Only enable if reducing bitmap threshold doesn
+Custom display profile
+Extensions
+Installer
+PackageInstaller
+Avoid using Private Installer because it
+69- Update extensions automatically
+When the daily check finds extension updates, they are installed right away (sil
+Advanced
+-----
+Reader
+Custom hardware bitmap threshold
+Use legacy decoder for long strip reader
+Affects performance. Only enable if reducing bitmap threshold doesn
+Custom display profile
+Extensions
+Installer
+PackageInstaller
+Avoid using Private Installer because it
+69- Update extensions automatically
+When the daily check finds extension updates, they are installed right away (sil
+Revoke trusted unknown extensions
+Data Saver
+Data Saver
+Compress images before downloading or loading in reader
+Developer tools
+Enable integrated hentai features
+Advanced
+-----
+Extensions
+Installer
+PackageInstaller
+Avoid using Private Installer because it
+69- Update extensions automatically
+When the daily check finds extension updates, they are installed right away (sil
+Revoke trusted unknown extensions
+Data Saver
+Data Saver
+Compress images before downloading or loading in reader
+Developer tools
+Enable integrated hentai features
+This is a experimental feature that will disable all hentai features if toggled 
+Enable source blacklist
+Hide extensions/sources that are incompatible with 69-Komikku. Force-restart app
+Enable delegated sources
+Apply 69-Komikku enhancements to the following sources if they are installed: Pu
+Advanced
+-----
+69- Update extensions automatically
+When the daily check finds extension updates, they are installed right away (sil
+Revoke trusted unknown extensions
+Data Saver
+Data Saver
+Compress images before downloading or loading in reader
+Developer tools
+Enable integrated hentai features
+This is a experimental feature that will disable all hentai features if toggled 
+Enable source blacklist
+Hide extensions/sources that are incompatible with 69-Komikku. Force-restart app
+Enable delegated sources
+Apply 69-Komikku enhancements to the following sources if they are installed: Pu
+Log level
+Changing this can impact app performance. Force-restart app after changing. Curr
+Encrypt database
+Requires app restart to take effect
+Open debug menu
+DO NOT TOUCH THIS MENU UNLESS YOU KNOW WHAT YOU ARE DOING! IT CAN CORRUPT YOUR L
+Advanced
+-----
+##### About
+Version
+Stable 1.14.1 (11/11/26 10:39 AM)
+What
+What
+Help translate
+Open source licenses
+Privacy policy
+About
+-----

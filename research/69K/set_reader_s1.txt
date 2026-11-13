@@ -1,0 +1,37 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,12   t='' d='' id=
+[C   ]  540,125  t='' d='' id=
+[    ]  324,104  t='Show tap zones overlay' d='' id=
+[    ]  367,162  t='Briefly show when reader is opened' d='' id=
+[C   ]  540,304  t='' d='' id=
+[    ]  272,304  t='Smaller tap zones' d='' id=
+[C   ]  540,504  t='' d='' id=
+[    ]  334,462  t='Force horizontal seekbar' d='' id=
+[    ]  461,541  t='Removes vertical seekbar entirely in favour of horizontal' d='' id=
+[C   ]  540,725  t='' d='' id=
+[    ]  432,704  t='Show vertical seekbar in landscape' d='' id=
+[    ]  426,762  t='Enables vertical seekbar when in landscape' d='' id=
+[C   ]  540,925  t='' d='' id=
+[    ]  369,904  t='Left-handed vertical seekbar' d='' id=
+[    ]  385,962  t='Switches which side the seekbar is on' d='' id=
+[    ]  103,1088 t='Display' d='' id=
+[C   ]  540,1236 t='' d='' id=
+[    ]  250,1215 t='Default rotation' d='' id=
+[    ]  137,1273 t='Free' d='' id=
+[C   ]  540,1436 t='' d='' id=
+[    ]  269,1415 t='Background color' d='' id=
+[    ]  146,1473 t='Black' d='' id=
+[C   ]  540,1615 t='' d='' id=
+[    ]  200,1615 t='Fullscreen' d='' id=
+[C   ]  540,1773 t='' d='' id=
+[    ]  365,1773 t='Show content in cutout area' d='' id=
+[C   ]  540,1931 t='' d='' id=
+[    ]  248,1931 t='Keep screen on' d='' id=
+[C   ]  540,2089 t='' d='' id=
+[    ]  285,2089 t='Show page number' d='' id=
+[    ]   83,2263 t='E-Ink' d='' id=
+[C   ]  540,2355 t='' d='' id=
+[    ]  309,2376 t='Flash on page change' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

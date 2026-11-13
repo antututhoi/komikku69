@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,59   t='' d='' id=
+[    ]  420,40   t='Auto sync progress from Trackers' d='' id=
+[C   ]  540,261  t='' d='' id=
+[    ]  467,198  t='Select entries using source metadata' d='' id=
+[    ]  461,298  t='Automatically selects the matching title if the source provides links to tracker' d='' id=
+[    ]  113,466  t='Trackers' d='' id=
+[C   ]  540,598  t='' d='' id=
+[    ]  105,598  t='' d='MyAnimeList' id=
+[    ]  603,598  t='MyAnimeList' d='' id=
+[C   ]  540,766  t='' d='' id=
+[    ]  105,766  t='' d='AniList' id=
+[    ]  603,766  t='AniList' d='' id=
+[C   ]  540,934  t='' d='' id=
+[    ]  105,934  t='' d='Kitsu' id=
+[    ]  603,934  t='Kitsu' d='' id=
+[C   ]  540,1102 t='' d='' id=
+[    ]  105,1102 t='' d='MangaUpdates' id=
+[    ]  603,1102 t='MangaUpdates' d='' id=
+[C   ]  540,1270 t='' d='' id=
+[    ]  105,1270 t='' d='Shikimori' id=
+[    ]  603,1270 t='Shikimori' d='' id=
+[C   ]  540,1438 t='' d='' id=
+[    ]  105,1438 t='' d='Bangumi' id=
+[    ]  603,1438 t='Bangumi' d='' id=
+[    ]  540,1732 t='One-way sync to update the chapter progress in external tracker services. Set up' d='' id=
+[    ]  195,1932 t='Enhanced trackers' d='' id=
+[    ]  540,2211 t='Provides enhanced features for specific sources. Entries are automatically track' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  256,212  t='Tracking' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

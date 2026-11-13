@@ -1,0 +1,40 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,70   t='' d='' id=
+[    ]  494,7    t='69- Pause between entries when updating' d='' id=
+[    ]  571,57   t='Waits a little before each entry of a source is checked. Gentler for sources tha' d='' id=
+[C   ]  540,241  t='' d='' id=
+[    ]  476,220  t='69- Sources updated at the same time' d='' id=
+[    ]  533,278  t='Lower = slower but gentler on your phone and the sources' d='' id=
+[C   ]  540,462  t='' d='' id=
+[    ]  372,420  t='69- Sort ignoring 'a / an / the'' d='' id=
+[    ]  461,499  t='Alphabetical sort skips these words at the start of titles' d='' id=
+[C   ]  540,704  t='' d='' id=
+[    ]  295,662  t='69- Badge on covers' d='' id=
+[    ]  571,741  t='What the unread badge shows. It still needs 'Unread badges' switched on in the l' d='' id=
+[C   ]  540,925  t='' d='' id=
+[    ]  354,904  t='69- Title lines under covers' d='' id=
+[    ]  159,962  t='Default' d='' id=
+[C   ]  540,1125 t='' d='' id=
+[    ]  349,1104 t='69- Space between covers' d='' id=
+[    ]  206,1162 t='4 dp (normal)' d='' id=
+[C   ]  540,1325 t='' d='' id=
+[    ]  555,1304 t='69- Chapters as a grid of numbers (tiles per row)' d='' id=
+[    ]  225,1362 t='Off (normal list)' d='' id=
+[C   ]  540,1525 t='' d='' id=
+[    ]  423,1504 t='69- Corner for the download count' d='' id=
+[    ]  162,1562 t='Top left' d='' id=
+[C   ]  540,1725 t='' d='' id=
+[    ]  401,1704 t='69- Corner for the unread badge' d='' id=
+[    ]  162,1762 t='Top left' d='' id=
+[C   ]  540,1925 t='' d='' id=
+[    ]  359,1904 t='69- Corner for the language' d='' id=
+[    ]  172,1962 t='Top right' d='' id=
+[C   ]  540,2125 t='' d='' id=
+[    ]  381,2104 t='69- Corner for the source icon' d='' id=
+[    ]  172,2162 t='Top right' d='' id=
+[C   ]  540,2312 t='' d='' id=
+[    ]  386,2304 t='69- All categories on one page' d='' id=
+[    ]  461,2370 t='One scrolling page with a header per category. Tap a header to fold it. Tap "Lib' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=

@@ -1,0 +1,32 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,396  t='' d='' id=
+[    ]  260,375  t='Share crash logs' d='' id=
+[    ]  520,433  t='Saves error logs to a file for sharing with the developers' d='' id=
+[C   ]  540,575  t='' d='' id=
+[    ]  206,575  t='Debug info' d='' id=
+[C   ]  540,733  t='' d='' id=
+[    ]  270,733  t='Onboarding guide' d='' id=
+[C   ]  540,891  t='' d='' id=
+[    ]  302,891  t='Manage notifications' d='' id=
+[C   ]  540,1070 t='' d='' id=
+[    ]  260,1049 t='Auto-update app' d='' id=
+[    ]  301,1107 t='Restrictions: Only on Wi-Fi' d='' id=
+[    ]  205,1233 t='Background activity' d='' id=
+[C   ]  540,1381 t='' d='' id=
+[    ]  367,1360 t='Disable battery optimization' d='' id=
+[    ]  486,1418 t='Helps with background library updates and backups' d='' id=
+[C   ]  540,1623 t='' d='' id=
+[    ]  262,1560 t='Don't kill my app!' d='' id=
+[    ]  571,1660 t='Some manufacturers have additional app restrictions that kill background service' d='' id=
+[    ]   82,1860 t='Data' d='' id=
+[C   ]  540,2008 t='' d='' id=
+[    ]  287,1987 t='Reindex downloads' d='' id=
+[    ]  422,2045 t='Force app to recheck downloaded chapters' d='' id=
+[C   ]  540,2208 t='' d='' id=
+[    ]  245,2187 t='Clear database' d='' id=
+[    ]  532,2245 t='Delete history for entries that are not saved in your library' d='' id=
+[C   ]  540,2354 t='' d='' id=
+[    ]  348,2375 t='69- Clean up the database' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

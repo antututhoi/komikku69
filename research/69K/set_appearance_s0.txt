@@ -1,0 +1,41 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]   99,359  t='Theme' d='' id=
+[C   ]  540,512  t='' d='' id=
+[Ck  ]  540,513  t='' d='' id=
+[    ]  540,512  t='Light' d='' id=
+[Ck  ]  871,513  t='' d='' id=
+[    ]  871,512  t='Dark' d='' id=
+[Cxk ]  209,513  t='' d='' id=
+[    ]  243,512  t='System' d='' id=
+[C   ]  540,999  t='' d='' id=
+[S   ]  540,999  t='' d='' id=
+[C   ]  191,946  t='' d='' id=
+[    ]  191,1286 t='Default' d='' id=
+[C   ]  511,946  t='' d='' id=
+[    ]  597,743  t='' d='Selected' id=
+[    ]  511,1286 t='Dynamic' d='' id=
+[C   ]  831,946  t='' d='' id=
+[    ]  831,1286 t='Custom Theme' d='' id=
+[C   ] 1046,946  t='' d='' id=
+[    ] 1041,1286 t='Cotton Candy' d='' id=
+[    ]  187,1433 t='69- My themes' d='' id=
+[    ]  540,1507 t='Pick a main and a second color, then save it with a name. Tap a saved theme to u' d='' id=
+[C   ]  218,1655 t='' d='' id=
+[    ]  244,1654 t='Main color' d='' id=
+[C   ]  593,1655 t='' d='' id=
+[    ]  601,1654 t='Second color' d='' id=
+[C   ]  239,1781 t='' d='' id=
+[    ]  239,1780 t='Save as a theme' d='' id=
+[C   ]  265,1928 t='' d='' id=
+[    ]  265,1927 t='Save theme to a file' d='' id=
+[C   ]  755,1928 t='' d='' id=
+[    ]  755,1927 t='Load theme from a file' d='' id=
+[C   ]  540,2111 t='' d='' id=
+[    ]  220,2090 t='69- App font' d='' id=
+[    ]  159,2148 t='Default' d='' id=
+[C   ]  540,2305 t='' d='' id=
+[    ]  366,2290 t='69- Display size (whole app)' d='' id=
+[    ]  160,2348 t='Normal' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  299,212  t='Appearance' d='' id=

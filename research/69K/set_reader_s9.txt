@@ -1,0 +1,31 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,73   t='' d='' id=
+[    ]  288,67   t='Double tap to zoom' d='' id=
+[C   ]  540,225  t='' d='' id=
+[    ]  256,225  t='Pinch to zoom' d='' id=
+[C   ]  540,383  t='' d='' id=
+[    ]  268,383  t='Disable zoom out' d='' id=
+[C   ]  540,541  t='' d='' id=
+[    ]  339,541  t='Animate page transitions' d='' id=
+[    ]  211,715  t='Long strip with gaps' d='' id=
+[C   ]  540,884  t='' d='' id=
+[    ]  274,842  t='Tap scroll by page' d='' id=
+[    ]  461,921  t='Tapping will scroll by page instead of screen size when this option is enabled' d='' id=
+[C   ]  540,1084 t='' d='' id=
+[    ]  226,1084 t='Crop borders' d='' id=
+[    ]  132,1258 t='Navigation' d='' id=
+[C   ]  540,1385 t='' d='' id=
+[    ]  223,1385 t='Volume keys' d='' id=
+[    ]  106,1559 t='Actions' d='' id=
+[C   ]  540,1686 t='' d='' id=
+[    ]  340,1686 t='Show actions on long tap' d='' id=
+[C   ]  540,1865 t='' d='' id=
+[    ]  410,1844 t='Save pages into separate folders' d='' id=
+[    ]  407,1902 t='Creates folders according to entries' title' d='' id=
+[    ]  198,2060 t='Page Downloading' d='' id=
+[C   ]  540,2254 t='' d='' id=
+[    ]  307,2187 t='Page Preload amount' d='' id=
+[    ]  571,2308 t='The amount of pages to preload when reading. Higher values will result in a smoo' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

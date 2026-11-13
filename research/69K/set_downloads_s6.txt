@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  304,78   t='Concurrent page downloads' d='' id=
+[    ]  381,136  t='Pages downloaded simultaneously per source' d='' id=
+[    ] 1011,99   t='5' d='' id=
+[    ]  172,393  t='Delete chapters' d='' id=
+[C   ]  540,520  t='' d='' id=
+[    ]  390,520  t='After manually marked as read' d='' id=
+[C   ]  540,699  t='' d='' id=
+[    ]  419,678  t='After reading automatically delete' d='' id=
+[    ]  169,736  t='Disabled' d='' id=
+[C   ]  540,878  t='' d='' id=
+[    ]  445,878  t='Allow deleting bookmarked chapters' d='' id=
+[C   ]  540,1057 t='' d='' id=
+[    ]  293,1036 t='Excluded categories' d='' id=
+[    ]  144,1094 t='None' d='' id=
+[    ]  168,1252 t='Auto-download' d='' id=
+[C   ]  540,1379 t='' d='' id=
+[    ]  329,1379 t='Download new chapters' d='' id=
+[    ]  181,1553 t='Download ahead' d='' id=
+[C   ]  540,1701 t='' d='' id=
+[    ]  374,1680 t='Auto download while reading' d='' id=
+[    ]  169,1738 t='Disabled' d='' id=
+[    ]  540,1990 t='Only works if the current chapter + the next one are already downloaded.' d='' id=
+[    ]  300,2169 t='Download cache renew interval' d='' id=
+[C   ]  540,2308 t='' d='' id=
+[    ]  394,2296 t='Download cache renew interval' d='' id=
+[    ]  153,2354 t='1 hour' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  289,212  t='Downloads' d='' id=

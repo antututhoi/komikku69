@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,5    t='' d='' id=
+[C   ]  540,132  t='' d='' id=
+[    ]  454,90   t='Fetch chapters when adding to library' d='' id=
+[    ]  461,169  t='Automatically fetches the chapter list of a new manga when adding it to the libr' d='' id=
+[    ]  175,348  t='Sorting Settings' d='' id=
+[C   ]  540,538  t='' d='' id=
+[    ]  257,475  t='Tag sorting tags' d='' id=
+[    ]  571,575  t='0 tags in sorting list. This adds a option in the library to sort by a priority ' d='' id=
+[    ]  312,775  t='69- Library and entry page extras' d='' id=
+[C   ]  540,944  t='' d='' id=
+[    ]  494,902  t='69- Pause between entries when updating' d='' id=
+[    ]  571,981  t='Waits a little before each entry of a source is checked. Gentler for sources tha' d='' id=
+[C   ]  540,1165 t='' d='' id=
+[    ]  459,1144 t='69- Sources updated at the same time' d='' id=
+[    ]  533,1202 t='Lower = slower but gentler on your phone and the sources' d='' id=
+[C   ]  540,1386 t='' d='' id=
+[    ]  372,1344 t='69- Sort ignoring 'a / an / the'' d='' id=
+[    ]  461,1423 t='Alphabetical sort skips these words at the start of titles' d='' id=
+[C   ]  540,1628 t='' d='' id=
+[    ]  295,1586 t='69- Badge on covers' d='' id=
+[    ]  571,1665 t='What the unread badge shows. It still needs 'Unread badges' switched on in the l' d='' id=
+[C   ]  540,1849 t='' d='' id=
+[    ]  354,1828 t='69- Title lines under covers' d='' id=
+[    ]  159,1886 t='Default' d='' id=
+[C   ]  540,2049 t='' d='' id=
+[    ]  349,2028 t='69- Space between covers' d='' id=
+[    ]  206,2086 t='4 dp (normal)' d='' id=
+[C   ]  540,2249 t='' d='' id=
+[    ]  555,2228 t='69- Chapters as a grid of numbers (tiles per row)' d='' id=
+[    ]  225,2286 t='Off (normal list)' d='' id=
+[C   ]  540,2374 t='' d='' id=
+[    ]  423,2395 t='69- Corner for the download count' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=

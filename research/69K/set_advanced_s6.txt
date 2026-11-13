@@ -1,0 +1,28 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,121  t='' d='' id=
+[    ]  461,100  t='Ensures compatibility with certain storage media that don't support Unicode. Whe' d='' id=
+[    ]  135,337  t='Downloads' d='' id=
+[C   ]  540,527  t='' d='' id=
+[    ]  342,464  t='Include chapter URL hash' d='' id=
+[    ]  461,564  t='Append the first six characters of the chapter URL's MD5 hash to the chapter fil' d='' id=
+[    ]  100,764  t='Reader' d='' id=
+[C   ]  540,954  t='' d='' id=
+[    ]  434,891  t='Custom hardware bitmap threshold' d='' id=
+[    ]  571,991  t='If reader loads a blank image incrementally reduce the threshold.
+Selected: Defa' d='' id=
+[C   ]  540,1254 t='' d='' id=
+[    ]  461,1212 t='Use legacy decoder for long strip reader' d='' id=
+[    ]  461,1328 t='Affects performance. Only enable if reducing bitmap threshold doesn't fix blank ' d='' id=
+[C   ]  540,1491 t='' d='' id=
+[    ]  313,1491 t='Custom display profile' d='' id=
+[    ]  134,1665 t='Extensions' d='' id=
+[C   ]  540,1813 t='' d='' id=
+[    ]  179,1792 t='Installer' d='' id=
+[    ]  229,1850 t='PackageInstaller' d='' id=
+[    ]  540,2102 t='Avoid using Private Installer because it's not stable yet, will lead to really s' d='' id=
+[C   ]  540,2293 t='' d='' id=
+[    ]  445,2265 t='69- Update extensions automatically' d='' id=
+[    ]  461,2351 t='When the daily check finds extension updates, they are installed right away (sil' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,57   t='' d='' id=
+[    ]  421,15   t='Library dynamic category updates' d='' id=
+[    ]  325,52   t='Always launch global updates' d='' id=
+[C   ]  540,236  t='' d='' id=
+[    ]  415,194  t='Automatically refresh metadata' d='' id=
+[    ]  461,273  t='Check for new cover and details when updating library' d='' id=
+[C   ]  540,478  t='' d='' id=
+[    ]  232,436  t='Smart update' d='' id=
+[    ]  571,515  t='Skip entries with "Completed" status, Skip entries with unread chapter(s), Skip ' d='' id=
+[C   ]  540,678  t='' d='' id=
+[    ]  440,678  t='Show unread count on Updates icon' d='' id=
+[C   ]  540,836  t='' d='' id=
+[    ]  402,836  t='Show updating progress banner' d='' id=
+[    ]  114,1010 t='Behavior' d='' id=
+[C   ]  540,1158 t='' d='' id=
+[    ]  326,1137 t='Chapter on swipe to left' d='' id=
+[    ]  241,1195 t='Bookmark chapter' d='' id=
+[C   ]  540,1358 t='' d='' id=
+[    ]  338,1337 t='Chapter on swipe to right' d='' id=
+[    ]  202,1395 t='Mark as read' d='' id=
+[C   ]  540,1558 t='' d='' id=
+[    ]  440,1537 t='Mark duplicate read chapter as read' d='' id=
+[    ]  144,1595 t='None' d='' id=
+[C   ]  540,1737 t='' d='' id=
+[    ]  401,1737 t='Hide missing chapter indicators' d='' id=
+[C   ]  540,1932 t='' d='' id=
+[    ]  461,1932 t='Show empty categories during search/filtering' d='' id=
+[C   ]  540,2206 t='' d='' id=
+[    ]  461,2164 t='Fetch metadata when adding to library' d='' id=
+[    ]  461,2280 t='Automatically fetches the metadata of a new manga when adding it to the library' d='' id=
+[C   ]  540,2382 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=

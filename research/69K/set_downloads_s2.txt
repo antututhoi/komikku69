@@ -1,0 +1,32 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,98   t='' d='' id=
+[    ]  288,75   t='69- Max page width' d='' id=
+[    ]  263,133  t='1080 px (0 = no limit)' d='' id=
+[C   ]  540,296  t='' d='' id=
+[    ]  295,275  t='69- Max page height' d='' id=
+[    ]  236,333  t='0 px (0 = no limit)' d='' id=
+[C   ]  540,517  t='' d='' id=
+[    ]  441,475  t='69- Don't resize long webtoon pages' d='' id=
+[    ]  461,554  t='Pages much taller than wide (or much wider than tall) are kept as they are' d='' id=
+[C   ]  540,738  t='' d='' id=
+[    ]  262,717  t='69- WebP quality' d='' id=
+[    ]  196,775  t='80 (1 – 100)' d='' id=
+[C   ]  540,917  t='' d='' id=
+[    ]  570,917  t='69- Redownload everything downloaded – smaller' d='' id=
+[C   ]  540,1075 t='' d='' id=
+[    ]  570,1075 t='69- Redownload everything downloaded – original' d='' id=
+[C   ]  540,1359 t='' d='' id=
+[    ]  431,1233 t='69- Download into category folders' d='' id=
+[    ]  461,1396 t='New downloads go to downloads/(category)/(entry) instead of the source's folder.' d='' id=
+[C   ]  540,1706 t='' d='' id=
+[    ]  436,1643 t='69- Sort downloads by a backup file' d='' id=
+[    ]  571,1743 t='Pick a backup (.tachibk): each entry's downloads move into the folder of its cat' d='' id=
+[C   ]  540,1990 t='' d='' id=
+[    ]  334,1927 t='69- Fix download folders' d='' id=
+[    ]  571,2027 t='Puts every library entry's downloads back in its category's folder (Default when' d='' id=
+[C   ]  540,2266 t='' d='' id=
+[    ]  571,2248 t='69- Move existing downloads into category folders' d='' id=
+[    ]  571,2361 t='Moves every library entry's downloaded chapters into its category folder. Can ta' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  289,212  t='Downloads' d='' id=

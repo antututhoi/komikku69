@@ -1,0 +1,40 @@
+[C   ]  540,1232 t='' d='' id=
+[C   ]  540,1437 t='' d='' id=
+[    ]  180,599  t='Reading mode' d='' id=
+[C   ]  540,600  t='' d='' id=
+[    ]  540,599  t='General' d='' id=
+[C   ]  900,600  t='' d='' id=
+[    ]  900,599  t='Custom filter' d='' id=
+[S   ]  540,1501 t='' d='' id=
+[S   ]  540,1501 t='' d='' id=
+[Cxk ]  373,694  t='' d='' id=
+[    ]  373,704  t='Automatic (based on orientation)' d='' id=
+[C   ]  540,835  t='' d='' id=
+[    ]  338,840  t='Smaller tap zones' d='' id=
+[C   ]  540,950  t='' d='' id=
+[    ]  296,955  t='Crop borders' d='' id=
+[C   ]  540,1065 t='' d='' id=
+[    ]  501,1070 t='Automatically zoom into wide images' d='' id=
+[C   ]  540,1180 t='' d='' id=
+[    ]  331,1185 t='Pan wide images' d='' id=
+[C   ]  540,1295 t='' d='' id=
+[    ]  325,1300 t='Split wide pages' d='' id=
+[C   ]  540,1410 t='' d='' id=
+[    ]  385,1415 t='Rotate wide pages to fit' d='' id=
+[C   ]  540,1525 t='' d='' id=
+[    ]  398,1530 t='Animate page transitions' d='' id=
+[C   ]  540,1640 t='' d='' id=
+[    ]  352,1645 t='Invert double pages' d='' id=
+[C   ]  540,1755 t='' d='' id=
+[    ]  323,1760 t='Disable zoom in' d='' id=
+[C   ]  540,1876 t='' d='' id=
+[    ]  352,1875 t='Double tap to zoom' d='' id=
+[    ]  540,1985 t='Center margin type' d='' id=
+[Cxk ]  149,2101 t='' d='' id=
+[    ]  149,2101 t='None' d='' id=
+[Ck  ]  457,2101 t='' d='' id=
+[    ]  457,2101 t='Add to double Page' d='' id=
+[Ck  ]  247,2227 t='' d='' id=
+[    ]  247,2227 t='Add to wide Page' d='' id=
+[Ck  ]  589,2227 t='' d='' id=
+[    ]  589,2227 t='Add to both' d='' id=

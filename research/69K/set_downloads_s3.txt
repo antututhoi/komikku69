@@ -1,0 +1,31 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,134  t='' d='' id=
+[    ]  436,64   t='69- Sort downloads by a backup file' d='' id=
+[    ]  571,164  t='Pick a backup (.tachibk): each entry's downloads move into the folder of its cat' d='' id=
+[C   ]  540,411  t='' d='' id=
+[    ]  334,348  t='69- Fix download folders' d='' id=
+[    ]  571,448  t='Puts every library entry's downloads back in its category's folder (Default when' d='' id=
+[C   ]  540,711  t='' d='' id=
+[    ]  571,669  t='69- Move existing downloads into category folders' d='' id=
+[    ]  571,785  t='Moves every library entry's downloaded chapters into its category folder. Can ta' d='' id=
+[C   ]  540,1011 t='' d='' id=
+[    ]  444,948  t='69- Keep downloads when migrating' d='' id=
+[    ]  461,1048 t='Downloaded chapters move to the new entry (matched by chapter number) instead of' d='' id=
+[C   ]  540,1311 t='' d='' id=
+[    ]  461,1269 t='69- Scanlator name in chapter folder names' d='' id=
+[    ]  461,1385 t='On: "Group_Chapter 1". Off: "Chapter 1". Chapters downloaded either way are stil' d='' id=
+[C   ]  540,1611 t='' d='' id=
+[    ]  444,1548 t='69- Short file names (Windows-safe)' d='' id=
+[    ]  461,1648 t='Cuts long entry and chapter folder names so Windows can copy them. A short code ' d='' id=
+[C   ]  540,1853 t='' d='' id=
+[    ]  301,1832 t='69- Max name length' d='' id=
+[    ]  205,1890 t='80 (30 – 200)' d='' id=
+[C   ]  540,2074 t='' d='' id=
+[    ]  402,2032 t='69- Rename existing downloads' d='' id=
+[    ]  571,2111 t='Renames downloaded folders and .cbz files to the settings above. Shows progress ' d='' id=
+[C   ]  540,2297 t='' d='' id=
+[    ]  540,2274 t='69- Make all downloads smaller (on the phone)' d='' id=
+[    ]  571,2353 t='Resizes and re-saves the downloaded pages as WebP with the settings above. Nothi' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  289,212  t='Downloads' d='' id=

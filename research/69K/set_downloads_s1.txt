@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,108  t='' d='' id=
+[    ]  341,54   t='69- Download speed limit' d='' id=
+[    ]  571,133  t='Caps all downloads together so browsing and streaming stay fast' d='' id=
+[C   ]  540,317  t='' d='' id=
+[    ]  383,296  t='69- Pause before each picture' d='' id=
+[    ]  444,354  t='Gentler for sources that block fast downloads' d='' id=
+[C   ]  540,517  t='' d='' id=
+[    ]  434,496  t='69- Tries again after a failed picture' d='' id=
+[    ]  183,554  t='3 (normal)' d='' id=
+[C   ]  540,717  t='' d='' id=
+[    ]  387,696  t='69- Page quality of downloads' d='' id=
+[    ]  342,754  t='Original (as the source sends it)' d='' id=
+[C   ]  540,917  t='' d='' id=
+[    ]  288,896  t='69- Max page width' d='' id=
+[    ]  263,954  t='1080 px (0 = no limit)' d='' id=
+[C   ]  540,1117 t='' d='' id=
+[    ]  295,1096 t='69- Max page height' d='' id=
+[    ]  236,1154 t='0 px (0 = no limit)' d='' id=
+[C   ]  540,1338 t='' d='' id=
+[    ]  441,1296 t='69- Don't resize long webtoon pages' d='' id=
+[    ]  461,1375 t='Pages much taller than wide (or much wider than tall) are kept as they are' d='' id=
+[C   ]  540,1559 t='' d='' id=
+[    ]  262,1538 t='69- WebP quality' d='' id=
+[    ]  196,1596 t='80 (1 – 100)' d='' id=
+[C   ]  540,1738 t='' d='' id=
+[    ]  570,1738 t='69- Redownload everything downloaded – smaller' d='' id=
+[C   ]  540,1896 t='' d='' id=
+[    ]  570,1896 t='69- Redownload everything downloaded – original' d='' id=
+[C   ]  540,2180 t='' d='' id=
+[    ]  431,2054 t='69- Download into category folders' d='' id=
+[    ]  461,2217 t='New downloads go to downloads/(category)/(entry) instead of the source's folder.' d='' id=
+[C   ]  540,2392 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  289,212  t='Downloads' d='' id=

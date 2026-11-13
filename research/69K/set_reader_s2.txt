@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,62   t='' d='' id=
+[    ]  369,20   t='Left-handed vertical seekbar' d='' id=
+[    ]  385,61   t='Switches which side the seekbar is on' d='' id=
+[    ]  151,187  t='Display' d='' id=
+[C   ]  540,335  t='' d='' id=
+[    ]  250,314  t='Default rotation' d='' id=
+[    ]  137,372  t='Free' d='' id=
+[C   ]  540,535  t='' d='' id=
+[    ]  269,514  t='Background color' d='' id=
+[    ]  146,572  t='Black' d='' id=
+[C   ]  540,714  t='' d='' id=
+[    ]  200,714  t='Fullscreen' d='' id=
+[C   ]  540,872  t='' d='' id=
+[    ]  365,872  t='Show content in cutout area' d='' id=
+[C   ]  540,1030 t='' d='' id=
+[    ]  248,1030 t='Keep screen on' d='' id=
+[C   ]  540,1188 t='' d='' id=
+[    ]  285,1188 t='Show page number' d='' id=
+[    ]   83,1362 t='E-Ink' d='' id=
+[C   ]  540,1510 t='' d='' id=
+[    ]  309,1489 t='Flash on page change' d='' id=
+[    ]  365,1547 t='Reduces ghosting on e-ink displays' d='' id=
+[    ]  109,1705 t='Reading' d='' id=
+[C   ]  540,1832 t='' d='' id=
+[    ]  354,1832 t='Skip chapters marked read' d='' id=
+[C   ]  540,1990 t='' d='' id=
+[    ]  301,1990 t='Skip filtered chapters' d='' id=
+[C   ]  540,2148 t='' d='' id=
+[    ]  323,2148 t='Skip duplicate chapters' d='' id=
+[C   ]  540,2306 t='' d='' id=
+[    ]  396,2306 t='Always show chapter transition' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

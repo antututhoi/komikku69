@@ -1,0 +1,31 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,157  t='' d='' id=
+[    ]  461,136  t='Normally, pressing the retry button on a failed download will wait until the dow' d='' id=
+[C   ]  540,431  t='' d='' id=
+[    ]  461,431  t='Preserve reading position on read entries' d='' id=
+[C   ]  540,668  t='' d='' id=
+[    ]  296,626  t='Auto Webtoon Mode' d='' id=
+[    ]  461,705  t='Use auto webtoon mode for entries that are detected to likely use the long strip' d='' id=
+[C   ]  540,889  t='' d='' id=
+[    ]  323,868  t='Reader Bottom Buttons' d='' id=
+[    ]  542,926  t='Customize what buttons appear at the bottom of the reader' d='' id=
+[C   ]  540,1110 t='' d='' id=
+[    ]  215,1068 t='Page layout' d='' id=
+[    ]  571,1147 t='While using automatic page layout, you can still switch between layouts while re' d='' id=
+[C   ]  540,1310 t='' d='' id=
+[    ]  288,1310 t='Invert double pages' d='' id=
+[C   ]  540,1489 t='' d='' id=
+[    ]  236,1468 t='Center Margin' d='' id=
+[    ]  567,1526 t='Insert spacer to accommodate deadspace on foldable devices.' d='' id=
+[C   ]  540,1710 t='' d='' id=
+[    ]  296,1668 t='Archive reader mode' d='' id=
+[    ]  571,1747 t='The way in which images inside archives, such as CBZ or CBR, are being loaded' d='' id=
+[    ]  187,1926 t='69- Reader extras' d='' id=
+[C   ]  540,2132 t='' d='' id=
+[    ]  461,2090 t='69- Avoid the camera notch only when sideways' d='' id=
+[    ]  461,2206 t='The page stays under the notch in portrait but moves away from it when you turn ' d='' id=
+[C   ]  540,2345 t='' d='' id=
+[    ]  435,2366 t='69- Load pages ahead only on Wi-Fi' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

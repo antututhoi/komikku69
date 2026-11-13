@@ -1,0 +1,22 @@
+[C   ]  540,861  t='' d='' id=
+[    ]  176,840  t='Version' d='' id=
+[    ]  360,898  t='Stable 1.14.1 (11/11/26 10:39 AM)' d='' id=
+[C   ]  540,1040 t='' d='' id=
+[    ]  211,1040 t='What's new' d='' id=
+[C   ]  540,1198 t='' d='' id=
+[    ]  308,1198 t='What's coming (soon)' d='' id=
+[C   ]  540,1356 t='' d='' id=
+[    ]  235,1356 t='Help translate' d='' id=
+[C   ]  540,1514 t='' d='' id=
+[    ]  304,1514 t='Open source licenses' d='' id=
+[C   ]  540,1672 t='' d='' id=
+[    ]  233,1672 t='Privacy policy' d='' id=
+[C   ]  393,1847 t='' d='' id=
+[    ]  392,1846 t='' d='Website' id=
+[C   ]  541,1847 t='' d='' id=
+[    ]  540,1846 t='' d='Discord' id=
+[C   ]  689,1847 t='' d='' id=
+[    ]  688,1846 t='' d='GitHub' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  224,212  t='About' d='' id=

@@ -1,0 +1,31 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,0    t='' d='' id=
+[C   ]  540,180  t='' d='' id=
+[    ]  461,117  t='69- Covers in their own shape (Pinterest grid)' d='' id=
+[    ]  461,254  t='In grid views, tall and wide covers keep their real shape and are packed togethe' d='' id=
+[C   ]  540,438  t='' d='' id=
+[    ]  386,438  t='69- Thin outline around covers' d='' id=
+[C   ]  540,659  t='' d='' id=
+[    ]  325,596  t='69- Low-memory library' d='' id=
+[    ]  461,696  t='Keeps fewer covers in memory and uses lighter picture colors, for big libraries ' d='' id=
+[C   ]  540,922  t='' d='' id=
+[    ]  294,880  t='69- Chapter pictures' d='' id=
+[    ]  461,959  t='Downloaded chapters show a small picture of their first page in the chapter list' d='' id=
+[C   ]  540,1185 t='' d='' id=
+[    ]  404,1122 t='69- One row per chapter number' d='' id=
+[    ]  461,1222 t='When several groups uploaded the same chapter, the entry page shows only one cop' d='' id=
+[C   ]  540,1469 t='' d='' id=
+[    ]  297,1406 t='69- Preferred groups' d='' id=
+[    ]  571,1506 t='Group (scanlator) names, separated by commas, best first. Used for "One row per ' d='' id=
+[C   ]  540,1732 t='' d='' id=
+[    ]  444,1690 t='69- Ask before removing from library' d='' id=
+[    ]  461,1769 t='On an entry's page, tapping the library button asks first when removing' d='' id=
+[C   ]  540,1974 t='' d='' id=
+[    ]  302,1932 t='69- Show date added' d='' id=
+[    ]  461,2011 t='Shows when the entry was added to your library on its page' d='' id=
+[C   ]  540,2216 t='' d='' id=
+[    ]  226,2174 t='69- Tidy tags' d='' id=
+[    ]  461,2253 t='Shows tags with the same capital letters, without duplicates, sorted A-Z' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=

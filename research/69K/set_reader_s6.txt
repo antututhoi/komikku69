@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,75   t='' d='' id=
+[    ]  288,72   t='Double tap to zoom' d='' id=
+[C   ]  540,230  t='' d='' id=
+[    ]  281,230  t='Pan wide images' d='' id=
+[C   ]  540,388  t='' d='' id=
+[    ]  258,388  t='Split wide pages' d='' id=
+[C   ]  540,546  t='' d='' id=
+[    ]  325,546  t='Rotate wide pages to fit' d='' id=
+[    ]  126,720  t='Long strip' d='' id=
+[C   ]  540,868  t='' d='' id=
+[    ]  201,847  t='Tap zones' d='' id=
+[    ]  159,905  t='Default' d='' id=
+[C   ]  540,1068 t='' d='' id=
+[    ]  254,1047 t='Invert tap zones' d='' id=
+[    ]  144,1105 t='None' d='' id=
+[C   ]  540,1268 t='' d='' id=
+[    ]  361,1247 t='Smart scale on wide screen' d='' id=
+[    ]  178,1305 t='Fit screen' d='' id=
+[C   ]  540,1484 t='' d='' id=
+[    ]  461,1484 t='Apply Smart scale to Long strip with gaps' d='' id=
+[    ]  163,1679 t='Side padding' d='' id=
+[    ]  997,1679 t='0%' d='' id=
+[C   ]  540,1989 t='' d='' id=
+[    ]  435,1968 t='Sensitivity for hiding menu on scroll' d='' id=
+[    ]  136,2026 t='Low' d='' id=
+[C   ]  540,2168 t='' d='' id=
+[    ]  226,2168 t='Crop borders' d='' id=
+[C   ]  540,2323 t='' d='' id=
+[    ]  258,2326 t='Split wide pages' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

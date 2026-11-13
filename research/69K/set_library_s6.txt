@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,35   t='' d='' id=
+[    ]  162,14   t='Top left' d='' id=
+[C   ]  540,171  t='' d='' id=
+[    ]  359,150  t='69- Corner for the language' d='' id=
+[    ]  143,208  t='Top right' d='' id=
+[C   ]  540,371  t='' d='' id=
+[    ]  381,350  t='69- Corner for the source icon' d='' id=
+[    ]  172,408  t='Top right' d='' id=
+[C   ]  540,613  t='' d='' id=
+[    ]  386,550  t='69- All categories on one page' d='' id=
+[    ]  461,650  t='One scrolling page with a header per category. Tap a header to fold it. Tap "Lib' d='' id=
+[C   ]  540,934  t='' d='' id=
+[    ]  461,871  t='69- Covers in their own shape (Pinterest grid)' d='' id=
+[    ]  461,1008 t='In grid views, tall and wide covers keep their real shape and are packed togethe' d='' id=
+[C   ]  540,1192 t='' d='' id=
+[    ]  386,1192 t='69- Thin outline around covers' d='' id=
+[C   ]  540,1413 t='' d='' id=
+[    ]  325,1350 t='69- Low-memory library' d='' id=
+[    ]  461,1450 t='Keeps fewer covers in memory and uses lighter picture colors, for big libraries ' d='' id=
+[C   ]  540,1676 t='' d='' id=
+[    ]  294,1634 t='69- Chapter pictures' d='' id=
+[    ]  461,1713 t='Downloaded chapters show a small picture of their first page in the chapter list' d='' id=
+[C   ]  540,1939 t='' d='' id=
+[    ]  404,1876 t='69- One row per chapter number' d='' id=
+[    ]  461,1976 t='When several groups uploaded the same chapter, the entry page shows only one cop' d='' id=
+[C   ]  540,2223 t='' d='' id=
+[    ]  297,2160 t='69- Preferred groups' d='' id=
+[    ]  571,2260 t='Group (scanlator) names, separated by commas, best first. Used for "One row per ' d='' id=
+[C   ]  540,2382 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=

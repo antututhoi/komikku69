@@ -1,0 +1,29 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,96   t='' d='' id=
+[    ]  326,33   t='Hide sources that failed' d='' id=
+[    ]  571,109  t='Hides the sources that failed the last test (you can show them again in Browse →' d='' id=
+[C   ]  540,314  t='' d='' id=
+[    ]  312,272  t='Sources I mark as 18+' d='' id=
+[    ]  571,351  t='Hidden when "Show 18+ sources" is off; also hidden from Discord when that option' d='' id=
+[    ]   82,530  t='Feed' d='' id=
+[C   ]  540,657  t='' d='' id=
+[    ]  234,657  t='Hide Feed tab' d='' id=
+[C   ]  540,899  t='' d='' id=
+[    ]  266,815  t='Feed tab position' d='' id=
+[    ]  461,936  t='Do you want the feed tab to be the first tab in browse? This will make it the de' d='' id=
+[C   ]  540,1141 t='' d='' id=
+[    ]  373,1141 t='Hide entries already in library' d='' id=
+[    ]  110,1315 t='Sources' d='' id=
+[C   ]  540,1442 t='' d='' id=
+[    ]  373,1442 t='Hide entries already in library' d='' id=
+[C   ]  540,1621 t='' d='' id=
+[    ]  260,1600 t='Extension stores' d='' id=
+[    ]  157,1658 t='1 store' d='' id=
+[    ]  212,1816 t='NSFW (18+) sources' d='' id=
+[C   ]  540,1964 t='' d='' id=
+[    ]  448,1943 t='Show in sources and extensions lists' d='' id=
+[    ]  358,2001 t='Requires app restart to take effect' d='' id=
+[    ]  540,2253 t='This does not prevent unofficial or potentially incorrectly flagged extensions f' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  243,212  t='Browse' d='' id=

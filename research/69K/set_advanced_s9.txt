@@ -1,0 +1,32 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,99   t='' d='' id=
+[    ]  445,15   t='69- Update extensions automatically' d='' id=
+[    ]  461,94   t='When the daily check finds extension updates, they are installed right away (sil' d='' id=
+[C   ]  540,278  t='' d='' id=
+[    ]  440,278  t='Revoke trusted unknown extensions' d='' id=
+[    ]  132,452  t='Data Saver' d='' id=
+[C   ]  540,600  t='' d='' id=
+[    ]  206,579  t='Data Saver' d='' id=
+[    ]  537,637  t='Compress images before downloading or loading in reader' d='' id=
+[    ]  171,795  t='Developer tools' d='' id=
+[C   ]  540,964  t='' d='' id=
+[    ]  412,922  t='Enable integrated hentai features' d='' id=
+[    ]  461,1001 t='This is a experimental feature that will disable all hentai features if toggled ' d='' id=
+[C   ]  540,1227 t='' d='' id=
+[    ]  319,1164 t='Enable source blacklist' d='' id=
+[    ]  461,1264 t='Hide extensions/sources that are incompatible with 69-Komikku. Force-restart app' d='' id=
+[C   ]  540,1511 t='' d='' id=
+[    ]  345,1448 t='Enable delegated sources' d='' id=
+[    ]  461,1548 t='Apply 69-Komikku enhancements to the following sources if they are installed: Pu' d='' id=
+[C   ]  540,1774 t='' d='' id=
+[    ]  187,1732 t='Log level' d='' id=
+[    ]  571,1811 t='Changing this can impact app performance. Force-restart app after changing. Curr' d='' id=
+[C   ]  540,1995 t='' d='' id=
+[    ]  268,1974 t='Encrypt database' d='' id=
+[    ]  358,2032 t='Requires app restart to take effect' d='' id=
+[C   ]  540,2216 t='' d='' id=
+[    ]  275,2174 t='Open debug menu' d='' id=
+[    ]  571,2253 t='DO NOT TOUCH THIS MENU UNLESS YOU KNOW WHAT YOU ARE DOING! IT CAN CORRUPT YOUR L' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

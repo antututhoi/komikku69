@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  110,359  t='Sources' d='' id=
+[C   ]  540,528  t='' d='' id=
+[    ]  221,486  t='Suggestions' d='' id=
+[    ]  461,565  t='Show source-website's Suggestions while viewing entry' d='' id=
+[C   ]  540,770  t='' d='' id=
+[    ]  296,728  t='Expand Suggestions' d='' id=
+[    ]  461,807  t='If turned off, Suggestions won't automatically load & show expanded' d='' id=
+[C   ]  540,1012 t='' d='' id=
+[    ]  333,970  t='Home from Suggestions' d='' id=
+[    ]  461,1049 t='Show an icon while browsing Suggestions to navigate directly back to Home' d='' id=
+[C   ]  540,1233 t='' d='' id=
+[    ]  244,1212 t='Edit categories' d='' id=
+[    ]  197,1270 t='0 categories' d='' id=
+[C   ]  540,1475 t='' d='' id=
+[    ]  356,1412 t='Filter sources in categories' d='' id=
+[    ]  461,1512 t='Filter the sources that are in categories, making the sources not get put under ' d='' id=
+[C   ]  540,1738 t='' d='' id=
+[    ]  303,1696 t='Replace latest button' d='' id=
+[    ]  461,1775 t='Replace latest button with a custom browse view that includes both latest and br' d='' id=
+[C   ]  540,1959 t='' d='' id=
+[    ]  363,1938 t='Local source hidden folders' d='' id=
+[    ]  408,1996 t='Allow local source to read hidden folders' d='' id=
+[    ]  190,2154 t='69- Browse extras' d='' id=
+[C   ]  540,2301 t='' d='' id=
+[    ]  361,2281 t='69- Open sources on Latest' d='' id=
+[    ]  461,2359 t='Tapping a source opens its Latest list first (when the source has one)' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  243,212  t='Browse' d='' id=

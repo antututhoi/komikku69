@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,40   t='' d='' id=
+[    ]  292,19   t='Clear WebView data' d='' id=
+[C   ]  540,181  t='' d='' id=
+[    ]  323,160  t='DNS over HTTPS (DoH)' d='' id=
+[    ]  143,218  t='Disabled' d='' id=
+[C   ]  540,402  t='' d='' id=
+[    ]  334,360  t='Default user agent string' d='' id=
+[    ]  571,439  t='Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome' d='' id=
+[C   ]  540,665  t='' d='' id=
+[    ]  266,602  t='69- GitHub mirror' d='' id=
+[    ]  571,702  t='For when GitHub is blocked. An address that is put in front of GitHub links (ext' d='' id=
+[C   ]  540,991  t='' d='' id=
+[    ]  383,886  t='69- Picture proxy (saves data)' d='' id=
+[    ]  571,1028 t='Experimental. Sends pictures through a compressing service. Write its address wi' d='' id=
+[C   ]  540,1317 t='' d='' id=
+[    ]  498,1254 t='69- FlareSolverr server (Cloudflare checks)' d='' id=
+[    ]  571,1354 t='Address of a FlareSolverr server you run, e.g. http://192.168.1.5:8191. Sites wi' d='' id=
+[    ]   99,1554 t='Library' d='' id=
+[C   ]  540,1723 t='' d='' id=
+[    ]  306,1681 t='Refresh library covers' d='' id=
+[    ]  571,1760 t='Downloads the covers again from the sources. Covers you set yourself are kept.' d='' id=
+[C   ]  540,1965 t='' d='' id=
+[    ]  308,1923 t='69- Back up all covers' d='' id=
+[    ]  571,2002 t='Saves the covers of all library entries (also your own covers) into one ZIP file' d='' id=
+[C   ]  540,2165 t='' d='' id=
+[    ]  365,2165 t='69- Restore covers from ZIP' d='' id=
+[C   ]  540,2322 t='' d='' id=
+[    ]  541,2323 t='69- Import covers from another Komikku folder' d='' id=
+[    ]  571,2380 t='Pick the old app's folder (e.g. app.komikku.beta or its "covers" folder). Covers' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

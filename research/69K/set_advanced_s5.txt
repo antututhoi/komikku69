@@ -1,0 +1,29 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,76   t='' d='' id=
+[    ]  361,74   t='Preload library's cover color' d='' id=
+[C   ]  540,253  t='' d='' id=
+[    ]  416,232  t='Reset per-series reader settings' d='' id=
+[    ]  469,290  t='Resets reading mode and orientation of all series' d='' id=
+[C   ]  540,511  t='' d='' id=
+[    ]  461,469  t='Update library manga titles to match source' d='' id=
+[    ]  461,585  t='Warning: if a manga is renamed, it will be removed from the download queue (if p' d='' id=
+[C   ]  540,895  t='' d='' id=
+[    ]  377,748  t='Disallow non-ASCII filenames' d='' id=
+[    ]  461,932  t='Ensures compatibility with certain storage media that don't support Unicode. Whe' d='' id=
+[    ]  135,1216 t='Downloads' d='' id=
+[C   ]  540,1406 t='' d='' id=
+[    ]  342,1343 t='Include chapter URL hash' d='' id=
+[    ]  461,1443 t='Append the first six characters of the chapter URL's MD5 hash to the chapter fil' d='' id=
+[    ]  100,1643 t='Reader' d='' id=
+[C   ]  540,1833 t='' d='' id=
+[    ]  434,1770 t='Custom hardware bitmap threshold' d='' id=
+[    ]  571,1870 t='If reader loads a blank image incrementally reduce the threshold.
+Selected: Defa' d='' id=
+[C   ]  540,2133 t='' d='' id=
+[    ]  461,2091 t='Use legacy decoder for long strip reader' d='' id=
+[    ]  461,2207 t='Affects performance. Only enable if reducing bitmap threshold doesn't fix blank ' d='' id=
+[C   ]  540,2345 t='' d='' id=
+[    ]  313,2366 t='Custom display profile' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

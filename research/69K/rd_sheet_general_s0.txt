@@ -1,0 +1,39 @@
+[C   ]  540,1232 t='' d='' id=
+[C   ]  540,1490 t='' d='' id=
+[C   ]  180,707  t='' d='' id=
+[    ]  180,706  t='Reading mode' d='' id=
+[    ]  540,706  t='General' d='' id=
+[C   ]  900,707  t='' d='' id=
+[    ]  900,706  t='Custom filter' d='' id=
+[S   ]  540,1555 t='' d='' id=
+[    ]  540,846  t='Background color' d='' id=
+[Cxk ]  151,962  t='' d='' id=
+[    ]  151,962  t='Black' d='' id=
+[Ck  ]  340,962  t='' d='' id=
+[    ]  340,962  t='Gray' d='' id=
+[Ck  ]  531,962  t='' d='' id=
+[    ]  531,962  t='White' d='' id=
+[Ck  ]  723,962  t='' d='' id=
+[    ]  723,962  t='Auto' d='' id=
+[C   ]  540,1103 t='' d='' id=
+[    ]  348,1108 t='Show page number' d='' id=
+[C   ]  540,1218 t='' d='' id=
+[    ]  394,1223 t='Force horizontal seekbar' d='' id=
+[C   ]  540,1333 t='' d='' id=
+[    ]  481,1338 t='Show vertical seekbar in landscape' d='' id=
+[C   ]  540,1448 t='' d='' id=
+[    ]  424,1453 t='Left-handed vertical seekbar' d='' id=
+[C   ]  540,1563 t='' d='' id=
+[    ]  275,1568 t='Fullscreen' d='' id=
+[C   ]  540,1678 t='' d='' id=
+[    ]  422,1683 t='Show content in cutout area' d='' id=
+[C   ]  540,1793 t='' d='' id=
+[    ]  317,1798 t='Keep screen on' d='' id=
+[C   ]  540,1908 t='' d='' id=
+[    ]  400,1913 t='Show actions on long tap' d='' id=
+[C   ]  540,2023 t='' d='' id=
+[    ]  449,2028 t='Always show chapter transition' d='' id=
+[C   ]  540,2138 t='' d='' id=
+[    ]  371,2143 t='Flash on page change' d='' id=
+[C   ]  540,2259 t='' d='' id=
+[    ]  358,2258 t='Auto Webtoon Mode' d='' id=

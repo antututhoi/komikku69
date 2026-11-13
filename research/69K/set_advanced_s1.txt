@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,85   t='' d='' id=
+[    ]  262,1    t='Don't kill my app!' d='' id=
+[    ]  571,66   t='Some manufacturers have additional app restrictions that kill background service' d='' id=
+[    ]   82,284  t='Data' d='' id=
+[C   ]  540,414  t='' d='' id=
+[    ]  287,393  t='Reindex downloads' d='' id=
+[    ]  422,451  t='Force app to recheck downloaded chapters' d='' id=
+[C   ]  540,614  t='' d='' id=
+[    ]  245,593  t='Clear database' d='' id=
+[    ]  532,651  t='Delete history for entries that are not saved in your library' d='' id=
+[C   ]  540,835  t='' d='' id=
+[    ]  348,793  t='69- Clean up the database' d='' id=
+[    ]  571,872  t='Makes the library database smaller and faster. A notification shows the sizes wh' d='' id=
+[C   ]  540,1077 t='' d='' id=
+[    ]  286,1035 t='69- Clear all caches' d='' id=
+[    ]  571,1114 t='Empties the page cache and the picture cache. Downloads and your library are not' d='' id=
+[    ]  137,1293 t='Networking' d='' id=
+[C   ]  540,1420 t='' d='' id=
+[    ]  230,1420 t='Clear cookies' d='' id=
+[C   ]  540,1578 t='' d='' id=
+[    ]  292,1578 t='Clear WebView data' d='' id=
+[C   ]  540,1757 t='' d='' id=
+[    ]  323,1736 t='DNS over HTTPS (DoH)' d='' id=
+[    ]  169,1794 t='Disabled' d='' id=
+[C   ]  540,1978 t='' d='' id=
+[    ]  334,1936 t='Default user agent string' d='' id=
+[    ]  571,2015 t='Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome' d='' id=
+[C   ]  540,2241 t='' d='' id=
+[    ]  266,2178 t='69- GitHub mirror' d='' id=
+[    ]  571,2278 t='For when GitHub is blocked. An address that is put in front of GitHub links (ext' d='' id=
+[C   ]  540,2391 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

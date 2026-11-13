@@ -1,0 +1,16 @@
+[C   ]  540,1264 t='' d='' id=
+[C   ]  540,2084 t='' d='' id=
+[C   ]  180,1832 t='' d='' id=
+[    ]  180,1831 t='Reading mode' d='' id=
+[C   ]  540,1832 t='' d='' id=
+[    ]  540,1831 t='General' d='' id=
+[    ]  900,1831 t='Custom filter' d='' id=
+[S   ]  540,2149 t='' d='' id=
+[C   ]  540,1971 t='' d='' id=
+[    ]  347,1976 t='Custom brightness' d='' id=
+[C   ]  540,2086 t='' d='' id=
+[    ]  343,2091 t='Custom color filter' d='' id=
+[C   ]  540,2201 t='' d='' id=
+[    ]  271,2206 t='Grayscale' d='' id=
+[C   ]  540,2322 t='' d='' id=
+[    ]  256,2321 t='Inverted' d='' id=

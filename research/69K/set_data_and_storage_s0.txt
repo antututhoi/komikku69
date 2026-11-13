@@ -1,0 +1,29 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,396  t='' d='' id=
+[    ]  257,375  t='Storage location' d='' id=
+[    ]  350,433  t='/storage/emulated/0/Documents' d='' id=
+[C   ]  540,638  t='' d='' id=
+[    ]  306,575  t='69- Folder / file picker' d='' id=
+[    ]  571,675  t='69-Material Files. Used for the storage folder, backups, covers, CSV export and ' d='' id=
+[    ]  533,948  t='Used for automatic backups, chapter downloads, and local source.' d='' id=
+[    ]  202,1074 t='Backup and restore' d='' id=
+[C   ]  540,1243 t='' d='' id=
+[    ]  359,1201 t='69- Import reading from PC' d='' id=
+[    ]  571,1280 t='Pick 69-komikku-pc-progress.json (next to your backups) to bring back the chapte' d='' id=
+[C   ]  540,1527 t='' d='' id=
+[    ]  369,1443 t='69- Import from another app' d='' id=
+[    ]  571,1564 t='Kotatsu (and apps like it) backup .zip, Venera backup, or a .txt list with one t' d='' id=
+[C   ]  540,1795 t='' d='' id=
+[Ck  ]  290,1795 t='' d='' id=
+[    ]  291,1795 t='Create backup' d='' id=
+[Ck  ]  788,1795 t='' d='' id=
+[    ]  788,1795 t='Restore backup' d='' id=
+[C   ]  540,2000 t='' d='' id=
+[    ]  372,1979 t='Automatic backup frequency' d='' id=
+[    ]  215,2037 t='Every 12 hours' d='' id=
+[    ]  540,2323 t='You should keep copies of backups in other places as well. Backups may contain s' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  364,212  t='Data and storage' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

@@ -1,0 +1,66 @@
+[C   ]  540,1232 t='' d='' id=
+[C   ]  540,1437 t='' d='' id=
+[    ]  180,599  t='Reading mode' d='' id=
+[C   ]  540,600  t='' d='' id=
+[    ]  540,598  t='General' d='' id=
+[C   ]  900,600  t='' d='' id=
+[    ]  900,599  t='Custom filter' d='' id=
+[S   ]  540,1501 t='' d='' id=
+[S   ]  540,1501 t='' d='' id=
+[Cxk ]  164,658  t='' d='' id=
+[Ck  ]  365,658  t='' d='' id=
+[Ck  ]  569,658  t='' d='' id=
+[Ck  ]  826,658  t='' d='' id=
+[Ck  ]  229,755  t='' d='' id=
+[    ]  229,755  t='Locked portrait' d='' id=
+[Ck  ]  605,755  t='' d='' id=
+[    ]  605,755  t='Locked landscape' d='' id=
+[Ck  ]  236,881  t='' d='' id=
+[    ]  236,881  t='Reverse portrait' d='' id=
+[    ]  540,1022 t='Paged' d='' id=
+[    ]  540,1127 t='Tap zones' d='' id=
+[Cxk ]  164,1243 t='' d='' id=
+[    ]  164,1243 t='Default' d='' id=
+[Ck  ]  403,1243 t='' d='' id=
+[    ]  403,1243 t='L shaped' d='' id=
+[Ck  ]  665,1243 t='' d='' id=
+[    ]  665,1243 t='Kindle-ish' d='' id=
+[Ck  ]  892,1243 t='' d='' id=
+[    ]  892,1243 t='Edge' d='' id=
+[Ck  ]  219,1369 t='' d='' id=
+[    ]  219,1369 t='Right and Left' d='' id=
+[Ck  ]  510,1369 t='' d='' id=
+[    ]  510,1369 t='Disabled' d='' id=
+[Ck  ]  782,1369 t='' d='' id=
+[    ]  782,1369 t='69- My own' d='' id=
+[    ]  540,1510 t='Invert tap zones' d='' id=
+[Cxk ]  149,1626 t='' d='' id=
+[    ]  149,1626 t='None' d='' id=
+[Ck  ]  383,1626 t='' d='' id=
+[    ]  383,1626 t='Horizontal' d='' id=
+[Ck  ]  636,1626 t='' d='' id=
+[    ]  636,1626 t='Vertical' d='' id=
+[Ck  ]  844,1626 t='' d='' id=
+[    ]  844,1626 t='Both' d='' id=
+[    ]  540,1767 t='Scale type' d='' id=
+[Cxk ]  186,1883 t='' d='' id=
+[    ]  186,1883 t='Fit screen' d='' id=
+[Ck  ]  433,1883 t='' d='' id=
+[    ]  433,1883 t='Stretch' d='' id=
+[Ck  ]  669,1883 t='' d='' id=
+[    ]  669,1883 t='Fit width' d='' id=
+[Ck  ]  182,2009 t='' d='' id=
+[    ]  182,2009 t='Fit height' d='' id=
+[Ck  ]  465,2009 t='' d='' id=
+[    ]  465,2009 t='Original size' d='' id=
+[Ck  ]  743,2009 t='' d='' id=
+[    ]  743,2009 t='Smart fit' d='' id=
+[    ]  540,2150 t='Zoom start position' d='' id=
+[Cxk ]  189,2266 t='' d='' id=
+[    ]  189,2266 t='Automatic' d='' id=
+[Ck  ]  412,2266 t='' d='' id=
+[    ]  412,2266 t='Left' d='' id=
+[Ck  ]  593,2266 t='' d='' id=
+[    ]  593,2266 t='Right' d='' id=
+[Ck  ]  797,2266 t='' d='' id=
+[    ]  797,2266 t='Center' d='' id=
