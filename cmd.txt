@@ -186,3 +186,7 @@ sleep 1
 back
 sleep 2
 shot F_explore_sources3
+=== F66229
+tapt ^Explore$
+sleep 4
+shot F_explore_sources4
