@@ -1076,3 +1076,5 @@ tapt ^Anki$
 sleep 2
 === Chimahon_set_anki_s0
 sleep 1
+=== Chimahon_set_anki_s1
+up
