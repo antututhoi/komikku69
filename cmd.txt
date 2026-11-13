@@ -818,3 +818,7 @@ stop app.tsundoku
 launch app.chimahon
 sleep 8
 shot C_first_run
+=== C54079
+tapt ^OK$
+sleep 3
+shot C_after_ok
