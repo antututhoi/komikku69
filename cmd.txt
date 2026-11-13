@@ -1232,3 +1232,6 @@ sleep 1
 down
 down
 down
+=== SY_go_mangadex
+tapt ^MangaDex$
+sleep 2
