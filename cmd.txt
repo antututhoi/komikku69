@@ -452,3 +452,9 @@ stop eu.kanade.tachiyomi.j2k
 launch app.tsundoku
 sleep 8
 shot T_first_run
+=== T52336
+tapt ^Next$
+sleep 2
+tapt ^Select a folder$
+sleep 3
+shot T_x1
