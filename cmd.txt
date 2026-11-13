@@ -1050,3 +1050,7 @@ tapt ^Extensions$
 sleep 3
 === D69574
 shot D_settings_Extensions_p0
+=== D69575
+up
+sleep 1
+shot D_settings_Extensions_p1
