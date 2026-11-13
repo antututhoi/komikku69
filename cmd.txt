@@ -2381,3 +2381,16 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_scale_Original size
+=== K43744
+tap 540 1200
+sleep 1
+tap 929 2275
+sleep 2
+tapt ^Reading mode$
+sleep 1
+up
+tapt ^Smart fit$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_scale_Smart fit
