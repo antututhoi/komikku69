@@ -1,0 +1,38 @@
+# block D69575  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:38:32
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Extensions' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,404  t='' d='' id=
+[    ]  538,392  t='Install extensions inside the app's sandboxed storage. No system install permiss' d='' id=
+[Ck  ]  942,364  t='' d='' id=
+[    ]  196,591  t='APPEARANCE' d='' id=
+[C   ]  540,724  t='' d='' id=
+[    ]  366,705  t='Sorting order' d='' id=
+[    ]  264,753  t='Name' d='' id=
+[C   ]  540,912  t='' d='' id=
+[    ]  409,912  t='Show in grid view' d='' id=
+[Cxk ]  942,913  t='' d='' id=
+[    ]  132,1077 t='FILTER' d='' id=
+[    ]  450,1192 t='Default browse order' d='' id=
+[    ]  483,1240 t='Applies to every installed extension' d='' id=
+[C   ]  304,1359 t='' d='' id=
+[    ]  304,1359 t='Popular' d='' id=
+[C   ]  775,1359 t='' d='' id=
+[    ]  775,1359 t='Latest' d='' id=
+[C   ]  540,1552 t='' d='' id=
+[    ]  403,1533 t='Show extensions' d='' id=
+[    ]  281,1581 t='Show all' d='' id=
+[C   ]  540,1740 t='' d='' id=
+[    ]  581,1721 t='Incognito mode for NSFW manga' d='' id=
+[    ]  329,1769 t='Ask every time' d='' id=
+[    ]  200,1905 t='AUTO-UPDATE' d='' id=
+[C   ]  540,2040 t='' d='' id=
+[    ]  470,2000 t='Shizuku installer (Beta)' d='' id=
+[    ]  538,2068 t='Grant privileged access via Shizuku for silent, no-prompt installs' d='' id=
+[Ck  ]  942,2040 t='' d='' id=
+[    ]  481,2191 t='Auto-update extensions' d='' id=
+[    ]  538,2280 t='Install extension updates silently as soon as they are detected, with a daily ba' d='' id=
+[Ck  ]  942,2252 t='' d='' id=
+[C   ]  540,2385 t='' d='' id=
+[    ]  538,2397 t='Notify about extension updates' d='' id=
