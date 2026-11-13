@@ -1,0 +1,50 @@
+# block F66451  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.main.ui.MainActivity  time: 10:41:13
+! tapt 'Favorites' at 405,2263
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,243  t='Search manga' d='' id=search_bar
+[    ]  116,243  t='' d='Navigate up' id=
+[    ]  313,243  t='Search manga' d='' id=open_search_bar_text_view
+[C   ]  721,243  t='' d='Novel' id=action_app_mode
+[C   ]  848,243  t='' d='Downloads' id=action_downloads
+[CL  ]  975,243  t='' d='More options' id=
+[L   ]  132,422  t='' d='All favorites' id=
+[    ]  132,421  t='All favorites' d='' id=
+[CL  ]  364,422  t='' d='Reading' id=
+[    ]  364,421  t='Reading' d='' id=
+[CL  ]  598,422  t='' d='Plan to read' id=
+[    ]  598,421  t='Plan to read' d='' id=
+[S   ]  540,1442 t='' d='' id=pager
+[S   ]  540,1442 t='' d='' id=
+[S   ]  540,1442 t='' d='' id=recyclerView
+[S   ]  540,559  t='' d='' id=scrollView
+[CL  ]  185,553  t='On device' d='' id=
+[CL  ]  526,553  t='New chapters' d='' id=
+[CL  ]  874,553  t='Completed' d='' id=
+[CL  ] 1053,553  t='MangaDex' d='' id=
+[CL  ]  194,906  t='' d='' id=
+[    ]  194,1116 t='Kage no Jitsuryokusha ni Naritakute!' d='' id=textView_title
+[CL  ]  540,906  t='' d='' id=
+[    ]  540,1116 t='Tensei Shitara Slime datta Ken' d='' id=textView_title
+[CL  ]  886,906  t='' d='' id=
+[    ]  886,1116 t='Kumo desu ga, Nani ka?' d='' id=textView_title
+[CL  ]  194,1494 t='' d='' id=
+[    ]  194,1704 t='Ki ni Natteru Hito ga Otoko ja Nakatta' d='' id=textView_title
+[CL  ]  540,1494 t='' d='' id=
+[    ]  540,1704 t='Mairimashita! Iruma-kun' d='' id=textView_title
+[CL  ]  886,1494 t='' d='' id=
+[    ]  886,1704 t='Mieruko-chan' d='' id=textView_title
+[CL  ]  194,2082 t='' d='' id=
+[    ]  194,2292 t='Akuyaku Reijou Level 99 ~Watashi wa Ura Boss desuga Maou de wa Arimasen~' d='' id=textView_title
+[CL  ]  540,2082 t='' d='' id=
+[    ]  540,2292 t='Kaoru Hana wa Rin to Saku' d='' id=textView_title
+[CL  ]  886,2082 t='' d='' id=
+[    ]  886,2292 t='Maou no Ore ga Dorei Elf o Yome ni Shitanda ga, Dou Medereba ii?' d='' id=textView_title
+[CL  ]  194,2390 t='' d='' id=
+[CL  ]  540,2390 t='' d='' id=
+[CL  ]  886,2390 t='' d='' id=
+[    ]  539,1200 t='漫
+画' d='' id=textViewWatermark
+[C   ]  135,2263 t='' d='History' id=nav_history
+[    ]  405,2263 t='' d='Favorites' id=nav_favorites
+[C   ]  675,2263 t='' d='Explore' id=nav_explore
+[C   ]  945,2263 t='' d='Feed' id=nav_feed
