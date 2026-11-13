@@ -1086,3 +1086,6 @@ sleep 1
 down
 down
 down
+=== Chimahon_go_ocr
+tapt ^OCR$
+sleep 2
