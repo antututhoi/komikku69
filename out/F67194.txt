@@ -1,0 +1,38 @@
+# block F67194  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:54:18
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,361  t='' d='' id=
+[    ]  194,315  t='Custom themes' d='' id=title
+[    ]  285,359  t='No custom themes imported' d='' id=summary
+[C   ]  540,523  t='' d='' id=
+[    ]  208,497  t='Import theme file' d='' id=title
+[    ]  534,551  t='Import an Idle Fantasy compatible Material 3 theme JSON' d='' id=summary
+[C   ]  540,715  t='' d='' id=
+[    ]  258,689  t='Delete selected theme' d='' id=title
+[    ]  285,743  t='No custom themes imported' d='' id=summary
+[C   ]  540,907  t='' d='' id=
+[    ]  109,881  t='Theme' d='' id=title
+[    ]  165,935  t='Follow system' d='' id=summary
+[C   ]  540,1099 t='' d='' id=
+[    ]   95,1073 t='Black' d='' id=title
+[    ]  360,1127 t='Uses less power on AMOLED screens' d='' id=summary
+[k   ]  969,1099 t='' d='' id=switchWidget
+[C   ]  540,1291 t='' d='' id=
+[    ]  137,1265 t='Language' d='' id=title
+[    ]  165,1319 t='Follow system' d='' id=summary
+[    ]  540,1475 t='Manga list' d='' id=title
+[C   ]  540,1618 t='' d='' id=
+[    ]  138,1592 t='List mode' d='' id=title
+[    ]   77,1646 t='Grid' d='' id=summary
+[C   ]  540,1826 t='' d='' id=
+[    ]  493,1763 t='Grid size' d='' id=title
+[    ]  991,1765 t='100%' d='' id=summary
+[C   ]  540,2061 t='' d='' id=
+[    ]  213,2009 t='Show quick filters' d='' id=title
+[    ]  450,2090 t='Provides the ability to filter manga lists by certain parameters' d='' id=summary
+[xk  ]  969,2061 t='' d='' id=switchWidget
+[C   ]  540,2280 t='' d='' id=
+[    ]  364,2254 t='Show reading progress indicators' d='' id=title
+[    ]  151,2308 t='Percent read' d='' id=summary
+[C   ]  540,2388 t='' d='' id=
