@@ -203,3 +203,5 @@ tapt ^Appearance$
 sleep 2
 === set_appearance_s0
 sleep 1
+=== set_appearance_s1
+up
