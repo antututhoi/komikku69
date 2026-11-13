@@ -1,0 +1,39 @@
+# block S268311  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:16:09
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[    ]  540,352  t='Hold-to-scroll' d='' id=title
+[C   ]  540,548  t='' d='' id=
+[    ]  299,469  t='Scroll while holding a page' d='' id=title
+[    ]  450,576  t='Long-press an edge to scroll until you release. Custom long-press actions take p' d='' id=summary
+[k   ]  969,548  t='' d='' id=switchWidget
+[C   ]  540,793  t='' d='' id=
+[    ]  119,767  t='Top row' d='' id=title
+[    ]  178,821  t='Scroll backward' d='' id=summary
+[C   ]  540,985  t='' d='' id=
+[    ]  146,959  t='Middle left' d='' id=title
+[    ]  178,1013 t='Scroll backward' d='' id=summary
+[C   ]  540,1177 t='' d='' id=
+[    ]  158,1151 t='Middle right' d='' id=title
+[    ]  162,1205 t='Scroll forward' d='' id=summary
+[C   ]  540,1369 t='' d='' id=
+[    ]  153,1343 t='Bottom row' d='' id=title
+[    ]  162,1397 t='Scroll forward' d='' id=summary
+[C   ]  540,1561 t='' d='' id=
+[    ]  261,1535 t='Enable volume buttons' d='' id=title
+[    ]  383,1589 t='Use volume buttons for switching pages' d='' id=summary
+[k   ]  969,1561 t='' d='' id=switchWidget
+[C   ]  540,1806 t='' d='' id=
+[    ]  287,1727 t='Invert navigation controls' d='' id=title
+[    ]  450,1834 t='Swap the direction of volume button and directional hardware key navigation (lef' d='' id=summary
+[k   ]  969,1806 t='' d='' id=switchWidget
+[C   ]  540,2051 t='' d='' id=
+[    ]  193,2025 t='Page animation' d='' id=title
+[    ]  103,2079 t='Default' d='' id=summary
+[C   ]  540,2243 t='' d='' id=
+[    ]  226,2217 t='Enable pull gesture' d='' id=title
+[    ]  440,2271 t='Use pull gesture to switch chapters in webtoon' d='' id=summary
+[k   ]  969,2243 t='' d='' id=switchWidget
+[C   ]  540,2369 t='' d='' id=
+[    ]  213,2390 t='32-bit color mode' d='' id=title
+[k   ]  969,2386 t='' d='' id=switchWidget
