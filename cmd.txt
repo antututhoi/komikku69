@@ -2736,3 +2736,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_scale_Stretch
+=== K44951
+tapt ^Settings$
+sleep 2
+up
+tapt ^Fit width$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_scale_Fit_width
