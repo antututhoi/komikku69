@@ -1,0 +1,41 @@
+# block F67201  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:56:21
+! tapt 'Reader settings' at 340,750
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,392  t='' d='' id=
+[    ]  171,366  t='Default mode' d='' id=title
+[    ]  119,420  t='Standard' d='' id=summary
+[C   ]  540,584  t='' d='' id=
+[    ]  276,558  t='Autodetect reader mode' d='' id=title
+[    ]  395,612  t='Automatically detect if manga is webtoon' d='' id=summary
+[xk  ]  969,584  t='' d='' id=switchWidget
+[C   ]  540,829  t='' d='' id=
+[    ]  178,750  t='Smart resume' d='' id=title
+[    ]  450,857  t='When new chapters arrive, continue with the next chapter if you nearly finished ' d='' id=summary
+[k   ]  969,829  t='' d='' id=switchWidget
+[C   ]  540,1074 t='' d='' id=
+[    ]  399,1048 t='Consider a chapter finished based on' d='' id=title
+[    ]  139,1102 t='Percentage' d='' id=summary
+[C   ]  540,1266 t='' d='' id=
+[    ]  249,1240 t='Completion threshold' d='' id=title
+[    ]  536,1294 t='At least 90% of pages reached, including the current page.' d='' id=summary
+[C   ]  540,1511 t='' d='' id=
+[    ]  279,1432 t='Wait for chapter updates' d='' id=title
+[    ]  393,1539 t='Wait for Futon to check for chapter updates before choosing where to continue.' d='' id=summary
+[C   ]  849,1511 t='' d='About waiting for chapter updates' id=preference_help
+[k   ]  975,1511 t='' d='' id=switchWidget
+[C   ]  540,1756 t='' d='' id=
+[    ]  155,1730 t='Scale mode' d='' id=title
+[    ]  122,1784 t='Fit center' d='' id=summary
+[C   ]  540,1974 t='' d='' id=
+[    ]  231,1922 t='Show zoom buttons' d='' id=title
+[    ]  450,2003 t='Whether to show zoom control buttons in the bottom right corner' d='' id=summary
+[k   ]  969,1974 t='' d='' id=switchWidget
+[C   ]  540,2193 t='' d='' id=
+[    ]  186,2167 t='Webtoon zoom' d='' id=title
+[    ]  382,2221 t='Allow zoom in gesture in webtoon mode' d='' id=summary
+[xk  ]  969,2193 t='' d='' id=switchWidget
+[C   ]  540,2344 t='' d='' id=
+[    ]  515,2338 t='Default webtoon zoom out' d='' id=title
+[    ] 1013,2340 t='0%' d='' id=summary
