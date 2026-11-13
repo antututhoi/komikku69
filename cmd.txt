@@ -159,3 +159,11 @@ up
 up
 tapt ^Settings$
 sleep 2
+=== b027
+tap 540 596
+sleep 2
+shot lib_p0
+up
+shot lib_p1
+up
+shot lib_p2
