@@ -263,3 +263,8 @@ shot J_recents_updates
 tapt ^Display options$
 sleep 2
 shot J_recents_display_options
+=== J51437
+shot J_recents_options_general
+tapt ^History$
+sleep 1
+shot J_recents_options_history
