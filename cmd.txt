@@ -955,3 +955,6 @@ sleep 1
 down
 down
 down
+=== MH_go_about
+tapt ^About$
+sleep 2
