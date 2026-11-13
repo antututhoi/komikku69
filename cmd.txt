@@ -325,3 +325,9 @@ sleep 1
 up
 === set_tracking_s2
 up
+=== nav_connections
+back
+sleep 1
+down
+down
+down
