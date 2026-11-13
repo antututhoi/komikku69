@@ -472,3 +472,7 @@ shot T_x2
 tapt ^Next$
 sleep 2
 shot T_x3
+=== T52415
+tapt ^Restore backup$
+sleep 3
+shot T_x4
