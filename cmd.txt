@@ -1046,3 +1046,6 @@ sleep 1
 down
 down
 down
+=== Chimahon_go_popup_dictionary
+tapt ^Popup dictionary$
+sleep 2
