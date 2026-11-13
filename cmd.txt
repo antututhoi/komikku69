@@ -353,3 +353,5 @@ sleep 1
 up
 === set_browse_s2
 up
+=== set_browse_s3
+up
