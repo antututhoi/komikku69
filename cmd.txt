@@ -1016,3 +1016,5 @@ sleep 2
 sleep 1
 === Chimahon_set_browse_s1
 up
+=== Chimahon_set_browse_s2
+up
