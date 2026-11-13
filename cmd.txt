@@ -822,3 +822,19 @@ shot C_first_run
 tapt ^OK$
 sleep 3
 shot C_after_ok
+=== C54098
+tapt ^Next$
+sleep 2
+tapt ^Select a folder$
+sleep 3
+tapt ^Documents$
+sleep 2
+tapt ^USE THIS FOLDER$
+sleep 2
+tapt ^ALLOW$|^Allow$
+sleep 3
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
+shot C_onboard_last
