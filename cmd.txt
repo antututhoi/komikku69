@@ -714,3 +714,13 @@ tapt ^The New Gate$
 sleep 6
 up
 sleep 1
+=== r024
+tap 400 1736
+sleep 8
+tap 540 1200
+sleep 1
+tap 929 2275
+sleep 2
+tapt ^Long strip$
+sleep 1
+shot strip_chosen
