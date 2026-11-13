@@ -572,3 +572,7 @@ shot T_library_display_tab_more
 tapt ^Tags$
 sleep 2
 shot T_library_tags_tab
+=== T52773
+tapt ^Extensions$
+sleep 2
+shot T_library_extensions_tab
