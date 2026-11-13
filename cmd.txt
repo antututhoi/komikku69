@@ -702,3 +702,15 @@ shot longstrip
 rotate 1
 sleep 3
 shot landscape_strip
+=== r023
+rotate 0
+back
+sleep 1
+tapt ^Library$
+sleep 2
+tapt ^Plan to read$
+sleep 1
+tapt ^The New Gate$
+sleep 6
+up
+sleep 1
