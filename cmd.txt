@@ -1190,3 +1190,5 @@ down
 === SY_go_data_and_storage
 tapt ^Data and storage$
 sleep 2
+=== SY_set_data_and_storage_s0
+sleep 1
