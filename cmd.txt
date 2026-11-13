@@ -266,3 +266,11 @@ sleep 1
 tapt ^Chapters$
 sleep 2
 shot F_reader_chapters_sheet
+=== F66588
+back
+sleep 1
+tapt ^Options$
+sleep 2
+tapt ^Color correction$
+sleep 3
+shot F_reader_color_correction
