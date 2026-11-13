@@ -93,3 +93,7 @@ sleep 3
 back
 sleep 2
 shot O_explore_sources
+=== O64467
+up
+sleep 1
+shot O_explore_sources_2
