@@ -1645,3 +1645,19 @@ sleep 1
 up
 tapt ^Downloaded chapters$
 tap 540 130
+=== K41911
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 2
+tap 108 2232
+sleep 2
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+up
+tapt ^Unread chapters$
+sleep 1
+tap 540 130
+sleep 2
+shot K_libover_Unread chapters_toggled
