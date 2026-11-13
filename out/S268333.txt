@@ -1,0 +1,36 @@
+# block S268333  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:22:29
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  266,212  t='Services' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,371  t='' d='' id=
+[    ]  162,325  t='Suggestions' d='' id=title
+[    ]  110,379  t='Enabled' d='' id=summary
+[C   ]  540,569  t='' d='' id=
+[    ]  187,517  t='Related manga' d='' id=title
+[    ]  450,598  t='Show a list of related manga. In some cases it may be inaccurate or missing' d='' id=summary
+[xk  ]  969,569  t='' d='' id=switchWidget
+[C   ]  540,788  t='' d='' id=
+[C   ]  428,788  t='' d='' id=press_container
+[    ]  215,762  t='Reading statistics' d='' id=title
+[    ]  116,816  t='Disabled' d='' id=summary
+[k   ]  969,788  t='' d='' id=switchWidget
+[C   ]  540,980  t='' d='' id=
+[    ]  323,954  t='Show estimated reading time' d='' id=title
+[    ]  422,1008 t='The time estimation value may be inaccurate' d='' id=summary
+[xk  ]  969,980  t='' d='' id=switchWidget
+[    ]  540,1164 t='Tracking' d='' id=title
+[C   ]  540,1360 t='' d='' id=
+[    ]  344,1281 t='Combined tracker search · Beta' d='' id=title
+[    ]  450,1388 t='Search your list, reading sources and the selected tracker catalogue together. Q' d='' id=summary
+[k   ]  969,1360 t='' d='' id=switchWidget
+[C   ]  540,1684 t='' d='' id=
+[    ]  381,1579 t='Review restored tracker links · Beta' d='' id=title
+[    ]  540,1713 t='Restored links stay inactive on this device until you verify the account and con' d='' id=summary
+[C   ]  540,1982 t='' d='' id=
+[    ]  400,1930 t='Tracker status from categories · Beta' d='' id=title
+[    ]  540,2011 t='Review account-specific mappings and resolve conflicting statuses. Off until ena' d='' id=summary
+[C   ]  540,2227 t='' d='' id=
+[    ]  229,2175 t='Tracker tools · Beta' d='' id=title
+[    ]  540,2256 t='Review tracker metadata, bulk matches, category statuses and Beta website connec' d='' id=summary
+[C   ]  540,2375 t='' d='' id=
+[    ]  368,2396 t='AniList automatic matching · Beta' d='' id=title
