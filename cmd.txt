@@ -2727,3 +2727,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_mode_Paged_right_to_left
+=== K44950
+tapt ^Settings$
+sleep 2
+up
+tapt ^Stretch$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_scale_Stretch
