@@ -123,3 +123,9 @@ sleep 1
 tap 253 1665
 sleep 2
 shot J_library_hopper_category_list
+=== J50893
+back
+sleep 1
+tap 869 750
+sleep 2
+shot J_library_category_sort_menu
