@@ -204,3 +204,14 @@ sleep 1
 tapt Sort & Filter
 sleep 2
 shot J_entry_sort_filter_sheet
+=== J51234
+back
+sleep 1
+down
+sleep 1
+tapt ^Start reading
+sleep 9
+shot J_reader_page
+tap 540 1200
+sleep 2
+shot J_reader_menu
