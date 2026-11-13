@@ -719,3 +719,7 @@ shot S2_settings_Reader_settings_p3
 up
 sleep 1
 shot S2_settings_Reader_settings_p4
+=== S268311
+up
+sleep 1
+shot S2_settings_Reader_settings_p5
