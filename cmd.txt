@@ -1054,3 +1054,7 @@ shot D_settings_Extensions_p0
 up
 sleep 1
 shot D_settings_Extensions_p1
+=== D69576
+up
+sleep 1
+shot D_settings_Extensions_p2
