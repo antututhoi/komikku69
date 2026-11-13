@@ -331,3 +331,6 @@ sleep 1
 down
 down
 down
+=== go_connections
+tapt ^Connections$
+sleep 2
