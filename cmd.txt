@@ -3836,3 +3836,5 @@ sleep 2
 tap 540 1200
 sleep 2
 shot S_rd_toggle_Always_show_chapter_transition_second_tap
+=== ping1794548989
+shot ping
