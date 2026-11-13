@@ -500,3 +500,6 @@ sleep 2
 tapt ^seed.tachibk$
 sleep 4
 shot T_x7
+=== T52520
+tapt ^Show roots$
+sleep 2
