@@ -128,3 +128,16 @@ tapt ^Browse$
 sleep 2
 tapt ^Extensions$
 sleep 3
+=== b024
+tap 976 813
+sleep 2
+tapt ^Trust$
+sleep 2
+host adb logcat -c
+tapt ^Library$
+sleep 3
+swipe 540 700 540 1800 400
+sleep 45
+host adb logcat -d --pid=$(adb shell pidof app.komikku) > /tmp/ctlout/out/log_b024_app.txt; grep -c WM- /tmp/ctlout/out/log_b024_app.txt
+tapt ^Updates$
+sleep 3
