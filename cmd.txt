@@ -219,3 +219,7 @@ shot J_reader_menu
 tapt ^Display options$
 sleep 2
 shot J_reader_display_sheet_tab1
+=== J51271
+up
+sleep 1
+shot J_reader_display_sheet_tab1_more
