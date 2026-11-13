@@ -2745,3 +2745,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_scale_Fit_width
+=== K44952
+tapt ^Settings$
+sleep 2
+up
+tapt ^Fit height$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_scale_Fit_height
