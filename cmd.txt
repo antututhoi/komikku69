@@ -1090,3 +1090,5 @@ sleep 1
 up
 === SY_set_appearance_s2
 up
+=== SY_set_appearance_s3
+up
