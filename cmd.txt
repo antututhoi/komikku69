@@ -497,3 +497,5 @@ sleep 2
 sleep 1
 === rd_sheet_mode_s1
 up
+=== rd_sheet_mode_s2
+up
