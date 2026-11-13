@@ -724,3 +724,15 @@ sleep 2
 tapt ^Long strip$
 sleep 1
 shot strip_chosen
+=== r025
+tap 540 300
+sleep 2
+swipe 540 1800 540 600 400
+sleep 2
+shot strip_scroll
+rec strip_scroll_vid 6
+rotate 1
+sleep 3
+shot strip_landscape
+rotate 0
+sleep 2
