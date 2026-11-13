@@ -970,3 +970,7 @@ tapt ^Appearance$
 sleep 3
 === D69554
 shot D_settings_Appearance_p0
+=== D69555
+up
+sleep 1
+shot D_settings_Appearance_p1
