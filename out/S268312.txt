@@ -1,0 +1,38 @@
+# block S268312  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:16:23
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,370  t='' d='' id=
+[    ]  450,349  t='Swap the direction of volume button and directional hardware key navigation (lef' d='' id=summary
+[k   ]  969,327  t='' d='' id=switchWidget
+[C   ]  540,541  t='' d='' id=
+[    ]  193,515  t='Page animation' d='' id=title
+[    ]  103,569  t='Default' d='' id=summary
+[C   ]  540,733  t='' d='' id=
+[    ]  226,707  t='Enable pull gesture' d='' id=title
+[    ]  440,761  t='Use pull gesture to switch chapters in webtoon' d='' id=summary
+[k   ]  969,733  t='' d='' id=switchWidget
+[C   ]  540,925  t='' d='' id=
+[    ]  213,899  t='32-bit color mode' d='' id=title
+[    ]  443,953  t='Reduces banding, but may impact performance' d='' id=summary
+[k   ]  969,925  t='' d='' id=switchWidget
+[C   ]  540,1143 t='' d='' id=
+[    ]  393,1091 t='Reduce memory consumption (beta)' d='' id=title
+[    ]  450,1172 t='Reduce offscreen pages quality to use less memory' d='' id=summary
+[k   ]  969,1143 t='' d='' id=switchWidget
+[C   ]  540,1388 t='' d='' id=
+[    ]  363,1336 t='Suggest another source on errors' d='' id=title
+[    ]  450,1417 t='When a source is slow or keeps failing, offer a plugin or extension for the same' d='' id=summary
+[k   ]  969,1388 t='' d='' id=switchWidget
+[C   ]  540,1633 t='' d='' id=
+[    ]  326,1581 t='Source-switch prompts · Beta' d='' id=title
+[    ]  540,1662 t='Pause slow-loading hints or all automatic source-switch prompts' d='' id=summary
+[C   ]  540,1931 t='' d='' id=
+[    ]  199,1826 t='Animated pages' d='' id=title
+[    ]  450,1960 t='Play GIF and WebP pages. Animation pauses offscreen; translations use a still fr' d='' id=summary
+[xk  ]  969,1931 t='' d='' id=switchWidget
+[C   ]  540,2229 t='' d='' id=
+[    ]  311,2177 t='GPU image upscaling (beta)' d='' id=title
+[    ]  540,2258 t='Sharpen low-resolution pages with an Anime4K-style GPU shader. Android 13+' d='' id=summary
+[C   ]  540,2376 t='' d='' id=
+[    ]  152,2397 t='Crop pages' d='' id=title
