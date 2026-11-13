@@ -1,0 +1,17 @@
+# block F66788  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.main.ui.MainActivity  time: 10:48:25
+[S   ]  540,1200 t='' d='' id=workspace
+[L   ]  561,359  t='' d='' id=smartspace_card_pager
+[C   ]  561,359  t='' d='' id=
+[C   ]  561,323  t='Fri, Nov 13' d='Fri, Nov 13' id=date
+[CL  ]  414,1615 t='Gmail' d='Gmail' id=
+[CL  ]  666,1615 t='Photos' d='Photos' id=
+[CL  ]  918,1615 t='YouTube' d='YouTube' id=
+[    ]  540,1232 t='' d='Home' id=
+[CL  ]  162,1970 t='Phone' d='Phone' id=
+[CL  ]  414,1970 t='Messages' d='Messages' id=
+[CL  ]  666,1970 t='Chrome' d='Chrome' id=
+[CL  ]  918,1970 t='Kototoro' d='Predicted app: Kototoro' id=
+[CL  ]  539,2207 t='' d='Search' id=search_container_hotseat
+[C   ]  149,2207 t='' d='Google app' id=g_icon
+[C   ]  804,2207 t='' d='Voice search' id=mic_icon
+[C   ]  930,2207 t='' d='Google Lens' id=lens_icon
