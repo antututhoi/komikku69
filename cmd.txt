@@ -347,3 +347,5 @@ down
 === go_browse
 tapt ^Browse$
 sleep 2
+=== set_browse_s0
+sleep 1
