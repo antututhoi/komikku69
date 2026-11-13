@@ -561,3 +561,7 @@ sleep 1
 sh monkey -p io.github.glitch228.kaisoku -c android.intent.category.LAUNCHER 1
 sleep 8
 shot S2_main
+=== S267945
+tap 405 2231
+sleep 5
+shot S2_favorites_main
