@@ -1,0 +1,37 @@
+# block F67196  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:54:45
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,401  t='' d='' id=
+[    ]  213,332  t='Show quick filters' d='' id=title
+[    ]  450,413  t='Provides the ability to filter manga lists by certain parameters' d='' id=summary
+[xk  ]  969,384  t='' d='' id=switchWidget
+[C   ]  540,603  t='' d='' id=
+[    ]  364,577  t='Show reading progress indicators' d='' id=title
+[    ]  151,631  t='Percent read' d='' id=summary
+[C   ]  540,795  t='' d='' id=
+[    ]  183,769  t='Badges in lists' d='' id=title
+[    ]  244,823  t='Saved manga, Favorites' d='' id=summary
+[    ]  540,979  t='Details' d='' id=title
+[C   ]  540,1096 t='' d='' id=
+[    ]  287,1096 t='Collapse long description' d='' id=title
+[xk  ]  969,1096 t='' d='' id=switchWidget
+[C   ]  540,1263 t='' d='' id=
+[    ]  271,1237 t='Show pages thumbnails' d='' id=title
+[    ]  416,1291 t='Enable the "Pages" tab on the details screen' d='' id=summary
+[xk  ]  969,1263 t='' d='' id=switchWidget
+[C   ]  540,1455 t='' d='' id=
+[    ]  148,1429 t='Default tab' d='' id=title
+[    ]  125,1483 t='Last used' d='' id=summary
+[    ]  540,1639 t='Main screen' d='' id=title
+[C   ]  540,1782 t='' d='' id=
+[    ]  417,1756 t='Change Home Screen Background Font' d='' id=title
+[    ]   80,1810 t='Bold' d='' id=summary
+[C   ]  540,2000 t='' d='' id=
+[    ]  232,1948 t='Search suggestions' d='' id=title
+[    ]  540,2029 t='Manga sources, Genres, Recent queries, Authors, Suggested queries, Recent source' d='' id=summary
+[C   ]  540,2219 t='' d='' id=
+[    ]  247,2193 t='Main screen sections' d='' id=title
+[    ]  312,2247 t='History, Favorites, Explore, Feed' d='' id=summary
+[C   ]  540,2357 t='' d='' id=
+[    ]  331,2378 t='Show floating Continue button' d='' id=title
