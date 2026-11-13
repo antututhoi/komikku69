@@ -2844,3 +2844,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_invert_Horizontal
+=== K44963
+tapt ^Settings$
+sleep 2
+up
+tapt ^Vertical$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_invert_Vertical
