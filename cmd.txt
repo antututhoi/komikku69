@@ -857,3 +857,7 @@ shot S2_settings_Manga_sources_p2
 up
 sleep 1
 shot S2_settings_Manga_sources_p3
+=== S268343
+up
+sleep 1
+shot S2_settings_Manga_sources_p4
