@@ -1010,3 +1010,7 @@ tapt ^Reading$
 sleep 3
 === D69564
 shot D_settings_Reading_p0
+=== D69565
+up
+sleep 1
+shot D_settings_Reading_p1
