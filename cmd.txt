@@ -3538,3 +3538,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot S_rd_scale_Stretch
+=== S47186
+tapt ^Settings$
+sleep 2
+up
+tapt ^Fit width$
+sleep 1
+tap 540 250
+sleep 2
+shot S_rd_scale_Fit_width
