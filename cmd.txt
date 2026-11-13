@@ -1292,3 +1292,7 @@ shot C_settings_Library_p0
 up
 sleep 1
 shot C_settings_Library_p1
+=== C61741
+up
+sleep 1
+shot C_settings_Library_p2
