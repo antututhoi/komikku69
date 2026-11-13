@@ -547,3 +547,10 @@ tapt ^Got it$
 sleep 1
 hold 540 1200 1000
 sleep 2
+=== r013
+tap 874 2221
+sleep 7
+tapt ^Got it$
+sleep 1
+hold 540 1200 1000
+sleep 2
