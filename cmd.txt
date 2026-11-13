@@ -867,3 +867,9 @@ shot C_browse_sources
 tapt ^Extensions$
 sleep 3
 shot C_browse_extensions
+=== C54283
+tapt ^Library$
+sleep 2
+tapt ^Manga$
+sleep 2
+shot C_library_mode_selector
