@@ -489,3 +489,7 @@ sleep 2
 sleep 2
 tap 540 1200
 sleep 2
+=== r007
+shot menu
+tap 929 2275
+sleep 2
