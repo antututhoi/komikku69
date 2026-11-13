@@ -9,3 +9,6 @@ sleep 2
 === b003
 tapt ^Next$
 sleep 1
+=== b004
+tapt ^Select a folder$
+sleep 3
