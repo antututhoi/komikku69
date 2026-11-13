@@ -1448,3 +1448,14 @@ sleep 1
 up
 tapt ^Use\ language\ icon$
 back
+=== K41328
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+up
+tapt ^Source\ icon$
+sleep 1
+back
+sleep 2
+shot K_libover_Source icon_toggled
