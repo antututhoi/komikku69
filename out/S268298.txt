@@ -1,0 +1,36 @@
+# block S268298  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:12:54
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,335  t='' d='' id=
+[    ]  165,314  t='Follow system' d='' id=summary
+[C   ]  540,470  t='' d='' id=
+[    ]   95,444  t='Black' d='' id=title
+[    ]  360,498  t='Uses less power on AMOLED screens' d='' id=summary
+[k   ]  969,470  t='' d='' id=switchWidget
+[C   ]  540,715  t='' d='' id=
+[    ]  324,636  t='Pure black bottom navigation' d='' id=title
+[    ]  450,743  t='Force the bottom navigation bar to pure black on the AMOLED theme. Turn off to k' d='' id=summary
+[xk  ]  969,715  t='' d='' id=switchWidget
+[C   ]  540,960  t='' d='' id=
+[    ]  137,934  t='Language' d='' id=title
+[    ]  165,988  t='Follow system' d='' id=summary
+[    ]  540,1144 t='Manga list' d='' id=title
+[C   ]  540,1366 t='' d='' id=
+[    ]  318,1261 t='Preload nearby covers · Beta' d='' id=title
+[    ]  450,1395 t='Load up to two small covers ahead when a list stops scrolling, on an unmetered c' d='' id=summary
+[k   ]  969,1366 t='' d='' id=switchWidget
+[C   ]  540,1664 t='' d='' id=
+[    ]  297,1612 t='Show Refresh cover action' d='' id=title
+[    ]  450,1693 t='Add a Details menu action to fetch its online cover again, bypassing cached imag' d='' id=summary
+[k   ]  969,1664 t='' d='' id=switchWidget
+[C   ]  540,1883 t='' d='' id=
+[    ]  138,1857 t='List mode' d='' id=title
+[    ]   77,1911 t='Grid' d='' id=summary
+[C   ]  540,2091 t='' d='' id=
+[    ]  493,2028 t='Grid size' d='' id=title
+[    ]  991,2030 t='100%' d='' id=summary
+[C   ]  540,2302 t='' d='' id=
+[    ]  382,2274 t='Use a fixed number of grid columns' d='' id=title
+[    ]  450,2351 t='Choose columns instead of cover size. Page thumbnails keep their own setting.' d='' id=summary
+[k   ]  969,2326 t='' d='' id=switchWidget
