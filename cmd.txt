@@ -1066,3 +1066,6 @@ sleep 1
 down
 down
 down
+=== Chimahon_go_anki
+tapt ^Anki$
+sleep 2
