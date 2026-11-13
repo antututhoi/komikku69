@@ -64,3 +64,9 @@ back
 sleep 2
 tapt ^Library$
 sleep 3
+=== b017
+back
+tapt ^Browse$
+sleep 2
+tapt ^Extensions$
+sleep 3
