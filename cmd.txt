@@ -363,3 +363,6 @@ sleep 1
 down
 down
 down
+=== go_data_and_storage
+tapt ^Data and storage$
+sleep 2
