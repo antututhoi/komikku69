@@ -763,3 +763,20 @@ tapt ^Allow$
 sleep 1
 tapt ^Next$
 sleep 1
+=== m004
+tapt ^Restore backup$
+sleep 3
+shot datastorage
+tapt ^Restore backup$
+sleep 3
+tapt Show roots
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tap 783 975
+sleep 4
+shot restore_opts
+tapt ^Restore$
+sleep 15
