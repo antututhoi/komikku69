@@ -612,3 +612,7 @@ sleep 1
 tapt ^Start Analysis$
 sleep 6
 shot T_duplicates_result
+=== T52983
+tapt ^List all$
+sleep 4
+shot T_duplicates_list_all
