@@ -1,0 +1,69 @@
+# block F65685  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.sources.catalog.SourcesCatalogActivity  time: 10:28:24
+! tapt 'Catalog' at 962,792
+[S   ]  540,1200 t='' d='' id=
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  365,212  t='Sources catalog' d='' id=
+[C   ] 1016,211  t='' d='Search' id=action_search
+[S   ]  540,359  t='' d='' id=scrollView_chips
+[CL  ]  175,359  t='English' d='' id=
+[    ]  277,359  t='' d='Remove English' id=
+[CL  ]  439,359  t='New' d='' id=
+[CL  ]  657,359  t='Manga' d='' id=
+[CL  ]  880,359  t='Comics' d='' id=
+[CL  ] 1042,359  t='Other' d='' id=
+[S   ]  540,1411 t='' d='' id=recyclerView
+[C   ]  540,496  t='' d='' id=
+[    ]  517,472  t='AnisaScans' d='' id=textView_title
+[    ]  517,524  t='Manga, English' d='' id=textView_description
+[C   ]  985,496  t='' d='Add' id=imageView_add
+[C   ]  540,643  t='' d='' id=
+[    ]  517,619  t='AquaManga' d='' id=textView_title
+[    ]  517,671  t='Manga, English' d='' id=textView_description
+[C   ]  985,643  t='' d='Add' id=imageView_add
+[C   ]  540,790  t='' d='' id=
+[    ]  517,766  t='Arc-Relight' d='' id=textView_title
+[    ]  517,818  t='Manga, English' d='' id=textView_description
+[C   ]  985,790  t='' d='Add' id=imageView_add
+[C   ]  540,937  t='' d='' id=
+[    ]  517,913  t='Arenascans' d='' id=textView_title
+[    ]  517,965  t='Manga, English' d='' id=textView_description
+[C   ]  985,937  t='' d='Add' id=imageView_add
+[C   ]  540,1084 t='' d='' id=
+[    ]  517,1060 t='ArvenComics' d='' id=textView_title
+[    ]  517,1112 t='Manga, English' d='' id=textView_description
+[C   ]  985,1084 t='' d='Add' id=imageView_add
+[C   ]  540,1231 t='' d='' id=
+[    ]  517,1207 t='AryaScans' d='' id=textView_title
+[    ]  517,1259 t='Manga, English' d='' id=textView_description
+[C   ]  985,1231 t='' d='Add' id=imageView_add
+[C   ]  540,1378 t='' d='' id=
+[    ]  517,1354 t='AssortedScans' d='' id=textView_title
+[    ]  517,1406 t='Manga, English' d='' id=textView_description
+[C   ]  985,1378 t='' d='Add' id=imageView_add
+[C   ]  540,1525 t='' d='' id=
+[    ]  517,1501 t='AstraScans' d='' id=textView_title
+[    ]  517,1553 t='Manga, English' d='' id=textView_description
+[C   ]  985,1525 t='' d='Add' id=imageView_add
+[C   ]  540,1672 t='' d='' id=
+[    ]  517,1648 t='AsuraComic' d='' id=textView_title
+[    ]  517,1700 t='Manga, English' d='' id=textView_description
+[C   ]  985,1672 t='' d='Add' id=imageView_add
+[C   ]  540,1819 t='' d='' id=
+[    ]  517,1795 t='AsuraScans.us' d='' id=textView_title
+[    ]  517,1847 t='Manga, English' d='' id=textView_description
+[C   ]  985,1819 t='' d='Add' id=imageView_add
+[C   ]  540,1966 t='' d='' id=
+[    ]  517,1942 t='AsuraScansGg' d='' id=textView_title
+[    ]  517,1994 t='Manga, English' d='' id=textView_description
+[C   ]  985,1966 t='' d='Add' id=imageView_add
+[C   ]  540,2113 t='' d='' id=
+[    ]  517,2089 t='Atsu.moe' d='' id=textView_title
+[    ]  517,2141 t='Manga, English' d='' id=textView_description
+[C   ]  985,2113 t='' d='Add' id=imageView_add
+[C   ]  540,2260 t='' d='' id=
+[    ]  517,2236 t='Babelwuxia' d='' id=textView_title
+[    ]  517,2288 t='Manga, English' d='' id=textView_description
+[C   ]  985,2260 t='' d='Add' id=imageView_add
+[C   ]  540,2367 t='' d='' id=
+[    ]  517,2379 t='BananaManga' d='' id=textView_title
+[C   ]  985,2367 t='' d='Add' id=imageView_add
