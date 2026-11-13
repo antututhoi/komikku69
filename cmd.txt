@@ -1572,3 +1572,19 @@ shot K_libdisp_sheet_List
 tap 540 130
 sleep 2
 shot K_libmode_List
+=== K41906
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 2
+tap 108 2232
+sleep 2
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+tapt ^Cover-only grid$
+sleep 1
+shot K_libdisp_sheet_Cover-only grid
+tap 540 130
+sleep 2
+shot K_libmode_Cover-only grid
