@@ -1,0 +1,39 @@
+# block D69565  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:35:59
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Reading' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,374  t='' d='' id=
+[    ]  391,325  t='Tap title to read' d='' id=
+[    ]  538,393  t='In favorites and history, tapping a manga's name opens the reader directly' d='' id=
+[Ck  ]  942,365  t='' d='' id=
+[C   ]  540,556  t='' d='' id=
+[    ]  445,516  t='Check for duplicates' d='' id=
+[    ]  538,584  t='Warn when a title you are adding is already in your library' d='' id=
+[Cxk ]  942,556  t='' d='' id=
+[C   ]  540,745  t='' d='' id=
+[    ]  431,745  t='Manage categories' d='' id=
+[    ]  130,910  t='ZOOM' d='' id=
+[C   ]  540,1043 t='' d='' id=
+[    ]  346,1024 t='Scale mode' d='' id=
+[    ]  291,1072 t='Fit center' d='' id=
+[    ]  409,1213 t='Double-tap zoom' d='' id=
+[    ]  543,1261 t='How far a double tap zooms in paged mode' d='' id=
+[C   ]  304,1380 t='' d='' id=
+[    ]  305,1380 t='Standard' d='' id=
+[C   ]  775,1380 t='' d='' id=
+[    ]  775,1380 t='Fill screen' d='' id=
+[C   ]  540,1575 t='' d='' id=
+[    ]  435,1535 t='Show zoom buttons' d='' id=
+[    ]  538,1603 t='Whether to show zoom control buttons in the bottom right corner' d='' id=
+[Ck  ]  942,1575 t='' d='' id=
+[C   ]  540,1766 t='' d='' id=
+[    ]  386,1726 t='Webtoon zoom' d='' id=
+[    ]  538,1794 t='Allow zoom in gesture or using double tap in webtoon mode' d='' id=
+[Cxk ]  942,1766 t='' d='' id=
+[    ]  573,1945 t='Default webtoon zoom out' d='' id=
+[    ]  977,1945 t='0%' d='' id=
+[C   ]  540,2256 t='' d='' id=
+[    ]  472,2216 t='Gaps in webtoon mode' d='' id=
+[    ]  538,2284 t='Show vertical gaps between pages in webtoon mode' d='' id=
+[Ck  ]  942,2256 t='' d='' id=
