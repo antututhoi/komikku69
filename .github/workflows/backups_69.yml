@@ -1,0 +1,26 @@
+name: 69 Test backups
+
+# Makes the 20-title test backups (Mihon-type .tachibk, Kotatsu-type .zip, plain title list).
+on:
+  push:
+    branches:
+      - backup69
+
+permissions:
+  contents: write
+
+jobs:
+  make:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make the backups
+        run: python3 .maestro69/make_seed.py
+      - name: Put them on the backup69-files branch
+        env:
+          TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/out && cp seed.tachibk seed_kotatsu.zip seed_titles.txt /tmp/out/
+          cd /tmp/out && git init -q && git checkout -q -b backup69-files
+          git add -A && git -c user.name=backup69 -c user.email=backup69@users.noreply.github.com commit -qm "test backups ${{ github.run_number }}"
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" backup69-files
