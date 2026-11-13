@@ -913,3 +913,8 @@ shot C_settings_main_more
 === Chimahon_go_appearance
 tapt ^Appearance$
 sleep 2
+=== Chimahon_go2_appearance
+up
+up
+tapt ^Appearance$
+sleep 2
