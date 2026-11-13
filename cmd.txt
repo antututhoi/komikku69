@@ -65,3 +65,7 @@ shot O_explore_main
 tapt ^Feed$
 sleep 3
 shot O_feed_main
+=== O64308
+tapt ^History$
+sleep 3
+shot O_history_main
