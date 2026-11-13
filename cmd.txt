@@ -878,3 +878,7 @@ shot D_welcome_step3
 tapt ^Next$
 sleep 3
 shot D_welcome_step4
+=== D69166
+tapt ^Next$
+sleep 3
+shot D_welcome_step5
