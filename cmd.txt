@@ -616,3 +616,10 @@ shot T_duplicates_result
 tapt ^List all$
 sleep 4
 shot T_duplicates_list_all
+=== T52984
+stop app.tsundoku
+launch app.tsundoku
+sleep 5
+tap 188 700
+sleep 6
+shot T_entry_top
