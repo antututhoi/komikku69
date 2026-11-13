@@ -1,0 +1,45 @@
+# block D69570  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:37:09
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Reading' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[    ]  134,300  t='IMAGE' d='' id=
+[C   ]  540,423  t='' d='' id=
+[    ]  413,383  t='32-bit color mode' d='' id=
+[    ]  538,451  t='Reduces banding, but may impact performance' d='' id=
+[Ck  ]  942,423  t='' d='' id=
+[C   ]  540,634  t='' d='' id=
+[    ]  353,574  t='AI upscaling' d='' id=
+[    ]  538,663  t='Sharpen low-resolution pages on the GPU using an Anime4K-based shader. Android 1' d='' id=
+[Ck  ]  942,635  t='' d='' id=
+[C   ]  540,877  t='' d='' id=
+[    ]  538,837  t='Reduce memory consumption' d='' id=
+[    ]  538,936  t='Reduce offscreen pages quality to use less memory' d='' id=
+[Ck  ]  942,877  t='' d='' id=
+[C   ]  540,1097 t='' d='' id=
+[    ]  346,1097 t='Crop pages' d='' id=
+[C   ]  540,1287 t='' d='' id=
+[    ]  377,1247 t='Fit wide pages' d='' id=
+[    ]  538,1315 t='Make double-page spreads in paged mode fill a portrait screen' d='' id=
+[Ck  ]  942,1287 t='' d='' id=
+[    ]  158,1405 t='Method' d='' id=
+[C   ]  304,1512 t='' d='' id=
+[    ]  305,1512 t='Rotate' d='' id=
+[C   ]  775,1512 t='' d='' id=
+[    ]  775,1512 t='Split in two' d='' id=
+[    ]  258,1629 t='Rotation direction' d='' id=
+[C   ]  304,1736 t='' d='' id=
+[    ]  304,1736 t='Clockwise' d='' id=
+[C   ]  775,1736 t='' d='' id=
+[    ]  775,1736 t='Counter-clockwise' d='' id=
+[    ]  149,1906 t='DISPLAY' d='' id=
+[C   ]  540,2039 t='' d='' id=
+[    ]  399,2020 t='Fullscreen mode' d='' id=
+[    ]  512,2068 t='Hide system status and navigation bars' d='' id=
+[Cxk ]  942,2040 t='' d='' id=
+[C   ]  540,2227 t='' d='' id=
+[    ]  423,2208 t='Screen orientation' d='' id=
+[    ]  274,2256 t='Default' d='' id=
+[C   ]  540,2362 t='' d='' id=
+[    ]  387,2374 t='Keep screen on' d='' id=
+[Cxk ]  942,2378 t='' d='' id=
