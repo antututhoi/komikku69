@@ -30,3 +30,6 @@ shot O_w
 tap 574 1479
 sleep 3
 shot O_restore_2
+=== O64184
+tapt ^Show roots$
+sleep 2
