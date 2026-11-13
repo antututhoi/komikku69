@@ -1,0 +1,35 @@
+# block S268309  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:15:46
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,338  t='' d='' id=
+[    ]  382,317  t='Allow zoom in gesture in webtoon mode' d='' id=summary
+[xk  ]  969,321  t='' d='' id=switchWidget
+[C   ]  540,492  t='' d='' id=
+[    ]  515,429  t='Default webtoon zoom out' d='' id=title
+[    ] 1013,431  t='0%' d='' id=summary
+[C   ]  540,727  t='' d='' id=
+[    ]  262,675  t='Gaps in webtoon mode' d='' id=title
+[    ]  450,756  t='Show vertical gaps between pages in webtoon mode' d='' id=summary
+[k   ]  969,727  t='' d='' id=switchWidget
+[C   ]  540,946  t='' d='' id=
+[    ]  328,920  t='Reader controls in bottom bar' d='' id=title
+[    ]   87,974  t='None' d='' id=summary
+[C   ]  540,1138 t='' d='' id=
+[    ]  186,1112 t='Reader actions' d='' id=title
+[    ]  415,1166 t='Configure actions for tappable screen areas' d='' id=summary
+[C   ]  540,1409 t='' d='' id=
+[    ]  286,1304 t='Ergonomic reader control' d='' id=title
+[    ]  450,1438 t='Do not adjust the page switching direction to the reader mode, e. g. pressing th' d='' id=summary
+[k   ]  969,1409 t='' d='' id=switchWidget
+[C   ]  540,1707 t='' d='' id=
+[    ]  220,1655 t='Rotate wide pages' d='' id=title
+[    ]  540,1736 t='Turn landscape pages upright for reading. Original files and reading progress st' d='' id=summary
+[    ]  540,1918 t='Hold-to-scroll' d='' id=title
+[C   ]  540,2114 t='' d='' id=
+[    ]  299,2035 t='Scroll while holding a page' d='' id=title
+[    ]  450,2142 t='Long-press an edge to scroll until you release. Custom long-press actions take p' d='' id=summary
+[k   ]  969,2114 t='' d='' id=switchWidget
+[C   ]  540,2331 t='' d='' id=
+[    ]  119,2333 t='Top row' d='' id=title
+[    ]  178,2381 t='Scroll backward' d='' id=summary
