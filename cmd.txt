@@ -249,3 +249,13 @@ sleep 1
 tap 540 2242
 sleep 3
 shot J_recents_grouped
+=== J51377
+tapt ^All$
+sleep 2
+shot J_recents_all
+tapt ^History$
+sleep 2
+shot J_recents_history
+tapt ^Updates$
+sleep 2
+shot J_recents_updates
