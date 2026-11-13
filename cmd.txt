@@ -502,3 +502,7 @@ shot F_settings_Check_for_new_chapters_p0
 up
 sleep 1
 shot F_settings_Check_for_new_chapters_p1
+=== F67224
+up
+sleep 1
+shot F_settings_Check_for_new_chapters_p2
