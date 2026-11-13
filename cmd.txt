@@ -450,3 +450,7 @@ tapt ^Storage and network$
 sleep 3
 === F67211
 shot F_settings_Storage_and_network_p0
+=== F67212
+up
+sleep 1
+shot F_settings_Storage_and_network_p1
