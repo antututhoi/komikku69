@@ -1,0 +1,39 @@
+# block D69559  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:34:27
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Appearance' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,297  t='' d='' id=
+[    ]  147,376  t='DETAILS' d='' id=
+[C   ]  540,509  t='' d='' id=
+[    ]  497,509  t='Collapse long description' d='' id=
+[Cxk ]  942,510  t='' d='' id=
+[C   ]  540,699  t='' d='' id=
+[    ]  479,659  t='Show pages thumbnails' d='' id=
+[    ]  538,727  t='Enable the "Pages" tab on the details screen' d='' id=
+[Cxk ]  942,699  t='' d='' id=
+[C   ]  540,888  t='' d='' id=
+[    ]  341,869  t='Default tab' d='' id=
+[    ]  292,917  t='Last used' d='' id=
+[C   ]  540,1076 t='' d='' id=
+[    ]  510,1057 t='Details screen appearance' d='' id=
+[    ]  555,1105 t='Screen style, backdrop image and blur effect' d='' id=
+[    ]  199,1241 t='MAIN SCREEN' d='' id=
+[C   ]  540,1374 t='' d='' id=
+[    ]  434,1374 t='Search suggestions' d='' id=
+[C   ]  540,1562 t='' d='' id=
+[    ]  451,1562 t='Main screen sections' d='' id=
+[C   ]  540,1803 t='' d='' id=
+[    ]  538,1743 t='Show floating Continue button' d='' id=
+[    ]  538,1863 t='Allows to continue reading in a one click. This button will not appear in incogn' d='' id=
+[Cxk ]  942,1804 t='' d='' id=
+[C   ]  540,2044 t='' d='' id=
+[    ]  536,2044 t='Show labels in navigation bar' d='' id=
+[Cxk ]  942,2045 t='' d='' id=
+[C   ]  540,2234 t='' d='' id=
+[    ]  500,2194 t='Use legacy navigation bar' d='' id=
+[    ]  538,2262 t='Show Android's default bottom navigation style' d='' id=
+[Ck  ]  942,2234 t='' d='' id=
+[C   ]  540,2366 t='' d='' id=
+[    ]  398,2378 t='Blur behind bars' d='' id=
+[Cxk ]  942,2382 t='' d='' id=
