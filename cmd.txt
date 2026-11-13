@@ -3901,3 +3901,7 @@ sleep 3
 tap 540 1200
 sleep 1
 shot SY_reader_hq_menu
+=== S49158
+tap 540 1200
+sleep 1
+shot SY_reader_hq_menu
