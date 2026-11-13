@@ -1224,3 +1224,5 @@ sleep 2
 sleep 1
 === SY_set_e-hentai_s1
 up
+=== SY_set_e-hentai_s2
+up
