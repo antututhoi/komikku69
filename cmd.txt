@@ -992,3 +992,5 @@ up
 up
 tapt ^Downloads$
 sleep 2
+=== Chimahon_set_downloads_s0
+sleep 1
