@@ -569,3 +569,10 @@ shot S2_favorites_main
 tap 675 2231
 sleep 5
 shot S2_explore_main
+=== S267991
+tapt ^Enable$
+sleep 3
+shot S2_explore_main
+up
+sleep 1
+shot S2_explore_main_2
