@@ -1,0 +1,34 @@
+# block F67217  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 11:00:27
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  301,212  t='Downloads' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[    ]  613,400  t='You can enable download slowdown for each manga source individually in the sourc' d='' id=summary
+[C   ]  540,668  t='' d='' id=
+[    ]  314,616  t='Disable battery optimization' d='' id=title
+[    ]  540,697  t='Might help with getting the download started if you have any issues with it' d='' id=summary
+[    ]  540,879  t='Saving pages' d='' id=title
+[C   ]  540,1022 t='' d='' id=
+[    ]  306,996  t='Default page save directory' d='' id=title
+[    ]  104,1050 t='Not set' d='' id=summary
+[C   ]  540,1188 t='' d='' id=
+[    ]  397,1188 t='Ask for the destination dir every time' d='' id=title
+[xk  ]  969,1188 t='' d='' id=switchWidget
+[    ]  540,1347 t='Download scheduling and limits' d='' id=title
+[C   ]  540,1490 t='' d='' id=
+[    ]  328,1464 t='Download only when charging' d='' id=title
+[    ]  434,1518 t='Connect to a power source to start downloads' d='' id=summary
+[k   ]  969,1490 t='' d='' id=switchWidget
+[C   ]  540,1708 t='' d='' id=
+[    ]  212,1656 t='Smart Downloads' d='' id=title
+[    ]  450,1737 t='Automatically download next chapters and delete read ones' d='' id=summary
+[k   ]  969,1708 t='' d='' id=switchWidget
+[C   ]  540,1927 t='' d='' id=
+[    ]  236,1901 t='Off-peak downloads' d='' id=title
+[    ]  361,1955 t='Download only during specified hours' d='' id=summary
+[k   ]  969,1927 t='' d='' id=switchWidget
+[C   ]  540,2119 t='' d='' id=
+[    ]  137,2093 t='Start time' d='' id=title
+[    ]   90,2147 t='00:00' d='' id=summary
+[C   ]  540,2307 t='' d='' id=
+[    ]  127,2285 t='End time' d='' id=title
+[    ]   90,2339 t='06:00' d='' id=summary
