@@ -75,3 +75,12 @@ tap 976 813
 sleep 2
 tapt ^Trust$
 sleep 3
+=== b019
+host adb logcat -c
+tapt ^Library$
+sleep 3
+swipe 540 700 540 1800 400
+sleep 45
+host adb logcat -d > /tmp/ctlout/out/log_b019.txt; adb logcat -d --pid=$(adb shell pidof app.komikku.mod69) > /tmp/ctlout/out/log_b019_app.txt; wc -l /tmp/ctlout/out/log_b019*.txt
+tapt ^Updates$
+sleep 3
