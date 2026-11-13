@@ -1,0 +1,40 @@
+# block F67208  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:57:45
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,372  t='' d='' id=
+[    ]  202,326  t='Fullscreen mode' d='' id=title
+[    ]  378,380  t='Hide system status and navigation bars' d='' id=summary
+[xk  ]  969,355  t='' d='' id=switchWidget
+[C   ]  540,544  t='' d='' id=
+[    ]  218,518  t='Screen orientation' d='' id=title
+[    ]  103,572  t='Default' d='' id=summary
+[C   ]  540,762  t='' d='' id=
+[    ]  190,710  t='Keep screen on' d='' id=title
+[    ]  450,791  t='Do not turn the screen off while you're reading manga' d='' id=summary
+[xk  ]  969,762  t='' d='' id=switchWidget
+[C   ]  540,1007 t='' d='' id=
+[    ]  336,955  t='Open reader in a separate task' d='' id=title
+[    ]  450,1036 t='Allows you to keep multiple readers with different manga open at the same time' d='' id=summary
+[k   ]  969,1007 t='' d='' id=switchWidget
+[C   ]  540,1252 t='' d='' id=
+[    ]  339,1200 t='Show information bar in reader' d='' id=title
+[    ]  450,1281 t='Show the current time and reading progress at the top of the screen' d='' id=summary
+[xk  ]  969,1252 t='' d='' id=switchWidget
+[C   ]  540,1445 t='' d='' id=
+[    ]  380,1445 t='Transparent reader information bar' d='' id=title
+[xk  ]  969,1445 t='' d='' id=switchWidget
+[C   ]  540,1638 t='' d='' id=
+[    ]  314,1586 t='Show chapter change popup' d='' id=title
+[    ]  450,1667 t='Show a pop-up message with a chapter title when it is changed' d='' id=summary
+[xk  ]  969,1638 t='' d='' id=switchWidget
+[C   ]  540,1857 t='' d='' id=
+[    ]  157,1831 t='Background' d='' id=title
+[    ]  103,1885 t='Default' d='' id=summary
+[C   ]  540,2049 t='' d='' id=
+[    ]  207,2023 t='Numbered pages' d='' id=title
+[    ]  362,2077 t='Show page numbers in bottom corner' d='' id=summary
+[k   ]  969,2049 t='' d='' id=switchWidget
+[C   ]  540,2241 t='' d='' id=
+[    ]  181,2215 t='Preload pages' d='' id=title
+[    ]  152,2269 t='Only on Wi-Fi' d='' id=summary
