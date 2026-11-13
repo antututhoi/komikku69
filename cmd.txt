@@ -1054,3 +1054,5 @@ up
 up
 tapt ^Popup dictionary$
 sleep 2
+=== Chimahon_set_popup_dictionary_s0
+sleep 1
