@@ -688,3 +688,5 @@ sleep 1
 up
 === Tsundoku_set_manga_reader_s2
 up
+=== Tsundoku_set_manga_reader_s3
+up
