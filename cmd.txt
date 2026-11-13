@@ -1170,3 +1170,7 @@ tapt ^Downloads$
 sleep 2
 === C60794
 shot C_settings_Downloads_p0
+=== C60795
+up
+sleep 1
+shot C_settings_Downloads_p1
