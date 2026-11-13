@@ -382,3 +382,6 @@ sleep 1
 down
 down
 down
+=== go_security_and_privacy
+tapt ^Security and privacy$
+sleep 2
