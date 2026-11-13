@@ -2,3 +2,7 @@
 launch io.github.landwarderer.futon.nightly
 sleep 10
 shot F_first_run
+=== F65074
+tapt ^Skip$
+sleep 4
+shot F_after_skip
