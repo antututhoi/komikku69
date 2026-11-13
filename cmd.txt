@@ -539,3 +539,9 @@ sleep 3
 tapt ^Manga Sources$
 sleep 3
 shot T_browse_manga_sources
+=== T52700
+tapt ^Library$
+sleep 2
+tapt ^More options$
+sleep 2
+shot T_library_overflow_menu
