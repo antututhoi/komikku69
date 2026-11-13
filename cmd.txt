@@ -471,3 +471,10 @@ tapt ^Blue Lock$
 sleep 6
 up
 sleep 1
+=== r004
+back
+sleep 1
+tap 540 695
+sleep 6
+up
+sleep 1
