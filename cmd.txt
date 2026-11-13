@@ -551,3 +551,7 @@ sleep 25
 tapt ^Filter$
 sleep 2
 shot T_library_filter_tab
+=== T52769
+tapt ^Chapter count$
+sleep 2
+shot T_library_filter_chapter_count
