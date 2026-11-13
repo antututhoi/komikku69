@@ -1,0 +1,42 @@
+# block D69568  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:36:39
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Reading' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,420  t='' d='' id=
+[    ]  501,306  t='Ergonomic reader control' d='' id=
+[    ]  538,423  t='Do not adjust the page switching direction to the reader mode, e. g. pressing th' d='' id=
+[Ck  ]  942,395  t='' d='' id=
+[C   ]  540,645  t='' d='' id=
+[    ]  468,626  t='Enable volume buttons' d='' id=
+[    ]  517,674  t='Use volume buttons for switching pages' d='' id=
+[Ck  ]  942,646  t='' d='' id=
+[C   ]  540,855  t='' d='' id=
+[    ]  501,795  t='Invert navigation controls' d='' id=
+[    ]  538,884  t='Swap the direction of volume button and directional hardware key navigation (lef' d='' id=
+[Ck  ]  942,856  t='' d='' id=
+[C   ]  540,1065 t='' d='' id=
+[    ]  390,1046 t='Page animation' d='' id=
+[    ]  274,1094 t='Default' d='' id=
+[C   ]  540,1255 t='' d='' id=
+[    ]  428,1215 t='Enable pull gesture' d='' id=
+[    ]  538,1283 t='Use pull gesture to switch chapters in webtoon' d='' id=
+[Ck  ]  942,1255 t='' d='' id=
+[    ]  134,1421 t='IMAGE' d='' id=
+[C   ]  540,1556 t='' d='' id=
+[    ]  413,1516 t='32-bit color mode' d='' id=
+[    ]  538,1584 t='Reduces banding, but may impact performance' d='' id=
+[Ck  ]  942,1556 t='' d='' id=
+[C   ]  540,1767 t='' d='' id=
+[    ]  353,1707 t='AI upscaling' d='' id=
+[    ]  538,1796 t='Sharpen low-resolution pages on the GPU using an Anime4K-based shader. Android 1' d='' id=
+[Ck  ]  942,1768 t='' d='' id=
+[C   ]  540,2010 t='' d='' id=
+[    ]  538,1970 t='Reduce memory consumption' d='' id=
+[    ]  538,2069 t='Reduce offscreen pages quality to use less memory' d='' id=
+[Ck  ]  942,2010 t='' d='' id=
+[C   ]  540,2230 t='' d='' id=
+[    ]  346,2230 t='Crop pages' d='' id=
+[C   ]  540,2363 t='' d='' id=
+[    ]  377,2376 t='Fit wide pages' d='' id=
+[Ck  ]  942,2379 t='' d='' id=
