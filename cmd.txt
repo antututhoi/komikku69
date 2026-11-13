@@ -1155,3 +1155,6 @@ sleep 1
 down
 down
 down
+=== SY_go_tracking
+tapt ^Tracking$
+sleep 2
