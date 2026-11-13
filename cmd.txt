@@ -1400,3 +1400,7 @@ tapt ^Popup dictionary$
 sleep 2
 === C61764
 shot C_settings_Popup_dictionary_p0
+=== C61765
+up
+sleep 1
+shot C_settings_Popup_dictionary_p1
