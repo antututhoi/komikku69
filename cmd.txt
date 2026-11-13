@@ -717,3 +717,6 @@ sleep 1
 down
 down
 down
+=== Tsundoku_go_tracking
+tapt ^Tracking$
+sleep 2
