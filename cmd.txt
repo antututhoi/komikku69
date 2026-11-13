@@ -866,3 +866,7 @@ stop io.github.glitch228.kaisoku
 sh monkey -p org.haziffe.dropsauce -c android.intent.category.LAUNCHER 1
 sleep 10
 shot D_first_run
+=== D69163
+tapt ^Next$
+sleep 3
+shot D_welcome_step2
