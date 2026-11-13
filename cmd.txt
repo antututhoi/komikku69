@@ -227,3 +227,7 @@ shot J_reader_display_sheet_tab1_more
 tapt ^Paged$
 sleep 2
 shot J_reader_display_sheet_paged
+=== J51302
+tapt ^Filter$
+sleep 2
+shot J_reader_display_sheet_filter
