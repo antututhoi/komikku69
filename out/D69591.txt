@@ -1,0 +1,40 @@
+# block D69591  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:42:58
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Services' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,377  t='' d='' id=
+[    ]  415,353  t='Reading statistics' d='' id=
+[    ]  280,401  t='Enabled' d='' id=
+[Cxk ]  942,373  t='' d='' id=
+[C   ]  540,593  t='' d='' id=
+[    ]  538,553  t='Show estimated reading time' d='' id=
+[    ]  538,652  t='The time estimation value may be inaccurate' d='' id=
+[Cxk ]  942,593  t='' d='' id=
+[C   ]  540,813  t='' d='' id=
+[    ]  439,794  t='Eye health reminder' d='' id=
+[    ]  285,842  t='Disabled' d='' id=
+[Ck  ]  942,814  t='' d='' id=
+[    ]  168,978  t='TRACKING' d='' id=
+[C   ]  540,1144 t='' d='' id=
+[    ]  538,1104 t='Sync progress from tracking services' d='' id=
+[    ]  538,1203 t='When refreshing manga, advance local reading progress to match linked services' d='' id=
+[Cxk ]  942,1144 t='' d='' id=
+[C   ]  540,1379 t='' d='' id=
+[    ]  295,1360 t='AniList' d='' id=
+[    ]  285,1408 t='Disabled' d='' id=
+[C   ]  540,1567 t='' d='' id=
+[    ]  276,1548 t='Kitsu' d='' id=
+[    ]  285,1596 t='Disabled' d='' id=
+[C   ]  540,1755 t='' d='' id=
+[    ]  361,1736 t='MyAnimeList' d='' id=
+[    ]  285,1784 t='Disabled' d='' id=
+[C   ]  540,1943 t='' d='' id=
+[    ]  349,1924 t='MangaBaka' d='' id=
+[    ]  285,1972 t='Disabled' d='' id=
+[C   ]  540,2131 t='' d='' id=
+[    ]  324,2112 t='Shikimori' d='' id=
+[    ]  285,2160 t='Disabled' d='' id=
+[    ]  167,2296 t='EXTERNAL' d='' id=
+[C   ]  540,2369 t='' d='' id=
+[    ]  463,2391 t='Discord Rich Presence' d='' id=
