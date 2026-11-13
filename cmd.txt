@@ -52,3 +52,9 @@ sleep 2
 tapt ^seed_kotatsu.zip$
 sleep 5
 shot F_restore_dialog
+=== F65585
+tapt ^Restore$
+sleep 12
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 7
