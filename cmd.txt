@@ -2711,3 +2711,11 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_mode_Long_strip
+=== K44948
+tapt ^Settings$
+sleep 2
+tapt ^Long strip with gaps$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_mode_Long_strip_with_gaps
