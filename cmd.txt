@@ -769,3 +769,5 @@ sleep 3
 === S268321
 tapt ^Downloads$
 sleep 3
+=== S268322
+shot S2_settings_Downloads_p0
