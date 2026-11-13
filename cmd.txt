@@ -1165,3 +1165,6 @@ tapt ^More$
 sleep 2
 tapt ^Settings$
 sleep 2
+=== C60793
+tapt ^Downloads$
+sleep 2
