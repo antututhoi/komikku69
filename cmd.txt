@@ -243,3 +243,9 @@ sleep 1
 tapt ^View chapters$
 sleep 2
 shot J_reader_chapters_sheet
+=== J51376
+back
+sleep 1
+tap 540 2242
+sleep 3
+shot J_recents_grouped
