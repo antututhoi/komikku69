@@ -6,3 +6,6 @@ sleep 3
 === b002
 tapt ^OK$
 sleep 2
+=== b003
+tapt ^Next$
+sleep 1
