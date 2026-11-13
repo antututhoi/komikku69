@@ -793,3 +793,20 @@ sleep 4
 shot restore_opts
 tapt ^Restore$
 sleep 15
+=== m007
+back
+tapt ^Browse$
+sleep 2
+tapt ^Extensions$
+sleep 3
+tapt ^Trust$
+sleep 2
+tapt ^Trust$
+sleep 2
+shot ext
+tapt ^More$
+sleep 2
+shot more
+up
+tapt ^Settings$
+sleep 2
