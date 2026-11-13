@@ -369,3 +369,5 @@ down
 === J2K_go_downloads
 tapt ^Downloads$
 sleep 2
+=== J2K_set_downloads_s0
+sleep 1
