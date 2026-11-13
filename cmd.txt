@@ -84,3 +84,7 @@ shot F_catalog_search
 tapt ^Remove English$
 sleep 3
 shot F_catalog_search2
+=== F65757
+tapt ^Various languages$
+sleep 3
+shot F_catalog_search3
