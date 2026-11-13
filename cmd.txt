@@ -1254,3 +1254,5 @@ sleep 1
 up
 === SY_set_advanced_s2
 up
+=== SY_set_advanced_s3
+up
