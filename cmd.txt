@@ -213,3 +213,5 @@ up
 up
 === set_appearance_s5
 up
+=== set_appearance_s6
+up
