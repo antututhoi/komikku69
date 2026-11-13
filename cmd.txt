@@ -1,1 +1,5 @@
 # commands
+=== b001
+sh pm list packages -3
+launch app.komikku.mod69
+sleep 3
