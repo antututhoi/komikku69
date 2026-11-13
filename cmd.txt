@@ -702,3 +702,6 @@ sleep 1
 down
 down
 down
+=== Tsundoku_go_downloads
+tapt ^Downloads$
+sleep 2
