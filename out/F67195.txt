@@ -1,0 +1,36 @@
+# block F67195  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:54:32
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,309  t='' d='' id=
+[C   ]  540,419  t='' d='' id=
+[    ]  137,393  t='Language' d='' id=title
+[    ]  165,447  t='Follow system' d='' id=summary
+[    ]  540,603  t='Manga list' d='' id=title
+[C   ]  540,746  t='' d='' id=
+[    ]  138,720  t='List mode' d='' id=title
+[    ]   77,774  t='Grid' d='' id=summary
+[C   ]  540,954  t='' d='' id=
+[    ]  493,891  t='Grid size' d='' id=title
+[    ]  991,893  t='100%' d='' id=summary
+[C   ]  540,1189 t='' d='' id=
+[    ]  213,1137 t='Show quick filters' d='' id=title
+[    ]  450,1218 t='Provides the ability to filter manga lists by certain parameters' d='' id=summary
+[xk  ]  969,1189 t='' d='' id=switchWidget
+[C   ]  540,1408 t='' d='' id=
+[    ]  364,1382 t='Show reading progress indicators' d='' id=title
+[    ]  151,1436 t='Percent read' d='' id=summary
+[C   ]  540,1600 t='' d='' id=
+[    ]  183,1574 t='Badges in lists' d='' id=title
+[    ]  244,1628 t='Saved manga, Favorites' d='' id=summary
+[    ]  540,1784 t='Details' d='' id=title
+[C   ]  540,1901 t='' d='' id=
+[    ]  287,1901 t='Collapse long description' d='' id=title
+[xk  ]  969,1901 t='' d='' id=switchWidget
+[C   ]  540,2068 t='' d='' id=
+[    ]  271,2042 t='Show pages thumbnails' d='' id=title
+[    ]  416,2096 t='Enable the "Pages" tab on the details screen' d='' id=summary
+[xk  ]  969,2068 t='' d='' id=switchWidget
+[C   ]  540,2260 t='' d='' id=
+[    ]  148,2234 t='Default tab' d='' id=title
+[    ]  125,2288 t='Last used' d='' id=summary
