@@ -29,3 +29,7 @@ shot J_settings_main
 tapt ^Data and storage$
 sleep 2
 shot J_settings_data
+=== J50573
+tapt ^Backup and restore$
+sleep 2
+shot J_settings_backup
