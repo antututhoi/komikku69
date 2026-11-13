@@ -920,3 +920,9 @@ sleep 1
 back
 sleep 3
 shot D_favorites_after_restore
+=== D69391
+stop org.haziffe.dropsauce
+sleep 1
+sh monkey -p org.haziffe.dropsauce -c android.intent.category.LAUNCHER 1
+sleep 9
+shot D_favorites_after_restore
