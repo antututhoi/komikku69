@@ -246,3 +246,10 @@ shot F_favorites_grid
 tapt ^Mieruko-chan$
 sleep 10
 shot F_details_manga_top
+=== F66482
+tapt ^Read$
+sleep 12
+shot F_reader_page
+tap 540 1200
+sleep 2
+shot F_reader_menu
