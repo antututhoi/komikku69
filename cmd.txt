@@ -1018,3 +1018,5 @@ sleep 1
 up
 === Chimahon_set_browse_s2
 up
+=== Chimahon_set_browse_s3
+up
