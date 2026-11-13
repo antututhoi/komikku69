@@ -69,3 +69,11 @@ shot J_x
 tap 788 1186
 sleep 4
 shot J_restore_dialog
+=== J50721
+tapt ^Restore$
+sleep 15
+back
+sleep 1
+back
+sleep 2
+shot J_library_after_restore
