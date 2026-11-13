@@ -895,3 +895,6 @@ sleep 1
 down
 down
 down
+=== MH_go_browse
+tapt ^Browse$
+sleep 2
