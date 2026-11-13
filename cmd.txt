@@ -3913,3 +3913,7 @@ shot SY_reader_hq_sheet_top
 up
 sleep 1
 shot SY_reader_hq_sheet_p1
+=== S49280
+up
+sleep 1
+shot SY_reader_hq_sheet_p2
