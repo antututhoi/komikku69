@@ -274,3 +274,14 @@ sleep 2
 tapt ^Color correction$
 sleep 3
 shot F_reader_color_correction
+=== F66589
+back
+sleep 1
+back
+sleep 1
+back
+sleep 2
+shot F_details_after_reader
+tapt ^More options$
+sleep 2
+shot F_details_manga_overflow
