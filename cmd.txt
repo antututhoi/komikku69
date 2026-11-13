@@ -12,3 +12,10 @@ sleep 1
 === b004
 tapt ^Select a folder$
 sleep 3
+=== b005
+tapt ^Documents$
+sleep 2
+tapt USE THIS FOLDER
+sleep 2
+tapt ^ALLOW$
+sleep 2
