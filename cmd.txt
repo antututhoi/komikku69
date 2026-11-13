@@ -36,3 +36,12 @@ sleep 3
 === b010
 tap 788 401
 sleep 3
+=== b011
+tapt Show roots
+sleep 1
+tapt ^Downloads$
+sleep 2
+tapt ^tour$
+sleep 2
+tapt seed.tachibk
+sleep 3
