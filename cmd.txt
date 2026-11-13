@@ -696,3 +696,9 @@ up
 up
 === Tsundoku_set_manga_reader_s6
 up
+=== Tsundoku_back_manga_reader
+back
+sleep 1
+down
+down
+down
