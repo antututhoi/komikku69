@@ -372,3 +372,5 @@ sleep 3
 === F67192
 tapt ^Appearance$
 sleep 3
+=== F67193
+shot F_settings_Appearance_p0
