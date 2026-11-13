@@ -545,3 +545,9 @@ sleep 2
 tapt ^More options$
 sleep 2
 shot T_library_overflow_menu
+=== T52701
+tapt ^Update library$
+sleep 25
+tapt ^Filter$
+sleep 2
+shot T_library_filter_tab
