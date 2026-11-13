@@ -172,3 +172,17 @@ tapt ^Various languages$
 sleep 3
 === F66142
 shot F_cat_various
+=== F66196
+tapt ^Search$
+sleep 1
+text MangaDex
+sleep 3
+tap 985 496
+sleep 2
+back
+sleep 1
+back
+sleep 1
+back
+sleep 2
+shot F_explore_sources3
