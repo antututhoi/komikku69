@@ -701,3 +701,5 @@ sleep 3
 === S268305
 tapt ^Reader settings$
 sleep 3
+=== S268306
+shot S2_settings_Reader_settings_p0
