@@ -97,3 +97,7 @@ shot O_explore_sources
 up
 sleep 1
 shot O_explore_sources_2
+=== O64563
+tapt ^MangaDex \(English\)$
+sleep 8
+shot O_source_list
