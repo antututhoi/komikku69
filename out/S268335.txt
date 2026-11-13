@@ -1,0 +1,32 @@
+# block S268335  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:22:52
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  266,212  t='Services' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,416  t='' d='' id=
+[    ]  400,361  t='Tracker status from categories · Beta' d='' id=title
+[    ]  540,442  t='Review account-specific mappings and resolve conflicting statuses. Off until ena' d='' id=summary
+[C   ]  540,658  t='' d='' id=
+[    ]  229,606  t='Tracker tools · Beta' d='' id=title
+[    ]  540,687  t='Review tracker metadata, bulk matches, category statuses and Beta website connec' d='' id=summary
+[C   ]  540,983  t='' d='' id=
+[    ]  368,851  t='AniList automatic matching · Beta' d='' id=title
+[    ]  450,1011 t='Off by default. Automatically link trusted IDs already on your AniList list. Con' d='' id=summary
+[k   ]  969,983  t='' d='' id=switchWidget
+[C   ]  540,1281 t='' d='' id=
+[    ]  256,1255 t='AniList' d='' id=title
+[    ]  263,1309 t='Disabled' d='' id=summary
+[C   ]  540,1473 t='' d='' id=
+[    ]  238,1447 t='Kitsu' d='' id=title
+[    ]  263,1501 t='Disabled' d='' id=summary
+[C   ]  540,1665 t='' d='' id=
+[    ]  316,1639 t='MyAnimeList' d='' id=title
+[    ]  263,1693 t='Disabled' d='' id=summary
+[C   ]  540,1857 t='' d='' id=
+[    ]  303,1831 t='MangaBaka' d='' id=title
+[    ]  263,1885 t='Disabled' d='' id=summary
+[C   ]  540,2049 t='' d='' id=
+[    ]  280,2023 t='Shikimori' d='' id=title
+[    ]  263,2077 t='Disabled' d='' id=summary
+[C   ]  540,2241 t='' d='' id=
+[    ]  405,2215 t='Discord Rich Presence' d='' id=title
+[    ]  501,2269 t='Show your reading status on Discord' d='' id=summary
