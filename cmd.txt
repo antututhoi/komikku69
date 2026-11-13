@@ -789,3 +789,5 @@ up
 up
 tapt ^Advanced$
 sleep 2
+=== Tsundoku_set_advanced_s0
+sleep 1
