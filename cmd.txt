@@ -3150,3 +3150,11 @@ sleep 1
 tap 540 250
 sleep 2
 shot M_rd_mode_Long_strip_with_gaps
+=== M46121
+tapt ^Settings$
+sleep 2
+tapt ^Paged \(right to left\)$
+sleep 1
+tap 540 250
+sleep 2
+shot M_rd_mode_Paged_right_to_left
