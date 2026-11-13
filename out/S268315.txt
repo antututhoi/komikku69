@@ -1,0 +1,34 @@
+# block S268315  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:17:25
+! tapt 'Storage and network' at 387,942
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  424,212  t='Storage and network' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[    ]  540,384  t='Storage usage' d='' id=title
+[    ]  540,583  t='0 B - Saved manga' d='' id=label_storage
+[    ]  540,647  t='6.8 MB - Pages cache' d='' id=label_pages_cache
+[    ]  540,711  t='25.6 MB - Other cache' d='' id=label_other_cache
+[    ]  540,775  t='4.2 GB - Available' d='' id=label_available
+[C   ]  540,920  t='' d='' id=
+[    ]  169,920  t='Data removal' d='' id=title
+[C   ]  540,1087 t='' d='' id=
+[    ]  225,1061 t='Content preloading' d='' id=title
+[    ]   92,1115 t='Never' d='' id=summary
+[C   ]  540,1279 t='' d='' id=
+[    ]  181,1253 t='Preload pages' d='' id=title
+[    ]  152,1307 t='Only on Wi-Fi' d='' id=summary
+[C   ]  540,1471 t='' d='' id=
+[    ]   97,1445 t='Proxy' d='' id=title
+[    ]  116,1499 t='Disabled' d='' id=summary
+[C   ]  540,1663 t='' d='' id=
+[    ]  204,1637 t='DNS over HTTPS' d='' id=title
+[    ]  116,1691 t='Disabled' d='' id=summary
+[C   ]  540,1855 t='' d='' id=
+[    ]  298,1829 t='Images optimization proxy' d='' id=title
+[    ]   87,1883 t='None' d='' id=summary
+[C   ]  540,2073 t='' d='' id=
+[    ]  391,2021 t='Apply DNS and image proxy settings' d='' id=title
+[    ]  540,2102 t='Save the selected options and reconnect idle network connections.' d='' id=summary
+[C   ]  540,2292 t='' d='' id=
+[    ]  308,2266 t='Reset DNS and image proxy' d='' id=title
+[    ]  513,2320 t='Disable DNS over HTTPS and image optimization proxy.' d='' id=summary
+[C   ]  540,2394 t='' d='' id=
