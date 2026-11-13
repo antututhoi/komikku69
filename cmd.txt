@@ -3574,3 +3574,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot S_rd_scale_Smart_fit
+=== S47190
+tapt ^Settings$
+sleep 2
+up
+tapt ^Fit screen$
+sleep 1
+tap 540 250
+sleep 2
+shot S_rd_scale_Fit_screen
