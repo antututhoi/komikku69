@@ -163,3 +163,9 @@ tapt ^Trust$
 sleep 4
 back
 sleep 2
+=== J51057
+tap 180 2242
+sleep 2
+tap 1012 751
+sleep 20
+shot J_library_updating
