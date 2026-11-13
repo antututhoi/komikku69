@@ -1102,3 +1102,6 @@ tapt ^More$
 sleep 2
 tapt ^Settings$
 sleep 2
+=== C60778
+tapt ^Appearance$
+sleep 2
