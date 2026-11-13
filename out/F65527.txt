@@ -1,0 +1,12 @@
+# block F65527  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:25:40
+! tapt 'Backup and restore' at 375,1710
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  407,212  t='Backup and restore' d='' id=
+[C   ]  540,418  t='' d='' id=
+[    ]  229,366  t='Create data backup' d='' id=title
+[    ]  540,447  t='You can create backup of your history and favorites and restore it' d='' id=summary
+[C   ]  540,637  t='' d='' id=
+[    ]  243,611  t='Restore from backup' d='' id=title
+[    ]  336,665  t='Restore previously created backup' d='' id=summary
+[C   ]  540,803  t='' d='' id=
+[    ]  209,803  t='Periodic backups' d='' id=title
