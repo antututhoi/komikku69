@@ -873,3 +873,9 @@ sleep 2
 tapt ^Manga$
 sleep 2
 shot C_library_mode_selector
+=== C54284
+back
+sleep 1
+tapt ^Dictionary$
+sleep 3
+shot C_dictionary_tab
