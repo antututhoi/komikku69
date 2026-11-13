@@ -442,3 +442,8 @@ down
 === go_about
 tapt ^About$
 sleep 2
+=== go2_about
+up
+up
+tapt ^About$
+sleep 2
