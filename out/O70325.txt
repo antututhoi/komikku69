@@ -1,0 +1,36 @@
+# block O70325  focus: org.skepsun.kototoro/org.skepsun.kototoro.settings.SettingsActivity  time: 11:46:28
+! tapt 'Settings' at 953,722
+[S   ]  540,1168 t='' d='' id=
+[    ]  240,344  t='Reading & interface' d='' id=
+[C   ]  540,473  t='' d='' id=
+[    ]  331,444  t='Appearance' d='' id=
+[    ]  552,507  t='Appearance mode, List mode, Language' d='' id=
+[C   ]  540,649  t='' d='' id=
+[    ]  367,620  t='Reader settings' d='' id=
+[    ]  540,683  t='Read mode, Scale mode, Switch pages' d='' id=
+[C   ]  540,852  t='' d='' id=
+[    ]  230,796  t='AI' d='' id=
+[    ]  576,886  t='Manage translation, image enhancement, video enhancement, and AI model features' d='' id=
+[C   ]  540,1054 t='' d='' id=
+[    ]  301,1025 t='Playback' d='' id=
+[    ]  482,1088 t='Video decoder, Cache size (MB)' d='' id=
+[    ]  230,1225 t='Content & sources' d='' id=
+[C   ]  540,1381 t='' d='' id=
+[    ]  568,1325 t='Source preferences & content filters' d='' id=
+[    ]  576,1415 t='Sorting, grouping, adult content filters and tag blacklist' d='' id=
+[C   ]  540,1610 t='' d='' id=
+[    ]  444,1554 t='Extension management' d='' id=
+[    ]  576,1644 t='Enable and test sources, manage repositories and extension packages' d='' id=
+[C   ]  540,1839 t='' d='' id=
+[    ]  321,1783 t='Downloads' d='' id=
+[    ]  576,1873 t='Manga downloads folder, Download only via Wi-Fi' d='' id=
+[    ]  212,2036 t='Accounts & data' d='' id=
+[C   ]  540,2192 t='' d='' id=
+[    ]  284,2136 t='Spaces' d='' id=
+[    ]  576,2226 t='Separate manga, novels, and anime into independent contexts' d='' id=
+[C   ]  540,2354 t='' d='' id=
+[    ]  393,2335 t='Tracking accounts' d='' id=
+[C   ]   95,202  t='' d='' id=
+[    ]  540,201  t='Settings' d='' id=
+[C   ]  985,202  t='' d='' id=
+[    ]  985,202  t='' d='Search' id=
