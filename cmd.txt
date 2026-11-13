@@ -73,3 +73,11 @@ shot O_history_main
 tapt Switch space
 sleep 3
 shot O_space_switcher
+=== O64412
+back
+sleep 1
+tapt ^Explore$
+sleep 3
+tapt ^Extension management$
+sleep 4
+shot O_ext_manager
