@@ -1179,3 +1179,5 @@ sleep 2
 sleep 1
 === SY_set_browse_s1
 up
+=== SY_set_browse_s2
+up
