@@ -582,3 +582,10 @@ sleep 2
 tapt ^Sort$
 sleep 2
 shot T_library_sort_tab
+=== T52850
+tapt ^Display$
+sleep 2
+shot T_library_display_tab
+up
+sleep 1
+shot T_library_display_tab_more
