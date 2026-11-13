@@ -334,3 +334,5 @@ down
 === go_connections
 tapt ^Connections$
 sleep 2
+=== set_connections_s0
+sleep 1
