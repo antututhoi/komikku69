@@ -890,3 +890,9 @@ shot C_settings_main
 up
 sleep 1
 shot C_settings_main_more
+=== C54360
+back
+sleep 1
+tap 971 2274
+sleep 2
+shot C_more_main
