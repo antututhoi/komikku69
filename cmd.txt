@@ -1239,3 +1239,9 @@ sleep 2
 sleep 1
 === SY_set_mangadex_s1
 up
+=== SY_back_mangadex
+back
+sleep 1
+down
+down
+down
