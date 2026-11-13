@@ -1,0 +1,38 @@
+# block S268338  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:23:57
+! tapt 'Manga sources' at 337,558
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  357,212  t='Manga sources' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,392  t='' d='' id=
+[    ]  168,366  t='Sorting order' d='' id=title
+[    ]  104,420  t='Manual' d='' id=summary
+[C   ]  540,610  t='' d='' id=
+[    ]  274,558  t='Default source list order' d='' id=title
+[    ]  540,639  t='Choose the initial order for source lists. Automatic keeps the source-specific d' d='' id=summary
+[C   ]  540,855  t='' d='' id=
+[    ]  377,803  t='Show novel sources first in Explore' d='' id=title
+[    ]  450,884  t='Moves installed novel sources above manga sources. Off keeps your current source' d='' id=summary
+[k   ]  969,855  t='' d='' id=switchWidget
+[C   ]  540,1048 t='' d='' id=
+[    ]  209,1048 t='Show in grid view' d='' id=title
+[xk  ]  969,1048 t='' d='' id=switchWidget
+[C   ]  540,1215 t='' d='' id=
+[    ]  202,1189 t='Manage sources' d='' id=title
+[    ]  127,1243 t='211 items' d='' id=summary
+[C   ]  540,1381 t='' d='' id=
+[    ]  195,1381 t='Manage plugins' d='' id=title
+[C   ]  540,1574 t='' d='' id=
+[    ]  236,1522 t='Auto-update plugins' d='' id=title
+[    ]  450,1603 t='Periodically check installed plugins for new GitHub releases and update them in ' d='' id=summary
+[k   ]  969,1574 t='' d='' id=switchWidget
+[C   ]  540,1819 t='' d='' id=
+[    ]  359,1767 t='Use Android-installed extensions' d='' id=title
+[    ]  450,1848 t='Include extensions installed by Android/Mihon. Disable to use only app-private e' d='' id=summary
+[xk  ]  969,1819 t='' d='' id=switchWidget
+[C   ]  540,2096 t='' d='' id=
+[    ]  450,2044 t='Show Kaisoku when opening extension files' d='' id=title
+[    ]  450,2156 t='Allow Kaisoku to appear in Android’s app chooser for extension APK and archive f' d='' id=summary
+[xk  ]  969,2096 t='' d='' id=switchWidget
+[C   ]  540,2325 t='' d='' id=
+[    ]  276,2320 t='Extension loading errors' d='' id=title
+[    ]  490,2374 t='Show why an installed extension could not be loaded' d='' id=summary
