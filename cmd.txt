@@ -1249,3 +1249,7 @@ tapt ^Reader$
 sleep 2
 === C61730
 shot C_settings_Reader_p0
+=== C61731
+up
+sleep 1
+shot C_settings_Reader_p1
