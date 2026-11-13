@@ -1038,3 +1038,5 @@ sleep 2
 sleep 1
 === Chimahon_set_dictionaries_and_audio_s1
 up
+=== Chimahon_set_dictionaries_and_audio_s2
+up
