@@ -1,0 +1,50 @@
+# block S267945  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.main.ui.MainActivity  time: 11:06:05
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,243  t='Search manga' d='' id=search_bar
+[    ]  116,243  t='' d='Navigate up' id=
+[    ]  313,243  t='Search manga' d='' id=open_search_bar_text_view
+[C   ]  848,243  t='' d='Downloads' id=action_downloads
+[CL  ]  975,243  t='' d='More options' id=
+[L   ]  132,422  t='' d='All favorites' id=
+[    ]  132,421  t='All favorites' d='' id=
+[CL  ]  364,422  t='' d='Reading' id=
+[    ]  364,421  t='Reading' d='' id=
+[CL  ]  598,422  t='' d='Plan to read' id=
+[    ]  598,421  t='Plan to read' d='' id=
+[S   ]  540,1442 t='' d='' id=pager
+[S   ]  540,1442 t='' d='' id=
+[S   ]  540,1442 t='' d='' id=recyclerView
+[S   ]  540,559  t='' d='' id=scrollView
+[CL  ]  273,553  t='Publication status' d='' id=
+[    ]  463,553  t='' d='Remove Publication status' id=
+[CL  ]  669,553  t='On device' d='' id=
+[CL  ]  946,553  t='Not on device' d='' id=
+[CL  ]  194,906  t='' d='' id=
+[    ]  194,1116 t='Kage no Jitsuryokusha ni Naritakute!' d='' id=textView_title
+[CL  ]  540,906  t='' d='' id=
+[    ]  540,1116 t='Tensei Shitara Slime datta Ken' d='' id=textView_title
+[CL  ]  886,906  t='' d='' id=
+[    ]  886,1116 t='Kumo desu ga, Nani ka?' d='' id=textView_title
+[CL  ]  194,1494 t='' d='' id=
+[    ]  194,1704 t='Ki ni Natteru Hito ga Otoko ja Nakatta' d='' id=textView_title
+[CL  ]  540,1494 t='' d='' id=
+[    ]  540,1704 t='Mairimashita! Iruma-kun' d='' id=textView_title
+[CL  ]  886,1494 t='' d='' id=
+[    ]  886,1704 t='Mieruko-chan' d='' id=textView_title
+[CL  ]  194,2082 t='' d='' id=
+[    ]  194,2292 t='Akuyaku Reijou Level 99 ~Watashi wa Ura Boss desuga Maou de wa Arimasen~' d='' id=textView_title
+[CL  ]  540,2082 t='' d='' id=
+[    ]  540,2292 t='Kaoru Hana wa Rin to Saku' d='' id=textView_title
+[CL  ]  886,2082 t='' d='' id=
+[    ]  886,2292 t='Maou no Ore ga Dorei Elf o Yome ni Shitanda ga, Dou Medereba ii?' d='' id=textView_title
+[CL  ]  194,2390 t='' d='' id=
+[CL  ]  540,2390 t='' d='' id=
+[CL  ]  886,2390 t='' d='' id=
+[C   ]  135,2231 t='' d='History' id=nav_history
+[    ]  134,2274 t='History' d='' id=navigation_bar_item_small_label_view
+[    ]  405,2231 t='' d='Favorites' id=nav_favorites
+[    ]  405,2274 t='Favorites' d='' id=navigation_bar_item_large_label_view
+[C   ]  675,2231 t='' d='Explore' id=nav_explore
+[    ]  675,2274 t='Explore' d='' id=navigation_bar_item_small_label_view
+[C   ]  945,2231 t='' d='Feed' id=nav_feed
+[    ]  945,2274 t='Feed' d='' id=navigation_bar_item_small_label_view
