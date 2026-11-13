@@ -82,3 +82,7 @@ shot J_library_main
 tap 115 2229
 sleep 2
 shot J_library_filter_sheet_open
+=== J50763
+up
+sleep 1
+shot J_library_filter_sheet_scrolled
