@@ -1,0 +1,37 @@
+# block F67198  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:55:13
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,400  t='' d='' id=
+[    ]  232,330  t='Search suggestions' d='' id=title
+[    ]  540,411  t='Manga sources, Genres, Recent queries, Authors, Suggested queries, Recent source' d='' id=summary
+[C   ]  540,601  t='' d='' id=
+[    ]  247,575  t='Main screen sections' d='' id=title
+[    ]  312,629  t='History, Favorites, Explore, Feed' d='' id=summary
+[C   ]  540,846  t='' d='' id=
+[    ]  331,767  t='Show floating Continue button' d='' id=title
+[    ]  450,874  t='Allows to continue reading in a one click. This button will not appear in incogn' d='' id=summary
+[xk  ]  969,846  t='' d='' id=switchWidget
+[C   ]  540,1065 t='' d='' id=
+[    ]  323,1065 t='Show labels in navigation bar' d='' id=title
+[k   ]  969,1065 t='' d='' id=switchWidget
+[C   ]  540,1258 t='' d='' id=
+[    ]  204,1206 t='Pin navigation UI' d='' id=title
+[    ]  450,1287 t='Do not hide navigation bar and search view on scroll' d='' id=summary
+[k   ]  969,1258 t='' d='' id=switchWidget
+[C   ]  540,1477 t='' d='' id=
+[    ]  206,1451 t='Exit confirmation' d='' id=title
+[    ]  314,1505 t='Press Back twice to exit the app' d='' id=summary
+[k   ]  969,1477 t='' d='' id=switchWidget
+[C   ]  540,1695 t='' d='' id=
+[    ]  329,1643 t='Show recent manga shortcuts' d='' id=title
+[    ]  450,1724 t='Make recent manga available by long pressing on application icon' d='' id=summary
+[xk  ]  969,1695 t='' d='' id=switchWidget
+[    ]  540,1906 t='Privacy' d='' id=title
+[C   ]  540,2049 t='' d='' id=
+[    ]  190,2023 t='Protect the app' d='' id=title
+[    ]  365,2077 t='Ask for password when starting Futon' d='' id=summary
+[k   ]  969,2049 t='' d='' id=switchWidget
+[C   ]  540,2241 t='' d='' id=
+[    ]  214,2215 t='Screenshot policy' d='' id=title
+[    ]  104,2269 t='Not set' d='' id=summary
