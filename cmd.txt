@@ -840,3 +840,6 @@ sleep 1
 down
 down
 down
+=== MH_go_reader
+tapt ^Reader$
+sleep 2
