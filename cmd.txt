@@ -623,3 +623,16 @@ up
 shot lib_display2
 up
 shot lib_display3
+=== r019
+tapt ^Group$
+sleep 1
+shot lib_group
+tapt ^Filter$
+sleep 1
+up
+shot lib_filter2
+back
+sleep 1
+tap 1007 213
+sleep 1
+shot lib_overflow
