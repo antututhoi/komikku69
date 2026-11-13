@@ -898,3 +898,5 @@ down
 === MH_go_browse
 tapt ^Browse$
 sleep 2
+=== MH_set_browse_s0
+sleep 1
