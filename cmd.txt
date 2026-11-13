@@ -810,3 +810,6 @@ shot more
 up
 tapt ^Settings$
 sleep 2
+=== MH_go_appearance
+tapt ^Appearance$
+sleep 2
