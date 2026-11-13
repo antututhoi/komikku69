@@ -531,3 +531,11 @@ shot T_browse_extensions
 tapt ^Manga Extensions$
 sleep 3
 shot T_browse_manga_extensions
+=== T52658
+tapt ^Trust$
+sleep 2
+tapt ^Trust$|^OK$|^Yes$
+sleep 3
+tapt ^Manga Sources$
+sleep 3
+shot T_browse_manga_sources
