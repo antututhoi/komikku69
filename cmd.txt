@@ -61,3 +61,7 @@ shot O_favorites_main
 tapt ^Explore$
 sleep 3
 shot O_explore_main
+=== O64307
+tapt ^Feed$
+sleep 3
+shot O_feed_main
