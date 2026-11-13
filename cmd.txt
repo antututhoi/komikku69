@@ -929,3 +929,9 @@ shot D_favorites_after_restore
 === D69422
 sleep 6
 shot D_favorites_loaded
+=== D69444
+tapt ^Close$
+sleep 1
+tapt ^Blue Lock$
+sleep 10
+shot D_details_top
