@@ -1,0 +1,32 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  132,359  t='Categories' d='' id=
+[C   ]  540,507  t='' d='' id=
+[    ]  181,486  t='Edit categories' d='' id=
+[    ]  134,544  t='2 categories' d='' id=
+[C   ]  540,707  t='' d='' id=
+[    ]  196,686  t='Default category' d='' id=
+[    ]  126,744  t='Always ask' d='' id=
+[C   ]  540,886  t='' d='' id=
+[    ]  316,886  t='Per-category settings for sort' d='' id=
+[    ]  158,1060 t='Global update' d='' id=
+[C   ]  540,1208 t='' d='' id=
+[    ]  220,1187 t='Automatic updates' d='' id=
+[    ]   66,1245 t='Off' d='' id=
+[C   ]  540,1429 t='' d='' id=
+[    ]  143,1387 t='Categories' d='' id=
+[    ]  147,1466 t='Include: All
+Exclude: None' d='' id=
+[C   ]  540,1650 t='' d='' id=
+[    ]  358,1629 t='Library dynamic category updates' d='' id=
+[    ]  262,1687 t='Always launch global updates' d='' id=
+[C   ]  540,1871 t='' d='' id=
+[    ]  336,1829 t='Automatically refresh metadata' d='' id=
+[    ]  429,1908 t='Check for new cover and details when updating library' d='' id=
+[C   ]  540,2113 t='' d='' id=
+[    ]  169,2071 t='Smart update' d='' id=
+[    ]  540,2150 t='Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip ' d='' id=
+[C   ]  540,2313 t='' d='' id=
+[    ]  377,2313 t='Show unread count on Updates icon' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=

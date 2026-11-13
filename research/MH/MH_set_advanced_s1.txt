@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,61   t='' d='' id=
+[    ]  429,40   t='Redacts certain sensitive values in the logs. Keep enabled for your security whe' d='' id=
+[C   ]  540,201  t='' d='' id=
+[    ]  191,201  t='Debug info' d='' id=
+[C   ]  540,359  t='' d='' id=
+[    ]  207,359  t='Onboarding guide' d='' id=
+[C   ]  540,517  t='' d='' id=
+[    ]  239,517  t='Manage notifications' d='' id=
+[    ]  205,659  t='Background activity' d='' id=
+[C   ]  540,807  t='' d='' id=
+[    ]  304,786  t='Disable battery optimization' d='' id=
+[    ]  423,844  t='Helps with background library updates and backups' d='' id=
+[C   ]  540,1028 t='' d='' id=
+[    ]  199,986  t='Don't kill my app!' d='' id=
+[    ]  540,1065 t='Some manufacturers have additional app restrictions that kill background service' d='' id=
+[    ]   82,1244 t='Data' d='' id=
+[C   ]  540,1392 t='' d='' id=
+[    ]  224,1371 t='Reindex downloads' d='' id=
+[    ]  359,1429 t='Force app to recheck downloaded chapters' d='' id=
+[C   ]  540,1592 t='' d='' id=
+[    ]  182,1571 t='Clear database' d='' id=
+[    ]  469,1629 t='Delete history for entries that are not saved in your library' d='' id=
+[    ]  137,1787 t='Networking' d='' id=
+[C   ]  540,1914 t='' d='' id=
+[    ]  167,1914 t='Clear cookies' d='' id=
+[C   ]  540,2072 t='' d='' id=
+[    ]  229,2072 t='Clear WebView data' d='' id=
+[C   ]  540,2251 t='' d='' id=
+[    ]  260,2230 t='DNS over HTTPS (DoH)' d='' id=
+[    ]  106,2288 t='Disabled' d='' id=
+[C   ]  540,2375 t='' d='' id=
+[    ]  271,2396 t='Default user agent string' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

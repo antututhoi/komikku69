@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,62   t='' d='' id=
+[    ]  277,46   t='Show actions on long tap' d='' id=
+[C   ]  540,225  t='' d='' id=
+[    ]  395,204  t='Save pages into separate folders' d='' id=
+[    ]  344,262  t='Creates folders according to entries' title' d='' id=
+[    ]  198,420  t='Page Downloading' d='' id=
+[C   ]  540,610  t='' d='' id=
+[    ]  211,547  t='Reader cache size' d='' id=
+[    ]  540,647  t='The amount of images to save on device while reading. Higher values will result ' d='' id=
+[    ]  152,847  t='Fork Settings' d='' id=
+[C   ]  540,974  t='' d='' id=
+[    ]  422,974  t='Preserve reading position on read entries' d='' id=
+[C   ]  540,1174 t='' d='' id=
+[    ]  233,1132 t='Auto Webtoon Mode' d='' id=
+[    ]  429,1211 t='Use auto webtoon mode for entries that are detected to likely use the long strip' d='' id=
+[C   ]  540,1395 t='' d='' id=
+[    ]  260,1374 t='Reader Bottom Buttons' d='' id=
+[    ]  479,1432 t='Customize what buttons appear at the bottom of the reader' d='' id=
+[C   ]  540,1616 t='' d='' id=
+[    ]  152,1574 t='Page layout' d='' id=
+[    ]  540,1653 t='While using automatic page layout, you can still switch between layouts while re' d='' id=
+[C   ]  540,1816 t='' d='' id=
+[    ]  225,1816 t='Invert double pages' d='' id=
+[C   ]  540,1995 t='' d='' id=
+[    ]  173,1974 t='Center Margin' d='' id=
+[    ]  504,2032 t='Insert spacer to accommodate deadspace on foldable devices.' d='' id=
+[C   ]  540,2216 t='' d='' id=
+[    ]  233,2174 t='Archive reader mode' d='' id=
+[    ]  540,2253 t='The way in which images inside archives, such as CBZ or CBR, are being loaded' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

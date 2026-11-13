@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,25   t='' d='' id=
+[    ]  126,4    t='Always ask' d='' id=
+[C   ]  540,130  t='' d='' id=
+[    ]  316,130  t='Per-category settings for sort' d='' id=
+[    ]  158,304  t='Global update' d='' id=
+[C   ]  540,452  t='' d='' id=
+[    ]  220,431  t='Automatic updates' d='' id=
+[    ]   66,489  t='Off' d='' id=
+[C   ]  540,673  t='' d='' id=
+[    ]  143,631  t='Categories' d='' id=
+[    ]  147,710  t='Include: All
+Exclude: None' d='' id=
+[C   ]  540,915  t='' d='' id=
+[    ]  336,873  t='Automatically refresh metadata' d='' id=
+[    ]  429,952  t='Check for new cover and details when updating library' d='' id=
+[C   ]  540,1157 t='' d='' id=
+[    ]  169,1115 t='Smart update' d='' id=
+[    ]  540,1194 t='Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip ' d='' id=
+[C   ]  540,1357 t='' d='' id=
+[    ]  377,1357 t='Show unread count on Updates icon' d='' id=
+[    ]  114,1531 t='Behavior' d='' id=
+[C   ]  540,1679 t='' d='' id=
+[    ]  263,1658 t='Chapter on swipe to left' d='' id=
+[    ]  178,1716 t='Bookmark chapter' d='' id=
+[C   ]  540,1879 t='' d='' id=
+[    ]  275,1858 t='Chapter on swipe to right' d='' id=
+[    ]  139,1916 t='Mark as read' d='' id=
+[C   ]  540,2079 t='' d='' id=
+[    ]  377,2058 t='Mark duplicate read chapter as read' d='' id=
+[    ]   81,2116 t='None' d='' id=
+[C   ]  540,2258 t='' d='' id=
+[    ]  338,2258 t='Hide missing chapter indicators' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=

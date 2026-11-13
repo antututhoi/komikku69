@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,83   t='' d='' id=
+[    ]  143,20   t='Categories' d='' id=
+[    ]  147,83   t='Include: All
+Exclude: None' d='' id=
+[C   ]  540,267  t='' d='' id=
+[    ]  358,246  t='Library dynamic category updates' d='' id=
+[    ]  262,304  t='Always launch global updates' d='' id=
+[C   ]  540,488  t='' d='' id=
+[    ]  336,446  t='Automatically refresh metadata' d='' id=
+[    ]  429,525  t='Check for new cover and details when updating library' d='' id=
+[C   ]  540,730  t='' d='' id=
+[    ]  169,688  t='Smart update' d='' id=
+[    ]  540,767  t='Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip ' d='' id=
+[C   ]  540,930  t='' d='' id=
+[    ]  377,930  t='Show unread count on Updates icon' d='' id=
+[    ]  114,1104 t='Behavior' d='' id=
+[C   ]  540,1252 t='' d='' id=
+[    ]  263,1231 t='Chapter on swipe to left' d='' id=
+[    ]  178,1289 t='Bookmark chapter' d='' id=
+[C   ]  540,1452 t='' d='' id=
+[    ]  275,1431 t='Chapter on swipe to right' d='' id=
+[    ]  139,1489 t='Mark as read' d='' id=
+[C   ]  540,1652 t='' d='' id=
+[    ]  377,1631 t='Mark duplicate read chapter as read' d='' id=
+[    ]   81,1689 t='None' d='' id=
+[C   ]  540,1831 t='' d='' id=
+[    ]  338,1831 t='Hide missing chapter indicators' d='' id=
+[    ]  175,2005 t='Sorting Settings' d='' id=
+[C   ]  540,2195 t='' d='' id=
+[    ]  194,2132 t='Tag sorting tags' d='' id=
+[    ]  540,2232 t='0 tags in sorting list. This adds a option in the library to sort by a priority ' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  234,212  t='Library' d='' id=

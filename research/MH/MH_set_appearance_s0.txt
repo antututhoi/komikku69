@@ -1,0 +1,37 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]   99,359  t='Theme' d='' id=
+[C   ]  540,512  t='' d='' id=
+[Ck  ]  540,513  t='' d='' id=
+[    ]  540,512  t='Light' d='' id=
+[Ck  ]  871,513  t='' d='' id=
+[    ]  871,512  t='Dark' d='' id=
+[Cxk ]  209,513  t='' d='' id=
+[    ]  243,512  t='System' d='' id=
+[C   ]  540,999  t='' d='' id=
+[S   ]  540,999  t='' d='' id=
+[C   ]  191,946  t='' d='' id=
+[    ]  191,1286 t='Default' d='' id=
+[C   ]  511,946  t='' d='' id=
+[    ]  597,743  t='' d='Selected' id=
+[    ]  511,1286 t='Dynamic' d='' id=
+[C   ]  831,946  t='' d='' id=
+[    ]  831,1286 t='Catppuccin' d='' id=
+[C   ] 1046,946  t='' d='' id=
+[    ] 1041,1286 t='Green Apple' d='' id=
+[C   ]  540,1460 t='' d='' id=
+[    ]  244,1460 t='Pure black dark mode' d='' id=
+[    ]  103,1634 t='Display' d='' id=
+[C   ]  540,1761 t='' d='' id=
+[    ]  170,1761 t='App language' d='' id=
+[C   ]  540,1940 t='' d='' id=
+[    ]  124,1919 t='Tablet UI' d='' id=
+[    ]   77,1977 t='Auto' d='' id=
+[C   ]  540,2140 t='' d='' id=
+[    ]  154,2119 t='Date format' d='' id=
+[    ]  180,2177 t='Default (11/13/26)' d='' id=
+[C   ]  540,2320 t='' d='' id=
+[    ]  157,2319 t='Time format' d='' id=
+[    ]  240,2377 t='Follow language (2:50 AM)' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  299,212  t='Appearance' d='' id=

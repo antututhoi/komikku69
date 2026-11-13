@@ -1,0 +1,29 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,97   t='' d='' id=
+[    ]  260,74   t='DNS over HTTPS (DoH)' d='' id=
+[    ]  106,132  t='Disabled' d='' id=
+[C   ]  540,316  t='' d='' id=
+[    ]  271,274  t='Default user agent string' d='' id=
+[    ]  540,353  t='Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome' d='' id=
+[    ]   99,532  t='Library' d='' id=
+[C   ]  540,659  t='' d='' id=
+[    ]  243,659  t='Refresh library covers' d='' id=
+[C   ]  540,838  t='' d='' id=
+[    ]  337,817  t='Reset per-series reader settings' d='' id=
+[    ]  406,875  t='Resets reading mode and orientation of all series' d='' id=
+[C   ]  540,1096 t='' d='' id=
+[    ]  429,1054 t='Update library manga titles to match source' d='' id=
+[    ]  429,1170 t='Warning: if a manga is renamed, it will be removed from the download queue (if p' d='' id=
+[C   ]  540,1459 t='' d='' id=
+[    ]  314,1333 t='Disallow non-ASCII filenames' d='' id=
+[    ]  429,1496 t='Ensures compatibility with certain storage media that don't support Unicode. Whe' d='' id=
+[C   ]  540,1827 t='' d='' id=
+[    ]  345,1743 t='Enable chapter name hash suffix' d='' id=
+[    ]  429,1864 t='Ensures a unique hash suffix is added to chapter names to prevent naming conflic' d='' id=
+[    ]  100,2085 t='Reader' d='' id=
+[C   ]  540,2212 t='' d='' id=
+[    ]  272,2212 t='Use high quality renderer' d='' id=
+[    ]  134,2380 t='Extensions' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

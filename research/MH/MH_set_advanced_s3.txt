@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,20   t='' d='' id=
+[C   ]  540,141  t='' d='' id=
+[    ]  337,120  t='Reset per-series reader settings' d='' id=
+[    ]  454,178  t='Resets reading mode and orientation of all series' d='' id=
+[C   ]  540,399  t='' d='' id=
+[    ]  429,357  t='Update library manga titles to match source' d='' id=
+[    ]  429,473  t='Warning: if a manga is renamed, it will be removed from the download queue (if p' d='' id=
+[C   ]  540,762  t='' d='' id=
+[    ]  314,636  t='Disallow non-ASCII filenames' d='' id=
+[    ]  429,799  t='Ensures compatibility with certain storage media that don't support Unicode. Whe' d='' id=
+[C   ]  540,1130 t='' d='' id=
+[    ]  345,1046 t='Enable chapter name hash suffix' d='' id=
+[    ]  429,1167 t='Ensures a unique hash suffix is added to chapter names to prevent naming conflic' d='' id=
+[    ]  100,1388 t='Reader' d='' id=
+[C   ]  540,1557 t='' d='' id=
+[    ]  371,1515 t='Custom hardware bitmap threshold' d='' id=
+[    ]  522,1594 t='If reader loads a blank image incrementally reduce the threshold.
+Selected: Defa' d='' id=
+[C   ]  540,1757 t='' d='' id=
+[    ]  250,1757 t='Custom display profile' d='' id=
+[    ]  134,1931 t='Extensions' d='' id=
+[C   ]  540,2079 t='' d='' id=
+[    ]  116,2058 t='Installer' d='' id=
+[    ]  166,2116 t='PackageInstaller' d='' id=
+[C   ]  540,2258 t='' d='' id=
+[    ]  377,2258 t='Revoke trusted unknown extensions' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

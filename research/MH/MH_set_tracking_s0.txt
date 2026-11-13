@@ -1,0 +1,39 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,375  t='' d='' id=
+[    ]  320,375  t='Update progress after reading' d='' id=
+[C   ]  540,554  t='' d='' id=
+[    ]  401,533  t='Update progress when marked as read' d='' id=
+[    ]   95,591  t='Always' d='' id=
+[    ]  113,717  t='Trackers' d='' id=
+[C   ]  540,849  t='' d='' id=
+[    ]  105,849  t='' d='MangaBaka' id=
+[    ]  322,849  t='MangaBaka' d='' id=
+[C   ]  540,1017 t='' d='' id=
+[    ]  105,1017 t='' d='MyAnimeList' id=
+[    ]  335,1017 t='MyAnimeList' d='' id=
+[C   ]  540,1185 t='' d='' id=
+[    ]  105,1185 t='' d='AniList' id=
+[    ]  276,1185 t='AniList' d='' id=
+[C   ]  540,1353 t='' d='' id=
+[    ]  105,1353 t='' d='Kitsu' id=
+[    ]  258,1353 t='Kitsu' d='' id=
+[C   ]  540,1521 t='' d='' id=
+[    ]  105,1521 t='' d='MangaUpdates' id=
+[    ]  353,1521 t='MangaUpdates' d='' id=
+[C   ]  540,1689 t='' d='' id=
+[    ]  105,1689 t='' d='Shikimori' id=
+[    ]  299,1689 t='Shikimori' d='' id=
+[C   ]  540,1857 t='' d='' id=
+[    ]  105,1857 t='' d='Bangumi' id=
+[    ]  294,1857 t='Bangumi' d='' id=
+[C   ]  540,2025 t='' d='' id=
+[    ]  105,2025 t='' d='Hikka' id=
+[    ]  264,2025 t='Hikka' d='' id=
+[C   ]  540,2193 t='' d='' id=
+[    ]  105,2193 t='' d='Comick' id=
+[    ]  281,2193 t='Comick' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  256,212  t='Tracking' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

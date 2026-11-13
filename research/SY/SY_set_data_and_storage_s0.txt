@@ -1,0 +1,30 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,396  t='' d='' id=
+[    ]  194,375  t='Storage location' d='' id=
+[    ]  264,433  t='/storage/emulated/0/Pictures' d='' id=
+[    ]  533,664  t='Used for automatic backups, chapter downloads, and local source.' d='' id=
+[    ]  202,790  t='Backup and restore' d='' id=
+[C   ]  540,943  t='' d='' id=
+[Ck  ]  290,943  t='' d='' id=
+[    ]  291,943  t='Create backup' d='' id=
+[Ck  ]  788,943  t='' d='' id=
+[    ]  788,943  t='Restore backup' d='' id=
+[C   ]  540,1148 t='' d='' id=
+[    ]  309,1127 t='Automatic backup frequency' d='' id=
+[    ]  152,1185 t='Every 12 hours' d='' id=
+[    ]  540,1500 t='You should keep copies of backups in other places as well. Backups may contain s' d='' id=
+[    ]  161,1742 t='Storage usage' d='' id=
+[C   ]  540,1906 t='' d='' id=
+[    ]  214,1858 t='/storage/emulated/0' d='' id=
+[    ]  296,1960 t='Available: 4.44 GB / Total: 6.23 GB' d='' id=
+[C   ]  540,2123 t='' d='' id=
+[    ]  227,2102 t='Clear chapter cache' d='' id=
+[    ]  121,2160 t='Used: 31 B' d='' id=
+[C   ]  540,2311 t='' d='' id=
+[    ]  279,2302 t='Clear page preview cache' d='' id=
+[    ]  121,2360 t='Used: 31 B' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  364,212  t='Data and storage' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

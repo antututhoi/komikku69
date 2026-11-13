@@ -1,0 +1,39 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,44   t='' d='' id=
+[    ]  429,23   t='Automatically selects the matching title if the source provides links to tracker' d='' id=
+[    ]  113,151  t='Trackers' d='' id=
+[C   ]  540,283  t='' d='' id=
+[    ]  105,283  t='' d='MangaBaka' id=
+[    ]  322,283  t='MangaBaka' d='' id=
+[C   ]  540,451  t='' d='' id=
+[    ]  105,451  t='' d='MyAnimeList' id=
+[    ]  335,451  t='MyAnimeList' d='' id=
+[C   ]  540,619  t='' d='' id=
+[    ]  105,619  t='' d='AniList' id=
+[    ]  276,619  t='AniList' d='' id=
+[C   ]  540,787  t='' d='' id=
+[    ]  105,787  t='' d='Kitsu' id=
+[    ]  258,787  t='Kitsu' d='' id=
+[C   ]  540,955  t='' d='' id=
+[    ]  105,955  t='' d='MangaUpdates' id=
+[    ]  353,955  t='MangaUpdates' d='' id=
+[C   ]  540,1123 t='' d='' id=
+[    ]  105,1123 t='' d='Shikimori' id=
+[    ]  299,1123 t='Shikimori' d='' id=
+[C   ]  540,1291 t='' d='' id=
+[    ]  105,1291 t='' d='Bangumi' id=
+[    ]  294,1291 t='Bangumi' d='' id=
+[C   ]  540,1459 t='' d='' id=
+[    ]  105,1459 t='' d='Hikka' id=
+[    ]  264,1459 t='Hikka' d='' id=
+[C   ]  540,1627 t='' d='' id=
+[    ]  105,1627 t='' d='Comick' id=
+[    ]  281,1627 t='Comick' d='' id=
+[    ]  540,1921 t='One-way sync to update the chapter progress in external tracker services. Set up' d='' id=
+[    ]  195,2121 t='Enhanced trackers' d='' id=
+[    ]  540,2358 t='Provides enhanced features for specific sources. Entries are automatically track' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  256,212  t='Tracking' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

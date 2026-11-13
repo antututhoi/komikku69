@@ -1,0 +1,26 @@
+[C   ]  540,861  t='' d='' id=
+[    ]  113,840  t='Version' d='' id=
+[    ]  375,898  t='Preview r615 (c1eb1e3cb, 10/28/26 4:45 PM)' d='' id=
+[C   ]  540,1040 t='' d='' id=
+[    ]  212,1040 t='Check for updates' d='' id=
+[C   ]  540,1198 t='' d='' id=
+[    ]  148,1198 t='What's new' d='' id=
+[C   ]  540,1356 t='' d='' id=
+[    ]  241,1356 t='Open source licenses' d='' id=
+[C   ]  540,1514 t='' d='' id=
+[    ]  170,1514 t='Privacy policy' d='' id=
+[C   ]  171,1689 t='' d='' id=
+[    ]  170,1688 t='' d='Website' id=
+[C   ]  319,1689 t='' d='' id=
+[    ]  318,1688 t='' d='Discord' id=
+[C   ]  467,1689 t='' d='' id=
+[    ]  466,1688 t='' d='X' id=
+[C   ]  615,1689 t='' d='' id=
+[    ]  614,1688 t='' d='Facebook' id=
+[C   ]  763,1689 t='' d='' id=
+[    ]  762,1688 t='' d='Reddit' id=
+[C   ]  911,1689 t='' d='' id=
+[    ]  910,1688 t='' d='GitHub' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  224,212  t='About' d='' id=

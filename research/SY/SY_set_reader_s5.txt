@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,29   t='' d='' id=
+[    ]   96,8    t='Default' d='' id=
+[C   ]  540,158  t='' d='' id=
+[    ]  191,137  t='Invert tap zones' d='' id=
+[    ]  163,337  t='Side padding' d='' id=
+[    ]  997,337  t='0%' d='' id=
+[C   ]  540,647  t='' d='' id=
+[    ]  372,626  t='Sensitivity for hiding menu on scroll' d='' id=
+[    ]   73,684  t='Low' d='' id=
+[C   ]  540,826  t='' d='' id=
+[    ]  163,826  t='Crop borders' d='' id=
+[C   ]  540,984  t='' d='' id=
+[    ]  195,984  t='Split wide pages' d='' id=
+[C   ]  540,1142 t='' d='' id=
+[    ]  262,1142 t='Rotate wide pages to fit' d='' id=
+[C   ]  540,1300 t='' d='' id=
+[    ]  225,1300 t='Double tap to zoom' d='' id=
+[C   ]  540,1458 t='' d='' id=
+[    ]  205,1458 t='Disable zoom out' d='' id=
+[C   ]  540,1616 t='' d='' id=
+[    ]  276,1616 t='Animate page transitions' d='' id=
+[    ]  211,1790 t='Long strip with gaps' d='' id=
+[C   ]  540,1959 t='' d='' id=
+[    ]  211,1917 t='Tap scroll by page' d='' id=
+[    ]  429,1996 t='Tapping will scroll by page instead of screen size when this option is enabled' d='' id=
+[C   ]  540,2159 t='' d='' id=
+[    ]  163,2159 t='Crop borders' d='' id=
+[    ]  132,2333 t='Navigation' d='' id=
+[C   ]  540,2390 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

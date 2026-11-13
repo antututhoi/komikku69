@@ -1,0 +1,18 @@
+[    ]  109,359  t='Security' d='' id=
+[C   ]  540,486  t='' d='' id=
+[    ]  271,486  t='Hide notification content' d='' id=
+[C   ]  540,665  t='' d='' id=
+[    ]  173,644  t='Secure screen' d='' id=
+[    ]  157,702  t='Incognito mode' d='' id=
+[    ]  540,954  t='Secure screen hides app contents when switching apps and block screenshots' d='' id=
+[    ]  247,1133 t='Analytics and Crash logs' d='' id=
+[C   ]  540,1281 t='' d='' id=
+[    ]  191,1260 t='Send crash logs' d='' id=
+[    ]  389,1318 t='Send anonymized crash logs to the developers.' d='' id=
+[C   ]  540,1502 t='' d='' id=
+[    ]  182,1460 t='Allow analytics' d='' id=
+[    ]  429,1539 t='Send anonymized usage data to improve app features.' d='' id=
+[    ]  540,1833 t='Sending crash logs and analytics will allow us to identify and fix issues, impro' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  401,212  t='Security and privacy' d='' id=

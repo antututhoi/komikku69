@@ -1,0 +1,34 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,396  t='' d='' id=
+[    ]  243,375  t='Default reading mode' d='' id=
+[    ]  188,433  t='Paged (right to left)' d='' id=
+[C   ]  540,596  t='' d='' id=
+[    ]  303,575  t='Double tap animation speed' d='' id=
+[    ]   97,633  t='Normal' d='' id=
+[C   ]  540,796  t='' d='' id=
+[    ]  227,775  t='Show reading mode' d='' id=
+[    ]  406,833  t='Briefly show current mode when reader is opened' d='' id=
+[C   ]  540,996  t='' d='' id=
+[    ]  261,975  t='Show tap zones overlay' d='' id=
+[    ]  304,1033 t='Briefly show when reader is opened' d='' id=
+[C   ]  540,1217 t='' d='' id=
+[    ]  274,1175 t='Load ahead only on Wi-Fi' d='' id=
+[    ]  429,1254 t='Saves mobile data by loading only the pages near the one you're reading' d='' id=
+[    ]  103,1401 t='Display' d='' id=
+[C   ]  540,1549 t='' d='' id=
+[    ]  187,1528 t='Default rotation' d='' id=
+[    ]   74,1586 t='Free' d='' id=
+[C   ]  540,1749 t='' d='' id=
+[    ]  206,1728 t='Background color' d='' id=
+[    ]   83,1786 t='Black' d='' id=
+[C   ]  540,1928 t='' d='' id=
+[    ]  137,1928 t='Fullscreen' d='' id=
+[C   ]  540,2086 t='' d='' id=
+[    ]  302,2086 t='Show content in cutout area' d='' id=
+[C   ]  540,2244 t='' d='' id=
+[    ]  185,2244 t='Keep screen on' d='' id=
+[C   ]  540,2361 t='' d='' id=
+[    ]  222,2382 t='Show page number' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

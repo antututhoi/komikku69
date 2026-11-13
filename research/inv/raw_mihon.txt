@@ -1,0 +1,134 @@
+strings: app 971 base 2119 | not in base 95
+prefs: app 187 base 463 | not in base 33
+
+## PREF KEYS NOT IN 69
+app_time_format
+apply_content_warnings_to_installed
+donation_campaign_shown
+kitsu_score_type
+last_version_code
+mangabaka_score_type
+pinned_catalogues
+pref_dual_page_view
+pref_enable_chapter_name_hash
+pref_enable_transitions_key
+pref_high_quality_renderer_key
+pref_reader_load_ahead_only_over_wifi
+pref_vertical_navigator_height
+pref_vertical_navigator_on_left
+pref_webtoon_vertical_navigator
+pref_webtoon_vertical_navigator_on_left
+redact_sensitive_headers
+skipped_app_update
+targetAppId
+webgpu_continuous_gap
+webgpu_continuous_minwidth
+webgpu_crop_instead_of_zoom
+webgpu_cutout_mode
+webgpu_disable_double_tap_gestures
+webgpu_downscaler
+webgpu_dual_cutout_mode
+webgpu_dual_transition_animation
+webgpu_fast_rendering_only
+webgpu_hold_until_final
+webgpu_image_filters
+webgpu_tile_filters
+webgpu_transition_animation
+webgpu_upscaler
+
+## STRINGS NOT IN 69
+action_add_shader	Add shader
+action_choose_shader	Choose shader
+app_migrating_summary	Getting things ready after the update. This can take a few minutes, so keep the app open.
+app_migrating_title	Finishing the update
+considering	Considering
+content_warnings_info	Installed extensions that aren\'t loaded stay listed without their sources; ones you haven\'t installed are hidden. This does not prevent unofficial or potentia
+cutout_mode_avoid	Avoid
+cutout_mode_ignore	Ignore
+cutout_mode_shift	Shift
+donationCampaign.dismiss	Dismiss
+donationCampaign.paragraph1	Hi! I’m the main developer behind Mihon, and I’d like to ask you to consider supporting its development financially. With enough support, I’ll be able to work o
+donationCampaign.paragraph2	You can donate through either Patreon (preferred) or OpenCollective. If you have questions or would like to support using alternative methods, feel free to reac
+donationCampaign.paragraph3	Regardless, Mihon will continue to be maintained by me and the volunteers, and it will stay open source.
+donationCampaign.title	Enjoying the app?
+downloading_with_progress	Downloading… (%d%%)
+dual_page_view_wide	When wide
+ext_content_warning_mixed	Mixed
+ext_content_warning_mixed_description	Sources from this extension might contain both safe and 18+ content.
+ext_content_warning_nsfw_description	Sources from this extension are primarily focused on 18+ content.
+ext_content_warning_safe	Safe
+ext_copy_stacktrace	Copy stack trace
+ext_filtered	Filtered
+ext_filtered_message	This extension\'s content warning isn\'t one you chose to load, so its sources aren\'t available.
+ext_load_failed_message	This extension threw an error while loading, so none of its sources are available.
+ext_malformed_message	This extension is missing information the app needs to load it.
+ext_not_loaded	Not loaded
+ext_not_loaded_details	Why it isn\'t loaded
+ext_not_loaded_dialog	Couldn\'t load
+ext_unsigned_message	This extension isn\'t signed, so there\'s no signature to check it against.
+ext_unsupported_message	This extension was built for a version of the extension library this app version can\'t load. Updating the app or the extension may help.
+follow_language	Follow language
+follow_system	Follow system
+image_filter_invalid	Couldn\'t add shader
+information_webview_crashed	WebView stopped working and the page was closed
+label_support_us	Support Us
+pref_allowed_content_warnings	Allowed content warnings
+pref_apply_content_warnings_to_installed	Also apply to installed extensions
+pref_apply_content_warnings_to_installed_summary	When off, extensions you already installed keep loading and updating regardless of their warning
+pref_continuous_gap	Gap
+pref_continuous_minwidth	Min width
+pref_crop_instead_of_zoom	Crop instead of zoom
+pref_cutout_mode	Display cutout mode
+pref_cutout_mode_dual	Display cutout mode (dual)
+pref_disable_double_tap_gestures	Disable double tap gestures
+pref_downscaler	Downscaler
+pref_dual_page_view	Dual page view
+pref_enable_chapter_name_hash	Enable chapter name hash suffix
+pref_enable_chapter_name_hash_details	Ensures a unique hash suffix is added to chapter names to prevent naming conflicts. If disabled, chapters with identical names cannot be downloaded.
+pref_fast_rendering_only	Disable tiles
+pref_filter_upcoming_categories_details	Titles in excluded categories are not shown, even if they are also in any of the included categories.
+pref_filter_update_categories_details	Updates in excluded categories will not be shown even if they are also in any included categories.
+pref_high_quality_renderer	Use high quality renderer
+pref_hold_until_final	Show all tiles together
+pref_image_filters	Image filters
+pref_load_ahead_only_over_wifi	Load ahead only on Wi-Fi
+pref_load_ahead_only_over_wifi_summary	Saves mobile data by loading only the pages near the one you\'re reading
+pref_redact_sensitive_headers	Redact sensitive headers
+pref_redact_sensitive_headers_summary	Redacts certain sensitive values in the logs. Keep enabled for your security when sharing logs with other people.
+pref_tile_filters	Tile filters
+pref_time_format	Time format
+pref_transition_animation	Transition animation
+pref_transition_animation_dual	Transition animation (dual)
+pref_upscaler	Upscaler
+pref_vertical_navigator	Use vertical chapter navigator in
+pref_vertical_navigator_height	Vertical navigator height
+pref_webtoon_vertical_navigator_on_left	Place vertical navigator on the left side
+refresh_tracker_error	%1$s refresh error: %2$s
+refresh_tracker_profile	Refresh tracker profile
+refresh_tracker_success	%s profile refreshed
+shader_param_default	Default %1$s
+shader_param_range	%1$s to %2$s, default %3$s
+shader_parameters	Parameters
+supportUsScreen.contactForDetailsMessage	For alternative options or any related questions, join our Discord server.
+supportUsScreen.currentlySupportedBy	Mihon is currently backed by %d+ patrons. We want to thank each and everyone of you. Let's make Mihon even better together.
+supportUsScreen.donationPlatform.opencollective	OpenCollective
+supportUsScreen.donationPlatform.patreon	Patreon (preferred)
+supportUsScreen.perks	Patrons get access to exclusive channels, with more perks to come.
+theme_tokyonight	Tokyo Night
+time_12_hours	12-hour
+time_24_hours	24-hour
+transition_animation_basic	Basic
+transition_animation_cube_inside	Cube (Inside)
+transition_animation_cube_outside	Cube (Outside)
+transition_animation_fade_white	Fade to white
+transition_animation_flip_left	Page flip (left)
+transition_animation_flip_right	Page flip (right)
+transition_animation_sphere	Sphere
+transition_animation_stack_down	Stack (down)
+transition_animation_stack_left	Stack (left)
+transition_animation_stack_right	Stack (right)
+transition_animation_stack_up	Stack (up)
+update_check_skip	Skip this version
+update_check_skip_message	Updates often contain bug fixes and security improvements. You won\'t be reminded about this version again, but you\'ll still be notified when a newer one is re
+update_check_skip_title	Skip %s?
+webgpu_viewer	WebGPU

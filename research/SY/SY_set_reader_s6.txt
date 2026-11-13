@@ -1,0 +1,32 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,45   t='' d='' id=
+[    ]  276,24   t='Animate page transitions' d='' id=
+[    ]  259,186  t='Long strip with gaps' d='' id=
+[C   ]  540,355  t='' d='' id=
+[    ]  211,313  t='Tap scroll by page' d='' id=
+[    ]  429,392  t='Tapping will scroll by page instead of screen size when this option is enabled' d='' id=
+[C   ]  540,555  t='' d='' id=
+[    ]  163,555  t='Crop borders' d='' id=
+[    ]  132,729  t='Navigation' d='' id=
+[C   ]  540,856  t='' d='' id=
+[    ]  160,856  t='Volume keys' d='' id=
+[C   ]  540,1035 t='' d='' id=
+[    ]  340,1014 t='Use vertical chapter navigator in' d='' id=
+[    ]   81,1072 t='None' d='' id=
+[    ]  106,1230 t='Actions' d='' id=
+[C   ]  540,1357 t='' d='' id=
+[    ]  277,1357 t='Show actions on long tap' d='' id=
+[C   ]  540,1536 t='' d='' id=
+[    ]  347,1515 t='Save pages into separate folders' d='' id=
+[    ]  344,1573 t='Creates folders according to entries' title' d='' id=
+[    ]  198,1731 t='Page Downloading' d='' id=
+[C   ]  540,1921 t='' d='' id=
+[    ]  211,1858 t='Reader cache size' d='' id=
+[    ]  540,1958 t='The amount of images to save on device while reading. Higher values will result ' d='' id=
+[    ]  152,2158 t='Fork Settings' d='' id=
+[C   ]  540,2285 t='' d='' id=
+[    ]  422,2285 t='Preserve reading position on read entries' d='' id=
+[C   ]  540,2382 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  202,13   t='Backup and restore' d='' id=
+[C   ]  540,153  t='' d='' id=
+[Ck  ]  290,153  t='' d='' id=
+[    ]  291,151  t='Create backup' d='' id=
+[Ck  ]  788,153  t='' d='' id=
+[    ]  788,153  t='Restore backup' d='' id=
+[C   ]  540,358  t='' d='' id=
+[    ]  309,337  t='Automatic backup frequency' d='' id=
+[    ]  152,395  t='Every 12 hours' d='' id=
+[    ]  540,710  t='You should keep copies of backups in other places as well. Backups may contain s' d='' id=
+[    ]  161,952  t='Storage usage' d='' id=
+[C   ]  540,1116 t='' d='' id=
+[    ]  214,1068 t='/storage/emulated/0' d='' id=
+[    ]  296,1170 t='Available: 4.44 GB / Total: 6.23 GB' d='' id=
+[C   ]  540,1333 t='' d='' id=
+[    ]  227,1312 t='Clear chapter cache' d='' id=
+[    ]  121,1370 t='Used: 31 B' d='' id=
+[C   ]  540,1533 t='' d='' id=
+[    ]  279,1512 t='Clear page preview cache' d='' id=
+[    ]  121,1570 t='Used: 31 B' d='' id=
+[C   ]  540,1712 t='' d='' id=
+[    ]  363,1712 t='Clear chapter cache on app launch' d='' id=
+[    ]   96,1886 t='Export' d='' id=
+[C   ]  540,2013 t='' d='' id=
+[    ]  145,2013 t='Library List' d='' id=
+[    ]   82,2187 t='Sync' d='' id=
+[C   ]  540,2317 t='' d='' id=
+[    ]  110,2314 t='Service' d='' id=
+[    ]   66,2372 t='Off' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  364,212  t='Data and storage' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

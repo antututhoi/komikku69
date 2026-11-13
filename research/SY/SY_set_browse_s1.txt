@@ -1,0 +1,29 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,33   t='' d='' id=
+[    ]  429,12   t='Replace latest button with a custom browse view that includes both latest and br' d='' id=
+[C   ]  540,167  t='' d='' id=
+[    ]  300,146  t='Local source hidden folders' d='' id=
+[    ]  393,204  t='Allow local source to read hidden folders' d='' id=
+[    ]   82,362  t='Feed' d='' id=
+[C   ]  540,489  t='' d='' id=
+[    ]  171,489  t='Hide Feed tab' d='' id=
+[C   ]  540,731  t='' d='' id=
+[    ]  203,647  t='Feed tab position' d='' id=
+[    ]  429,768  t='Do you want the feed tab to be the first tab in browse? This will make it the de' d='' id=
+[    ]  110,989  t='Sources' d='' id=
+[C   ]  540,1116 t='' d='' id=
+[    ]  310,1116 t='Hide entries already in library' d='' id=
+[C   ]  540,1295 t='' d='' id=
+[    ]  197,1274 t='Extension stores' d='' id=
+[    ]   94,1332 t='1 store' d='' id=
+[    ]  134,1490 t='Extensions' d='' id=
+[C   ]  540,1638 t='' d='' id=
+[    ]  283,1617 t='Allowed content warnings' d='' id=
+[    ]  163,1675 t='Safe, Mixed, 18+' d='' id=
+[C   ]  540,1859 t='' d='' id=
+[    ]  353,1817 t='Also apply to installed extensions' d='' id=
+[    ]  429,1896 t='When off, extensions you already installed keep loading and updating regardless ' d='' id=
+[    ]  540,2211 t='Installed extensions that aren't loaded stay listed without their sources; ones ' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  243,212  t='Browse' d='' id=

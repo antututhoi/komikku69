@@ -1,0 +1,14 @@
+[C   ]  540,375  t='' d='' id=
+[    ]  199,375  t='MangaDex Login' d='' id=
+[C   ]  540,575  t='' d='' id=
+[    ]  302,533  t='Preferred MangaDex source' d='' id=
+[    ]  540,612  t='Set your chosen MangaDex source, this will be used for follows and a bunch more ' d='' id=
+[C   ]  540,817  t='' d='' id=
+[    ]  392,775  t='Sync MangaDex entries to your library' d='' id=
+[    ]  540,854  t='Pulls entries from MangaDex into your library if they are not already added.' d='' id=
+[C   ]  540,1038 t='' d='' id=
+[    ]  347,1017 t='Sync library entries to MangaDex' d='' id=
+[    ]  505,1075 t='Syncs any non MdList tracked entries to MangaDex as reading.' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  283,212  t='MangaDex' d='' id=

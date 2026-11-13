@@ -1,0 +1,163 @@
+strings: app 1571 base 2119 | not in base 105
+prefs: app 312 base 463 | not in base 52
+
+## PREF KEYS NOT IN 69
+appSettings
+app_time_format
+apply_content_warnings_to_installed
+categories
+chapters
+customInfo
+eh_log_level
+eh_util_autoscroll_gesture_toasts
+eh_util_autoscroll_gestures
+extensionRepoSettings
+google_drive_access_token
+google_drive_refresh_token
+history
+kitsu_score_type
+library_entries
+mangabaka_score_type
+pinned_catalogues
+pref_dual_page_view
+pref_enable_chapter_name_hash
+pref_high_quality_renderer_key
+pref_reader_load_ahead_only_over_wifi
+pref_vertical_navigator_height
+pref_vertical_navigator_on_left
+pref_webtoon_vertical_navigator
+pref_webtoon_vertical_navigator_on_left
+privateSettings
+readEntries
+redact_sensitive_headers
+savedSearches
+skipped_app_update
+sourceSettings
+sync_client_api_key
+sync_client_host
+sync_cursor
+sync_full_requested
+sync_last_full_sync
+sync_last_pushed_at
+sync_pending_deleted_category_uids
+sync_pending_deleted_chapter_keys
+sync_server_supports_v2
+sync_v2_probed_host
+targetAppId
+tracking
+webgpu_continuous_gap
+webgpu_continuous_minwidth
+webgpu_cutout_mode
+webgpu_disable_double_tap_gestures
+webgpu_dual_cutout_mode
+webgpu_dual_transition_animation
+webgpu_image_filters
+webgpu_tile_filters
+webgpu_transition_animation
+
+## STRINGS NOT IN 69
+action_add_shader	Add shader
+app_migrating_summary	Getting things ready after the update. This can take a few minutes, so keep the app open.
+app_migrating_title	Finishing the update
+collate_tags	Collate tags
+considering	Considering
+content_warnings_info	Installed extensions that aren\'t loaded stay listed without their sources; ones you haven\'t installed are hidden. This does not prevent unofficial or potentia
+cutout_mode_avoid	Avoid
+cutout_mode_ignore	Ignore
+cutout_mode_shift	Shift
+disowned	Disowned
+downloading_with_progress	Downloading… (%d%%)
+dual_page_view_wide	When wide
+eh_autoscroll_gesture_toasts	Gesture toasts
+eh_autoscroll_gesture_toasts_help	Gesture toasts help
+eh_autoscroll_gesture_toasts_help_message	When this option is enabled, the reader shows toast messages after autoscroll gestures perform actions such as start, pause, resume, stop, speed changes, or mov
+eh_autoscroll_gestures	Autoscroll gestures
+eh_autoscroll_gestures_help	Autoscroll gestures help
+eh_autoscroll_gestures_help_message	Autoscroll on:\n- Tap to pause or resume\n- Swipe up or down to adjust speed\n- Drag with two fingers to scroll manually\n- Swipe sideways to stop\n\nAutoscroll
+entry_description	Description
+entry_tags	Tags
+ext_content_warning_mixed	Mixed
+ext_content_warning_mixed_description	Sources from this extension might contain both safe and 18+ content.
+ext_content_warning_nsfw_description	Sources from this extension are primarily focused on 18+ content.
+ext_content_warning_safe	Safe
+ext_copy_stacktrace	Copy stack trace
+ext_filtered	Filtered
+ext_filtered_message	This extension\'s content warning isn\'t one you chose to load, so its sources aren\'t available.
+ext_load_failed_message	This extension threw an error while loading, so none of its sources are available.
+ext_malformed_message	This extension is missing information the app needs to load it.
+ext_not_loaded	Not loaded
+ext_not_loaded_details	Why it isn\'t loaded
+ext_not_loaded_dialog	Couldn\'t load
+ext_unsigned_message	This extension isn\'t signed, so there\'s no signature to check it against.
+ext_unsupported_message	This extension was built for a version of the extension library this app version can\'t load. Updating the app or the extension may help.
+follow_language	Follow language
+follow_system	Follow system
+image_filter_invalid	Couldn\'t add shader
+information_webview_crashed	WebView stopped working and the page was closed
+merge_dedupe_highest_summary	Show only the chapters of the entry with the highest chapter number.
+merge_dedupe_keep_all	Keep all
+merge_dedupe_keep_all_summary	Show every chapter from every entry, ordered by entry priority.
+merge_dedupe_most	Most
+merge_dedupe_most_summary	Show only the chapters of the entry with the most chapters.
+merge_dedupe_priority	Priority
+merge_dedupe_priority_summary	Show each chapter once, from the highest entry below that has it.
+merge_drag_to_set_priority	Drag to set priority
+merge_duplicate_chapters	Duplicate chapters
+merge_info_source	Info source
+num_favorites	%1$s favorite
+num_views	%1$s view
+pref_allowed_content_warnings	Allowed content warnings
+pref_apply_content_warnings_to_installed	Also apply to installed extensions
+pref_apply_content_warnings_to_installed_summary	When off, extensions you already installed keep loading and updating regardless of their warning
+pref_continuous_gap	Gap
+pref_continuous_minwidth	Min width
+pref_cutout_mode	Display cutout mode
+pref_cutout_mode_dual	Display cutout mode (dual)
+pref_disable_double_tap_gestures	Disable double tap gestures
+pref_dual_page_view	Dual page view
+pref_enable_chapter_name_hash	Enable chapter name hash suffix
+pref_enable_chapter_name_hash_details	Ensures a unique hash suffix is added to chapter names to prevent naming conflicts. If disabled, chapters with identical names cannot be downloaded.
+pref_filter_upcoming_categories_details	Titles in excluded categories are not shown, even if they are also in any of the included categories.
+pref_filter_update_categories_details	Updates in excluded categories will not be shown even if they are also in any included categories.
+pref_high_quality_renderer	Use high quality renderer
+pref_image_filters	Image filters
+pref_load_ahead_only_over_wifi	Load ahead only on Wi-Fi
+pref_load_ahead_only_over_wifi_summary	Saves mobile data by loading only the pages near the one you\'re reading
+pref_redact_sensitive_headers	Redact sensitive headers
+pref_redact_sensitive_headers_summary	Redacts certain sensitive values in the logs. Keep enabled for your security when sharing logs with other people.
+pref_tile_filters	Tile filters
+pref_time_format	Time format
+pref_transition_animation	Transition animation
+pref_transition_animation_dual	Transition animation (dual)
+pref_vertical_navigator	Use vertical chapter navigator in
+pref_vertical_navigator_height	Vertical navigator height
+pref_webtoon_vertical_navigator_on_left	Place vertical navigator on the left side
+rec_search_in	Search in
+rec_selected_entries	For %d selected entry
+rec_sources_summary	Each entry\'s own source
+rec_trackers_summary	Your logged-in tracking services
+refresh_tracker_error	%1$s refresh error: %2$s
+refresh_tracker_profile	Refresh tracker profile
+refresh_tracker_success	%s profile refreshed
+remove_merged_entries	Remove entries from the library
+source_value_hint	Source: %1$s
+theme_tokyonight	Tokyo Night
+time_12_hours	12-hour
+time_24_hours	24-hour
+total_downloads	Total downloads
+total_views	Total views
+transition_animation_basic	Basic
+transition_animation_cube_inside	Cube (Inside)
+transition_animation_cube_outside	Cube (Outside)
+transition_animation_fade_white	Fade to white
+transition_animation_flip_left	Page flip (left)
+transition_animation_flip_right	Page flip (right)
+transition_animation_sphere	Sphere
+transition_animation_stack_down	Stack (down)
+transition_animation_stack_left	Stack (left)
+transition_animation_stack_right	Stack (right)
+transition_animation_stack_up	Stack (up)
+update_check_skip	Skip this version
+update_check_skip_message	Updates often contain bug fixes and security improvements. You won\'t be reminded about this version again, but you\'ll still be notified when a newer one is re
+update_check_skip_title	Skip %s?
+webgpu_viewer	WebGPU

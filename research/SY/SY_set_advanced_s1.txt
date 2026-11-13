@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,23   t='' d='' id=
+[    ]  239,2    t='Manage notifications' d='' id=
+[    ]  205,110  t='Background activity' d='' id=
+[C   ]  540,258  t='' d='' id=
+[    ]  352,237  t='Disable battery optimization' d='' id=
+[    ]  423,295  t='Helps with background library updates and backups' d='' id=
+[C   ]  540,479  t='' d='' id=
+[    ]  199,437  t='Don't kill my app!' d='' id=
+[    ]  540,516  t='Some manufacturers have additional app restrictions that kill background service' d='' id=
+[    ]   82,695  t='Data' d='' id=
+[C   ]  540,843  t='' d='' id=
+[    ]  224,822  t='Reindex downloads' d='' id=
+[    ]  359,880  t='Force app to recheck downloaded chapters' d='' id=
+[C   ]  540,1043 t='' d='' id=
+[    ]  182,1022 t='Clear database' d='' id=
+[    ]  469,1080 t='Delete history for entries that are not saved in your library' d='' id=
+[    ]  137,1238 t='Networking' d='' id=
+[C   ]  540,1365 t='' d='' id=
+[    ]  167,1365 t='Clear cookies' d='' id=
+[C   ]  540,1523 t='' d='' id=
+[    ]  229,1523 t='Clear WebView data' d='' id=
+[C   ]  540,1702 t='' d='' id=
+[    ]  260,1681 t='DNS over HTTPS (DoH)' d='' id=
+[    ]  106,1739 t='Disabled' d='' id=
+[C   ]  540,1923 t='' d='' id=
+[    ]  271,1881 t='Default user agent string' d='' id=
+[    ]  540,1960 t='Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome' d='' id=
+[    ]   99,2139 t='Library' d='' id=
+[C   ]  540,2266 t='' d='' id=
+[    ]  243,2266 t='Refresh library covers' d='' id=
+[C   ]  540,2372 t='' d='' id=
+[    ]  337,2393 t='Reset per-series reader settings' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

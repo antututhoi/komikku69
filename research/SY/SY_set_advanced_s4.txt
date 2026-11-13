@@ -1,0 +1,32 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,99   t='' d='' id=
+[    ]  116,78   t='Installer' d='' id=
+[    ]  166,136  t='PackageInstaller' d='' id=
+[C   ]  540,278  t='' d='' id=
+[    ]  377,278  t='Revoke trusted unknown extensions' d='' id=
+[    ]  132,452  t='Data Saver' d='' id=
+[C   ]  540,600  t='' d='' id=
+[    ]  143,579  t='Data Saver' d='' id=
+[    ]  474,637  t='Compress images before downloading or loading in reader' d='' id=
+[    ]  171,795  t='Developer tools' d='' id=
+[C   ]  540,964  t='' d='' id=
+[    ]  349,922  t='Enable integrated hentai features' d='' id=
+[    ]  429,1001 t='This is a experimental feature that will disable all hentai features if toggled ' d='' id=
+[C   ]  540,1248 t='' d='' id=
+[    ]  282,1164 t='Enable delegated sources' d='' id=
+[    ]  429,1285 t='Apply TachiyomiSY enhancements to the following sources if they are installed: P' d='' id=
+[C   ]  540,1532 t='' d='' id=
+[    ]  124,1490 t='Log level' d='' id=
+[    ]  540,1569 t='Changing this can impact app performance. Force-restart app after changing. Curr' d='' id=
+[C   ]  540,1774 t='' d='' id=
+[    ]  256,1732 t='Enable source blacklist' d='' id=
+[    ]  429,1811 t='Hide extensions/sources that are incompatible with TachiyomiSY. Force-restart ap' d='' id=
+[C   ]  540,1995 t='' d='' id=
+[    ]  205,1974 t='Encrypt database' d='' id=
+[    ]  295,2032 t='Requires app restart to take effect' d='' id=
+[C   ]  540,2216 t='' d='' id=
+[    ]  212,2174 t='Open debug menu' d='' id=
+[    ]  540,2253 t='DO NOT TOUCH THIS MENU UNLESS YOU KNOW WHAT YOU ARE DOING! IT CAN CORRUPT YOUR L' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

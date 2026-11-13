@@ -1,0 +1,31 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,396  t='' d='' id=
+[    ]  197,375  t='Share crash logs' d='' id=
+[    ]  457,433  t='Saves error logs to a file for sharing with the developers' d='' id=
+[C   ]  540,617  t='' d='' id=
+[    ]  194,575  t='Verbose logging' d='' id=
+[    ]  429,654  t='Print verbose logs to system log (reduces app performance)' d='' id=
+[C   ]  540,880  t='' d='' id=
+[    ]  275,817  t='Redact sensitive headers' d='' id=
+[    ]  429,917  t='Redacts certain sensitive values in the logs. Keep enabled for your security whe' d='' id=
+[C   ]  540,1101 t='' d='' id=
+[    ]  143,1101 t='Debug info' d='' id=
+[C   ]  540,1259 t='' d='' id=
+[    ]  207,1259 t='Onboarding guide' d='' id=
+[C   ]  540,1417 t='' d='' id=
+[    ]  239,1417 t='Manage notifications' d='' id=
+[    ]  205,1559 t='Background activity' d='' id=
+[C   ]  540,1707 t='' d='' id=
+[    ]  304,1686 t='Disable battery optimization' d='' id=
+[    ]  423,1744 t='Helps with background library updates and backups' d='' id=
+[C   ]  540,1928 t='' d='' id=
+[    ]  199,1886 t='Don't kill my app!' d='' id=
+[    ]  540,1965 t='Some manufacturers have additional app restrictions that kill background service' d='' id=
+[    ]   82,2144 t='Data' d='' id=
+[C   ]  540,2292 t='' d='' id=
+[    ]  224,2271 t='Reindex downloads' d='' id=
+[    ]  359,2329 t='Force app to recheck downloaded chapters' d='' id=
+[C   ]  540,2396 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

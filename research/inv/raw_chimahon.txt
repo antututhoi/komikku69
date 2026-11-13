@@ -1,0 +1,1322 @@
+strings: app 2837 base 2119 | not in base 967
+prefs: app 708 base 463 | not in base 349
+
+## PREF KEYS NOT IN 69
+Anime
+Browse
+Dictionary
+History
+Library
+Novels
+Updates
+access_token
+add_new_channels_to_library
+animeCategory
+anime_categorized_display
+anime_entries
+anime_ext_updates_count
+anime_migrate_flags
+anime_source_languages
+animelib_sorting_mode
+api_key
+autoSyncEnabled
+autoSyncIntervalMins
+autoSyncOnClose
+autoSyncOnOpen
+autoSyncPeriodic
+browse_hide_in_anime_library_items
+browse_last_used_mode
+client_id
+client_secret
+create_folder_per_anime
+deband_grain
+deband_iterations
+deband_range
+deband_threshold
+default_episode_filter_by_bookmarked
+default_episode_filter_by_downloaded
+default_episode_filter_by_fillermarked
+default_episode_filter_by_seen
+default_episode_sort_by_source_or_number
+default_season_continue_overlay
+default_season_display_mode
+default_season_download_overlay
+default_season_filter_by_bookmarked
+default_season_filter_by_completed
+default_season_filter_by_downloaded
+default_season_filter_by_fillermarked
+default_season_filter_by_started
+default_season_filter_by_unseen
+default_season_grid_display_mode
+default_season_grid_display_size
+default_season_lang_overlay
+default_season_local_overlay
+default_season_sort_by_ascending_or_descending
+default_season_sort_by_source_or_number
+default_season_unseen_overlay
+default_speed_presets
+display_anime_category_tabs
+display_anime_number_of_items
+display_animelib_download_badge
+display_animelib_language_badge
+display_animelib_local_badge
+display_animelib_source_badge
+display_animelib_unseen_badge
+display_continue_watching_button
+display_floating_add_button
+display_novel_category_tabs
+display_novel_number_of_items
+download_slots
+download_speed_limit
+expires_at
+extension.features
+external_downloader_selection
+external_player_preference
+group_anime_library_by
+hidden_anime_catalogues
+hidden_novel_catalogues
+hide_anime_hidden_categories
+hide_novel_hidden_categories
+host_url
+id
+incognito_anime_extensions
+incognito_novel_extensions
+invert_duration
+last_anime_catalogue_source
+last_anime_ext_check
+last_novel_ext_check
+last_used_anime_category
+library_last_used_mode
+library_random_anime_sort_seed
+library_unseen_anime_updates_count
+library_update_anime_restriction
+library_update_novel_restriction
+mangabaka_score_type
+models_last_update_app_version
+models_last_update_check
+mpv_scripts
+novel_ext_updates_count
+novel_extension_repos
+novel_json_migrated
+novel_migration_v2_done
+novel_migration_v3_done
+novel_migration_v4_dedupe_done
+novel_migration_v5_local_home_done
+novel_opds_active_catalog
+novel_opds_catalogs
+novel_sidecars_folded
+novel_source_languages
+novel_updated_count
+ocr_auto_on_download
+ocr_lens_model_version
+ocr_models_known_version
+ocr_paddle_model_version
+panel_model_hash
+panel_model_known_hash
+panel_model_known_revision
+panel_model_revision
+panel_navigation
+pinned_anime_catalogues
+pinned_novel_catalogues
+pip_replace_with_previous
+player_brightness_value
+player_fullscreen
+player_hide_controls
+player_volume_value
+pref_active_ocr_bg_opacity
+pref_active_ocr_text_opacity
+pref_active_profile_id
+pref_allow_gestures_in_panels
+pref_always_use_external_player
+pref_anime_library_columns_landscape_key
+pref_anime_library_columns_portrait_key
+pref_animelib_columns_landscape_key
+pref_animelib_columns_portrait_key
+pref_anki_deck
+pref_anki_default_tags
+pref_anki_duplicate_action
+pref_anki_duplicate_check
+pref_anki_duplicate_scope
+pref_anki_field_map
+pref_anki_model
+pref_anki_profiles
+pref_audio_config
+pref_audio_delay
+pref_audio_lang
+pref_audio_pitch_correction
+pref_audio_volume_boost_cap
+pref_auto_play_enabled
+pref_background_color_subtitles
+pref_bold_subtitles
+pref_border_color_subtitles
+pref_border_style_subtitles
+pref_cast_server_port
+pref_cast_subtitle_background
+pref_cast_subtitle_border_style
+pref_cast_subtitle_color
+pref_cast_subtitle_font_family
+pref_cast_subtitle_shadow
+pref_cast_subtitle_size
+pref_center_double_tap
+pref_default_intro_length
+pref_default_player_orientation_type_key
+pref_dict_anki_crop_mode
+pref_dict_auto_kana_conversion
+pref_dict_auto_update
+pref_dict_auto_update_interval
+pref_dict_compact_glossary
+pref_dict_frequency_display_modes
+pref_dict_group_pitches
+pref_dict_group_terms
+pref_dict_korean_parser_mode
+pref_dict_pitch_display_modes
+pref_dict_recursive_lookup_mode
+pref_dict_show_frequency_average
+pref_dict_show_frequency_harmonic
+pref_dict_show_navigation_buttons
+pref_dict_show_pitch_diagram
+pref_dict_show_pitch_number
+pref_dict_show_pitch_text
+pref_dict_update_check_state
+pref_dictionary_custom_color
+pref_dictionary_custom_css
+pref_dictionary_eink_mode
+pref_dictionary_font_family
+pref_dictionary_font_size
+pref_dictionary_order
+pref_dictionary_paginated_scroll_step_size
+pref_dictionary_paginated_scrolling
+pref_dictionary_popup_height
+pref_dictionary_popup_mode
+pref_dictionary_popup_swipe_threshold
+pref_dictionary_popup_swipe_to_dismiss
+pref_dictionary_popup_width
+pref_dictionary_scroll_behavior
+pref_dictionary_theme_dark_amoled
+pref_dictionary_theme_mode
+pref_dictionary_volume_key_navigation
+pref_disable_long_press_screenshot
+pref_disabled_ani_skip_chapters
+pref_display_mode_animelib
+pref_display_names
+pref_display_names_migrated
+pref_display_vol_as_per
+pref_download_fillermarked
+pref_enable_ani_skip
+pref_enable_auto_skip_ani_skip
+pref_enable_cast
+pref_enable_netflixStyle_aniskip
+pref_enable_pip
+pref_enable_skip_intro
+pref_episode_swipe_end_action
+pref_episode_swipe_start_action
+pref_filter_anime_updates_bookmarked
+pref_filter_anime_updates_fillermarked
+pref_filter_anime_updates_seen
+pref_filter_anime_updates_started
+pref_filter_animelib_bookmarked_v2
+pref_filter_animelib_completed_v2
+pref_filter_animelib_downloaded_v2
+pref_filter_animelib_fillermarked_v2
+pref_filter_animelib_lewd_v2
+pref_filter_animelib_started_v2
+pref_filter_animelib_unseen_v2
+pref_gesture_horizontal_seek
+pref_gesture_volume_brightness
+pref_gpu_next
+pref_italic_subtitles
+pref_jimaku_title
+pref_last_dict_update_check
+pref_left_double_tap
+pref_media_next
+pref_media_playpause
+pref_media_previous
+pref_mpv_conf
+pref_mpv_input
+pref_nav_start_screen
+pref_nav_tab_layout
+pref_no_download_fillermarked
+pref_novel_display_mode_library
+pref_novel_library_columns_landscape_key
+pref_novel_library_columns_portrait_key
+pref_novel_library_sort_descending
+pref_novel_library_sort_mode
+pref_ocr_box_opacity
+pref_ocr_box_scale
+pref_ocr_box_scale_x
+pref_ocr_box_scale_y
+pref_ocr_button_alpha
+pref_ocr_button_color
+pref_ocr_button_size
+pref_ocr_engine
+pref_override_subtitles_ass_enum
+pref_panel_opacity
+pref_parallel_ocr_limit
+pref_pip_episode_toasts
+pref_pip_on_exit
+pref_player_aspect_state
+pref_player_filter_brightness
+pref_player_filter_contrast
+pref_player_filter_gamma
+pref_player_filter_hue
+pref_player_filter_saturation
+pref_player_smooth_seek
+pref_player_speed
+pref_player_statistics_page
+pref_player_switch_on_failure
+pref_player_time_to_disappear
+pref_preserve_watching_position
+pref_progress_preference
+pref_reader_eink_swipe
+pref_reader_flash_delay
+pref_reader_flash_on_scroll
+pref_reduce_motion
+pref_remember_brightness
+pref_remember_volume
+pref_right_double_tap
+pref_screenshot_subtitles
+pref_show_current_chapter
+pref_show_empty_hosters
+pref_show_failed_hosters
+pref_show_loading
+pref_show_next_episode_airing_time
+pref_show_screen_lookup_ocr_overlay
+pref_show_seekbar
+pref_show_system_status_bar
+pref_single_tap_to_pause
+pref_skip_length_preference
+pref_sub_border_size
+pref_sub_justify
+pref_sub_pos
+pref_sub_scale
+pref_subtitle_black_bars
+pref_subtitle_blacklist
+pref_subtitle_font
+pref_subtitle_lang
+pref_subtitle_regex_custom_enabled
+pref_subtitle_regex_custom_pattern
+pref_subtitle_regex_merge_multiline
+pref_subtitle_regex_remove_bracketed_text
+pref_subtitle_regex_remove_curly_braced_text
+pref_subtitle_regex_remove_music_symbols
+pref_subtitle_regex_remove_speaker_names
+pref_subtitle_regex_remove_uppercase_lines
+pref_subtitle_swipe_controls
+pref_subtitle_system_fonts
+pref_subtitle_whitelist
+pref_subtitles_delay
+pref_subtitles_font_size
+pref_subtitles_secondary_delay
+pref_subtitles_speed
+pref_swap_volume_and_brightness
+pref_text_color_subtitles
+pref_torrent_port
+pref_torrent_trackers
+pref_try_hwdec
+pref_video_debanding
+pref_video_ocr_sentence_audio_padding_seconds
+pref_waiting_time_aniskip
+pref_word_audio_autoplay
+pref_word_audio_enabled
+pref_word_audio_local_enabled
+pref_word_audio_local_path
+pref_word_audio_local_uri
+pref_word_audio_sources
+preferred_quality
+reader_ocr_outline_visible
+reader_ocr_overlay_enabled
+reader_ocr_two_finger_gesture
+reader_ocr_two_finger_region
+reader_startup_delay
+refresh_token
+search_history_enabled
+show_episode_file_size
+skip_seen
+smart_sync_trackers
+source.lang
+source.name
+source.nsfw
+statsSyncEnabled
+statsSyncMode
+sub_shadow_offset
+subtitle
+syncEnabled
+syncMode
+sync_novels
+sync_on_episode_seen
+sync_source_novel_library
+title
+update_season_on_animelib_update
+use_consolidated_library
+use_external_downloader
+use_yuv420p
+user_id
+
+## STRINGS NOT IN 69
+action_add_repo	Add repo
+action_add_repo_message	Enter the repo URL
+action_bookmark_episode	Bookmark episode
+action_cast	Send to Cast
+action_change_intro_length	Change intro length
+action_clear_all	Clear all
+action_clear_anime	Clear anime
+action_clear_ocr_cache	Clear OCR cache
+action_clear_queue	Clear Queue
+action_delete_ocr	Delete OCR data
+action_delete_repo	Delete repo
+action_disable_ocr	Disable OCR
+action_display_download_badge_anime	Downloaded episodes
+action_display_show_continue_watching_button	Continue watching button
+action_display_show_floating_add_button	Show floating add button
+action_display_unseen_badge	Unseen episodes
+action_download_and_ocr	Download & OCR
+action_edit_background	Edit background
+action_enable_ocr	Enable OCR
+action_end_session	End Cast Session
+action_fillermark_episode	Fillermark episode
+action_filter_fillermarked	Fillermarked
+action_filter_unseen	Unseen
+action_mark_as_seen	Mark as seen
+action_mark_as_unseen	Mark as unseen
+action_mark_previous_as_seen	Mark previous as seen
+action_migrate_duplicate	Migrate duplicate
+action_ocr	OCR
+action_open_settings	Open settings
+action_open_video	Open video
+action_order_by_episode_number	By episode number
+action_pick_local_file	Pick local file
+action_play	Play
+action_play_externally	Play externally
+action_play_internally	Play internally
+action_pre_ocr	Pre-OCR chapters
+action_previous_episode	Previous episode
+action_remove_bookmark_episode	Remove episode bookmark
+action_remove_fillermark_episode	Unfillermark episode
+action_replace_repo	Replace repo
+action_replace_repo_message	Replace \"%1$s\" with \"%2$s\"?
+action_replace_repo_title	Replace repo
+action_reset_reading_progress	Reset reading progress
+action_run_ocr	Run OCR
+action_scan_from_camera	Scan text with camera
+action_select	Select
+action_show_anime	Show anime
+action_sort_episode_fetch_date	Episode fetch date
+action_sort_last_seen	Last seen
+action_sort_latest_episode	Latest episode
+action_sort_total_episodes	Total episodes
+action_sort_unseen_count	Unseen count
+action_start_download_externally	Use external downloader
+action_start_download_internally	Use internal downloader
+action_view_episodes	View episodes
+add_repo_confirmation	Add repo \"%1$s\"?
+also_set_episode_settings_for_library	Also set episode settings for library
+anim_play_to_pause	anim_play_to_pause
+anime_categories	Anime categories
+anime_continue_watching	Continue watching
+anime_delete_confirm	Delete this anime and all its episodes?
+anime_empty_message	No anime yet — tap + to open a video
+anime_episode_count	%d episodes
+anime_interval_expected_update	Expected next update in %1$s with current interval of %2$s
+anime_interval_expected_update_null	Expected next update is unknown
+anime_library	Anime library
+anime_no_episodes	No episodes yet
+anime_num_episodes	%1$s episode
+anime_num_seasons	%1$s season
+anime_recommendations	Recommendations
+anime_singular	Anime
+anki_card_added	Card added to Anki
+anki_card_error	Failed to add card: %1$s
+anki_card_exists	Card already exists in Anki
+anki_field_definition	Definition
+anki_field_frequency	Frequency
+anki_field_furigana	Furigana
+anki_field_morae	Morae
+anki_field_none	None (skip)
+anki_field_pitch_accent	Pitch Accent
+anki_field_pitch_accent_graphs	Pitch Graphs
+anki_field_screenshot	Screenshot
+anki_field_search_query	Search Query
+anki_field_sentence	Sentence
+anki_field_target_word	Target Word
+anki_not_configured	Anki deck and note type not configured
+anki_sentence_audio_codec_restricted	[Codec Restricted] FFmpeg found audio, but its codec is outside the safe export allow-list. The card was created without sentence audio.
+anki_sentence_audio_codec_restricted_external	[Codec Restricted (External)] MPV selected external audio, but its codec is outside the safe export allow-list. The card was created without sentence audio.
+anki_sentence_audio_codec_restricted_original	[Codec Restricted (Original)] FFmpeg found audio in the original video source, but its codec is outside the safe export allow-list. The card was created without
+anki_sentence_audio_codec_restricted_playable	[Codec Restricted (Playable)] FFmpeg found audio in MPV's playable video source, but its codec is outside the safe export allow-list. The card was created witho
+anki_sentence_audio_extraction_failed	[Audio Extraction Failed] FFmpeg found an audio stream but could not extract sentence audio from this video. The card was created without it.
+anki_sentence_audio_extraction_output_missing	[Extraction Output Missing] FFmpeg completed but did not create a usable sentence-audio file. The card was created without it.
+anki_sentence_audio_extraction_output_read_failed	[Extraction Output Read Failed] FFmpeg created sentence audio, but Chimahon could not read its temporary file. The card was created without it.
+anki_sentence_audio_extraction_output_write_failed	[Output Write Failed] FFmpeg could not write the temporary sentence audio file. The card was created without it.
+anki_sentence_audio_extraction_seek_failed	[Seek Failed] FFmpeg could not seek the video source to the subtitle time for sentence export. The card was created without it.
+anki_sentence_audio_extraction_source_read_failed	[Source Read Failed] FFmpeg could not read the audio data from the video source during sentence export. The card was created without it.
+anki_sentence_audio_extraction_source_read_failed_original	[Source Read Failed (Original)] FFmpeg could not read audio data from the original video source during sentence export. The card was created without it.
+anki_sentence_audio_extraction_source_read_failed_playable	[Source Read Failed (Playable)] FFmpeg could not read audio data from MPV's playable video source during sentence export. The card was created without it.
+anki_sentence_audio_extraction_stream_mapping_failed	[Stream Mapping Failed] FFmpeg could not map the selected audio track for sentence export. The card was created without it.
+anki_sentence_audio_extraction_timed_out	[Extraction Timed Out] Sentence audio extraction timed out. The card was created without it.
+anki_sentence_audio_generation_failed	Sentence audio could not be exported from this video source. The card was created without it.
+anki_sentence_audio_probe_failed	[Audio Probe Failed] The selected audio stream could not be inspected. The card was created without sentence audio.
+anki_sentence_audio_probe_failed_original	[Audio Probe Failed (Original)] FFprobe could not inspect audio in the original video source. The card was created without sentence audio.
+anki_sentence_audio_probe_failed_playable	[Audio Probe Failed (Playable)] FFprobe could not inspect audio in MPV's playable video source. The card was created without sentence audio.
+anki_sentence_audio_source_unavailable	The selected video source could not be read for sentence audio. The card was created without it.
+anki_sentence_audio_storage_failed	[Audio Storage Failed] AnkiDroid could not store the sentence audio. The card was created without it.
+anki_sentence_audio_stream_index_unavailable	[Stream Index Unavailable] The audio track selected in the player was not found in this video. The card was created without sentence audio.
+anki_sentence_audio_stream_not_audio	[Track Not Audio] The track selected as audio did not resolve to an audio stream in this video. The card was created without sentence audio.
+anki_sentence_audio_stream_protected	[Stream Protected] The selected audio stream is protected and cannot be exported. The card was created without sentence audio.
+anki_sentence_audio_stream_unreadable	[Stream Unreadable] No readable audio stream was found in this video. The card was created without sentence audio.
+anki_sentence_audio_streams_not_found	[Audio Streams Not Found] FFmpeg could not find an audio stream in the source used for export. The card was created without sentence audio.
+anki_sentence_audio_streams_not_found_external	[Audio Streams Not Found (External)] MPV selected external audio, but FFmpeg could not find an audio stream in that source. The card was created without sentenc
+anki_sentence_audio_streams_not_found_original	[Audio Streams Not Found (Original)] FFmpeg could not find an audio stream in the original video source used for export. MPV may be playing a different source. 
+anki_sentence_audio_streams_not_found_original_playable_missing	[Audio Streams Not Found (Playable Missing)] FFmpeg could not find an audio stream in the original video source, and MPV did not provide a separate playable sou
+anki_sentence_audio_streams_not_found_original_playable_same	[Audio Streams Not Found (Playable Same)] FFmpeg could not find an audio stream in the original video source, and MPV's playable source was the same source. The
+anki_sentence_audio_streams_not_found_original_playable_unavailable	[Audio Streams Not Found (Playable Unsafe)] FFmpeg could not find an audio stream in the original video source, and MPV's separate playable source was not safe 
+anki_sentence_audio_streams_not_found_playable	[Audio Streams Not Found (Playable)] FFmpeg could not find an audio stream in MPV's playable video source. The card was created without sentence audio.
+anki_sentence_audio_timing_unavailable	The subtitle timing was unavailable. Sentence audio was not added.
+anki_sentence_audio_track_mapping_unavailable	The selected audio track could not be identified safely. Sentence audio was not added to avoid choosing the wrong track.
+app_cast_id	00000000-0000-0000-0000-000000000000
+background_saved	Background saved
+background_updated	Background updated
+backup_option_novels	Novel progress & stats
+backup_option_source_novel_library	Novel library
+camera_ocr_capture	Take photo
+camera_ocr_capture_failed	Could not capture the photo.
+camera_ocr_permission_denied	Camera permission was not granted.
+camera_ocr_retake	Retake
+camera_ocr_title	Camera OCR
+camera_ocr_unavailable	No camera app is available on this device.
+cast_audio_tracks	Audio Tracks
+cast_available_devices	Available Devices
+cast_connection_error	Connection Error
+cast_end_session	End Cast Session
+cast_end_session_confirm	End Session
+cast_end_session_message	Are you sure you want to end the current cast session?
+cast_error_loading	Error loading video from Cast
+cast_forward_30s	Forward 30s
+cast_media_info	Media Info
+cast_next_video	Next Video
+cast_no_subtitles	No Subtitles
+cast_not_connected	Cast not connected
+cast_play	Play
+cast_previous_video	Previous Video
+cast_queue_title	Playback Queue
+cast_remove_from_queue	Remove from queue
+cast_rewind_30s	Rewind 30s
+cast_subtitle_background	Background
+cast_subtitle_border_depressed	Depressed
+cast_subtitle_border_drop_shadow	Drop Shadow
+cast_subtitle_border_drop_shadow_soft	Soft Drop Shadow
+cast_subtitle_border_outline	Outline
+cast_subtitle_border_raised	Raised
+cast_subtitle_border_style	Border Style
+cast_subtitle_font_family	Font Family
+cast_subtitle_font_size	Font Size
+cast_subtitle_preview	Preview Text
+cast_subtitle_reset	Reset to Default
+cast_subtitle_settings	Subtitle Settings
+cast_subtitle_shadow	Shadow
+cast_subtitle_shadow_Medium	Medium
+cast_subtitle_shadow_Strong	Strong
+cast_subtitle_text_color	Text Color
+cast_subtitles	Subtitles
+cast_tracks	Select Subtitle/Audio Track
+cast_video_added_to_queue	Video added to queue
+cast_volume	Volume
+cast_volume_down	Volume Down
+cast_volume_up	Volume Up
+channel_anime_ext_updates	Anime extension updates
+channel_dictionary_update	Dictionary updates
+channel_new_episodes	Episode updates
+choose_video_quality	Choose video quality:
+clean_seen_downloads	Clean seen
+clean_up_downloaded_episodes	Clean up downloaded episodes
+clear_anime_database_confirmation	You’re about to remove non-library anime entries from the database
+clear_database_seen_history_warning	Seen episodes and progress of non-library entries will be lost
+clear_db_exclude_seen	Keep entries with seen episodes
+clear_novel_database_confirmation	You’re about to remove non-library novel entries from the database
+clear_queue_confirmation	Clear Queue
+clear_queue_confirmation_message	Are you sure you want to clear the entire queue?
+confirm_add_duplicate_manga	This entry is already in your library.
+confirm_clear_ocr_cache	Are you sure you want to clear the OCR cache? This will delete all cached OCR files for this entry.
+confirm_delete_episodes	Delete selected episodes?
+confirm_tracker_update_anime	Update trackers to episode %d?
+considering	Considering
+copied_video_link_to_clipboard	Copied video quality link to clipboard
+dedupe_highest_episode	Show source with highest episode number
+dedupe_most_episodes	Show source with most episodes
+default_anime_category	Default anime category
+default_novel_category	Default novel category
+delete_downloads_for_anime	Delete downloaded episodes?
+delete_repo_confirmation	Delete repo \"%1$s\"?
+delete_unused_episodes	Delete non-existent, partially downloaded, and seen episodes folders
+dict_update_complete_text	%d dictionary(ies) updated
+dict_update_complete_title	Dictionary updates complete
+dict_update_error_title	Dictionary update failed
+dict_update_progress_title	Updating dictionaries…
+disable_auto_play	Disable autoplay
+discord_app_description_anime	Komikku - an anime watching app
+discord_download_button_anime	Watch on %s
+display_mode_episode	Episode %1$s
+download_amount_episodes	Next episode
+download_cache_renew_interval_info_anime	If set to "manual", either refresh each anime or using the "Reindex downloads" action in "Advanced"
+download_merged_anime_entry	Toggle new episode downloads
+download_merged_anime_entry_desc	Toggling this will disable or enable episode downloads for this merged entry
+download_queued_indeterminate	Queued
+download_unseen	Unseen episodes
+downloaded_episodes	Downloaded episodes
+editor_action_rename	Rename
+editor_create_error	Error creating file
+editor_create_file	Create file
+editor_delete_error	Error deleting file
+editor_delete_file	Delete file
+editor_delete_file_confirmation	Are you sure you want to delete this file?
+editor_edit_file	Edit file
+editor_file_already_exists	File already exists
+editor_filename	Filename
+editor_invalid_filename	Invalid filename
+editor_rename_error	Error renaming file
+editor_save_error	Error saving file
+editor_save_success	File saved
+editor_unsaved_progress	Unsaved progress
+empty_queue	Queue is empty
+enable_auto_play	Enable autoplay
+enable_horizontal_seek_gesture	Enable Horizontal Seek Gesture
+enable_volume_brightness_gestures	Enable Volume and Brightness Gestures
+episode_download_progress	%1$d%%
+episode_settings	Episode settings
+episode_settings_updated	Episode settings updated
+episode_updates_merged_entry	Toggle episode updates
+episode_updates_merged_entry_desc	Toggling this will disable or enable episode updates for this merged entry
+episodes	Episodes
+episodes_from_database	Episodes & History from Database
+error_repo_exists	Repo already exists
+error_saving_background	Error saving background
+error_sharing_background	Error sharing background
+expanded_controller	@string/mr_expanded_controller
+extensionRepo_settings	Extension repo
+fade_in	fade_in
+fetch_episode_updates	Fetch episode updates
+fifth_to_last_episode	Fifth to last seen episode
+filler	Filler
+flare_solver_error_webview	Error resolving with WebView
+flare_solver_update_user_agent_failed	FlareSolverr is not working. User agent not updated. Please check your settings
+flare_solver_user_agent_update_success	FlareSolverr is working. User agent updated. Please restart the app
+fourth_to_last_episode	Fourth to last seen episode
+hoster_video_count	%d video
+http_server_start_failure	Failed to start the local http server required by this source
+ic_forward_10_24dp	Forward 10s
+ic_updates_outline_24dp	<!-- Episode actions --> <string name="action_next_episode">Next episode
+imported_n_books	Imported %1$d books
+imported_n_books_with_errors	Imported %1$d books (%2$d failed)
+include_all_seen_entries	Include all seen entries
+information_empty_repos	No repos yet
+information_no_recent_anime	Nothing watched recently
+install_amnis	Amnis Player needs to be installed
+invalid_repo_name	Invalid repo name
+label_add_repo_input	Repo URL
+label_anime	Anime
+label_anime_extensions	Anime Extensions
+label_anime_library	Anime library
+label_anime_sources	Anime Sources
+label_anime_updates	Anime updates
+label_cant_migrate_anime_episode	Unable to migrate episode entry to season entry
+label_cant_migrate_anime_season	Unable to migrate season entry to episode entry
+label_dictionary	Dictionary
+label_extension_repos	Extension repos
+label_novel_categories	Novel categories
+label_novel_extensions	Novel Extensions
+label_novels	Novels
+label_player_settings	Player settings
+label_show_seasons	Show seasons
+label_video_url	Video URL
+last_seen_episode	Last seen episode
+local_anime_source	Local anime
+local_anime_source_help_guide	Local anime source guide
+manga_categories	Manga categories
+media_route_menu_item	@string/mr_media_route_menu_item
+media_route_menu_title	EXTEND
+merged_episode_updates_error	Toggle episode updates error
+merged_toggle_download_episodes_error	Toggle download episodes error
+migrationListScreen.matchWithoutEpisodeToast	No episodes found, this entry cannot be used for migration
+migrationListScreen.matchWithoutSeasonToast	No seasons found, this entry cannot be used for migration
+migrationListScreen.mismatchedFetchType	Mismatched fetch type
+missing_items	Missing %1$d item
+model_check_updates	Check for model updates
+model_delete_selected	Delete selected models
+model_delete_selected_summary	%1$d selected
+model_deleted	Selected models deleted
+model_latest_known	Latest known release: v%1$s
+model_none_installed	Nothing selected is installed
+model_ocr_lens	On-device OCR (Lens)
+model_ocr_lens_version	On-device OCR (Lens) — v%1$s
+model_ocr_paddle	Paddle OCR
+model_ocr_paddle_version	Paddle OCR — v%1$s
+model_panel_detection	Panel detection
+model_panel_installed	Panel detection — installed
+model_selection	Models
+model_up_to_date	Models are up to date
+model_update_available	Model update available: v%1$s
+model_update_notification_channel	Model updates
+model_update_notification_text	Update %1$s over Wi-Fi.
+model_update_notification_title	Model updates available
+model_update_selected	Re-download selected models
+move_to_position	Move to Position
+mpv_media_title	MPV Media
+no_app_for_external_download	No app available to download this episode externally
+no_available_videos	No available videos
+no_episode_loaded	No episode loaded
+no_episodes_error	No episodes found
+no_hosters	No hosters
+no_next_episode	No next episode
+no_prev_episode	No previous episode
+no_seasons_error	No seasons found
+non_library_watched_settings	All watched entries
+not_interesting	Not interesting
+notification_background_update_failed	Failed to update background
+notification_episodes_generic	%1$d new episode
+notification_episodes_multiple	Episodes %1$s
+notification_episodes_multiple_and_more	Episodes %1$s and 1 more
+notification_episodes_single	Episode %1$s
+notification_episodes_single_and_more	Episode %1$s and %2$d more
+notification_new_episodes	New episodes found
+novel_missing_file	Missing File — tap to import
+novel_servers	Novel Servers
+novel_singular	Novel
+numeric_chooser_value_too_big	Value too big (max: %1$d)
+numeric_chooser_value_too_small	Value too small (min: %1$d)
+ocr_not_ready	OCR not ready
+ocr_notification_complete	OCR complete
+ocr_notification_failed	OCR needs attention
+ocr_notification_page	Page %1$d of %2$d
+ocr_notification_queue	%1$d processing · %2$d queued · %3$d waiting for download · %4$d failed
+ocr_notification_result	%1$d completed · %2$d failed · %3$d waiting for download
+ocr_notification_status_channel	OCR results
+ocr_paused	OCR paused
+ocr_processing	OCR processing
+ocr_ready	OCR ready
+ocr_region_failed	Could not rescan the area. Previous OCR was kept.
+ocr_region_scanning	Recognizing selected area…
+ocr_region_select	Drag over the area to rescan
+ocr_region_unavailable	Select an area inside a loaded page
+ocr_retry_failed	Retry failed
+ocr_running	OCR running…
+ocr_source_google_lens	Google Lens
+ocr_source_mokuro	Mokuro
+ocr_source_paddle	Paddle OCR
+ocr_waiting_download	Waiting for download…
+only_show_updated_entries_episodes	Only show entries with new episodes
+outline_brand_family_24	outline_brand_family_24
+plan_to_watch	Plan to watch
+playback_speed	Playback Speed
+player_add_subtitle_file	Add subtitle file
+player_aniskip_dontskip	Don\'t skip
+player_aniskip_dontskip_toast	Skipping %1$s in %2$d seconds
+player_aniskip_skip	%1$s skipped
+player_aspect_ratio	Aspect ratio
+player_audio	Audio
+player_audio_delay	Audio Delay
+player_chapter_type_ending	Ending
+player_chapter_type_mixedop	Mixed opening
+player_chapter_type_opening	Opening
+player_chapter_type_recap	Recap
+player_episodes	Episodes
+player_fade_out	player_fade_out
+player_generic_unit_ms	ms
+player_hoster_failed	Failed to load videos
+player_hoster_tap_to_load	Tap to load videos
+player_hwdec_mode	HW Decoder
+player_intro_skipped	%1$s skipped
+player_lock	Lock
+player_playback_speed	Playback Speed
+player_playback_speed_with_value	Playback Speed (%1$sx)
+player_pref_subtitle_black_bars	Render on black bars
+player_pref_subtitle_black_bars_summary	Display subtitles on black bars when available
+player_pref_subtitle_system_fonts	Include system fonts
+player_pref_switch_on_failure	Switch video on loading failure
+player_reset_all	Reset All
+player_reset_color	Reset %1$s
+player_rotate	Rotate
+player_screenshot	Screenshot
+player_sheets_add_ext_audio	Add external audio
+player_sheets_add_ext_sub	Add external subtitles
+player_sheets_audio_delay_title	Audio Delay
+player_sheets_custom_buttons_title	Custom buttons
+player_sheets_deband_grain	Grain
+player_sheets_deband_iterations	Iterations
+player_sheets_deband_range	Range
+player_sheets_deband_threshold	Threshold
+player_sheets_deband_title	Deband
+player_sheets_filters_Saturation	Saturation
+player_sheets_filters_brightness	Brightness
+player_sheets_filters_contrast	Contrast
+player_sheets_filters_gamma	Gamma
+player_sheets_filters_hue	Hue
+player_sheets_filters_title	Video Filters
+player_sheets_filters_warning	Filters may affect performance
+player_sheets_qualities_title	Qualities
+player_sheets_speed_make_default	Make default speed
+player_sheets_speed_slider_label	Speed
+player_sheets_stats_page_chip	Page %d
+player_sheets_sub_colors_title	Colors
+player_sheets_sub_delay_audio_sound_heard	I hear the sound at
+player_sheets_sub_delay_delay	Delay
+player_sheets_sub_delay_sound_sound_spotted	I spotted the sound at
+player_sheets_sub_delay_speed	Speed
+player_sheets_sub_delay_subtitle_text_seen	I see the text at
+player_sheets_sub_delay_subtitle_type_primary	Primary
+player_sheets_sub_delay_subtitle_type_secondary	Secondary
+player_sheets_sub_delay_subtitle_voice_heard	I hear the voice at
+player_sheets_sub_delay_title	Subtitle Delay
+player_sheets_sub_misc_title	Miscellaneous
+player_sheets_sub_override_ass	Override ASS styles
+player_sheets_sub_position	Position
+player_sheets_sub_scale	Scale
+player_sheets_sub_typography_ass_override	ASS override
+player_sheets_sub_typography_border_size	Border size
+player_sheets_sub_typography_border_style	Border style
+player_sheets_sub_typography_font	Font
+player_sheets_sub_typography_font_size	Font size
+player_sheets_sub_typography_title	Typography
+player_sheets_subtitles_ass_force	Force
+player_sheets_subtitles_ass_no	No
+player_sheets_subtitles_ass_scale	Scale
+player_sheets_subtitles_ass_strip	Strip
+player_sheets_subtitles_ass_yes	Yes
+player_sheets_subtitles_border_style_background_box	Background box
+player_sheets_subtitles_border_style_opaque_box	Opaque box
+player_sheets_subtitles_border_style_outline_and_shadow	Outline and shadow
+player_sheets_subtitles_color_background	Background
+player_sheets_subtitles_color_border	Border
+player_sheets_subtitles_color_text	Text
+player_sheets_subtitles_footer_secondary_sid_no_styles	Secondary subtitles will have no ASS/SSA Styling.
+player_sheets_subtitles_settings_title	Subtitle Settings
+player_sheets_subtitles_shadow_offset	Shadow offset
+player_sheets_track_delay	Delay
+player_sheets_track_lang_wo_title	%1$d. %2$s
+player_sheets_track_palette	Palette
+player_sheets_track_regex	Regex
+player_sheets_track_title_w_lang	%1$d. %2$s (%3$s)
+player_sheets_track_title_wo_lang	%1$d. %2$s
+player_skip_action	Skip %1$s
+player_sleep_timer	Sleep Timer
+player_sleep_timer_active	Sleep Timer (%1$s)
+player_sleep_timer_minutes	%1$d minutes
+player_speed	%1$.2fx
+player_subtitle_border_size	Border Size
+player_subtitle_color_bg	BG
+player_subtitle_color_border	Border
+player_subtitle_color_text	Text
+player_subtitle_colors	Colors
+player_subtitle_delay	Subtitle Delay
+player_subtitle_font_size	Font Size
+player_subtitle_position	Position
+player_subtitle_regex_custom	Custom regex
+player_subtitle_regex_custom_pattern	Custom regex
+player_subtitle_regex_invalid	Invalid regex
+player_subtitle_regex_merge_multiline	Merge multiline subtitles
+player_subtitle_regex_remove_bracketed_text	Remove [bracketed text]
+player_subtitle_regex_remove_curly_braced_text	Remove {curly-braced text}
+player_subtitle_regex_remove_music_symbols	Remove music symbols (♪♫#〜〜)
+player_subtitle_regex_remove_speaker_names	Remove speaker names in parentheses
+player_subtitle_regex_remove_uppercase_lines	Remove all-uppercase lines
+player_subtitle_regex_title	Subtitle regex
+player_subtitle_scale	Scale
+player_subtitle_settings	Subtitle Settings
+player_subtitle_shadow_offset	Shadow Offset
+player_subtitle_typography	Typography
+player_subtitles	Subtitles
+player_subtitles_hidden	Subtitles hidden
+player_subtitles_shown	Subtitles shown
+player_tracks	Tracks
+player_unlock	Unlock
+player_video_filters	Video Filters
+position	Position
+pref_always_use_external_player	Always use external player
+pref_anime_info	Anime Info
+pref_anime_library_update_categories_details	Anime in excluded categories will not be updated even if they are also in included categories.
+pref_anime_library_update_smart_update	Anime smart update
+pref_anki	Dictionary Profiles
+pref_anki_check_duplicates	Check for duplicates
+pref_anki_deck	Default deck
+pref_anki_default_tags	Default tags
+pref_anki_duplicate_action	When duplicate found
+pref_anki_duplicate_overwrite	Update existing
+pref_anki_duplicate_prevent	Don\'t add
+pref_anki_duplicate_scope	Duplicate scope
+pref_anki_enable	Enable Anki integration
+pref_anki_field_mapping	Field mapping
+pref_anki_model	Note type
+pref_anki_permission_denied	AnkiDroid permission denied
+pref_anki_profile_active	Active profile: %s
+pref_anki_profile_cannot_delete_last	Cannot delete the last profile.
+pref_anki_profile_clone	Clone from active
+pref_anki_profile_delete	Delete profile
+pref_anki_profile_delete_confirm	Delete \"%s\"? This cannot be undone.
+pref_anki_profile_name_hint	Profile name
+pref_anki_profile_new	New profile
+pref_anki_profile_rename	Rename profile
+pref_anki_profiles	Dictionary profiles
+pref_anki_screenshot_animated_scene	Animated Scene
+pref_anki_select_deck	Select deck
+pref_anki_select_model	Select note type
+pref_anki_settings_summary	Deck, fields, export
+pref_anki_summary	Configure dictionaries, language, and Anki integration
+pref_app_icon	App icon
+pref_app_icon_toast	App icon changed to %s
+pref_audio_channels	Audio channels
+pref_audio_pitch_correction_summary	Prevents the audio from becoming high-pitched at faster speeds and low-pitched at slower speeds
+pref_audio_pitch_correction_title	Enable audio pitch correction
+pref_auto_update_anime_on_mark_seen	Update progress when marked as watched
+pref_auto_update_anime_sync	Update progress after watching
+pref_bottom_nav_no_browse	Move Browse to More
+pref_bottom_nav_no_history	Move History to More
+pref_bottom_nav_no_updates	Move Updates to More
+pref_cast_server_port	Cast Server Port
+pref_category_anki	Anki
+pref_category_cache_storage	Cache Storage
+pref_category_cast	Cast Settings
+pref_category_castserver	Cast Server
+pref_category_controls	Controls
+pref_category_delete_episodes	Delete episodes
+pref_category_dictionaries_and_audio	Dictionaries and audio
+pref_category_dictionary	Dictionary
+pref_category_dictionary_popup	Popup dictionary
+pref_category_double_tap	Double tap
+pref_category_engine	Engine
+pref_category_external_downloader	External downloader
+pref_category_external_player	External player
+pref_category_intro_skip	Intro skip
+pref_category_media_controls	Media controls
+pref_category_ocr	OCR
+pref_category_ocr_boxes	OCR Boxes
+pref_category_pip	Picture-in-Picture
+pref_category_player	Player
+pref_category_player_aniskip_info	AniSkip info
+pref_category_player_orientation	Orientation
+pref_category_player_seeking	Seeking
+pref_category_player_sliders	Sliders
+pref_category_screen_overlay	Screen Overlay
+pref_category_torrentserver	TorrentServer Preferences
+pref_center_double_tap	Double tap (center)
+pref_clear_anime_database	Clear anime database
+pref_clear_anime_database_summary	Delete anime entries that are not saved in your library
+pref_clear_novel_chapter_cache	Clear novel chapter cache
+pref_clear_novel_database	Clear novel database
+pref_clear_novel_database_summary	Delete novel entries that are not saved in your library
+pref_consolidated_library	Consolidated library
+pref_consolidated_library_summary	Combine manga, anime, and novels into a single library tab with a mode selector
+pref_controls_allow_gestures_in_panels	Allow gestures in panels
+pref_controls_display_volume_percentage	Show volume percentage
+pref_controls_show_chapter_indicator	Show chapter indicator
+pref_controls_show_chapter_indicator_info	Show current chapter info
+pref_controls_show_loading	Show loading indicator
+pref_controls_swap_vol_brightness	Swap volume and brightness
+pref_create_folder_per_anime	Save screenshots into separate folders
+pref_debanding_title	Debanding
+pref_default_intro_length	Default skip intro length
+pref_dict_active_ocr_bg_opacity	Active background opacity
+pref_dict_active_ocr_text_opacity	Active text opacity
+pref_dict_active_profile	Active profile
+pref_dict_auto_kana_conversion	Auto kana input
+pref_dict_auto_kana_conversion_summary	Convert romaji to kana while typing (like Yomitan)
+pref_dict_custom_css	Custom CSS
+pref_dict_custom_css_summary	Inject custom CSS into the dictionary renderer
+pref_dict_delete	Delete dictionary
+pref_dict_enabled_in_profile	Enabled in this profile
+pref_dict_frequency_display	Frequency display
+pref_dict_group_pitches	Group pitches
+pref_dict_group_pitches_summary	Deduplicate and merge pitches across dictionaries
+pref_dict_group_terms	Group dictionary definitions
+pref_dict_group_terms_summary	Show multiple dictionary definitions under one headword
+pref_dict_imported_list	Imported dictionaries
+pref_dict_importing	Importing…
+pref_dict_invalid_height	Enter a number between 100 and 1080
+pref_dict_invalid_scale	Enter a number between 50 and 200
+pref_dict_invalid_width	Enter a number between 200 and 1920
+pref_dict_korean_parser	Korean parser
+pref_dict_korean_parser_analyzer	Morpheme analyzer
+pref_dict_korean_parser_legacy	Legacy parser
+pref_dict_korean_parser_summary	Choose the parser used for Korean dictionary lookups
+pref_dict_layout	Layout
+pref_dict_none_imported	No dictionaries imported yet
+pref_dict_ocr_box_opacity	Passive textbox opacity
+pref_dict_ocr_box_scale	OCR box scale
+pref_dict_ocr_button_alpha	OCR capture button opacity
+pref_dict_ocr_button_color	OCR capture button color
+pref_dict_ocr_button_size	OCR capture button size
+pref_dict_order	Dictionary order
+pref_dict_pitch_accent_display	Pitch Accent Display
+pref_dict_pitch_diagram	Graph
+pref_dict_pitch_number	012
+pref_dict_pitch_text	Text
+pref_dict_popup_font_size	Popup font size
+pref_dict_popup_height	Popup height
+pref_dict_popup_size	Popup size
+pref_dict_popup_swipe_threshold	Swipe-to-dismiss distance
+pref_dict_popup_swipe_to_dismiss	Swipe to dismiss popup
+pref_dict_popup_width	Popup width
+pref_dict_profile_auto	Auto (use cascading default)
+pref_dict_profile_override_manga	Set dictionary profile
+pref_dict_profile_override_source	Dictionary profile for this source
+pref_dict_recursive_mode	Recursive lookup navigation style
+pref_dict_recursive_mode_back	Stacked
+pref_dict_recursive_mode_popup	Popup
+pref_dict_show_frequency_average	Average freq
+pref_dict_show_frequency_harmonic	Show frequency as harmonic rank
+pref_dict_show_frequency_harmonic_summary	Display harmonic rank instead of full frequency list in dictionary popup
+pref_dict_show_navigation_buttons	Show navigation buttons
+pref_dict_show_navigation_buttons_summary	Show floating up/down arrows in the dictionary popup
+pref_dict_theme	Dictionary theme
+pref_dict_theme_pure_black	Pure black
+pref_dict_typography	Typography
+pref_dictionary_export	Export dictionaries
+pref_dictionary_export_error	Dictionary export failed
+pref_dictionary_export_success	Dictionaries exported
+pref_dictionary_import	Import dictionaries
+pref_dictionary_import_error	Dictionary import failed
+pref_dictionary_import_success	Dictionaries imported
+pref_dictionary_popup_summary	Layout, theme, content
+pref_dictionary_progress	Working…
+pref_dictionary_summary	Import, manage Yomitan dictionaries
+pref_disable_aniskip_chapter	Disable AniSkip on chapters
+pref_disable_long_press_screenshot	Disable long-press screenshot
+pref_discord_show_progress_summary_episode	Display the current episode progress
+pref_discord_show_timestamp_summary_episode	Display elapsed/remaining time
+pref_display_images_description_anime	Render images in anime descriptions
+pref_double_tap_info	When a tap gesture is set to "Custom", it can be bound through input.conf. The key codes are 0x10001 for left, 0x10002 for center, and 0x10003 for right.
+pref_downloaded_models	Downloaded models
+pref_enable_aniskip	Enable AniSkip
+pref_enable_auto_skip_ani_skip	Auto-skip intros
+pref_enable_cast	Enable or disable Cast
+pref_enable_flare_solverr	Enable FlareSolverr
+pref_enable_flare_solverr_summary	Use FlareSolverr to bypass Cloudflare\'s anti-bot protection
+pref_enable_intro_skip	Enable skip intro
+pref_enable_netflix_style_aniskip	Netflix-style skip button
+pref_enable_pip	Enable PiP
+pref_external_downloader_selection	External downloader
+pref_external_player_preference	External player
+pref_flare_solverr_url	FlareSolverr URL
+pref_flare_solverr_url_summary	URL of the FlareSolverr instance to use for example http://192.168.1.202:8191/v1
+pref_flash_delay	Flash delay
+pref_flash_on_scroll	Flash on scroll/movement
+pref_gpu_next_subtitle	Use GPU-next renderer
+pref_gpu_next_title	GPU Next
+pref_hide_missing_episode_indicators	Hide missing episode indicators
+pref_hosters	Hosters
+pref_hosters_show_empty	Show empty hosters
+pref_hosters_show_failure	Show failed hosters
+pref_import_dictionary	Import dictionary
+pref_import_dictionary_failed	Dictionary import failed
+pref_import_dictionary_success	Dictionary imported (%1$d terms, %2$d metadata, %3$d media)
+pref_import_dictionary_summ	Import a Yomitan dictionary ZIP file
+pref_incognito_watching_mode_extension_summary	Pause watching history for extension
+pref_intro_length	Skip intro length
+pref_invalidate_episode_download_cache_summary	Force app to recheck downloaded episodes
+pref_left_double_tap	Double tap (left)
+pref_library_items_per_screen	Items per screen
+pref_library_season	Seasons
+pref_library_summary_episode	Categories, global update, episode swipe
+pref_library_update_show_tab_badge_episode	Show unseen count on Updates icon
+pref_library_update_show_tab_badge_unseen	Show unseen count on Updates icon
+pref_manga_library_update_categories_details	Manga in excluded categories will not be updated even if they are also in included categories.
+pref_mark_duplicate_seen_episode_seen	Mark duplicate seen episode as seen
+pref_mark_duplicate_seen_episode_seen_existing	After watching a episode
+pref_mark_duplicate_seen_episode_seen_new	After fetching new episode
+pref_media_info	When a media control is set to "Custom", it can be bound through input.conf. The key codes are 0x10004 for previous, 0x10005 for play/pause, and 0x10006 for nex
+pref_media_playpause	Play/Pause
+pref_mpv_conf	mpv.conf
+pref_mpv_input	input.conf
+pref_mpv_scripts	Scripts
+pref_mpv_scripts_summary	MPV Lua scripts
+pref_nav_section_more	More tab
+pref_nav_section_navbar	Navigation bar
+pref_nav_start_screen	Start screen
+pref_nav_up_to_n_entries	Up to %d entries
+pref_navigation_style	Navigation style
+pref_navigation_style_summary	Customize tab bar layout
+pref_not_download_fillermarked_items	Deny downloading of fillermarked episodes
+pref_ocr_auto_on_download	Auto-OCR on download
+pref_ocr_auto_on_download_summary	Automatically OCR chapters when downloading
+pref_ocr_cache_size	OCR cache size
+pref_ocr_clear_cache	Clear OCR cache
+pref_ocr_summary	Engine, appearance, cache
+pref_ocr_two_finger_gesture	OCR two-finger gesture
+pref_ocr_two_finger_gesture_summary	Allow two-finger tap to toggle OCR overlay
+pref_ocr_two_finger_region	Crop and re-OCR
+pref_ocr_two_finger_region_summary	Two-finger tap to select and rescan an area
+pref_panel_navigation	Panel-by-panel navigation
+pref_panel_opacity	Panel opacity
+pref_pip_episode_toasts	PiP episode toasts
+pref_pip_on_exit	PiP on exit
+pref_pip_replace_with_previous	Replace previous with PiP
+pref_player_advanced_summary	Advanced player settings
+pref_player_always_external	Always use external player
+pref_player_aniskip	AniSkip
+pref_player_aniskip_enabled	Enable AniSkip
+pref_player_aniskip_summary	Community-powered intro/outro skip
+pref_player_audio	Audio
+pref_player_audio_auto_safe	Auto (safe)
+pref_player_audio_boost_cap	Volume boost cap
+pref_player_audio_channels	Audio channels
+pref_player_audio_channels_auto_safe	Auto-safe
+pref_player_audio_channels_mono	Mono
+pref_player_audio_channels_reverse_stereo	Reverse stereo
+pref_player_audio_channels_stereo	Stereo
+pref_player_audio_lang	Preferred audio language
+pref_player_audio_lang_info	Audio language(s) to be selected by default on a video with multiple audio tracks. Two- or three-letter language codes work. Multiple values can be delimited by
+pref_player_audio_mono	Mono
+pref_player_audio_pitch_correction	Pitch correction
+pref_player_audio_pitch_correction_summary	Correct pitch when changing speed
+pref_player_audio_reverse_stereo	Reverse stereo
+pref_player_audio_stereo	Stereo
+pref_player_audio_summary	Audio settings
+pref_player_auto_skip_intro	Auto-skip intros
+pref_player_autoplay	Autoplay next episode
+pref_player_center_double_tap	Double tap (center)
+pref_player_controls_hide_delay	Controls hide delay
+pref_player_custom_button	Custom button
+pref_player_custom_button_add	Add custom button
+pref_player_custom_button_content_long	Long content
+pref_player_custom_button_delete_confirm	Delete custom button?
+pref_player_custom_button_empty	No custom buttons
+pref_player_custom_button_error_exists	Button already exists
+pref_player_custom_button_guide	Custom button guide
+pref_player_custom_button_header	Custom Button
+pref_player_custom_button_optional	Optional
+pref_player_custom_button_startup	Run on startup
+pref_player_custom_button_summary	Custom button settings
+pref_player_debanding	Video debanding
+pref_player_debanding_cpu	CPU
+pref_player_debanding_gpu	GPU
+pref_player_decoder	Decoder
+pref_player_decoder_summary	Select video decoder
+pref_player_double_tap_seek	Double tap seek length
+pref_player_editor	Editor
+pref_player_editor_script	Script
+pref_player_editor_script_opts	Script options
+pref_player_editor_summary	Script editor settings
+pref_player_enable_pip	Enable PiP
+pref_player_external	External player
+pref_player_external_app	External player app
+pref_player_gesture_h_seek	Horizontal seek gesture
+pref_player_gesture_h_seek_summary	Swipe left or right to rewind or fast-forward
+pref_player_gesture_play_pause	Play/Pause
+pref_player_gesture_seek	Seek
+pref_player_gesture_subtitle_swipe	Subtitle swipe controls
+pref_player_gesture_subtitle_swipe_summary	Swipe left/right between subtitles, up to hide, and down to show. Replaces seek and volume/brightness swipes.
+pref_player_gesture_vol_bright	Volume/brightness swipe
+pref_player_gesture_vol_bright_summary	Swipe on sides to adjust volume and brightness
+pref_player_gestures	Gestures
+pref_player_gestures_summary	Gesture settings
+pref_player_gpu_next	GPU Next
+pref_player_gpu_next_summary	Use next-generation GPU renderer
+pref_player_hide_controls	Hide controls
+pref_player_hw_decoding	Hardware decoding
+pref_player_hw_decoding_summary	Use hardware decoder when available
+pref_player_internal	Player
+pref_player_internal_summary	Choose internal player engine
+pref_player_left_double_tap	Double tap (left)
+pref_player_mpv_conf	mpv.conf
+pref_player_mpv_conf_summary	Custom mpv configuration
+pref_player_mpv_input	input.conf
+pref_player_mpv_input_summary	Custom mpv input bindings
+pref_player_netflix_skip	Netflix-style skip button
+pref_player_no_items	No items
+pref_player_orientation	Default orientation
+pref_player_pip	Picture-in-Picture
+pref_player_pip_on_exit	PiP on exit
+pref_player_pip_on_exit_summary	Enter PiP when navigating away
+pref_player_pitch_correction	Pitch correction
+pref_player_pitch_correction_summary	Correct pitch when changing playback speed
+pref_player_preferred_audio_lang	Preferred audio languages
+pref_player_preferred_sub_lang	Preferred subtitle languages
+pref_player_preserve_position	Preserve watching position
+pref_player_preserve_position_summary	Resume from last position on reopen
+pref_player_progress_interval	Progress save interval
+pref_player_progress_threshold	Progress threshold
+pref_player_reduce_motion	Reduce motion
+pref_player_reduce_motion_summary	Reduce animations in the player
+pref_player_remember_brightness	Remember brightness
+pref_player_remember_brightness_summary	Restore brightness when reopening player
+pref_player_remember_volume	Remember volume
+pref_player_remember_volume_summary	Restore volume when reopening player
+pref_player_right_double_tap	Double tap (right)
+pref_player_screenshot_subs	Include subtitles in screenshots
+pref_player_show_chapter	Show current chapter
+pref_player_show_loading	Show loading indicator
+pref_player_skip_intro	Enable skip intro button
+pref_player_skip_length	Seek skip length
+pref_player_skip_wait_time	Skip button display time
+pref_player_smooth_seek	Enable precise seeking
+pref_player_smooth_seek_summary	When enabled, seeking will not focus on keyframes, leading to slower but precise seeking
+pref_player_subtitle	Subtitles
+pref_player_subtitle_bg_box	Background box
+pref_player_subtitle_blacklist	Blacklist
+pref_player_subtitle_blacklist_info	Blacklist for subtitles. If a blacklist is defined, all subtitles that contain a blacklisted word will be filtered out. Multiple values can be delimited by a co
+pref_player_subtitle_bold	Bold
+pref_player_subtitle_border_size	Border size
+pref_player_subtitle_border_style	Border style
+pref_player_subtitle_font	Font
+pref_player_subtitle_font_size	Font size
+pref_player_subtitle_invalid_lang	Invalid code: \"%s\"
+pref_player_subtitle_italic	Italic
+pref_player_subtitle_lang	Preferred languages
+pref_player_subtitle_lang_info	Subtitle language(s) to be selected by default on a video with multiple subtitles. Two- or three-letter language codes work. Multiple values can be delimited by
+pref_player_subtitle_opaque_box	Opaque box
+pref_player_subtitle_outline	Outline and shadow
+pref_player_subtitle_override_ass	Override ASS styles
+pref_player_subtitle_override_ass_summary	Apply custom styles to ASS subtitles
+pref_player_subtitle_position	Subtitle position
+pref_player_subtitle_shadow_offset	Shadow offset
+pref_player_subtitle_summary	Preferred languages, whitelist, blacklist
+pref_player_subtitle_whitelist	Whitelist
+pref_player_subtitle_whitelist_info	Whitelist for subtitles. If a whitelist is defined, the first subtitle that contains a whitelisted word will be used. Multiple values can be delimited by a comm
+pref_player_subtitles	Subtitles
+pref_player_summary	Orientation, gestures, subtitles, audio
+pref_player_swap_vol_bright	Swap volume and brightness
+pref_player_swap_vol_bright_summary	Volume on left, brightness on right
+pref_player_time_to_disappear	Controls hide delay
+pref_player_time_to_disappear_summary	Time before controls are hidden
+pref_player_volume_boost_cap	Volume boost cap
+pref_player_yuv420p	Use YUV420P
+pref_player_yuv420p_summary	Force YUV420P pixel format
+pref_preserve_watching_position	Preserve watching position
+pref_progress_100	100%%
+pref_progress_70	70%%
+pref_progress_75	75%%
+pref_progress_80	80%%
+pref_progress_85	85%%
+pref_progress_90	90%%
+pref_progress_95	95%%
+pref_progress_mark_as_seen	Mark as seen progress
+pref_reader_startup_delay	Startup delay
+pref_reduce_motion	Reduce motion
+pref_remember_brightness	Remember brightness
+pref_remember_volume	Remember volume
+pref_remove_after_marked_as_seen	After manually marked as seen
+pref_remove_after_watching	After watching automatically delete
+pref_remove_bookmarked_episodes	Allow deleting bookmarked episodes
+pref_reset_player_flags	Reset per-series player settings
+pref_reset_player_flags_error	Couldn\'t reset player settings
+pref_reset_player_flags_success	All player settings reset
+pref_reset_player_flags_summary	Resets skip intro length & next episode airing of all series
+pref_reset_torrent_trackers_string	Reset default torrent trackers string
+pref_right_double_tap	Double tap (right)
+pref_search_history	Search history
+pref_search_history_summary	Remember recent searches across screens
+pref_settings_section_learning	Learning
+pref_settings_section_media	Media
+pref_show_downloaded_episode_file_size	Show downloaded episode file size
+pref_show_next_episode_airing_time	Show next episode airing time
+pref_show_ocr_outlines	Show OCR outlines
+pref_show_seekbar	Show seekbar when seeking
+pref_show_system_bar	Show system bar
+pref_single_tap_to_pause	Single tap to pause
+pref_skip_10	Skip 10s
+pref_skip_20	Skip 20s
+pref_skip_3	Skip 3s
+pref_skip_30	Skip 30s
+pref_skip_5	Skip 5s
+pref_skip_dupe_episodes	Skip duplicate episodes
+pref_skip_filtered_episodes	Skip filtered episodes
+pref_skip_length	Double tap to skip length
+pref_skip_seen_episodes	Skip episodes marked seen
+pref_storage_location_info_anime	Used for automatic backups, episode downloads, and local source.
+pref_test_flare_solverr_and_update_user_agent	Test FlareSolverr and update user agent
+pref_test_flare_solverr_and_update_user_agent_summary	Test FlareSolverr to update the user agent. Only required once; then toggle as needed.
+pref_top_align_cover_summary_anime	Show the cover aligned to the top alongside anime info
+pref_torrent_trackers	Torrent Trackers
+pref_torrentserver_port	TorrentServer Port
+pref_try_hw	Try hardware decoding
+pref_update_library_anime_titles	Update library anime titles to match source
+pref_update_library_anime_titles_summary	Warning: if an anime is renamed, it will be removed from the download queue (if present).
+pref_update_only_completely_seen	Skip anime with unseen episodes
+pref_update_seasons_update	Update seasons during library update
+pref_use_external_downloader	Download with an external app
+pref_use_yuv420p_subtitle	Force YUV420P for subtitles
+pref_use_yuv420p_title	Force YUV420P
+pref_waiting_time_aniskip	Skip button display time
+pref_waiting_time_aniskip_10	10 seconds
+pref_waiting_time_aniskip_5	5 seconds
+pref_waiting_time_aniskip_6	6 seconds
+pref_waiting_time_aniskip_7	7 seconds
+pref_waiting_time_aniskip_8	8 seconds
+pref_waiting_time_aniskip_9	9 seconds
+queue	Queue
+recent_anime_time	Ep. %1$s - %2$s
+related_anime	Related anime
+remove_from_queue_confirmation	Remove from Queue?
+rewatching	Rewatching
+rotation_reverse_landscape	Reverse landscape
+rotation_sensor_landscape	Sensor landscape
+rotation_sensor_portrait	Sensor portrait
+rotation_video	Follow video
+screen_lookup_capture_button	Capture screen for lookup
+screen_lookup_capture_denied	Screen capture permission was not granted.
+screen_lookup_capture_failed	Could not capture the screen.
+screen_lookup_enable_summary	Chimahon needs permission to show a small capture button over other apps. Android will ask for screen capture permission after that.
+screen_lookup_enable_title	Enable screen lookup
+screen_lookup_finding_text	Finding text…
+screen_lookup_more_summary	OCR text from other apps with a floating capture button
+screen_lookup_no_text	No text found
+screen_lookup_notification_text	Tap the floating button to OCR the current screen.
+screen_lookup_notification_title	Screen lookup is on
+screen_lookup_overlay_required	Overlay permission is required for screen lookup.
+screen_lookup_tap_text	Tap highlighted text to look it up
+screen_lookup_title	Screen lookup
+screen_lookup_unavailable	Screen capture is not available on this device.
+screenshot_show_subs	Include Subtitles
+season_settings_updated	Updated default season settings
+second_to_last_episode	Second to last seen episode
+seconds	%d second
+select_hoster_from_empty_list	Select hoster
+select_position	Select Position
+server_local_notification_casting	The local server is running. Tap to stop it.
+server_local_notification_channel_description	Local server notification channel
+share_screenshot_info	Screenshot: %1$s
+sharp_shadow_24	sharp_shadow_24
+show_episode_number	Show episode number
+show_episodes_titles_subtitle	Show the title of the episode you are watching
+show_episodes_titles_title	Show Episodes Titles
+single_action_custom	Custom
+single_action_playpause	Play/Pause
+single_action_seek	Seek
+single_action_switch	Change episode
+skipped_reason_not_caught_up_episode	Skipped because there are unseen episodes
+skipped_reason_not_started_episode	Skipped because no episodes are seen
+slide_in_up	slide_in_up
+slide_out_down	slide_out_down
+slide_out_up	slide_out_up
+sort_by_episode_number	Episode number
+sort_by_season_number	Season number
+star_me	Star Me
+stats_all_profiles	All profiles
+stats_all_time	All time
+stats_avg_speed	Avg speed
+stats_characters_read	Characters read
+stats_last_month	Last month
+stats_last_week	Last week
+stats_last_year	Last year
+stats_novels	Novels
+stats_profile_filter_label	Profile: %1$s
+stats_reading_time	Reading time
+stats_streak	Reading streak
+sync_on_episode_open	Sync on Episode Open
+sync_on_episode_seen	Sync on Episode Seen
+sync_progress_from_trackers_up_to_episode	Sync progress from Trackers up to episode %d
+sync_ttsu	Sync TTSU
+tag	Tags
+third_to_last_episode	Third to last seen episode
+timer_cancel_timer	Cancel current timer
+timer_picker_enter_timer	Enter duration
+timer_picker_pick_time	Pick duration
+timer_remaining	Time remaining
+timer_title	Timer
+title_cast_quality	Choose Cast Quality/Provider
+toast_sleep_timer_ended	Sleep timer ended
+torrentserver_is_running	Torrent Server is running
+trackers_updated_summary_anime	Trackers updated
+tracking_info_anime	One-way sync to update the episode progress in external tracker services. Set up tracking for individual entries from their tracking button.
+unseen	Unseen
+use_most_episodes	Use source with the most episodes (slower)
+video_crop_screen	Crop screen
+video_stretch_screen	Stretch screen
+watching	Watching

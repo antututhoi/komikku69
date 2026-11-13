@@ -1,0 +1,1692 @@
+strings: app 1439 base 2119 | not in base 1226
+prefs: app 468 base 463 | not in base 460
+
+## PREF KEYS NOT IN 69
+_clock
+_init
+about
+about_app_translation
+about_discord
+about_github
+about_help
+access_token
+account
+account_email
+account_name
+adblock
+all_favourites_visible
+alt_titles
+amoled_navbar
+amoled_theme
+anilist
+anilist_list_entry_id
+anilist_local_manga_id
+anilist_media_id
+anilist_user_id
+app_id
+app_locale
+app_password
+app_password_num
+app_version
+appearance
+apply_network_settings
+as_boost
+as_fab
+as_hold
+as_speed
+auth
+author
+authors
+auto_plugins
+backup
+backup_periodic
+backup_periodic_count
+backup_periodic_freq
+backup_periodic_last
+backup_periodic_output
+backup_periodic_tg
+backup_periodic_tg_bot_token
+backup_periodic_tg_chat_id
+backup_periodic_tg_enabled
+backup_periodic_tg_open
+backup_periodic_tg_test
+backup_periodic_trim
+body
+branch
+browser_download_url
+browser_source_id
+browser_source_name
+browser_source_url
+canonicalTitle
+cat_ai_translation
+cf_autosolve
+cf_book
+cf_brightness
+cf_contrast
+cf_grayscale
+cf_inverted
+changelog
+chapters
+chapters_clear
+chapters_clear_auto
+chapters_reverse_override
+checked_opt
+color_theme
+community
+community_attribution
+community_delete
+community_enabled
+community_export
+community_identity
+community_nickname
+community_notifications
+community_recovery
+community_telemetry
+content_rating
+content_sections
+cookies_
+cookies_clear
+cooldown_
+cover
+cover_entry
+cover_large
+data
+debug
+debug.leak_canary
+default_browse_sort
+description
+description_collapse
+description_html
+details_last_tab
+details_tab
+device_id
+disabled_builtin_parsers
+discord_account_name
+discord_code_verifier
+discord_last_code
+discord_oauth_browser
+discord_oauth_signin
+discord_refresh_token
+discord_rpc
+discord_rpc_invisible
+discord_rpc_oauth
+discord_rpc_skip_nsfw
+discord_rpc_status
+discord_scopes
+discord_token
+doh
+domain
+donation_btc
+donation_eth
+donation_sol
+donation_ton
+downloads
+downloads_format
+downloads_metered_network
+draft
+drive_authorize
+drive_content
+drive_disconnect
+drive_interval
+drive_sync_now
+drive_sync_on_start
+drive_wifi_only
+dual_page
+dynamic_shortcuts
+eink_flash
+eink_flash_color
+eink_flash_duration
+eink_flash_every
+enable
+enhanced_colors
+entries
+error
+exclude
+exit_confirm
+fav_order
+favorites_last_category
+feed_header
+file
+file_id
+filter
+first_launch
+flaresolverr_enabled
+flaresolverr_timeout
+flaresolverr_url
+grid_size
+grid_size_pages
+grid_view_chapters
+handle_links
+hasNextChunk
+history_
+history_grouping
+history_order
+host
+html_url
+http_cache_clear
+id
+ignore_dose
+images_proxy
+images_proxy_2
+incognito
+incognito_nsfw
+index
+interval
+is_btab
+keep_android_open
+keep_android_open_shown
+key
+kind
+kitsu
+large
+last_auto_plugins
+last_error
+last_sync
+last_url_
+leak_canary
+line_spacing
+listEntryId
+list_checkpoint
+list_mode_2
+list_mode_favorites
+list_mode_history
+list_mode_suggestions
+list_section
+local_manga_dirs
+local_order
+local_storage
+logout
+main_fab
+mal
+manga_data_clear
+manga_list
+manga_list_badges
+mangabaka
+margin_horizontal
+margin_vertical
+mediaId
+medium
+merge
+mihon_extension_errors
+mihon_import
+mirror_switching
+nav_corner_radius
+nav_floating
+nav_labels
+nav_main
+nav_pinned
+network
+nickname
+no_auto_captcha
+no_captcha
+no_nsfw
+no_offline
+notes
+notification_cursor
+notifications_light
+notifications_settings
+notifications_sound
+notifications_vibrate
+novel_reverse_reading
+novel_sources_first
+nsfw
+nsfw_source
+num_chapters_read
+number
+open_browser
+page_turn_animation
+pages
+pages_cache_clear
+pages_dir
+pages_dir_ask
+pages_numbers
+pages_preload
+pages_tab
+paragraph_indent
+paragraph_spacing
+path
+pending_tracker_account
+pending_tracker_entry
+pending_tracker_revision
+pick_mode
+plugins_manager
+prefetch_content
+preview
+progress
+progress_indicators
+protect_app
+protect_app_bio
+proxy
+proxy_address
+proxy_auth
+proxy_bypass_enabled
+proxy_login
+proxy_password
+proxy_port
+proxy_test
+proxy_type_2
+public_url
+query
+quick_filter
+rate
+rating
+reader
+reader_animated_pages
+reader_animation2
+reader_background
+reader_bar
+reader_bar_preview
+reader_bar_transparent
+reader_bottom_bar_opacity
+reader_chapter_toast
+reader_controls
+reader_crop
+reader_double_cover_page
+reader_double_foldable
+reader_double_pages
+reader_double_pages_sensitivity_2
+reader_float_bar
+reader_fullscreen
+reader_mode
+reader_mode_detect
+reader_multitask
+reader_navigation_inverted
+reader_optimize
+reader_orientation
+reader_screen_on
+reader_tap_actions
+reader_taps_ltr
+reader_top_bar_opacity
+reader_upscale
+reader_upscale_passes
+reader_upscale_strength
+reader_upscale_threshold
+reader_volume_buttons
+reader_zoom_buttons
+reading_mode
+reading_status_transparent
+reading_time
+refresh_token
+registered_identity
+registered_identity_json
+related_manga
+remote_sources
+repair_broken_sources
+repos
+repository
+reset_dns_image_proxy
+restore
+reverseList
+reverse_chapters
+reverse_reading_order
+revision
+scanlator
+scoreFormat
+score_format
+screenshots_policy
+scroll_
+search_history_clear
+search_suggest_types
+secret
+selected
+selection
+server
+service
+services
+session_revision
+shikimori
+show_plugin_apk_handler
+show_reading_status
+siteUrl
+size
+slowdown
+slug
+sort
+sort_chapters_by_name_
+sort_order
+source
+source_replacement_completed_ids
+source_replacement_count
+source_replacement_pending_ids
+source_replacement_scope
+source_replacement_selected_source
+source_replacement_skipped_ids
+source_replacement_source_group
+source_replacement_stage
+sources
+sources_catalog
+sources_enabled_all
+sources_grid
+sources_hidden
+sources_hide_broken
+sources_order_2
+sources_sort_order
+sources_version
+spoiler
+ssl_bypass
+state
+stats_on
+status
+storage_usage
+suggestions
+suggestions_disabled_sources
+suggestions_exclude_nsfw
+suggestions_exclude_tags
+suggestions_notifications
+suggestions_wifi
+sync
+sync_backend
+sync_drive_category
+sync_on_start
+sync_server_category
+sync_settings
+synopsis
+tab
+tachiyomix.name
+tag
+tag_name
+tags
+target_id
+telemetry_pending
+telemetry_sent_at
+test_parser
+text
+theme_preset
+thumbs_cache_clear
+tips_closed
+title
+title_alt
+token
+track_categories
+track_sources
+track_warning
+tracker
+tracker_auto_match
+tracker_debug
+tracker_download
+tracker_enabled
+tracker_freq
+tracker_no_nsfw
+tracker_notifications
+tracker_notifications_info
+tracker_progress_refresh_done
+tracker_target_id
+tracker_title
+tracker_unstuck_migration_done
+tracker_wifi
+translate_api_key
+translate_clear_cache
+translate_concurrency
+translate_custom_headers
+translate_enabled
+translate_endpoint
+translate_model
+translate_overlay_bg
+translate_profiles_migrated
+translate_provider
+translate_rpm
+translate_source_lang
+translate_target_lang
+translate_trigger_mode
+updated_grouping
+updates_feed_clear
+updates_unstable
+uploadDate
+upload_account
+upload_base_version
+upload_created_at
+upload_file_id
+upload_file_name
+upload_hash
+upload_length
+upload_offset
+upload_path
+upload_session
+url
+use_android_installed_extensions
+user
+userAgent
+userId
+userPreferred
+user_agent
+userdata
+ver
+version
+volume
+webtoon_gaps
+webtoon_pull_gesture
+webtoon_zoom
+webtoon_zoom_out
+webview_clear
+wifi_only
+work_
+work_inspector
+zoom_mode
+
+## STRINGS NOT IN 69
+_import	Import
+_new	New
+_s_deleted_from_local_storage	\"%s\" deleted from local storage
+about_app_translation	Translation
+about_app_translation_summary	Translate this app
+access_denied_403	Access denied (403)
+account_already_exists	Account already exists
+adblock	Block ads in browser
+adblock_summary	Block advertisement in the built-in browser (beta)
+add_browser_source	Add Browser Source (Beta)
+add_extension_repo	Add extension repository
+add_lnreader_sources	Add novel sources (LNReader)
+add_mihon_sources_from_link	Add Mihon sources from link
+add_new_category	New category
+add_source_label	Add source
+add_to_favourites	Favorite this
+added_long_ago	Added long ago
+added_to_category_at	Added to category \"%1$s\": %2$s
+added_to_favourites	In favorites since
+adding_extension_repo	Adding repository…
+additional_action_required	Additional action is required
+address	Address
+ai_translation	AI translation
+ai_translation_beta	AI translation (Beta)
+ai_translation_summary	OCR + translate a page via your own LLM API (BYOK)
+all_favourites	All favorites
+all_languages	All languages
+all_sources_enabled	All sources are enabled
+all_time	All time
+allow_always	Allow always
+allow_once	Allow once
+allow_unstable_updates	Allow unstable updates
+allow_unstable_updates_summary	Receive notifications about unstable builds
+alternative_covers_progress	%1$d / %2$d sources
+alternatives	Alternatives
+amoled_navbar	Pure black bottom navigation
+amoled_navbar_summary	Force the bottom navigation bar to pure black on the AMOLED theme. Turn off to keep the default Material tint.
+anilist	AniList
+anilist_library	AniList
+anilist_refresh_error	Could not refresh AniList; showing saved library: %1$s
+anilist_score	Score: %1$.1f
+anilist_status_count	%1$s (%2$d)
+any	Any
+app_update_available	A new version of the app is available
+app_version	Version %s
+apply_network_settings	Apply DNS and image proxy settings
+apply_network_settings_summary	Save the selected options and reconnect idle network connections.
+appwidget_recent_description	Your recently read manga
+appwidget_shelf_description	Manga from your favorites
+ask_every_time	Ask every time
+ask_for_dest_dir_every_time	Ask for the destination dir every time
+auth_complete	Authorized
+auth_not_supported_by	Logging in on %s is not supported
+auth_required	Sign in to view this content
+authorization_optional	Authorization (optional)
+authors	Authors
+auto_double_foldable	Auto Two-Page On Foldable
+auto_update_plugins	Auto-update plugins
+auto_update_plugins_summary	Periodically check installed plugins for new GitHub releases and update them in place
+automatic_scroll	Automatic scroll
+autoscroll_boost_speed	Boost
+autoscroll_hold_boost	Hold to speed up
+available_d	Available: %1$d
+available_pattern	%1$s available
+background	Background
+backup_date_	Backup date: %s
+backup_frequency	Backup creation frequency
+backup_information	You can create backup of your history and favorites and restore it
+backup_restored_background	The backup will be restored in the background
+backup_saved	Backup saved
+backup_tg_check	Check if API works
+backup_tg_echo	Test message
+backup_tg_id_not_set	Chat ID is not set
+backups_output_directory	Backups output directory
+badges_in_lists	Badges in lists
+best_match	Best match
+black_dark_theme_summary	Uses less power on AMOLED screens
+blocked_by_server_message	You are blocked by the server. Try to use a different network connection (VPN, Proxy, etc.)
+book_effect	Yellowish background (blue filter)
+bookmark_add	Add bookmark
+bookmark_added	Bookmark added
+bookmark_remove	Remove bookmark
+bookmark_removed	Bookmark removed
+bookmarks	Bookmarks
+bookmarks_removed	Bookmarks removed
+breadcrumbs_separator	<![CDATA[" > "]]>
+brightness	Brightness
+browser_source_adblock_toggle	Toggle Ad Blocker
+browser_source_already_added_hint	This source is already in your library
+browser_source_duplicate	This site is already added
+browser_source_favicon_desc	Site icon
+browser_source_help_text	Opens this site in a full in-app browser. When a chapter is detected, a button appears to open pages in the native reader.
+browser_source_name_hint	Name (optional — auto-detected)
+browser_source_open_external	Open in external browser
+browser_source_preview_hint	Tap \'Add\' to save this browser source
+browser_source_remove_confirm	Remove this browser source? Sites you added stay reachable by adding them again.
+browser_source_url_hint	Website URL (e.g. https://mangadex.org)
+browser_source_url_invalid	Please enter a valid URL
+browser_source_view_history	Reading history
+browser_sources	Browser sources (Beta)
+by_name_reverse	Name reversed
+by_rating	Rating
+by_relevance	Relevance
+by_unread_chapters_reverse	Unread chapters reversed
+cancel_all_downloads_confirm	All active downloads will be cancelled, partially downloaded data will be lost
+canceled	Canceled
+cannot_find_available_storage	No available storage
+captcha_required	CAPTCHA required
+captcha_required_message	This source requires solving a captcha to continue
+captcha_required_summary	%s requires a captcha to be resolved to work properly
+captcha_solve	Solve
+captcha_solving	Solving captcha…
+catalog	Catalog
+categories_delete_confirm	Are you sure you want to delete the selected favorite categories?\nAll manga in it will be lost and this cannot be undone.
+category_hidden_done	This category was hidden from the main screen and is accessible through Menu → Manage categories
+cf_auto_solve	Auto-solve Cloudflare
+cf_auto_solve_summary	Experimental: automatically tap the Cloudflare verification checkbox when a challenge appears. May not work on every site or device.
+change_cover	Change cover
+changelog	Changelog
+changelog_summary	Changes history for recently released versions
+chapter_d_of_d	Chapter %1$d of %2$d
+chapter_is_missing	The chapter is missing
+chapter_number	Chapter %s
+chapter_selection_hint	You can select chapters to download by long click on item in the chapter list.
+chapter_volume_number	Vol %1$s Chapter %2$s
+chapters_and_pages	Chapters and pages
+chapters_count	%1$d chapters
+chapters_deleted_pattern	Removed %1$s, cleared %2$s
+chapters_empty	No chapters in this manga
+chapters_grid_view	Grid view
+chapters_left	Chapters left
+chapters_load_failed	Failed to load chapter list
+chapters_read	Chapters read
+chapters_will_removed_background	Chapters will be removed in the background
+check_for_new_chapters	Check for new chapters
+check_for_new_chapters_disabled	Checking for new chapters is disabled
+check_new_chapters_title	Check for new chapters and notify about it
+choose_source	Choose source
+clear	Clear
+clear_all_history	Clear all history
+clear_browser_data	Clear browser data
+clear_browser_data_summary	Clear browser data such as cache and cookies. Warning: Authorization in manga sources may become invalid
+clear_cookies_summary	Can help in case of some issues. All authorizations will be invalidated
+clear_database_summary	Delete information about manga that is not used
+clear_feed	Clear feed
+clear_network_cache	Clear network cache
+clear_new_chapters_counters	Also clear information about new chapters
+clear_pages_cache	Clear page cache
+clear_search_history	Clear search history
+clear_source_cookies_summary	Clear cookies for specified domain only. In most cases will invalidate authorization
+clear_stats	Clear statistics
+clear_stats_confirm	Do you really want to clear all reading statistics? This action cannot be undone.
+clear_thumbs_cache	Clear thumbnails cache
+clear_updates_feed	Clear updates feed
+closest_chapter_count	Closest chapter count
+collapse	Collapse
+collapse_long_description	Collapse long description
+color_correction	Color correction
+color_correction_apply_text	These settings can be applied globally or only to the current manga. If applied globally, individual settings will not be overridden.
+color_theme	Color scheme
+comics_archive	Comics archive
+comics_archive_import_description	You can select one or more .cbz, .zip, or .cbr files; each file will be recognized as a separate manga.
+community	Community
+community_attribution_summary	Kaisoku’s community client is adapted from the open Kotatsu-Redo community client and server protocol. Requests identify Kaisoku to the server owner.
+community_attribution_title	Community client attribution
+community_comment_hint	Write a comment
+community_comment_posted	Comment posted
+community_comment_too_short	Comments must contain at least %1$d characters
+community_comments	Comments
+community_comments_count	%1$d comments
+community_copy_key	Copy key
+community_delete	Delete community data
+community_delete_comment	Delete comment
+community_delete_comment_confirm	Delete this comment? Replies will remain visible.
+community_delete_confirm	Delete your community identity, comments and ratings? This cannot be undone.
+community_delete_summary	Delete your comments and ratings from the server
+community_deleted	Community data deleted
+community_deleted_comment	[deleted comment]
+community_dislike	Dislike
+community_enabled	Community features
+community_enabled_summary	Use the Kotatsu-Redo community server for ratings and comments
+community_export	Export my community data
+community_export_failed	Could not export community data: %1$s
+community_export_summary	Share a copy of your comments, ratings and votes
+community_export_title	Community data
+community_identity	Community identity
+community_identity_ready	Community identity is ready
+community_identity_summary	Create or verify the device-only identity
+community_import_hint	Paste a recovery key
+community_import_key	Import key
+community_key_copied	Recovery key copied
+community_like	Like
+community_load_failed	Could not load community data: %1$s
+community_load_more	Load more comments
+community_nickname	Nickname
+community_nickname_hint	Nickname
+community_nickname_saved	Nickname saved
+community_nickname_summary	Choose the name shown beside your comments
+community_no_data	Community data unavailable
+community_no_notifications	No new replies
+community_notifications	Reply notifications
+community_notifications_summary	Check for replies to your comments
+community_open	Community
+community_post	Post
+community_rating	Community rating
+community_rating_saved	Rating saved
+community_recovery	Backup or restore recovery key
+community_recovery_explanation	This key is the only way to restore your pseudonymous community identity. Store it somewhere private.
+community_recovery_summary	Keep this key to restore your pseudonymous account
+community_recovery_title	Community recovery key
+community_refresh_failed	Could not refresh community data; showing the last saved summary.
+community_reply	Reply
+community_retry_in	Community data is limited. Retrying in %1$d seconds…
+community_setup_failed	Community setup failed: %1$s
+community_show_spoiler	Spoiler — tap to reveal
+community_spoiler	Contains spoilers
+community_summary	Optional ratings, comments and source reliability
+community_telemetry	Share source reliability telemetry
+community_telemetry_summary	Reports anonymous daily source probes; never sends reading history
+compact	Compact
+compare_source_matches	Compare source matches
+computing_	Computing…
+config_reset_confirm	Reset settings to default values? This action cannot be undone.
+confirm	Confirm
+confirm_delete_plugin	Are you sure you want to delete %1$s?
+confirm_exit	Press "Back" again to exit
+confirm_password	Confirm password
+connect_anilist	Connect AniList
+connection_ok	Connection is OK
+content_rating	Content rating
+content_type_comics	Comics
+content_type_hentai	Hentai
+content_type_novel	Novel
+content_type_one_shot	One shot
+contrast	Contrast
+copy_crash_report	Copy report
+cover_only	Cover only
+crash_collecting	Collecting crash report… please don\'t close the app.
+crash_dialog_message	Kaisoku crashed. The crash report was copied to the clipboard. Open GitHub Issues and paste the crash message or stack trace there if the form is not filled aut
+crash_dialog_message_degraded	Kaisoku crashed, but the crash report couldn\'t be collected. You can still report the crash itself on GitHub Issues.
+crash_notification_text	Preparing crash report
+crash_report_channel	Crash reports
+crash_report_copied	Crash report copied
+crash_text	Something went wrong. Please submit a bug report to the developers to help us fix it.
+create_backup	Create data backup
+create_category	New category
+create_or_restore_backup	Create or restore a backup
+create_shortcut	Create shortcut
+crop_pages	Crop pages
+current_cover	Current cover
+data_and_privacy	Data and privacy
+data_deletion	Data deletion
+data_not_restored	Data was not restored
+data_not_restored_text	Make sure you have selected the correct backup file
+data_removal	Data removal
+data_restored	Restored
+data_restored_success	All data was restored
+data_restored_with_errors	The data was restored, but there are errors
+debug	Debug
+default_browse_sort	Default source list order
+default_browse_sort_summary	Choose the initial order for source lists. Automatic keeps the source-specific default.
+default_mode	Default mode
+default_page_save_dir	Default page save directory
+default_s	Default: %s
+default_tab	Default tab
+default_webtoon_zoom_out	Default webtoon zoom out
+delete_manga	Delete manga
+delete_old_backups	Delete old backups
+delete_old_backups_summary	Automatically delete old backup files to save storage space
+delete_plugin	Delete plugin
+delete_read_chapters	Delete read chapters
+delete_read_chapters_auto	Delete read chapters automatically
+delete_read_chapters_prompt	This will permanently delete all chapters marked as read from your local storage. You can re-download it later, but the imported chapters may be lost forever
+delete_read_chapters_summary	Delete chapters you have already read from local storage to free up space
+deleted_plugin	Deleted %1$s plugin
+demographic_josei	Josei
+demographic_kodomo	Kodomo
+demographic_seinen	Seinen
+demographic_shoujo	Shoujo
+demographic_shounen	Shounen
+demographics	Demographics
+description	Description
+destination_directory	Destination directory
+detailed_list	Detailed list
+details	Details
+detect_reader_mode	Autodetect reader mode
+detect_reader_mode_summary	Automatically detect if manga is webtoon
+directories	Directories
+disable_battery_optimization_summary	Helps with background updates checks
+disable_battery_optimization_summary_downloads	Might help with getting the download started if you have any issues with it
+disable_captcha_auto_solve	Disable automatic CAPTCHA solving
+disable_captcha_auto_solve_summary	Don\'t try to solve CAPTCHA silently in the background. You will be asked to solve it manually instead.
+disable_captcha_notifications	Disable captcha notifications
+disable_captcha_notifications_summary	You will not receive notifications about solving CAPTCHA for this source but this can lead to breaking background operations (checking for new chapters, obtaini
+disable_connectivity_check	Disable connectivity check
+disable_connectivity_check_summary	Skip the connectivity check in case you have issues with it (e.g. going offline mode even though the network is connected)
+disable_nsfw	Disable NSFW
+disable_nsfw_notifications	Disable NSFW notifications
+disable_nsfw_notifications_summary	Do not show notifications about NSFW manga updates
+disable_nsfw_summary	Disable NSFW sources and hide adult manga from list if possible
+discard	Discard
+disconnect	Disconnect
+discord_oauth_basic_scope	Sign in without rich presence
+discord_oauth_browser	Open sign-in in browser
+discord_oauth_browser_summary	Start Discord authorization in an external web browser instead of the Discord app
+discord_oauth_connected	Connected to Discord
+discord_oauth_failed	Discord sign-in failed%s
+discord_oauth_invalid_scope	This Discord application doesn\'t have the presence scope enabled. You can still sign in without rich presence, or enable the Discord Social SDK for this app.
+discord_oauth_reconnect	Connection expired — tap to sign in again
+discord_rpc_description	Reading manga on Kaisoku - a manga reader app
+discord_rpc_oauth	Sign in with OAuth
+discord_rpc_oauth_summary	Use Discord OAuth login instead of a user token
+discord_rpc_open_in_s	Open in %s
+discord_rpc_summary	Show your reading status on Discord
+discord_signed_in_as	Signed in as %1$s
+discord_signed_in_no_presence	Signed in as %1$s — re-sign in to enable rich presence
+discord_status_invisible	Invisible
+discord_token	Discord Token
+discord_token_description	Enter your Discord Token or click %s to get it using browser
+discord_token_hint	Paste your Discord Token here
+discord_token_summary	Enter your Discord Token to enable Rich Presence
+dismiss	Dismiss
+dns_over_https	DNS over HTTPS
+domain	Domain
+donation_btc	Bitcoin
+donation_copied	Wallet address copied to clipboard
+donation_eth	Ethereum
+donation_sol	Solana
+donation_ton	TON / Gram
+donation_xmr	Monero
+donations	Donations
+donations_summary	Support the developer
+done	Done
+dont_allow	Don\'t allow
+dont_ask_again	Don\'t ask again
+dont_check	Don\'t check
+double_page_cover_page	First page as cover (solo)
+download_added	Download added
+download_cellular_confirm	Allow downloads over cellular network?
+download_default_directory	Default directory for downloading manga
+download_option_all_chapters	All chapters with translation %s
+download_option_all_unread	All unread chapters
+download_option_all_unread_b	All unread chapters (%s)
+download_option_first_n_chapters	First %s
+download_option_manual_selection	Select chapters manually
+download_option_next_unread_n_chapters	Next unread %s
+download_option_whole_manga	The whole manga
+download_over_cellular	Downloading over cellular network
+download_slowdown	Download slowdown
+download_slowdown_summary	Helps avoid blocking your IP address
+download_started	Download started
+downloads_background	Background downloads
+downloads_cancelled	Downloads have been cancelled
+downloads_paused	Downloads have been paused
+downloads_removed	Downloads have been removed
+downloads_resumed	Downloads have been resumed
+downloads_settings_info	You can enable download slowdown for each manga source individually in the source settings if you are having problems with server-side blocking
+downloads_wifi_only	Download only via Wi-Fi
+downloads_wifi_only_summary	Stop downloading when switching to a mobile network
+drive_api_unavailable	This device could not connect to Google Play services’ Identity Authorization API. Update or enable Google Play services, make sure a Google account is added, a
+drive_api_unavailable_title	Google authorization unavailable
+drive_authorization_required	Open Sync settings to finish Google Drive authorization
+drive_connect	Connect Google Drive
+drive_connected_as	Connected as %1$s
+drive_connected_pending	Authorized; first sync queued
+drive_disconnect_summary	Stops Drive sync without deleting remote data or revoking the Google account.
+drive_setup_required	Google Drive rejected this build. Enable the Drive API, add the drive.appdata scope to the OAuth consent screen, and create an Android OAuth client with these e
+drive_setup_required_title	Google Drive setup required
+drive_sync_authorizing	Authorizing Google Drive
+drive_sync_downloading	Downloading sync data
+drive_sync_merging	Merging sync data
+drive_sync_preparing	Preparing sync data
+drive_sync_queued	Google Drive sync queued
+drive_sync_uploading	Uploading sync data
+duplicate_extension_repo	This extension repository is already added
+duplicate_extension_repo_signature	A repository with the same signing key is already added
+duplicate_manga	Already in library
+duplicate_manga_summary	Manga \"%1$s\" from \"%2$s\" is already in your favorites. Do you want to continue?
+e_ink	E-Ink
+edit_category	Edit category
+email_enter_hint	Enter your email to continue
+email_password_enter_hint	Enter your email and password to continue
+empty	Empty
+empty_favourite_categories	No favorite categories
+empty_stats_text	There are no statistics for the selected period
+enable	Enable
+enable_all_sources	Enable all manga sources
+enable_all_sources_summary	All available manga sources will be enabled permanently
+enable_logging	Enable logging
+enable_logging_summary	Record some actions for debug purposes. Don\'t turn it on if you\'re not sure what you\'re doing
+enable_pull_gesture_summary	Use pull gesture to switch chapters in webtoon
+enable_pull_gesture_title	Enable pull gesture
+enable_source	Enable source
+enabled	Enabled
+enabled_d_of_d	%1$d of %2$d on
+enabled_sources	Enabled sources
+enhanced_colors	32-bit color mode
+enhanced_colors_summary	Reduces banding, but may impact performance
+enter_name	Enter name
+enter_password	Enter password
+error_cbr_corrupted	Could not read the CBR archive (%s)
+error_cbr_empty	The CBR archive does not contain any supported images.
+error_cbr_encrypted	Password-protected CBR archives are not supported.
+error_cbr_multipart	Multipart CBR archives are not supported. Import one complete archive.
+error_cbr_too_large	This CBR archive needs too much memory to import safely.
+error_cbr_unsafe	The CBR archive contains unsafe or duplicate file paths.
+error_cbr_unsupported	This CBR archive uses an unsupported RAR feature.
+error_connection_reset	Connection reset by remote host
+error_copied	Error details copied
+error_corrupted_file	Invalid data is returned or file is corrupted
+error_corrupted_zip	Corrupted ZIP archive (%s)
+error_details	Error details
+error_disclaimer_app_outdated	It looks like your version of Kaisoku is out of date. Please install the latest version to get all available fixes.
+error_disclaimer_manga	Try to open manga in a web browser to ensure it is available on its source.
+error_disclaimer_report	You can submit a bug report to the developers. This will help us investigate and fix the issue.
+error_empty_file_on_server	The source served an empty file for this page
+error_filter_locale_genre_not_supported	Filtering by both genres and locale is not supported by this source
+error_filter_states_genre_not_supported	Filtering by both genres and states is not supported by this source
+error_image_format	Unsupported image format: %s
+error_multiple_genres_not_supported	Filtering by multiple genres is not supported by this manga source
+error_multiple_states_not_supported	Filtering by multiple states is not supported by this manga source
+error_no_data_received	No data was received from server
+error_no_space_left	No space left on device
+error_non_file_uri	The selected path cannot be used because it does not denote a file or directory
+error_not_image	Invalid format: expected image but got %s
+error_occurred	An error occurred
+error_search_not_supported	Search is not supported by this manga source
+every_15_minutes	Every 15 minutes
+every_hour	Every hour
+exclude_nsfw_from_history	Exclude NSFW manga from history
+exclude_nsfw_from_history_summary	Manga marked as NSFW will never be added to the history and your progress will not be saved
+exclude_nsfw_from_suggestions	Do not suggest NSFW manga
+exclude_nsfw_from_suggestions_summary	Adult manga will not be shown in suggestions. This option may work inaccurate with some sources
+exit_confirmation	Exit confirmation
+exit_confirmation_summary	Press "Back" twice to exit the app
+expand	Expand
+explore	Explore
+extension_install_downgrade_not_allowed	A newer version of this extension is already installed
+extension_install_invalid_package	Downloaded file is not a valid Mihon extension
+extension_install_signature_mismatch	Installed extension uses a different signing key
+extension_install_untrusted_signature	Extension signature does not match the repository fingerprint
+extension_installed	Extension installed
+extension_installed_externally	Installed from Android
+extension_installed_privately	Installed privately
+extension_removed	Extension removed
+extension_repo_add_timeout	The repository did not respond in time. Please try again.
+extension_repo_added	Extension repository added
+extension_repo_not_found	Extension repository not found
+extension_repo_removed	Extension repository removed
+extension_repo_url	Repository link
+extension_repositories	Extension repositories
+extension_repositories_summary	Add and manage Mihon-compatible extension repositories
+extension_sources_hidden	Some extension sources are hidden
+extension_sources_hidden_summary	Disable NSFW is enabled in Settings → Sources. It also hides extensions marked as mixed-content, including MangaDex. Installed extensions still need to be enabl
+extension_update_available	Update available
+external_source	External/plugin
+external_storage	External storage
+extract_text	Extract text
+favourites	Favorites
+favourites_categories	Favorite categories
+favourites_category_empty	Empty category
+feed_tracking_state	Feed tracking state
+feed_will_update_soon	Feed update will start soon
+file_not_found	File not found
+filter_exclude	Exclude
+filter_ignore	Ignore
+filter_include	Include
+filter_overwrite_confirm	A filter named \"%s\" already exists. Do you want to overwrite it?
+filter_search_warning	This source does not support search with filters. Your filters have been cleared
+find_similar	Find similar
+fix	Fix
+fixed	Fixed successfully
+fixing_manga	Fixing manga
+flaresolverr_enable	Use FlareSolverr
+flaresolverr_summary	Beta: solve Cloudflare challenges through a FlareSolverr server you run on your own computer. Enter its address below. The computer must be on and reachable on 
+flaresolverr_timeout	Timeout (ms)
+flaresolverr_title	FlareSolverr (Beta)
+flaresolverr_url	Server address
+flash_on_page_change_summary	Refresh the screen with a short full-screen flash to reduce ghosting on E-Ink displays
+floating_navigation_bar	Floating navigation bar
+floating_navigation_bar_summary	Detach the bottom bar from the screen edge and show it as a rounded pill
+folder_with_images	Folder with images
+folder_with_images_import_description	You can select a directory with archives or images. Each archive (or subdirectory) will be recognized as a chapter.
+follow_system	Follow system
+forgot_password	Forgot password
+fraction_pattern	%1$d/%2$d
+frequency_every_day	Every day
+frequency_of_check	Frequency of check
+frequency_once_per_month	Once per month
+frequency_once_per_week	Once per week
+frequency_twice_per_month	Twice per month
+fullscreen_mode	Fullscreen mode
+genres	Genres
+genres_exclude	Exclude genres
+genres_search_hint	Start typing the genre name
+globally	Globally
+google_drive_sync	Google Drive sync
+got_it	Got it
+grid	Grid
+grid_size	Grid size
+handle_links	Handle links
+handle_links_summary	Handle manga links from external applications (e.g. web browser). You may also need to enable it manually in the application\'s system settings
+handle_remaining_manually	Handle remaining titles manually
+handle_remaining_manually_summary	Choose a source separately for each remaining title
+hide_broken_sources	Hide broken sources
+hide_broken_sources_summary	Hide sources marked as broken from source lists
+hide_empty_sources	Hide empty sources
+hide_from_main_screen	Hide from main screen
+hide_results_without_chapters	Hide results without chapters
+history_cleared	History cleared
+history_is_empty	No history yet
+history_shortcuts	Show recent manga shortcuts
+history_shortcuts_summary	Make recent manga available by long pressing on application icon
+hours	%1$d hour
+hours_minutes_short	%1$d h %2$d m
+hours_short	%d h
+ignore_ssl_errors	Ignore SSL errors
+ignore_ssl_errors_summary	You can disable SSL certificates verification in case you face an SSL-related issues when accessing network resources. This may affect your security. Applicatio
+image_server	Preferred image server
+images_procy_description	Use the wsrv.nl service to reduce traffic usage and speed up image loading if possible
+images_proxy_title	Images optimization proxy
+import_completed	Import completed
+import_completed_hint	You can delete the original file from storage to save space
+import_from_github	Import from GitHub
+import_github_summary	Download the latest JAR asset from a GitHub release
+import_mihon_backup	Import Mihon backup
+import_will_start_soon	Import will start soon
+imported_titles	%d title imported
+importing_manga	Importing manga
+in_progress	In progress
+include_disabled_sources	Include disabled sources
+incognito	Incognito
+incognito_for_nsfw	Incognito mode for NSFW manga
+incognito_mode_hint	Your reading progress will not be saved
+incognito_mode_hint_nsfw	This manga may contain adult content. Do you want to use incognito mode?
+internal_storage	Internal storage
+invalid_domain_message	Invalid domain
+invalid_extension_repo	Invalid extension repository link
+invalid_port_number	Invalid port number
+invalid_proxy_configuration	Invalid proxy configuration
+invalid_server_address_message	Invalid server address
+invalid_token	Invalid token: %s
+invalid_value_message	Invalid value
+invert_colors	Invert colors
+items	%1$d item
+items_limit_exceeded	No more items can be added
+jar_not_loaded	Plugin JAR %1$s is not loaded
+kaisoku_server	Kaisoku server
+keep_android_open	Keep Android Open campaign
+keep_android_open_message	Support the freedom to install apps and extensions from the sources you choose.
+keep_android_open_title	Keep Android Open
+keep_screen_on_summary	Do not turn the screen off while you\'re reading manga
+keiyoushi_repo_added	Keiyoushi repository added
+kitsu	Kitsu
+lang_auto	Auto-detect
+languages	Languages
+last_2_hours	Last 2 hours
+last_successful_backup	Last successful backup: %s
+less_frequently	Less frequently
+less_than_minute	Less than a minute
+light_indicator	LED indicator
+link_to_manga_in_app	Link to manga in Kaisoku
+link_to_manga_on_s	Link to manga on %s
+list	Liste
+list_checkpoint	Last position
+list_checkpoint_disable_prompt	Stop showing the “Jump back” button? You can turn it back on in Settings.
+list_checkpoint_settings	Jump back to where you left off
+list_checkpoint_settings_summary	Show a button in History that returns you to the spot you last scrolled to
+list_ellipsize_pattern	(+%d)
+list_mode	List mode
+list_options	List options
+lnreader_plugins	LNReader plugins
+lnreader_repo_url_hint	Plugin index link (plugins.min.json)
+lnreader_repositories	LNReader plugin repositories
+lnreader_repositories_summary	Browse and install novel sources. Novel reader is in beta.
+load_failed	Failed to load plugin
+load_from_storage	Import from local storage
+load_storage_summary	Choose a parser plugin JAR file
+load_success	Plugin imported and loaded successfully
+loaded_null	Plugin factory returned an empty parser
+local_manga_directories	Local manga directories
+local_manga_processing	Saved manga processing
+local_storage	Local storage
+local_storage_cleanup	Local storage cleanup
+location	Location
+lock_screen_rotation	Lock screen rotation
+logged_in_as	Logged in as %s
+long_ago	Long ago
+long_ago_read	Long time ago read
+long_tap_action	Long tap action
+low_rating	Low rating
+main_screen	Main screen
+main_screen_fab	Show floating Continue button
+main_screen_fab_summary	Allows to continue reading in a one click. This button will not appear in incognito mode or when the history is empty
+main_screen_sections	Main screen sections
+mal	MyAnimeList
+manage	Manage
+manage_categories	Manage categories
+manage_plugins	Manage plugins
+manage_sources	Manage sources
+manga_error_description_pattern	Error details:<br><tt>%1$s</tt><br><br>1. Try to <a href="%2$s">open manga in a web browser</a> to ensure it is available on its source<br>2. Make sure you are 
+manga_fix_prompt	This function will find alternative sources for the selected manga. The task will take some time and will proceed in the background
+manga_list	Manga list
+manga_migration	Manga migration
+manga_override_hint	These changes will affect how manga is displayed in the app
+manga_preferences	Per-manga reader settings and overrides
+manga_replaced	Manga \"%1$s\" (%2$s) replaced with \"%3$s\" (%4$s)
+manga_restricted_description	This manga is not available to read in this source. Try searching for it in other sources or opening it in a browser for more information
+manga_save_location	Downloads folder
+manga_shelf	Shelf
+manga_unavailable_hint	Alternatives searches the other enabled sources for the same title, so you can carry on reading where you left off.
+manga_unavailable_message	\"%1$s\" could not be loaded from %2$s. It may have been removed or moved to another address.
+manga_unavailable_message_no_source	\"%1$s\" could not be loaded. It may have been removed or moved to another address.
+manga_unavailable_search_alternatives	Find on other sources
+manga_unavailable_title	Content unavailable
+manga_with_downloaded_chapters	Manga with downloaded chapters
+mangabaka	MangaBaka
+mark_as_completed	Mark as completed
+mark_as_completed_prompt	Mark selected manga as completely read?\n\nWarning: current reading progress will be lost.
+mark_as_current	Mark as current
+mark_as_nsfw	Mark as NSFW
+max_backups_count	Max number of backups
+merge_with_existing_data	Merge with existing data
+migrate_confirmation	Manga \"%1$s\" from \"%2$s\" will be replaced with \"%3$s\" from \"%4$s\" in your history and favorites (if present)
+migrate_to_another_manga	Migrate to another manga…
+migrate_to_keiyoushi	Add Keiyoushi repository
+migrate_to_manga_confirmation	Migrate progress to \"%1$s\" from \"%2$s\"? Source and target may differ — proceed only if you\'re sure they refer to the same work.
+migration_completed	Migration completed
+mihon_backup_import_summary	Import library, chapters, progress, bookmarks, and tracking from a .tachibk file
+mihon_backup_imported	Imported %1$d manga and %2$d chapters (%3$d tracking entries); %4$d sources are not installed
+mihon_extension_errors	Extension loading errors
+mihon_extension_errors_summary	Show why an installed extension could not be loaded
+mihon_source	Mihon source
+milliseconds_pattern	%1$d ms
+minutes	%1$d minute
+minutes_seconds_short	%1$d m %2$d s
+minutes_short	%d m
+mirror_switching	Choose mirror automatically
+mirror_switching_summary	Automatically switch domains for manga sources on errors if mirrors are available
+missing_in_plugin	Source %1$s is missing from the plugin
+month	Month
+more_frequently	More frequently
+most_chapters	Most chapters
+moved_to_top	Moved to top
+multiple_cbz_files	Multiple CBZ files
+navigation_bar_corner_radius	Corner radius
+network	Network
+network_error	Network error
+network_unavailable	Network is not available
+network_unavailable_hint	Turn on Wi-Fi or mobile network to read manga online
+new_chapters_pattern	%1$s: %2$d
+new_sources_text	New manga sources are available
+new_version_s	New version: %s
+no_access_to_file	You have no access to this file or directory
+no_alternative_covers	No other covers found for this title
+no_bookmarks_summary	You can create bookmark while reading manga
+no_bookmarks_yet	No bookmarks yet
+no_chapters	No chapters
+no_chapters_deleted	No chapters have been deleted
+no_chapters_in_manga	This manga does not contain any chapters
+no_extension_repositories	No extension repositories
+no_extension_repositories_text	Add a Mihon-compatible repository link to browse and install extensions.
+no_extensions	No extensions
+no_fix_required	No fix required for \"%s\"
+no_lnreader_repositories	No plugin repositories
+no_lnreader_repositories_text	Add a plugins.min.json repository link to browse and install novel sources.
+no_manga_sources	No manga sources
+no_manga_sources_catalog_text	There are no sources available in this section, or all of it might have been already added.\nStay tuned
+no_manga_sources_found	No available manga sources found by your query
+no_manga_sources_text	Enable manga sources to read manga online
+no_mihon_extension_errors	No extension loading errors were found.
+no_more_chapters	No more chapters
+no_novels	No novels
+no_plugins	No plugins
+no_plugins_installed	No plugins installed
+no_plugins_summary	Use the import action to add parser plugin JAR files.
+no_repo_extensions_found	No repository extensions found by your query
+no_repo_extensions_text	No compatible extensions were found in this repository.
+no_reset_token	No reset token provided
+no_thanks	No thanks
+no_update_available	No updates available
+no_write_permission_to_file	Does not have permission to write a file
+not_available	Not available
+not_found_404	Content not found or removed
+not_in_favorites	Not in favorites
+not_on_device	Not on device
+nothing_found	Nothing found
+nothing_here	There is nothing here
+notification_sound	Notification sound
+notifications	Notifications
+notifications_enable	Enable notifications
+notifications_settings	Notifications settings
+novel_dual_page_mode	Dual-page mode (landscape/tablet)
+novel_first_line_indent	First-line indent
+novel_font_size	Text size
+novel_fullscreen_mode	Immersive reading
+novel_line_spacing	Line height
+novel_margin_horizontal	Horizontal margins
+novel_margin_vertical	Vertical margins
+novel_mode_scroll	Scroll
+novel_page_turn_animation	Page turn animation
+novel_page_turn_simulation	Simulation
+novel_page_turn_slide	Slide
+novel_paragraph_spacing	Paragraph spacing
+novel_paragraph_spacing_follow_line	Follow line height
+novel_preview_body	The rain had stopped, but the street still held a quiet sheen. He looked up, took a breath, and stepped forward.
+novel_preview_caption	Live preview
+novel_preview_title	Chapter One
+novel_read_aloud	Read aloud
+novel_reader_beta	Novel reader · Beta
+novel_reader_settings	Novel reader settings (Beta)
+novel_reverse_list_display	Reverse list display
+novel_show_original	Show original chapter
+novel_show_reading_status	Show reading status
+novel_sources_first	Show novel sources first in Explore
+novel_sources_first_summary	Moves installed novel sources above manga sources. Off keeps your current source order.
+novel_speech_language_unavailable	No installed speech voice supports this language. Add a voice in Android text-to-speech settings.
+novel_speech_network	uses network
+novel_speech_unavailable	Speech is unavailable. Check your Android text-to-speech settings.
+novel_speech_voice	Choose a voice
+novel_stop_reading_aloud	Stop reading aloud
+novel_theme_moss	Moss
+novel_theme_paper	Paper
+novel_theme_preset	Reading theme
+novel_theme_sepia	Sepia
+novel_theme_slate	Slate
+novel_translate_chapter	Translate chapter
+novel_translating	Translating chapter…
+novel_translation_progress	Translating chapter: %1$d/%2$d
+novel_translation_settings	Translation settings
+novel_transparent_status_bar	Subtle reading status bar
+nsfw_16	16+
+nsfw_source_summary	Mark this source as NSFW regardless of its own rating
+obtain	Obtain
+ocr_no_text	No text detected.
+ocr_recognizing	Recognizing…
+on_device	On device
+onboard_text	Select languages which you want to read manga. You can change it later in settings.
+online_variant	Online variant
+open_github_issues	Open GitHub Issues
+open_in_browser	Open in web browser
+open_in_library	Open in Kaisoku
+open_telegram_bot	Open the Telegram bot
+open_telegram_bot_summary	Press to open chat with Kaisoku Backup Bot
+operation_not_supported	This operation is not supported
+options	Options
+order_added	Added
+original_language	Original language
+other_cache	Other cache
+other_manga	Other manga
+other_storage	Other storage
+overwrite	Overwrite
+overwrite_plugin	Overwrite plugin?
+overwrite_plugin_summary	A plugin file named %1$s is already installed. Replace it with this one?
+packup_creation_failed	Failed to create backup
+page_saved	Page saved
+page_switch_timer	The page will switch every ~%d seconds
+pages_animation	Page animation
+pages_cache	Pages cache
+pages_read_s	Pages read: %s
+pages_saved	Pages saved
+pages_saving	Saving pages
+pages_slider	Page switch slider
+password_length_hint	The password must be 4 characters or more
+password_reset	Password reset successfully
+passwords_mismatch	Mismatching passwords
+percent_format	%d%%
+percent_left	Percent left
+percent_read	Percent read
+percent_string_pattern	%1$s%%
+periodic_backups	Periodic backups
+periodic_backups_enable	Enable periodic backups
+pick_custom_directory	Pick custom directory
+pick_custom_file	Pick custom file
+pick_manga_page	Pick manga page
+pin_navigation_ui	Pin navigation UI
+pin_navigation_ui_summary	Do not hide navigation bar and search view on scroll
+pinned_sources_only	Pinned sources only
+plugin_incompatible	Incompatible plugin or internal error. Make sure you are using the latest version of the plugin and Kaisoku
+plugin_incompatible_with_cause	Plugin error: %s\n Make sure you are using the latest version of the plugin and Kaisoku
+plugin_name	Plugin name
+plugin_not_found	Plugin source %1$s was not found
+plugins	Plugins
+popular_in_hour	Popular this hour
+popular_in_month	Popular this month
+popular_in_week	Popular this week
+popular_in_year	Popular this year
+popular_today	Popular today
+popularity	Popularity
+port	Port
+preferred_download_format	Preferred download format
+prefetch_content	Content preloading
+preload_pages	Preload pages
+preparing_	Preparing…
+preset_sources	Preset sources
+privacy	Privacy
+private_app_directory_warning	This directory with all data will be deleted if you uninstall the application
+protect_application	Protect the app
+protect_application_subtitle	Enter a password to start the app with
+protect_application_summary	Ask for password when starting Kaisoku
+proxy	Proxy
+proxy_bypass_enabled	Censorship bypass
+proxy_bypass_enabled_summary	Route app traffic through the built-in bypass tunnel for blocked networks (beta)
+publication_status	Publication status
+pull_bottom_no_next	No next chapter
+pull_to_next_chapter	Release to open next chapter
+pull_to_prev_chapter	Release to open previous chapter
+pull_top_no_prev	No previous chapter
+queued	Queued
+rating	Rating
+rating_adult	Adult
+rating_safe	Safe
+rating_suggestive	Suggestive
+read_later	Read later
+read_mode	Read mode
+read_more	Read more
+reader_actions	Reader actions
+reader_actions_summary	Configure actions for tappable screen areas
+reader_animated_pages	Animated pages
+reader_animated_pages_summary	Play GIF and WebP pages. Animation pauses offscreen; translations use a still frame. Large animations use a still frame. Zoom and upscaling are unavailable duri
+reader_bottom_bar_opacity	Reader bottom bar opacity
+reader_chapter_toast	Show chapter change popup
+reader_chapter_toast_summary	Show a pop-up message with a chapter title when it is changed
+reader_control_ltr	Ergonomic reader control
+reader_control_ltr_summary	Do not adjust the page switching direction to the reader mode, e. g. pressing the right key always switches to the next page. This option affects only hardware 
+reader_controls_in_bottom_bar	Reader controls in bottom bar
+reader_float_bar	Floating bottom bar
+reader_float_bar_summary	Lift the reader\'s bottom bar off the screen edge with side margins and rounded corners.
+reader_fullscreen_summary	Hide system status and navigation bars
+reader_info_bar	Show information bar in reader
+reader_info_bar_summary	Show the current time and reading progress at the top of the screen
+reader_info_bar_transparent	Transparent reader information bar
+reader_info_pattern	Ch. %1$d/%2$d Pg. %3$d/%4$d
+reader_mode_hint	The chosen configuration will be remembered for this manga
+reader_multitask	Open reader in a separate task
+reader_multitask_summary	Allows you to keep multiple readers with different manga open at the same time
+reader_navigation_inverted	Invert navigation controls
+reader_navigation_inverted_summary	Swap the direction of volume button and directional hardware key navigation (left/up/down/right)
+reader_optimize	Reduce memory consumption (beta)
+reader_optimize_summary	Reduce offscreen pages quality to use less memory
+reader_settings	Reader settings
+reader_slider	Show page switching slider
+reader_top_bar_opacity	Reader top bar opacity
+reader_upscale	GPU image upscaling (beta)
+reader_upscale_summary	Sharpen low-resolution pages with an Anime4K-style GPU shader. Android 13+
+reader_upscale_unsupported	Requires Android 13 or newer
+reader_zoom_buttons	Show zoom buttons
+reader_zoom_buttons_summary	Whether to show zoom control buttons in the bottom right corner
+reading_s	Reading %s
+reading_stats	Reading statistics
+reading_time_estimation	Show estimated reading time
+reading_time_estimation_summary	The time estimation value may be inaccurate
+recent_manga	Recent
+recent_queries	Recent queries
+recent_sources	Recent sources
+recently_added	Recently added
+recently_read_manga	Recently read manga
+refresh_extensions	Refresh extensions
+related_manga	Related manga
+related_manga_summary	Show a list of related manga. In some cases it may be inaccurate or missing
+remote_sources	Manga sources
+removal_completed	Removal completed
+remove_completed	Remove completed
+remove_completed_downloads_confirm	Your downloads history will be permanently deleted. No downloaded files will be affected
+remove_extension_repo_confirm	Remove \"%s\" from extension repositories?
+remove_from_history	Remove from history
+removed_from_favourites	Removed from favorites
+removed_from_history	Removed from history
+rename	Rename
+reorder	Reorder
+repair_broken_sources	Repair broken sources
+repair_broken_sources_item	%1$s — %2$d titles%3$s
+repair_broken_sources_none	No unavailable or broken library sources were found
+repair_broken_sources_select	Select source groups to repair
+repair_broken_sources_summary	Find unavailable sources used by your library and replace their titles safely
+repair_broken_sources_unavailable	(unavailable)
+repeat_password	Repeat the password
+replace	Replace
+replace_source	Replace source
+report	Report
+reset_dns_image_proxy	Reset DNS and image proxy
+reset_dns_image_proxy_summary	Disable DNS over HTTPS and image optimization proxy.
+reset_email_sent	If a valid account exists, an email to reset your password has been sent to your inbox
+reset_filter	Reset filter
+reset_password	Reset password
+restart	Restart
+restore_backup	Restore from backup
+restore_summary	Restore previously created backup
+reverse	Reverse
+reverse_chapters_for_source	Reverse reading order
+reverse_chapters_global	Reverse chapter list
+right_to_left	Right-to-left
+rotate_screen	Rotate screen
+rpc_skip_nsfw_summary	Do not use RPC for adult content
+runs_on_app_start	Runs when the application starts
+same_content_type_as_current	Same content type as current
+same_language_as_current	Same language as current
+save_filter	Save filter
+save_manga	Save manga
+save_manga_confirm	Save selected manga? This may consume traffic and disk space
+save_page	Save page
+saved_filters	Saved filters
+saved_manga	Saved manga
+scale_mode	Scale mode
+screen_orientation	Screen orientation
+screen_rotation_locked	Screen rotation has been locked
+screen_rotation_unlocked	Screen rotation has been unlocked
+screenshots_allow	Allow
+screenshots_block_all	Always block
+screenshots_block_incognito	Block when incognito mode
+screenshots_block_nsfw	Block on NSFW
+screenshots_policy	Screenshot policy
+scrobbler_auth_intro	Sign in to set up integration with %s. This will allow you to track your manga reading progress and status
+scrobbler_auth_required	Sign in to %s to continue
+scrobbling_empty_hint	To track reading progress, select Menu → Track on the manga details screen.
+search_chapters	Find chapter
+search_disabled_sources	Search through disabled sources
+search_everywhere	Search everywhere
+search_hint	Enter manga title, genre or source name
+search_history_cleared	Cleared
+search_manga	Search manga
+search_on_s	Search on %s
+search_results	Search results
+search_sources_for_title	Search manga sources
+search_suggestions	Search suggestions
+select_range	Select range
+send	Send
+send_backups_telegram	Send backups in Telegram
+server_address	Server address
+server_error	Server side error (%1$d). Please try again later
+set_plugin_name	Set name for this plugin
+settings_apply_restart_required	Please restart the application to apply these changes
+sfw	SFW
+share_backup	Share backup
+share_image	Share image
+share_logs	Share logs
+share_s	Share %s
+shikimori	Shikimori
+show	Show
+show_all	Show all
+show_floating_control_button	Show floating control button
+show_in_grid_view	Show in grid view
+show_labels_in_navbar	Show labels in navigation bar
+show_menu	Show menu
+show_notification_new_chapters_off	You will not receive notifications but new chapters will be highlighted in the lists
+show_notification_new_chapters_on	You will receive notifications about updates of manga you are reading
+show_on_shelf	Show on the Shelf
+show_pages_numbers	Numbered pages
+show_pages_numbers_summary	Show page numbers in bottom corner
+show_pages_thumbs	Show pages thumbnails
+show_pages_thumbs_summary	Enable the \"Pages\" tab on the details screen
+show_plugin_apk_handler	Show Kaisoku when opening extension files
+show_plugin_apk_handler_summary	Allow Kaisoku to appear in Android’s app chooser for extension APK and archive files.
+show_quick_filters	Show quick filters
+show_quick_filters_summary	Provides the ability to filter manga lists by certain parameters
+show_reading_indicators	Show reading progress indicators
+show_reading_indicators_summary	Show percentage read in history and favorites
+show_slider	Show slider
+show_suspicious_content	Show suspicious content
+show_updated	Show updated
+silent	Silent
+simple	Simple
+single_cbz_file	Single CBZ file
+size_s	Size: %s
+sort_chapters_by_name	Sort chapters by name
+sort_order	Sorting order
+sort_recently_updated	Recently updated
+source	Source
+source_broken_warning	This manga source has been marked as broken. Some features may not work
+source_code	Source code
+source_disabled	Source disabled
+source_enabled	Source enabled
+source_filters	Source filters
+source_marked_nsfw	Source marked as NSFW
+source_match_rate_summary	%1$d of %2$d titles matched
+source_pinned	Source pinned
+source_presets	Source presets
+source_priority	Source priority
+source_replacement_batch_completed	%1$d titles replaced; %2$d still need a source
+source_replacement_empty_summary	Change the search title or choose another source
+source_replacement_failed	%d replacements failed and were left unchanged
+source_replacement_remaining_checks	%1$d sources · %2$d checks left
+source_replacement_remaining_mix	%1$d ranked sources left · %2$d title checks left
+source_replacement_remaining_replacements	%d replacements left
+source_replacement_remaining_titles	%d titles left
+source_replacement_review_item	%1$s → %2$s (%3$s)
+source_replacement_review_summary	Uncheck uncertain matches. Nothing changes until you confirm.
+source_replacement_review_title	Review replacements
+source_replacement_step_applying	Step 4 of 4 · Applying matched replacements
+source_replacement_step_comparing	Step 1 of 4 · Comparing %d titles
+source_replacement_step_matching	Step 2 of 4 · Matching %s
+source_replacement_step_preparing	Step 1 of 4 · Preparing source comparison…
+source_replacement_step_smart_mix	Step 3 of 4 · Smart mix with %s
+source_replacement_subtitle_batch	%1$s (%2$d/%3$d) • %4$s
+source_replacement_summary_many_message	%d titles were moved to working sources.
+source_replacement_summary_many_title	Replacement complete
+source_replacement_summary_mix	Replacement mix
+source_replacement_summary_one_message	One title was moved to a working source.
+source_replacement_summary_one_title	Source replaced
+source_replacement_summary_replaced	Replaced
+source_replacement_summary_source_item	%1$s · %2$d
+source_replacement_summary_sources	Sources used
+source_replacement_summary_title	Replacement summary
+source_replacement_summary_zero_message	No library entries needed to be changed.
+source_replacement_summary_zero_title	Everything is already set
+source_reverse_reading_order_summary	Reverse chapter navigation and continuous reading for all titles from this source. Your current position is kept.
+source_scope	Source scope
+source_selected	Source: %s
+source_unmarked_nsfw	Source unmarked as NSFW
+source_unpinned	Source unpinned
+sources_catalog	Sources catalog
+sources_disabled	Sources disabled
+sources_marked_nsfw	Sources marked as NSFW
+sources_pinned	Sources pinned
+sources_reorder_tip	Tap and hold on an item to reorder them
+sources_unmarked_nsfw	Sources unmarked as NSFW
+sources_unpinned	Sources unpinned
+speed	Speed
+speed_value	x%.1f
+split_by_translations	Split by translations
+split_by_translations_summary	Show chapters with different translations separately, rather than in one list
+standard	Standard
+start_download	Start download
+state	State
+stats_cleared	Statistics cleared
+status_planned	Planned
+status_re_reading	Re-reading
+storage_and_network	Storage and network
+stuck	Stuck
+suggest_new_sources	Suggest new sources after app update
+suggest_new_sources_summary	Prompt to enable newly added sources after updating the application
+suggested_queries	Suggested queries
+suggestion_manga	Suggestion: %s
+suggestions_disabled_sources_summary	Show suggestions from all manga sources, including disabled ones
+suggestions_enable	Enable suggestions
+suggestions_enable_prompt	Do you want to receive personalized manga suggestions?
+suggestions_excluded_genres	Exclude genres
+suggestions_excluded_genres_summary	Specify genres that you do not want to see in the suggestions
+suggestions_info	All data is only analyzed locally on this device and never sent anywhere.
+suggestions_notifications_summary	Sometimes show notifications with suggested manga
+suggestions_summary	Suggest manga based on your preferences
+suggestions_unavailable_text	Suggestions feature is disabled
+suggestions_updating	Suggestions updating
+suggestions_wifi_only_summary	Do not update suggestions using metered network connections
+switch_pages	Switch pages
+switch_pages_volume_buttons	Enable volume buttons
+switch_pages_volume_buttons_summary	Use volume buttons for switching pages
+sync	Synchronization
+sync_auth	Login to sync account
+sync_auth_hint	You can sign in into an existing account or create a new one
+sync_auth_reset_hint	Please set a new password for your account
+sync_auth_reset_title	Reset password
+sync_content	Content to synchronize
+sync_host_description	You can use a self-hosted synchronization server or a default one. Don\'t change this if you\'re not sure what you\'re doing.
+sync_interval	Sync interval
+sync_login	Log in to sync your data
+sync_on_start	Sync when the app starts
+sync_provider	Sync provider
+sync_settings	Synchronization settings
+sync_title	Sync your data
+tags_warnings	Highlight dangerous genres
+tags_warnings_summary	Highlight genres that may be inappropriate for most users
+tap_action	Tap action
+tap_to_try_again	Tap to try again
+telegram_bot_token	Telegram bot token
+telegram_bot_token_summary	Leave empty to use the built-in Kaisoku backup bot
+telegram_chat_id	Telegram chat ID
+telegram_chat_id_summary	Enter the chat ID where backups should be sent
+telegram_group	Discord server
+telegram_integration	Telegram integration
+test_connection	Test connection
+test_parser	Test manga source
+text_clear_cookies_prompt	You will be logged out from all sources
+text_clear_search_history_prompt	Remove all recent search queries permanently?
+text_clear_updates_feed_prompt	Clear all update history permanently?
+text_delete_local_manga	Permanently delete \"%s\" from device?
+text_delete_local_manga_batch	Delete selected items from device permanently?
+text_downloads_list_holder	You don\'t have any downloads
+text_empty_holder_primary	It\'s kind of empty here…
+text_empty_holder_secondary_filtered	There are no manga matching the filters you selected
+text_feed_holder	New chapters of what you are reading are shown here
+text_file_not_supported	Pick a CBZ, ZIP, or CBR file.
+text_file_sizes	B|kB|MB|GB|TB
+text_history_holder_primary	What you read will be displayed here
+text_history_holder_secondary	Find what to read in the «Explore» section
+text_local_holder_primary	Save something first
+text_local_holder_secondary	Save something from an online catalog or import it from a file.
+text_search_holder_secondary	Try to reformulate the query.
+text_suggestion_holder	Start reading manga and you will get personalized suggestions
+text_unsaved_changes_prompt	Save or discard unsaved changes\?
+theme_name_asuka	Asuka
+theme_name_expressive	Expressive (Test)
+theme_name_itsuka	Itsuka
+theme_name_kanade	Kanade
+theme_name_mamimi	Mamimi
+theme_name_miku	Miku
+theme_name_mion	Mion
+theme_name_rikka	Rikka
+theme_name_sakura	Sakura
+theme_name_totoro	Totoro
+this_manga	This manga
+this_month	This month
+three_months	Three months
+to_top	To top
+toggle_ui	Show/hide UI
+too_many_requests_message	Too many requests. Try again later
+too_many_requests_message_retry	Too many requests. Try again after %s
+top_source_matches	Top source matches
+track_sources	Look for updates
+tracker_auto_match_beta	AniList automatic matching · Beta
+tracker_auto_match_summary	Off by default. Automatically link trusted IDs already on your AniList list. Confirm title suggestions and new list entries. Similar titles can be wrong; manual
+tracker_beta_risks	Similar titles can identify the wrong work, sequel or edition. Automatic matching is optional and off by default; only trusted IDs link automatically. Title sug
+tracker_beta_short	Beta: check matches and chapter numbers. Tap for risks.
+tracker_connect	Connect %1$s
+tracker_create_confirmation	This title is not on your %1$s list. Add it and link it to this source? Existing remote scores, notes and statuses are preserved when linking entries already on
+tracker_create_title	Add to tracker list?
+tracker_debug_info	Checking for new chapters log
+tracker_debug_info_summary	Debug information about background checks for new chapters
+tracker_library_beta	Trackers · Beta
+tracker_library_empty	No titles in this list.
+tracker_link	Link
+tracker_link_source	Link a source title
+tracker_link_source_confirmation	Use “%1$s” from “%2$s” for this tracker entry? Check that it is the same work, not a sequel or another edition.
+tracker_match_review	AniList match ready · Beta. Check the title before linking.
+tracker_match_review_action	Review
+tracker_match_risk	Beta matching: a similar name can refer to a different work or edition. Confirm the correct title. You can change or remove this link from Track.
+tracker_refresh_error	Could not refresh the tracker library: %1$s
+tracker_retry_after	Too many requests. Retry in %1$d seconds.
+tracker_sync_error	Progress sync needs attention: %1$s
+tracker_sync_pending	Progress waiting to sync: %1$d
+tracker_warning	Some devices have different system behavior, which may break background tasks.
+tracker_wifi_only_summary	Do not check for new chapters using metered network connections
+translate_clear_cache	Clear translation cache
+translate_concurrency	Concurrent requests
+translate_custom_headers	Custom headers (JSON)
+translate_enabled	Enable page translation
+translate_enabled_summary	Beta — adds the translate & extract-text actions in the reader
+translate_endpoint	API endpoint
+translate_model	Model
+translate_overlay_bg	Overlay background
+translate_overlay_bg_summary	Paint a white box behind each translated bubble
+translate_partial_failure	%1$d part(s) failed — tap to retry
+translate_provider	Provider
+translate_provider_gemini	Native Gemini
+translate_provider_google_lens	Google Lens / Google Translate (no key)
+translate_provider_openai	OpenAI-compatible
+translate_provider_summary	OpenAI-compatible and Gemini API settings are saved separately.
+translate_rpm	Max requests per minute
+translate_setup_required	Configure an AI provider in Settings → Reader → AI translation
+translate_source_lang	Source language
+translate_target_lang	Target language
+translate_temporary_provider_error	Gemini returned HTTP %1$d. The app retried the request; wait and try again. If it keeps happening, copy the details and check your Gemini API model and project.
+translate_trigger_auto	Auto on each page
+translate_trigger_manual	Manual (menu)
+translate_trigger_mode	Trigger
+translated_text	Translated text
+translated_text_count	Translated text (%1$d)
+translation	Translation
+try_again	Try again
+two_page_scroll_sensitivity	Two-Page Scroll Sensitivity
+unavailable	Unavailable
+unknown_source	Unknown source %1$s
+unmark_as_nsfw	Unmark as NSFW
+unnamed_chapter	Unnamed chapter
+unpopular	Unpopular
+unstable_feature	Unstable feature
+unstable_feature_summary	This function is experimental. Please make sure you have a backup to avoid data loss
+unsupported_backup_message	Please select a proper Kaisoku backup file
+unsupported_source	This manga source is not supported
+update_removed	Update removed
+updated	Updated
+updated_long_ago	Updated long ago
+updates_feed_cleared	Cleared
+upscale_activation_help	Applies when the page is enlarged above the selected threshold. Strength 0 disables processing.
+upscale_not_applied	This page is already high resolution, so upscaling is not applied
+upscale_open_settings	Upscaling settings
+upscale_passes	Processing passes
+upscale_passes_value	Processing passes: %1$s
+upscale_power_save	Processing is paused while battery saver is active.
+upscale_preview	Upscaling preview
+upscale_preview_ai	Upscaled
+upscale_preview_description	Low-resolution pages are sharpened on-device while you read. Upscaling pauses automatically in battery saver.
+upscale_preview_original	Original
+upscale_preview_too_large	A safe preview is unavailable for this image. Use the reader toggle to compare it live.
+upscale_strength	Strength
+upscale_strength_value	Strength: %1$d%%
+upscale_threshold	Activation threshold
+upscale_threshold_value	Apply above %1$s× enlargement
+use_android_installed_extensions	Use Android-installed extensions
+use_android_installed_extensions_summary	Include extensions installed by Android/Mihon. Disable to use only app-private extensions.
+use_default_cover	Use default cover
+use_fingerprint	Use biometric if available
+use_suggested_repo	Use suggested
+use_this_cover	Use this cover
+use_two_pages_landscape	Use two pages layout on landscape orientation (beta)
+user_agent	UserAgent header
+user_manual	User manual
+various_languages	Various languages
+vibration	Vibration
+voice_search	Voice search
+volume_	Volume %d
+volume_unknown	Unknown volume
+web_view_unavailable	WebView not available: check if WebView provider is installed
+webtoon_gaps	Gaps in webtoon mode
+webtoon_gaps_summary	Show vertical gaps between pages in webtoon mode
+webtoon_zoom	Webtoon zoom
+webtoon_zoom_summary	Allow zoom in gesture in webtoon mode
+webview_adblock_toggled_off	Ad blocker: OFF
+webview_adblock_toggled_on	Ad blocker: ON
+webview_desktop_mode	Desktop mode
+webview_js_title	JavaScript
+webview_no_images_found	No manga images found on this page
+webview_open_in_reader	Open in Reader
+webview_source_already_in_library	Already in library
+week	Week
+welcome_text	Please select which content sources you would like to enable. This can also be configured later in settings
+wifi_only	Wi-Fi only
+wrong_password	Wrong password
+year	Year
+years	Years
+you_have_not_favourites_yet	No favorites yet
+zoom_in	Zoom in
+zoom_mode_fit_center	Fit center
+zoom_mode_fit_height	Fit to height
+zoom_mode_fit_width	Fit to width
+zoom_mode_keep_start	Keep at start

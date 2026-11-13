@@ -1,0 +1,31 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,396  t='' d='' id=
+[    ]  197,375  t='Share crash logs' d='' id=
+[    ]  457,433  t='Saves error logs to a file for sharing with the developers' d='' id=
+[C   ]  540,575  t='' d='' id=
+[    ]  143,575  t='Debug info' d='' id=
+[C   ]  540,733  t='' d='' id=
+[    ]  207,733  t='Onboarding guide' d='' id=
+[C   ]  540,891  t='' d='' id=
+[    ]  239,891  t='Manage notifications' d='' id=
+[    ]  205,1033 t='Background activity' d='' id=
+[C   ]  540,1181 t='' d='' id=
+[    ]  304,1160 t='Disable battery optimization' d='' id=
+[    ]  423,1218 t='Helps with background library updates and backups' d='' id=
+[C   ]  540,1402 t='' d='' id=
+[    ]  199,1360 t='Don't kill my app!' d='' id=
+[    ]  540,1439 t='Some manufacturers have additional app restrictions that kill background service' d='' id=
+[    ]   82,1618 t='Data' d='' id=
+[C   ]  540,1766 t='' d='' id=
+[    ]  224,1745 t='Reindex downloads' d='' id=
+[    ]  359,1803 t='Force app to recheck downloaded chapters' d='' id=
+[C   ]  540,1966 t='' d='' id=
+[    ]  182,1945 t='Clear database' d='' id=
+[    ]  469,2003 t='Delete history for entries that are not saved in your library' d='' id=
+[    ]  137,2161 t='Networking' d='' id=
+[C   ]  540,2288 t='' d='' id=
+[    ]  167,2288 t='Clear cookies' d='' id=
+[C   ]  540,2383 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

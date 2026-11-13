@@ -1,0 +1,27 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,375  t='' d='' id=
+[    ]  162,375  t='Only on Wi-Fi' d='' id=
+[C   ]  540,533  t='' d='' id=
+[    ]  230,533  t='Save as CBZ archive' d='' id=
+[    ]  321,691  t='Concurrent source downloads' d='' id=
+[    ] 1011,691  t='5' d='' id=
+[    ]  304,980  t='Concurrent page downloads' d='' id=
+[    ]  381,1038 t='Pages downloaded simultaneously per source' d='' id=
+[    ] 1011,1001 t='5' d='' id=
+[    ]  172,1295 t='Delete chapters' d='' id=
+[C   ]  540,1422 t='' d='' id=
+[    ]  327,1422 t='After manually marked as read' d='' id=
+[C   ]  540,1601 t='' d='' id=
+[    ]  356,1580 t='After reading automatically delete' d='' id=
+[    ]  106,1638 t='Disabled' d='' id=
+[C   ]  540,1780 t='' d='' id=
+[    ]  382,1780 t='Allow deleting bookmarked chapters' d='' id=
+[C   ]  540,1959 t='' d='' id=
+[    ]  230,1938 t='Excluded categories' d='' id=
+[    ]   81,1996 t='None' d='' id=
+[    ]  168,2154 t='Auto-download' d='' id=
+[C   ]  540,2281 t='' d='' id=
+[    ]  266,2281 t='Download new chapters' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  289,212  t='Downloads' d='' id=

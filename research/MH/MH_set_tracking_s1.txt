@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,94   t='' d='' id=
+[    ]  105,94   t='' d='MangaBaka' id=
+[    ]  322,94   t='MangaBaka' d='' id=
+[C   ]  540,262  t='' d='' id=
+[    ]  105,262  t='' d='MyAnimeList' id=
+[    ]  335,262  t='MyAnimeList' d='' id=
+[C   ]  540,430  t='' d='' id=
+[    ]  105,430  t='' d='AniList' id=
+[    ]  276,430  t='AniList' d='' id=
+[C   ]  540,598  t='' d='' id=
+[    ]  105,598  t='' d='Kitsu' id=
+[    ]  258,598  t='Kitsu' d='' id=
+[C   ]  540,766  t='' d='' id=
+[    ]  105,766  t='' d='MangaUpdates' id=
+[    ]  353,766  t='MangaUpdates' d='' id=
+[C   ]  540,934  t='' d='' id=
+[    ]  105,934  t='' d='Shikimori' id=
+[    ]  299,934  t='Shikimori' d='' id=
+[C   ]  540,1102 t='' d='' id=
+[    ]  105,1102 t='' d='Bangumi' id=
+[    ]  294,1102 t='Bangumi' d='' id=
+[C   ]  540,1270 t='' d='' id=
+[    ]  105,1270 t='' d='Hikka' id=
+[    ]  264,1270 t='Hikka' d='' id=
+[C   ]  540,1438 t='' d='' id=
+[    ]  105,1438 t='' d='Comick' id=
+[    ]  281,1438 t='Comick' d='' id=
+[    ]  540,1732 t='One-way sync to update the chapter progress in external tracker services. Set up' d='' id=
+[    ]  195,1932 t='Enhanced trackers' d='' id=
+[    ]  540,2211 t='Provides enhanced features for specific sources. Entries are automatically track' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  256,212  t='Tracking' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

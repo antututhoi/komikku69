@@ -1,0 +1,17 @@
+[    ]  110,359  t='Sources' d='' id=
+[C   ]  540,486  t='' d='' id=
+[    ]  310,486  t='Hide entries already in library' d='' id=
+[C   ]  540,665  t='' d='' id=
+[    ]  197,644  t='Extension stores' d='' id=
+[    ]   94,702  t='1 store' d='' id=
+[    ]  134,860  t='Extensions' d='' id=
+[C   ]  540,1008 t='' d='' id=
+[    ]  283,987  t='Allowed content warnings' d='' id=
+[    ]  163,1045 t='Safe, Mixed, 18+' d='' id=
+[C   ]  540,1229 t='' d='' id=
+[    ]  353,1187 t='Also apply to installed extensions' d='' id=
+[    ]  429,1266 t='When off, extensions you already installed keep loading and updating regardless ' d='' id=
+[    ]  540,1581 t='Installed extensions that aren't loaded stay listed without their sources; ones ' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  243,212  t='Browse' d='' id=

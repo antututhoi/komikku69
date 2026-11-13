@@ -1,0 +1,29 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,41   t='' d='' id=
+[    ]  406,20   t='Resets reading mode and orientation of all series' d='' id=
+[C   ]  540,240  t='' d='' id=
+[    ]  429,198  t='Update library manga titles to match source' d='' id=
+[    ]  429,314  t='Warning: if a manga is renamed, it will be removed from the download queue (if p' d='' id=
+[C   ]  540,603  t='' d='' id=
+[    ]  314,477  t='Disallow non-ASCII filenames' d='' id=
+[    ]  429,640  t='Ensures compatibility with certain storage media that don't support Unicode. Whe' d='' id=
+[C   ]  540,971  t='' d='' id=
+[    ]  345,887  t='Enable chapter name hash suffix' d='' id=
+[    ]  429,1008 t='Ensures a unique hash suffix is added to chapter names to prevent naming conflic' d='' id=
+[    ]  100,1229 t='Reader' d='' id=
+[C   ]  540,1356 t='' d='' id=
+[    ]  272,1356 t='Use high quality renderer' d='' id=
+[    ]  134,1530 t='Extensions' d='' id=
+[C   ]  540,1678 t='' d='' id=
+[    ]  116,1657 t='Installer' d='' id=
+[    ]  166,1715 t='PackageInstaller' d='' id=
+[C   ]  540,1857 t='' d='' id=
+[    ]  377,1857 t='Revoke trusted unknown extensions' d='' id=
+[    ]  132,2031 t='Data Saver' d='' id=
+[C   ]  540,2179 t='' d='' id=
+[    ]  143,2158 t='Data Saver' d='' id=
+[    ]  474,2216 t='Compress images before downloading or loading in reader' d='' id=
+[    ]  171,2374 t='Developer tools' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  273,212  t='Advanced' d='' id=

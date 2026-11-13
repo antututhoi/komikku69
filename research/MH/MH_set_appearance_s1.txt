@@ -1,0 +1,41 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,78   t='' d='' id=
+[Ck  ]  540,57   t='' d='' id=
+[    ]  540,51   t='Light' d='' id=
+[Ck  ]  871,57   t='' d='' id=
+[    ]  871,51   t='Dark' d='' id=
+[Cxk ]  209,57   t='' d='' id=
+[    ]  243,51   t='System' d='' id=
+[C   ]  540,538  t='' d='' id=
+[S   ]  540,538  t='' d='' id=
+[C   ]  191,485  t='' d='' id=
+[    ]  191,825  t='Default' d='' id=
+[C   ]  511,485  t='' d='' id=
+[    ]  597,282  t='' d='Selected' id=
+[    ]  511,825  t='Dynamic' d='' id=
+[C   ]  831,485  t='' d='' id=
+[    ]  831,825  t='Catppuccin' d='' id=
+[C   ] 1046,485  t='' d='' id=
+[    ] 1041,825  t='Green Apple' d='' id=
+[C   ]  540,999  t='' d='' id=
+[    ]  244,999  t='Pure black dark mode' d='' id=
+[    ]  103,1173 t='Display' d='' id=
+[C   ]  540,1300 t='' d='' id=
+[    ]  170,1300 t='App language' d='' id=
+[C   ]  540,1479 t='' d='' id=
+[    ]  124,1458 t='Tablet UI' d='' id=
+[    ]   77,1516 t='Auto' d='' id=
+[C   ]  540,1679 t='' d='' id=
+[    ]  154,1658 t='Date format' d='' id=
+[    ]  180,1716 t='Default (11/13/26)' d='' id=
+[C   ]  540,1879 t='' d='' id=
+[    ]  157,1858 t='Time format' d='' id=
+[    ]  240,1916 t='Follow language (2:50 AM)' d='' id=
+[C   ]  540,2079 t='' d='' id=
+[    ]  233,2058 t='Relative timestamps' d='' id=
+[    ]  261,2116 t='"Today" instead of "11/13/26"' d='' id=
+[C   ]  540,2258 t='' d='' id=
+[    ]  393,2258 t='Render images in manga descriptions' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  299,212  t='Appearance' d='' id=

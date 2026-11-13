@@ -1,0 +1,35 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,22   t='' d='' id=
+[    ]   74,1    t='Free' d='' id=
+[C   ]  540,144  t='' d='' id=
+[    ]  206,123  t='Background color' d='' id=
+[C   ]  540,323  t='' d='' id=
+[    ]  137,323  t='Fullscreen' d='' id=
+[C   ]  540,481  t='' d='' id=
+[    ]  302,481  t='Show content in cutout area' d='' id=
+[C   ]  540,639  t='' d='' id=
+[    ]  185,639  t='Keep screen on' d='' id=
+[C   ]  540,797  t='' d='' id=
+[    ]  222,797  t='Show page number' d='' id=
+[    ]   83,971  t='E-Ink' d='' id=
+[C   ]  540,1119 t='' d='' id=
+[    ]  246,1098 t='Flash on page change' d='' id=
+[    ]  302,1156 t='Reduces ghosting on e-ink displays' d='' id=
+[    ]  109,1314 t='Reading' d='' id=
+[C   ]  540,1441 t='' d='' id=
+[    ]  291,1441 t='Skip chapters marked read' d='' id=
+[C   ]  540,1599 t='' d='' id=
+[    ]  238,1599 t='Skip filtered chapters' d='' id=
+[C   ]  540,1757 t='' d='' id=
+[    ]  260,1757 t='Skip duplicate chapters' d='' id=
+[C   ]  540,1915 t='' d='' id=
+[    ]  333,1915 t='Always show chapter transition' d='' id=
+[    ]   95,2089 t='Paged' d='' id=
+[C   ]  540,2237 t='' d='' id=
+[    ]  138,2216 t='Tap zones' d='' id=
+[    ]   96,2274 t='Default' d='' id=
+[C   ]  540,2368 t='' d='' id=
+[    ]  191,2389 t='Invert tap zones' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

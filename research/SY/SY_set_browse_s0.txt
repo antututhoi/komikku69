@@ -1,0 +1,29 @@
+[S   ]  540,1200 t='' d='' id=
+[    ]  110,359  t='Sources' d='' id=
+[C   ]  540,507  t='' d='' id=
+[    ]  181,486  t='Edit categories' d='' id=
+[    ]  134,544  t='0 categories' d='' id=
+[C   ]  540,749  t='' d='' id=
+[    ]  293,686  t='Filter sources in categories' d='' id=
+[    ]  429,786  t='Filter the sources that are in categories, making the sources not get put under ' d='' id=
+[C   ]  540,1012 t='' d='' id=
+[    ]  240,970  t='Replace latest button' d='' id=
+[    ]  429,1049 t='Replace latest button with a custom browse view that includes both latest and br' d='' id=
+[C   ]  540,1233 t='' d='' id=
+[    ]  300,1212 t='Local source hidden folders' d='' id=
+[    ]  345,1270 t='Allow local source to read hidden folders' d='' id=
+[    ]   82,1428 t='Feed' d='' id=
+[C   ]  540,1555 t='' d='' id=
+[    ]  171,1555 t='Hide Feed tab' d='' id=
+[C   ]  540,1797 t='' d='' id=
+[    ]  203,1713 t='Feed tab position' d='' id=
+[    ]  429,1834 t='Do you want the feed tab to be the first tab in browse? This will make it the de' d='' id=
+[    ]  110,2055 t='Sources' d='' id=
+[C   ]  540,2182 t='' d='' id=
+[    ]  310,2182 t='Hide entries already in library' d='' id=
+[C   ]  540,2330 t='' d='' id=
+[    ]  197,2340 t='Extension stores' d='' id=
+[    ]   94,2388 t='1 store' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  243,212  t='Browse' d='' id=

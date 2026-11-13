@@ -1,0 +1,36 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,2    t='' d='' id=
+[C   ]  540,105  t='' d='' id=
+[    ]  261,84   t='Show tap zones overlay' d='' id=
+[    ]  304,142  t='Briefly show when reader is opened' d='' id=
+[C   ]  540,284  t='' d='' id=
+[    ]  276,284  t='Animate page transitions' d='' id=
+[C   ]  540,484  t='' d='' id=
+[    ]  274,442  t='Load ahead only on Wi-Fi' d='' id=
+[    ]  429,521  t='Saves mobile data by loading only the pages near the one you're reading' d='' id=
+[    ]  103,668  t='Display' d='' id=
+[C   ]  540,816  t='' d='' id=
+[    ]  187,795  t='Default rotation' d='' id=
+[    ]   74,853  t='Free' d='' id=
+[C   ]  540,1016 t='' d='' id=
+[    ]  206,995  t='Background color' d='' id=
+[    ]   83,1053 t='Black' d='' id=
+[C   ]  540,1195 t='' d='' id=
+[    ]  137,1195 t='Fullscreen' d='' id=
+[C   ]  540,1353 t='' d='' id=
+[    ]  302,1353 t='Show content in cutout area' d='' id=
+[C   ]  540,1511 t='' d='' id=
+[    ]  185,1511 t='Keep screen on' d='' id=
+[C   ]  540,1669 t='' d='' id=
+[    ]  222,1669 t='Show page number' d='' id=
+[    ]   83,1843 t='E-Ink' d='' id=
+[C   ]  540,1991 t='' d='' id=
+[    ]  246,1970 t='Flash on page change' d='' id=
+[    ]  302,2028 t='Reduces ghosting on e-ink displays' d='' id=
+[    ]  109,2186 t='Reading' d='' id=
+[C   ]  540,2313 t='' d='' id=
+[    ]  291,2313 t='Skip chapters marked read' d='' id=
+[C   ]  540,2396 t='' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=

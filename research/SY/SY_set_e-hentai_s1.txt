@@ -1,0 +1,28 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,52   t='' d='' id=
+[    ]  429,31   t='Enable/Disable the enhanced browse menu made for E/ExHentai' d='' id=
+[    ]  285,200  t='E-Hentai Favorites sync' d='' id=
+[C   ]  540,453  t='' d='' id=
+[    ]  296,327  t='Disable favorites uploading' d='' id=
+[    ]  429,490  t='Favorites are only downloaded from ExHentai. Any changes to favorites in the app' d='' id=
+[C   ]  540,758  t='' d='' id=
+[    ]  287,737  t='Show favorites sync notes' d='' id=
+[    ]  486,795  t='Show some information regarding the favorites sync feature' d='' id=
+[C   ]  540,1042 t='' d='' id=
+[    ]  348,937  t='Ignore sync errors when possible' d='' id=
+[    ]  429,1079 t='Do not abort immediately when encountering errors during the sync process. Error' d='' id=
+[C   ]  540,1389 t='' d='' id=
+[    ]  247,1305 t='Force sync state reset' d='' id=
+[    ]  540,1426 t='Performs a full resynchronization on the next sync. Removals will not be synced.' d='' id=
+[    ]  231,1647 t='Gallery update checker' d='' id=
+[C   ]  540,1837 t='' d='' id=
+[    ]  323,1774 t='Time between update batches' d='' id=
+[    ]  540,1874 t='TachiyomiSY checks/updates galleries in batches. This means it will wait 1 hour(' d='' id=
+[C   ]  540,2079 t='' d='' id=
+[    ]  266,2058 t='Auto update restrictions' d='' id=
+[    ]  179,2116 t='Restrictions: None' d='' id=
+[C   ]  540,2258 t='' d='' id=
+[    ]  262,2258 t='Show updater statistics' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  255,212  t='E-Hentai' d='' id=

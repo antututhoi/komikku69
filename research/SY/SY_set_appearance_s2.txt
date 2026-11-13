@@ -1,0 +1,33 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,44   t='' d='' id=
+[    ]  154,2    t='Date format' d='' id=
+[    ]  180,25   t='Default (11/13/26)' d='' id=
+[C   ]  540,188  t='' d='' id=
+[    ]  157,167  t='Time format' d='' id=
+[    ]  143,225  t='Follow language (3:24 AM)' d='' id=
+[C   ]  540,388  t='' d='' id=
+[    ]  233,367  t='Relative timestamps' d='' id=
+[    ]  261,425  t='"Today" instead of "11/13/26"' d='' id=
+[C   ]  540,567  t='' d='' id=
+[    ]  393,567  t='Render images in manga descriptions' d='' id=
+[    ]  101,741  t='Navbar' d='' id=
+[C   ]  540,868  t='' d='' id=
+[    ]  269,868  t='Show updates in the nav' d='' id=
+[C   ]  540,1026 t='' d='' id=
+[    ]  256,1026 t='Show history in the nav' d='' id=
+[C   ]  540,1184 t='' d='' id=
+[    ]  263,1184 t='Always show nav labels' d='' id=
+[    ]  152,1358 t='Fork Settings' d='' id=
+[C   ]  540,1485 t='' d='' id=
+[    ]  361,1485 t='Expand all search filters by default' d='' id=
+[C   ]  540,1685 t='' d='' id=
+[    ]  325,1643 t='Recommendations in overflow' d='' id=
+[    ]  429,1722 t='Put the recommendations button in the overflow menu instead of on the entry page' d='' id=
+[C   ]  540,1927 t='' d='' id=
+[    ]  208,1885 t='Merge in overflow' d='' id=
+[    ]  429,1964 t='Put the merge button in the overflow menu instead of on the entry page' d='' id=
+[    ]  224,2127 t='Previews row count' d='' id=
+[    ]  966,2127 t='4 rows' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  299,212  t='Appearance' d='' id=

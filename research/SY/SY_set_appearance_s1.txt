@@ -1,0 +1,40 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,237  t='' d='' id=
+[S   ]  540,216  t='' d='' id=
+[C   ]  191,147  t='' d='' id=
+[    ]  191,379  t='Default' d='' id=
+[C   ]  511,147  t='' d='' id=
+[    ]  511,379  t='Dynamic' d='' id=
+[C   ]  831,147  t='' d='' id=
+[    ]  831,379  t='Catppuccin' d='' id=
+[C   ] 1046,147  t='' d='' id=
+[    ] 1041,379  t='Green Apple' d='' id=
+[C   ]  540,553  t='' d='' id=
+[    ]  244,553  t='Pure black dark mode' d='' id=
+[    ]  103,727  t='Display' d='' id=
+[C   ]  540,854  t='' d='' id=
+[    ]  170,854  t='App language' d='' id=
+[C   ]  540,1033 t='' d='' id=
+[    ]  124,1012 t='Tablet UI' d='' id=
+[    ]   77,1070 t='Auto' d='' id=
+[C   ]  540,1233 t='' d='' id=
+[    ]  154,1212 t='Date format' d='' id=
+[    ]  180,1270 t='Default (11/13/26)' d='' id=
+[C   ]  540,1433 t='' d='' id=
+[    ]  157,1412 t='Time format' d='' id=
+[    ]  240,1470 t='Follow language (3:24 AM)' d='' id=
+[C   ]  540,1633 t='' d='' id=
+[    ]  233,1612 t='Relative timestamps' d='' id=
+[    ]  261,1670 t='"Today" instead of "11/13/26"' d='' id=
+[C   ]  540,1812 t='' d='' id=
+[    ]  393,1812 t='Render images in manga descriptions' d='' id=
+[    ]  101,1986 t='Navbar' d='' id=
+[C   ]  540,2113 t='' d='' id=
+[    ]  269,2113 t='Show updates in the nav' d='' id=
+[C   ]  540,2271 t='' d='' id=
+[    ]  256,2271 t='Show history in the nav' d='' id=
+[C   ]  540,2375 t='' d='' id=
+[    ]  263,2396 t='Always show nav labels' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  299,212  t='Appearance' d='' id=

@@ -1,0 +1,39 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,375  t='' d='' id=
+[    ]  320,375  t='Update progress after reading' d='' id=
+[C   ]  540,554  t='' d='' id=
+[    ]  401,533  t='Update progress when marked as read' d='' id=
+[    ]   95,591  t='Always' d='' id=
+[C   ]  540,796  t='' d='' id=
+[    ]  387,733  t='Select entries using source metadata' d='' id=
+[    ]  429,833  t='Automatically selects the matching title if the source provides links to tracker' d='' id=
+[    ]  113,1001 t='Trackers' d='' id=
+[C   ]  540,1133 t='' d='' id=
+[    ]  105,1133 t='' d='MangaBaka' id=
+[    ]  322,1133 t='MangaBaka' d='' id=
+[C   ]  540,1301 t='' d='' id=
+[    ]  105,1301 t='' d='MyAnimeList' id=
+[    ]  335,1301 t='MyAnimeList' d='' id=
+[C   ]  540,1469 t='' d='' id=
+[    ]  105,1469 t='' d='AniList' id=
+[    ]  276,1469 t='AniList' d='' id=
+[C   ]  540,1637 t='' d='' id=
+[    ]  105,1637 t='' d='Kitsu' id=
+[    ]  258,1637 t='Kitsu' d='' id=
+[C   ]  540,1805 t='' d='' id=
+[    ]  105,1805 t='' d='MangaUpdates' id=
+[    ]  353,1805 t='MangaUpdates' d='' id=
+[C   ]  540,1973 t='' d='' id=
+[    ]  105,1973 t='' d='Shikimori' id=
+[    ]  299,1973 t='Shikimori' d='' id=
+[C   ]  540,2141 t='' d='' id=
+[    ]  105,2141 t='' d='Bangumi' id=
+[    ]  294,2141 t='Bangumi' d='' id=
+[C   ]  540,2309 t='' d='' id=
+[    ]  105,2309 t='' d='Hikka' id=
+[    ]  264,2309 t='Hikka' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  256,212  t='Tracking' d='' id=
+[C   ] 1007,213  t='' d='' id=
+[    ] 1006,212  t='' d='Tracking guide' id=

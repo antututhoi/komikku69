@@ -1,0 +1,37 @@
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,42   t='' d='' id=
+[    ]  260,21   t='Skip duplicate chapters' d='' id=
+[C   ]  540,163  t='' d='' id=
+[    ]  333,163  t='Always show chapter transition' d='' id=
+[    ]   95,337  t='Paged' d='' id=
+[C   ]  540,485  t='' d='' id=
+[    ]  138,464  t='Tap zones' d='' id=
+[    ]   96,522  t='Default' d='' id=
+[C   ]  540,685  t='' d='' id=
+[    ]  191,664  t='Invert tap zones' d='' id=
+[    ]   81,722  t='None' d='' id=
+[C   ]  540,885  t='' d='' id=
+[    ]  138,864  t='Scale type' d='' id=
+[    ]  115,922  t='Fit screen' d='' id=
+[C   ]  540,1085 t='' d='' id=
+[    ]  226,1064 t='Zoom start position' d='' id=
+[    ]  118,1122 t='Automatic' d='' id=
+[C   ]  540,1264 t='' d='' id=
+[    ]  163,1264 t='Crop borders' d='' id=
+[C   ]  540,1422 t='' d='' id=
+[    ]  276,1422 t='Animate page transitions' d='' id=
+[C   ]  540,1580 t='' d='' id=
+[    ]  391,1580 t='Automatically zoom into wide images' d='' id=
+[C   ]  540,1738 t='' d='' id=
+[    ]  201,1738 t='Pan wide images' d='' id=
+[C   ]  540,1896 t='' d='' id=
+[    ]  195,1896 t='Split wide pages' d='' id=
+[C   ]  540,2054 t='' d='' id=
+[    ]  262,2054 t='Rotate wide pages to fit' d='' id=
+[    ]  126,2228 t='Long strip' d='' id=
+[C   ]  540,2338 t='' d='' id=
+[    ]  138,2355 t='Tap zones' d='' id=
+[    ]   96,2396 t='Default' d='' id=
+[C   ]   75,213  t='' d='' id=
+[    ]   74,212  t='' d='Navigate up' id=
+[    ]  236,212  t='Reader' d='' id=
