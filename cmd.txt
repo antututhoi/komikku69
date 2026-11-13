@@ -555,3 +555,9 @@ shot T_library_filter_tab
 tapt ^Chapter count$
 sleep 2
 shot T_library_filter_chapter_count
+=== T52770
+back
+sleep 1
+tapt ^Sort$
+sleep 2
+shot T_library_sort_tab
