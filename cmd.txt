@@ -1372,3 +1372,6 @@ up
 sleep 1
 tapt ^Settings$
 sleep 2
+=== C61758
+tapt ^Dictionaries and audio$
+sleep 2
