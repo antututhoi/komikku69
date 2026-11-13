@@ -253,3 +253,10 @@ shot F_reader_page
 tap 540 1200
 sleep 2
 shot F_reader_menu
+=== F66542
+tapt ^Options$
+sleep 2
+shot F_reader_options_sheet
+up
+sleep 1
+shot F_reader_options_sheet_2
