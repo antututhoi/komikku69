@@ -1209,3 +1209,5 @@ tapt ^Security and privacy$
 sleep 2
 === SY_set_security_and_privacy_s0
 sleep 1
+=== SY_set_security_and_privacy_s1
+up
