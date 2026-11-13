@@ -289,3 +289,12 @@ shot F_details_manga_overflow
 tapt ^Got it$
 sleep 1
 shot F_x
+=== F66667
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 6
+tapt ^More options$
+sleep 2
+tapt ^List options$
+sleep 2
+shot F_history_list_options
