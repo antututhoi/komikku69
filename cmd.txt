@@ -238,3 +238,7 @@ sleep 2
 tapt ^Manga$
 sleep 4
 shot F_explore_manga_mode
+=== F66451
+tapt ^Favorites$
+sleep 5
+shot F_favorites_grid
