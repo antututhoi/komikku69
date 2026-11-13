@@ -1250,3 +1250,5 @@ tapt ^Advanced$
 sleep 2
 === SY_set_advanced_s0
 sleep 1
+=== SY_set_advanced_s1
+up
