@@ -936,3 +936,5 @@ up
 up
 tapt ^Reader$
 sleep 2
+=== Chimahon_set_reader_s0
+sleep 1
