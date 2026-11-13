@@ -292,3 +292,5 @@ down
 === go_downloads
 tapt ^Downloads$
 sleep 2
+=== set_downloads_s0
+sleep 1
