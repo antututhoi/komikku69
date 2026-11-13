@@ -698,3 +698,6 @@ tap 975 243
 sleep 2
 tap 768 642
 sleep 3
+=== S268305
+tapt ^Reader settings$
+sleep 3
