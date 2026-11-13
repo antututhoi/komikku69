@@ -1431,3 +1431,7 @@ shot C_settings_Anki_p0
 up
 sleep 1
 shot C_settings_Anki_p1
+=== C61772
+up
+sleep 1
+shot C_settings_Anki_p2
