@@ -1,0 +1,36 @@
+# block S268313  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:16:37
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,375  t='' d='' id=
+[    ]  393,302  t='Reduce memory consumption (beta)' d='' id=title
+[    ]  450,361  t='Reduce offscreen pages quality to use less memory' d='' id=summary
+[k   ]  969,345  t='' d='' id=switchWidget
+[C   ]  540,577  t='' d='' id=
+[    ]  363,525  t='Suggest another source on errors' d='' id=title
+[    ]  450,606  t='When a source is slow or keeps failing, offer a plugin or extension for the same' d='' id=summary
+[k   ]  969,577  t='' d='' id=switchWidget
+[C   ]  540,822  t='' d='' id=
+[    ]  326,770  t='Source-switch prompts · Beta' d='' id=title
+[    ]  540,851  t='Pause slow-loading hints or all automatic source-switch prompts' d='' id=summary
+[C   ]  540,1120 t='' d='' id=
+[    ]  199,1015 t='Animated pages' d='' id=title
+[    ]  450,1149 t='Play GIF and WebP pages. Animation pauses offscreen; translations use a still fr' d='' id=summary
+[xk  ]  969,1120 t='' d='' id=switchWidget
+[C   ]  540,1418 t='' d='' id=
+[    ]  311,1366 t='GPU image upscaling (beta)' d='' id=title
+[    ]  540,1447 t='Sharpen low-resolution pages with an Anime4K-style GPU shader. Android 13+' d='' id=summary
+[C   ]  540,1637 t='' d='' id=
+[    ]  152,1611 t='Crop pages' d='' id=title
+[    ]  116,1665 t='Disabled' d='' id=summary
+[    ]  540,1821 t='E-Ink' d='' id=title
+[C   ]  540,1990 t='' d='' id=
+[    ]  251,1938 t='Flash on page change' d='' id=title
+[    ]  450,2019 t='Refresh the screen with a short full-screen flash to reduce ghosting on E-Ink di' d='' id=summary
+[k   ]  969,1990 t='' d='' id=switchWidget
+[C   ]  540,2225 t='' d='' id=
+[    ]  476,2162 t='Flash duration' d='' id=title
+[    ]  974,2164 t='300 ms' d='' id=summary
+[C   ]  540,2369 t='' d='' id=
+[    ]  482,2379 t='Flash every' d='' id=title
+[    ]  980,2382 t='1 page' d='' id=summary
