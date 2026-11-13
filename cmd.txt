@@ -3028,3 +3028,17 @@ sleep 2
 tap 540 1200
 sleep 2
 shot K_rd_toggle_Flash_on_page_change_first_tap
+=== K44978
+tap 540 1200
+sleep 1
+tapt ^Settings$
+sleep 2
+tapt ^General$
+sleep 1
+tapt ^Flash on page change$
+sleep 1
+tap 540 250
+sleep 2
+tap 540 1200
+sleep 2
+shot K_rd_toggle_Flash_on_page_change_second_tap
