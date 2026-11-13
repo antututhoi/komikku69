@@ -1266,3 +1266,6 @@ sleep 1
 down
 down
 down
+=== SY_go_about
+tapt ^About$
+sleep 2
