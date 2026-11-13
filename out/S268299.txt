@@ -1,0 +1,39 @@
+# block S268299  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:13:04
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,338  t='' d='' id=
+[    ]   77,317  t='Grid' d='' id=summary
+[C   ]  540,492  t='' d='' id=
+[    ]  493,429  t='Grid size' d='' id=title
+[    ]  991,431  t='100%' d='' id=summary
+[C   ]  540,727  t='' d='' id=
+[    ]  382,675  t='Use a fixed number of grid columns' d='' id=title
+[    ]  450,756  t='Choose columns instead of cover size. Page thumbnails keep their own setting.' d='' id=summary
+[k   ]  969,727  t='' d='' id=switchWidget
+[C   ]  540,962  t='' d='' id=
+[    ]  540,899  t='Grid columns' d='' id=title
+[C   ]  540,1197 t='' d='' id=
+[    ]  281,1145 t='Category overview · Beta' d='' id=title
+[    ]  450,1226 t='Open Favorites as category tiles. Open a tile to see its titles; Back returns he' d='' id=summary
+[k   ]  969,1197 t='' d='' id=switchWidget
+[C   ]  540,1442 t='' d='' id=
+[    ]  273,1390 t='Category links in search' d='' id=title
+[    ]  450,1471 t='Show visible favorite categories on search results. Tap their names to open the ' d='' id=summary
+[k   ]  969,1442 t='' d='' id=switchWidget
+[C   ]  540,1661 t='' d='' id=
+[    ]  269,1635 t='Sort favorite categories' d='' id=title
+[    ]  104,1689 t='Manual' d='' id=summary
+[C   ]  540,1827 t='' d='' id=
+[    ]  290,1827 t='Ascending category order' d='' id=title
+[xk  ]  969,1827 t='' d='' id=switchWidget
+[C   ]  540,1994 t='' d='' id=
+[    ]  243,1968 t='List long-press delay' d='' id=title
+[    ]  165,2022 t='Follow system' d='' id=summary
+[C   ]  540,2212 t='' d='' id=
+[    ]  324,2160 t='Show favorites category strip' d='' id=title
+[    ]  450,2241 t='When hidden, swipe between categories or use Choose category in the menu.' d='' id=summary
+[xk  ]  969,2212 t='' d='' id=switchWidget
+[C   ]  540,2367 t='' d='' id=
+[    ]  309,2388 t='Show new-chapter counters' d='' id=title
+[xk  ]  969,2397 t='' d='' id=switchWidget
