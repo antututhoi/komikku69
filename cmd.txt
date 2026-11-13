@@ -910,3 +910,6 @@ shot C_settings_main
 up
 sleep 1
 shot C_settings_main_more
+=== Chimahon_go_appearance
+tapt ^Appearance$
+sleep 2
