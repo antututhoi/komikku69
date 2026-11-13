@@ -1,0 +1,55 @@
+name: 69 Research phone
+
+# Remote-controlled virtual phone for the app comparison (never touches mod69 builds).
+# Start: change .research69/session.txt (app names from .maestro69/apps.txt) on the research69 branch.
+on:
+  push:
+    branches:
+      - research69
+    paths:
+      - ".research69/session.txt"
+
+concurrency:
+  group: research69
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  phone:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Allow the virtual phone to run fast (KVM)
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Download this session's apps and the test backups
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sudo apt-get install -y -qq ffmpeg > /dev/null 2>&1 || true
+          grep -v '^#' .maestro69/apps.txt > /tmp/all.txt
+          : > .maestro69/apps.txt
+          while read -r n; do [ -n "$n" ] && grep -i "^$n *|" /tmp/all.txt >> .maestro69/apps.txt; done < .research69/session.txt
+          cat .maestro69/apps.txt
+          bash .maestro69/get_apks.sh
+
+      - name: Virtual phone with remote control
+        env:
+          TOKEN: ${{ github.token }}
+          CTL_MINUTES: "320"
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          disable-animations: false
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          script: bash .research69/run.sh

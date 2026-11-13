@@ -100,6 +100,7 @@ q = [("limit", "20"), ("status[]", "ongoing"), ("order[followedCount]", "desc"),
 now = int(time.time() * 1000)
 data = json.loads(get("https://api.mangadex.org/manga?" + urllib.parse.urlencode(q)))["data"]
 mangas = []
+plain = []
 for i, m in enumerate(data):
     a = m["attributes"]
     title = a["title"].get("en") or next(iter(a["title"].values()))
@@ -122,6 +123,9 @@ for i, m in enumerate(data):
     b += f_int(17, 1 if i < 12 else 2)  # category order
     b += f_int(100, 1)
     mangas.append(b)
+    plain.append(dict(id=m["id"], title=title, author=author or artist,
+                      cover=f"https://uploads.mangadex.org/covers/{m['id']}/{cover}" if cover else "",
+                      cat=1 if i < 12 else 2))
     print(" ", title)
 
 cats = [f_str(1, "Reading") + f_int(2, 1) + f_int(3, 1), f_str(1, "Plan to read") + f_int(2, 2) + f_int(3, 2)]
@@ -133,3 +137,26 @@ store = (f_str(1, REPO + "/index.min.json") + f_str(2, repo_meta.get("name", "Ke
 backup += f_bytes(106, store)
 open("seed.tachibk", "wb").write(gzip.compress(backup))
 print("seed.tachibk", len(mangas), "titles")
+
+# --- same 20 titles for Kotatsu-type apps (Futon, Kaisoku, Kototoro, DropSauce): Kotatsu backup .zip ---
+import zipfile
+def kuid(source, url):
+    h = 1125899906842597
+    for ch in source + url:
+        h = (31 * h + ord(ch)) & ((1 << 64) - 1)
+    return h - (1 << 64) if h >= 1 << 63 else h
+kcats = [dict(category_id=1, created_at=now, sort_key=0, title="Reading", order="NEWEST", track=True, show_in_lib=True),
+         dict(category_id=2, created_at=now, sort_key=1, title="Plan to read", order="NEWEST", track=True, show_in_lib=True)]
+kfav = []
+for n, p in enumerate(plain):
+    kid = kuid("MANGADEX", p["id"])
+    kfav.append(dict(manga_id=kid, category_id=p["cat"], sort_key=n, pinned=False, created_at=now - n * 1000,
+                     manga=dict(id=kid, title=p["title"], url=p["id"], public_url="https://mangadex.org/title/" + p["id"],
+                                rating=-1.0, nsfw=False, cover_url=p["cover"], large_cover_url=p["cover"],
+                                state="ONGOING", author=p["author"] or None, source="MANGADEX", tags=[])))
+with zipfile.ZipFile("seed_kotatsu.zip", "w", zipfile.ZIP_DEFLATED) as z:
+    z.writestr("index", json.dumps([dict(app_id="org.koitharu.kotatsu", app_version=1000, created_at=now)]))
+    z.writestr("categories", json.dumps(kcats))
+    z.writestr("favourites", json.dumps(kfav))
+open("seed_titles.txt", "w").write("\n".join(p["title"] for p in plain) + "\n")
+print("seed_kotatsu.zip", len(kfav), "titles")

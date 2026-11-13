@@ -9,3 +9,4 @@ Kaisoku | glitch-228/Kaisoku | kotatsu
 Kototoro | Kototoro-app/Kototoro | kotatsu
 DropSauce | HuzaifaKhalid1311/DropSauce | kotatsu
 Futon | AppFuton/Futon | kotatsu
+Komikku | komikku-app/komikku | mihon
