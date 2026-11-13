@@ -935,3 +935,7 @@ sleep 1
 tapt ^Blue Lock$
 sleep 10
 shot D_details_top
+=== D69445
+up
+sleep 2
+shot D_details_scrolled
