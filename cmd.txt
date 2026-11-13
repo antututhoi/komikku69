@@ -1953,3 +1953,18 @@ sleep 1
 tap 540 130
 sleep 2
 shot K_libmode_Cover-only grid
+=== K42817
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 2
+sleep 1
+sleep 2
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+tapt ^Panorama comfortable grid$
+sleep 1
+tap 540 130
+sleep 2
+shot K_libmode_Panorama comfortable grid
