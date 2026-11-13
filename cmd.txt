@@ -348,3 +348,9 @@ sh logcat -d -t 400 *:E | grep -i -m5 'futon\|FATAL'
 === F67085
 sleep 2
 shot F_now
+=== F67086
+tapt ^More options$
+sleep 2
+tapt ^List options$
+sleep 2
+shot F_history_list_options
