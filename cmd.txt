@@ -1149,3 +1149,7 @@ tapt ^Library$
 sleep 2
 === C60789
 shot C_settings_Library_p0
+=== C60790
+up
+sleep 1
+shot C_settings_Library_p1
