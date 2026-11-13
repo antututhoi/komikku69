@@ -158,3 +158,8 @@ shot J_browse_extensions_sheet
 tapt ^Trust$
 sleep 2
 shot J_ext_trust_dialog
+=== J51056
+tapt ^Trust$
+sleep 4
+back
+sleep 2
