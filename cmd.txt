@@ -150,3 +150,7 @@ shot J_library_updating
 tap 900 2242
 sleep 3
 shot J_browse_main
+=== J51019
+tapt ^Extensions$
+sleep 3
+shot J_browse_extensions_sheet
