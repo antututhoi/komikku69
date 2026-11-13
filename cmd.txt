@@ -2662,3 +2662,9 @@ sleep 1
 up
 sleep 1
 shot P_Gen
+=== P44889
+tapt ^Custom filter$
+sleep 1
+up
+sleep 1
+shot P_Cus
