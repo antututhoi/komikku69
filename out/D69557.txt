@@ -1,0 +1,38 @@
+# block D69557  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:34:03
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Appearance' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,377  t='' d='' id=
+[    ]  399,331  t='Haptic feedback' d='' id=
+[    ]  538,399  t='Vibrate on taps, toggles, sliders and gestures' d='' id=
+[Cxk ]  942,371  t='' d='' id=
+[C   ]  540,562  t='' d='' id=
+[    ]  386,522  t='Hide status bar' d='' id=
+[    ]  538,590  t='Hides the Android status bar across the entire app' d='' id=
+[Ck  ]  942,562  t='' d='' id=
+[    ]  187,728  t='MANGA LIST' d='' id=
+[C   ]  540,861  t='' d='' id=
+[    ]  328,842  t='List mode' d='' id=
+[    ]  253,890  t='Grid' d='' id=
+[    ]  513,1039 t='Grid size' d='' id=
+[    ]  917,1039 t='3 per row' d='' id=
+[C   ]  540,1350 t='' d='' id=
+[    ]  413,1310 t='Show quick filters' d='' id=
+[    ]  538,1378 t='Provides the ability to filter manga lists by certain parameters' d='' id=
+[Cxk ]  942,1350 t='' d='' id=
+[C   ]  540,1572 t='' d='' id=
+[    ]  538,1532 t='Jump back to where you left off' d='' id=
+[    ]  538,1631 t='Show a button in History that returns you to the spot you last scrolled to' d='' id=
+[Cxk ]  942,1572 t='' d='' id=
+[C   ]  540,1792 t='' d='' id=
+[    ]  586,1773 t='Show reading progress indicators' d='' id=
+[    ]  427,1821 t='Percentage read (e.g., 60%)' d='' id=
+[C   ]  540,1980 t='' d='' id=
+[    ]  376,1961 t='Badges in lists' d='' id=
+[    ]  288,2009 t='Favorites' d='' id=
+[    ]  147,2145 t='DETAILS' d='' id=
+[C   ]  540,2278 t='' d='' id=
+[    ]  497,2278 t='Collapse long description' d='' id=
+[Cxk ]  942,2279 t='' d='' id=
+[C   ]  540,2387 t='' d='' id=
