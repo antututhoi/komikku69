@@ -1269,3 +1269,8 @@ down
 === SY_go_about
 tapt ^About$
 sleep 2
+=== SY_go2_about
+up
+up
+tapt ^About$
+sleep 2
