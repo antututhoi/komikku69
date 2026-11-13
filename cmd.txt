@@ -1014,3 +1014,7 @@ shot D_settings_Reading_p0
 up
 sleep 1
 shot D_settings_Reading_p1
+=== D69566
+up
+sleep 1
+shot D_settings_Reading_p2
