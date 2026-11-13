@@ -517,3 +517,5 @@ sleep 15
 stop app.tsundoku
 launch app.tsundoku
 sleep 6
+=== T52566
+shot T_library_main
