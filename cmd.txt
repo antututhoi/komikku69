@@ -1072,3 +1072,5 @@ sleep 3
 === D69579
 tapt ^Downloads$
 sleep 3
+=== D69580
+shot D_settings_Downloads_p0
