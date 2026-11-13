@@ -1115,3 +1115,11 @@ shot C_settings_Appearance_p1
 up
 sleep 1
 shot C_settings_Appearance_p2
+=== C60782
+stop app.chimahon
+launch app.chimahon
+sleep 5
+tapt ^More$
+sleep 2
+tapt ^Settings$
+sleep 2
