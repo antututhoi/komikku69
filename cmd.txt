@@ -97,3 +97,5 @@ back
 sleep 1
 back
 sleep 2
+=== F65776
+shot F_explore_with_mangadex
