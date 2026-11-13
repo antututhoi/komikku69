@@ -1,0 +1,39 @@
+# block S268307  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:15:18
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  359,212  t='Reader settings' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,320  t='' d='' id=
+[    ]  287,299  t='Choose pages to show again' d='' id=summary
+[C   ]  540,520  t='' d='' id=
+[    ]  372,415  t='Retain more adjacent pages · Beta' d='' id=title
+[    ]  450,549  t='With sufficient memory, keep up to two more pages on each side in paged mode, or' d='' id=summary
+[k   ]  969,520  t='' d='' id=switchWidget
+[C   ]  540,792  t='' d='' id=
+[    ]  171,766  t='Default mode' d='' id=title
+[    ]  119,820  t='Standard' d='' id=summary
+[C   ]  540,984  t='' d='' id=
+[    ]  276,958  t='Autodetect reader mode' d='' id=title
+[    ]  395,1012 t='Automatically detect if manga is webtoon' d='' id=summary
+[xk  ]  969,984  t='' d='' id=switchWidget
+[C   ]  540,1176 t='' d='' id=
+[    ]  155,1150 t='Scale mode' d='' id=title
+[    ]  122,1204 t='Fit center' d='' id=summary
+[C   ]  540,1394 t='' d='' id=
+[    ]  231,1342 t='Show zoom buttons' d='' id=title
+[    ]  450,1423 t='Whether to show zoom control buttons in the bottom right corner' d='' id=summary
+[k   ]  969,1394 t='' d='' id=switchWidget
+[C   ]  540,1666 t='' d='' id=
+[    ]  274,1587 t='Remember reader zoom' d='' id=title
+[    ]  450,1694 t='Reuse your chosen zoom on new pages, separately for each reader mode. The curren' d='' id=summary
+[k   ]  969,1666 t='' d='' id=switchWidget
+[C   ]  540,1911 t='' d='' id=
+[    ]  186,1885 t='Webtoon zoom' d='' id=title
+[    ]  382,1939 t='Allow zoom in gesture in webtoon mode' d='' id=summary
+[xk  ]  969,1911 t='' d='' id=switchWidget
+[C   ]  540,2119 t='' d='' id=
+[    ]  515,2056 t='Default webtoon zoom out' d='' id=title
+[    ] 1013,2058 t='0%' d='' id=summary
+[C   ]  540,2316 t='' d='' id=
+[    ]  262,2302 t='Gaps in webtoon mode' d='' id=title
+[    ]  450,2365 t='Show vertical gaps between pages in webtoon mode' d='' id=summary
+[k   ]  969,2345 t='' d='' id=switchWidget
