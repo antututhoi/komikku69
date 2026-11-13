@@ -773,3 +773,5 @@ tapt ^Security and privacy$
 sleep 2
 === Tsundoku_set_security_and_privacy_s0
 sleep 1
+=== Tsundoku_set_security_and_privacy_s1
+up
