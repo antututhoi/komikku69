@@ -4034,3 +4034,10 @@ shot SY_reader_hq_filter_tab
 up
 sleep 1
 shot SY_reader_hq_filter_tab2
+=== S49597
+tapt ^General$
+sleep 1
+up
+up
+sleep 1
+shot SY_reader_hq_general_end
