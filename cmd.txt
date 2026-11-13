@@ -3257,3 +3257,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot M_rd_tapzone_Disabled
+=== M46133
+tapt ^Settings$
+sleep 2
+up
+tapt ^Default$
+sleep 1
+tap 540 250
+sleep 2
+shot M_rd_tapzone_Default
