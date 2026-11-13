@@ -1,0 +1,14 @@
+# block F65739  focus: PopupWindow:d52b8f8  time: 10:29:12
+! tapt 'Remove English' at 277,359
+[S   ]  289,822  t='' d='' id=
+[    ]  289,211  t='All languages' d='' id=title
+[    ]  289,337  t='Various languages' d='' id=title
+[    ]  289,463  t='English' d='' id=title
+[    ]  289,589  t='Afrikaans' d='' id=title
+[    ]  289,715  t='All' d='' id=title
+[    ]  289,841  t='العربية' d='' id=title
+[    ]  289,967  t='Azərbaycan' d='' id=title
+[    ]  289,1093 t='Беларуская' d='' id=title
+[    ]  289,1219 t='Български' d='' id=title
+[    ]  289,1345 t='বাংলা' d='' id=title
+[    ]  289,1469 t='Català' d='' id=title
