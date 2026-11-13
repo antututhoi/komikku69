@@ -3212,3 +3212,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot M_rd_scale_Fit_screen
+=== M46128
+tapt ^Settings$
+sleep 2
+up
+tapt ^L shaped$
+sleep 1
+tap 540 250
+sleep 2
+shot M_rd_tapzone_L_shaped
