@@ -1226,3 +1226,7 @@ shot C_settings_Appearance_p1
 up
 sleep 1
 shot C_settings_Appearance_p2
+=== C61726
+up
+sleep 1
+shot C_settings_Appearance_p3
