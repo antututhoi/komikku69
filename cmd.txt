@@ -775,3 +775,9 @@ sleep 2
 sleep 1
 === Tsundoku_set_security_and_privacy_s1
 up
+=== Tsundoku_back_security_and_privacy
+back
+sleep 1
+down
+down
+down
