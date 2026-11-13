@@ -1172,3 +1172,6 @@ sleep 1
 down
 down
 down
+=== SY_go_browse
+tapt ^Browse$
+sleep 2
