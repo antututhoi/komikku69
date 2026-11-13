@@ -1467,3 +1467,14 @@ sleep 1
 up
 tapt ^Source\ icon$
 back
+=== K41330
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+up
+tapt ^Continue\ reading\ button$
+sleep 1
+back
+sleep 2
+shot K_libover_Continue reading button_toggled
