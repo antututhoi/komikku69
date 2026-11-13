@@ -1,0 +1,34 @@
+# block F67215  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 11:00:01
+! tapt 'Downloads' at 295,1134
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  301,212  t='Downloads' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,392  t='' d='' id=
+[    ]  275,366  t='Local manga directories' d='' id=title
+[    ]  105,420  t='2 items' d='' id=summary
+[C   ]  540,584  t='' d='' id=
+[    ]  211,558  t='Downloads folder' d='' id=title
+[    ]  239,612  t='Internal shared storage' d='' id=summary
+[C   ]  540,776  t='' d='' id=
+[    ]  302,750  t='Preferred download format' d='' id=title
+[    ]  129,804  t='Automatic' d='' id=summary
+[C   ]  540,968  t='' d='' id=
+[    ]  373,942  t='Downloading over cellular network' d='' id=title
+[    ]  168,996  t='Ask every time' d='' id=summary
+[    ]  613,1211 t='You can enable download slowdown for each manga source individually in the sourc' d='' id=summary
+[C   ]  540,1480 t='' d='' id=
+[    ]  314,1428 t='Disable battery optimization' d='' id=title
+[    ]  540,1509 t='Might help with getting the download started if you have any issues with it' d='' id=summary
+[    ]  540,1691 t='Saving pages' d='' id=title
+[C   ]  540,1834 t='' d='' id=
+[    ]  306,1808 t='Default page save directory' d='' id=title
+[    ]  104,1862 t='Not set' d='' id=summary
+[C   ]  540,2000 t='' d='' id=
+[    ]  397,2000 t='Ask for the destination dir every time' d='' id=title
+[xk  ]  969,2000 t='' d='' id=switchWidget
+[    ]  540,2159 t='Download scheduling and limits' d='' id=title
+[C   ]  540,2302 t='' d='' id=
+[    ]  328,2276 t='Download only when charging' d='' id=title
+[    ]  434,2330 t='Connect to a power source to start downloads' d='' id=summary
+[k   ]  969,2302 t='' d='' id=switchWidget
+[C   ]  540,2399 t='' d='' id=
