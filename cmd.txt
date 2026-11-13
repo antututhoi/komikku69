@@ -4099,3 +4099,19 @@ sh am force-stop com.google.android.documentsui
 sh am force-stop com.android.documentsui
 home
 sleep 1
+=== S49955
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 2
+sleep 1
+sleep 2
+tap 376 358
+sleep 2
+tap 540 695
+sleep 5
+up
+sleep 1
+tapt Vol.19 Ch.128
+sleep 8
+tapt ^Got it$
+sleep 1
