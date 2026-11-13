@@ -1,0 +1,37 @@
+# block S268340  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:24:22
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  357,212  t='Manga sources' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,349  t='' d='' id=
+[    ]  450,328  t='Include extensions installed by Android/Mihon. Disable to use only app-private e' d='' id=summary
+[xk  ]  969,319  t='' d='' id=switchWidget
+[C   ]  540,557  t='' d='' id=
+[    ]  450,505  t='Show Kaisoku when opening extension files' d='' id=title
+[    ]  450,617  t='Allow Kaisoku to appear in Android’s app chooser for extension APK and archive f' d='' id=summary
+[xk  ]  969,557  t='' d='' id=switchWidget
+[C   ]  540,807  t='' d='' id=
+[    ]  276,781  t='Extension loading errors' d='' id=title
+[    ]  490,835  t='Show why an installed extension could not be loaded' d='' id=summary
+[C   ]  540,1025 t='' d='' id=
+[    ]  289,973  t='Enable all manga sources' d='' id=title
+[    ]  450,1054 t='All available manga sources will be enabled permanently' d='' id=summary
+[k   ]  969,1025 t='' d='' id=switchWidget
+[C   ]  540,1244 t='' d='' id=
+[    ]  197,1218 t='Sources catalog' d='' id=title
+[    ]  162,1272 t='Available: 782' d='' id=summary
+[C   ]  540,1462 t='' d='' id=
+[    ]  177,1410 t='Disable NSFW' d='' id=title
+[    ]  450,1491 t='Disable NSFW sources and hide adult manga from list if possible' d='' id=summary
+[xk  ]  969,1462 t='' d='' id=switchWidget
+[C   ]  540,1760 t='' d='' id=
+[    ]  449,1655 t='Choose source content classes separately' d='' id=title
+[    ]  450,1789 t='Choose Safe, Mixed or Adult sources independently. Disable NSFW still filters ad' d='' id=summary
+[k   ]  969,1760 t='' d='' id=switchWidget
+[C   ]  540,2032 t='' d='' id=
+[    ]  257,2006 t='Visible source content' d='' id=title
+[    ]   81,2060 t='Safe' d='' id=summary
+[C   ]  540,2250 t='' d='' id=
+[    ]  240,2198 t='Hide broken sources' d='' id=title
+[    ]  450,2279 t='Hide sources marked as broken from source lists' d='' id=summary
+[k   ]  969,2250 t='' d='' id=switchWidget
+[C   ]  540,2386 t='' d='' id=
