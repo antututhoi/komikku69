@@ -1,0 +1,37 @@
+# block D69445  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.details.ui.DetailsExpressiveActivity  time: 11:31:25
+[C   ]  203,551  t='' d='' id=
+[C   ]  543,342  t='Blue Lock' d='' id=
+[C   ]  713,458  t='Kaneshiro Muneyuki, Nomura Yuusuke' d='' id=
+[    ]  507,582  t='Ongoing' d='' id=
+[C   ]  793,582  t='' d='' id=
+[    ]  821,582  t='MangaDex' d='' id=
+[C   ]  713,726  t='' d='' id=
+[    ]  748,726  t='Plan to read' d='' id=
+[    ]  583,911  t='1 chapter (3 m)' d='' id=
+[    ]  234,1109 t='Description' d='' id=
+[CL  ]  540,1288 t='' d='' id=
+[    ]  540,1288 t='After a disastrous defeat at the 2018 World Cup, Japan’s team struggles to regro' d='' id=
+[C   ]  233,1563 t='' d='' id=
+[    ]  233,1563 t='Award Winning' d='' id=
+[C   ]  537,1563 t='' d='' id=
+[    ]  537,1563 t='Drama' d='' id=
+[C   ]  828,1563 t='' d='' id=
+[    ]  828,1563 t='Psychological' d='' id=
+[C   ]  151,1705 t='' d='' id=
+[    ]  151,1705 t='Sports' d='' id=
+[C   ]  377,1705 t='' d='' id=
+[    ]  377,1705 t='Thriller' d='' id=
+[C   ]  623,1705 t='' d='' id=
+[    ]  623,1705 t='Shounen' d='' id=
+[C   ]  893,1705 t='' d='' id=
+[    ]  893,1705 t='Japanese' d='' id=
+[C   ]  860,2062 t='' d='' id=
+[    ]  893,2062 t='1 chapter' d='' id=
+[C   ]  747,2225 t='' d='' id=
+[    ]  805,2225 t='Read' d='' id=
+[C   ]  963,2225 t='' d='' id=
+[    ]  960,2225 t='' d='Show menu' id=
+[CL  ]   99,209  t='' d='Navigate up' id=
+[C   ]  761,209  t='' d='Download' id=action_save
+[C   ]  873,209  t='' d='Share' id=action_share
+[CL  ]  985,209  t='' d='More options' id=
