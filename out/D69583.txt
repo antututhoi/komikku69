@@ -1,0 +1,42 @@
+# block D69583  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:41:02
+! tapt 'Check for new chapters' at 478,1821
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,270  t='' d='Check for new chapters' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1406 t='' d='' id=
+[C   ]  540,524  t='' d='' id=
+[    ]  538,524  t='Check for new chapters and notify about it' d='' id=
+[Cxk ]  942,525  t='' d='' id=
+[    ]  157,689  t='TRACKER' d='' id=
+[C   ]  540,824  t='' d='' id=
+[    ]  364,784  t='Only on Wi-Fi' d='' id=
+[    ]  538,852  t='Do not check for new chapters using metered network connections' d='' id=
+[Ck  ]  942,824  t='' d='' id=
+[C   ]  540,1013 t='' d='' id=
+[    ]  433,994  t='Frequency of check' d='' id=
+[    ]  313,1042 t='Default (18h)' d='' id=
+[C   ]  540,1201 t='' d='' id=
+[    ]  405,1182 t='Look for updates' d='' id=
+[    ]  288,1230 t='Favorites' d='' id=
+[C   ]  540,1389 t='' d='' id=
+[    ]  432,1370 t='Favorite categories' d='' id=
+[    ]  283,1418 t='2 of 2 on' d='' id=
+[C   ]  540,1579 t='' d='' id=
+[    ]  454,1539 t='Notifications settings' d='' id=
+[    ]  614,1607 t='You will receive notifications about updates of manga you are reading' d='' id=
+[C   ]  540,1770 t='' d='' id=
+[    ]  443,1730 t='Feed swipe gestures' d='' id=
+[    ]  538,1798 t='Swipe feed entries to mark them as read or remove them' d='' id=
+[Cxk ]  942,1770 t='' d='' id=
+[C   ]  540,1961 t='' d='' id=
+[    ]  461,1921 t='Dot instead of a count' d='' id=
+[    ]  538,1989 t='Mark the Feed tab with a plain dot instead of the number of unread updates' d='' id=
+[Ck  ]  942,1961 t='' d='' id=
+[C   ]  540,2152 t='' d='' id=
+[    ]  514,2112 t='Disable NSFW notifications' d='' id=
+[    ]  538,2180 t='Do not show notifications about NSFW manga updates' d='' id=
+[Ck  ]  942,2152 t='' d='' id=
+[C   ]  540,2325 t='' d='' id=
+[    ]  499,2303 t='Failed check notifications' d='' id=
+[    ]  538,2366 t='Notify when new chapters could not be fetched for some manga' d='' id=
+[Ck  ]  942,2341 t='' d='' id=
