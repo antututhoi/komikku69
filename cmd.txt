@@ -967,3 +967,8 @@ down
 === Chimahon_go_library
 tapt ^Library$
 sleep 2
+=== Chimahon_go2_library
+up
+up
+tapt ^Library$
+sleep 2
