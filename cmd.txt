@@ -940,3 +940,9 @@ sleep 2
 sleep 1
 === Chimahon_set_reader_s1
 up
+=== Chimahon_back_reader
+back
+sleep 1
+down
+down
+down
