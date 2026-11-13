@@ -1,0 +1,36 @@
+# block S268303  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:13:55
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,326  t='' d='' id=
+[    ]  151,305  t='Percent read' d='' id=summary
+[C   ]  540,452  t='' d='' id=
+[    ]  183,426  t='Badges in lists' d='' id=title
+[    ]  244,480  t='Saved manga, Favorites' d='' id=summary
+[    ]  540,636  t='Details' d='' id=title
+[C   ]  540,858  t='' d='' id=
+[    ]  343,753  t='Sort chapter list by upload date' d='' id=title
+[    ]  450,887  t='Use upload dates for chapter lists by default. Reading order and progress stay u' d='' id=summary
+[k   ]  969,858  t='' d='' id=switchWidget
+[C   ]  540,1156 t='' d='' id=
+[    ]  372,1104 t='Show chapters on the details page' d='' id=title
+[    ]  450,1185 t='Keep the chapter sheet available for chapters, pages and bookmarks.' d='' id=summary
+[k   ]  969,1156 t='' d='' id=switchWidget
+[C   ]  540,1349 t='' d='' id=
+[    ]  287,1349 t='Collapse long description' d='' id=title
+[xk  ]  969,1349 t='' d='' id=switchWidget
+[C   ]  540,1516 t='' d='' id=
+[    ]  271,1490 t='Show pages thumbnails' d='' id=title
+[    ]  416,1544 t='Enable the "Pages" tab on the details screen' d='' id=summary
+[xk  ]  969,1516 t='' d='' id=switchWidget
+[C   ]  540,1708 t='' d='' id=
+[    ]  148,1682 t='Default tab' d='' id=title
+[    ]  125,1736 t='Last used' d='' id=summary
+[    ]  540,1892 t='Main screen' d='' id=title
+[C   ]  540,2061 t='' d='' id=
+[    ]  232,2009 t='Search suggestions' d='' id=title
+[    ]  540,2090 t='Manga sources, Genres, Recent queries, Authors, Suggested queries, Recent source' d='' id=summary
+[C   ]  540,2280 t='' d='' id=
+[    ]  247,2254 t='Main screen sections' d='' id=title
+[    ]  312,2308 t='History, Favorites, Explore, Feed' d='' id=summary
+[C   ]  540,2388 t='' d='' id=
