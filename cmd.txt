@@ -1395,3 +1395,6 @@ up
 sleep 1
 tapt ^Settings$
 sleep 2
+=== C61763
+tapt ^Popup dictionary$
+sleep 2
