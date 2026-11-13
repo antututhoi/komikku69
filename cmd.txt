@@ -512,3 +512,6 @@ sleep 1
 sleep 1
 === rd_sheet_general_s1
 up
+=== r009
+tapt ^Custom filter$
+sleep 1
