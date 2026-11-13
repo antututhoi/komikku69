@@ -1,0 +1,31 @@
+# block S268334  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:22:42
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  266,212  t='Services' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,315  t='' d='' id=
+[xk  ]  969,299  t='' d='' id=switchWidget
+[    ]  540,423  t='Tracking' d='' id=title
+[C   ]  540,619  t='' d='' id=
+[    ]  344,540  t='Combined tracker search · Beta' d='' id=title
+[    ]  450,647  t='Search your list, reading sources and the selected tracker catalogue together. Q' d='' id=summary
+[k   ]  969,619  t='' d='' id=switchWidget
+[C   ]  540,943  t='' d='' id=
+[    ]  381,838  t='Review restored tracker links · Beta' d='' id=title
+[    ]  540,972  t='Restored links stay inactive on this device until you verify the account and con' d='' id=summary
+[C   ]  540,1241 t='' d='' id=
+[    ]  400,1189 t='Tracker status from categories · Beta' d='' id=title
+[    ]  540,1270 t='Review account-specific mappings and resolve conflicting statuses. Off until ena' d='' id=summary
+[C   ]  540,1486 t='' d='' id=
+[    ]  229,1434 t='Tracker tools · Beta' d='' id=title
+[    ]  540,1515 t='Review tracker metadata, bulk matches, category statuses and Beta website connec' d='' id=summary
+[C   ]  540,1811 t='' d='' id=
+[    ]  368,1679 t='AniList automatic matching · Beta' d='' id=title
+[    ]  450,1839 t='Off by default. Automatically link trusted IDs already on your AniList list. Con' d='' id=summary
+[k   ]  969,1811 t='' d='' id=switchWidget
+[C   ]  540,2109 t='' d='' id=
+[    ]  256,2083 t='AniList' d='' id=title
+[    ]  263,2137 t='Disabled' d='' id=summary
+[C   ]  540,2301 t='' d='' id=
+[    ]  238,2275 t='Kitsu' d='' id=title
+[    ]  263,2329 t='Disabled' d='' id=summary
+[C   ]  540,2398 t='' d='' id=
