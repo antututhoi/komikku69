@@ -173,3 +173,10 @@ shot J_library_updating
 tap 900 2242
 sleep 3
 shot J_browse_main
+=== J51134
+tap 180 2242
+sleep 3
+shot J_library_after_update
+tap 188 1100
+sleep 6
+shot J_entry_top
