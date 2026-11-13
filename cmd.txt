@@ -3601,3 +3601,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot S_rd_tapzone_Kindle-ish
+=== S47193
+tapt ^Settings$
+sleep 2
+up
+tapt ^Edge$
+sleep 1
+tap 540 250
+sleep 2
+shot S_rd_tapzone_Edge
