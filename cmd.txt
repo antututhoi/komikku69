@@ -12,3 +12,7 @@ shot O_welcome_step2
 tapt ^Next$
 sleep 3
 shot O_welcome_step3
+=== O64064
+tapt ^Next$
+sleep 3
+shot O_welcome_step4
