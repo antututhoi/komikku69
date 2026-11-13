@@ -1,0 +1,58 @@
+# block F66481  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.details.ui.DetailsActivity  time: 10:41:41
+! tapt 'Mieruko-chan' at 886,1704
+[C   ]   73,211  t='' d='Navigate up' id=
+[C   ]  784,211  t='' d='Share' id=action_share
+[C   ]  911,211  t='' d='Download' id=action_save
+[CL  ] 1027,211  t='' d='More options' id=
+[S   ]  540,1348 t='' d='' id=scrollView
+[C   ]  204,562  t='' d='' id=imageView_cover
+[C   ]  723,380  t='Mieruko-chan' d='' id=textView_title
+[    ]  723,459  t='The Girl Who Can See Them' d='' id=textView_subtitle
+[C   ]  563,569  t='Reading' d='' id=chip_favorite
+[    ]  133,886  t='Source' d='' id=textView_source_label
+[C   ]  389,886  t='MangaDex' d='' id=textView_source
+[    ]  131,958  t='Author' d='' id=textView_author_label
+[    ]  383,958  t='Izumi Tomoki' d='' id=textView_author
+[    ]  118,1030 t='State' d='' id=textView_state_label
+[    ]  340,1030 t='Ongoing' d='' id=textView_state
+[    ]  150,1102 t='Chapters' d='' id=textView_chapters_label
+[    ]  462,1102 t='99 chapters (5 h 30 m)' d='' id=textView_chapters
+[    ]  464,1216 t='Description' d='' id=textView_description_title
+[C   ]  983,1217 t='More' d='' id=button_description_more
+[    ]  540,1393 t='All of a sudden, Miko is able to see grotesque monsters all around her; but no o' d='' id=textView_description
+[CL  ]  175,1586 t='School Life' d='' id=
+[CL  ]  418,1586 t='Drama' d='' id=
+[CL  ]  685,1586 t='Psychological' d='' id=
+[CL  ]  142,1686 t='Thriller' d='' id=
+[CL  ]  358,1686 t='Ghosts' d='' id=
+[CL  ]  612,1686 t='Slice of Life' d='' id=
+[CL  ]  873,1686 t='Mystery' d='' id=
+[CL  ]  151,1786 t='Comedy' d='' id=
+[CL  ]  421,1786 t='Supernatural' d='' id=
+[CL  ]  678,1786 t='Horror' d='' id=
+[CL  ]  896,1786 t='Tragedy' d='' id=
+[CL  ]  162,1886 t='Monsters' d='' id=
+[    ]  437,1996 t='Related manga' d='' id=textView_related_title
+[S   ]  540,2221 t='' d='' id=recyclerView_related
+[CL  ]  171,2224 t='' d='' id=
+[    ]  171,2395 t='Mieruko-chan - Miseruko-chan (Doujinshi)' d='' id=textView_title
+[CL  ]  449,2224 t='' d='' id=
+[    ]  449,2395 t='Mieruko-chan (Pre-Serialization)' d='' id=textView_title
+[CL  ]  727,2224 t='' d='' id=
+[    ]  727,2395 t='Mieruko-chan Koushiki Anthology Comic' d='' id=textView_title
+[CL  ]  975,2224 t='' d='' id=
+[    ]  983,2395 t='Mieruko-chan - Good night (Doujinshi)' d='' id=textView_title
+[C   ]  956,1997 t='Show all' d='' id=button_related_more
+[C   ]  540,2221 t='' d='' id=container_bottom_sheet
+[C   ]  540,2106 t='' d='Collapsed. Drag handle' id=sh_dragHandle
+[C   ]  232,2253 t='' d='' id=
+[C   ]  359,2253 t='' d='' id=
+[C   ]  796,2253 t='Read' d='' id=button_read
+[Ck  ]  990,2253 t='' d='Show menu' id=button_read_menu
+[S   ]  540,2368 t='' d='' id=pager
+[S   ]  540,2368 t='' d='' id=
+[S   ]  540,2368 t='' d='' id=scrollView_filter
+[CLxk]  173,2371 t='English  99' d='' id=
+[CL  ]  494,2371 t='English (1)  6' d='' id=
+[CL  ]  856,2371 t='Español (Laos)  88' d='' id=
+[CL  ] 1075,2371 t='Español (Laos) (1)  4' d='' id=
