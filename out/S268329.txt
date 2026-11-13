@@ -1,0 +1,32 @@
+# block S268329  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:21:10
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  461,212  t='Check for new chapters' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,377  t='' d='' id=
+[    ]  205,336  t='Look for updates' d='' id=title
+[    ]  120,390  t='Favorites' d='' id=summary
+[C   ]  540,554  t='' d='' id=
+[    ]  228,528  t='Favorite categories' d='' id=title
+[    ]  117,582  t='2 of 2 on' d='' id=summary
+[C   ]  540,772  t='' d='' id=
+[    ]  249,720  t='Notifications settings' d='' id=title
+[    ]  540,801  t='You will receive notifications about updates of manga you are reading' d='' id=summary
+[C   ]  540,1017 t='' d='' id=
+[    ]  303,965  t='Disable NSFW notifications' d='' id=title
+[    ]  450,1046 t='Do not show notifications about NSFW manga updates' d='' id=summary
+[k   ]  969,1017 t='' d='' id=switchWidget
+[C   ]  540,1236 t='' d='' id=
+[    ]  271,1210 t='Download new chapters' d='' id=title
+[    ]   92,1264 t='Never' d='' id=summary
+[C   ]  540,1454 t='' d='' id=
+[    ]  239,1402 t='Unread updates only' d='' id=title
+[    ]  450,1483 t='Hide opened feed entries without deleting them. Turn off to show all updates aga' d='' id=summary
+[k   ]  969,1454 t='' d='' id=switchWidget
+[    ]  540,1665 t='Debug' d='' id=title
+[C   ]  540,1834 t='' d='' id=
+[    ]  333,1782 t='Checking for new chapters log' d='' id=title
+[    ]  540,1863 t='Debug information about background checks for new chapters' d='' id=summary
+[C   ]  540,2053 t='' d='' id=
+[    ]  314,2027 t='Disable battery optimization' d='' id=title
+[    ]  376,2081 t='Helps with background updates checks' d='' id=summary
+[    ]  613,2243 t='Some devices have different system behavior, which may break background tasks. R' d='' id=summary
