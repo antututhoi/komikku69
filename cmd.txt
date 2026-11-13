@@ -965,3 +965,6 @@ sleep 6
 sleep 4
 tap 91 199
 sleep 3
+=== D69553
+tapt ^Appearance$
+sleep 3
