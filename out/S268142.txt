@@ -1,0 +1,12 @@
+# block S268142  focus: PopupWindow:9beb881  time: 11:09:19
+! tapt 'More options' at 1027,211
+[    ]  715,232  t='Download' d='' id=title
+[    ]  715,358  t='Edit' d='' id=title
+[    ]  715,484  t='Translate synopsis · Beta' d='' id=title
+[    ]  652,610  t='Use saved metadata only' d='' id=title
+[k   ]  965,611  t='' d='' id=checkbox
+[    ]  715,736  t='Find similar' d='' id=title
+[    ]  715,862  t='Alternatives' d='' id=title
+[    ]  715,988  t='Replace source' d='' id=title
+[    ]  715,1114 t='Open in web browser' d='' id=title
+[    ]  715,1240 t='Create shortcut' d='' id=title
