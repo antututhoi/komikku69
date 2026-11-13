@@ -537,3 +537,5 @@ sleep 2
 tapt ^seed_kotatsu.zip$
 sleep 5
 shot S2_restore_dialog
+=== F67227
+shot F_settings_Services_p0
