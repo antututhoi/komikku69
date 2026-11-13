@@ -6,3 +6,6 @@ shot F_first_run
 tapt ^Skip$
 sleep 4
 shot F_after_skip
+=== F65112
+tapt ^Next$|^Get Started$|^Done$
+sleep 3
