@@ -568,3 +568,7 @@ shot T_library_display_tab
 up
 sleep 1
 shot T_library_display_tab_more
+=== T52772
+tapt ^Tags$
+sleep 2
+shot T_library_tags_tab
