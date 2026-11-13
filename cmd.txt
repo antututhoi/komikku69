@@ -1304,3 +1304,7 @@ shot C_settings_Library_p3
 up
 sleep 1
 shot C_settings_Library_p4
+=== C61744
+up
+sleep 1
+shot C_settings_Library_p5
