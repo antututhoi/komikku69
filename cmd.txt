@@ -295,3 +295,5 @@ sleep 2
 === J2K_go_general
 tapt ^General$
 sleep 2
+=== J2K_set_general_s0
+sleep 1
