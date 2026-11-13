@@ -968,3 +968,26 @@ sleep 1
 down
 down
 down
+=== m010
+back
+back
+tapt ^Library$
+sleep 3
+shot library
+tap 881 213
+sleep 2
+shot lib_filter
+tapt ^Sort$
+sleep 1
+shot lib_sort
+tapt ^Display$
+sleep 1
+shot lib_display
+up
+shot lib_display2
+back
+sleep 1
+tap 1007 213
+sleep 1
+shot lib_overflow
+back
