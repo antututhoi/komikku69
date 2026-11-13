@@ -1604,3 +1604,15 @@ shot K_libdisp_sheet_Panorama comfortable grid
 tap 540 130
 sleep 2
 shot K_libmode_Panorama comfortable grid
+=== K41908
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 2
+tap 108 2232
+sleep 2
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+tapt ^Compact grid$
+tap 540 130
