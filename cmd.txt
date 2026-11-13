@@ -3134,3 +3134,11 @@ sleep 1
 tap 540 250
 sleep 2
 shot M_rd_mode_Paged_vertical
+=== M46119
+tapt ^Settings$
+sleep 2
+tapt ^Long strip$
+sleep 1
+tap 540 250
+sleep 2
+shot M_rd_mode_Long_strip
