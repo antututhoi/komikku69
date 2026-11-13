@@ -152,3 +152,10 @@ tapt ^Library$
 sleep 2
 up
 up
+=== b026
+tapt ^More$
+sleep 2
+up
+up
+tapt ^Settings$
+sleep 2
