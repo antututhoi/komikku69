@@ -402,3 +402,9 @@ sleep 2
 sleep 1
 === set_mangadex_s1
 up
+=== nav_advanced
+back
+sleep 1
+down
+down
+down
