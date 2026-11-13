@@ -1,0 +1,4 @@
+# block F66642  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.reader.ui.ReaderActivity  time: 10:44:16
+! tapt 'Got it' at 859,655
+[S   ]  540,1200 t='' d='' id=pager
+[S   ]  540,1200 t='' d='' id=
