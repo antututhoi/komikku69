@@ -938,3 +938,5 @@ tapt ^Reader$
 sleep 2
 === Chimahon_set_reader_s0
 sleep 1
+=== Chimahon_set_reader_s1
+up
