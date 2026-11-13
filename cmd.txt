@@ -40,3 +40,15 @@ shot F_settings_main
 tapt ^Backup and restore$
 sleep 2
 shot F_settings_backup
+=== F65528
+tapt ^Restore from backup$|^Restore previously
+sleep 3
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed_kotatsu.zip$
+sleep 5
+shot F_restore_dialog
