@@ -4053,3 +4053,9 @@ sleep 1
 tapt ^Add shader$
 sleep 2
 shot SY_reader_hq_add_shader
+=== S49809
+back
+sleep 1
+back
+sleep 1
+shot SY_reader_state
