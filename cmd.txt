@@ -753,3 +753,7 @@ shot S2_settings_Storage_and_network_p1
 up
 sleep 1
 shot S2_settings_Storage_and_network_p2
+=== S268319
+up
+sleep 1
+shot S2_settings_Storage_and_network_p3
