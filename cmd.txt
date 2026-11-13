@@ -447,3 +447,8 @@ sleep 1
 down
 down
 down
+=== T52307
+stop eu.kanade.tachiyomi.j2k
+launch app.tsundoku
+sleep 8
+shot T_first_run
