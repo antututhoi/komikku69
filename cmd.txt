@@ -3860,3 +3860,22 @@ sleep 1
 tap 880 212
 sleep 3
 shot MH_upcoming_screen
+=== S49105
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 2
+sleep 1
+sleep 2
+tapt ^More$
+sleep 2
+tapt ^Settings$
+sleep 2
+tapt ^Advanced$
+sleep 2
+up
+up
+up
+sleep 1
+tapt ^Use high quality renderer$
+sleep 1
+shot SY_adv_hq_renderer_on
