@@ -1,0 +1,13 @@
+# block D69166  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.main.ui.welcome.OnboardingActivity  time: 11:27:03
+! NOT FOUND: ^Next$
+[S   ]  540,1098 t='' d='' id=
+[    ]  540,548  t='All set' d='' id=
+[    ]  540,700  t='Join the DropSauce community and visit our website to stay up to date.' d='' id=
+[C   ]  540,880  t='' d='' id=
+[    ]  573,880  t='Source code' d='' id=
+[C   ]  540,1022 t='' d='' id=
+[    ]  573,1022 t='Join Discord' d='' id=
+[C   ]  540,1164 t='' d='' id=
+[    ]  573,1164 t='Visit website' d='' id=
+[C   ]  958,2225 t='' d='' id=
+[    ]  958,2225 t='' d='Confirm' id=
