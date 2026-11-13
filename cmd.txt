@@ -1063,3 +1063,12 @@ tapt ^Browse$
 sleep 2
 tapt ^Extensions$
 sleep 3
+=== s004
+tapt ^Download$
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed.tachibk$
+sleep 4
+tapt ^Restore$
+sleep 15
