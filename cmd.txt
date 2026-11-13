@@ -80,3 +80,7 @@ sleep 1
 text MangaDex
 sleep 3
 shot F_catalog_search
+=== F65739
+tapt ^Remove English$
+sleep 3
+shot F_catalog_search2
