@@ -1026,3 +1026,6 @@ sleep 1
 down
 down
 down
+=== Chimahon_go_dictionaries_and_audio
+tapt ^Dictionaries and audio$
+sleep 2
