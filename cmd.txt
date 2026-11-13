@@ -53,3 +53,6 @@ tap 441 642
 sleep 2
 tapt ^tour$
 sleep 2
+=== b014
+tap 783 975
+sleep 4
