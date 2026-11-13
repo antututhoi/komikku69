@@ -1,0 +1,13 @@
+# block F66333  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.sources.catalog.SourcesCatalogActivity  time: 10:40:09
+[S   ]  540,1200 t='' d='' id=
+[C   ]   73,211  t='' d='Collapse' id=
+[CL  ]  567,210  t='MangaDex' d='' id=search_src_text
+[C   ]  913,210  t='' d='Clear query' id=search_close_btn
+[S   ]  540,359  t='' d='' id=scrollView_chips
+[CL  ]  266,359  t='Various languages' d='' id=
+[    ]  459,359  t='' d='Remove Various languages' id=
+[CL  ]  621,359  t='New' d='' id=
+[CL  ]  839,359  t='Manga' d='' id=
+[CL  ] 1019,359  t='Comics' d='' id=
+[    ]  708,514  t='Nothing found' d='' id=textPrimary
+[    ]  708,616  t='No available manga sources found by your query' d='' id=textSecondary
