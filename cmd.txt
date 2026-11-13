@@ -813,3 +813,5 @@ sleep 2
 === MH_go_appearance
 tapt ^Appearance$
 sleep 2
+=== MH_set_appearance_s0
+sleep 1
