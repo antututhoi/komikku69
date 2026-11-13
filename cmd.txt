@@ -576,3 +576,9 @@ shot S2_explore_main
 up
 sleep 1
 shot S2_explore_main_2
+=== S267992
+tap 405 2231
+sleep 4
+tapt ^Mieruko-chan$
+sleep 10
+shot S2_details_top
