@@ -2808,3 +2808,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_tapzone_Edge
+=== K44959
+tapt ^Settings$
+sleep 2
+up
+tapt ^Right and Left$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_tapzone_Right_and_Left
