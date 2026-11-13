@@ -609,3 +609,14 @@ shot S2_details_scrolled
 tapt ^More options$
 sleep 2
 shot S2_details_overflow
+=== S268143
+back
+sleep 1
+down
+sleep 1
+tapt ^Read$
+sleep 12
+shot S2_reader_page
+tap 540 1200
+sleep 2
+shot S2_reader_menu
