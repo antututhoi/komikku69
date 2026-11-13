@@ -1043,3 +1043,23 @@ tapt ^Allow$
 sleep 1
 tapt ^Next$
 sleep 1
+=== s003
+tapt ^Restore backup$
+sleep 3
+tapt ^Restore backup$
+sleep 3
+tapt Show roots
+sleep 2
+tapt ^Downloads$
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed.tachibk$
+sleep 4
+tapt ^Restore$
+sleep 15
+back
+tapt ^Browse$
+sleep 2
+tapt ^Extensions$
+sleep 3
