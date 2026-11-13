@@ -4123,3 +4123,7 @@ sleep 1
 === S49958
 tap 540 1200
 sleep 1
+=== S49959
+tap 540 360
+sleep 2
+shot SY_reader_exh_panel
