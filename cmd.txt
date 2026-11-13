@@ -744,3 +744,22 @@ stop app.komikku.mod69
 launch app.mihon
 sleep 3
 shot first
+=== m003
+tapt ^Next$
+tapt ^Select a folder$
+sleep 3
+tapt ^Music$
+sleep 2
+tapt USE THIS FOLDER
+sleep 2
+tapt ^ALLOW$
+sleep 2
+tapt ^Next$
+sleep 1
+shot perms
+tap 887 1149
+sleep 2
+tapt ^Allow$
+sleep 1
+tapt ^Next$
+sleep 1
