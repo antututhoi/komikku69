@@ -807,3 +807,9 @@ up
 up
 === Tsundoku_set_advanced_s8
 up
+=== Tsundoku_back_advanced
+back
+sleep 1
+down
+down
+down
