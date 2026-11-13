@@ -1269,3 +1269,7 @@ shot C_settings_Reader_p4
 up
 sleep 1
 shot C_settings_Reader_p5
+=== C61736
+up
+sleep 1
+shot C_settings_Reader_p6
