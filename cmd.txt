@@ -1144,3 +1144,6 @@ tapt ^More$
 sleep 2
 tapt ^Settings$
 sleep 2
+=== C60788
+tapt ^Library$
+sleep 2
