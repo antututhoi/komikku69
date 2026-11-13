@@ -1,0 +1,17 @@
+# block F65473  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.main.ui.MainActivity  time: 10:24:43
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,243  t='Search manga' d='' id=search_bar
+[    ]  116,243  t='' d='Navigate up' id=
+[    ]  313,243  t='Search manga' d='' id=open_search_bar_text_view
+[C   ]  721,243  t='' d='Manga' id=action_app_mode
+[C   ]  848,243  t='' d='Downloads' id=action_downloads
+[CL  ]  975,243  t='' d='More options' id=
+[    ]  540,1670 t='What you read will be displayed here' d='' id=textPrimary
+[    ]  539,1813 t='Find what to read in the «Explore» section' d='' id=textSecondary
+[    ]  539,1199 t='ラ
+ノ
+ベ' d='' id=textViewWatermark
+[    ]  135,2263 t='' d='History' id=nav_history
+[C   ]  405,2263 t='' d='Favorites' id=nav_favorites
+[C   ]  675,2263 t='' d='Explore' id=nav_explore
+[C   ]  945,2263 t='' d='Feed' id=nav_feed
