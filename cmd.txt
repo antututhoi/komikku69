@@ -659,3 +659,5 @@ sleep 3
 === S268295
 tapt ^Appearance$
 sleep 3
+=== S268296
+shot S2_settings_Appearance_p0
