@@ -3,3 +3,6 @@
 sh pm list packages -3
 launch app.komikku.mod69
 sleep 3
+=== b002
+tapt ^OK$
+sleep 2
