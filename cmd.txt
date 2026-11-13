@@ -69,3 +69,7 @@ shot O_feed_main
 tapt ^History$
 sleep 3
 shot O_history_main
+=== O64309
+tapt Switch space
+sleep 3
+shot O_space_switcher
