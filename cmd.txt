@@ -4066,3 +4066,19 @@ sleep 1
 tap 540 360
 sleep 2
 shot SY_reader_exh_panel
+=== S49854
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 2
+sleep 1
+sleep 2
+tap 376 358
+sleep 2
+tap 540 695
+sleep 5
+up
+sleep 1
+tapt Vol.19 Ch.128
+sleep 8
+tapt ^Got it$
+sleep 1
