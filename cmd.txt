@@ -43,3 +43,7 @@ shot O_restore_files
 tapt ^seed_kotatsu.zip$
 sleep 5
 shot O_restore_3
+=== O64248
+tapt ^Restore$
+sleep 12
+shot O_restore_done
