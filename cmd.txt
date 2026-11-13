@@ -411,3 +411,5 @@ down
 === go_advanced
 tapt ^Advanced$
 sleep 2
+=== set_advanced_s0
+sleep 1
