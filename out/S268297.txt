@@ -1,0 +1,52 @@
+# block S268297  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:12:41
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,399  t='' d='' id=
+[    ]  298,300  t='Show in TV launcher · Beta' d='' id=title
+[    ]  450,382  t='Show the existing app entrance in Android TV launchers. The regular launcher is ' d='' id=summary
+[k   ]  969,356  t='' d='' id=switchWidget
+[    ]  540,552  t='Color scheme' d='' id=title
+[S   ]  540,791  t='' d='' id=scrollView
+[C   ]  160,791  t='' d='' id=
+[C   ]  152,760  t='' d='' id=card
+[    ]   86,666  t='Abc' d='' id=
+[    ]  152,944  t='Totoro' d='' id=textView_title
+[C   ]  405,791  t='' d='' id=
+[C   ]  405,760  t='' d='' id=card
+[    ]  339,666  t='Abc' d='' id=
+[    ]  405,944  t='Dynamic' d='' id=textView_title
+[C   ]  658,791  t='' d='' id=
+[C   ]  658,760  t='' d='' id=card
+[    ]  592,666  t='Abc' d='' id=
+[    ]  658,944  t='Expressive (Test)' d='' id=textView_title
+[C   ]  911,791  t='' d='' id=
+[C   ]  911,760  t='' d='' id=card
+[    ]  845,666  t='Abc' d='' id=
+[    ]  911,944  t='Miku' d='' id=textView_title
+[C   ] 1059,791  t='' d='' id=
+[C   ] 1067,760  t='' d='' id=card
+[    ] 1075,666  t='Abc' d='' id=
+[    ] 1067,944  t='Asuka' d='' id=textView_title
+[C   ]  540,1108 t='' d='' id=
+[    ]  194,1082 t='Custom themes' d='' id=title
+[    ]  285,1136 t='No custom themes imported' d='' id=summary
+[C   ]  540,1326 t='' d='' id=
+[    ]  208,1274 t='Import theme file' d='' id=title
+[    ]  540,1355 t='Import an Idle Fantasy compatible Material 3 theme JSON. Colors follow its prima' d='' id=summary
+[C   ]  540,1545 t='' d='' id=
+[    ]  258,1519 t='Delete selected theme' d='' id=title
+[    ]  285,1573 t='No custom themes imported' d='' id=summary
+[C   ]  540,1737 t='' d='' id=
+[    ]  109,1711 t='Theme' d='' id=title
+[    ]  165,1765 t='Follow system' d='' id=summary
+[C   ]  540,1929 t='' d='' id=
+[    ]   95,1903 t='Black' d='' id=title
+[    ]  360,1957 t='Uses less power on AMOLED screens' d='' id=summary
+[k   ]  969,1929 t='' d='' id=switchWidget
+[C   ]  540,2174 t='' d='' id=
+[    ]  324,2095 t='Pure black bottom navigation' d='' id=title
+[    ]  450,2202 t='Force the bottom navigation bar to pure black on the AMOLED theme. Turn off to k' d='' id=summary
+[xk  ]  969,2174 t='' d='' id=switchWidget
+[C   ]  540,2361 t='' d='' id=
+[    ]  137,2382 t='Language' d='' id=title
