@@ -2038,3 +2038,19 @@ sleep 1
 up
 tapt ^Unread chapters$
 tap 540 130
+=== K42823
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 2
+sleep 1
+sleep 2
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+up
+tapt ^Local source$
+sleep 1
+tap 540 130
+sleep 2
+shot K_libover_Local source_toggled
