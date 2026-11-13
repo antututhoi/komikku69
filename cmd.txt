@@ -255,3 +255,5 @@ tapt ^Reader$
 sleep 2
 === set_reader_s0
 sleep 1
+=== set_reader_s1
+up
