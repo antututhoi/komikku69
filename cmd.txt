@@ -70,3 +70,7 @@ shot F_explore_main
 tapt ^Enable$
 sleep 3
 shot F_explore_main
+=== F65685
+tapt ^Catalog$
+sleep 4
+shot F_catalog
