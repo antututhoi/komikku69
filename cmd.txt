@@ -398,3 +398,12 @@ shot F_settings_Appearance_p5
 up
 sleep 1
 shot F_settings_Appearance_p6
+=== F67200
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 6
+sleep 3
+tap 970 243
+sleep 2
+tap 632 628
+sleep 3
