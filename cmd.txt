@@ -627,3 +627,17 @@ shot T_entry_top
 tapt ^More options$
 sleep 2
 shot T_entry_overflow_menu
+=== T53050
+back
+sleep 1
+back
+sleep 2
+tapt ^Updates$
+sleep 3
+shot T_updates_main
+tapt ^History$
+sleep 2
+shot T_history_main
+tapt ^More$
+sleep 2
+shot T_more_main
