@@ -99,3 +99,22 @@ back
 sleep 2
 === F65776
 shot F_explore_with_mangadex
+=== F65815
+tapt ^More options$
+sleep 2
+tapt ^Settings$
+sleep 3
+tapt ^Backup and restore$
+sleep 2
+tapt ^Restore from backup$
+sleep 3
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed_kotatsu.zip$
+sleep 5
+tapt ^Restore$
+sleep 12
