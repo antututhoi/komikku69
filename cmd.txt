@@ -129,3 +129,9 @@ sleep 1
 tap 869 750
 sleep 2
 shot J_library_category_sort_menu
+=== J50949
+back
+sleep 1
+tap 540 2242
+sleep 3
+shot J_recents_main
