@@ -1,0 +1,31 @@
+# block S268341  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:24:32
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  357,212  t='Manga sources' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,377  t='' d='' id=
+[    ]  197,337  t='Sources catalog' d='' id=title
+[    ]  162,391  t='Available: 782' d='' id=summary
+[C   ]  540,581  t='' d='' id=
+[    ]  177,529  t='Disable NSFW' d='' id=title
+[    ]  450,610  t='Disable NSFW sources and hide adult manga from list if possible' d='' id=summary
+[xk  ]  969,581  t='' d='' id=switchWidget
+[C   ]  540,879  t='' d='' id=
+[    ]  449,774  t='Choose source content classes separately' d='' id=title
+[    ]  450,908  t='Choose Safe, Mixed or Adult sources independently. Disable NSFW still filters ad' d='' id=summary
+[k   ]  969,879  t='' d='' id=switchWidget
+[C   ]  540,1151 t='' d='' id=
+[    ]  257,1125 t='Visible source content' d='' id=title
+[    ]   81,1179 t='Safe' d='' id=summary
+[C   ]  540,1369 t='' d='' id=
+[    ]  240,1317 t='Hide broken sources' d='' id=title
+[    ]  450,1398 t='Hide sources marked as broken from source lists' d='' id=summary
+[k   ]  969,1369 t='' d='' id=switchWidget
+[C   ]  540,1778 t='' d='' id=
+[    ]  450,1594 t='Use saved metadata for unavailable sources' d='' id=title
+[    ]  450,1838 t='Pause automatic details and chapter-list refresh when an extension is missing or' d='' id=summary
+[k   ]  969,1778 t='' d='' id=switchWidget
+[C   ]  540,2187 t='' d='' id=
+[    ]  257,2135 t='Repair broken sources' d='' id=title
+[    ]  540,2216 t='Find unavailable sources used by your library and replace their titles safely' d='' id=summary
+[C   ]  540,2355 t='' d='' id=
+[    ]  359,2376 t='Incognito mode for NSFW manga' d='' id=title
