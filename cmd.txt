@@ -336,3 +336,5 @@ tapt ^Connections$
 sleep 2
 === set_connections_s0
 sleep 1
+=== set_connections_s1
+up
