@@ -4027,3 +4027,10 @@ up
 up
 sleep 1
 shot SY_reader_hq_sheet_end
+=== S49596
+tapt ^Custom filter$
+sleep 1
+shot SY_reader_hq_filter_tab
+up
+sleep 1
+shot SY_reader_hq_filter_tab2
