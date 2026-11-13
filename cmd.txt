@@ -926,3 +926,5 @@ down
 === MH_go_security_and_privacy
 tapt ^Security and privacy$
 sleep 2
+=== MH_set_security_and_privacy_s0
+sleep 1
