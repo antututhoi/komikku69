@@ -1284,3 +1284,5 @@ sleep 1
 down
 down
 down
+=== x41310
+stop eu.kanade.tachiyomi.sy
