@@ -705,3 +705,5 @@ down
 === Tsundoku_go_downloads
 tapt ^Downloads$
 sleep 2
+=== Tsundoku_set_downloads_s0
+sleep 1
