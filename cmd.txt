@@ -946,3 +946,6 @@ sleep 1
 down
 down
 down
+=== Chimahon_go_player
+tapt ^Player$
+sleep 2
