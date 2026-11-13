@@ -1072,3 +1072,10 @@ tapt ^seed.tachibk$
 sleep 4
 tapt ^Restore$
 sleep 15
+=== s005
+back
+tapt ^More$
+sleep 2
+up
+tapt ^Settings$
+sleep 2
