@@ -4,3 +4,7 @@ sh pm list packages -3
 launch org.skepsun.kototoro
 sleep 10
 shot O_first_run
+=== O64062
+tapt ^Next$
+sleep 3
+shot O_welcome_step2
