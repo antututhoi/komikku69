@@ -485,3 +485,7 @@ tap 400 2135
 sleep 10
 tapt ^Got it$
 sleep 2
+=== r006
+sleep 2
+tap 540 1200
+sleep 2
