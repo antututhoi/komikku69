@@ -47,3 +47,9 @@ shot O_restore_3
 tapt ^Restore$
 sleep 12
 shot O_restore_done
+=== O64249
+tapt ^Done$|^OK$|^Close$
+sleep 3
+tapt ^Done$
+sleep 5
+shot O_home_main
