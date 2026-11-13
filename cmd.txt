@@ -1218,3 +1218,7 @@ tapt ^Appearance$
 sleep 2
 === C61723
 shot C_settings_Appearance_p0
+=== C61724
+up
+sleep 1
+shot C_settings_Appearance_p1
