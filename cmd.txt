@@ -557,3 +557,12 @@ sleep 2
 === r014
 tap 874 2221
 sleep 8
+=== r015
+up
+sleep 1
+tapt Vol.19 Ch.127
+sleep 8
+tapt ^Got it$
+sleep 1
+hold 540 1200 1000
+sleep 2
