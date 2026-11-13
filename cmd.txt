@@ -340,3 +340,8 @@ sleep 3
 === F66791
 tapt ^Reader settings$
 sleep 3
+=== fl1794567052
+sh monkey -p io.github.landwarderer.futon.nightly -c android.intent.category.LAUNCHER 1
+sleep 6
+sh dumpsys window | grep mCurrentFocus
+sh logcat -d -t 400 *:E | grep -i -m5 'futon\|FATAL'
