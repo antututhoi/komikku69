@@ -598,3 +598,7 @@ sh monkey -p io.github.glitch228.kaisoku -c android.intent.category.LAUNCHER 1
 sleep 8
 tap 405 2231
 sleep 5
+=== S268093
+tapt ^Mieruko-chan$
+sleep 10
+shot S2_details_top
