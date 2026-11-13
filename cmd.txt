@@ -226,3 +226,5 @@ down
 === go_library
 tapt ^Library$
 sleep 2
+=== set_library_s0
+sleep 1
