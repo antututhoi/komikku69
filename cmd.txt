@@ -11,3 +11,7 @@ sleep 1
 tap 1016 201
 sleep 2
 shot J_more_menu
+=== J50481
+tapt ^Settings$
+sleep 2
+shot J_settings_main
