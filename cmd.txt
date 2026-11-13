@@ -84,3 +84,6 @@ sleep 45
 host adb logcat -d > /tmp/ctlout/out/log_b019.txt; adb logcat -d --pid=$(adb shell pidof app.komikku.mod69) > /tmp/ctlout/out/log_b019_app.txt; wc -l /tmp/ctlout/out/log_b019*.txt
 tapt ^Updates$
 sleep 3
+=== b020
+launch app.komikku
+sleep 3
