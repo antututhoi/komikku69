@@ -467,3 +467,6 @@ tap 970 243
 sleep 2
 tap 632 628
 sleep 3
+=== F67215
+tapt ^Downloads$
+sleep 3
