@@ -14,3 +14,13 @@ tapt ^Next$|^Get Started$|^Done$
 sleep 3
 === F65352
 shot F_state
+=== F65415
+left
+sleep 2
+left
+sleep 2
+left
+sleep 2
+left
+sleep 2
+shot F_state2
