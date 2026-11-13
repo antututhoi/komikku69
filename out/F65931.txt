@@ -1,0 +1,19 @@
+# block F65931  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.search.ui.multi.SearchActivity  time: 10:32:38
+! tapt 'Search manga' at 540,243
+[S   ]  540,1200 t='' d='' id=
+[C   ]   73,206  t='' d='Navigate up' id=
+[    ]  262,177  t='Mieruko' d='' id=
+[    ]  295,244  t='Search results' d='' id=
+[CL  ] 1016,211  t='' d='Type' id=action_search_kind
+[    ]  427,326  t='Royal Road' d='' id=textView_title
+[S   ]  540,657  t='' d='' id=recyclerView
+[CL  ]  188,657  t='' d='' id=
+[    ]  188,853  t='Viewy' d='' id=textView_title
+[CL  ]  523,657  t='' d='' id=
+[    ]  523,853  t='Untitled' d='' id=textView_title
+[CL  ]  858,657  t='' d='' id=
+[    ]  858,853  t='Fubuki no Kusari' d='' id=textView_title
+[CL  ] 1058,657  t='' d='' id=
+[    ] 1066,853  t='Of Life and Death' d='' id=textView_title
+[C   ]  956,332  t='Show all' d='' id=button_more
+[C   ]  540,1021 t='Search through disabled sources' d='' id=button
