@@ -994,3 +994,7 @@ shot D_settings_Appearance_p5
 up
 sleep 1
 shot D_settings_Appearance_p6
+=== D69561
+up
+sleep 1
+shot D_settings_Appearance_p7
