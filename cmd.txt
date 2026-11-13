@@ -1,0 +1,4 @@
+=== F65035
+launch io.github.landwarderer.futon.nightly
+sleep 10
+shot F_first_run
