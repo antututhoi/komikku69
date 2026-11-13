@@ -163,3 +163,10 @@ sleep 1
 up
 sleep 1
 shot F_explore_sources2
+=== F66141
+tapt ^Catalog$
+sleep 4
+tapt ^Remove English$
+sleep 2
+tapt ^Various languages$
+sleep 3
