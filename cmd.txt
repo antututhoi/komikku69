@@ -53,3 +53,7 @@ sleep 3
 tapt ^Done$
 sleep 5
 shot O_home_main
+=== O64305
+tapt ^Favorites$ 2
+sleep 3
+shot O_favorites_main
