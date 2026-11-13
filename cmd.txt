@@ -2455,3 +2455,15 @@ sleep 1
 tap 540 250
 sleep 2
 shot K_rd_tapzone_Right and Left
+=== K43750
+tap 540 1200
+sleep 1
+tap 929 2275
+sleep 2
+tapt ^Reading mode$
+sleep 1
+tapt ^Default$
+sleep 1
+tap 540 250
+sleep 2
+shot K_rd_tapzone_Default
