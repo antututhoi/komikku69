@@ -1084,3 +1084,5 @@ sleep 1
 === SY_go_appearance
 tapt ^Appearance$
 sleep 2
+=== SY_set_appearance_s0
+sleep 1
