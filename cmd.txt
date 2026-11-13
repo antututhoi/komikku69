@@ -304,3 +304,11 @@ sleep 1
 tapt ^Feed$
 sleep 4
 shot F_feed_main
+=== F66669
+tapt ^Favorites$
+sleep 3
+tapt ^Mieruko-chan$
+sleep 8
+tapt ^More options$
+sleep 2
+shot F_details_manga_overflow
