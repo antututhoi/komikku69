@@ -3248,3 +3248,12 @@ sleep 1
 tap 540 250
 sleep 2
 shot M_rd_tapzone_Right_and_Left
+=== M46132
+tapt ^Settings$
+sleep 2
+up
+tapt ^Disabled$
+sleep 1
+tap 540 250
+sleep 2
+shot M_rd_tapzone_Disabled
