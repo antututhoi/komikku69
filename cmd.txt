@@ -1425,3 +1425,5 @@ sleep 2
 === C61769
 tapt ^Anki$
 sleep 2
+=== C61770
+shot C_settings_Anki_p0
