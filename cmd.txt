@@ -383,3 +383,6 @@ sleep 1
 down
 down
 down
+=== J2K_go_browse
+tapt ^Browse$
+sleep 2
