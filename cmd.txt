@@ -15,3 +15,9 @@ shot J_more_menu
 tapt ^Settings$
 sleep 2
 shot J_settings_main
+=== J50514
+launch eu.kanade.tachiyomi.j2k
+sleep 4
+tap 1016 201
+sleep 2
+shot J_more_menu
