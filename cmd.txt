@@ -1034,3 +1034,5 @@ up
 up
 tapt ^Dictionaries and audio$
 sleep 2
+=== Chimahon_set_dictionaries_and_audio_s0
+sleep 1
