@@ -602,3 +602,10 @@ sleep 5
 tapt ^Mieruko-chan$
 sleep 10
 shot S2_details_top
+=== S268142
+up
+sleep 2
+shot S2_details_scrolled
+tapt ^More options$
+sleep 2
+shot S2_details_overflow
