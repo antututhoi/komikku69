@@ -1058,3 +1058,5 @@ sleep 2
 sleep 1
 === Chimahon_set_popup_dictionary_s1
 up
+=== Chimahon_set_popup_dictionary_s2
+up
