@@ -59,3 +59,9 @@ sleep 2
 tapt seed.tachibk
 sleep 4
 shot J_restore_dialog
+=== J50685
+tapt ^Got it$
+sleep 1
+back
+sleep 2
+shot J_x
