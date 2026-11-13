@@ -511,3 +511,9 @@ sleep 2
 tapt ^seed.tachibk$
 sleep 4
 shot T_restore_options
+=== T52565
+tapt ^Restore$
+sleep 15
+stop app.tsundoku
+launch app.tsundoku
+sleep 6
