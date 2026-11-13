@@ -1,0 +1,33 @@
+# block F67211  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:58:48
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  424,212  t='Storage and network' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[    ]  540,384  t='Storage usage' d='' id=title
+[    ]  540,583  t='0 B - Saved manga' d='' id=label_storage
+[    ]  540,647  t='8.3 MB - Pages cache' d='' id=label_pages_cache
+[    ]  540,711  t='25 MB - Other cache' d='' id=label_other_cache
+[    ]  540,775  t='4.2 GB - Available' d='' id=label_available
+[C   ]  540,920  t='' d='' id=
+[    ]  169,920  t='Data removal' d='' id=title
+[C   ]  540,1087 t='' d='' id=
+[    ]  225,1061 t='Content preloading' d='' id=title
+[    ]   92,1115 t='Never' d='' id=summary
+[C   ]  540,1279 t='' d='' id=
+[    ]  181,1253 t='Preload pages' d='' id=title
+[    ]  152,1307 t='Only on Wi-Fi' d='' id=summary
+[C   ]  540,1471 t='' d='' id=
+[    ]   97,1445 t='Proxy' d='' id=title
+[    ]  116,1499 t='Disabled' d='' id=summary
+[C   ]  540,1663 t='' d='' id=
+[    ]  204,1637 t='DNS over HTTPS' d='' id=title
+[    ]  116,1691 t='Disabled' d='' id=summary
+[C   ]  540,1855 t='' d='' id=
+[    ]  173,1829 t='GitHub mirror' d='' id=title
+[    ]  124,1883 t='Keiyoushi' d='' id=summary
+[C   ]  540,2047 t='' d='' id=
+[    ]  298,2021 t='Images optimization proxy' d='' id=title
+[    ]   87,2075 t='None' d='' id=summary
+[C   ]  540,2271 t='' d='' id=
+[    ]  209,2213 t='Ignore SSL errors' d='' id=title
+[    ]  450,2321 t='You can disable SSL certificates verification in case you face an SSL-related is' d='' id=summary
+[k   ]  969,2341 t='' d='' id=switchWidget
