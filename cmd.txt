@@ -20,3 +20,7 @@ shot O_welcome_step4
 tapt ^Restore from backup$
 sleep 3
 shot O_restore_1
+=== O64135
+tapt ^Restore from backup$ 2
+sleep 3
+shot O_restore_1
