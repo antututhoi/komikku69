@@ -4127,3 +4127,15 @@ sleep 1
 tap 540 360
 sleep 2
 shot SY_reader_exh_panel
+=== S50087
+tap 540 360
+sleep 1
+tapt ^Settings$
+sleep 2
+tapt ^Long strip$
+sleep 1
+tap 540 250
+sleep 2
+tap 540 360
+sleep 2
+shot SY_reader_exh_panel_longstrip
