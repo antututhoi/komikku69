@@ -909,3 +909,8 @@ sleep 2
 tapt ^seed.tachibk$
 sleep 8
 shot D_restore_mihon
+=== D69341
+shot D_restore_need_ext
+tapt ^OK$
+sleep 10
+shot D_restore_after_ok
