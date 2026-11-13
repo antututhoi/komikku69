@@ -654,3 +654,5 @@ sleep 1
 up
 === Tsundoku_set_appearance_s2
 up
+=== Tsundoku_set_appearance_s3
+up
