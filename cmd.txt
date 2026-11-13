@@ -1094,3 +1094,11 @@ up
 up
 tapt ^OCR$
 sleep 2
+=== C60777
+stop app.chimahon
+launch app.chimahon
+sleep 5
+tapt ^More$
+sleep 2
+tapt ^Settings$
+sleep 2
