@@ -606,3 +606,9 @@ sleep 2
 tapt ^Find Duplicates$
 sleep 3
 shot T_duplicates_start
+=== T52924
+tapt ^Contains$
+sleep 1
+tapt ^Start Analysis$
+sleep 6
+shot T_duplicates_result
