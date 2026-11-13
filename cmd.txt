@@ -4059,3 +4059,6 @@ sleep 1
 back
 sleep 1
 shot SY_reader_state
+=== S49810
+tap 540 1200
+sleep 1
