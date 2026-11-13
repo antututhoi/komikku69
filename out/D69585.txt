@@ -1,0 +1,43 @@
+# block D69585  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:41:27
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,148  t='' d='Check for new chapters' id=collapsingToolbarLayout
+[CL  ]   99,209  t='' d='Navigate up' id=
+[S   ]  540,1345 t='' d='' id=
+[C   ]  540,365  t='' d='' id=
+[    ]  364,313  t='Only on Wi-Fi' d='' id=
+[    ]  538,375  t='Do not check for new chapters using metered network connections' d='' id=
+[Ck  ]  942,347  t='' d='' id=
+[C   ]  540,536  t='' d='' id=
+[    ]  433,517  t='Frequency of check' d='' id=
+[    ]  313,565  t='Default (18h)' d='' id=
+[C   ]  540,724  t='' d='' id=
+[    ]  405,705  t='Look for updates' d='' id=
+[    ]  288,753  t='Favorites' d='' id=
+[C   ]  540,912  t='' d='' id=
+[    ]  432,893  t='Favorite categories' d='' id=
+[    ]  283,941  t='2 of 2 on' d='' id=
+[C   ]  540,1102 t='' d='' id=
+[    ]  454,1062 t='Notifications settings' d='' id=
+[    ]  614,1130 t='You will receive notifications about updates of manga you are reading' d='' id=
+[C   ]  540,1293 t='' d='' id=
+[    ]  443,1253 t='Feed swipe gestures' d='' id=
+[    ]  538,1321 t='Swipe feed entries to mark them as read or remove them' d='' id=
+[Cxk ]  942,1293 t='' d='' id=
+[C   ]  540,1484 t='' d='' id=
+[    ]  461,1444 t='Dot instead of a count' d='' id=
+[    ]  538,1512 t='Mark the Feed tab with a plain dot instead of the number of unread updates' d='' id=
+[Ck  ]  942,1484 t='' d='' id=
+[C   ]  540,1675 t='' d='' id=
+[    ]  514,1635 t='Disable NSFW notifications' d='' id=
+[    ]  538,1703 t='Do not show notifications about NSFW manga updates' d='' id=
+[Ck  ]  942,1675 t='' d='' id=
+[C   ]  540,1866 t='' d='' id=
+[    ]  499,1826 t='Failed check notifications' d='' id=
+[    ]  538,1894 t='Notify when new chapters could not be fetched for some manga' d='' id=
+[Ck  ]  942,1866 t='' d='' id=
+[C   ]  540,2055 t='' d='' id=
+[    ]  482,2055 t='Download new chapters' d='' id=
+[C   ]  540,2243 t='' d='' id=
+[    ]  369,2224 t='Smart update' d='' id=
+[    ]  350,2272 t='Check everything' d='' id=
+[    ]  136,2393 t='DEBUG' d='' id=
