@@ -3325,3 +3325,17 @@ sleep 2
 tap 540 1200
 sleep 2
 shot M_rd_bg_Auto
+=== M46139
+tap 540 1200
+sleep 1
+tapt ^Settings$
+sleep 2
+tapt ^General$
+sleep 1
+tapt ^Show page number$
+sleep 1
+tap 540 250
+sleep 2
+tap 540 1200
+sleep 2
+shot M_rd_toggle_Show_page_number_first_tap
