@@ -682,3 +682,5 @@ down
 === Tsundoku_go_manga_reader
 tapt ^Manga Reader$
 sleep 2
+=== Tsundoku_set_manga_reader_s0
+sleep 1
