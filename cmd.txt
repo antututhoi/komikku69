@@ -1166,3 +1166,9 @@ up
 up
 === SY_set_tracking_s3
 up
+=== SY_back_tracking
+back
+sleep 1
+down
+down
+down
