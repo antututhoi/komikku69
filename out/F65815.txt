@@ -1,0 +1,19 @@
+# block F65815  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 10:31:23
+! tapt 'More options' at 975,243
+! tapt 'Settings' at 768,642
+! tapt 'Backup and restore' at 375,1710
+! tapt 'Restore from backup' at 243,611
+! tapt 'Show roots' at 73,191
+! tapt 'tour' at 221,738
+! tapt 'seed_kotatsu.zip' at 335,1186
+! tapt 'Restore' at 829,1540
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  407,212  t='Backup and restore' d='' id=
+[C   ]  540,418  t='' d='' id=
+[    ]  229,366  t='Create data backup' d='' id=title
+[    ]  540,447  t='You can create backup of your history and favorites and restore it' d='' id=summary
+[C   ]  540,637  t='' d='' id=
+[    ]  243,611  t='Restore from backup' d='' id=title
+[    ]  336,665  t='Restore previously created backup' d='' id=summary
+[C   ]  540,803  t='' d='' id=
+[    ]  209,803  t='Periodic backups' d='' id=title
