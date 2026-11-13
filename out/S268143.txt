@@ -1,0 +1,12 @@
+# block S268143  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.reader.ui.ReaderActivity  time: 11:09:56
+! tapt 'Read' at 806,2253
+[S   ]  540,1200 t='' d='' id=pager
+[S   ]  540,1200 t='' d='' id=
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  333,183  t='Mieruko-chan' d='' id=
+[    ]  304,250  t='Vol 1 Chapter 1' d='' id=
+[CL  ] 1027,211  t='' d='More options' id=
+[CL  ]   95,2221 t='' d='Previous chapter' id=button_prev
+[CL  ]  733,2221 t='' d='Next chapter' id=button_next
+[CL  ]  859,2221 t='' d='Chapters' id=button_pages_thumbs
+[CL  ]  985,2221 t='' d='Options' id=button_options
