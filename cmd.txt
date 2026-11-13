@@ -146,3 +146,7 @@ sleep 2
 tap 1012 751
 sleep 3
 shot J_library_updating
+=== J50985
+tap 900 2242
+sleep 3
+shot J_browse_main
