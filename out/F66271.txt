@@ -1,0 +1,42 @@
+# block F66271  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.main.ui.MainActivity  time: 10:38:17
+[S   ]  540,1200 t='' d='' id=
+[C   ]  540,243  t='Search manga' d='' id=search_bar
+[    ]  116,243  t='' d='Navigate up' id=
+[    ]  313,243  t='Search manga' d='' id=open_search_bar_text_view
+[C   ]  721,243  t='' d='Manga' id=action_app_mode
+[C   ]  848,243  t='' d='Downloads' id=action_downloads
+[CL  ]  975,243  t='' d='More options' id=
+[C   ]  283,474  t='Local storage' d='' id=button_local
+[C   ]  797,474  t='Bookmarks' d='' id=button_bookmarks
+[C   ]  283,642  t='Random' d='' id=button_random
+[C   ]  797,642  t='Downloads' d='' id=button_downloads
+[    ]  464,791  t='Suggestions' d='' id=textView_title
+[C   ]  983,792  t='More' d='' id=button_more
+[S   ]  540,965  t='' d='' id=pager
+[S   ]  540,965  t='' d='' id=
+[C   ]  540,965  t='' d='' id=
+[    ]  613,949  t='I Want to Be a Saint, But I Can Only Use Attack Magic!' d='' id=textView_title
+[    ]  613,1035 t='Manga Tie-in, Female Protagonist' d='' id=textView_subtitle
+[    ]  443,1206 t='Manga sources' d='' id=textView_title
+[C   ]  962,1207 t='Catalog' d='' id=button_more
+[CL  ]  150,1440 t='' d='' id=
+[    ]  150,1545 t='Scribble Hub' d='' id=textView_title
+[CL  ]  410,1440 t='' d='' id=
+[    ]  410,1518 t='Royal Road' d='' id=textView_title
+[CL  ]  669,1440 t='' d='' id=
+[    ]  669,1545 t='FreeWebNovel' d='' id=textView_title
+[CL  ]  929,1440 t='' d='' id=
+[    ]  929,1518 t='LNCrawler' d='' id=textView_title
+[CL  ]  150,1769 t='' d='' id=
+[    ]  150,1874 t='Wuxiaworld' d='' id=textView_title
+[CL  ]  410,1769 t='' d='' id=
+[    ]  410,1874 t='Ranobes' d='' id=textView_title
+[CL  ]  669,1769 t='' d='' id=
+[    ]  669,1874 t='Lnori' d='' id=textView_title
+[    ]  539,1199 t='ラ
+ノ
+ベ' d='' id=textViewWatermark
+[C   ]  135,2263 t='' d='History' id=nav_history
+[C   ]  405,2263 t='' d='Favorites' id=nav_favorites
+[    ]  675,2263 t='' d='Explore' id=nav_explore
+[C   ]  945,2263 t='' d='Feed' id=nav_feed
