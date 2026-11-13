@@ -3465,3 +3465,19 @@ sleep 2
 tap 540 1200
 sleep 2
 shot M_rd_toggle_Always_show_chapter_transition_second_tap
+=== S47176
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 2
+sleep 1
+sleep 2
+tap 376 358
+sleep 2
+tap 540 695
+sleep 5
+up
+sleep 1
+tapt Vol.19 Ch.128
+sleep 8
+tapt ^Got it$
+sleep 1
