@@ -1,0 +1,51 @@
+# block D69422  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.main.ui.MainActivity  time: 11:30:36
+[C   ]   91,199  t='' d='Settings' id=button_settings
+[C   ]  540,199  t='Search anything' d='' id=search_bar
+[    ]  540,199  t='Search anything' d='' id=open_search_bar_text_view
+[C   ]  989,199  t='' d='More' id=button_overflow
+[L   ]  168,362  t='' d='All favorites' id=
+[    ]  168,361  t='All favorites' d='' id=
+[CL  ]  405,362  t='' d='Reading' id=
+[    ]  405,361  t='Reading' d='' id=
+[CL  ]  642,362  t='' d='Plan to read' id=
+[    ]  642,361  t='Plan to read' d='' id=
+[S   ]  540,1411 t='' d='' id=pager
+[S   ]  540,1411 t='' d='' id=
+[S   ]  540,1411 t='' d='' id=recyclerView
+[    ]  489,543  t='Sizing has changed' d='' id=textView_title
+[C   ]  959,543  t='' d='Close' id=button_close
+[    ]  540,706  t='The app now sizes itself to your screen instead of using one fixed size for ever' d='' id=textView_body
+[S   ]  540,924  t='' d='' id=scrollView
+[CL  ]   80,919  t='' d='' id=
+[CL  ]  263,919  t='Status' d='' id=
+[CL  ]  564,919  t='On device' d='' id=
+[CL  ]  901,919  t='New chapters' d='' id=
+[CL  ]  193,1219 t='' d='' id=
+[    ]  193,1379 t='Akuyaku Reijou Level 99 ~Watashi wa Ura Boss desuga Maou de wa Arimasen~' d='' id=textView_title_overlay
+[CL  ]  540,1219 t='' d='' id=
+[    ]  540,1378 t='Assassin de Aru Ore no Sutetasu ga Yuusha Yori mo Akiraka ni Tsuyoi Nodaga' d='' id=textView_title_overlay
+[CL  ]  886,1219 t='' d='' id=
+[    ]  886,1406 t='Blue Lock' d='' id=textView_title_overlay
+[CL  ]  193,1695 t='' d='' id=
+[    ]  193,1855 t='Chiyu Mahou no Machigatta Tsukaikata ~Senjou wo Kakeru Kaifuku Youin~' d='' id=textView_title_overlay
+[CL  ]  540,1695 t='' d='' id=
+[    ]  540,1854 t='Haimiya-senpai wa Kowakute Kawaii' d='' id=textView_title_overlay
+[CL  ]  886,1695 t='' d='' id=
+[    ]  886,1855 t='Henkyou Mob Kizoku no Uchi ni Totsuidekita Akuyaku Reijou ga, Mechakucha Dekiru ' d='' id=textView_title_overlay
+[CL  ]  193,2169 t='' d='' id=
+[    ]  193,2331 t='Jeonjijeok Dokja Sijeom' d='' id=textView_title_overlay
+[CL  ]  540,2169 t='' d='' id=
+[    ]  540,2330 t='Kage no Jitsuryokusha ni Naritakute!' d='' id=textView_title_overlay
+[CL  ]  886,2169 t='' d='' id=
+[    ]  886,2331 t='Kaoru Hana wa Rin to Saku' d='' id=textView_title_overlay
+[    ]  245,2235 t='' d='Favorites' id=
+[    ]  285,2235 t='Favorites' d='' id=
+[C   ]  478,2235 t='' d='' id=
+[    ]  478,2235 t='' d='Feed' id=
+[C   ]  621,2235 t='' d='' id=
+[    ]  621,2235 t='' d='History' id=
+[C   ]  764,2235 t='' d='' id=
+[    ]  764,2235 t='' d='Explore' id=
+[L   ]  942,2235 t='' d='' id=
+[    ]  942,2235 t='' d='Continue reading' id=
+[CL  ]  942,2235 t='' d='' id=
