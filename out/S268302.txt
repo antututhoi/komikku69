@@ -1,0 +1,39 @@
+# block S268302  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:13:45
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  312,212  t='Appearance' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,331  t='' d='' id=
+[    ]  450,310  t='Hide or show counters on title cards without turning off update checks.' d='' id=summary
+[xk  ]  969,301  t='' d='' id=switchWidget
+[C   ]  540,463  t='' d='' id=
+[    ]  276,437  t='Default favorites sorting' d='' id=title
+[    ]  215,491  t='Added (Descending)' d='' id=summary
+[C   ]  540,681  t='' d='' id=
+[    ]  213,629  t='Show quick filters' d='' id=title
+[    ]  450,710  t='Provides the ability to filter manga lists by certain parameters' d='' id=summary
+[xk  ]  969,681  t='' d='' id=switchWidget
+[C   ]  540,926  t='' d='' id=
+[    ]  346,874  t='Jump back to where you left off' d='' id=title
+[    ]  450,955  t='Show a button in History that returns you to the spot you last scrolled to' d='' id=summary
+[xk  ]  969,926  t='' d='' id=switchWidget
+[C   ]  540,1145 t='' d='' id=
+[    ]  364,1119 t='Show reading progress indicators' d='' id=title
+[    ]  151,1173 t='Percent read' d='' id=summary
+[C   ]  540,1337 t='' d='' id=
+[    ]  183,1311 t='Badges in lists' d='' id=title
+[    ]  244,1365 t='Saved manga, Favorites' d='' id=summary
+[    ]  540,1521 t='Details' d='' id=title
+[C   ]  540,1743 t='' d='' id=
+[    ]  343,1638 t='Sort chapter list by upload date' d='' id=title
+[    ]  450,1772 t='Use upload dates for chapter lists by default. Reading order and progress stay u' d='' id=summary
+[k   ]  969,1743 t='' d='' id=switchWidget
+[C   ]  540,2041 t='' d='' id=
+[    ]  372,1989 t='Show chapters on the details page' d='' id=title
+[    ]  450,2070 t='Keep the chapter sheet available for chapters, pages and bookmarks.' d='' id=summary
+[k   ]  969,2041 t='' d='' id=switchWidget
+[C   ]  540,2234 t='' d='' id=
+[    ]  287,2234 t='Collapse long description' d='' id=title
+[xk  ]  969,2234 t='' d='' id=switchWidget
+[C   ]  540,2352 t='' d='' id=
+[    ]  271,2373 t='Show pages thumbnails' d='' id=title
+[xk  ]  969,2369 t='' d='' id=switchWidget
