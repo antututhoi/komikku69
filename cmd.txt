@@ -620,3 +620,10 @@ shot S2_reader_page
 tap 540 1200
 sleep 2
 shot S2_reader_menu
+=== S268201
+tapt ^Options$
+sleep 2
+shot S2_reader_options_sheet
+up
+sleep 1
+shot S2_reader_options_sheet_2
