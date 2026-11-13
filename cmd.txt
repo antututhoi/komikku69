@@ -289,3 +289,6 @@ sleep 1
 down
 down
 down
+=== go_downloads
+tapt ^Downloads$
+sleep 2
