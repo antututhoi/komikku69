@@ -2652,3 +2652,7 @@ shot P_e
 tapt ^Settings$
 sleep 2
 shot P_f
+=== P44872
+up
+sleep 1
+shot P_g
