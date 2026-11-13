@@ -1045,3 +1045,6 @@ sleep 6
 sleep 4
 tap 91 199
 sleep 3
+=== D69573
+tapt ^Extensions$
+sleep 3
