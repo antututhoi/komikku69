@@ -523,3 +523,7 @@ shot T_library_main
 tapt ^Browse$
 sleep 3
 shot T_browse_sources
+=== T52624
+tapt ^Extensions$
+sleep 3
+shot T_browse_extensions
