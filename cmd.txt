@@ -410,3 +410,5 @@ sleep 3
 === F67201
 tapt ^Reader settings$
 sleep 3
+=== F67202
+shot F_settings_Reader_settings_p0
