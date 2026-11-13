@@ -298,3 +298,9 @@ sleep 2
 tapt ^List options$
 sleep 2
 shot F_history_list_options
+=== F66668
+back
+sleep 1
+tapt ^Feed$
+sleep 4
+shot F_feed_main
