@@ -1,0 +1,33 @@
+# block F67225  focus: io.github.landwarderer.futon.nightly/io.github.landwarderer.futon.settings.SettingsActivity  time: 11:02:46
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  263,212  t='Settings' d='' id=
+[C   ] 1016,211  t='' d='Search' id=action_search
+[C   ]  540,392  t='' d='' id=
+[    ]  304,366  t='Appearance' d='' id=title
+[    ]  433,420  t='Theme, List mode, Language' d='' id=summary
+[C   ]  540,584  t='' d='' id=
+[    ]  337,558  t='Manga sources' d='' id=title
+[    ]  296,612  t='23 of 944 on' d='' id=summary
+[C   ]  540,776  t='' d='' id=
+[    ]  340,750  t='Reader settings' d='' id=title
+[    ]  517,804  t='Read mode, Scale mode, Switch pages' d='' id=summary
+[C   ]  540,968  t='' d='' id=
+[    ]  387,942  t='Storage and network' d='' id=title
+[    ]  538,996  t='Storage usage, Proxy, Content preloading' d='' id=summary
+[C   ]  540,1160 t='' d='' id=
+[    ]  295,1134 t='Downloads' d='' id=title
+[    ]  547,1188 t='Downloads folder, Download only via Wi-Fi' d='' id=summary
+[C   ]  540,1352 t='' d='' id=
+[    ]  415,1326 t='Check for new chapters' d='' id=title
+[    ]  524,1380 t='Look for updates, Notifications settings' d='' id=summary
+[C   ]  540,1544 t='' d='' id=
+[    ]  272,1518 t='Services' d='' id=title
+[    ]  521,1572 t='Suggestions, Synchronization, Tracking' d='' id=summary
+[C   ]  540,1736 t='' d='' id=
+[    ]  375,1710 t='Backup and restore' d='' id=title
+[    ]  571,1764 t='Create or restore a backup, Periodic backups' d='' id=summary
+[C   ]  540,1928 t='' d='' id=
+[    ]  246,1902 t='About' d='' id=title
+[    ]  359,1956 t='Version N20261103' d='' id=summary
+[C   ]  540,2094 t='' d='' id=
+[    ]  250,2094 t='Debug' d='' id=title
