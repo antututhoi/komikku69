@@ -366,3 +366,5 @@ down
 === go_data_and_storage
 tapt ^Data and storage$
 sleep 2
+=== set_data_and_storage_s0
+sleep 1
