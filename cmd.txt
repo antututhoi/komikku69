@@ -543,3 +543,7 @@ shot F_settings_Services_p0
 tapt ^Restore$
 sleep 12
 shot S2_after_restore
+=== F67228
+up
+sleep 1
+shot F_settings_Services_p1
