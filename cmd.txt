@@ -1346,3 +1346,10 @@ shot K_libdisp_sheet_Panorama comfortable grid
 back
 sleep 2
 shot K_libmode_Panorama comfortable grid
+=== K41317
+tap 881 213
+sleep 1
+tapt ^Display$
+sleep 1
+tapt ^Compact\ grid$
+back
