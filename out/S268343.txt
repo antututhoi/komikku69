@@ -1,0 +1,29 @@
+# block S268343  focus: io.github.glitch228.kaisoku/org.koitharu.kotatsu.settings.SettingsActivity  time: 11:24:59
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  357,212  t='Manga sources' d='' id=
+[S   ]  540,1348 t='' d='' id=recycler_view
+[C   ]  540,391  t='' d='' id=
+[    ]  257,364  t='Visible source content' d='' id=title
+[    ]   81,418  t='Safe' d='' id=summary
+[C   ]  540,608  t='' d='' id=
+[    ]  240,556  t='Hide broken sources' d='' id=title
+[    ]  450,637  t='Hide sources marked as broken from source lists' d='' id=summary
+[k   ]  969,608  t='' d='' id=switchWidget
+[C   ]  540,1017 t='' d='' id=
+[    ]  450,833  t='Use saved metadata for unavailable sources' d='' id=title
+[    ]  450,1077 t='Pause automatic details and chapter-list refresh when an extension is missing or' d='' id=summary
+[k   ]  969,1017 t='' d='' id=switchWidget
+[C   ]  540,1426 t='' d='' id=
+[    ]  257,1374 t='Repair broken sources' d='' id=title
+[    ]  540,1455 t='Find unavailable sources used by your library and replace their titles safely' d='' id=summary
+[C   ]  540,1645 t='' d='' id=
+[    ]  359,1619 t='Incognito mode for NSFW manga' d='' id=title
+[    ]  168,1673 t='Ask every time' d='' id=summary
+[C   ]  540,1863 t='' d='' id=
+[    ]  315,1811 t='Choose mirror automatically' d='' id=title
+[    ]  450,1892 t='Automatically switch domains for manga sources on errors if mirrors are availabl' d='' id=summary
+[k   ]  969,1863 t='' d='' id=switchWidget
+[C   ]  540,2161 t='' d='' id=
+[    ]  161,2056 t='Handle links' d='' id=title
+[    ]  450,2190 t='Handle manga links from external applications (e.g. web browser). You may also n' d='' id=summary
+[xk  ]  969,2161 t='' d='' id=switchWidget
