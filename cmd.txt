@@ -66,3 +66,7 @@ shot F_favorites_main
 tapt ^Explore$
 sleep 4
 shot F_explore_main
+=== F65666
+tapt ^Enable$
+sleep 3
+shot F_explore_main
