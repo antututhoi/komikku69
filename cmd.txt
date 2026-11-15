@@ -277,3 +277,7 @@ tapt ^Advanced$
 sleep 3
 === Y58575
 shot Y_settings_Advanced_p0
+=== Y58576
+up
+sleep 1
+shot Y_settings_Advanced_p1
