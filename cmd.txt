@@ -17,3 +17,7 @@ shot Y_onboard_1
 tapt ^Next$|^Get started$|^Done$|^Finish$
 sleep 3
 shot Y_onboard_2
+=== Y58161
+tapt ^Next$|^Get started$|^Done$|^Finish$
+sleep 3
+shot Y_onboard_3
