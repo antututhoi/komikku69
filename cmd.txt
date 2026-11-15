@@ -402,3 +402,6 @@ sleep 5
 tapt ^RESTORE$
 sleep 25
 shot A_restore_progress
+=== A59875
+tapt ^RESTORE$
+sleep 30
