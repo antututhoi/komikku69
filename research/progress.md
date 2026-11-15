@@ -40,3 +40,4 @@ Updated: 13 Nov 2026. Method: remote-controlled virtual phone on GitHub (branch 
 - Notes: Futon/Kaisoku restore seed_kotatsu.zip fine (Futon starts in Novel mode: tap "Manga"); DropSauce imports seed.tachibk; UI text dumps fail on animated main screens of Futon/DropSauce (use screenshots + coordinates).
 - TODO: finish Kototoro on the phone; add TachiyomiAZ and Yokai (Gor, 15 Nov; yokai-nightly is the same app's test build); final cross-app summary.
 - 15 Nov: Gor asked to fix 69-Continuum first (logged-in feed empty, "Cannot fetch user info"). Fork is 8.3.3.6-69; upstream is 8.3.3.9.3 with Reddit API-block fixes.
+- 15 Nov: Yokai (+nightly) and TachiyomiAZ DONE; rows CMP-LB-6, CMP-UI-7, CMP-UI-8, CMP-SR-7. Kototoro closed as far as the phone allows (details / reader not capturable: emulator dies when it loads the MangaDex extension, 2 attempts). Cross-app summary: research/SUMMARY.md. RESEARCH PHASE COMPLETE; waiting for Gor's picks on the board.

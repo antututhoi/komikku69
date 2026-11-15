@@ -1,0 +1,189 @@
+##### General
+General
+Start screen
+Library
+Confirm exit
+OFF
+Manage notifications
+Display
+Language
+Default (English (United States))
+Date format
+Default (11/15/26)
+App theme
+Follow system
+Light theme variant
+Default
+Dark theme variant
+Default
+Expand all search filters by default
+OFF
+Automatically solve captcha
+Use HIGHLY EXPERIMENTAL automatic ReCAPTCHA solver. Will be grayed out if unsupp
+OFF
+Application lock
+Lock disabled
+Tap to enable
+Fingerprint unsupported
+No fingerprints enrolled!
+Lock manually only
+Disable automatic app locking. The app can still be locked manually by long-pres
+Enable Secure Screen
+Hide notification content
+##### Library
+Library
+Display
+Items per row
+Portrait: Default, Landscape: Default
+Rounded Corner Radius
+The level of radius that the corners are rounded to. Current value is: Radius of
+Updates
+Library update frequency
+Daily
+Library update restrictions
+Update only when the conditions are met
+Only update ongoing manga
+OFF
+Categories to include in global update
+All
+Library update order
+Alphabetically
+Automatically refresh metadata
+Check for new cover and details when updating library
+OFF
+Show update errors notifications
+OFF
+Categories
+Edit categories
+2 categories
+Default category
+Always ask
+##### Reader
+Reader
+General
+Default reading mode
+Left to right
+Rotation
+Free
+Background color
+Black
+Double tap animation speed
+Normal
+Fullscreen
+ON
+Show content in cutout area
+ON
+Keep screen on
+ON
+Show page number
+ON
+32-bit color
+Reduces banding, but impacts performance
+OFF
+Reading
+Skip chapters marked read
+OFF
+Skip filtered chapters
+ON
+Always show chapter transition
+EH Settings
+Download threads
+Higher values can speed up image downloading significantly, but can also trigger
+Aggressively load pages
+Slowly download the entire gallery while reading instead of just loading the pag
+Skip queue on retry
+Normally, pressing the retry button on a failed download will wait until the dow
+Reader Preload amount
+The amount of pages to preload when reading. Higher values will result in a smoo
+Reader cache size
+The amount of images to save on device while reading. Higher values will result 
+Preserve reading position on read manga
+Auto Webtoon Mode
+Use auto webtoon mode for manga that are detected to likely use the long strip f
+Paged
+Scale type
+Fit screen
+Zoom start position
+Automatic
+Animate page transitions
+Crop borders
+Webtoon
+Crop borders
+Side padding
+None
+Navigation
+Tapping
+Invert tapping
+Long tap dialog
+Volume keys
+Invert volume keys
+##### Downloads
+Downloads
+Download location
+/storage/emulated/0/TachiyomiAZ/downloads
+Disallow non-ASCII filenames
+Ensures compatibility with certain storage media that don't support Unicode. Whe
+OFF
+Only download over Wi-Fi
+ON
+Remove after read
+Remove when marked as read
+OFF
+Remove after read
+Disabled
+Download new chapters
+Download new chapters
+OFF
+##### Browse
+Browse
+Extensions
+Check for extension updates
+ON
+Edit repos
+0 additional repos
+NSFW sources
+Allowed
+Sources
+Hide Last Used Source
+OFF
+Global search
+Only include pinned sources
+OFF
+##### Advanced
+Advanced
+Clear chapter cache
+Used: 4.56 MB
+Clear cookies
+DNS over HTTPS (DoH)
+Requires app restart to take effect
+OFF
+Clear database
+Delete manga and chapters that are not in your library
+Refresh library metadata
+Refresh library manga covers
+Refresh tracking
+Updates status, score and last chapter read from the tracking services
+Dump crash logs
+Saves error logs to a file for sharing with the developers
+Disable battery optimization
+Helps with background library updates and backups
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+Extensions
+Installer
+PackageInstaller
+Developer tools
+Enable integrated hentai features
+This is a experimental feature that will disable all hentai features if toggled 
+Enable delegated sources
+Apply TachiyomiAZ enhancements to the following sources if they are installed: H
+ON
+Clear history
+Delete reading history for all manga
+Log level
+Changing this can impact app performance. Force-restart app after changing. Curr
+Enable source blacklist
+Hide extensions/sources that are incompatible with TachiyomiAZ. Force-restart ap
+ON
+Open debug menu
+DO NOT TOUCH THIS MENU UNLESS YOU KNOW WHAT YOU ARE DOING! IT CAN CORRUPT YOUR L

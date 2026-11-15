@@ -1,0 +1,250 @@
+##### General
+Starting screen
+Last used (Library or Recents)
+Back to start
+Pressing back to starting screen
+Manage notifications
+App shortcuts
+Show recent series
+Includes recently read, updated, and added series
+Show recently used sources
+Series shortcuts opens new chapters
+When there's no new chapters, the series' details will open instead
+Auto-updates
+Auto-update app
+Over Wi-Fi only
+Locale
+Date format
+General
+General
+System default
+Language
+System default
+Navigation
+Long tap Recents behavior
+Show download queue
+Long tap Browse behavior
+Open extensions / migration menu
+##### Appearance
+App theme
+Light theme
+A Brighter You (Dynamic)
+Pure White
+Spring Blossom
+Strawberry Daiquiri
+Dark theme
+A Calmer You (Dynamic)
+Dark
+Midnight Dusk
+Chocolate Strawberries
+Change App IconBETA
+This feature is still very experimental!
+Follow system theme
+Pure black dark mode
+Expanded toolbar
+Show a larger, expanded toolbar at the top of most pages (does not show on small
+Appearance
+Appearance
+Details page
+Theme buttons based on cover
+Navigation
+Auto-hide bottom navigation
+Hides when scrolling
+Side navigation icon alignment
+Center
+Use side navigation
+Default behavior
+By default, side navigation is used for certain phones and small tablets when in
+##### Library
+General
+Sort by ignoring articles
+When sorting alphabetically, sort ignoring articles (a, an, the) at the start of
+Search suggestions
+Search tips will show up periodically. Long press the suggestion to search it.
+Display options
+Can also be found by expanding library filters
+Categories
+Edit categories
+2 categories
+Default category
+Last used
+Global updates
+Library update frequency
+Daily
+Device restrictions
+Restrictions: Wi-Fi
+Library
+Library
+Skip updating titles
+With unread chapter(s), That haven't been started, With "Completed" status
+Include: All
+Automatically refresh covers
+Refresh covers in library as well when updating library
+Behavior
+Enable chapter swipe action
+Mark duplicate read chapter as read
+None
+##### Reader
+General
+Default reading mode
+Right to left
+Double tap animation speed
+Normal
+Animate page transitions
+Page preload amount
+The amount of pages to preload when reading. Higher values will result in a smoo
+Buttons at bottom of reader
+View chapters, Open in WebView, Crop borders (Long strip), Page layout, Display 
+Certain buttons can be found in other places if disabled here
+Display
+Default orientation
+Free
+Background color
+Smart (based on page)
+Reader
+Reader
+Fullscreen
+Show content in cutout areaBETA
+Cutout area behavior (Landscape)
+Pad cutout areas
+Keep screen on
+Show page number
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+If disabled, the transition page will be skipped if the next chapter is loaded
+Paged
+Tap zones
+Default
+Invert tap zones
+None
+Scale type
+Fit screen
+Cutout area behavior
+Ignore cutout areas
+Zoom into double page spreads
+Zoom start position
+Automatic
+Crop borders
+Navigate to pan
+Page layoutBETA
+Automatic (based on orientation)
+While using automatic page layout, you can still switch between layouts while re
+Split double pages in portrait
+Invert double pages
+Long strip
+Sensitivity for hiding menu on scroll
+Low
+Side padding
+Page layout
+Single page
+Enable zoom out
+Double tap to zoom
+Navigation
+Volume keys
+Actions
+Show on long press
+Save pages in separate folders
+Creates folders according to manga title
+##### Downloads
+Only download over Wi-Fi
+Save as CBZ archive
+Split tall images
+Improves reader performance
+Auto-append IDBETA
+May fix issue with downloaded chapters conflicts with one another when they have
+Remove after read
+Remove when marked as read
+Remove after read
+Never
+Allow deleting bookmarked chapters
+Download new chapters
+Download new chapters
+Download ahead
+Auto download while reading
+Downloads
+Downloads
+Only works on entries in library and if the current chapter plus the next one ar
+Automatic removal
+Delete removed chapters
+Delete downloaded chapters if the source has removed the chapter online
+##### Browse
+Hide entries already in library
+Extensions
+Extension ReposBETA
+Check for extension updates
+Auto-update extensions
+Over Wi-Fi only
+Some extensions may not be auto-updated if they were installed outside this app
+Notify extension has been updated
+Global search
+Only search pinned sources
+Migration
+Source migration
+Match pinned sources
+Only enable your pinned sources for migration
+Browse
+Browse
+Match enabled sources
+Only enable your currently enabled sources for migration
+You can also migrate by selecting entries in your library
+Sources
+Enable source swipe action
+NSFW (18+) sources
+Show in sources and extensions lists
+Requires app restart to take effect
+This does not prevent unofficial or potentially incorrectly flagged extensions f
+##### Advanced
+Send crash reports
+Helps fix any bugs. No sensitive data will be sent
+Dump crash logs
+Saves error logs to a file for sharing with the developers
+Verbose logging
+Print verbose logs to system log (may reduces app performance)
+Debug info
+Background activity
+Disable battery optimization
+Disable this if you are experiencing issues with updating or restoring your libr
+Don't kill my app!
+Some manufacturers have additional app restrictions that kill background service
+Check for beta releases
+Try new features before they're officially released. Beta releases may be unstab
+Advanced
+Advanced
+Data Management
+Reindex downloads
+Force app to recheck downloaded chapters
+Clean up downloaded chapters
+Delete non-existent, partially downloaded, and read chapter folders
+Clear WebView data
+Clear database
+Delete history for entries that are not saved in your library
+Network
+Clear cookies
+DNS over HTTPS
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+Extensions
+Installer
+Default
+Revoke all trusted extensions
+Library
+Refresh library metadata
+Updates covers, genres, description and entries status information
+Refresh tracking metadata
+Updates status, score and last chapter read from the tracking services
+Reader
+Custom hardware bitmap threshold
+If reader loads a blank image incrementally reduce the threshold.
+Custom display profile
+Debug mode
+Local source
+Scan external storages for entriesBETA
+Danger zone!
+Crash the app!
+To test crashes
+Prune finished workers
+In case worker stuck in FAILED state and you're too impatient to wait
