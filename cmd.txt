@@ -584,3 +584,15 @@ shot A_settings_Advanced_p2
 up
 sleep 1
 shot A_settings_Advanced_p3
+=== O60742
+stop eu.kanade.tachiyomi.az
+sh monkey -p org.skepsun.kototoro -c android.intent.category.LAUNCHER 1
+sleep 10
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
+tapt ^Done$
+sleep 6
