@@ -97,3 +97,5 @@ back
 sleep 2
 tap 180 2242
 sleep 3
+=== Y58444
+shot Y_library_restored
