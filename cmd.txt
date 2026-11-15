@@ -13,3 +13,7 @@ shot Y_library_empty
 tapt ^Next$|^Get started$|^Done$|^Finish$
 sleep 3
 shot Y_onboard_1
+=== Y58160
+tapt ^Next$|^Get started$|^Done$|^Finish$
+sleep 3
+shot Y_onboard_2
