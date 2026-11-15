@@ -313,3 +313,9 @@ sleep 1
 tapt ^Change App Icon
 sleep 3
 shot Y_general_app_icon
+=== Y59435
+back
+sleep 1
+tapt ^Long tap Browse behavior$
+sleep 2
+shot Y_general_longtap_browse
