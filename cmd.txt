@@ -456,3 +456,5 @@ sleep 2
 === A60073
 tapt ^General$
 sleep 3
+=== A60074
+shot A_settings_General_p0
