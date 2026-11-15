@@ -572,3 +572,7 @@ tapt ^Advanced$
 sleep 3
 === A60100
 shot A_settings_Advanced_p0
+=== A60101
+up
+sleep 1
+shot A_settings_Advanced_p1
