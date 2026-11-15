@@ -182,3 +182,6 @@ tap 1016 201
 sleep 2
 tapt ^Settings$
 sleep 2
+=== Y58553
+tapt ^Reader$
+sleep 3
