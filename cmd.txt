@@ -475,3 +475,6 @@ tap 73 201
 sleep 2
 tapt ^Settings$
 sleep 2
+=== A60078
+tapt ^Library$
+sleep 3
