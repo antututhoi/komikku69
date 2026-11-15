@@ -424,3 +424,7 @@ shot A_entry_info
 tapt ^CHAPTERS$|^Chapters$
 sleep 5
 shot A_entry_chapters
+=== A60004
+tapt ^INFO$
+sleep 3
+shot A_entry_info
