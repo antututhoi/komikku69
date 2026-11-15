@@ -156,3 +156,6 @@ tap 1016 201
 sleep 2
 tapt ^Settings$
 sleep 2
+=== Y58547
+tapt ^Library$
+sleep 3
