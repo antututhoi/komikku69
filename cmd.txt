@@ -567,3 +567,6 @@ tap 73 201
 sleep 2
 tapt ^Settings$
 sleep 2
+=== A60099
+tapt ^Advanced$
+sleep 3
