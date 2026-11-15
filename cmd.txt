@@ -462,3 +462,7 @@ shot A_settings_General_p0
 up
 sleep 1
 shot A_settings_General_p1
+=== A60076
+up
+sleep 1
+shot A_settings_General_p2
