@@ -159,3 +159,5 @@ sleep 2
 === Y58547
 tapt ^Library$
 sleep 3
+=== Y58548
+shot Y_settings_Library_p0
