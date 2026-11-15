@@ -679,3 +679,9 @@ tapt ^Extension management$
 sleep 4
 tapt ^Expand$
 sleep 2
+=== O61063
+tapt ^Search$|^Search sources$
+sleep 1
+text English
+sleep 3
+shot O_ext_search_english
