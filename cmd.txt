@@ -371,3 +371,9 @@ stop eu.kanade.tachiyomi.az
 launch eu.kanade.tachiyomi.az
 sleep 6
 shot A_library_restored
+=== A59739
+tap 73 201
+sleep 2
+tapt ^Extensions$
+sleep 4
+shot A_extensions
