@@ -325,3 +325,11 @@ sleep 1
 tapt ^Long tap Recents behavior$
 sleep 2
 shot Y_general_longtap_recents
+=== A59532
+stop eu.kanade.tachiyomi.nightlyYokai
+sh appops set eu.kanade.tachiyomi.az MANAGE_EXTERNAL_STORAGE allow
+sh pm grant eu.kanade.tachiyomi.az android.permission.WRITE_EXTERNAL_STORAGE
+sh pm grant eu.kanade.tachiyomi.az android.permission.READ_EXTERNAL_STORAGE
+launch eu.kanade.tachiyomi.az
+sleep 8
+shot A_first_run
