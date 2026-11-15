@@ -437,3 +437,10 @@ shot A_reader_page
 tap 540 1200
 sleep 2
 shot A_reader_menu
+=== A60006
+tapt ^Settings$|^Reader settings$
+sleep 2
+shot A_reader_settings_sheet
+up
+sleep 1
+shot A_reader_settings_sheet_2
