@@ -341,3 +341,7 @@ shot A_library_empty
 tap 73 201
 sleep 2
 shot A_drawer
+=== A59586
+tapt ^Settings$
+sleep 2
+shot A_settings_main
