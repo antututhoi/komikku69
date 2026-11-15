@@ -645,3 +645,6 @@ shot O_settings_home_p0
 up
 sleep 1
 shot O_settings_home_p1
+=== O60887
+back
+sleep 2
