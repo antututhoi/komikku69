@@ -658,3 +658,10 @@ shot O_settings_navigation_p1
 === O60889
 back
 sleep 2
+=== O60890
+tapt ^Page background$
+sleep 3
+shot O_settings_background_p0
+up
+sleep 1
+shot O_settings_background_p1
