@@ -549,3 +549,6 @@ tap 73 201
 sleep 2
 tapt ^Settings$
 sleep 2
+=== A60095
+tapt ^Browse$
+sleep 3
