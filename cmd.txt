@@ -49,3 +49,11 @@ sleep 1
 tapt ^Get started$
 sleep 5
 shot Y_library_empty
+=== Y58330
+tap 887 886
+sleep 3
+back
+sleep 2
+tapt ^Get started$
+sleep 5
+shot Y_library_empty
