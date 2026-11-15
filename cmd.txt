@@ -466,3 +466,12 @@ shot A_settings_General_p1
 up
 sleep 1
 shot A_settings_General_p2
+=== A60077
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 6
+sleep 2
+tap 73 201
+sleep 2
+tapt ^Settings$
+sleep 2
