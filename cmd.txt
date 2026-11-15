@@ -502,3 +502,7 @@ tapt ^Reader$
 sleep 3
 === A60084
 shot A_settings_Reader_p0
+=== A60085
+up
+sleep 1
+shot A_settings_Reader_p1
