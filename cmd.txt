@@ -480,3 +480,7 @@ tapt ^Library$
 sleep 3
 === A60079
 shot A_settings_Library_p0
+=== A60080
+up
+sleep 1
+shot A_settings_Library_p1
