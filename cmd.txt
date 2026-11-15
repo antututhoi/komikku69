@@ -319,3 +319,9 @@ sleep 1
 tapt ^Long tap Browse behavior$
 sleep 2
 shot Y_general_longtap_browse
+=== Y59436
+back
+sleep 1
+tapt ^Long tap Recents behavior$
+sleep 2
+shot Y_general_longtap_recents
