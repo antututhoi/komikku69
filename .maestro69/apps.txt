@@ -10,3 +10,5 @@ Kototoro | Kototoro-app/Kototoro | kotatsu
 DropSauce | HuzaifaKhalid1311/DropSauce | kotatsu
 Futon | AppFuton/Futon | kotatsu
 Komikku | komikku-app/komikku | mihon
+TachiyomiAZ | az4521/TachiyomiAZ | mihon
+Yokai | null2264/yokai-nightly | mihon
