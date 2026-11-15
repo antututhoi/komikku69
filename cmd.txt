@@ -5,3 +5,7 @@ sh appops set eu.kanade.tachiyomi.nightlyYokai MANAGE_EXTERNAL_STORAGE allow
 launch eu.kanade.tachiyomi.nightlyYokai
 sleep 8
 shot Y_first_run
+=== Y58138
+tapt ^Close$
+sleep 3
+shot Y_library_empty
