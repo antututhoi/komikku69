@@ -665,3 +665,6 @@ shot O_settings_background_p0
 up
 sleep 1
 shot O_settings_background_p1
+=== O60891
+back
+sleep 2
