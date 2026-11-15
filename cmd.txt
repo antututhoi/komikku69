@@ -63,3 +63,7 @@ sleep 2
 tapt ^Settings$
 sleep 2
 shot Y_settings_main
+=== Y58361
+tapt ^Data and storage$
+sleep 2
+shot Y_settings_data
