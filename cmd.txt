@@ -531,3 +531,6 @@ tap 73 201
 sleep 2
 tapt ^Settings$
 sleep 2
+=== A60091
+tapt ^Downloads$
+sleep 3
