@@ -99,3 +99,12 @@ tap 180 2242
 sleep 3
 === Y58444
 shot Y_library_restored
+=== Y58535
+stop eu.kanade.tachiyomi.nightlyYokai
+launch eu.kanade.tachiyomi.nightlyYokai
+sleep 6
+sleep 2
+tap 1016 201
+sleep 2
+tapt ^Settings$
+sleep 2
