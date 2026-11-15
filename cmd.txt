@@ -701,3 +701,6 @@ sleep 3
 up
 sleep 1
 shot O_explore_after
+=== h1794761250
+host adb devices
+sh dumpsys window | grep mCurrentFocus
