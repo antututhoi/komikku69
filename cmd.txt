@@ -685,3 +685,13 @@ sleep 1
 text English
 sleep 3
 shot O_ext_search_english
+=== O61134
+tap 980 729
+sleep 2
+shot O_ext_enabled_one
+back
+sleep 1
+back
+sleep 1
+back
+sleep 3
