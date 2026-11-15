@@ -43,3 +43,9 @@ shot Y_onboard_5
 tapt ^Get started$
 sleep 5
 shot Y_library_empty
+=== Y58308
+sh appops set eu.kanade.tachiyomi.nightlyYokai REQUEST_INSTALL_PACKAGES allow
+sleep 1
+tapt ^Get started$
+sleep 5
+shot Y_library_empty
