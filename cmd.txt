@@ -382,3 +382,23 @@ tapt ^TRUST$
 sleep 2
 tapt ^TRUST$|^Trust$|^OK$
 sleep 4
+=== A59767
+tap 73 201
+sleep 2
+tapt ^Settings$
+sleep 2
+tapt ^Backup$
+sleep 2
+tapt ^Restore backup$
+sleep 3
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed.tachibk$
+sleep 5
+tapt ^RESTORE$
+sleep 25
+shot A_restore_progress
