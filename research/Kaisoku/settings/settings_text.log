@@ -1,0 +1,316 @@
+##### Appearance
+Appearance
+Animated menus · Beta
+Reveal popup menus with a rounded animation. Follows the system animation settin
+Blur behind bars · Beta
+Blur only the main screen content behind the status bar and floating navigation 
+Show in TV launcher · Beta
+Show the existing app entrance in Android TV launchers. The regular launcher is 
+Color scheme
+Abc
+Totoro
+Abc
+Dynamic
+Abc
+Expressive (Test)
+Abc
+Miku
+Abc
+Asuka
+Custom themes
+No custom themes imported
+Import theme file
+Import an Idle Fantasy compatible Material 3 theme JSON. Colors follow its prima
+Delete selected theme
+No custom themes imported
+Theme
+Follow system
+Black
+Uses less power on AMOLED screens
+Pure black bottom navigation
+Force the bottom navigation bar to pure black on the AMOLED theme. Turn off to k
+Language
+Manga list
+Preload nearby covers · Beta
+Load up to two small covers ahead when a list stops scrolling, on an unmetered c
+Show Refresh cover action
+Add a Details menu action to fetch its online cover again, bypassing cached imag
+List mode
+Grid
+Grid size
+100%
+Use a fixed number of grid columns
+Choose columns instead of cover size. Page thumbnails keep their own setting.
+Grid columns
+Category overview · Beta
+Open Favorites as category tiles. Open a tile to see its titles; Back returns he
+Category links in search
+Show visible favorite categories on search results. Tap their names to open the 
+Sort favorite categories
+Manual
+Ascending category order
+List long-press delay
+Show favorites category strip
+When hidden, swipe between categories or use Choose category in the menu.
+Show new-chapter counters
+Hide or show counters on title cards without turning off update checks.
+Default favorites sorting
+Added (Descending)
+Show quick filters
+Provides the ability to filter manga lists by certain parameters
+Jump back to where you left off
+Show a button in History that returns you to the spot you last scrolled to
+Show reading progress indicators
+Percent read
+Badges in lists
+Saved manga, Favorites
+Details
+Sort chapter list by upload date
+Use upload dates for chapter lists by default. Reading order and progress stay u
+Show chapters on the details page
+Keep the chapter sheet available for chapters, pages and bookmarks.
+Collapse long description
+Show pages thumbnails
+Enable the "Pages" tab on the details screen
+Default tab
+Last used
+Main screen
+Search suggestions
+Manga sources, Genres, Recent queries, Authors, Suggested queries, Recent source
+Main screen sections
+History, Favorites, Explore, Feed
+##### Reader settings
+Reader settings
+Hidden pages · Beta
+Hide pages you do not want to see again, such as an ad page. Only a page whose f
+Keep a placeholder for hidden pages
+Instead of leaving a hidden page out, keep its place with a tap-to-show placehol
+Manage hidden pages
+Choose pages to show again
+Retain more adjacent pages · Beta
+With sufficient memory, keep up to two more pages on each side in paged mode, or
+Default mode
+Standard
+Autodetect reader mode
+Automatically detect if manga is webtoon
+Scale mode
+Fit center
+Show zoom buttons
+Whether to show zoom control buttons in the bottom right corner
+Remember reader zoom
+Reuse your chosen zoom on new pages, separately for each reader mode. The curren
+Webtoon zoom
+Allow zoom in gesture in webtoon mode
+Default webtoon zoom out
+0%
+Gaps in webtoon mode
+Show vertical gaps between pages in webtoon mode
+Reader controls in bottom bar
+None
+Reader actions
+Configure actions for tappable screen areas
+Ergonomic reader control
+Do not adjust the page switching direction to the reader mode, e. g. pressing th
+Rotate wide pages
+Turn landscape pages upright for reading. Original files and reading progress st
+Hold-to-scroll
+Scroll while holding a page
+Long-press an edge to scroll until you release. Custom long-press actions take p
+Top row
+Scroll backward
+Middle left
+Middle right
+Scroll forward
+Bottom row
+Scroll forward
+Enable volume buttons
+Use volume buttons for switching pages
+Invert navigation controls
+Swap the direction of volume button and directional hardware key navigation (lef
+Page animation
+Default
+Enable pull gesture
+Use pull gesture to switch chapters in webtoon
+32-bit color mode
+Reduces banding, but may impact performance
+Reduce memory consumption (beta)
+Reduce offscreen pages quality to use less memory
+Suggest another source on errors
+When a source is slow or keeps failing, offer a plugin or extension for the same
+Source-switch prompts · Beta
+Pause slow-loading hints or all automatic source-switch prompts
+Animated pages
+Play GIF and WebP pages. Animation pauses offscreen; translations use a still fr
+GPU image upscaling (beta)
+Sharpen low-resolution pages with an Anime4K-style GPU shader. Android 13+
+Crop pages
+Disabled
+E-Ink
+Flash on page change
+Refresh the screen with a short full-screen flash to reduce ghosting on E-Ink di
+Flash duration
+300 ms
+Flash every
+1 page
+##### Storage and network
+Storage and network
+Storage usage
+0 B - Saved manga
+6.8 MB - Pages cache
+25.6 MB - Other cache
+4.2 GB - Available
+Data removal
+Content preloading
+Never
+Preload pages
+Only on Wi-Fi
+Proxy
+Disabled
+DNS over HTTPS
+Disabled
+Images optimization proxy
+None
+Apply DNS and image proxy settings
+Save the selected options and reconnect idle network connections.
+Reset DNS and image proxy
+Disable DNS over HTTPS and image optimization proxy.
+Ignore SSL errors
+You can disable SSL certificates verification in case you face an SSL-related is
+Disable connectivity check
+Skip the connectivity check in case you have issues with it (e.g. going offline 
+Block ads in browser
+Block advertisement in the built-in browser (beta)
+Auto-solve Cloudflare
+Experimental: automatically tap the Cloudflare verification checkbox when a chal
+FlareSolverr (Beta)
+Use FlareSolverr
+Beta: solve Cloudflare challenges through a FlareSolverr server you run on your 
+Server address
+http://localhost:8191/v1
+Timeout (ms)
+60000
+##### Downloads
+Downloads
+Local manga directories
+2 items
+Downloads folder
+Internal shared storage
+Preferred download format
+Automatic
+Downloading over cellular network
+Ask every time
+You can enable download slowdown for each manga source individually in the sourc
+Disable battery optimization
+Might help with getting the download started if you have any issues with it
+Download pacing
+Minimum image-request interval
+Use source settings
+Delay between chapter starts
+No added delay
+Concurrent chapters
+No additional limit
+Chapter delay and concurrency apply to all downloads. Paused chapters keep their
+Saving pages
+Default page save directory
+Not set
+Ask for the destination dir every time
+##### Check for new chapters
+Check for new chapters
+Check for new chapters and notify about it
+Only on Wi-Fi
+Do not check for new chapters using metered network connections
+Frequency of check
+Default
+Look for updates
+Favorites
+Favorite categories
+2 of 2 on
+Notifications settings
+You will receive notifications about updates of manga you are reading
+Disable NSFW notifications
+Do not show notifications about NSFW manga updates
+Download new chapters
+Never
+Unread updates only
+Hide opened feed entries without deleting them. Turn off to show all updates aga
+Debug
+Checking for new chapters log
+Debug information about background checks for new chapters
+Disable battery optimization
+Helps with background updates checks
+Some devices have different system behavior, which may break background tasks. R
+##### Services
+Services
+Synchronization
+Remote libraries · Beta
+Connect to OPDS or Komga. Browsing and downloads are user initiated; server prog
+Community
+Optional ratings, comments and source reliability
+Suggestions
+Enabled
+Related manga
+Show a list of related manga. In some cases it may be inaccurate or missing
+Reading statistics
+Disabled
+Show estimated reading time
+The time estimation value may be inaccurate
+Tracking
+Combined tracker search · Beta
+Search your list, reading sources and the selected tracker catalogue together. Q
+Review restored tracker links · Beta
+Restored links stay inactive on this device until you verify the account and con
+Tracker status from categories · Beta
+Review account-specific mappings and resolve conflicting statuses. Off until ena
+Tracker tools · Beta
+Review tracker metadata, bulk matches, category statuses and Beta website connec
+AniList automatic matching · Beta
+Off by default. Automatically link trusted IDs already on your AniList list. Con
+AniList
+Kitsu
+MyAnimeList
+MangaBaka
+Shikimori
+Discord Rich Presence
+Show your reading status on Discord
+##### Manga sources
+Manga sources
+Sorting order
+Manual
+Default source list order
+Choose the initial order for source lists. Automatic keeps the source-specific d
+Show novel sources first in Explore
+Moves installed novel sources above manga sources. Off keeps your current source
+Show in grid view
+Manage sources
+211 items
+Manage plugins
+Auto-update plugins
+Periodically check installed plugins for new GitHub releases and update them in 
+Use Android-installed extensions
+Include extensions installed by Android/Mihon. Disable to use only app-private e
+Show Kaisoku when opening extension files
+Allow Kaisoku to appear in Android’s app chooser for extension APK and archive f
+Extension loading errors
+Show why an installed extension could not be loaded
+Enable all manga sources
+All available manga sources will be enabled permanently
+Sources catalog
+Available: 782
+Disable NSFW
+Disable NSFW sources and hide adult manga from list if possible
+Choose source content classes separately
+Choose Safe, Mixed or Adult sources independently. Disable NSFW still filters ad
+Visible source content
+Safe
+Hide broken sources
+Hide sources marked as broken from source lists
+Use saved metadata for unavailable sources
+Pause automatic details and chapter-list refresh when an extension is missing or
+Repair broken sources
+Find unavailable sources used by your library and replace their titles safely
+Incognito mode for NSFW manga
+Ask every time
+Choose mirror automatically
+Automatically switch domains for manga sources on errors if mirrors are availabl
+Handle links
+Handle manga links from external applications (e.g. web browser). You may also n

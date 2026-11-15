@@ -1,0 +1,216 @@
+##### Appearance
+Color scheme
+Abc
+Totoro
+Abc
+Expressive
+Abc
+Miku
+Abc
+Asuka
+THEME
+Theme
+System
+Black
+Uses less power on AMOLED screens
+Language
+System
+Display size
+Default
+Haptic feedback
+Vibrate on taps, toggles, sliders and gestures
+Hide status bar
+Hides the Android status bar across the entire app
+MANGA LIST
+List mode
+Grid
+Grid size
+3 per row
+Show quick filters
+Provides the ability to filter manga lists by certain parameters
+Jump back to where you left off
+Show a button in History that returns you to the spot you last scrolled to
+Show reading progress indicators
+Percentage read (e.g., 60%)
+Badges in lists
+Favorites
+DETAILS
+Collapse long description
+Show pages thumbnails
+Enable the "Pages" tab on the details screen
+Default tab
+Last used
+Details screen appearance
+Screen style, backdrop image and blur effect
+MAIN SCREEN
+Search suggestions
+Main screen sections
+Show floating Continue button
+Allows to continue reading in a one click. This button will not appear in incogn
+Show labels in navigation bar
+Use legacy navigation bar
+Show Android's default bottom navigation style
+Blur behind bars
+Blur the content behind the status bar and the navigation bar
+Pin navigation UI
+Do not hide navigation bar and search view on scroll
+Exit confirmation
+Press Back twice to exit the app
+Show recent manga shortcuts
+Make recent manga available by long pressing on application icon
+PRIVACY
+Require unlock
+Lock the app with device authentication or a custom PIN
+Require unlock after
+Instant
+Screenshot policy
+Allow
+##### Reading
+MODE
+Default mode
+Standard
+Autodetect reader mode
+Automatically detect if manga is webtoon
+Tap title to read
+In favorites and history, tapping a manga's name opens the reader directly
+Check for duplicates
+Warn when a title you are adding is already in your library
+Manage categories
+ZOOM
+Scale mode
+Fit center
+Double-tap zoom
+How far a double tap zooms in paged mode
+Standard
+Fill screen
+Show zoom buttons
+Whether to show zoom control buttons in the bottom right corner
+Webtoon zoom
+Allow zoom in gesture or using double tap in webtoon mode
+Default webtoon zoom out
+0%
+Gaps in webtoon mode
+Show vertical gaps between pages in webtoon mode
+CONTROLS
+Reader controls in bottom bar
+Choose the buttons and their order
+Reader actions
+Configure actions for tappable screen areas
+Ergonomic reader control
+Do not adjust the page switching direction to the reader mode, e. g. pressing th
+Enable volume buttons
+Use volume buttons for switching pages
+Invert navigation controls
+Swap the direction of volume button and directional hardware key navigation (lef
+Page animation
+Default
+Enable pull gesture
+Use pull gesture to switch chapters in webtoon
+IMAGE
+32-bit color mode
+Reduces banding, but may impact performance
+AI upscaling
+Sharpen low-resolution pages on the GPU using an Anime4K-based shader. Android 1
+Reduce memory consumption
+Reduce offscreen pages quality to use less memory
+Crop pages
+Fit wide pages
+Make double-page spreads in paged mode fill a portrait screen
+Method
+Rotate
+Split in two
+Rotation direction
+Clockwise
+Counter-clockwise
+DISPLAY
+Fullscreen mode
+Hide system status and navigation bars
+Screen orientation
+Keep screen on
+Do not turn the screen off while you're reading manga
+Open reader in a separate task
+Allows you to keep multiple readers with different manga open at the same time
+READING INFO
+Show information bar in reader
+Show the current time and reading progress at the top of the screen
+Chapter jump popup
+Ask whether to peek or move progress when opening a chapter away from where you 
+##### Extensions
+CATALOG
+Manage extensions
+Add, remove or update extensions
+Extension stores
+Add, edit, remove, and refresh extension stores
+Migrate broken sources
+Replace every affected favorite and history entry with the best working alternat
+Sandbox extensions
+Install extensions inside the app's sandboxed storage. No system install permiss
+APPEARANCE
+Sorting order
+Name
+Show in grid view
+FILTER
+Default browse order
+Applies to every installed extension
+Popular
+Latest
+Show extensions
+Show all
+Incognito mode for NSFW manga
+Ask every time
+AUTO-UPDATE
+Shizuku installer (Beta)
+Grant privileged access via Shizuku for silent, no-prompt installs
+Auto-update extensions
+Install extension updates silently as soon as they are detected, with a daily ba
+Notify about extension updates
+Show a notification when installed extensions have updates available.
+##### Downloads
+GENERAL
+Local manga directories
+2 items
+Downloads folder
+Internal shared storage
+Preferred download format
+Automatic
+Downloading over cellular network
+Ask every time
+Rebuild Downloads Index
+Scan download folders to verify previous downloads and build index files for com
+Disable battery optimization
+Might help with getting the download started if you have any issues with it
+You can enable download slowdown for each manga source individually in the sourc
+SAVING PAGES
+Default page save directory
+Not set
+Ask for the destination dir every time
+##### Check for new chapters
+Check for new chapters and notify about it
+TRACKER
+Only on Wi-Fi
+Do not check for new chapters using metered network connections
+Frequency of check
+Default (18h)
+Look for updates
+Favorites
+Favorite categories
+2 of 2 on
+Notifications settings
+You will receive notifications about updates of manga you are reading
+Feed swipe gestures
+Swipe feed entries to mark them as read or remove them
+Dot instead of a count
+Mark the Feed tab with a plain dot instead of the number of unread updates
+Disable NSFW notifications
+Do not show notifications about NSFW manga updates
+Failed check notifications
+Notify when new chapters could not be fetched for some manga
+Download new chapters
+Smart update
+Check everything
+DEBUG
+Checking for new chapters log
+Debug information about background checks for new chapters
+Disable battery optimization
+Helps with background updates checks
+Some devices have different system behavior, which may break background tasks.

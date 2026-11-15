@@ -1,0 +1,213 @@
+##### Appearance
+Appearance
+Color scheme
+Abc
+Totoro
+Abc
+Dynamic
+Abc
+Expressive (Test)
+Abc
+Miku
+Abc
+Asuka
+Custom themes
+No custom themes imported
+Import theme file
+Import an Idle Fantasy compatible Material 3 theme JSON
+Delete selected theme
+No custom themes imported
+Theme
+Follow system
+Black
+Uses less power on AMOLED screens
+Language
+Follow system
+Manga list
+List mode
+Grid
+Grid size
+100%
+Show quick filters
+Provides the ability to filter manga lists by certain parameters
+Show reading progress indicators
+Percent read
+Badges in lists
+Saved manga, Favorites
+Details
+Collapse long description
+Show pages thumbnails
+Enable the "Pages" tab on the details screen
+Default tab
+Last used
+Main screen
+Change Home Screen Background Font
+Bold
+Search suggestions
+Manga sources, Genres, Recent queries, Authors, Suggested queries, Recent source
+Main screen sections
+History, Favorites, Explore, Feed
+Show floating Continue button
+Allows to continue reading in a one click. This button will not appear in incogn
+Show labels in navigation bar
+Pin navigation UI
+Do not hide navigation bar and search view on scroll
+Exit confirmation
+Press Back twice to exit the app
+Show recent manga shortcuts
+Make recent manga available by long pressing on application icon
+Privacy
+Protect the app
+Ask for password when starting Futon
+Screenshot policy
+Not set
+##### Reader settings
+Reader settings
+Default mode
+Standard
+Autodetect reader mode
+Automatically detect if manga is webtoon
+Smart resume
+When new chapters arrive, continue with the next chapter if you nearly finished 
+Consider a chapter finished based on
+Percentage
+Completion threshold
+At least 90% of pages reached, including the current page.
+Wait for chapter updates
+Wait for Futon to check for chapter updates before choosing where to continue.
+Scale mode
+Fit center
+Show zoom buttons
+Whether to show zoom control buttons in the bottom right corner
+Webtoon zoom
+Allow zoom in gesture in webtoon mode
+Default webtoon zoom out
+0%
+Gaps in webtoon mode
+Show vertical gaps between pages in webtoon mode
+Reader controls in bottom bar
+None
+Reader actions
+Configure actions for tappable screen areas
+Ergonomic reader control
+Do not adjust the page switching direction to the reader mode, e. g. pressing th
+Enable volume buttons
+Use volume buttons for switching pages
+Invert navigation controls
+Swap the direction of volume button and directional hardware key navigation (lef
+Page animation
+Default
+Enable pull gesture
+Use pull gesture to switch chapters in webtoon
+32-bit color mode
+Reduces banding, but may impact performance
+Reduce memory consumption (beta)
+Reduce offscreen pages quality to use less memory
+Crop pages
+Disabled
+Fullscreen mode
+Hide system status and navigation bars
+Screen orientation
+Keep screen on
+Do not turn the screen off while you're reading manga
+Open reader in a separate task
+Allows you to keep multiple readers with different manga open at the same time
+Show information bar in reader
+Show the current time and reading progress at the top of the screen
+Transparent reader information bar
+Show chapter change popup
+Show a pop-up message with a chapter title when it is changed
+Background
+Numbered pages
+Show page numbers in bottom corner
+Preload pages
+Only on Wi-Fi
+##### Storage and network
+Storage and network
+Storage usage
+0 B - Saved manga
+8.3 MB - Pages cache
+25 MB - Other cache
+4.2 GB - Available
+Data removal
+Content preloading
+Never
+Preload pages
+Only on Wi-Fi
+Proxy
+Disabled
+DNS over HTTPS
+Disabled
+GitHub mirror
+Keiyoushi
+Images optimization proxy
+None
+Ignore SSL errors
+You can disable SSL certificates verification in case you face an SSL-related is
+Disable connectivity check
+Skip the connectivity check in case you have issues with it (e.g. going offline 
+Block ads in browser
+Block advertisement in the built-in browser (beta)
+##### Downloads
+Downloads
+Local manga directories
+2 items
+Downloads folder
+Internal shared storage
+Preferred download format
+Automatic
+Downloading over cellular network
+Ask every time
+You can enable download slowdown for each manga source individually in the sourc
+Disable battery optimization
+Might help with getting the download started if you have any issues with it
+Saving pages
+Default page save directory
+Not set
+Ask for the destination dir every time
+Download scheduling and limits
+Download only when charging
+Connect to a power source to start downloads
+Smart Downloads
+Automatically download next chapters and delete read ones
+Off-peak downloads
+Download only during specified hours
+Start time
+00:00
+End time
+06:00
+Storage quota (MB)
+Limit total download size. 0 for unlimited. Current oldest chapters will be dele
+##### Check for new chapters
+Check for new chapters
+Check for new chapters and notify about it
+Only on Wi-Fi
+Do not check for new chapters using metered network connections
+Frequency of check
+Default
+Look for updates
+Favorites
+Favorite categories
+2 of 2 on
+Notifications settings
+You will receive notifications about updates of manga you are reading
+Disable NSFW notifications
+Do not show notifications about NSFW manga updates
+Download new chapters
+Never
+Debug
+Checking for new chapters log
+Debug information about background checks for new chapters
+Disable battery optimization
+Helps with background updates checks
+Some devices have different system behavior, which may break background tasks. R
+##### Services
+Restore from backup
+Favorite categories
+Favorites
+Merge with existing data
+Backup date: Nov 13, 2026 10:12 AM
+Cancel
+Restore
+What you read will be displayed here
+Find what to read in the «Explore» section

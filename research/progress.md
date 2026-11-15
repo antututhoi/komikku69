@@ -35,3 +35,8 @@ Updated: 13 Nov 2026. Method: remote-controlled virtual phone on GitHub (branch 
 - Tsundoku: DONE (research/Tsundoku/inventory.md, 22 pictures). Rows: CMP-LB-3, CMP-LB-4, CMP-OT-2.
 - Chimahon: DONE (research/Chimahon/inventory.md, 60 pictures). Rows: CMP-UI-4, CMP-UI-5, CMP-RD-4, CMP-OT-3, CMP-OT-4, CMP-SR-3.
 - Phone session 3 started with: 69-Komikku, Kototoro, Kaisoku, Futon, DropSauce (Kotatsu family; shared-core list inv/kotatsu_core.txt).
+- Futon, Kaisoku, DropSauce: DONE (inventories + research/kotatsu_family_core.md; pictures 46 / 49 / 47). 16 rows added: CMP-RD-5..8, CMP-L5, CMP-L6, CMP-LB-5, CMP-SR-4..6, CMP-U5, CMP-OT-5, CMP-UI-6, VIS-7..9.
+- Kototoro: PARTLY. Code read (2890 own texts grouped), 13 pictures of main tabs + wizard; the phone crashed when all 62 MangaDex sources were enabled, so details / reader / settings pages are not captured yet. Backup restore gave no favourites there (extension-based sources).
+- Notes: Futon/Kaisoku restore seed_kotatsu.zip fine (Futon starts in Novel mode: tap "Manga"); DropSauce imports seed.tachibk; UI text dumps fail on animated main screens of Futon/DropSauce (use screenshots + coordinates).
+- TODO: finish Kototoro on the phone; add TachiyomiAZ and Yokai (Gor, 15 Nov; yokai-nightly is the same app's test build); final cross-app summary.
+- 15 Nov: Gor asked to fix 69-Continuum first (logged-in feed empty, "Cannot fetch user info"). Fork is 8.3.3.6-69; upstream is 8.3.3.9.3 with Reddit API-block fixes.
