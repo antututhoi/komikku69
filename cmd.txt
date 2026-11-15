@@ -39,3 +39,7 @@ sleep 3
 tapt ^Next$
 sleep 3
 shot Y_onboard_5
+=== Y58282
+tapt ^Get started$
+sleep 5
+shot Y_library_empty
