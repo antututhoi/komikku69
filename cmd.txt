@@ -67,3 +67,15 @@ shot Y_settings_main
 tapt ^Data and storage$
 sleep 2
 shot Y_settings_data
+=== Y58402
+tapt ^Restore backup$
+sleep 3
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tap 788 1186
+sleep 5
+shot Y_restore_dialog
