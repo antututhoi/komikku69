@@ -57,3 +57,9 @@ sleep 2
 tapt ^Get started$
 sleep 5
 shot Y_library_empty
+=== Y58360
+tap 1016 201
+sleep 2
+tapt ^Settings$
+sleep 2
+shot Y_settings_main
