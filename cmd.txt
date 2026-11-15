@@ -558,3 +558,12 @@ shot A_settings_Browse_p0
 up
 sleep 1
 shot A_settings_Browse_p1
+=== A60098
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 6
+sleep 2
+tap 73 201
+sleep 2
+tapt ^Settings$
+sleep 2
