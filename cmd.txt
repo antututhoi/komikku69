@@ -349,3 +349,15 @@ shot A_settings_main
 tapt ^Backup$
 sleep 2
 shot A_settings_backup
+=== A59633
+tapt ^Restore backup$
+sleep 3
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tap 788 1186
+sleep 5
+shot A_restore_dialog
