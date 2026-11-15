@@ -428,3 +428,12 @@ shot A_entry_chapters
 tapt ^INFO$
 sleep 3
 shot A_entry_info
+=== A60005
+tapt ^CHAPTERS$
+sleep 2
+tapt ^Vol.22 Ch.168.5
+sleep 10
+shot A_reader_page
+tap 540 1200
+sleep 2
+shot A_reader_menu
