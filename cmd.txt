@@ -536,3 +536,7 @@ tapt ^Downloads$
 sleep 3
 === A60092
 shot A_settings_Downloads_p0
+=== A60093
+up
+sleep 1
+shot A_settings_Downloads_p1
