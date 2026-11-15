@@ -405,3 +405,8 @@ shot A_restore_progress
 === A59875
 tapt ^RESTORE$
 sleep 30
+=== A59876
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 6
+shot A_library_restored
