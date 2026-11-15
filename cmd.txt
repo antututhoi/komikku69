@@ -668,3 +668,14 @@ shot O_settings_background_p1
 === O60891
 back
 sleep 2
+=== O61062
+stop org.skepsun.kototoro
+sleep 1
+sh monkey -p org.skepsun.kototoro -c android.intent.category.LAUNCHER 1
+sleep 9
+tapt ^Explore$
+sleep 3
+tapt ^Extension management$
+sleep 4
+tapt ^Expand$
+sleep 2
