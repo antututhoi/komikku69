@@ -596,3 +596,9 @@ tapt ^Next$
 sleep 2
 tapt ^Done$
 sleep 6
+=== O60743
+tapt ^Settings$
+sleep 4
+tapt ^Appearance$
+sleep 3
+shot O_settings_appearance_p0
