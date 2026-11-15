@@ -1,2 +1,7 @@
 === p1794758091
 sh pm list packages -3
+=== Y58108
+sh appops set eu.kanade.tachiyomi.nightlyYokai MANAGE_EXTERNAL_STORAGE allow
+launch eu.kanade.tachiyomi.nightlyYokai
+sleep 8
+shot Y_first_run
