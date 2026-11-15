@@ -410,3 +410,7 @@ stop eu.kanade.tachiyomi.az
 launch eu.kanade.tachiyomi.az
 sleep 6
 shot A_library_restored
+=== A59948
+tap 911 201
+sleep 2
+shot A_library_filter_drawer
