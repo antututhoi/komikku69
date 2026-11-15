@@ -377,3 +377,8 @@ sleep 2
 tapt ^Extensions$
 sleep 4
 shot A_extensions
+=== A59766
+tapt ^TRUST$
+sleep 2
+tapt ^TRUST$|^Trust$|^OK$
+sleep 4
