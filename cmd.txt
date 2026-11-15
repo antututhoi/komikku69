@@ -345,3 +345,7 @@ shot A_drawer
 tapt ^Settings$
 sleep 2
 shot A_settings_main
+=== A59587
+tapt ^Backup$
+sleep 2
+shot A_settings_backup
