@@ -191,3 +191,7 @@ shot Y_settings_Reader_p0
 up
 sleep 1
 shot Y_settings_Reader_p1
+=== Y58556
+up
+sleep 1
+shot Y_settings_Reader_p2
