@@ -655,3 +655,6 @@ shot O_settings_navigation_p0
 up
 sleep 1
 shot O_settings_navigation_p1
+=== O60889
+back
+sleep 2
