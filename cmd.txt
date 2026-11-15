@@ -9,3 +9,7 @@ shot Y_first_run
 tapt ^Close$
 sleep 3
 shot Y_library_empty
+=== Y58159
+tapt ^Next$|^Get started$|^Done$|^Finish$
+sleep 3
+shot Y_onboard_1
