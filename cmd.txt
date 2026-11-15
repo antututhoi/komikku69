@@ -333,3 +333,7 @@ sh pm grant eu.kanade.tachiyomi.az android.permission.READ_EXTERNAL_STORAGE
 launch eu.kanade.tachiyomi.az
 sleep 8
 shot A_first_run
+=== A59563
+tapt ^CLOSE$
+sleep 3
+shot A_library_empty
