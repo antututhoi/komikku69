@@ -272,3 +272,6 @@ tap 1016 201
 sleep 2
 tapt ^Settings$
 sleep 2
+=== Y58574
+tapt ^Advanced$
+sleep 3
