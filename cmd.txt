@@ -25,3 +25,17 @@ shot Y_onboard_3
 tapt ^Next$|^Get started$|^Done$|^Finish$
 sleep 3
 shot Y_onboard_4
+=== Y58230
+tapt ^Select a folder$
+sleep 3
+tapt ^Show roots$
+sleep 2
+tapt ^Documents$
+sleep 2
+tapt ^USE THIS FOLDER$
+sleep 2
+tapt ^ALLOW$|^Allow$
+sleep 3
+tapt ^Next$
+sleep 3
+shot Y_onboard_5
