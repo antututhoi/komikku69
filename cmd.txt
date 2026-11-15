@@ -610,3 +610,7 @@ shot O_settings_appearance_p1
 up
 sleep 1
 shot O_settings_appearance_p2
+=== O60746
+up
+sleep 1
+shot O_settings_appearance_p3
