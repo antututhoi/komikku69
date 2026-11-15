@@ -602,3 +602,7 @@ sleep 4
 tapt ^Appearance$
 sleep 3
 shot O_settings_appearance_p0
+=== O60744
+up
+sleep 1
+shot O_settings_appearance_p1
