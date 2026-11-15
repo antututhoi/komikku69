@@ -510,3 +510,7 @@ shot A_settings_Reader_p1
 up
 sleep 1
 shot A_settings_Reader_p2
+=== A60087
+up
+sleep 1
+shot A_settings_Reader_p3
