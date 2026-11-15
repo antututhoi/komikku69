@@ -695,3 +695,9 @@ back
 sleep 1
 back
 sleep 3
+=== O61135
+tapt ^Explore$
+sleep 3
+up
+sleep 1
+shot O_explore_after
