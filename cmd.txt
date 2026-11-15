@@ -185,3 +185,5 @@ sleep 2
 === Y58553
 tapt ^Reader$
 sleep 3
+=== Y58554
+shot Y_settings_Reader_p0
