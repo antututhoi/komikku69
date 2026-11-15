@@ -414,3 +414,9 @@ shot A_library_restored
 tap 911 201
 sleep 2
 shot A_library_filter_drawer
+=== A59949
+back
+sleep 1
+tapt ^Kaoru Hana wa Rin to Saku$
+sleep 8
+shot A_entry_info
