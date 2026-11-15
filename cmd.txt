@@ -361,3 +361,8 @@ sleep 2
 tap 788 1186
 sleep 5
 shot A_restore_dialog
+=== A59673
+shot A_restore_network_mode
+tapt ^RESTORE$
+sleep 20
+shot A_restore_progress
