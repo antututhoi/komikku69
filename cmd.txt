@@ -249,3 +249,5 @@ sleep 2
 === Y58568
 tapt ^Browse$
 sleep 3
+=== Y58569
+shot Y_settings_Browse_p0
