@@ -484,3 +484,7 @@ shot A_settings_Library_p0
 up
 sleep 1
 shot A_settings_Library_p1
+=== A60081
+up
+sleep 1
+shot A_settings_Library_p2
