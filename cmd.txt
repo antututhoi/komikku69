@@ -285,3 +285,7 @@ shot Y_settings_Advanced_p1
 up
 sleep 1
 shot Y_settings_Advanced_p2
+=== Y58578
+up
+sleep 1
+shot Y_settings_Advanced_p3
