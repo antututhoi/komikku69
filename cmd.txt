@@ -337,3 +337,7 @@ shot A_first_run
 tapt ^CLOSE$
 sleep 3
 shot A_library_empty
+=== A59585
+tap 73 201
+sleep 2
+shot A_drawer
