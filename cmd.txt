@@ -576,3 +576,7 @@ shot A_settings_Advanced_p0
 up
 sleep 1
 shot A_settings_Advanced_p1
+=== A60102
+up
+sleep 1
+shot A_settings_Advanced_p2
