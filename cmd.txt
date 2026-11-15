@@ -552,3 +552,5 @@ sleep 2
 === A60095
 tapt ^Browse$
 sleep 3
+=== A60096
+shot A_settings_Browse_p0
