@@ -5,3 +5,13 @@ sh appops set io.github.landwarderer.futon.nightly MANAGE_EXTERNAL_STORAGE allow
 launch io.github.landwarderer.futon.nightly
 sleep 9
 shot F2_a
+=== F238791
+tapt ^Skip$
+sleep 4
+tapt ^Manga$
+sleep 3
+tap 970 243
+sleep 2
+tap 632 628
+sleep 3
+shot F2_b
