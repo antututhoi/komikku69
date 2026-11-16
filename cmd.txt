@@ -1098,3 +1098,16 @@ sleep 1
 key 66
 sleep 14
 shot K2_s27_global_search
+=== K212630
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+tapt ^Download$
+sleep 2
+shot K2_s18_entry_download_menu
+tapt ^All
+sleep 3
+tapt ^Reading$|^OK$
+sleep 2
