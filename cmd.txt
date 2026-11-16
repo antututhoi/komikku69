@@ -89,3 +89,11 @@ tapt ^Mieruko-chan
 sleep 8
 down
 sleep 10
+=== J238737
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tapt ^Mairimashita
+sleep 8
+down
+sleep 10
