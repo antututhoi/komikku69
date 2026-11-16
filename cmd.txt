@@ -3581,3 +3581,20 @@ tapt ^More options$
 sleep 2
 tapt ^Cancel all$
 sleep 2
+=== T223747
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Manga Sources$
+sleep 2
+tapt ^Global search$|^Search$
+sleep 2
+text mieruko
+sleep 2
+tapt ^All$
+sleep 1
+tap 990 2095
+sleep 18
+shot T2_s27_global_search
