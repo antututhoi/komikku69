@@ -97,3 +97,11 @@ tapt ^Mairimashita
 sleep 8
 down
 sleep 10
+=== J238738
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tapt ^Kumo desu ga
+sleep 8
+down
+sleep 10
