@@ -2552,3 +2552,15 @@ tapt ^All
 sleep 3
 tapt ^Reading$|^OK$
 sleep 2
+=== C218229
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Kaoru Hana
+sleep 8
+tapt ^Download$
+sleep 2
+tapt ^All
+sleep 3
+tapt ^Reading$|^OK$
+sleep 2
