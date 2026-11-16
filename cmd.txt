@@ -2492,3 +2492,27 @@ shot C2_s16_chapter_sort
 tapt ^Display$
 sleep 1
 shot C2_s17_chapter_display
+=== C218226
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Updates$
+sleep 4
+shot C2_s20_updates
+longt ^(Vol|Ch)[. ]
+sleep 2
+shot C2_s20b_updates_selection
+back
+sleep 1
+tapt ^History$
+sleep 3
+shot C2_s21_history
+tapt ^Browse$
+sleep 3
+shot C2_s22_browse_sources
+tapt ^MangaDex$
+sleep 10
+shot C2_s23_source_list
+tapt ^Filter$
+sleep 3
+shot C2_s24_source_filter
