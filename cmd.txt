@@ -1956,3 +1956,10 @@ sleep 1
 tapt ^Settings$
 sleep 2
 shot S2_s42_reader_settings
+=== T216831
+sh pm clear app.tsundoku
+sleep 2
+launch app.tsundoku
+sleep 9
+tapt ^OK$|^Close$
+sleep 2
