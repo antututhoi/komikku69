@@ -908,3 +908,9 @@ shot K2_dbg_entry
 down
 sleep 8
 shot K2_dbg_entry_refreshed
+=== K212537
+back
+sleep 2
+tapt ^Updates$
+sleep 3
+shot K2_dbg_updates
