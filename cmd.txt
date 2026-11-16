@@ -1642,3 +1642,10 @@ tapt ^USE THIS FOLDER$
 sleep 2
 tapt ^ALLOW$|^Allow$
 sleep 3
+=== S215537
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
+tapt ^Get started$
+sleep 3
