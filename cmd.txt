@@ -27,3 +27,19 @@ sleep 3
 === F238891
 tapt ^Backup|^Data|^Services|^Storage
 sleep 3
+=== F238933
+back
+sleep 2
+tapt ^Backup and restore$
+sleep 3
+tapt ^Restore from backup$|^Restore backup$|^Restore
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed_kotatsu2.zip$
+sleep 6
+shot F2_d
