@@ -3019,3 +3019,36 @@ sleep 7
 tapt ^More$
 sleep 2
 shot M2_s30_more
+=== M221458
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^Mairimashita
+sleep 8
+tapt ^Download$
+sleep 2
+tapt ^All
+sleep 2
+tapt ^Reading$|^OK$
+sleep 1
+back
+sleep 1
+tapt ^More$
+sleep 2
+tapt ^Download queue$
+sleep 2
+shot M2_s31_download_queue
+tapt ^More options$
+sleep 2
+shot M2_s31b_download_queue_menu
+back
+sleep 1
+longt ^(Vol|Ch)[. ]
+sleep 2
+shot M2_s31c_download_queue_item_menu
+back
+sleep 1
+tapt ^More options$
+sleep 2
+tapt ^Cancel all$|^Clear
+sleep 2
