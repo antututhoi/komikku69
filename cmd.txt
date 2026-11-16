@@ -900,3 +900,7 @@ sleep 2
 tapt ^Update library$
 sleep 25
 shot K2_dbg_update
+=== K212448
+tapt ^Mieruko-chan
+sleep 8
+shot K2_dbg_entry
