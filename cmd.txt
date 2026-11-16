@@ -57,3 +57,11 @@ sleep 2
 tapt ^Trust$|^TRUST$|^OK$
 sleep 4
 shot J2_d
+=== J238733
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tapt ^Tensei Shitara Slime
+sleep 8
+down
+sleep 10
