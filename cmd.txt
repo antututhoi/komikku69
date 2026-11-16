@@ -113,3 +113,11 @@ tapt ^Kaoru Hana
 sleep 8
 down
 sleep 10
+=== J238740
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+shot J2_s01_library
+tap 540 2242
+sleep 4
+shot J2_s20_recents
