@@ -2393,3 +2393,11 @@ tapt ^Mieruko-chan
 sleep 8
 down
 sleep 9
+=== C218217
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Mairimashita
+sleep 8
+down
+sleep 9
