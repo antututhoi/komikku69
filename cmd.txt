@@ -24,3 +24,14 @@ sleep 3
 tapt ^Backup and restore$|^Backup
 sleep 3
 shot D2_d
+=== D238890
+tapt ^Confirm$
+sleep 5
+tapt ^OK$|^Allow$|^Got it$|^Skip$
+sleep 2
+shot D2_c
+tap 91 199
+sleep 3
+tapt ^Backup and restore$|^Backup
+sleep 3
+shot D2_d
