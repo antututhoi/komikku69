@@ -2293,3 +2293,10 @@ sleep 1
 tapt ^Settings$
 sleep 2
 shot T2_s42_reader_settings
+=== C218206
+sh pm clear app.chimahon
+sleep 2
+launch app.chimahon
+sleep 9
+tapt ^OK$|^Close$
+sleep 2
