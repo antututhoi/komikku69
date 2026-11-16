@@ -1806,3 +1806,18 @@ sleep 8
 up
 sleep 2
 shot S2_s13_entry_chapters
+=== S215554
+longt ^(Vol|Ch|Chapter)[. ]
+sleep 2
+shot S2_s14_chapter_selection
+back
+sleep 1
+tapt ^Filter$
+sleep 2
+shot S2_s15_chapter_filter
+tapt ^Sort$
+sleep 1
+shot S2_s16_chapter_sort
+tapt ^Display$
+sleep 1
+shot S2_s17_chapter_display
