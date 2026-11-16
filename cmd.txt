@@ -1547,3 +1547,15 @@ tapt ^All
 sleep 3
 tapt ^Reading$|^OK$
 sleep 2
+=== M214147
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^Kaoru Hana
+sleep 8
+tapt ^Download$
+sleep 2
+tapt ^All
+sleep 3
+tapt ^Reading$|^OK$
+sleep 2
