@@ -1,3 +1,10 @@
 === A38435
 sh pm list packages -3
 shot A_boot
+=== J238452
+home
+sh appops set eu.kanade.tachiyomi.j2k MANAGE_EXTERNAL_STORAGE allow
+sh appops set eu.kanade.tachiyomi.j2k REQUEST_INSTALL_PACKAGES allow
+launch eu.kanade.tachiyomi.j2k
+sleep 8
+shot J2_a
