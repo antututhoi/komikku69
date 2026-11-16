@@ -3819,3 +3819,15 @@ shot T2_s23_source_list
 tapt ^Filter$
 sleep 3
 shot T2_s24_source_filter
+=== T224555
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Manga Extensions$|^Extensions$
+sleep 3
+shot T2_s25_extensions
+tapt ^Migrate$
+sleep 3
+shot T2_s26_migrate
