@@ -1918,3 +1918,14 @@ sleep 1
 tapt ^Statistics$
 sleep 3
 shot S2_s33_statistics
+=== S215560
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^More$
+sleep 2
+up
+sleep 1
+tapt ^Settings$
+sleep 2
+shot S2_s34_settings
