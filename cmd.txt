@@ -3213,3 +3213,15 @@ sleep 2
 tapt ^Categories$
 sleep 3
 shot C2_s32_categories
+=== C221977
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^More$
+sleep 2
+tapt ^Statistics$
+sleep 4
+shot C2_s33_statistics
+up
+sleep 2
+shot C2_s33b_statistics_2
