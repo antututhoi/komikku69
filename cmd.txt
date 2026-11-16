@@ -2341,3 +2341,15 @@ sleep 5
 === C218210
 tapt ^Restore$
 sleep 20
+=== C218211
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Extensions$
+sleep 3
+tapt ^Trust$
+sleep 2
+tapt ^Trust$|^OK$
+sleep 4
