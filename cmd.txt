@@ -1111,3 +1111,15 @@ tapt ^All
 sleep 3
 tapt ^Reading$|^OK$
 sleep 2
+=== K212631
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Kaoru Hana
+sleep 8
+tapt ^Download$
+sleep 2
+tapt ^All
+sleep 3
+tapt ^Reading$|^OK$
+sleep 2
