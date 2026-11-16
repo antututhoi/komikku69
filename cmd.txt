@@ -40,3 +40,17 @@ tapt ^seed.tachibk$
 sleep 5
 tapt ^Restore$
 sleep 18
+=== K28666
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Get started$
+sleep 2
+tapt ^Browse$
+sleep 3
+tapt ^Extensions$
+sleep 3
+tapt ^Trust$
+sleep 2
+tapt ^Trust$|^OK$
+sleep 4
