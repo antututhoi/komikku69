@@ -914,3 +914,9 @@ sleep 2
 tapt ^Updates$
 sleep 3
 shot K2_dbg_updates
+=== K212538
+tapt ^More$
+sleep 2
+tapt ^Library update errors$
+sleep 3
+shot K2_dbg_update_errors
