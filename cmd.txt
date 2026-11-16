@@ -1423,3 +1423,24 @@ shot M2_s02_library_selection
 tapt ^More options$
 sleep 2
 shot M2_s03_library_selection_menu
+=== M214139
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^More options$
+sleep 2
+shot M2_s04_library_menu
+back
+sleep 1
+tapt ^Filter$
+sleep 2
+shot M2_s05_library_filter
+tapt ^Sort$
+sleep 1
+shot M2_s06_library_sort
+tapt ^Display$
+sleep 1
+shot M2_s07_library_display
+tapt ^Group$
+sleep 1
+shot M2_s08_library_group
