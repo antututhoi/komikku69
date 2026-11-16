@@ -1380,3 +1380,11 @@ tapt ^Osoraku Kanojo
 sleep 8
 down
 sleep 9
+=== M214134
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+down
+sleep 9
