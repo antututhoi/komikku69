@@ -1,0 +1,448 @@
+##### Appearance
+Theme
+Light
+Dark
+System
+Default
+Dynamic
+Catppuccin
+Green Apple
+Pure black dark mode
+Display
+App language
+Tablet UI
+Auto
+Date format
+Default (11/13/26)
+Time format
+Follow language (2:50 AM)
+Appearance
+-----
+Light
+Dark
+System
+Default
+Dynamic
+Catppuccin
+Green Apple
+Pure black dark mode
+Display
+App language
+Tablet UI
+Auto
+Date format
+Default (11/13/26)
+Time format
+Follow language (2:50 AM)
+Relative timestamps
+"Today" instead of "11/13/26"
+Render images in manga descriptions
+Appearance
+-----
+##### Library
+Categories
+Edit categories
+2 categories
+Default category
+Always ask
+Per-category settings for sort
+Global update
+Automatic updates
+Off
+Categories
+Automatically refresh metadata
+Check for new cover and details when updating library
+Smart update
+Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip 
+Show unread count on Updates icon
+Behavior
+Chapter on swipe to left
+Library
+-----
+Always ask
+Per-category settings for sort
+Global update
+Automatic updates
+Off
+Categories
+Automatically refresh metadata
+Check for new cover and details when updating library
+Smart update
+Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip 
+Show unread count on Updates icon
+Behavior
+Chapter on swipe to left
+Bookmark chapter
+Chapter on swipe to right
+Mark as read
+Mark duplicate read chapter as read
+None
+Hide missing chapter indicators
+Library
+-----
+##### Reader
+Default reading mode
+Paged (right to left)
+Double tap animation speed
+Normal
+Show reading mode
+Briefly show current mode when reader is opened
+Show tap zones overlay
+Briefly show when reader is opened
+Animate page transitions
+Load ahead only on Wi-Fi
+Saves mobile data by loading only the pages near the one you
+Display
+Default rotation
+Free
+Background color
+Black
+Fullscreen
+Show content in cutout area
+Keep screen on
+Reader
+-----
+Show tap zones overlay
+Briefly show when reader is opened
+Animate page transitions
+Load ahead only on Wi-Fi
+Saves mobile data by loading only the pages near the one you
+Display
+Default rotation
+Free
+Background color
+Black
+Fullscreen
+Show content in cutout area
+Keep screen on
+Show page number
+E-Ink
+Flash on page change
+Reduces ghosting on e-ink displays
+Reading
+Skip chapters marked read
+Reader
+-----
+Free
+Background color
+Fullscreen
+Show content in cutout area
+Keep screen on
+Show page number
+E-Ink
+Flash on page change
+Reduces ghosting on e-ink displays
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+Paged
+Tap zones
+Default
+Invert tap zones
+Reader
+-----
+E-Ink
+Flash on page change
+Reduces ghosting on e-ink displays
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+Paged
+Tap zones
+Default
+Invert tap zones
+None
+Scale type
+Fit screen
+Zoom start position
+Automatic
+Crop borders
+Automatically zoom into wide images
+Reader
+-----
+Scale type
+Fit screen
+Zoom start position
+Automatic
+Crop borders
+Automatically zoom into wide images
+Pan wide images
+Split wide pages
+Rotate wide pages to fit
+Long strip
+Tap zones
+Default
+Invert tap zones
+None
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Reader
+-----
+Invert tap zones
+None
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Split wide pages
+Rotate wide pages to fit
+Double tap to zoom
+Disable zoom out
+Navigation
+Volume keys
+Use vertical chapter navigator in
+None
+Actions
+Show actions on long tap
+Save pages into separate folders
+Reader
+-----
+None
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Split wide pages
+Rotate wide pages to fit
+Double tap to zoom
+Disable zoom out
+Navigation
+Volume keys
+Use vertical chapter navigator in
+None
+Actions
+Show actions on long tap
+Save pages into separate folders
+Creates folders according to entries
+Reader
+-----
+##### Downloads
+Only on Wi-Fi
+Save as CBZ archive
+Concurrent source downloads
+5
+Concurrent page downloads
+Pages downloaded simultaneously per source
+5
+Delete chapters
+After manually marked as read
+After reading automatically delete
+Disabled
+Allow deleting bookmarked chapters
+Excluded categories
+None
+Auto-download
+Download new chapters
+Downloads
+-----
+Concurrent source downloads
+5
+Concurrent page downloads
+Pages downloaded simultaneously per source
+5
+Delete chapters
+After manually marked as read
+After reading automatically delete
+Disabled
+Allow deleting bookmarked chapters
+Excluded categories
+None
+Auto-download
+Download new chapters
+Download ahead
+Auto download while reading
+Disabled
+Only works if the current chapter + the next one are already downloaded.
+Downloads
+-----
+##### Tracking
+Update progress after reading
+Update progress when marked as read
+Always
+Trackers
+MangaBaka
+MyAnimeList
+AniList
+Kitsu
+MangaUpdates
+Shikimori
+Bangumi
+Hikka
+Comick
+Tracking
+-----
+MangaBaka
+MyAnimeList
+AniList
+Kitsu
+MangaUpdates
+Shikimori
+Bangumi
+Hikka
+Comick
+One-way sync to update the chapter progress in external tracker services. Set up
+Enhanced trackers
+Provides enhanced features for specific sources. Entries are automatically track
+Tracking
+-----
+##### Browse
+Sources
+Hide entries already in library
+Extension stores
+1 store
+Extensions
+Allowed content warnings
+Safe, Mixed, 18+
+Also apply to installed extensions
+When off, extensions you already installed keep loading and updating regardless 
+Installed extensions that aren
+Browse
+-----
+##### Data and storage
+Storage location
+/storage/emulated/0/Music
+Used for automatic backups, chapter downloads, and local source.
+Backup and restore
+Create backup
+Restore backup
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Storage usage
+/storage/emulated/0
+Available: 4.60 GB / Total: 6.23 GB
+Clear chapter cache
+Used: 31 B
+Clear chapter cache on app launch
+Data and storage
+-----
+Storage location
+/storage/emulated/0/Music
+Used for automatic backups, chapter downloads, and local source.
+Backup and restore
+Create backup
+Restore backup
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Storage usage
+/storage/emulated/0
+Available: 4.60 GB / Total: 6.23 GB
+Clear chapter cache
+Used: 31 B
+Clear chapter cache on app launch
+Export
+Library List
+Data and storage
+-----
+##### Security and privacy
+Security
+Hide notification content
+Secure screen
+Incognito mode
+Secure screen hides app contents when switching apps and block screenshots
+Analytics and Crash logs
+Send crash logs
+Send anonymized crash logs to the developers.
+Allow analytics
+Send anonymized usage data to improve app features.
+Sending crash logs and analytics will allow us to identify and fix issues, impro
+Security and privacy
+-----
+##### Advanced
+Share crash logs
+Saves error logs to a file for sharing with the developers
+Verbose logging
+Print verbose logs to system log (reduces app performance)
+Redact sensitive headers
+Redacts certain sensitive values in the logs. Keep enabled for your security whe
+Debug info
+Onboarding guide
+Manage notifications
+Background activity
+Disable battery optimization
+Helps with background library updates and backups
+Don
+Some manufacturers have additional app restrictions that kill background service
+Data
+Reindex downloads
+Force app to recheck downloaded chapters
+Advanced
+-----
+Redacts certain sensitive values in the logs. Keep enabled for your security whe
+Debug info
+Onboarding guide
+Manage notifications
+Background activity
+Disable battery optimization
+Helps with background library updates and backups
+Don
+Some manufacturers have additional app restrictions that kill background service
+Data
+Reindex downloads
+Force app to recheck downloaded chapters
+Clear database
+Delete history for entries that are not saved in your library
+Networking
+Clear cookies
+Clear WebView data
+DNS over HTTPS (DoH)
+Disabled
+Default user agent string
+Advanced
+-----
+Clear database
+Delete history for entries that are not saved in your library
+Networking
+Clear cookies
+Clear WebView data
+DNS over HTTPS (DoH)
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+Library
+Refresh library covers
+Reset per-series reader settings
+Resets reading mode and orientation of all series
+Update library manga titles to match source
+Warning: if a manga is renamed, it will be removed from the download queue (if p
+Disallow non-ASCII filenames
+Ensures compatibility with certain storage media that don
+Enable chapter name hash suffix
+Advanced
+-----
+Reset per-series reader settings
+Resets reading mode and orientation of all series
+Update library manga titles to match source
+Warning: if a manga is renamed, it will be removed from the download queue (if p
+Disallow non-ASCII filenames
+Ensures compatibility with certain storage media that don
+Enable chapter name hash suffix
+Ensures a unique hash suffix is added to chapter names to prevent naming conflic
+Reader
+Custom hardware bitmap threshold
+Custom display profile
+Extensions
+Installer
+PackageInstaller
+Revoke trusted unknown extensions
+Advanced
+-----
+##### About
+Version
+Stable v0.21.3 (10/25/26 9:33 PM)
+Check for updates
+What
+Open source licenses
+Privacy policy
+About
+-----

@@ -41,3 +41,14 @@ Updated: 13 Nov 2026. Method: remote-controlled virtual phone on GitHub (branch 
 - TODO: finish Kototoro on the phone; add TachiyomiAZ and Yokai (Gor, 15 Nov; yokai-nightly is the same app's test build); final cross-app summary.
 - 15 Nov: Gor asked to fix 69-Continuum first (logged-in feed empty, "Cannot fetch user info"). Fork is 8.3.3.6-69; upstream is 8.3.3.9.3 with Reddit API-block fixes.
 - 15 Nov: Yokai (+nightly) and TachiyomiAZ DONE; rows CMP-LB-6, CMP-UI-7, CMP-UI-8, CMP-SR-7. Kototoro closed as far as the phone allows (details / reader not capturable: emulator dies when it loads the MangaDex extension, 2 attempts). Cross-app summary: research/SUMMARY.md. RESEARCH PHASE COMPLETE; waiting for Gor's picks on the board.
+
+## Recheck with filled screens (16 Nov, session 5)
+Backups `seed2.tachibk` / `seed_kotatsu2.zip` (history + missing chapters) so Updates, History and Download queue are not empty.
+Standard tour (same ~40 screens, `tour.py`), pictures in `research/<app>/<area>/*_tour_sNN_*`.
+- 69-Komikku (K2): complete.
+- Mihon (M2): complete. Updates lists every chapter (Komikku groups per title with a count badge and fold arrow). History: search + delete-all only (Komikku adds filter + select). Download menu on entry has no "All" (Komikku/SY have it). Global search starts on "Pinned" (Komikku on "All").
+- TachiyomiSY (S3): complete except library selection shots. Same as Mihon plus SY extras already in Komikku.
+- Tsundoku (T2): complete except download queue list (queue has Novels / Manga / Translations tabs). New: History shows % read and has a per-title / every-chapter switch (board CMP-H1). All / Manga / Novels chips on Updates and History. Source list has Popular / Latest / Filter / Translate chips.
+- Chimahon (C2): complete. Updates tab lives under More (bottom bar: Library, History, Browse, Dictionary, More). Manga / Anime / Novel tabs on Updates, History, Categories. Statistics by period with weekday strip, streak, speed (board CMP-OT-6).
+- Confirmed again: in 69-Komikku "Update library" ends without fetching missing chapters; refreshing one entry fetches them (fix first in build phase).
+Still to tour with filled screens: J2K, Yokai, TachiyomiAZ, Futon, Kaisoku, DropSauce (session 6).

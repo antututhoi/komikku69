@@ -1,0 +1,625 @@
+##### Appearance
+Theme
+Light
+Dark
+System
+Default
+Dynamic
+Catppuccin
+Green Apple
+Pure black dark mode
+Display
+App language
+Tablet UI
+Auto
+Date format
+Default (11/13/26)
+Time format
+Follow language (3:24 AM)
+Appearance
+-----
+Default
+Dynamic
+Catppuccin
+Green Apple
+Pure black dark mode
+Display
+App language
+Tablet UI
+Auto
+Date format
+Default (11/13/26)
+Time format
+Follow language (3:24 AM)
+Relative timestamps
+"Today" instead of "11/13/26"
+Render images in manga descriptions
+Navbar
+Show updates in the nav
+Show history in the nav
+Always show nav labels
+Appearance
+-----
+Date format
+Default (11/13/26)
+Time format
+Follow language (3:24 AM)
+Relative timestamps
+"Today" instead of "11/13/26"
+Render images in manga descriptions
+Navbar
+Show updates in the nav
+Show history in the nav
+Always show nav labels
+Fork Settings
+Expand all search filters by default
+Recommendations in overflow
+Put the recommendations button in the overflow menu instead of on the entry page
+Merge in overflow
+Put the merge button in the overflow menu instead of on the entry page
+Previews row count
+4 rows
+Appearance
+-----
+##### Library
+Categories
+Edit categories
+2 categories
+Default category
+Always ask
+Per-category settings for sort
+Global update
+Automatic updates
+Off
+Categories
+Library dynamic category updates
+Always launch global updates
+Automatically refresh metadata
+Check for new cover and details when updating library
+Smart update
+Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip 
+Show unread count on Updates icon
+Library
+-----
+Categories
+Library dynamic category updates
+Always launch global updates
+Automatically refresh metadata
+Check for new cover and details when updating library
+Smart update
+Skip entries with unread chapter(s), Skip entries with "Completed" status, Skip 
+Show unread count on Updates icon
+Behavior
+Chapter on swipe to left
+Bookmark chapter
+Chapter on swipe to right
+Mark as read
+Mark duplicate read chapter as read
+None
+Hide missing chapter indicators
+Sorting Settings
+Tag sorting tags
+0 tags in sorting list. This adds a option in the library to sort by a priority 
+Library
+-----
+##### Reader
+Default reading mode
+Paged (right to left)
+Double tap animation speed
+Normal
+Show reading mode
+Briefly show current mode when reader is opened
+Show tap zones overlay
+Briefly show when reader is opened
+Load ahead only on Wi-Fi
+Saves mobile data by loading only the pages near the one you
+Display
+Default rotation
+Free
+Background color
+Black
+Fullscreen
+Show content in cutout area
+Keep screen on
+Show page number
+Reader
+-----
+Background color
+Fullscreen
+Show content in cutout area
+Keep screen on
+Show page number
+E-Ink
+Flash on page change
+Reduces ghosting on e-ink displays
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+Paged
+Tap zones
+Default
+Invert tap zones
+Reader
+-----
+E-Ink
+Flash on page change
+Reduces ghosting on e-ink displays
+Reading
+Skip chapters marked read
+Skip filtered chapters
+Skip duplicate chapters
+Always show chapter transition
+Paged
+Tap zones
+Default
+Invert tap zones
+None
+Scale type
+Fit screen
+Zoom start position
+Automatic
+Crop borders
+Animate page transitions
+Reader
+-----
+Skip duplicate chapters
+Always show chapter transition
+Paged
+Tap zones
+Default
+Invert tap zones
+None
+Scale type
+Fit screen
+Zoom start position
+Automatic
+Crop borders
+Animate page transitions
+Automatically zoom into wide images
+Pan wide images
+Split wide pages
+Rotate wide pages to fit
+Long strip
+Tap zones
+Default
+Reader
+-----
+Automatically zoom into wide images
+Pan wide images
+Split wide pages
+Rotate wide pages to fit
+Long strip
+Tap zones
+Default
+Invert tap zones
+None
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Split wide pages
+Rotate wide pages to fit
+Double tap to zoom
+Disable zoom out
+Reader
+-----
+Default
+Invert tap zones
+Side padding
+0%
+Sensitivity for hiding menu on scroll
+Low
+Crop borders
+Split wide pages
+Rotate wide pages to fit
+Double tap to zoom
+Disable zoom out
+Animate page transitions
+Long strip with gaps
+Tap scroll by page
+Tapping will scroll by page instead of screen size when this option is enabled
+Crop borders
+Navigation
+Reader
+-----
+Animate page transitions
+Long strip with gaps
+Tap scroll by page
+Tapping will scroll by page instead of screen size when this option is enabled
+Crop borders
+Navigation
+Volume keys
+Use vertical chapter navigator in
+None
+Actions
+Show actions on long tap
+Save pages into separate folders
+Creates folders according to entries
+Page Downloading
+Reader cache size
+The amount of images to save on device while reading. Higher values will result 
+Fork Settings
+Preserve reading position on read entries
+Reader
+-----
+Show actions on long tap
+Save pages into separate folders
+Creates folders according to entries
+Page Downloading
+Reader cache size
+The amount of images to save on device while reading. Higher values will result 
+Fork Settings
+Preserve reading position on read entries
+Auto Webtoon Mode
+Use auto webtoon mode for entries that are detected to likely use the long strip
+Reader Bottom Buttons
+Customize what buttons appear at the bottom of the reader
+Page layout
+While using automatic page layout, you can still switch between layouts while re
+Invert double pages
+Center Margin
+Insert spacer to accommodate deadspace on foldable devices.
+Archive reader mode
+The way in which images inside archives, such as CBZ or CBR, are being loaded
+Reader
+-----
+##### Downloads
+Only on Wi-Fi
+Save as CBZ archive
+Concurrent source downloads
+5
+Concurrent page downloads
+Pages downloaded simultaneously per source
+5
+Delete chapters
+After manually marked as read
+After reading automatically delete
+Disabled
+Allow deleting bookmarked chapters
+Excluded categories
+None
+Auto-download
+Download new chapters
+Downloads
+-----
+Concurrent source downloads
+5
+Concurrent page downloads
+Pages downloaded simultaneously per source
+5
+Delete chapters
+After manually marked as read
+After reading automatically delete
+Disabled
+Allow deleting bookmarked chapters
+Excluded categories
+None
+Auto-download
+Download new chapters
+Download ahead
+Auto download while reading
+Disabled
+Only works if the current chapter + the next one are already downloaded.
+Downloads
+-----
+##### Tracking
+Update progress after reading
+Update progress when marked as read
+Always
+Select entries using source metadata
+Automatically selects the matching title if the source provides links to tracker
+Trackers
+MangaBaka
+MyAnimeList
+AniList
+Kitsu
+MangaUpdates
+Shikimori
+Bangumi
+Hikka
+Tracking
+-----
+Automatically selects the matching title if the source provides links to tracker
+Trackers
+MangaBaka
+MyAnimeList
+AniList
+Kitsu
+MangaUpdates
+Shikimori
+Bangumi
+Hikka
+Comick
+One-way sync to update the chapter progress in external tracker services. Set up
+Enhanced trackers
+Provides enhanced features for specific sources. Entries are automatically track
+Tracking
+-----
+MangaBaka
+MyAnimeList
+AniList
+Kitsu
+MangaUpdates
+Shikimori
+Bangumi
+Hikka
+Comick
+One-way sync to update the chapter progress in external tracker services. Set up
+Enhanced trackers
+Provides enhanced features for specific sources. Entries are automatically track
+Tracking
+-----
+##### Browse
+Sources
+Edit categories
+0 categories
+Filter sources in categories
+Filter the sources that are in categories, making the sources not get put under 
+Replace latest button
+Replace latest button with a custom browse view that includes both latest and br
+Local source hidden folders
+Allow local source to read hidden folders
+Feed
+Hide Feed tab
+Feed tab position
+Do you want the feed tab to be the first tab in browse? This will make it the de
+Sources
+Hide entries already in library
+Extension stores
+1 store
+Browse
+-----
+Replace latest button with a custom browse view that includes both latest and br
+Local source hidden folders
+Allow local source to read hidden folders
+Feed
+Hide Feed tab
+Feed tab position
+Do you want the feed tab to be the first tab in browse? This will make it the de
+Sources
+Hide entries already in library
+Extension stores
+1 store
+Extensions
+Allowed content warnings
+Safe, Mixed, 18+
+Also apply to installed extensions
+When off, extensions you already installed keep loading and updating regardless 
+Installed extensions that aren
+Browse
+-----
+##### Data and storage
+Storage location
+/storage/emulated/0/Pictures
+Used for automatic backups, chapter downloads, and local source.
+Backup and restore
+Create backup
+Restore backup
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Storage usage
+/storage/emulated/0
+Available: 4.44 GB / Total: 6.23 GB
+Clear chapter cache
+Used: 31 B
+Clear page preview cache
+Used: 31 B
+Data and storage
+-----
+Backup and restore
+Create backup
+Restore backup
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Storage usage
+/storage/emulated/0
+Available: 4.44 GB / Total: 6.23 GB
+Clear chapter cache
+Used: 31 B
+Clear page preview cache
+Used: 31 B
+Clear chapter cache on app launch
+Export
+Library List
+Sync
+Service
+Off
+Data and storage
+-----
+Create backup
+Restore backup
+Automatic backup frequency
+Every 12 hours
+You should keep copies of backups in other places as well. Backups may contain s
+Storage usage
+/storage/emulated/0
+Available: 4.44 GB / Total: 6.23 GB
+Clear chapter cache
+Used: 31 B
+Clear page preview cache
+Used: 31 B
+Clear chapter cache on app launch
+Export
+Library List
+Sync
+Service
+Off
+Data and storage
+-----
+##### Security and privacy
+Security
+Hide notification content
+Secure screen
+Incognito mode
+Set CBZ archive password
+Secure screen hides app contents when switching apps and block screenshots
+Analytics and Crash logs
+Send crash logs
+Send anonymized crash logs to the developers.
+Allow analytics
+Send anonymized usage data to improve app features.
+Sending crash logs and analytics will allow us to identify and fix issues, impro
+Security and privacy
+-----
+##### E-Hentai
+E-Hentai Website Account Settings
+Enable ExHentai
+Requires login
+Enhanced E/ExHentai browse
+Enable/Disable the enhanced browse menu made for E/ExHentai
+E-Hentai Favorites sync
+Disable favorites uploading
+Favorites are only downloaded from ExHentai. Any changes to favorites in the app
+Show favorites sync notes
+Show some information regarding the favorites sync feature
+Ignore sync errors when possible
+Do not abort immediately when encountering errors during the sync process. Error
+Force sync state reset
+Performs a full resynchronization on the next sync. Removals will not be synced.
+Gallery update checker
+E-Hentai
+-----
+Enable/Disable the enhanced browse menu made for E/ExHentai
+E-Hentai Favorites sync
+Disable favorites uploading
+Favorites are only downloaded from ExHentai. Any changes to favorites in the app
+Show favorites sync notes
+Show some information regarding the favorites sync feature
+Ignore sync errors when possible
+Do not abort immediately when encountering errors during the sync process. Error
+Force sync state reset
+Performs a full resynchronization on the next sync. Removals will not be synced.
+Gallery update checker
+Time between update batches
+TachiyomiSY checks/updates galleries in batches. This means it will wait 1 hour(
+Auto update restrictions
+Restrictions: None
+Show updater statistics
+E-Hentai
+-----
+##### MangaDex
+MangaDex Login
+Preferred MangaDex source
+Set your chosen MangaDex source, this will be used for follows and a bunch more 
+Sync MangaDex entries to your library
+Pulls entries from MangaDex into your library if they are not already added.
+Sync library entries to MangaDex
+Syncs any non MdList tracked entries to MangaDex as reading.
+MangaDex
+-----
+##### Advanced
+Share crash logs
+Saves error logs to a file for sharing with the developers
+Debug info
+Onboarding guide
+Manage notifications
+Background activity
+Disable battery optimization
+Helps with background library updates and backups
+Don
+Some manufacturers have additional app restrictions that kill background service
+Data
+Reindex downloads
+Force app to recheck downloaded chapters
+Clear database
+Delete history for entries that are not saved in your library
+Networking
+Clear cookies
+Advanced
+-----
+Manage notifications
+Background activity
+Disable battery optimization
+Helps with background library updates and backups
+Don
+Some manufacturers have additional app restrictions that kill background service
+Data
+Reindex downloads
+Force app to recheck downloaded chapters
+Clear database
+Delete history for entries that are not saved in your library
+Networking
+Clear cookies
+Clear WebView data
+DNS over HTTPS (DoH)
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+Library
+Refresh library covers
+Reset per-series reader settings
+Advanced
+-----
+DNS over HTTPS (DoH)
+Disabled
+Default user agent string
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+Library
+Refresh library covers
+Reset per-series reader settings
+Resets reading mode and orientation of all series
+Update library manga titles to match source
+Warning: if a manga is renamed, it will be removed from the download queue (if p
+Disallow non-ASCII filenames
+Ensures compatibility with certain storage media that don
+Enable chapter name hash suffix
+Ensures a unique hash suffix is added to chapter names to prevent naming conflic
+Reader
+Use high quality renderer
+Extensions
+Advanced
+-----
+Resets reading mode and orientation of all series
+Update library manga titles to match source
+Warning: if a manga is renamed, it will be removed from the download queue (if p
+Disallow non-ASCII filenames
+Ensures compatibility with certain storage media that don
+Enable chapter name hash suffix
+Ensures a unique hash suffix is added to chapter names to prevent naming conflic
+Reader
+Use high quality renderer
+Extensions
+Installer
+PackageInstaller
+Revoke trusted unknown extensions
+Data Saver
+Data Saver
+Compress images before downloading or loading in reader
+Developer tools
+Advanced
+-----
+Installer
+PackageInstaller
+Revoke trusted unknown extensions
+Data Saver
+Data Saver
+Compress images before downloading or loading in reader
+Developer tools
+Enable integrated hentai features
+This is a experimental feature that will disable all hentai features if toggled 
+Enable delegated sources
+Apply TachiyomiSY enhancements to the following sources if they are installed: P
+Log level
+Changing this can impact app performance. Force-restart app after changing. Curr
+Enable source blacklist
+Hide extensions/sources that are incompatible with TachiyomiSY. Force-restart ap
+Encrypt database
+Requires app restart to take effect
+Open debug menu
+DO NOT TOUCH THIS MENU UNLESS YOU KNOW WHAT YOU ARE DOING! IT CAN CORRUPT YOUR L
+Advanced
+-----
+##### About
+Version
+Preview r615 (c1eb1e3cb, 10/28/26 4:45 PM)
+Check for updates
+What
+Open source licenses
+Privacy policy
+About
+-----
