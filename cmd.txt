@@ -652,3 +652,7 @@ sleep 2
 tapt ^Data and storage$
 sleep 3
 shot K2_state2
+=== K211321
+tapt ^Restore backup$
+sleep 4
+shot K2_state3
