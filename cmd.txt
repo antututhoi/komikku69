@@ -2205,3 +2205,16 @@ sleep 1
 key 66
 sleep 14
 shot T2_s27_global_search
+=== T216853
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+tapt ^Download$
+sleep 2
+shot T2_s18_entry_download_menu
+tapt ^All
+sleep 3
+tapt ^Reading$|^OK$
+sleep 2
