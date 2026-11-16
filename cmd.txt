@@ -2539,3 +2539,16 @@ sleep 1
 key 66
 sleep 14
 shot C2_s27_global_search
+=== C218228
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+tapt ^Download$
+sleep 2
+shot C2_s18_entry_download_menu
+tapt ^All
+sleep 3
+tapt ^Reading$|^OK$
+sleep 2
