@@ -2115,3 +2115,13 @@ shot T2_s07_library_display
 tapt ^Group$
 sleep 1
 shot T2_s08_library_group
+=== T216847
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Mieruko-chan
+sleep 9
+shot T2_s10_entry_top
+tapt ^More options$
+sleep 2
+shot T2_s11_entry_menu
