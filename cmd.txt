@@ -512,3 +512,18 @@ sleep 8
 up
 sleep 2
 shot K2_s13_entry_chapters
+=== K210208
+longt ^(Vol|Ch|Chapter)[. ]
+sleep 2
+shot K2_s14_chapter_selection
+back
+sleep 1
+tapt ^Filter$
+sleep 2
+shot K2_s15_chapter_filter
+tapt ^Sort$
+sleep 1
+shot K2_s16_chapter_sort
+tapt ^Display$
+sleep 1
+shot K2_s17_chapter_display
