@@ -2353,3 +2353,11 @@ tapt ^Trust$
 sleep 2
 tapt ^Trust$|^OK$
 sleep 4
+=== C218212
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^More options$
+sleep 2
+tapt ^Update library$
+sleep 90
