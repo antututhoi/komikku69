@@ -3949,3 +3949,17 @@ sleep 1
 up
 sleep 2
 shot C2_s33e_statistics_3
+=== T225028
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^History$
+sleep 3
+tap 879 201
+sleep 2
+shot T2_s21b_history_layout
+tapt ^Updates$
+sleep 3
+tap 752 201
+sleep 2
+shot T2_s20c_updates_layout
