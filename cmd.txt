@@ -1186,3 +1186,28 @@ sleep 8
 tapt ^Resume$|^Start$
 sleep 12
 shot K2_dbg_reader
+=== K213784
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^SPY
+sleep 8
+tapt ^Resume$|^Start$|^Start reading|^Continue
+sleep 14
+tapt ^Got it$
+sleep 1
+tap 540 1200
+sleep 2
+shot K2_s40_reader_menu
+tap 540 1200
+sleep 1
+hold 540 1300 1000
+sleep 2
+shot K2_s41_reader_page_menu
+back
+sleep 1
+tap 540 1200
+sleep 1
+tapt ^Settings$
+sleep 2
+shot K2_s42_reader_settings
