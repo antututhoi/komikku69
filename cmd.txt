@@ -2826,3 +2826,27 @@ shot S3_s16_chapter_sort
 tapt ^Display$
 sleep 1
 shot S3_s17_chapter_display
+=== S319942
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^Updates$
+sleep 4
+shot S3_s20_updates
+longt ^(Vol|Ch)[. ]
+sleep 2
+shot S3_s20b_updates_selection
+back
+sleep 1
+tapt ^History$
+sleep 3
+shot S3_s21_history
+tapt ^Browse$
+sleep 3
+shot S3_s22_browse_sources
+tapt ^MangaDex$
+sleep 10
+shot S3_s23_source_list
+tapt ^Filter$
+sleep 3
+shot S3_s24_source_filter
