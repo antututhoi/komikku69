@@ -1622,3 +1622,10 @@ sleep 1
 tapt ^Settings$
 sleep 2
 shot M2_s42_reader_settings
+=== S215535
+sh pm clear eu.kanade.tachiyomi.sy
+sleep 2
+launch eu.kanade.tachiyomi.sy
+sleep 9
+tapt ^OK$|^Close$
+sleep 2
