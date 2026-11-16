@@ -2762,3 +2762,24 @@ shot S3_s02_library_selection
 tapt ^More options$
 sleep 2
 shot S3_s03_library_selection_menu
+=== S319937
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^More options$
+sleep 2
+shot S3_s04_library_menu
+back
+sleep 1
+tapt ^Filter$
+sleep 2
+shot S3_s05_library_filter
+tapt ^Sort$
+sleep 1
+shot S3_s06_library_sort
+tapt ^Display$
+sleep 1
+shot S3_s07_library_display
+tapt ^Group$
+sleep 1
+shot S3_s08_library_group
