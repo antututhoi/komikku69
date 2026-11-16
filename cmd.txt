@@ -2898,3 +2898,10 @@ tapt ^All
 sleep 3
 tapt ^Reading$|^OK$
 sleep 2
+=== S319946
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^More$
+sleep 2
+shot S3_s30_more
