@@ -1463,3 +1463,12 @@ sleep 8
 tapt ^Tracking$|^Track$
 sleep 3
 shot M2_s12_entry_tracking
+=== M214142
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+up
+sleep 2
+shot M2_s13_entry_chapters
