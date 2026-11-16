@@ -891,3 +891,12 @@ sleep 1
 hold 540 1300 1000
 sleep 2
 shot K2_s41_reader_page_menu
+=== K212447
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^More options$
+sleep 2
+tapt ^Update library$
+sleep 25
+shot K2_dbg_update
