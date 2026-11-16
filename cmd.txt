@@ -1797,3 +1797,12 @@ sleep 8
 tapt ^Tracking$|^Track$
 sleep 3
 shot S2_s12_entry_tracking
+=== S215553
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+up
+sleep 2
+shot S2_s13_entry_chapters
