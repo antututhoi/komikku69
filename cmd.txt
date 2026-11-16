@@ -420,3 +420,14 @@ sleep 3
 === K210199
 tapt ^Restore backup$
 sleep 3
+=== K210200
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed2.tachibk$
+sleep 5
+tapt ^Restore$
+sleep 18
