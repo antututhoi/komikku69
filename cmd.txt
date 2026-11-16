@@ -2182,3 +2182,26 @@ shot T2_s23_source_list
 tapt ^Filter$
 sleep 3
 shot T2_s24_source_filter
+=== T216852
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Extensions$
+sleep 3
+shot T2_s25_extensions
+tapt ^Migrate$
+sleep 3
+shot T2_s26_migrate
+tapt ^Sources$
+sleep 2
+tapt ^Global search$
+sleep 2
+text mieruko
+sleep 1
+key 66
+sleep 1
+key 66
+sleep 14
+shot T2_s27_global_search
