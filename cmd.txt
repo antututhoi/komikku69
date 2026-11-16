@@ -2428,3 +2428,24 @@ shot C2_s02_library_selection
 tapt ^More options$
 sleep 2
 shot C2_s03_library_selection_menu
+=== C218221
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^More options$
+sleep 2
+shot C2_s04_library_menu
+back
+sleep 1
+tapt ^Filter$
+sleep 2
+shot C2_s05_library_filter
+tapt ^Sort$
+sleep 1
+shot C2_s06_library_sort
+tapt ^Display$
+sleep 1
+shot C2_s07_library_display
+tapt ^Group$
+sleep 1
+shot C2_s08_library_group
