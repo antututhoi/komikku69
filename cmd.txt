@@ -373,3 +373,7 @@ sleep 1
 hold 540 1300 1000
 sleep 2
 shot K2_s41_reader_page_menu
+=== sd1794810103
+host curl -sL -o /tmp/seed2.tachibk https://raw.githubusercontent.com/antututhoi/komikku69/research69/.research69/seed2.tachibk
+host adb push /tmp/seed2.tachibk /sdcard/Download/tour/seed2.tachibk
+sh ls -la /sdcard/Download/tour/
