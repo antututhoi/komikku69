@@ -379,3 +379,9 @@ host adb push /tmp/seed2.tachibk /sdcard/Download/tour/seed2.tachibk
 sh ls -la /sdcard/Download/tour/
 === sd1794810119
 sh ls -la /sdcard/Download/tour/
+=== sd1794810155
+host curl -sL -o /tmp/seed2.tachibk https://raw.githubusercontent.com/antututhoi/komikku69/research69/.research69/seed2.tachibk
+host curl -sL -o /tmp/seed_kotatsu2.zip https://raw.githubusercontent.com/antututhoi/komikku69/research69/.research69/seed_kotatsu2.zip
+host adb push /tmp/seed2.tachibk /sdcard/Download/tour/seed2.tachibk
+host adb push /tmp/seed_kotatsu2.zip /sdcard/Download/tour/seed_kotatsu2.zip
+sh md5sum /sdcard/Download/tour/seed2.tachibk
