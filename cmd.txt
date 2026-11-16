@@ -2218,3 +2218,15 @@ tapt ^All
 sleep 3
 tapt ^Reading$|^OK$
 sleep 2
+=== T216854
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Kaoru Hana
+sleep 8
+tapt ^Download$
+sleep 2
+tapt ^All
+sleep 3
+tapt ^Reading$|^OK$
+sleep 2
