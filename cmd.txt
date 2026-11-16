@@ -72,3 +72,24 @@ shot K2_s02_library_selection
 tapt ^More options$
 sleep 2
 shot K2_s03_library_selection_menu
+=== K28669
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^More options$
+sleep 2
+shot K2_s04_library_menu
+back
+sleep 1
+tapt ^Filter$
+sleep 2
+shot K2_s05_library_filter
+tapt ^Sort$
+sleep 1
+shot K2_s06_library_sort
+tapt ^Display$
+sleep 1
+shot K2_s07_library_display
+tapt ^Group$
+sleep 1
+shot K2_s08_library_group
