@@ -2032,3 +2032,11 @@ tapt ^Tensei Shitara Slime
 sleep 8
 down
 sleep 9
+=== T216839
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^SPY.FAMILY
+sleep 8
+down
+sleep 9
