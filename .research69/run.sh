@@ -6,6 +6,8 @@ for t in 1 2 3 4 5 6 7 8 9 10; do
   adb shell mkdir -p /sdcard/Download/tour < /dev/null
   adb push seed.tachibk /sdcard/Download/tour/seed.tachibk < /dev/null > /dev/null 2>&1
   adb push seed_kotatsu.zip /sdcard/Download/tour/seed_kotatsu.zip < /dev/null > /dev/null 2>&1
+  adb push .research69/seed2.tachibk /sdcard/Download/tour/seed2.tachibk < /dev/null > /dev/null 2>&1
+  adb push .research69/seed_kotatsu2.zip /sdcard/Download/tour/seed_kotatsu2.zip < /dev/null > /dev/null 2>&1
   adb shell ls /sdcard/Download/tour/seed.tachibk < /dev/null 2>/dev/null | grep -q seed && break
   sleep 15
 done
