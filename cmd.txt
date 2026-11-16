@@ -47,3 +47,11 @@ sleep 3
 tapt ^seed2.tachibk$
 sleep 8
 shot D2_d
+=== D238994
+tapt ^OK$
+sleep 20
+shot D2_e
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 8
+shot D2_s01_home
