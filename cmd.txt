@@ -57,3 +57,15 @@ shot F2_s01_favourites
 tap 945 2260
 sleep 5
 shot F2_s20_feed
+=== F239058
+tap 718 291
+sleep 3
+tapt ^Manga$
+sleep 4
+shot F2_s20_feed
+tap 405 2260
+sleep 4
+shot F2_s01_favourites
+tap 135 2260
+sleep 4
+shot F2_s21_history
