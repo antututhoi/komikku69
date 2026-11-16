@@ -920,3 +920,11 @@ sleep 2
 tapt ^Library update errors$
 sleep 3
 shot K2_dbg_update_errors
+=== K212615
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Tensei Shitara Slime
+sleep 8
+down
+sleep 9
