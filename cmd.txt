@@ -1706,3 +1706,11 @@ tapt ^SPY.FAMILY
 sleep 8
 down
 sleep 9
+=== S215544
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^Osoraku Kanojo
+sleep 8
+down
+sleep 9
