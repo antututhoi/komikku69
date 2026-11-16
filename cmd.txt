@@ -1315,3 +1315,21 @@ tapt ^Next$
 sleep 2
 tapt ^Get started$
 sleep 3
+=== M214127
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^More$
+sleep 2
+tapt ^Data and storage$
+sleep 3
+tapt ^Restore backup$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed2.tachibk$
+sleep 5
