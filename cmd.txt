@@ -15,3 +15,9 @@ sleep 2
 tap 632 628
 sleep 3
 shot F2_b
+=== F238854
+tap 474 552
+sleep 2
+tap 970 291
+sleep 2
+shot F2_c
