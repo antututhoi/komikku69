@@ -21,3 +21,6 @@ sleep 2
 tap 970 291
 sleep 2
 shot F2_c
+=== F238890
+tapt ^Settings$
+sleep 3
