@@ -1336,3 +1336,15 @@ sleep 5
 === M214128
 tapt ^Restore$
 sleep 20
+=== M214129
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Extensions$
+sleep 3
+tapt ^Trust$
+sleep 2
+tapt ^Trust$|^OK$
+sleep 4
