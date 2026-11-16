@@ -3519,3 +3519,15 @@ sleep 2
 tap 990 2075
 sleep 16
 shot C2_s27_global_search
+=== T223642
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Mairimashita
+sleep 8
+up
+sleep 2
+longt ^(Vol|Ch)[. ]
+sleep 2
+tapt ^Select all$
+sleep 2
