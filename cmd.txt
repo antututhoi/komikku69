@@ -1123,3 +1123,28 @@ tapt ^All
 sleep 3
 tapt ^Reading$|^OK$
 sleep 2
+=== K212632
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^More$
+sleep 2
+shot K2_s30_more
+tapt ^Download queue$
+sleep 2
+shot K2_s31_download_queue
+tapt ^More options$
+sleep 2
+shot K2_s31b_download_queue_menu
+back
+sleep 1
+back
+sleep 1
+tapt ^Categories$
+sleep 2
+shot K2_s32_categories
+back
+sleep 1
+tapt ^Statistics$
+sleep 3
+shot K2_s33_statistics
