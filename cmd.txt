@@ -1364,3 +1364,11 @@ tapt ^Tensei Shitara Slime
 sleep 8
 down
 sleep 9
+=== M214132
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^SPY.FAMILY
+sleep 8
+down
+sleep 9
