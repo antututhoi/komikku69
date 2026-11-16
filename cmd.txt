@@ -3831,3 +3831,24 @@ shot T2_s25_extensions
 tapt ^Migrate$
 sleep 3
 shot T2_s26_migrate
+=== T224556
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Updates$
+sleep 3
+tap 970 201
+sleep 2
+shot T2_s20c_updates_layout
+back
+sleep 1
+tapt ^History$
+sleep 3
+tap 1014 201
+sleep 2
+shot T2_s21b_history_layout
+back
+sleep 1
+tapt ^Manga$
+sleep 2
+shot T2_s21c_history_manga
