@@ -2361,3 +2361,11 @@ tapt ^More options$
 sleep 2
 tapt ^Update library$
 sleep 90
+=== C218213
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Tensei Shitara Slime
+sleep 8
+down
+sleep 9
