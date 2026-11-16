@@ -2125,3 +2125,12 @@ shot T2_s10_entry_top
 tapt ^More options$
 sleep 2
 shot T2_s11_entry_menu
+=== T216848
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+tapt ^Tracking$|^Track$
+sleep 3
+shot T2_s12_entry_tracking
