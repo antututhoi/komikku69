@@ -484,3 +484,13 @@ shot K2_s07_library_display
 tapt ^Group$
 sleep 1
 shot K2_s08_library_group
+=== K210205
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Mieruko-chan
+sleep 9
+shot K2_s10_entry_top
+tapt ^More options$
+sleep 2
+shot K2_s11_entry_menu
