@@ -3333,3 +3333,18 @@ tapt ^More options$
 sleep 2
 tapt ^Cancel all$
 sleep 2
+=== T222876
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Manga Sources$
+sleep 2
+tapt ^Global search$|^Search$
+sleep 2
+text mieruko
+sleep 2
+tap 1035 2017
+sleep 16
+shot T2_s27_global_search
