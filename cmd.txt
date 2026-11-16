@@ -2947,3 +2947,15 @@ sleep 2
 tapt ^Categories$
 sleep 3
 shot S3_s32_categories
+=== S319949
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^More$
+sleep 2
+tapt ^Statistics$
+sleep 4
+shot S3_s33_statistics
+up
+sleep 2
+shot S3_s33b_statistics_2
