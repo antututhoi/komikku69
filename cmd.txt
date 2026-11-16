@@ -2417,3 +2417,14 @@ tapt ^Kaoru Hana
 sleep 8
 down
 sleep 9
+=== C218220
+stop app.chimahon
+launch app.chimahon
+sleep 7
+shot C2_s01_library
+longt ^Mieruko-chan
+sleep 2
+shot C2_s02_library_selection
+tapt ^More options$
+sleep 2
+shot C2_s03_library_selection_menu
