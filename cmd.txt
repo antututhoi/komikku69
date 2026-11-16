@@ -1288,3 +1288,10 @@ sleep 1
 tapt ^Settings$
 sleep 2
 shot K2_s42_reader_settings
+=== M214124
+sh pm clear app.mihon
+sleep 2
+launch app.mihon
+sleep 9
+tapt ^OK$|^Close$
+sleep 2
