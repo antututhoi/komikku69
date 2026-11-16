@@ -2040,3 +2040,11 @@ tapt ^SPY.FAMILY
 sleep 8
 down
 sleep 9
+=== T216840
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Osoraku Kanojo
+sleep 8
+down
+sleep 9
