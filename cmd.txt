@@ -2080,3 +2080,6 @@ tapt ^Kaoru Hana
 sleep 8
 down
 sleep 9
+=== h1794817489
+host adb devices
+sh dumpsys window | grep mCurrentFocus
