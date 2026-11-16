@@ -84,3 +84,22 @@ shot F2_s20_feed
 tap 405 2260
 sleep 4
 shot F2_s01_favourites
+=== F239269
+tap 945 2260
+sleep 3
+up
+sleep 2
+shot F2_s20a_feed_2
+tap 970 291
+sleep 2
+shot F2_s20m_feed_menu
+back
+sleep 1
+tapt ^More$
+sleep 3
+shot F2_s20b_updates_more
+back
+sleep 2
+tapt ^Kage no
+sleep 6
+shot F2_s20c_feed_item_open
