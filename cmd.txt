@@ -936,3 +936,11 @@ tapt ^SPY.FAMILY
 sleep 8
 down
 sleep 9
+=== K212617
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Osoraku Kanojo
+sleep 8
+down
+sleep 9
