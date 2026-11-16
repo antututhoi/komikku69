@@ -3012,3 +3012,10 @@ sleep 1
 tapt ^Settings$
 sleep 2
 shot S3_s42_reader_settings
+=== M221457
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^More$
+sleep 2
+shot M2_s30_more
