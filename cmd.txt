@@ -43,3 +43,17 @@ sleep 3
 tapt ^seed_kotatsu2.zip$
 sleep 6
 shot F2_d
+=== F238994
+tapt ^Restore$
+sleep 15
+shot F2_e
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 8
+shot F2_s21_history
+tap 405 2260
+sleep 4
+shot F2_s01_favourites
+tap 945 2260
+sleep 5
+shot F2_s20_feed
