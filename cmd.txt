@@ -3804,3 +3804,18 @@ tapt ^More options$
 sleep 2
 tapt ^Cancel all$
 sleep 2
+=== T224554
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Manga Sources$
+sleep 3
+shot T2_s22_browse_sources
+tapt ^MangaDex$
+sleep 10
+shot T2_s23_source_list
+tapt ^Filter$
+sleep 3
+shot T2_s24_source_filter
