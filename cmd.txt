@@ -904,3 +904,7 @@ shot K2_dbg_update
 tapt ^Mieruko-chan
 sleep 8
 shot K2_dbg_entry
+=== K212536
+down
+sleep 8
+shot K2_dbg_entry_refreshed
