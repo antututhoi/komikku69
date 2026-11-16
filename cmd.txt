@@ -2633,3 +2633,24 @@ sleep 2
 launch eu.kanade.tachiyomi.sy
 sleep 10
 shot S3_on1
+=== S319840
+tapt ^Cancel$
+sleep 2
+tapt ^Next$
+sleep 2
+tapt ^Select a folder$
+sleep 3
+tapt ^Show roots$
+sleep 2
+tapt ^Documents$
+sleep 2
+tapt ^USE THIS FOLDER$
+sleep 2
+tapt ^ALLOW$|^Allow$
+sleep 3
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
+tapt ^Get started$
+sleep 3
