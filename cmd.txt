@@ -1,2 +1,7 @@
 === Lb38740
 sh pm list packages -3
+=== F238758
+sh appops set io.github.landwarderer.futon.nightly MANAGE_EXTERNAL_STORAGE allow
+launch io.github.landwarderer.futon.nightly
+sleep 9
+shot F2_a
