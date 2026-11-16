@@ -3870,3 +3870,16 @@ shot C2_s20_updates
 tapt ^Dictionary$
 sleep 4
 shot C2_s28_dictionary
+=== C224558
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Browse$
+sleep 3
+shot C2_s22_browse_sources
+tapt ^MangaDex$
+sleep 10
+shot C2_s23_source_list
+tapt ^Filter$
+sleep 3
+shot C2_s24_source_filter
