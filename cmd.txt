@@ -2048,3 +2048,11 @@ tapt ^Osoraku Kanojo
 sleep 8
 down
 sleep 9
+=== T216841
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+down
+sleep 9
