@@ -3776,3 +3776,31 @@ tapt ^More options$
 sleep 2
 tapt ^Cancel all$
 sleep 2
+=== T224553
+back
+sleep 1
+back
+sleep 1
+launch app.tsundoku
+sleep 3
+tapt ^More$
+sleep 2
+tapt ^Download queue$
+sleep 3
+tapt ^Manga
+sleep 2
+shot T2_s31_download_queue
+tapt ^More options$
+sleep 2
+shot T2_s31b_download_queue_menu
+back
+sleep 1
+tap 1010 520
+sleep 2
+shot T2_s31c_download_queue_item_menu
+back
+sleep 1
+tapt ^More options$
+sleep 2
+tapt ^Cancel all$
+sleep 2
