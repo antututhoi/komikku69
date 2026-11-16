@@ -3128,3 +3128,12 @@ tapt ^More options$
 sleep 2
 tapt ^Cancel all$|^Clear
 sleep 2
+=== T221725
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^More$
+sleep 2
+tapt ^Categories$
+sleep 3
+shot T2_s32_categories
