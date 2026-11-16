@@ -3088,3 +3088,10 @@ sleep 2
 tap 995 2117
 sleep 15
 shot M2_s27_global_search
+=== T221723
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^More$
+sleep 2
+shot T2_s30_more
