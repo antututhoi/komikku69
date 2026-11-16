@@ -14,6 +14,8 @@ import os, re, subprocess, sys, time, xml.etree.ElementTree as ET
 REPO = os.environ["GITHUB_REPOSITORY"]; TOKEN = os.environ["TOKEN"]
 URL = f"https://x-access-token:{TOKEN}@github.com/{REPO}"
 OUT = "/tmp/ctlout"; CMD = "/tmp/ctlcmd"
+LANE = os.environ.get("LANE", ""); SUF = ("-" + LANE) if LANE else ""
+B_CMD = "ctl69-cmd" + SUF; B_OUT = "ctl69-out" + SUF
 DEADLINE = time.time() + float(os.environ.get("CTL_MINUTES", "330")) * 60
 
 def run(*a, timeout=120, inp=None):
@@ -27,10 +29,10 @@ def git(d, *a): return run("git", "-C", d, *a, timeout=120)
 
 def setup():
     os.makedirs(OUT, exist_ok=True)
-    git(OUT, "init", "-q"); git(OUT, "checkout", "-q", "-b", "ctl69-out")
+    git(OUT, "init", "-q"); git(OUT, "checkout", "-q", "-b", B_OUT)
     git(OUT, "config", "user.name", "ctl69"); git(OUT, "config", "user.email", "ctl69@users.noreply.github.com")
     os.makedirs(OUT + "/out", exist_ok=True)
-    run("git", "clone", "-q", "--depth", "1", "--branch", "ctl69-cmd", URL, CMD)
+    run("git", "clone", "-q", "--depth", "1", "--branch", B_CMD, URL, CMD)
 
 def bounds(e):
     m = re.match(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]", e.get("bounds", ""))
@@ -133,7 +135,7 @@ def report(bid, log):
     open(f"{OUT}/out/state.txt", "w").write(f"last {bid}\n")
     git(OUT, "add", "-A"); git(OUT, "commit", "-qm", f"block {bid}")
     for _ in range(3):
-        r = subprocess.run(["git", "-C", OUT, "push", "-q", "-f", URL, "ctl69-out"], capture_output=True)
+        r = subprocess.run(["git", "-C", OUT, "push", "-q", "-f", URL, B_OUT], capture_output=True)
         if r.returncode == 0: break
         time.sleep(2)
 
@@ -142,7 +144,7 @@ def main():
     done = set()
     report("start", ["agent ready"])
     while time.time() < DEADLINE:
-        git(CMD, "fetch", "-q", "--depth", "1", "origin", "ctl69-cmd"); git(CMD, "reset", "-q", "--hard", "FETCH_HEAD")
+        git(CMD, "fetch", "-q", "--depth", "1", "origin", B_CMD); git(CMD, "reset", "-q", "--hard", "FETCH_HEAD")
         try: txt = open(CMD + "/cmd.txt").read()
         except Exception: txt = ""
         for blk in re.split(r"^=== ", txt, flags=re.M)[1:]:
