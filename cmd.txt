@@ -1963,3 +1963,16 @@ launch app.tsundoku
 sleep 9
 tapt ^OK$|^Close$
 sleep 2
+=== T216832
+tapt ^Next$
+sleep 2
+tapt ^Select a folder$
+sleep 3
+tapt ^Show roots$
+sleep 2
+tapt ^Documents$
+sleep 2
+tapt ^USE THIS FOLDER$
+sleep 2
+tapt ^ALLOW$|^Allow$
+sleep 3
