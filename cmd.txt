@@ -694,3 +694,11 @@ tapt ^Trust$
 sleep 2
 tapt ^Trust$|^OK$
 sleep 4
+=== K211424
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^More options$
+sleep 2
+tapt ^Update library$
+sleep 90
