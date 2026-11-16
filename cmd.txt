@@ -960,3 +960,11 @@ tapt ^Mairimashita
 sleep 8
 down
 sleep 9
+=== K212620
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Kumo desu ga
+sleep 8
+down
+sleep 9
