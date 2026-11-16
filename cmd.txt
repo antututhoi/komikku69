@@ -2134,3 +2134,12 @@ sleep 8
 tapt ^Tracking$|^Track$
 sleep 3
 shot T2_s12_entry_tracking
+=== T216849
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+up
+sleep 2
+shot T2_s13_entry_chapters
