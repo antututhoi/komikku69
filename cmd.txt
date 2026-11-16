@@ -2369,3 +2369,11 @@ tapt ^Tensei Shitara Slime
 sleep 8
 down
 sleep 9
+=== C218214
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^SPY.FAMILY
+sleep 8
+down
+sleep 9
