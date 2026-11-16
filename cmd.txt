@@ -71,3 +71,5 @@ sleep 4
 shot F2_s21_history
 === F239143
 host adb root; sleep 3; adb shell "which sqlite3; ls /data/data/io.github.landwarderer.futon.nightly/databases/"
+=== F239181
+host adb root >/dev/null 2>&1; sleep 2; echo LnRhYmxlcwpzZWxlY3QgY291bnQoKikgZnJvbSBmYXZvdXJpdGVzOyBzZWxlY3QgY291bnQoKikgZnJvbSB0cmFja3M7IHNlbGVjdCBjb3VudCgqKSBmcm9tIHRyYWNrX2xvZ3M7IHNlbGVjdCBjb3VudCgqKSBmcm9tIGhpc3Rvcnk7 | base64 -d > /tmp/s.sql; adb push /tmp/s.sql /data/local/tmp/s.sql >/dev/null; adb shell "am force-stop io.github.landwarderer.futon.nightly; sqlite3 /data/data/io.github.landwarderer.futon.nightly/databases/futon-db < /data/local/tmp/s.sql" 2>&1 | tail -40
