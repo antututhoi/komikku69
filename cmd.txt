@@ -167,3 +167,28 @@ text blue lock
 key 66
 sleep 12
 shot K2_s27_global_search
+=== K28674
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^More$
+sleep 2
+shot K2_s30_more
+tapt ^Download queue$
+sleep 2
+shot K2_s31_download_queue
+back
+sleep 1
+tapt ^Categories$
+sleep 2
+shot K2_s32_categories
+back
+sleep 1
+tapt ^Statistics$
+sleep 3
+shot K2_s33_statistics
+back
+sleep 1
+tapt ^Settings$
+sleep 2
+shot K2_s34_settings
