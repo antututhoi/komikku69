@@ -3683,3 +3683,18 @@ sleep 2
 tap 453 2242
 sleep 3
 shot T2_x_afterdl
+=== C224174
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Mairimashita
+sleep 8
+up
+sleep 2
+longt ^(Vol|Ch)[. ]
+sleep 2
+tapt ^Select all$
+sleep 2
+tap 886 2242
+sleep 3
+shot C2_x_afterdl
