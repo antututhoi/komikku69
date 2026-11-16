@@ -1746,3 +1746,14 @@ tapt ^Kaoru Hana
 sleep 8
 down
 sleep 9
+=== S215549
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+shot S2_s01_library
+longt ^Mieruko-chan
+sleep 2
+shot S2_s02_library_selection
+tapt ^More options$
+sleep 2
+shot S2_s03_library_selection_menu
