@@ -2449,3 +2449,13 @@ shot C2_s07_library_display
 tapt ^Group$
 sleep 1
 shot C2_s08_library_group
+=== C218222
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Mieruko-chan
+sleep 9
+shot C2_s10_entry_top
+tapt ^More options$
+sleep 2
+shot C2_s11_entry_menu
