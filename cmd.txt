@@ -646,3 +646,9 @@ stop app.komikku.mod69
 launch app.komikku.mod69
 sleep 7
 shot K2_state
+=== K211277
+tapt ^More$
+sleep 2
+tapt ^Data and storage$
+sleep 3
+shot K2_state2
