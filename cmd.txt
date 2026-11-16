@@ -3852,3 +3852,21 @@ sleep 1
 tapt ^Manga$
 sleep 2
 shot T2_s21c_history_manga
+=== C224557
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^History$
+sleep 4
+shot C2_s21_history
+tapt ^More$
+sleep 2
+up
+sleep 2
+shot C2_s30b_more_2
+tapt ^Updates$
+sleep 4
+shot C2_s20_updates
+tapt ^Dictionary$
+sleep 4
+shot C2_s28_dictionary
