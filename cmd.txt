@@ -3052,3 +3052,12 @@ tapt ^More options$
 sleep 2
 tapt ^Cancel all$|^Clear
 sleep 2
+=== M221459
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^More$
+sleep 2
+tapt ^Categories$
+sleep 3
+shot M2_s32_categories
