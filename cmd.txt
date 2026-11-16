@@ -377,3 +377,5 @@ shot K2_s41_reader_page_menu
 host curl -sL -o /tmp/seed2.tachibk https://raw.githubusercontent.com/antututhoi/komikku69/research69/.research69/seed2.tachibk
 host adb push /tmp/seed2.tachibk /sdcard/Download/tour/seed2.tachibk
 sh ls -la /sdcard/Download/tour/
+=== sd1794810119
+sh ls -la /sdcard/Download/tour/
