@@ -2589,3 +2589,14 @@ sleep 1
 tapt ^Statistics$
 sleep 3
 shot C2_s33_statistics
+=== C218231
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^More$
+sleep 2
+up
+sleep 1
+tapt ^Settings$
+sleep 2
+shot C2_s34_settings
