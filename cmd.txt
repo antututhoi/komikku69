@@ -414,3 +414,6 @@ tapt ^Next$
 sleep 2
 tapt ^Next$
 sleep 2
+=== K210198
+tapt ^Restore backup$
+sleep 3
