@@ -2056,3 +2056,11 @@ tapt ^Mieruko-chan
 sleep 8
 down
 sleep 9
+=== T216842
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Mairimashita
+sleep 8
+down
+sleep 9
