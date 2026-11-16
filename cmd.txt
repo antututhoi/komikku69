@@ -3294,3 +3294,42 @@ sleep 2
 tap 1035 2017
 sleep 16
 shot M2_s27_global_search
+=== T222875
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Mairimashita
+sleep 8
+up
+sleep 2
+longt ^(Vol|Ch)[. ]
+sleep 2
+tapt ^Select all$
+sleep 2
+tapt ^Download$
+sleep 3
+back
+sleep 1
+back
+sleep 1
+tapt ^More$
+sleep 2
+tapt ^Download queue$
+sleep 3
+tapt ^Manga
+sleep 2
+shot T2_s31_download_queue
+tapt ^More options$
+sleep 2
+shot T2_s31b_download_queue_menu
+back
+sleep 1
+tap 1010 420
+sleep 2
+shot T2_s31c_download_queue_item_menu
+back
+sleep 1
+tapt ^More options$
+sleep 2
+tapt ^Cancel all$
+sleep 2
