@@ -344,3 +344,14 @@ sleep 1
 tapt ^Statistics$
 sleep 3
 shot K2_s33_statistics
+=== K29482
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^More$
+sleep 2
+up
+sleep 1
+tapt ^Settings$
+sleep 2
+shot K2_s34_settings
