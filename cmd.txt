@@ -2083,3 +2083,14 @@ sleep 9
 === h1794817489
 host adb devices
 sh dumpsys window | grep mCurrentFocus
+=== T216845
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+shot T2_s01_library
+longt ^Mieruko-chan
+sleep 2
+shot T2_s02_library_selection
+tapt ^More options$
+sleep 2
+shot T2_s03_library_selection_menu
