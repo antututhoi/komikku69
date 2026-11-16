@@ -1444,3 +1444,13 @@ shot M2_s07_library_display
 tapt ^Group$
 sleep 1
 shot M2_s08_library_group
+=== M214140
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^Mieruko-chan
+sleep 9
+shot M2_s10_entry_top
+tapt ^More options$
+sleep 2
+shot M2_s11_entry_menu
