@@ -69,3 +69,5 @@ shot F2_s01_favourites
 tap 135 2260
 sleep 4
 shot F2_s21_history
+=== F239143
+host adb root; sleep 3; adb shell "which sqlite3; ls /data/data/io.github.landwarderer.futon.nightly/databases/"
