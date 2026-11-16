@@ -409,3 +409,8 @@ tapt ^USE THIS FOLDER$
 sleep 2
 tapt ^ALLOW$|^Allow$
 sleep 3
+=== K210197
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
