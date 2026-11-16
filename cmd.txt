@@ -2672,3 +2672,6 @@ tapt ^tour$
 sleep 3
 tapt ^seed2.tachibk$
 sleep 5
+=== S319926
+tapt ^Restore$
+sleep 20
