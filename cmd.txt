@@ -2459,3 +2459,12 @@ shot C2_s10_entry_top
 tapt ^More options$
 sleep 2
 shot C2_s11_entry_menu
+=== C218223
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+tapt ^Tracking$|^Track$
+sleep 3
+shot C2_s12_entry_tracking
