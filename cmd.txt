@@ -928,3 +928,11 @@ tapt ^Tensei Shitara Slime
 sleep 8
 down
 sleep 9
+=== K212616
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^SPY.FAMILY
+sleep 8
+down
+sleep 9
