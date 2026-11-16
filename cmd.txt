@@ -2959,3 +2959,18 @@ shot S3_s33_statistics
 up
 sleep 2
 shot S3_s33b_statistics_2
+=== S319950
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Global search$|^Search$
+sleep 2
+text mieruko
+sleep 1
+key 66
+sleep 2
+tap 995 2117
+sleep 15
+shot S3_s27_global_search
