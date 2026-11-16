@@ -210,3 +210,14 @@ sleep 1
 hold 540 1300 1000
 sleep 2
 shot K2_s41_reader_page_menu
+=== K29473
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+shot K2_s01_library
+longt ^Mieruko-chan
+sleep 2
+shot K2_s02_library_selection
+tapt ^More options$
+sleep 2
+shot K2_s03_library_selection_menu
