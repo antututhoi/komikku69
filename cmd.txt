@@ -3061,3 +3061,15 @@ sleep 2
 tapt ^Categories$
 sleep 3
 shot M2_s32_categories
+=== M221460
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^More$
+sleep 2
+tapt ^Statistics$
+sleep 4
+shot M2_s33_statistics
+up
+sleep 2
+shot M2_s33b_statistics_2
