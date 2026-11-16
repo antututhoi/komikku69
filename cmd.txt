@@ -385,3 +385,7 @@ host curl -sL -o /tmp/seed_kotatsu2.zip https://raw.githubusercontent.com/antutu
 host adb push /tmp/seed2.tachibk /sdcard/Download/tour/seed2.tachibk
 host adb push /tmp/seed_kotatsu2.zip /sdcard/Download/tour/seed_kotatsu2.zip
 sh md5sum /sdcard/Download/tour/seed2.tachibk
+=== sd1794810171
+host curl -sL -o /tmp/seed2.tachibk https://raw.githubusercontent.com/antututhoi/komikku69/55c11b22495e1a610d01be97ee39240dd32bb296/.research69/seed2.tachibk
+host adb push /tmp/seed2.tachibk /sdcard/Download/tour/seed2.tachibk
+sh md5sum /sdcard/Download/tour/seed2.tachibk
