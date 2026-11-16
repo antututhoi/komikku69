@@ -1,2 +1,7 @@
 === p1794808645
 sh pm list packages -3
+=== K28660
+launch app.komikku.mod69
+sleep 9
+tapt ^OK$|^Close$
+sleep 2
