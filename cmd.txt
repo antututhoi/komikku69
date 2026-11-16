@@ -801,3 +801,23 @@ shot K2_s23_source_list
 tapt ^Filter$
 sleep 3
 shot K2_s24_source_filter
+=== K211432
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Extensions$
+sleep 3
+shot K2_s25_extensions
+tapt ^Migrate$
+sleep 3
+shot K2_s26_migrate
+tapt ^Sources$
+sleep 2
+tapt ^Global search$|^Search$
+sleep 2
+text blue lock
+key 66
+sleep 12
+shot K2_s27_global_search
