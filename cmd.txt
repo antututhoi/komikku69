@@ -777,3 +777,27 @@ shot K2_s16_chapter_sort
 tapt ^Display$
 sleep 1
 shot K2_s17_chapter_display
+=== K211431
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Updates$
+sleep 4
+shot K2_s20_updates
+longt ^(Vol|Ch)[. ]
+sleep 2
+shot K2_s20b_updates_selection
+back
+sleep 1
+tapt ^History$
+sleep 3
+shot K2_s21_history
+tapt ^Browse$
+sleep 3
+shot K2_s22_browse_sources
+tapt ^MangaDex$
+sleep 10
+shot K2_s23_source_list
+tapt ^Filter$
+sleep 3
+shot K2_s24_source_filter
