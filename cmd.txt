@@ -682,3 +682,15 @@ shot K2_state4
 === K211422
 tapt ^Restore$
 sleep 20
+=== K211423
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Extensions$
+sleep 3
+tapt ^Trust$
+sleep 2
+tapt ^Trust$|^OK$
+sleep 4
