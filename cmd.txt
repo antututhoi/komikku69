@@ -55,3 +55,16 @@ stop org.haziffe.dropsauce
 launch org.haziffe.dropsauce
 sleep 8
 shot D2_s01_home
+=== D239058
+tapt ^Close$
+sleep 1
+shot D2_s01_favorites
+tapt ^Feed$
+sleep 4
+shot D2_s20_feed
+tapt ^History$
+sleep 4
+shot D2_s21_history
+tapt ^More$
+sleep 3
+shot D2_s30_more
