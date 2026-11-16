@@ -656,3 +656,13 @@ shot K2_state2
 tapt ^Restore backup$
 sleep 4
 shot K2_state3
+=== K211341
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 2
+tapt ^seed2.tachibk$
+sleep 5
+shot K2_state4
