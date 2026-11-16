@@ -1,0 +1,3 @@
+=== A38435
+sh pm list packages -3
+shot A_boot
