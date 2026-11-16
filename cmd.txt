@@ -571,3 +571,14 @@ text blue lock
 key 66
 sleep 12
 shot K2_s27_global_search
+=== K210211
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+tapt ^Download$
+sleep 2
+shot K2_s18_entry_download_menu
+tapt ^Next 25 chapters$|^Next 10 chapters$|^Unread$|^All$
+sleep 3
