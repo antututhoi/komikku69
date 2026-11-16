@@ -15,3 +15,12 @@ sleep 2
 tapt ^Next$|^Done$|^Finish$|^Get started$
 sleep 3
 shot D2_b
+=== D238854
+tap 1038 2225
+sleep 4
+shot D2_c
+tap 91 199
+sleep 3
+tapt ^Backup and restore$|^Backup
+sleep 3
+shot D2_d
