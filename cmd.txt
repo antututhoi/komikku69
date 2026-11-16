@@ -1372,3 +1372,11 @@ tapt ^SPY.FAMILY
 sleep 8
 down
 sleep 9
+=== M214133
+stop app.mihon
+launch app.mihon
+sleep 7
+tapt ^Osoraku Kanojo
+sleep 8
+down
+sleep 9
