@@ -8,3 +8,10 @@ sh appops set eu.kanade.tachiyomi.j2k REQUEST_INSTALL_PACKAGES allow
 launch eu.kanade.tachiyomi.j2k
 sleep 8
 shot J2_a
+=== J238482
+back
+sleep 1
+tap 1016 201
+sleep 2
+tapt ^Settings$
+sleep 2
