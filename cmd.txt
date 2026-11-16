@@ -2024,3 +2024,11 @@ tapt ^More options$
 sleep 2
 tapt ^Update library$
 sleep 90
+=== T216838
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Tensei Shitara Slime
+sleep 8
+down
+sleep 9
