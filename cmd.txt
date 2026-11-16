@@ -666,3 +666,12 @@ sleep 2
 tapt ^seed2.tachibk$
 sleep 5
 shot K2_state4
+=== K211377
+sh am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/Download/tour/seed2.tachibk
+sh am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/Download/tour/seed_kotatsu2.zip
+sh content call --uri content://media --method scan_volume --arg external_primary
+sleep 3
+back
+sleep 1
+tapt ^tour$
+sleep 3
