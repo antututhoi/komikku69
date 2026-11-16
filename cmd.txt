@@ -2627,3 +2627,9 @@ sleep 1
 tapt ^Settings$
 sleep 2
 shot C2_s42_reader_settings
+=== S319804
+sh pm clear eu.kanade.tachiyomi.sy
+sleep 2
+launch eu.kanade.tachiyomi.sy
+sleep 10
+shot S3_on1
