@@ -252,3 +252,12 @@ shot K2_s10_entry_top
 tapt ^More options$
 sleep 2
 shot K2_s11_entry_menu
+=== K29476
+stop app.komikku.mod69
+launch app.komikku.mod69
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+tapt ^Tracking$|^Track$
+sleep 3
+shot K2_s12_entry_tracking
