@@ -1,2 +1,7 @@
 === Lc38740
 sh pm list packages -3
+=== D238758
+sh appops set org.haziffe.dropsauce MANAGE_EXTERNAL_STORAGE allow
+launch org.haziffe.dropsauce
+sleep 9
+shot D2_a
