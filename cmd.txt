@@ -1868,3 +1868,16 @@ sleep 1
 key 66
 sleep 14
 shot S2_s27_global_search
+=== S215557
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+tapt ^Download$
+sleep 2
+shot S2_s18_entry_download_menu
+tapt ^All
+sleep 3
+tapt ^Reading$|^OK$
+sleep 2
