@@ -3974,3 +3974,13 @@ sleep 3
 tapt ^Manga
 sleep 2
 shot T2_s31_download_queue
+=== T225244
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^History$
+sleep 3
+shot T2_s21d_history_a
+tap 879 201
+sleep 3
+shot T2_s21e_history_b
