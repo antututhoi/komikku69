@@ -675,3 +675,7 @@ back
 sleep 1
 tapt ^tour$
 sleep 3
+=== K211378
+tapt ^seed2.tachibk$
+sleep 5
+shot K2_state4
