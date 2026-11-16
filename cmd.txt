@@ -15,3 +15,6 @@ tap 1016 201
 sleep 2
 tapt ^Settings$
 sleep 2
+=== J238483
+tapt ^Data and storage$|^Backup|^Backup and restore$
+sleep 2
