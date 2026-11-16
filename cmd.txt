@@ -2905,3 +2905,36 @@ sleep 7
 tapt ^More$
 sleep 2
 shot S3_s30_more
+=== S319947
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^Mairimashita
+sleep 8
+tapt ^Download$
+sleep 2
+tapt ^All
+sleep 2
+tapt ^Reading$|^OK$
+sleep 1
+back
+sleep 1
+tapt ^More$
+sleep 2
+tapt ^Download queue$
+sleep 2
+shot S3_s31_download_queue
+tapt ^More options$
+sleep 2
+shot S3_s31b_download_queue_menu
+back
+sleep 1
+longt ^(Vol|Ch)[. ]
+sleep 2
+shot S3_s31c_download_queue_item_menu
+back
+sleep 1
+tapt ^More options$
+sleep 2
+tapt ^Cancel all$|^Clear
+sleep 2
