@@ -40,3 +40,12 @@ sleep 3
 tapt ^seed2.tachibk$
 sleep 5
 shot J2_b
+=== J238626
+tapt ^Restore$
+sleep 25
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tap 900 2242
+sleep 3
+shot J2_c
