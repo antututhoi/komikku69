@@ -2802,3 +2802,12 @@ sleep 8
 tapt ^Tracking$|^Track$
 sleep 3
 shot S3_s12_entry_tracking
+=== S319940
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+up
+sleep 2
+shot S3_s13_entry_chapters
