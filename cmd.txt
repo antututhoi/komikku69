@@ -1778,3 +1778,13 @@ shot S2_s07_library_display
 tapt ^Group$
 sleep 1
 shot S2_s08_library_group
+=== S215551
+stop eu.kanade.tachiyomi.sy
+launch eu.kanade.tachiyomi.sy
+sleep 7
+tapt ^Mieruko-chan
+sleep 9
+shot S2_s10_entry_top
+tapt ^More options$
+sleep 2
+shot S2_s11_entry_menu
