@@ -1976,3 +1976,10 @@ tapt ^USE THIS FOLDER$
 sleep 2
 tapt ^ALLOW$|^Allow$
 sleep 3
+=== T216833
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
+tapt ^Get started$
+sleep 3
