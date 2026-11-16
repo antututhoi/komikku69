@@ -24,3 +24,6 @@ shot F2_c
 === F238890
 tapt ^Settings$
 sleep 3
+=== F238891
+tapt ^Backup|^Data|^Services|^Storage
+sleep 3
