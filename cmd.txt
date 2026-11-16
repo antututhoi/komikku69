@@ -3903,3 +3903,26 @@ shot C2_s33_statistics
 up
 sleep 2
 shot C2_s33b_statistics_2
+=== C225026
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^More$
+sleep 2
+tapt ^Download queue$
+sleep 3
+shot C2_s31_download_queue
+tapt ^More options$
+sleep 2
+shot C2_s31b_download_queue_menu
+back
+sleep 1
+tap 1010 420
+sleep 2
+shot C2_s31c_download_queue_item_menu
+back
+sleep 1
+tapt ^More options$
+sleep 2
+tapt ^Cancel all$
+sleep 2
