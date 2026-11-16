@@ -3504,3 +3504,18 @@ tapt ^More options$
 sleep 2
 tapt ^Cancel all$
 sleep 2
+=== C223467
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^Browse$
+sleep 3
+tapt ^Manga Sources$
+sleep 2
+tapt ^Global search$|^Search$
+sleep 2
+text mieruko
+sleep 2
+tap 990 2075
+sleep 16
+shot C2_s27_global_search
