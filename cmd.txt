@@ -3164,3 +3164,10 @@ sleep 2
 tap 995 2117
 sleep 15
 shot T2_s27_global_search
+=== C221974
+stop app.chimahon
+launch app.chimahon
+sleep 7
+tapt ^More$
+sleep 2
+shot C2_s30_more
