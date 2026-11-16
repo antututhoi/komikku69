@@ -75,3 +75,12 @@ host adb root; sleep 3; adb shell "which sqlite3; ls /data/data/io.github.landwa
 host adb root >/dev/null 2>&1; sleep 2; echo LnRhYmxlcwpzZWxlY3QgY291bnQoKikgZnJvbSBmYXZvdXJpdGVzOyBzZWxlY3QgY291bnQoKikgZnJvbSB0cmFja3M7IHNlbGVjdCBjb3VudCgqKSBmcm9tIHRyYWNrX2xvZ3M7IHNlbGVjdCBjb3VudCgqKSBmcm9tIGhpc3Rvcnk7 | base64 -d > /tmp/s.sql; adb push /tmp/s.sql /data/local/tmp/s.sql >/dev/null; adb shell "am force-stop io.github.landwarderer.futon.nightly; sqlite3 /data/data/io.github.landwarderer.futon.nightly/databases/futon-db < /data/local/tmp/s.sql" 2>&1 | tail -40
 === F239201
 host adb root >/dev/null 2>&1; sleep 2; echo SU5TRVJUIElOVE8gdHJhY2tfbG9ncyhtYW5nYV9pZCxjaGFwdGVycyxjcmVhdGVkX2F0LHVucmVhZCkgU0VMRUNUIG1hbmdhX2lkLCdDaC4gMjAxIC0gVGhlIFByb21pc2UnfHxjaGFyKDEwKXx8J0NoLiAyMDIgLSBNb3JuaW5nIEFmdGVyJywoc3RyZnRpbWUoJyVzJywnbm93JyktMTgwMCkqMTAwMCwxIEZST00gKFNFTEVDVCBESVNUSU5DVCBtYW5nYV9pZCBGUk9NIGZhdm91cml0ZXMgTElNSVQgNCk7CklOU0VSVCBJTlRPIHRyYWNrX2xvZ3MobWFuZ2FfaWQsY2hhcHRlcnMsY3JlYXRlZF9hdCx1bnJlYWQpIFNFTEVDVCBtYW5nYV9pZCwnVm9sLiA5IENoLiA3NycsKHN0cmZ0aW1lKCclcycsJ25vdycpLTkwMDAwKSoxMDAwLDAgRlJPTSAoU0VMRUNUIERJU1RJTkNUIG1hbmdhX2lkIEZST00gZmF2b3VyaXRlcyBMSU1JVCA0IE9GRlNFVCA0KTsKSU5TRVJUIElOVE8gdHJhY2tfbG9ncyhtYW5nYV9pZCxjaGFwdGVycyxjcmVhdGVkX2F0LHVucmVhZCkgU0VMRUNUIG1hbmdhX2lkLCdDaC4gNTUnfHxjaGFyKDEwKXx8J0NoLiA1Nid8fGNoYXIoMTApfHwnQ2guIDU3Jywoc3RyZnRpbWUoJyVzJywnbm93JyktMjYwMDAwKSoxMDAwLDEgRlJPTSAoU0VMRUNUIERJU1RJTkNUIG1hbmdhX2lkIEZST00gZmF2b3VyaXRlcyBMSU1JVCAzIE9GRlNFVCA4KTsKSU5TRVJUIE9SIFJFUExBQ0UgSU5UTyB0cmFja3MobWFuZ2FfaWQsbGFzdF9jaGFwdGVyX2lkLGNoYXB0ZXJzX25ldyxsYXN0X2NoZWNrX3RpbWUsbGFzdF9jaGFwdGVyX2RhdGUsbGFzdF9yZXN1bHQsbGFzdF9lcnJvcikgU0VMRUNUIG1hbmdhX2lkLDAsMixzdHJmdGltZSgnJXMnLCdub3cnKSoxMDAwLHN0cmZ0aW1lKCclcycsJ25vdycpKjEwMDAsMSxOVUxMIEZST00gKFNFTEVDVCBESVNUSU5DVCBtYW5nYV9pZCBGUk9NIGZhdm91cml0ZXMgTElNSVQgNCk7CnNlbGVjdCBjb3VudCgqKSBmcm9tIHRyYWNrX2xvZ3M7 | base64 -d > /tmp/s.sql; adb push /tmp/s.sql /data/local/tmp/s.sql >/dev/null; adb shell "am force-stop io.github.landwarderer.futon.nightly; sqlite3 /data/data/io.github.landwarderer.futon.nightly/databases/futon-db < /data/local/tmp/s.sql" 2>&1 | tail -40
+=== F239217
+launch io.github.landwarderer.futon.nightly
+sleep 8
+tap 945 2260
+sleep 5
+shot F2_s20_feed
+tap 405 2260
+sleep 4
+shot F2_s01_favourites
