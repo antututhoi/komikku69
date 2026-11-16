@@ -5,3 +5,13 @@ sh appops set org.haziffe.dropsauce MANAGE_EXTERNAL_STORAGE allow
 launch org.haziffe.dropsauce
 sleep 9
 shot D2_a
+=== D238791
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
+tapt ^Next$|^Done$|^Finish$|^Get started$
+sleep 3
+shot D2_b
