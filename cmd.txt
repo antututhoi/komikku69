@@ -2064,3 +2064,11 @@ tapt ^Mairimashita
 sleep 8
 down
 sleep 9
+=== T216843
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^Kumo desu ga
+sleep 8
+down
+sleep 9
