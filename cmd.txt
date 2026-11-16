@@ -3137,3 +3137,15 @@ sleep 2
 tapt ^Categories$
 sleep 3
 shot T2_s32_categories
+=== T221726
+stop app.tsundoku
+launch app.tsundoku
+sleep 7
+tapt ^More$
+sleep 2
+tapt ^Statistics$
+sleep 4
+shot T2_s33_statistics
+up
+sleep 2
+shot T2_s33b_statistics_2
