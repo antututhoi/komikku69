@@ -1,0 +1,5 @@
+# block D493607  focus: ?  time: 05:40:59
+! NOT FOUND: ^Favorites$
+! NOT FOUND: ^Mairimashita
+! NOT FOUND: ^Pages$|^Pages
+! NOT FOUND: ^Bookmarks$|^Bookmarks
