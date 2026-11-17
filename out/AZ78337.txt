@@ -1,0 +1,18 @@
+# block AZ78337  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:19:07
+! tapt 'Allow' at 540,1335
+[CL  ]   73,201  t='' d='navigationIcon' id=
+[    ]  279,201  t='Backup' d='' id=
+[    ]  540,363  t='Backup' d='' id=title
+[C   ]  540,506  t='' d='' id=
+[    ]  176,480  t='Create backup' d='' id=title
+[    ]  346,534  t='Can be used to restore current library' d='' id=summary
+[C   ]  540,698  t='' d='' id=
+[    ]  242,672  t='Create legacy backup' d='' id=title
+[    ]  393,726  t='Can be used in older versions of Tachiyomi' d='' id=summary
+[C   ]  540,890  t='' d='' id=
+[    ]  187,864  t='Restore backup' d='' id=title
+[    ]  299,918  t='Restore library from backup file' d='' id=summary
+[    ]  540,1074 t='Automatic backups' d='' id=title
+[C   ]  540,1217 t='' d='' id=
+[    ]  209,1191 t='Backup frequency' d='' id=title
+[    ]  102,1245 t='Manual' d='' id=summary
