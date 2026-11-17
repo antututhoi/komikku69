@@ -1,0 +1,28 @@
+# block D493109  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 05:27:05
+! Success
+
+! 
+! 
+! tapt 'Next' at 958,2225
+! tapt 'Next' at 958,2225
+! tapt 'Next' at 958,2225
+! tapt 'Confirm' at 958,2225
+! NOT FOUND: ^Close$
+! tapt 'Backup and restore' at 433,1633
+! tapt 'Restore backup' at 391,788
+! tapt 'Show roots' at 73,191
+! tapt 'tour' at 221,738
+! tapt 'seed_kotatsu2.zip' at 832,1186
+! NOT FOUND: ^Restore$|^OK$
+[    ]  540,991  t='Backup date: Nov 13, 2026 1:15 AM' d='' id=
+[C   ]  540,1120 t='' d='' id=
+[    ]  586,1120 t='History' d='' id=
+[C   ]  540,1257 t='' d='' id=
+[    ]  586,1257 t='Categories' d='' id=
+[C   ]  540,1394 t='' d='' id=
+[    ]  586,1394 t='Favorites' d='' id=
+[C   ]  540,1582 t='' d='' id=
+[    ]  575,1582 t='Restore backup' d='' id=
+[    ]  527,869  t='Restore backup' d='' id=
+[C   ]  900,870  t='' d='' id=
+[    ]  901,871  t='' d='Cancel' id=
