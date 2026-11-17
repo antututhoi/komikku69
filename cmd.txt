@@ -409,3 +409,12 @@ shot Y3_s33_stats
 tapt ^View detailed statistics$
 sleep 4
 shot Y3_s33b_stats_detailed
+=== AZ78253
+home
+sh pm clear eu.kanade.tachiyomi.az
+sh appops set eu.kanade.tachiyomi.az MANAGE_EXTERNAL_STORAGE allow
+sh appops set eu.kanade.tachiyomi.az REQUEST_INSTALL_PACKAGES allow
+sh pm grant eu.kanade.tachiyomi.az android.permission.POST_NOTIFICATIONS
+launch eu.kanade.tachiyomi.az
+sleep 10
+shot AZ_a
