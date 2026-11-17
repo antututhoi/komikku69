@@ -1,0 +1,8 @@
+# block AZ78409  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:24:50
+! tapt 'Recently read' at 367,751
+! NOT FOUND: ^More options$
+[CL  ]   73,201  t='' d='navigationIcon' id=
+[    ]  355,201  t='Recently read' d='' id=
+[C   ] 1016,201  t='' d='Search' id=action_search
+[    ]  540,1238 t='(･Д･。' d='' id=text_face
+[    ]  539,1390 t='Nothing read recently' d='' id=text_label
