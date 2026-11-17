@@ -1,0 +1,10 @@
+# block AZ91838  focus: PopupWindow:2f6eeeb  time: 05:05:27
+! tapt 'Kage no Jitsuryokusha ni Naritakute!' at 276,1823
+! tapt 'Chapters' at 810,338
+! tapt 'More options' at 1027,201
+! tapt 'Download' at 770,474
+! tapt 'Next 10 chapters' at 822,600
+! tapt 'Download queue' at 367,1255
+! tapt 'More options' at 1027,201
+[    ]  770,222  t='Reorder' d='' id=title
+[    ]  812,348  t='Cancel all' d='' id=title
