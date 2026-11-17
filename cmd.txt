@@ -163,3 +163,11 @@ tapt ^Kumo desu ga
 sleep 8
 down
 sleep 10
+=== J375464
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tapt ^Kaoru Hana
+sleep 8
+down
+sleep 10
