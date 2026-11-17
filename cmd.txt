@@ -172,3 +172,22 @@ sleep 1
 longt ^Mairimashita
 sleep 2
 shot KA_s31c_downloads_selection
+=== KA91783
+stop io.github.glitch228.kaisoku
+launch io.github.glitch228.kaisoku
+sleep 8
+tap 405 2260
+sleep 4
+tapt ^Mairimashita
+sleep 9
+tapt ^Continue$|^Read$
+sleep 14
+tap 540 1200
+sleep 2
+shot KA_s40_reader_menu
+tapt ^Options$|^More options$|^Settings$
+sleep 3
+shot KA_s42_reader_options
+up
+sleep 2
+shot KA_s42b_reader_options_2
