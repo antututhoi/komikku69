@@ -1,0 +1,12 @@
+# block AZ78885  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:34:38
+! NOT FOUND: ^Mieruko|^Mairimashita
+! NOT FOUND: ^Chapters$|^CHAPTERS$
+! NOT FOUND: ^Vol|^Ch
+! NOT FOUND: ^Select all$
+! NOT FOUND: ^Download$
+! tapt 'Download queue' at 367,1255
+! NOT FOUND: ^More options$
+[CL  ]   73,201  t='' d='navigationIcon' id=
+[    ]  391,201  t='Download queue' d='' id=
+[    ]  540,1238 t='Σ(ಠ_ಠ)' d='' id=text_face
+[    ]  540,1390 t='No downloads' d='' id=text_label
