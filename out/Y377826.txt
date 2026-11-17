@@ -1,0 +1,78 @@
+# block Y377826  focus: eu.kanade.tachiyomi.nightlyYokai/eu.kanade.tachiyomi.nightlyYokai.MainActivityDefaultDummy  time: 01:11:59
+! tapt 'Update' at 1012,751
+[S   ]  540,1200 t='' d='' id=library_grid_recycler
+[CL  ]  540,756  t='' d='' id=main_header_layout
+[C   ]  540,756  t='' d='' id=category_header_layout
+[    ]   52,750  t='' d='Select all' id=collapse_arrow
+[CL  ]  164,750  t='Reading' d='' id=category_title
+[C   ]  869,750  t='Title' d='' id=category_sort
+[C   ] 1012,751  t='' d='Update' id=update_button
+[    ]   60,755  t='' d='Edit' id=start_refresh
+[    ] 1019,755  t='' d='Update' id=end_refresh
+[CL  ]  188,1103 t='' d='' id=manga_layout
+[    ]   44,840  t='6' d='' id=unread_text
+[CL  ]  282,1237 t='' d='' id=play_layout
+[    ]  292,1247 t='' d='Start reading' id=play_button
+[    ]  188,1343 t='An Archdemon's Dilemma: How to Love Your Elf Bride' d='' id=title
+[CL  ]  539,1103 t='' d='' id=manga_layout
+[    ]  395,840  t='6' d='' id=unread_text
+[CL  ]  633,1237 t='' d='' id=play_layout
+[    ]  643,1247 t='' d='Start reading' id=play_button
+[    ]  539,1343 t='Haimiya Is Scary Cute' d='' id=title
+[CL  ]  891,1103 t='' d='' id=manga_layout
+[    ]  746,840  t='6' d='' id=unread_text
+[CL  ]  985,1239 t='' d='' id=play_layout
+[    ]  995,1249 t='' d='Start reading' id=play_button
+[    ]  891,1326 t='Mieruko-chan' d='' id=title
+[    ]  891,1365 t='Izumi Tomoki' d='' id=subtitle
+[CL  ]  188,1691 t='' d='' id=manga_layout
+[    ]   44,1428 t='6' d='' id=unread_text
+[CL  ]  282,1825 t='' d='' id=play_layout
+[    ]  292,1835 t='' d='Start reading' id=play_button
+[    ]  188,1931 t='She's Likely Aiming for My Older Brother' d='' id=title
+[CL  ]  539,1691 t='' d='' id=manga_layout
+[    ]  395,1428 t='6' d='' id=unread_text
+[CL  ]  633,1825 t='' d='' id=play_layout
+[    ]  643,1835 t='' d='Start reading' id=play_button
+[    ]  539,1931 t='So I’m a Spider, So What?' d='' id=title
+[CL  ]  891,1691 t='' d='' id=manga_layout
+[    ]  891,1914 t='SPY×FAMILY' d='' id=title
+[    ]  891,1953 t='Endou Tatsuya' d='' id=subtitle
+[CL  ]  188,2192 t='' d='' id=manga_layout
+[CL  ]  539,2192 t='' d='' id=manga_layout
+[    ]  395,2016 t='6' d='' id=unread_text
+[CL  ]  633,2374 t='' d='' id=play_layout
+[    ]  643,2392 t='' d='Start reading' id=play_button
+[CL  ]  891,2192 t='' d='' id=manga_layout
+[    ]  746,2016 t='6' d='' id=unread_text
+[CL  ]  985,2375 t='' d='' id=play_layout
+[    ]  995,2393 t='' d='Start reading' id=play_button
+[C   ]  539,1664 t='' d='' id=category_hopper_layout
+[CL  ]  401,1664 t='' d='Previous:' id=up_category
+[CL  ]  539,1664 t='' d='Categories' id=category_button
+[CL  ]  677,1664 t='' d='Next:' id=down_category
+[C   ]  540,1946 t='' d='' id=
+[S   ]  540,1822 t='' d='' id=filter_scroll
+[CL  ]  115,1825 t='' d='Filter' id=filter_button
+[C   ]  372,1825 t='Not started' d='' id=firstButton
+[C   ]  685,1825 t='In progress' d='' id=secondButton
+[C   ]  973,1825 t='Unread' d='' id=firstButton
+[C   ]  229,1959 t='Group library by…' d='' id=group_by
+[C   ]  705,1959 t='Collapse all categories' d='' id=expand_categories
+[C   ]  213,2085 t='Display options' d='' id=view_options
+[C   ]  540,201  t='' d='' id=toolbar
+[    ]  540,201  t='Library' d='' id=toolbar_title
+[C   ]  889,201  t='' d='Filter' id=action_filter
+[C   ] 1016,201  t='' d='More' id=action_more
+[    ]  540,468  t='Library' d='' id=big_title
+[CL  ]  540,629  t='' d='' id=search_toolbar
+[C   ]   99,629  t='' d='' id=
+[    ]  345,607  t='Search your library' d='' id=card_title
+[    ]  235,657  t='Reading' d='' id=card_subtitle
+[L   ]  180,2242 t='' d='Library' id=nav_library
+[    ]  179,2290 t='Library' d='' id=navigation_bar_item_large_label_view
+[CL  ]  540,2242 t='' d='Recents' id=nav_recents
+[    ]  539,2290 t='Recents' d='' id=navigation_bar_item_small_label_view
+[CL  ]  900,2242 t='' d='Browse' id=nav_browse
+[    ]  899,2290 t='Browse' d='' id=navigation_bar_item_small_label_view
+[C   ]  540,2368 t='' d='' id=bottom_view
