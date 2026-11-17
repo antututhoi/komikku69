@@ -114,3 +114,23 @@ shot KA_s02_selection
 tapt ^More options$
 sleep 2
 shot KA_s03_selection_menu
+=== KA93242
+stop io.github.glitch228.kaisoku
+launch io.github.glitch228.kaisoku
+sleep 8
+tap 405 2260
+sleep 4
+tapt ^Mairimashita
+sleep 9
+shot KA_s10_details
+up
+sleep 2
+shot KA_s10a_details_scrolled
+tapt ^More options$
+sleep 2
+shot KA_s11_details_menu
+back
+sleep 1
+tapt ^Download$
+sleep 3
+shot KA_s18_download_dialog
