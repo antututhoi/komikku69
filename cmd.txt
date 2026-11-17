@@ -1,0 +1,35 @@
+=== J374675
+sh pm clear eu.kanade.tachiyomi.j2k
+sh appops set eu.kanade.tachiyomi.j2k MANAGE_EXTERNAL_STORAGE allow
+sh appops set eu.kanade.tachiyomi.j2k REQUEST_INSTALL_PACKAGES allow
+launch eu.kanade.tachiyomi.j2k
+sleep 9
+tap 1016 201
+sleep 2
+tapt ^Settings$
+sleep 2
+tapt ^Data and storage$|^Backup
+sleep 2
+tapt ^Restore backup$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed2.tachibk$
+sleep 5
+tapt ^Restore$
+sleep 25
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tap 900 2242
+sleep 3
+tapt ^Extensions$
+sleep 3
+tapt ^Trust$|^TRUST$
+sleep 2
+tapt ^Trust$|^TRUST$|^OK$
+sleep 4
