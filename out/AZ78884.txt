@@ -1,0 +1,8 @@
+# block AZ78884  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:33:13
+! tapt 'Recently read' at 367,751
+! tapt 'REMOVE' at 399,701
+[    ]  242,1028 t='Remove' d='' id=md_text_title
+[    ]  540,1163 t='This will remove the read date of this chapter. Are you sure?' d='' id=description
+[Ck  ]  540,1336 t='Reset all chapters for this manga' d='' id=checkbox_option
+[C   ]  647,1467 t='CANCEL' d='' id=md_button_negative
+[C   ]  872,1467 t='REMOVE' d='' id=md_button_positive
