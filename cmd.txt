@@ -433,3 +433,14 @@ sleep 3
 === AZ78337
 tapt ^Allow$
 sleep 3
+=== AZ78338
+tapt ^Restore backup$|^Restore$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed2.tachibk$
+sleep 6
