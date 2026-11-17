@@ -422,3 +422,6 @@ shot AZ_a
 tap 73 201
 sleep 2
 shot AZ_b
+=== AZ78299
+tap 73 201
+sleep 2
