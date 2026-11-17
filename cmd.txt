@@ -95,3 +95,23 @@ sleep 3
 tapt ^seed2.tachibk$
 sleep 6
 shot J3_y
+=== J375361
+tapt ^Allow$
+sleep 3
+tapt ^Restore$
+sleep 25
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tap 900 2242
+sleep 3
+tapt ^Extensions$
+sleep 3
+tapt ^Trust$|^TRUST$
+sleep 2
+tapt ^Trust$|^TRUST$|^OK$
+sleep 4
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+shot J3_s01_library
