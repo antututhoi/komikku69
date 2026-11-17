@@ -643,3 +643,30 @@ sleep 2
 tapt ^Select all$
 sleep 1
 shot AZ_s14b_select_all
+=== AZ91683
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tapt ^Kage no
+sleep 8
+tapt ^INFO$|^Info$
+sleep 3
+shot AZ_s10_entry_info
+tapt ^More options$
+sleep 2
+tapt ^Download$
+sleep 2
+shot AZ_s18_download_menu
+tapt ^Download all$|^All$|^Next 10
+sleep 3
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tap 73 201
+sleep 2
+tapt ^Download queue$
+sleep 5
+shot AZ_s31_download_queue
+tapt ^More options$
+sleep 2
+shot AZ_s31b_download_queue_menu
