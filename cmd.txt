@@ -272,3 +272,6 @@ tapt ^ALLOW$|^Allow$
 sleep 3
 tapt ^Next$
 sleep 3
+=== Y377578
+tapt ^Next$|^Allow$
+sleep 3
