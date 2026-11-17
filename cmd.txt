@@ -56,3 +56,18 @@ sleep 1
 tapt ^Unread$|^Reading$
 sleep 3
 shot D3_s20f_feed_chip
+=== D375174
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 8
+tapt ^Feed
+sleep 4
+swipe 300 1050 950 1050 300
+sleep 3
+shot D3_s20g_feed_swipe_right
+swipe 950 1250 200 1250 300
+sleep 3
+shot D3_s20h_feed_swipe_left
+longt ^Blue Lock|^Kumo|^Tensei|^Chiyu
+sleep 2
+shot D3_s20i_feed_longpress
