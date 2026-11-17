@@ -290,3 +290,18 @@ shot F3_s31c_downloads_item_open
 longt ^Mairimashita
 sleep 2
 shot F3_s31d_downloads_selection
+=== F375931
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 8
+tap 675 2260
+sleep 5
+tapt ^No thanks$
+sleep 2
+shot F3_s22_explore
+up
+sleep 2
+shot F3_s22a_explore_scrolled
+tapt ^Catalog$
+sleep 4
+shot F3_s25_catalog
