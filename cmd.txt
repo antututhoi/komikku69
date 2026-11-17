@@ -625,3 +625,21 @@ shot AZ_s31_download_queue
 tapt ^More options$
 sleep 2
 shot AZ_s31b_download_queue_menu
+=== AZ79304
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tapt ^Kage no
+sleep 8
+shot AZ_s10_entry
+tapt ^Chapters$|^CHAPTERS$
+sleep 3
+shot AZ_s13_chapters
+longt ^Vol|^Ch
+sleep 2
+shot AZ_s14_chapter_selection
+tapt ^More options$
+sleep 2
+tapt ^Select all$
+sleep 1
+shot AZ_s14b_select_all
