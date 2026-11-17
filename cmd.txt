@@ -175,3 +175,7 @@ sleep 1
 tapt ^Download$
 sleep 3
 shot F3_s18_download_dialog
+=== F375179
+tapt ^Download$|^Confirm$|^OK$|^Start$
+sleep 4
+shot F3_s18b_after_download
