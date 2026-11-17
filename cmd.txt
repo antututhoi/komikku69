@@ -305,3 +305,21 @@ sleep 3
 tapt ^seed2.tachibk$
 sleep 6
 shot Y3_d
+=== Y377723
+tapt ^Restore$
+sleep 25
+stop eu.kanade.tachiyomi.nightlyYokai
+launch eu.kanade.tachiyomi.nightlyYokai
+sleep 7
+tap 900 2242
+sleep 3
+tapt ^Extensions$
+sleep 3
+tapt ^Trust$|^TRUST$
+sleep 2
+tapt ^Trust$|^TRUST$|^OK$
+sleep 4
+stop eu.kanade.tachiyomi.nightlyYokai
+launch eu.kanade.tachiyomi.nightlyYokai
+sleep 8
+shot Y3_s01_library
