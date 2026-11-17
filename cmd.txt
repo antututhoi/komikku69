@@ -92,3 +92,15 @@ sleep 1
 tapt ^New chapters$|^On device$
 sleep 3
 shot D3_s21f_history_chip
+=== D375176
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 8
+tapt ^History$
+sleep 4
+longt ^Mairimashita|^Mieruko|^Kumo
+sleep 2
+shot D3_s21s_history_selection
+tapt ^More options$
+sleep 2
+shot D3_s21t_history_selection_menu
