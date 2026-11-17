@@ -372,3 +372,21 @@ host adb root >/dev/null 2>&1; sleep 2; echo SU5TRVJUIElOVE8gdHJhY2tfbG9ncyhtYW5
 launch io.github.glitch228.kaisoku
 sleep 9
 shot KA_d
+=== KA77577
+stop io.github.glitch228.kaisoku
+launch io.github.glitch228.kaisoku
+sleep 8
+tap 945 2260
+sleep 4
+shot KA_s20_feed
+up
+sleep 2
+shot KA_s20a_feed_scrolled
+tapt ^More options$
+sleep 2
+shot KA_s20m_feed_menu
+back
+sleep 1
+tapt ^Unread$|^Reading$
+sleep 3
+shot KA_s20f_feed_chip
