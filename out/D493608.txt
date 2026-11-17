@@ -1,0 +1,4 @@
+# block D493608  focus: ?  time: 05:41:43
+! NOT FOUND: ^Downloads$
+! NOT FOUND: ^More options$
+! NOT FOUND: ^Mairimashita
