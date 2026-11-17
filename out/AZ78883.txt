@@ -1,0 +1,81 @@
+# block AZ78883  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:32:31
+! tapt 'Recent updates' at 367,625
+! longt 'Vol.19 Ch.128' at 582,461
+[CL  ]   73,201  t='' d='navigationIcon' id=
+[    ]  378,201  t='Recent updates' d='' id=
+[C   ] 1016,201  t='' d='Update library' id=action_update_library
+[S   ]  540,1306 t='' d='' id=recycler
+[CL  ]  540,317  t='' d='' id=
+[    ]  540,316  t='Today' d='' id=section_text
+[CL  ]  540,435  t='' d='' id=
+[C   ]   73,435  t='' d='' id=manga_cover
+[    ]  555,414  t='The New Gate' d='' id=manga_title
+[    ]  582,461  t='Vol.19 Ch.128' d='' id=chapter_title
+[C   ]  974,412  t='' d='Menu' id=chapter_menu
+[CL  ]  540,585  t='' d='' id=
+[C   ]   73,585  t='' d='' id=manga_cover
+[    ]  555,564  t='The New Gate' d='' id=manga_title
+[    ]  582,611  t='Vol.19 Ch.127' d='' id=chapter_title
+[C   ]  974,562  t='' d='Menu' id=chapter_menu
+[CL  ]  540,735  t='' d='' id=
+[C   ]   73,735  t='' d='' id=manga_cover
+[    ]  555,714  t='Tensei Kizoku no Isekai Boukenroku ~Jichou wo Shiranai Kamigami no Shito~' d='' id=manga_title
+[    ]  582,761  t='Ch.81.2' d='' id=chapter_title
+[C   ]  974,712  t='' d='Menu' id=chapter_menu
+[CL  ]  540,885  t='' d='' id=
+[C   ]   73,885  t='' d='' id=manga_cover
+[    ]  555,864  t='Tensei Kizoku no Isekai Boukenroku ~Jichou wo Shiranai Kamigami no Shito~' d='' id=manga_title
+[    ]  582,911  t='Ch.81.1' d='' id=chapter_title
+[C   ]  974,862  t='' d='Menu' id=chapter_menu
+[CL  ]  540,1035 t='' d='' id=
+[C   ]   73,1035 t='' d='' id=manga_cover
+[    ]  555,1014 t='Osoraku Kanojo wa Ore no Aniki o Neratteru' d='' id=manga_title
+[    ]  582,1061 t='Ch.39.5' d='' id=chapter_title
+[C   ]  974,1012 t='' d='Menu' id=chapter_menu
+[CL  ]  540,1185 t='' d='' id=
+[C   ]   73,1185 t='' d='' id=manga_cover
+[    ]  555,1164 t='Osoraku Kanojo wa Ore no Aniki o Neratteru' d='' id=manga_title
+[    ]  582,1211 t='Ch.39' d='' id=chapter_title
+[C   ]  974,1162 t='' d='Menu' id=chapter_menu
+[CL  ]  540,1335 t='' d='' id=
+[C   ]   73,1335 t='' d='' id=manga_cover
+[    ]  555,1314 t='Osoraku Kanojo wa Ore no Aniki o Neratteru' d='' id=manga_title
+[    ]  582,1361 t='Ch.38.5' d='' id=chapter_title
+[C   ]  974,1312 t='' d='Menu' id=chapter_menu
+[CL  ]  540,1485 t='' d='' id=
+[C   ]   73,1485 t='' d='' id=manga_cover
+[    ]  555,1464 t='Osoraku Kanojo wa Ore no Aniki o Neratteru' d='' id=manga_title
+[    ]  582,1511 t='Ch.38' d='' id=chapter_title
+[C   ]  974,1462 t='' d='Menu' id=chapter_menu
+[CL  ]  540,1635 t='' d='' id=
+[C   ]   73,1635 t='' d='' id=manga_cover
+[    ]  555,1614 t='Mieruko-chan' d='' id=manga_title
+[    ]  582,1661 t='Vol.15 Ch.73' d='' id=chapter_title
+[C   ]  974,1612 t='' d='Menu' id=chapter_menu
+[CL  ]  540,1785 t='' d='' id=
+[C   ]   73,1785 t='' d='' id=manga_cover
+[    ]  555,1764 t='Maou no Ore ga Dorei Elf o Yome ni Shitanda ga, Dou Medereba ii?' d='' id=manga_title
+[    ]  582,1811 t='Vol.16 Ch.82' d='' id=chapter_title
+[C   ]  974,1762 t='' d='Menu' id=chapter_menu
+[CL  ]  540,1935 t='' d='' id=
+[C   ]   73,1935 t='' d='' id=manga_cover
+[    ]  555,1914 t='Mairimashita! Iruma-kun' d='' id=manga_title
+[    ]  582,1961 t='Ch.466 - Unyielding Conviction' d='' id=chapter_title
+[C   ]  974,1912 t='' d='Menu' id=chapter_menu
+[CL  ]  540,2085 t='' d='' id=
+[C   ]   73,2085 t='' d='' id=manga_cover
+[    ]  555,2064 t='Mairimashita! Iruma-kun' d='' id=manga_title
+[    ]  582,2111 t='Ch.465 - To You, Still Out of Sight' d='' id=chapter_title
+[C   ]  974,2062 t='' d='Menu' id=chapter_menu
+[CL  ]  540,2235 t='' d='' id=
+[C   ]   73,2235 t='' d='' id=manga_cover
+[    ]  555,2214 t='Mairimashita! Iruma-kun' d='' id=manga_title
+[    ]  582,2261 t='Ch.464 - You, Beyond Reach' d='' id=chapter_title
+[C   ]  974,2212 t='' d='Menu' id=chapter_menu
+[CL  ]  540,2324 t='' d='' id=
+[C   ]   73,2324 t='' d='' id=manga_cover
+[C   ]  974,2324 t='' d='Menu' id=chapter_menu
+[C   ]   73,201  t='' d='Done' id=action_mode_close_button
+[    ]  204,201  t='1' d='' id=action_bar_title
+[C   ]  889,201  t='' d='Download' id=action_download
+[C   ] 1016,201  t='' d='Mark as read' id=action_mark_as_read
