@@ -98,3 +98,24 @@ shot F3_s20h_feed_swipe_left
 longt ^Blue Lock|^Kumo|^Tensei|^Chiyu
 sleep 2
 shot F3_s20i_feed_longpress
+=== F375175
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 8
+tap 135 2260
+sleep 4
+shot F3_s21_history
+up
+sleep 2
+shot F3_s21a_history_scrolled
+tapt ^More options$
+sleep 2
+shot F3_s21m_history_menu
+tapt ^Display options$|^List options$
+sleep 3
+shot F3_s21o_history_options
+back
+sleep 1
+tapt ^New chapters$|^On device$
+sleep 3
+shot F3_s21f_history_chip
