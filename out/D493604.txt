@@ -1,0 +1,6 @@
+# block D493604  focus: ?  time: 05:38:38
+! tapt 'Favorites' at 245,2235
+! NOT FOUND: ^More$
+! NOT FOUND: ^Reading$
+! NOT FOUND: ^Mairimashita|^Mieruko|^Kumo
+! NOT FOUND: ^More options$
