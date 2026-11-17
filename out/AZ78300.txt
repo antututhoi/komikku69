@@ -1,0 +1,8 @@
+# block AZ78300  focus: com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity  time: 01:18:51
+! tapt 'Settings' at 367,1426
+! tapt 'Backup' at 258,1332
+[C   ]  540,1232 t='' d='' id=grant_singleton
+[C   ]  540,1232 t='' d='' id=grant_dialog
+[    ]  540,1096 t='Allow TachiyomiAZ to access photos, videos, music, and audio on this device?' d='' id=permission_message
+[C   ]  540,1335 t='Allow' d='' id=permission_allow_button
+[C   ]  540,1492 t='Don’t allow' d='' id=permission_deny_button
