@@ -1,0 +1,5 @@
+# block D493609  focus: ?  time: 05:42:56
+! NOT FOUND: ^Favorites$
+! NOT FOUND: ^Mairimashita
+! NOT FOUND: ^Continue$|^Read$
+! NOT FOUND: ^Options$|^More options$|^Settings$
