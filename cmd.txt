@@ -98,3 +98,27 @@ shot D3_s21s_history_selection
 tapt ^More options$
 sleep 2
 shot D3_s21t_history_selection_menu
+=== D391781
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 8
+tapt ^Favorites$
+sleep 4
+shot D3_s01_favourites
+up
+sleep 2
+shot D3_s01a_favourites_scrolled
+tapt ^More$
+sleep 2
+shot D3_s04_favourites_menu
+back
+sleep 1
+tapt ^Reading$
+sleep 3
+shot D3_s01b_category_tab
+longt ^Mairimashita|^Mieruko|^Kumo
+sleep 2
+shot D3_s02_selection
+tapt ^More options$
+sleep 2
+shot D3_s03_selection_menu
