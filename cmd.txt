@@ -498,3 +498,16 @@ shot AZ_s21_history
 tapt ^More options$
 sleep 2
 shot AZ_s21m_history_menu
+=== AZ78410
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tapt ^Mieruko|^Mairimashita
+sleep 8
+shot AZ_s10_entry
+up
+sleep 2
+shot AZ_s13_chapters
+tapt ^More options$
+sleep 2
+shot AZ_s11_entry_menu
