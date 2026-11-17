@@ -1,0 +1,12 @@
+# block J375298  focus: com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity  time: 00:29:13
+! tapt 'Settings' at 716,478
+! tapt 'Backup and restore' at 375,1760
+! tapt 'Restore backup' at 192,818
+! tapt 'Show roots' at 73,191
+! tapt 'tour' at 221,738
+! tapt 'seed2.tachibk' at 798,1809
+[C   ]  540,1232 t='' d='' id=grant_singleton
+[C   ]  540,1232 t='' d='' id=grant_dialog
+[    ]  540,1096 t='Allow TachiyomiJ2K to send you notifications?' d='' id=permission_message
+[C   ]  540,1304 t='Allow' d='' id=permission_allow_button
+[C   ]  540,1461 t='Don’t allow' d='' id=permission_deny_button
