@@ -189,3 +189,16 @@ shot J3_s21_history
 tapt ^Updates$
 sleep 3
 shot J3_s20b_updates
+=== J376134
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tapt ^Welcome to Demon|^Mairimashita
+sleep 8
+shot J3_s10_entry
+up
+sleep 2
+shot J3_s13_chapters
+tapt ^More options$|^More$
+sleep 2
+shot J3_s11_entry_menu
