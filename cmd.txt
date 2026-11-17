@@ -184,3 +184,22 @@ sleep 1
 longt ^Mairimashita
 sleep 2
 shot D3_s31c_downloads_selection
+=== D375182
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 8
+tapt ^Favorites$
+sleep 4
+tapt ^Mairimashita
+sleep 9
+tapt ^Continue$|^Read$
+sleep 14
+tap 540 1200
+sleep 2
+shot D3_s40_reader_menu
+tapt ^Options$|^More options$|^Settings$
+sleep 3
+shot D3_s42_reader_options
+up
+sleep 2
+shot D3_s42b_reader_options_2
