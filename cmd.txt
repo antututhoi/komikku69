@@ -54,3 +54,7 @@ tapt ^tour$
 sleep 3
 tapt ^seed_kotatsu2.zip$
 sleep 8
+=== D493307
+tapt ^Restore$|^OK$
+sleep 20
+shot D4_y
