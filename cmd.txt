@@ -279,3 +279,29 @@ sleep 3
 tapt ^Next$|^Get started$|^Finish$
 sleep 3
 shot Y3_c
+=== Y377647
+sh appops set eu.kanade.tachiyomi.nightlyYokai REQUEST_INSTALL_PACKAGES allow
+sh pm grant eu.kanade.tachiyomi.nightlyYokai android.permission.POST_NOTIFICATIONS
+tapt ^Grant$ 0
+sleep 3
+back
+sleep 2
+tapt ^Get started$
+sleep 4
+tap 1016 201
+sleep 2
+tapt ^Settings$
+sleep 3
+tapt ^Data and storage$|^Backup and restore$
+sleep 3
+tapt ^Restore backup$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed2.tachibk$
+sleep 6
+shot Y3_d
