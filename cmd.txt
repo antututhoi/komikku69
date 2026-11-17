@@ -212,3 +212,18 @@ shot J3_s10_entry
 up
 sleep 2
 shot J3_s13_chapters
+=== J376228
+tapt ^Download$ 0
+tapt ^Download$ 2
+tapt ^Download$ 4
+tapt ^Download$ 6
+tapt ^Download$ 8
+tapt ^Download$ 10
+tapt ^Download$ 12
+sleep 2
+shot J3_s13b_chapters_downloading
+back
+sleep 2
+tap 540 2242
+sleep 4
+shot J3_s20_recents_with_downloads
