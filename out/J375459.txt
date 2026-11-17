@@ -1,0 +1,24 @@
+# block J375459  focus: eu.kanade.tachiyomi.j2k/eu.kanade.tachiyomi.ui.main.MainActivity  time: 00:32:32
+! tapt 'SPY×FAMILY' at 891,1892
+[CL  ]  540,633  t='' d='' id=manga_header_layout
+[CL  ]  173,513  t='' d='Cover of series' id=manga_cover
+[CL  ]  490,342  t='SPY×FAMILY' d='' id=title
+[CL  ]  461,403  t='Endou Tatsuya' d='' id=manga_author
+[    ]  408,465  t='Ongoing' d='' id=manga_status
+[    ]  427,516  t='MangaDex' d='' id=manga_source
+[CLxk]  193,794  t='In Library' d='' id=favorite_button
+[C   ]  418,794  t='' d='Open in WebView' id=webview_button
+[C   ]  555,794  t='' d='Share' id=share_button
+[    ]  222,903  t='About this manga' d='' id=manga_summary_label
+[CL  ]  540,1027 t='The master spy codenamed <Twilight> has spent most of his life on undercover mis' d='' id=manga_summary
+[C   ]  540,1204 t='' d='' id=chapter_layout
+[    ]  150,1204 t='0 chapters' d='' id=chapters_title
+[    ] 1003,1204 t='' d='Sort & Filter' id=filter_button
+[C   ]  963,1084 t='More' d='' id=more_button
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  311,201  t='SPY×FAMILY' d='' id=toolbar_title
+[C   ]  784,201  t='' d='Search' id=action_search
+[CL  ]  911,201  t='' d='Download' id=action_download
+[CL  ] 1027,201  t='' d='More options' id=
+[C   ]  540,2368 t='' d='' id=bottom_view
