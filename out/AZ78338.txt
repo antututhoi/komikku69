@@ -1,0 +1,13 @@
+# block AZ78338  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:19:52
+! tapt 'Restore backup' at 187,864
+! tapt 'Show roots' at 73,191
+! tapt 'tour' at 221,738
+! tapt 'seed2.tachibk' at 798,1809
+[    ]  320,941  t='Network Mode' d='' id=md_text_title
+[C   ]  540,1127 t='' d='' id=
+[xk  ]  210,1127 t='' d='' id=md_control
+[    ]  603,1127 t='Restore offline, finishes quickly but contains only what your backup has' d='' id=md_title
+[C   ]  540,1324 t='' d='' id=
+[k   ]  210,1324 t='' d='' id=md_control
+[    ]  603,1324 t='Restore online, much slower but gives you more updated info and chapters' d='' id=md_title
+[C   ]  866,1554 t='RESTORE' d='' id=md_button_positive
