@@ -1,0 +1,35 @@
+# block Y377830  focus: eu.kanade.tachiyomi.nightlyYokai/eu.kanade.tachiyomi.nightlyYokai.MainActivityDefaultDummy  time: 01:16:18
+! tapt 'Stats' at 715,604
+! tapt 'View detailed statistics' at 792,629
+[S   ]  540,351  t='' d='' id=stats_horizontal_scroll
+[C   ]  212,351  t='Series type' d='' id=chip_stat
+[C   ]  545,351  t='Category' d='' id=chip_category
+[    ]  640,351  t='' d='Remove Category' id=
+[C   ]  821,351  t='Source' d='' id=chip_source
+[    ]  899,351  t='' d='Remove Source' id=
+[C   ] 1018,351  t='Status' d='' id=chip_status
+[C   ]  885,490  t='Most entries' d='' id=stat_sort
+[C   ]  540,1770 t='' d='' id=
+[    ]  131,1670 t='MANGA' d='' id=stats_label_text
+[    ]  110,1749 t='Count' d='' id=
+[    ]   85,1807 t='19' d='' id=stats_count_text
+[    ]  127,1869 t='(95.0%)' d='' id=stats_count_percentage_text
+[    ]  429,1749 t='Read chapters' d='' id=
+[    ]  418,1807 t='1706 / 1767' d='' id=stats_progress_text
+[    ]  391,1869 t='(100.0%)' d='' id=stats_progress_percentage_text
+[    ]  902,1749 t='Read duration' d='' id=
+[    ]  870,1807 t='4h 41min' d='' id=stats_read_duration_text
+[C   ]  540,2116 t='' d='' id=
+[    ]  148,2016 t='MANHWA' d='' id=stats_label_text
+[    ]  110,2095 t='Count' d='' id=
+[    ]   74,2153 t='1' d='' id=stats_count_text
+[    ]  116,2215 t='(5.0%)' d='' id=stats_count_percentage_text
+[    ]  429,2095 t='Read chapters' d='' id=
+[    ]  328,2153 t='0' d='' id=stats_progress_text
+[    ]  355,2215 t='(0%)' d='' id=stats_progress_percentage_text
+[    ]  902,2095 t='Read duration' d='' id=
+[    ]  837,2153 t='None' d='' id=stats_read_duration_text
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  361,201  t='Statistics details' d='' id=toolbar_title
+[C   ] 1016,201  t='' d='Search' id=action_search
