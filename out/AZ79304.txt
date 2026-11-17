@@ -1,0 +1,9 @@
+# block AZ79304  focus: PopupWindow:72d0d8d  time: 01:35:59
+! tapt 'Kage no Jitsuryokusha ni Naritakute!' at 276,1823
+! tapt 'Chapters' at 810,338
+! longt 'Chapters' at 810,338
+! tapt 'More options' at 1027,201
+! NOT FOUND: ^Select all$
+[    ]  770,222  t='Display mode' d='' id=title
+[    ]  770,348  t='Sorting mode' d='' id=title
+[    ]  770,474  t='Download' d='' id=title
