@@ -1,0 +1,12 @@
+# block AZ91683  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 05:02:47
+! tapt 'Kage no Jitsuryokusha ni Naritakute!' at 276,1823
+! tapt 'Info' at 270,338
+! tapt 'More options' at 1027,201
+! NOT FOUND: ^Download$
+! NOT FOUND: ^Download all$|^All$|^Next 10
+! tapt 'Download queue' at 367,1255
+! NOT FOUND: ^More options$
+[CL  ]   73,201  t='' d='navigationIcon' id=
+[    ]  391,201  t='Download queue' d='' id=
+[    ]  540,1238 t='(･Д･。' d='' id=text_face
+[    ]  540,1390 t='No downloads' d='' id=text_label
