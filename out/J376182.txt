@@ -1,0 +1,83 @@
+# block J376182  focus: eu.kanade.tachiyomi.j2k/eu.kanade.tachiyomi.ui.main.MainActivity  time: 00:43:38
+! tapt 'Mieruko-chan' at 891,1315
+[S   ]  540,1200 t='' d='' id=recycler
+[CL  ]  540,255  t='' d='' id=manga_header_layout
+[    ]  222,9    t='About this manga' d='' id=manga_summary_label
+[CL  ]  540,112  t='All of a sudden, Miko is able to see grotesque monsters all around her; but no o' d='' id=manga_summary
+[C   ]  540,290  t='Start reading Chapter 70.1' d='' id=start_reading_button
+[C   ]  963,169  t='More' d='' id=more_button
+[C   ]  540,447  t='' d='' id=chapter_layout
+[    ]  176,447  t='105 chapters' d='' id=chapters_title
+[    ] 1003,447  t='' d='Sort & Filter' id=filter_button
+[CL  ]  540,594  t='' d='' id=chapter_layout
+[    ]  490,572  t='Vol.15 Ch.73' d='' id=chapter_title
+[    ]  490,619  t='Oct 22, 2026 • Creeg Scans & Canidae' d='' id=chapter_scanlator
+[CL  ]  983,594  t='' d='' id=download_button
+[    ]  982,593  t='' d='Download' id=download_border
+[    ]  982,593  t='' d='Download' id=download_icon
+[CL  ]  540,757  t='' d='' id=chapter_layout
+[    ]  490,735  t='Vol.15 Ch.72' d='' id=chapter_title
+[    ]  490,782  t='Aug 15, 2026 • Creeg Scans & Canidae' d='' id=chapter_scanlator
+[CL  ]  983,757  t='' d='' id=download_button
+[    ]  982,756  t='' d='Download' id=download_border
+[    ]  982,756  t='' d='Download' id=download_icon
+[CL  ]  540,920  t='' d='' id=chapter_layout
+[    ]  490,898  t='Vol.15 Ch.71' d='' id=chapter_title
+[    ]  490,945  t='Jun 23, 2026 • Creeg Scans' d='' id=chapter_scanlator
+[CL  ]  983,920  t='' d='' id=download_button
+[    ]  982,919  t='' d='Download' id=download_border
+[    ]  982,919  t='' d='Download' id=download_icon
+[CL  ]  540,1083 t='' d='' id=chapter_layout
+[    ]  490,1061 t='Vol.14 Ch.70.5 - Volume 14 Extras' d='' id=chapter_title
+[    ]  490,1108 t='Apr 10, 2026 • The real group is the friends we made along the way' d='' id=chapter_scanlator
+[CL  ]  983,1083 t='' d='' id=download_button
+[    ]  982,1082 t='' d='Download' id=download_border
+[    ]  982,1082 t='' d='Download' id=download_icon
+[CL  ]  540,1246 t='' d='' id=chapter_layout
+[    ]  490,1224 t='Vol.14 Ch.70.2' d='' id=chapter_title
+[    ]  490,1271 t='Apr 4, 2026 • Creeg Scans' d='' id=chapter_scanlator
+[CL  ]  983,1246 t='' d='' id=download_button
+[    ]  982,1245 t='' d='Download' id=download_border
+[    ]  982,1245 t='' d='Download' id=download_icon
+[CL  ]  540,1409 t='' d='' id=chapter_layout
+[    ]  490,1387 t='Vol.14 Ch.70.1' d='' id=chapter_title
+[    ]  490,1434 t='Mar 15, 2026 • Creeg Scans' d='' id=chapter_scanlator
+[CL  ]  983,1409 t='' d='' id=download_button
+[    ]  982,1408 t='' d='Download' id=download_border
+[    ]  982,1408 t='' d='Download' id=download_icon
+[CL  ]  540,1572 t='' d='' id=chapter_layout
+[    ]  490,1550 t='Vol.14 Ch.70.1' d='' id=chapter_title
+[    ]  490,1597 t='Mar 13, 2026 • Pink Lion Scan' d='' id=chapter_scanlator
+[CL  ]  983,1572 t='' d='' id=download_button
+[    ]  982,1571 t='' d='Download' id=download_border
+[    ]  982,1571 t='' d='Download' id=download_icon
+[CL  ]  540,1735 t='' d='' id=chapter_layout
+[    ]  490,1713 t='Vol.14 Ch.69' d='' id=chapter_title
+[    ]  490,1760 t='Mar 4, 2026 • Creeg Scans' d='' id=chapter_scanlator
+[CL  ]  983,1735 t='' d='' id=download_button
+[    ]  982,1734 t='' d='Download' id=download_border
+[    ]  982,1734 t='' d='Download' id=download_icon
+[CL  ]  540,1898 t='' d='' id=chapter_layout
+[    ]  490,1876 t='Vol.14 Ch.69' d='' id=chapter_title
+[    ]  490,1923 t='Mar 2, 2026 • Pink Lion Scan' d='' id=chapter_scanlator
+[CL  ]  983,1898 t='' d='' id=download_button
+[    ]  982,1897 t='' d='Download' id=download_border
+[    ]  982,1897 t='' d='Download' id=download_icon
+[CL  ]  540,2061 t='' d='' id=chapter_layout
+[    ]  490,2039 t='Vol.14 Ch.68' d='' id=chapter_title
+[    ]  490,2086 t='Dec 31, 2025 • Canidae' d='' id=chapter_scanlator
+[CL  ]  983,2061 t='' d='' id=download_button
+[    ]  982,2060 t='' d='Download' id=download_border
+[    ]  982,2060 t='' d='Download' id=download_icon
+[CL  ]  540,2224 t='' d='' id=chapter_layout
+[    ]  490,2202 t='Vol.13 Ch.67.5 - Volume 13 Extras' d='' id=chapter_title
+[    ]  490,2249 t='Oct 22, 2025 • The real group is the friends we made along the way' d='' id=chapter_scanlator
+[CL  ]  983,2224 t='' d='' id=download_button
+[    ]  982,2223 t='' d='Download' id=download_border
+[    ]  982,2223 t='' d='Download' id=download_icon
+[CL  ]  540,2354 t='' d='' id=chapter_layout
+[    ]  490,2365 t='Vol.13 Ch.67' d='' id=chapter_title
+[    ]  490,2395 t='Nov 2, 2025 • Canidae' d='' id=chapter_scanlator
+[CL  ]  983,2354 t='' d='' id=download_button
+[    ]  982,2373 t='' d='Download' id=download_border
+[    ]  982,2373 t='' d='Download' id=download_icon
