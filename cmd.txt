@@ -246,3 +246,29 @@ shot F3_s23_source_list
 tapt ^Filter$|^Filter
 sleep 3
 shot F3_s24_source_filter
+=== F375929
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 8
+tap 405 2260
+sleep 4
+tapt ^Mairimashita
+sleep 9
+tap 228 2185
+sleep 7
+shot F3_s13b_pages
+tap 360 2185
+sleep 4
+shot F3_s13c_bookmarks
+back
+sleep 2
+tapt ^Download$
+sleep 3
+tapt ^First 5 chapters$
+sleep 1
+tapt ^More options$
+sleep 2
+shot F3_s18c_download_more_options
+tapt ^Save$
+sleep 5
+shot F3_s18b_after_download
