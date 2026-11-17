@@ -189,3 +189,19 @@ shot KA_s42_reader_options
 up
 sleep 2
 shot KA_s42b_reader_options_2
+=== KA93247
+stop io.github.glitch228.kaisoku
+launch io.github.glitch228.kaisoku
+sleep 8
+tap 675 2260
+sleep 5
+shot KA_s22_explore
+up
+sleep 2
+shot KA_s22a_explore_scrolled
+tapt ^MangaDex$
+sleep 10
+shot KA_s23_source_list
+tapt ^Filter$|^Filter
+sleep 3
+shot KA_s24_source_filter
