@@ -272,3 +272,21 @@ shot F3_s18c_download_more_options
 tapt ^Save$
 sleep 5
 shot F3_s18b_after_download
+=== F375930
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 8
+tapt ^Downloads$
+sleep 4
+shot F3_s31_downloads
+tapt ^More options$
+sleep 2
+shot F3_s31b_downloads_menu
+back
+sleep 1
+tapt ^Mairimashita
+sleep 3
+shot F3_s31c_downloads_item_open
+longt ^Mairimashita
+sleep 2
+shot F3_s31d_downloads_selection
