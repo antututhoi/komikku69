@@ -511,3 +511,30 @@ shot AZ_s13_chapters
 tapt ^More options$
 sleep 2
 shot AZ_s11_entry_menu
+=== AZ78741
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tap 73 201
+sleep 2
+tapt ^Settings$
+sleep 3
+tapt ^Backup
+sleep 3
+tapt ^Restore backup$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed2.tachibk$
+sleep 6
+tapt ^RESTORE$
+sleep 40
+shot AZ_r
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+shot AZ_s01_library
