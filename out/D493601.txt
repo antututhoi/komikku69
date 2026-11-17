@@ -1,0 +1,27 @@
+# block D493601  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.main.ui.MainActivity  time: 05:34:59
+! tapt 'Feed' at 478,2235
+! longt 'Chiyu Mahou no Machigatta Tsukaikata ~Senjou wo Kakeru Kaifuku Youin~' at 565,1155
+[    ]  489,421  t='Swipe gestures' d='' id=textView_title
+[C   ]  959,421  t='' d='Close' id=button_close
+[    ]  540,558  t='Swipe an entry right to remove it from the feed, or left to mark it as read. You' d='' id=textView_body
+[CLxk]  156,746  t='Unread' d='' id=
+[CL  ]  446,746  t='Reading' d='' id=
+[CL  ]  783,746  t='Plan to read' d='' id=
+[    ]  540,853  t='Today' d='' id=textView_title
+[CL  ]  540,995  t='' d='' id=
+[    ]  565,955  t='Maou no Ore ga Dorei Elf o Yome ni Shitanda ga, Dou Medereba ii?' d='' id=textView_title
+[C   ]  565,1016 t='2 new chapters' d='' id=textView_summary
+[C   ]  978,996  t='' d='Read' id=button_read
+[CL  ]  540,1195 t='' d='' id=
+[    ]  564,1157 t='Chiyu Mahou no Machigatta Tsukaikata ~Senjou wo Kakeru Kaifuku Youin~' d='' id=textView_title
+[C   ]  564,1216 t='2 new chapters' d='' id=textView_summary
+[C   ]  961,1196 t='' d='Read' id=button_read
+[CL  ]  540,1395 t='' d='' id=
+[    ]  565,1355 t='Tensei Kizoku no Isekai Boukenroku ~Jichou wo Shiranai Kamigami no Shito~' d='' id=textView_title
+[C   ]  565,1416 t='2 new chapters' d='' id=textView_summary
+[C   ]  978,1396 t='' d='Read' id=button_read
+[C   ]  101,208  t='' d='Done' id=action_mode_close_button
+[    ]  214,208  t='1' d='' id=action_bar_title
+[C   ]  761,208  t='' d='Mark as read' id=action_mark_read
+[C   ]  873,208  t='' d='Delete' id=action_remove
+[C   ]  985,208  t='' d='Select all' id=action_select_all
