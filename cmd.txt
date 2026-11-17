@@ -396,3 +396,16 @@ sleep 1
 swipe 300 900 900 900 300
 sleep 2
 shot Y3_s21w_history_swipe
+=== Y377830
+stop eu.kanade.tachiyomi.nightlyYokai
+launch eu.kanade.tachiyomi.nightlyYokai
+sleep 8
+tap 1016 201
+sleep 2
+shot Y3_s30_more_menu
+tapt ^Stats$|^Statistics$
+sleep 4
+shot Y3_s33_stats
+tapt ^View detailed statistics$
+sleep 4
+shot Y3_s33b_stats_detailed
