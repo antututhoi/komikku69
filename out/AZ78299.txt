@@ -1,0 +1,24 @@
+# block AZ78299  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:18:28
+[C   ]  367,499  t='' d='' id=nav_drawer_library
+[xk  ]  367,499  t='Library' d='' id=design_menu_item_text
+[C   ]  367,625  t='' d='' id=nav_drawer_updates
+[k   ]  367,625  t='Recent updates' d='' id=design_menu_item_text
+[C   ]  367,751  t='' d='' id=nav_drawer_history
+[k   ]  367,751  t='Recently read' d='' id=design_menu_item_text
+[C   ]  367,877  t='' d='' id=nav_drawer_sources
+[k   ]  367,877  t='Sources' d='' id=design_menu_item_text
+[C   ]  367,1003 t='' d='' id=nav_drawer_batch_add
+[k   ]  367,1003 t='Batch Add' d='' id=design_menu_item_text
+[C   ]  367,1129 t='' d='' id=nav_drawer_extensions
+[k   ]  367,1129 t='Extensions' d='' id=design_menu_item_text
+[C   ]  367,1255 t='' d='' id=nav_drawer_downloads
+[    ]  367,1255 t='Download queue' d='' id=design_menu_item_text
+[C   ]  367,1426 t='' d='' id=nav_drawer_settings
+[    ]  367,1426 t='Settings' d='' id=design_menu_item_text
+[CL  ]   73,201  t='' d='navigationIcon' id=
+[    ]  274,201  t='Library' d='' id=
+[C   ]  784,201  t='' d='Search' id=action_search
+[C   ]  911,201  t='' d='Filter' id=action_filter
+[CL  ] 1027,201  t='' d='More options' id=
+[    ]  540,1216 t='Σ(ಠ_ಠ)' d='' id=text_face
+[    ]  540,1390 t='Your library is empty, add series to your library from Browse.' d='' id=text_label
