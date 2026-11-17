@@ -1,0 +1,58 @@
+# block J375458  focus: eu.kanade.tachiyomi.j2k/eu.kanade.tachiyomi.ui.main.MainActivity  time: 00:31:42
+! NOT FOUND: ^Tensei Shitara Slime
+[S   ]  540,1200 t='' d='' id=library_grid_recycler
+[CL  ]  540,756  t='' d='' id=main_header_layout
+[C   ]  540,756  t='' d='' id=category_header_layout
+[    ]   52,750  t='' d='Select all' id=collapse_arrow
+[CL  ]  164,750  t='Reading' d='' id=category_title
+[C   ]  869,750  t='Title' d='' id=category_sort
+[    ] 1012,751  t='' d='Update' id=update_button
+[    ]   60,755  t='' d='Edit' id=start_refresh
+[    ] 1019,755  t='' d='Update' id=end_refresh
+[CL  ]  188,1097 t='' d='' id=manga_layout
+[    ]   44,840  t='6' d='' id=unread_text
+[CL  ]  282,1226 t='' d='' id=play_layout
+[    ]  292,1236 t='' d='Start reading' id=play_button
+[    ]  188,1332 t='Haimiya Is Scary Cute' d='' id=title
+[CL  ]  539,1097 t='' d='' id=manga_layout
+[    ]  539,1332 t='Kage no Jitsuryokusha ni Naritakute!' d='' id=title
+[CL  ]  891,1097 t='' d='' id=manga_layout
+[    ]  891,1334 t='Kaoru Hana wa Rin to Saku' d='' id=title
+[CL  ]  188,1674 t='' d='' id=manga_layout
+[    ]  188,1909 t='Ki ni Natteru Hito ga Otoko ja Nakatta' d='' id=title
+[CL  ]  539,1674 t='' d='' id=manga_layout
+[    ]  539,1909 t='Kumo desu ga, Nani ka?' d='' id=title
+[CL  ]  891,1674 t='' d='' id=manga_layout
+[    ]  891,1911 t='Mairimashita! Iruma-kun' d='' id=title
+[CL  ]  188,2181 t='' d='' id=manga_layout
+[CL  ]  539,2181 t='' d='' id=manga_layout
+[CL  ]  891,2181 t='' d='' id=manga_layout
+[C   ]  253,2069 t='' d='' id=category_hopper_layout
+[CL  ]  116,2069 t='' d='Previous:' id=up_category
+[CL  ]  253,2069 t='' d='Categories' id=category_button
+[CL  ]  390,2069 t='' d='Next:' id=down_category
+[C   ]  540,2274 t='' d='' id=
+[S   ]  540,2226 t='' d='' id=filter_scroll
+[CL  ]  115,2229 t='' d='Filter' id=filter_button
+[C   ]  372,2229 t='Not started' d='' id=firstButton
+[C   ]  685,2229 t='In progress' d='' id=secondButton
+[C   ]  973,2229 t='Unread' d='' id=firstButton
+[C   ]  247,2350 t='Group library by…' d='' id=group_by
+[C   ]  759,2350 t='Collapse all categories' d='' id=expand_categories
+[    ]  540,2166 t='' d='Drag handle' id=pill
+[C   ]  540,201  t='' d='' id=toolbar
+[    ]  540,201  t='Library' d='' id=toolbar_title
+[C   ]  889,201  t='' d='Filter' id=action_filter
+[C   ] 1016,201  t='' d='More' id=action_more
+[    ]  540,468  t='Library' d='' id=big_title
+[CL  ]  540,629  t='' d='' id=search_toolbar
+[C   ]   99,629  t='' d='' id=
+[    ]  345,607  t='Search your library' d='' id=card_title
+[    ]  235,657  t='Reading' d='' id=card_subtitle
+[L   ]  180,2242 t='' d='Library' id=nav_library
+[    ]  179,2290 t='Library' d='' id=navigation_bar_item_large_label_view
+[CL  ]  540,2242 t='' d='Recents' id=nav_recents
+[    ]  539,2290 t='Recents' d='' id=navigation_bar_item_small_label_view
+[CL  ]  900,2242 t='' d='Browse' id=nav_browse
+[    ]  899,2290 t='Browse' d='' id=navigation_bar_item_small_label_view
+[C   ]  540,2368 t='' d='' id=bottom_view
