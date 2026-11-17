@@ -131,3 +131,11 @@ tapt ^SPY.FAMILY
 sleep 8
 down
 sleep 10
+=== J375460
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tapt ^Osoraku Kanojo
+sleep 8
+down
+sleep 10
