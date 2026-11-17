@@ -430,3 +430,6 @@ tapt ^Settings$
 sleep 3
 tapt ^Backup|^Data
 sleep 3
+=== AZ78337
+tapt ^Allow$
+sleep 3
