@@ -42,3 +42,18 @@ sleep 1
 tapt ^Unread$|^Reading$
 sleep 3
 shot KA_s20f_feed_chip
+=== KA93238
+stop io.github.glitch228.kaisoku
+launch io.github.glitch228.kaisoku
+sleep 8
+tap 945 2260
+sleep 4
+swipe 300 1050 950 1050 300
+sleep 3
+shot KA_s20g_feed_swipe_right
+swipe 950 1250 200 1250 300
+sleep 3
+shot KA_s20h_feed_swipe_left
+longt ^Blue Lock|^Kumo|^Tensei|^Chiyu
+sleep 2
+shot KA_s20i_feed_longpress
