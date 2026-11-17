@@ -1,0 +1,25 @@
+# block Y377396  focus: eu.kanade.tachiyomi.nightlyYokai/eu.kanade.tachiyomi.nightlyYokai.MainActivityDefaultDummy  time: 01:03:34
+! tapt 'Close' at 540,2274
+[    ]  228,453  t='Welcome!' d='' id=
+[    ]  540,580  t='Let's pick some defaults. You can always change these things later in the settin' d='' id=
+[    ]  296,780  t='Follow system theme' d='' id=
+[Cxk ]  927,780  t='' d='' id=
+[S   ]  540,1163 t='' d='' id=
+[C   ]  228,1121 t='' d='' id=
+[    ]  304,953  t='' d='Selected' id=
+[    ]  228,1400 t='A Brighter You (Dynamic)' d='' id=
+[C   ]  559,1121 t='' d='' id=
+[    ]  559,1379 t='Pure White' d='' id=
+[C   ]  890,1121 t='' d='' id=
+[    ]  885,1379 t='Spring Blossom' d='' id=
+[S   ]  540,1762 t='' d='' id=
+[C   ]  228,1720 t='' d='' id=
+[    ]  304,1552 t='' d='Selected' id=
+[    ]  228,1999 t='A Calmer You (Dynamic)' d='' id=
+[C   ]  559,1720 t='' d='' id=
+[    ]  560,1978 t='Dark' d='' id=
+[C   ]  890,1720 t='' d='' id=
+[    ]  890,1978 t='Midnight Dusk' d='' id=
+[C   ]  540,2254 t='' d='' id=
+[    ]  540,2253 t='Next' d='' id=
+[C   ]  540,2368 t='' d='' id=bottom_view
