@@ -344,3 +344,9 @@ sh appops set io.github.glitch228.kaisoku MANAGE_EXTERNAL_STORAGE allow
 launch io.github.glitch228.kaisoku
 sleep 10
 shot KA_a
+=== KA77396
+tapt ^Allow$
+sleep 3
+up
+sleep 2
+shot KA_b
