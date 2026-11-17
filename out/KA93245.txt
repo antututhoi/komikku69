@@ -1,0 +1,93 @@
+# block KA93245  focus: com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity  time: 05:36:25
+! NOT FOUND: ^Downloads$
+! tapt 'More options' at 1027,209
+! longt 'Mairimashita! Iruma-kun' at 723,422
+[C   ]  540,1200 t='' d='' id=container_bottom_sheet
+[C   ]  540,63   t='' d='Expanded. Drag handle' id=sh_dragHandle
+[C   ]  232,210  t='' d='' id=
+[C   ]  359,210  t='' d='' id=
+[C   ]  911,209  t='' d='Find chapter' id=action_search
+[CL  ] 1027,209  t='' d='More options' id=
+[S   ]  540,1347 t='' d='' id=pager
+[S   ]  540,1347 t='' d='' id=
+[S   ]  540,350  t='' d='' id=scrollView_filter
+[CL  ]  162,341  t='English  527' d='' id=
+[CL  ]  454,341  t='Deutsch  1' d='' id=
+[CLxk]  783,341  t='English (1)  38' d='' id=
+[CL  ] 1032,341  t='English (2)  1' d='' id=
+[S   ]  540,1403 t='' d='' id=recyclerView_chapters
+[    ]  477,460  t='Volume 1' d='' id=textView_title
+[CL  ]  540,600  t='' d='' id=
+[    ]  540,575  t='Iruma-kun's Demon School' d='' id=textView_title
+[    ]  540,630  t='#1 • Jan 18, 2018 • Wicked House Translation' d='' id=textView_description
+[CL  ]  540,768  t='' d='' id=
+[    ]  540,743  t='Summoning a Familiar' d='' id=textView_title
+[    ]  540,798  t='#2 • Aug 9, 2020 • Misfits Scans' d='' id=textView_description
+[CL  ]  540,936  t='' d='' id=
+[    ]  540,911  t='Iruma and Clara' d='' id=textView_title
+[    ]  540,966  t='#3 • Jan 19, 2018 • Wicked House Translation' d='' id=textView_description
+[CL  ]  540,1104 t='' d='' id=
+[    ]  540,1079 t='Demon Friends' d='' id=textView_title
+[    ]  540,1134 t='#4 • Sep 14, 2020 • Misfits Scans' d='' id=textView_description
+[CL  ]  540,1272 t='' d='' id=
+[    ]  540,1247 t='The Misfits' d='' id=textView_title
+[    ]  540,1302 t='#5 • Sep 21, 2020 • Misfits Scans' d='' id=textView_description
+[CL  ]  540,1440 t='' d='' id=
+[    ]  540,1415 t='Flying Race, Start!' d='' id=textView_title
+[    ]  540,1470 t='#6 • Oct 12, 2020 • Misfits Scans' d='' id=textView_description
+[CL  ]  540,1608 t='' d='' id=
+[    ]  540,1583 t='The Person to Become Demon King' d='' id=textView_title
+[    ]  540,1638 t='#7 • Jan 19, 2018 • Wicked House Translation' d='' id=textView_description
+[CL  ]  540,1776 t='' d='' id=
+[    ]  540,1751 t='EXTRA' d='' id=textView_title
+[    ]  540,1806 t='#7.5 • Oct 17, 2020 • Misfits Scans' d='' id=textView_description
+[    ]  477,1914 t='Volume 3' d='' id=textView_title
+[CL  ]  540,2054 t='' d='' id=
+[    ]  540,2029 t='Enchated by Clara' d='' id=textView_title
+[    ]  540,2084 t='#17 • Mar 3, 2018 • Cyan Steam' d='' id=textView_description
+[CL  ]  540,2222 t='' d='' id=
+[    ]  540,2197 t='The Battra Challenge' d='' id=textView_title
+[    ]  540,2252 t='#18 • Mar 6, 2018 • Cyan Steam' d='' id=textView_description
+[    ]  477,2357 t='Volume 4' d='' id=textView_title
+[C   ]  540,289  t='' d='' id=backdrop_click_area
+[C   ]   73,211  t='' d='Navigate up' id=
+[C   ]  784,211  t='' d='Favorite this' id=action_favourite
+[C   ]  911,211  t='' d='Share' id=action_share
+[CL  ] 1027,211  t='' d='More options' id=
+[S   ]  540,1348 t='' d='' id=scrollView
+[C   ]  204,562  t='' d='' id=imageView_cover
+[C   ]  723,422  t='Mairimashita! Iruma-kun' d='' id=textView_title
+[C   ]  723,570  t='Welcome to Demon School! Iruma-kun' d='' id=textView_subtitle
+[C   ]  563,706  t='Reading' d='' id=chip_favorite
+[    ]  162,916  t='Source' d='' id=textView_source_label
+[C   ]  200,961  t='MangaDex' d='' id=textView_source
+[    ]  693,916  t='Translation' d='' id=textView_translation_label
+[    ]  701,961  t='English' d='' id=textView_translation
+[    ]  160,1058 t='Author' d='' id=textView_author_label
+[    ]  222,1103 t='Nishi Osamu' d='' id=textView_author
+[    ]  649,1058 t='State' d='' id=textView_state_label
+[    ]  679,1103 t='Ongoing' d='' id=textView_state
+[    ]  178,1200 t='Chapters' d='' id=textView_chapters_label
+[    ]  323,1245 t='Chapter 1 of 38 (2 h 6 m)' d='' id=textView_chapters
+[    ]  177,1342 t='Progress' d='' id=textView_progress_label
+[    ] 1015,1383 t='0%' d='' id=textView_progress
+[    ]  484,1519 t='Description' d='' id=textView_description_title
+[C   ] 1003,1521 t='More' d='' id=button_description_more
+[    ]  540,1696 t='Hopeless pushover Iruma Suzuki has found himself in a devil of a predicament... ' d='' id=textView_description
+[CL  ]  175,1889 t='School Life' d='' id=
+[CL  ]  415,1889 t='Magic' d='' id=
+[CL  ]  640,1889 t='Romance' d='' id=
+[CL  ]  864,1889 t='Isekai' d='' id=
+[CL  ]  202,1989 t='Crossdressing' d='' id=
+[CL  ]  487,1989 t='Comedy' d='' id=
+[CL  ]  706,1989 t='Action' d='' id=
+[CL  ]  925,1989 t='Demons' d='' id=
+[CL  ]  148,2089 t='Fantasy' d='' id=
+[CL  ]  390,2089 t='Monsters' d='' id=
+[    ]  437,2199 t='Local recommendations · Beta' d='' id=textView_related_title
+[C   ]  956,2200 t='Show all' d='' id=button_related_more
+[S   ]  540,2331 t='' d='' id=recyclerView_related
+[CL  ]  171,2334 t='' d='' id=
+[CL  ]  449,2334 t='' d='' id=
+[CL  ]  727,2334 t='' d='' id=
+[CL  ]  975,2334 t='' d='' id=
