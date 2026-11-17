@@ -1,0 +1,5 @@
+# block AZ78410  focus: PopupWindow:1108eb3  time: 01:25:30
+! NOT FOUND: ^Mieruko|^Mairimashita
+! tapt 'More options' at 1027,201
+[    ]  812,222  t='Update library' d='' id=title
+[    ]  812,348  t='Source migration' d='' id=title
