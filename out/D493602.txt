@@ -1,0 +1,29 @@
+# block D493602  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.main.ui.MainActivity  time: 05:36:00
+! tapt 'History' at 621,2235
+! tapt 'More' at 989,199
+! tapt 'Display options' at 806,550
+! tapt 'On device' at 448,645
+[C   ]   91,199  t='' d='Settings' id=button_settings
+[C   ]  540,199  t='Search anything' d='' id=search_bar
+[    ]  540,199  t='Search anything' d='' id=open_search_bar_text_view
+[C   ]  989,199  t='' d='More' id=button_overflow
+[S   ]  540,377  t='' d='' id=scrollView
+[CL  ]  147,372  t='Status' d='' id=
+[CLxk]  448,372  t='On device' d='' id=
+[CL  ]  819,372  t='New chapters' d='' id=
+[CL  ] 1046,372  t='Completed' d='' id=
+[    ]  539,1165 t='Nothing found' d='' id=textPrimary
+[    ]  540,1297 t='There are no manga matching the filters you selected' d='' id=textSecondary
+[C   ]  540,1453 t='Reset filter' d='' id=button_retry
+[C   ]  170,2235 t='' d='' id=
+[    ]  170,2235 t='' d='Favorites' id=
+[C   ]  313,2235 t='' d='' id=
+[    ]  313,2235 t='' d='Feed' id=
+[    ]  334,2220 t='3' d='' id=
+[    ]  530,2235 t='' d='History' id=
+[    ]  571,2235 t='History' d='' id=
+[C   ]  747,2235 t='' d='' id=
+[    ]  747,2235 t='' d='Explore' id=
+[L   ]  925,2235 t='' d='' id=
+[    ]  925,2235 t='' d='Continue reading' id=
+[CL  ]  925,2235 t='' d='' id=
