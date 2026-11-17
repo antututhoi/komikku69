@@ -1,0 +1,17 @@
+# block KA93240  focus: com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity  time: 05:31:26
+! NOT FOUND: ^Mairimashita|^Mieruko|^Kumo
+! NOT FOUND: ^More options$
+[C   ]  540,1200 t='' d='' id=touch_outside
+[C   ]  540,1294 t='' d='Collapsed. Drag handle' id=sh_dragHandle
+[    ]  540,1382 t='List mode' d='' id=
+[Ck  ]  167,1527 t='Compact' d='' id=button_list
+[Ck  ]  415,1527 t='Details' d='' id=button_list_detailed
+[Cxk ]  663,1527 t='Grid' d='' id=button_grid
+[Ck  ]  912,1527 t='Cover only' d='' id=button_cover_only
+[    ]  540,1693 t='Grid size' d='' id=textView_grid_title
+[    ]  540,1912 t='Sorting order' d='' id=textView_order_title
+[CLS ]  374,2053 t='' d='' id=spinner_order
+[k   ]  374,2053 t='Last read' d='' id=text1
+[CLS ]  872,2053 t='' d='' id=spinner_direction
+[k   ]  872,2053 t='Descending' d='' id=text1
+[Cxk ]  540,2232 t='Group' d='' id=switch_grouping
