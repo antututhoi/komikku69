@@ -275,3 +275,7 @@ sleep 3
 === Y377578
 tapt ^Next$|^Allow$
 sleep 3
+=== Y377579
+tapt ^Next$|^Get started$|^Finish$
+sleep 3
+shot Y3_c
