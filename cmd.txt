@@ -157,3 +157,18 @@ shot KA_s13b_pages
 tapt ^Bookmarks$|^Bookmarks
 sleep 3
 shot KA_s13c_bookmarks
+=== KA91782
+stop io.github.glitch228.kaisoku
+launch io.github.glitch228.kaisoku
+sleep 8
+tapt ^Downloads$
+sleep 4
+shot KA_s31_downloads
+tapt ^More options$
+sleep 2
+shot KA_s31b_downloads_menu
+back
+sleep 1
+longt ^Mairimashita
+sleep 2
+shot KA_s31c_downloads_selection
