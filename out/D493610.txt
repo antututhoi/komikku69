@@ -1,0 +1,4 @@
+# block D493610  focus: ?  time: 05:43:52
+! NOT FOUND: ^Explore$
+! NOT FOUND: ^MangaDex$
+! NOT FOUND: ^Filter$|^Filter
