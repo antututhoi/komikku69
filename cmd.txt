@@ -647,3 +647,7 @@ sleep 1
 tapt ^Download$
 sleep 3
 shot KA_s18_download_dialog
+=== KA78218
+tapt ^Download$|^Confirm$|^OK$|^Start$
+sleep 4
+shot KA_s18b_after_download
