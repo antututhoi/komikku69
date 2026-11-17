@@ -179,3 +179,20 @@ shot F3_s18_download_dialog
 tapt ^Download$|^Confirm$|^OK$|^Start$
 sleep 4
 shot F3_s18b_after_download
+=== F375180
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 8
+tap 405 2260
+sleep 4
+tapt ^Mairimashita
+sleep 9
+swipe 540 2150 540 500 300
+sleep 3
+shot F3_s13_chapters
+tapt ^Pages$|^Pages
+sleep 5
+shot F3_s13b_pages
+tapt ^Bookmarks$|^Bookmarks
+sleep 3
+shot F3_s13c_bookmarks
