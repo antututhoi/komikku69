@@ -1,0 +1,11 @@
+# block Y376331  focus: eu.kanade.tachiyomi.nightlyYokai/eu.kanade.tachiyomi.nightlyYokai.MainActivityDefaultDummy  time: 00:46:35
+! Success
+
+! 
+[C   ]  540,1200 t='' d='' id=touch_outside
+[C   ]  540,2011 t='' d='' id=title_layout
+[    ]  540,2011 t='Updated to v1.10.3-r6433' d='' id=toolbar_title
+[CL  ]  540,2148 t='' d='' id=
+[    ]  540,2148 t='What's new in this release' d='' id=item_text_view
+[CL  ]  540,2274 t='' d='' id=
+[    ]  540,2274 t='Close' d='' id=item_text_view
