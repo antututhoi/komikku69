@@ -38,3 +38,21 @@ sleep 8
 tapt ^Feed
 sleep 3
 shot D3_x
+=== D375173
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 8
+tapt ^Feed
+sleep 4
+shot D3_s20_feed
+up
+sleep 2
+shot D3_s20a_feed_scrolled
+tapt ^More$
+sleep 2
+shot D3_s20m_feed_menu
+back
+sleep 1
+tapt ^Unread$|^Reading$
+sleep 3
+shot D3_s20f_feed_chip
