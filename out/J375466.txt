@@ -1,0 +1,94 @@
+# block J375466  focus: eu.kanade.tachiyomi.j2k/eu.kanade.tachiyomi.ui.main.MainActivity  time: 00:37:16
+! tapt 'All' at 409,766
+! tapt 'History' at 671,766
+! tapt 'Updates' at 933,766
+[S   ]  540,1200 t='' d='' id=recycler
+[CL  ]  540,906  t='' d='' id=
+[    ]  540,906  t='Fetched Today' d='' id=section_text
+[    ]  540,906  t='Library last updated: 1 minute ago' d='' id=last_updated_text
+[CL  ]  540,1125 t='' d='' id=recent_manga_layout
+[C   ]  105,1057 t='' d='' id=card_layout
+[    ]  475,1030 t='Ch.186 - My Blood Is Pumping' d='' id=title
+[    ]  475,1084 t='The Guy She Was Interested in Wasn't a Guy at All' d='' id=subtitle
+[C   ]  861,1062 t='' d='Show more chapters' id=show_more_chapters
+[C   ]  979,1062 t='' d='' id=download_button
+[    ]  978,1062 t='' d='Download' id=download_border
+[    ]  978,1062 t='' d='Download' id=download_icon
+[CL  ]  540,1199 t='' d='' id=sub_card
+[    ]  552,1199 t='Ch.187 - Welcome Back!' d='' id=title
+[C   ]  979,1199 t='' d='' id=download_button
+[    ]  978,1199 t='' d='Download' id=download_border
+[    ]  978,1199 t='' d='Download' id=download_icon
+[CL  ]  540,1655 t='' d='' id=recent_manga_layout
+[C   ]  105,1335 t='' d='' id=card_layout
+[    ]  475,1308 t='Ch.461 - From Pawn to Knight' d='' id=title
+[    ]  475,1362 t='Welcome to Demon School! Iruma-kun' d='' id=subtitle
+[C   ]  861,1340 t='' d='Show more chapters' id=show_more_chapters
+[C   ]  979,1340 t='' d='' id=download_button
+[    ]  978,1340 t='' d='Download' id=download_border
+[    ]  978,1340 t='' d='Download' id=download_icon
+[CL  ]  540,1477 t='' d='' id=sub_card
+[    ]  552,1477 t='Ch.462 - Message' d='' id=title
+[C   ]  979,1477 t='' d='' id=download_button
+[    ]  978,1477 t='' d='Download' id=download_border
+[    ]  978,1477 t='' d='Download' id=download_icon
+[CL  ]  540,1603 t='' d='' id=sub_card
+[    ]  552,1603 t='Ch.463 - Delivery' d='' id=title
+[C   ]  979,1603 t='' d='' id=download_button
+[    ]  978,1603 t='' d='Download' id=download_border
+[    ]  978,1603 t='' d='Download' id=download_icon
+[CL  ]  540,1729 t='' d='' id=sub_card
+[    ]  552,1729 t='Ch.464 - You, Beyond Reach' d='' id=title
+[C   ]  979,1729 t='' d='' id=download_button
+[    ]  978,1729 t='' d='Download' id=download_border
+[    ]  978,1729 t='' d='Download' id=download_icon
+[CL  ]  540,1855 t='' d='' id=sub_card
+[    ]  552,1855 t='Ch.465 - To You, Still Out of Sight' d='' id=title
+[C   ]  979,1855 t='' d='' id=download_button
+[    ]  978,1855 t='' d='Download' id=download_border
+[    ]  978,1855 t='' d='Download' id=download_icon
+[CL  ]  540,1981 t='' d='' id=sub_card
+[    ]  552,1981 t='Ch.466 - Unyielding Conviction' d='' id=title
+[C   ]  979,1981 t='' d='' id=download_button
+[    ]  978,1981 t='' d='Download' id=download_border
+[    ]  978,1981 t='' d='Download' id=download_icon
+[CL  ]  540,2224 t='' d='' id=recent_manga_layout
+[C   ]  105,2117 t='' d='' id=card_layout
+[    ]  264,2090 t='Ch.37.5' d='' id=title
+[    ]  475,2144 t='She's Likely Aiming for My Older Brother' d='' id=subtitle
+[C   ]  861,2122 t='' d='Show more chapters' id=show_more_chapters
+[C   ]  979,2122 t='' d='' id=download_button
+[    ]  978,2122 t='' d='Download' id=download_border
+[    ]  978,2122 t='' d='Download' id=download_icon
+[    ]  301,2195 t='Uwaki Scans' d='' id=body
+[CL  ]  540,2315 t='' d='' id=sub_card
+[    ]  552,2293 t='Ch.37.5' d='' id=title
+[    ]  552,2339 t='jacktherippertransl' d='' id=subtitle
+[C   ]  979,2315 t='' d='' id=download_button
+[    ]  978,2315 t='' d='Download' id=download_border
+[    ]  978,2315 t='' d='Download' id=download_icon
+[CL  ]  540,2396 t='' d='' id=sub_card
+[C   ]  540,201  t='' d='' id=toolbar
+[    ]  540,201  t='Recents' d='' id=toolbar_title
+[C   ]  889,201  t='' d='Display options' id=display_options
+[C   ] 1016,201  t='' d='More' id=action_more
+[    ]  540,468  t='Recents' d='' id=big_title
+[CL  ]  540,629  t='' d='' id=search_toolbar
+[C   ]   99,629  t='' d='' id=
+[    ]  318,629  t='Search updates' d='' id=card_title
+[C   ]  540,766  t='' d='' id=tabs_frame_layout
+[C   ]  147,766  t='' d='Grouped' id=
+[    ]  147,765  t='Grouped' d='' id=
+[C   ]  409,766  t='' d='All' id=
+[    ]  408,765  t='All' d='' id=
+[C   ]  671,766  t='' d='History' id=
+[    ]  671,765  t='History' d='' id=
+[    ]  933,766  t='' d='Updates' id=
+[    ]  932,765  t='Updates' d='' id=
+[CL  ]  180,2242 t='' d='Library' id=nav_library
+[    ]  179,2290 t='Library' d='' id=navigation_bar_item_small_label_view
+[L   ]  540,2242 t='' d='Recents' id=nav_recents
+[    ]  539,2290 t='Recents' d='' id=navigation_bar_item_large_label_view
+[CL  ]  900,2242 t='' d='Browse' id=nav_browse
+[    ]  899,2290 t='Browse' d='' id=navigation_bar_item_small_label_view
+[C   ]  540,2368 t='' d='' id=bottom_view
