@@ -1,0 +1,32 @@
+# block J375048  focus: eu.kanade.tachiyomi.j2k/eu.kanade.tachiyomi.ui.main.MainActivity  time: 00:24:22
+! tapt 'Settings' at 716,478
+[C   ]  540,773  t='' d='' id=
+[    ]  264,773  t='General' d='' id=title
+[C   ]  540,914  t='' d='' id=
+[    ]  304,914  t='Appearance' d='' id=title
+[C   ]  540,1055 t='' d='' id=
+[    ]  256,1055 t='Library' d='' id=title
+[C   ]  540,1196 t='' d='' id=
+[    ]  257,1196 t='Reader' d='' id=title
+[C   ]  540,1337 t='' d='' id=
+[    ]  295,1337 t='Downloads' d='' id=title
+[C   ]  540,1478 t='' d='' id=
+[    ]  261,1478 t='Browse' d='' id=title
+[C   ]  540,1619 t='' d='' id=
+[    ]  272,1619 t='Tracking' d='' id=title
+[C   ]  540,1760 t='' d='' id=
+[    ]  375,1760 t='Backup and restore' d='' id=title
+[C   ]  540,1901 t='' d='' id=
+[    ]  383,1901 t='Security and privacy' d='' id=title
+[C   ]  540,2042 t='' d='' id=
+[    ]  284,2042 t='Advanced' d='' id=title
+[C   ]  540,2183 t='' d='' id=
+[    ]  246,2183 t='About' d='' id=title
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  253,201  t='Settings' d='' id=toolbar_title
+[C   ] 1016,201  t='' d='Help' id=action_help
+[    ]  540,468  t='Settings' d='' id=big_title
+[CL  ]  540,629  t='' d='' id=search_toolbar
+[C   ]   99,629  t='' d='' id=
+[    ]  318,629  t='Search settings' d='' id=card_title
