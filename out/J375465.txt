@@ -1,0 +1,65 @@
+# block J375465  focus: eu.kanade.tachiyomi.j2k/eu.kanade.tachiyomi.ui.main.MainActivity  time: 00:36:46
+[CL  ]  540,879  t='' d='' id=recent_item
+[    ]  194,877  t='New chapters' d='' id=title
+[CL  ]  540,1055 t='' d='' id=recent_manga_layout
+[C   ]  131,1055 t='' d='' id=card_layout
+[    ]  298,967  t='Ch.46' d='' id=title
+[    ]  428,1021 t='Haimiya Is Scary Cute' d='' id=subtitle
+[    ]  442,1097 t='Fetched 5 minutes ago
+Updated Oct 28, 2026' d='' id=body
+[C   ]  979,1111 t='' d='' id=download_button
+[    ]  978,1111 t='' d='Download' id=download_border
+[    ]  978,1111 t='' d='Download' id=download_icon
+[CL  ]  540,1302 t='' d='' id=recent_manga_layout
+[C   ]  131,1302 t='' d='' id=card_layout
+[    ]  527,1214 t='Ch.461 - From Pawn to Knight' d='' id=title
+[    ]  566,1268 t='Welcome to Demon School! Iruma-kun' d='' id=subtitle
+[    ]  442,1344 t='Fetched 4 minutes ago
+Updated Oct 8, 2026' d='' id=body
+[C   ]  979,1358 t='' d='' id=download_button
+[    ]  978,1358 t='' d='Download' id=download_border
+[    ]  978,1358 t='' d='Download' id=download_icon
+[CL  ]  540,1549 t='' d='' id=recent_manga_layout
+[C   ]  131,1549 t='' d='' id=card_layout
+[    ]  629,1461 t='Ch.181 - Treasured Clips of Her Fave (Girlfriend)' d='' id=title
+[    ]  629,1515 t='The Guy She Was Interested in Wasn't a Guy at All' d='' id=subtitle
+[    ]  442,1591 t='Fetched 4 minutes ago
+Updated Oct 4, 2026' d='' id=body
+[C   ]  979,1605 t='' d='' id=download_button
+[    ]  978,1605 t='' d='Download' id=download_border
+[    ]  978,1605 t='' d='Download' id=download_icon
+[CL  ]  540,1796 t='' d='' id=recent_manga_layout
+[C   ]  131,1796 t='' d='' id=card_layout
+[    ]  316,1708 t='Ch.37.5' d='' id=title
+[    ]  583,1762 t='She's Likely Aiming for My Older Brother' d='' id=subtitle
+[    ]  442,1838 t='Fetched 4 minutes ago
+Updated Oct 2, 2026' d='' id=body
+[C   ]  979,1852 t='' d='' id=download_button
+[    ]  978,1852 t='' d='Download' id=download_border
+[    ]  978,1852 t='' d='Download' id=download_icon
+[CL  ]  540,1971 t='' d='' id=recent_item
+[    ]  295,1963 t='View all updates' d='' id=title
+[C   ]  540,201  t='' d='' id=toolbar
+[    ]  540,201  t='Recents' d='' id=toolbar_title
+[C   ]  889,201  t='' d='Display options' id=display_options
+[C   ] 1016,201  t='' d='More' id=action_more
+[    ]  540,468  t='Recents' d='' id=big_title
+[CL  ]  540,629  t='' d='' id=search_toolbar
+[C   ]   99,629  t='' d='' id=
+[    ]  405,629  t='Search updates & history' d='' id=card_title
+[C   ]  540,766  t='' d='' id=tabs_frame_layout
+[    ]  147,766  t='' d='Grouped' id=
+[    ]  147,765  t='Grouped' d='' id=
+[C   ]  409,766  t='' d='All' id=
+[    ]  408,765  t='All' d='' id=
+[C   ]  671,766  t='' d='History' id=
+[    ]  671,765  t='History' d='' id=
+[C   ]  933,766  t='' d='Updates' id=
+[    ]  932,765  t='Updates' d='' id=
+[CL  ]  180,2242 t='' d='Library' id=nav_library
+[    ]  179,2290 t='Library' d='' id=navigation_bar_item_small_label_view
+[L   ]  540,2242 t='' d='Recents' id=nav_recents
+[    ]  539,2290 t='Recents' d='' id=navigation_bar_item_large_label_view
+[CL  ]  900,2242 t='' d='Browse' id=nav_browse
+[    ]  899,2290 t='Browse' d='' id=navigation_bar_item_small_label_view
+[C   ]  540,2368 t='' d='' id=bottom_view
