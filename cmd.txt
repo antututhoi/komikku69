@@ -1,0 +1,2 @@
+=== KB91642
+host cd $GITHUB_WORKSPACE && git show HEAD:.maestro69/apps.txt | grep -i "^Kaisoku" > .maestro69/apps.txt && mkdir -p /tmp/old && mv apks/*.apk /tmp/old/ ; bash .maestro69/get_apks.sh 2>&1 | tail -3; ls apks; for f in apks/*.apk; do adb install -r -g $f; done
