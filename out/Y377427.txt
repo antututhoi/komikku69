@@ -1,0 +1,13 @@
+# block Y377427  focus: eu.kanade.tachiyomi.nightlyYokai/eu.kanade.tachiyomi.nightlyYokai.MainActivityDefaultDummy  time: 01:04:00
+! tapt 'Next' at 540,2253
+[    ]  228,453  t='Welcome!' d='' id=
+[    ]  540,580  t='Let's pick some defaults. You can always change these things later in the settin' d='' id=
+[    ]  540,906  t='Select a folder where Yōkai Nightly will store chapter downloads, backups, and m' d='' id=
+[C   ]  540,1180 t='' d='' id=
+[    ]  540,1179 t='Select a folder' d='' id=
+[    ]  540,1455 t='Updating from an older version and not sure what to select? Refer to the Tachiyo' d='' id=
+[C   ]  540,1666 t='' d='' id=
+[    ]  540,1665 t='Storage guide' d='' id=
+[C   ]  540,2254 t='' d='' id=
+[    ]  540,2253 t='Next' d='' id=
+[C   ]  540,2368 t='' d='' id=bottom_view
