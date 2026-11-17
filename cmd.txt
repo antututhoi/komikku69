@@ -78,3 +78,15 @@ sleep 1
 tapt ^New chapters$|^On device$
 sleep 3
 shot KA_s21f_history_chip
+=== KA93240
+stop io.github.glitch228.kaisoku
+launch io.github.glitch228.kaisoku
+sleep 8
+tap 135 2260
+sleep 4
+longt ^Mairimashita|^Mieruko|^Kumo
+sleep 2
+shot KA_s21s_history_selection
+tapt ^More options$
+sleep 2
+shot KA_s21t_history_selection_menu
