@@ -77,3 +77,21 @@ stop eu.kanade.tachiyomi.j2k
 launch eu.kanade.tachiyomi.j2k
 sleep 7
 shot J3_s01_library
+=== J375298
+tap 1016 201
+sleep 2
+tapt ^Settings$
+sleep 3
+tapt ^Backup and restore$
+sleep 3
+tapt ^Restore backup$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed2.tachibk$
+sleep 6
+shot J3_y
