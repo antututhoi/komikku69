@@ -356,3 +356,27 @@ shot Y3_s13b_chapters_downloading
 longt ^Vol.14 Ch.68
 sleep 2
 shot Y3_s14_chapter_longpress
+=== Y377828
+stop eu.kanade.tachiyomi.nightlyYokai
+launch eu.kanade.tachiyomi.nightlyYokai
+sleep 8
+tap 540 2242
+sleep 4
+shot Y3_s20_recents_grouped
+tapt ^All$
+sleep 3
+shot Y3_s20a_recents_all
+tapt ^History$
+sleep 3
+shot Y3_s21_history
+tapt ^Updates$
+sleep 3
+shot Y3_s20b_updates
+tapt ^Display options$
+sleep 3
+shot Y3_s20o_recents_display_options
+back
+sleep 1
+swipe 540 2090 540 600 300
+sleep 3
+shot Y3_s31_download_queue
