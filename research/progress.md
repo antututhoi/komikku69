@@ -62,3 +62,12 @@ New tooling: lanes b and c (`research_69_lanes.yml`, `.research69/lanes.txt`, `L
 - Kaisoku (KA): same family; labelled bottom bar, "In favorites since" + Translation flag on details, History list options with sort order. Tour running.
 - Board rows added: CMP-H1, CMP-OT-6, VIS-11, VIS-12.
 Still to do: TachiyomiAZ filled screens, DropSauce rest (details, downloads, reader), Kaisoku rest, Kototoro retry, final per-screen tables in SUMMARY.md.
+
+## Recheck status at 17 Nov 05:45 UTC
+Filled-screen tour finished for: 69-Komikku, Mihon, TachiyomiSY, Tsundoku, Chimahon, J2K, Yokai, TachiyomiAZ, Futon, Kaisoku.
+- TachiyomiAZ (AZ): old Tachiyomi look. Drawer menu, Recent updates list, Recently read as cards with REMOVE / RESUME, entry with INFO / CHAPTERS tabs, Download menu has "Custom", Download queue with drag handles. Restore needs: trust extension first, then RESTORE twice.
+- Kaisoku (KA): all screens incl. details, chapter panel with language chips (English 527 / Deutsch 1 …), reader, Explore, MangaDex list with tag chips.
+- DropSauce: Feed, History, Favourites, details header captured (wavy progress bar, one big "Reading" button, Read button with arrow). The virtual phone dies every time DropSauce loads chapters through the Mihon extension (same as Kototoro), with both backup types; chapter list / reader / downloads there stay code-only.
+- Kototoro: not retried successfully (same crash).
+- Board rows from the recheck: CMP-H1, CMP-OT-6, VIS-11, VIS-12, CMP-D6.
+Pictures: research/<app>/tour2/ and research/<app>/<area>/*_tour_*.
