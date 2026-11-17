@@ -202,3 +202,13 @@ shot J3_s13_chapters
 tapt ^More options$|^More$
 sleep 2
 shot J3_s11_entry_menu
+=== J376182
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tapt ^Mieruko-chan
+sleep 8
+shot J3_s10_entry
+up
+sleep 2
+shot J3_s13_chapters
