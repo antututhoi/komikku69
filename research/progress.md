@@ -52,3 +52,13 @@ Standard tour (same ~40 screens, `tour.py`), pictures in `research/<app>/<area>/
 - Chimahon (C2): complete. Updates tab lives under More (bottom bar: Library, History, Browse, Dictionary, More). Manga / Anime / Novel tabs on Updates, History, Categories. Statistics by period with weekday strip, streak, speed (board CMP-OT-6).
 - Confirmed again: in 69-Komikku "Update library" ends without fetching missing chapters; refreshing one entry fetches them (fix first in build phase).
 Still to tour with filled screens: J2K, Yokai, TachiyomiAZ, Futon, Kaisoku, DropSauce (session 6).
+
+## Recheck, sessions 6-7 (16-17 Nov): three virtual phones side by side
+New tooling: lanes b and c (`research_69_lanes.yml`, `.research69/lanes.txt`, `LANE=b ctl.sh …`), `kset.py` (fresh setup per app), `ktour.py` (Kotatsu-type tour), `j2full.py` (J2K/Yokai tour), `sqlrun.py` (root SQL on the phone; `feed.sql` puts test rows into the Kotatsu-type "new chapters" feed, which a backup cannot carry).
+- J2K (J3): filled Recents (Grouped / All / History / Updates), entry page, chapter rows downloading, bottom "Downloading: …" bar on Recents, Stats with donut. Titles show in English there.
+- Yokai (Y3): same as J2K plus full-screen Download queue (drag handles, per-item menu, Resume button, swipe to cancel), chapter long-press sheet (mark previous / a range as read or unread), Statistics details.
+- Futon (F3): filled Feed (cover row with count + progress ring, category chips, list by day, badge on the tab), History grid by day with chips, favourites with progress rings, details + pull-up chapters, "Save manga" dialog (whole manga / one translation / first 5 / next unread 5), reader long-press sheet, reader chapters sheet, Explore tiles + source icons, Sources catalog.
+- DropSauce (D3): Feed with round play buttons, Unread chip, swipe hint card, "Marked as read · Undo"; History grid + Display options sheet (list modes, group, grid size, title over cover, spacing). Its phone stopped answering when the tour reached the details page; rest to redo.
+- Kaisoku (KA): same family; labelled bottom bar, "In favorites since" + Translation flag on details, History list options with sort order. Tour running.
+- Board rows added: CMP-H1, CMP-OT-6, VIS-11, VIS-12.
+Still to do: TachiyomiAZ filled screens, DropSauce rest (details, downloads, reader), Kaisoku rest, Kototoro retry, final per-screen tables in SUMMARY.md.
