@@ -1,0 +1,8 @@
+# block AZ78254  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:18:08
+[CL  ]   73,201  t='' d='navigationIcon' id=
+[    ]  274,201  t='Library' d='' id=
+[C   ]  784,201  t='' d='Search' id=action_search
+[C   ]  911,201  t='' d='Filter' id=action_filter
+[CL  ] 1027,201  t='' d='More options' id=
+[    ]  540,1216 t='Σ(ಠ_ಠ)' d='' id=text_face
+[    ]  540,1390 t='Your library is empty, add series to your library from Browse.' d='' id=text_label
