@@ -263,3 +263,12 @@ sleep 3
 === Y377428
 tapt ^Select a folder$|^Next$
 sleep 3
+=== Y377577
+tapt ^Documents$
+sleep 2
+tapt ^USE THIS FOLDER$
+sleep 2
+tapt ^ALLOW$|^Allow$
+sleep 3
+tapt ^Next$
+sleep 3
