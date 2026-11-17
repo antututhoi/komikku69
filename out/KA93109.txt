@@ -1,0 +1,20 @@
+# block KA93109  focus: com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity  time: 05:26:55
+! Success
+
+! 
+! 
+! tapt 'Allow' at 540,1304
+! tapt 'Restore from backup' at 278,353
+! tapt 'Show roots' at 73,191
+! tapt 'tour' at 221,738
+! tapt 'seed_kotatsu2.zip' at 832,1186
+! tapt 'Restore' at 829,1603
+! NOT FOUND: ^Done$|^OK$|^Close$
+[    ]  446,824  t='Restore from backup' d='' id=alertTitle
+[Cxk ]  540,993  t='History' d='' id=
+[Cxk ]  540,1119 t='Favorite categories' d='' id=
+[Cxk ]  540,1245 t='Favorites' d='' id=
+[Ck  ]  540,1371 t='Merge with existing data' d='' id=checkbox_merge
+[    ]  540,1476 t='Backup date: Nov 13, 2026 1:15 AM' d='' id=textView_subtitle
+[C   ]  621,1603 t='Cancel' d='' id=button_cancel
+[C   ]  829,1603 t='Restore' d='' id=button_restore
