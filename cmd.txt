@@ -597,3 +597,31 @@ shot AZ_s21_history
 tapt ^REMOVE$|^Remove$ 0
 sleep 2
 shot AZ_s21r_history_remove_dialog
+=== AZ78885
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tapt ^Mieruko|^Mairimashita
+sleep 8
+shot AZ_s10_entry
+tapt ^Chapters$|^CHAPTERS$
+sleep 3
+shot AZ_s13_chapters
+longt ^Vol|^Ch
+sleep 2
+shot AZ_s14_chapter_selection
+tapt ^Select all$
+sleep 1
+tapt ^Download$
+sleep 3
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tap 73 201
+sleep 2
+tapt ^Download queue$
+sleep 5
+shot AZ_s31_download_queue
+tapt ^More options$
+sleep 2
+shot AZ_s31b_download_queue_menu
