@@ -1,0 +1,21 @@
+# block Y377827  focus: eu.kanade.tachiyomi.nightlyYokai/eu.kanade.tachiyomi.nightlyYokai.MainActivityDefaultDummy  time: 01:13:50
+! tapt 'Mieruko-chan' at 891,1326
+! tapt 'Download' at 1008,642
+! tapt 'Download' at 1008,803
+! tapt 'Download' at 1008,964
+! tapt 'Download' at 1008,1286
+! tapt 'Download' at 1008,1447
+! longt 'Vol.14 Ch.68' at 490,2070
+[C   ]  540,1200 t='' d='' id=touch_outside
+[C   ]  540,1633 t='' d='' id=title_layout
+[    ]  540,1633 t='Vol.14 Ch.68' d='' id=toolbar_title
+[CL  ]  540,1770 t='' d='' id=
+[    ]  540,1770 t='Open in WebView' d='' id=item_text_view
+[CL  ]  540,1896 t='' d='' id=
+[    ]  540,1896 t='Mark previous chapters as read' d='' id=item_text_view
+[CL  ]  540,2022 t='' d='' id=
+[    ]  540,2022 t='Mark previous chapters as unread' d='' id=item_text_view
+[CL  ]  540,2148 t='' d='' id=
+[    ]  540,2148 t='Mark a range of chapters as read' d='' id=item_text_view
+[CL  ]  540,2274 t='' d='' id=
+[    ]  540,2274 t='Mark a range of chapters as unread' d='' id=item_text_view
