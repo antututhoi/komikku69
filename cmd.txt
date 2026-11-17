@@ -325,3 +325,15 @@ sleep 1
 tap 904 2190
 sleep 3
 shot F3_s43_reader_chapters
+=== F376330
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 8
+tap 675 2260
+sleep 5
+tapt ^Downloads$ 1
+sleep 5
+shot F3_s31_downloads
+tapt ^More options$
+sleep 2
+shot F3_s31b_downloads_menu
