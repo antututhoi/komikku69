@@ -1,0 +1,32 @@
+=== D391636
+sh pm clear org.haziffe.dropsauce
+sh appops set org.haziffe.dropsauce MANAGE_EXTERNAL_STORAGE allow
+sh appops set org.haziffe.dropsauce REQUEST_INSTALL_PACKAGES allow
+launch org.haziffe.dropsauce
+sleep 9
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
+tapt ^Next$
+sleep 2
+tapt ^Confirm$
+sleep 5
+tapt ^Close$
+sleep 1
+tap 91 199
+sleep 3
+tapt ^Backup and restore$
+sleep 3
+tapt ^Restore from Tachiyomi/Mihon$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed2.tachibk$
+sleep 8
+tapt ^OK$
+sleep 22
