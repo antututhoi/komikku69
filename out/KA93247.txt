@@ -1,0 +1,37 @@
+# block KA93247  focus: com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity  time: 05:38:37
+! tapt 'MangaDex' at 409,1406
+! NOT FOUND: ^Filter$|^Filter
+[S   ]  540,1200 t='' d='' id=
+[    ]  540,275  t='' d='MangaDex' id=collapsingToolbarLayout
+[C   ]  922,359  t='Updated' d='' id=button_order
+[C   ]   73,211  t='' d='Navigate up' id=
+[C   ]  784,211  t='' d='Search' id=action_search
+[C   ]  911,211  t='' d='Random' id=action_random
+[CL  ] 1027,211  t='' d='More options' id=
+[S   ]  540,485  t='' d='' id=scrollView
+[CL  ]  153,485  t='Genres' d='' id=
+[CL  ]  429,485  t='School Life' d='' id=
+[CL  ]  701,485  t='Romance' d='' id=
+[CL  ]  960,485  t='Monsters' d='' id=
+[S   ]  540,1474 t='' d='' id=recyclerView
+[CL  ]  194,864  t='' d='' id=
+[    ]  194,1074 t='The Ghostly Doctor' d='' id=textView_title
+[CL  ]  540,864  t='' d='' id=
+[    ]  540,1074 t='I Met the Male Lead in Prison' d='' id=textView_title
+[CL  ]  886,864  t='' d='' id=
+[    ]  886,1074 t='Xīngjiǎ Húnjiàng Zhuàn' d='' id=textView_title
+[CL  ]  194,1452 t='' d='' id=
+[    ]  194,1662 t='Vierca-san VS' d='' id=textView_title
+[CL  ]  540,1452 t='' d='' id=
+[    ]  540,1662 t='Yasei no Last Boss ga Arawareta!' d='' id=textView_title
+[CL  ]  886,1452 t='' d='' id=
+[    ]  886,1662 t='Fujun'na Kanojotachi wa Zange Shinai' d='' id=textView_title
+[CL  ]  194,2040 t='' d='' id=
+[    ]  194,2250 t='Mitsuba Monogatari' d='' id=textView_title
+[CL  ]  540,2040 t='' d='' id=
+[    ]  540,2250 t='Kurotsuki no Yaergnacht' d='' id=textView_title
+[CL  ]  886,2040 t='' d='' id=
+[    ]  886,2250 t='Imouto wa Shitteiru' d='' id=textView_title
+[CL  ]  194,2369 t='' d='' id=
+[CL  ]  540,2369 t='' d='' id=
+[CL  ]  886,2369 t='' d='' id=
