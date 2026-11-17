@@ -179,3 +179,13 @@ shot J3_s01_library
 tap 540 2242
 sleep 4
 shot J3_s20_recents
+=== J375466
+tapt ^All$
+sleep 3
+shot J3_s20a_recents_all
+tapt ^History$
+sleep 3
+shot J3_s21_history
+tapt ^Updates$
+sleep 3
+shot J3_s20b_updates
