@@ -585,3 +585,15 @@ shot AZ_s20_updates
 longt ^Ch|^Vol
 sleep 2
 shot AZ_s20s_updates_selection
+=== AZ78884
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tap 73 201
+sleep 2
+tapt ^Recently read$
+sleep 5
+shot AZ_s21_history
+tapt ^REMOVE$|^Remove$ 0
+sleep 2
+shot AZ_s21r_history_remove_dialog
