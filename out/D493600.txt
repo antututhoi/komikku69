@@ -1,0 +1,43 @@
+# block D493600  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.main.ui.MainActivity  time: 05:34:10
+! tapt 'Feed' at 478,2235
+! tapt 'More' at 989,199
+! tapt 'Unread' at 156,746
+[C   ]   91,199  t='' d='Settings' id=button_settings
+[C   ]  540,199  t='Search anything' d='' id=search_bar
+[    ]  540,199  t='Search anything' d='' id=open_search_bar_text_view
+[C   ]  989,199  t='' d='More' id=button_overflow
+[    ]  489,421  t='Swipe gestures' d='' id=textView_title
+[C   ]  959,421  t='' d='Close' id=button_close
+[    ]  540,558  t='Swipe an entry right to remove it from the feed, or left to mark it as read. You' d='' id=textView_body
+[CLxk]  156,746  t='Unread' d='' id=
+[CL  ]  446,746  t='Reading' d='' id=
+[CL  ]  783,746  t='Plan to read' d='' id=
+[    ]  540,853  t='Today' d='' id=textView_title
+[CL  ]  540,995  t='' d='' id=
+[    ]  565,955  t='Maou no Ore ga Dorei Elf o Yome ni Shitanda ga, Dou Medereba ii?' d='' id=textView_title
+[C   ]  565,1016 t='2 new chapters' d='' id=textView_summary
+[C   ]  978,996  t='' d='Read' id=button_read
+[CL  ]  540,1195 t='' d='' id=
+[    ]  565,1155 t='Akuyaku Reijou Level 99 ~Watashi wa Ura Boss desuga Maou de wa Arimasen~' d='' id=textView_title
+[C   ]  565,1216 t='2 new chapters' d='' id=textView_summary
+[C   ]  978,1196 t='' d='Read' id=button_read
+[CL  ]  540,1395 t='' d='' id=
+[    ]  565,1355 t='Chiyu Mahou no Machigatta Tsukaikata ~Senjou wo Kakeru Kaifuku Youin~' d='' id=textView_title
+[C   ]  565,1416 t='2 new chapters' d='' id=textView_summary
+[C   ]  978,1396 t='' d='Read' id=button_read
+[CL  ]  540,1595 t='' d='' id=
+[    ]  565,1555 t='Tensei Kizoku no Isekai Boukenroku ~Jichou wo Shiranai Kamigami no Shito~' d='' id=textView_title
+[C   ]  565,1616 t='2 new chapters' d='' id=textView_summary
+[C   ]  978,1596 t='' d='Read' id=button_read
+[C   ]  191,2235 t='' d='' id=
+[    ]  191,2235 t='' d='Favorites' id=
+[    ]  388,2235 t='' d='Feed' id=
+[    ]  354,2220 t='4' d='' id=
+[    ]  428,2235 t='Feed' d='' id=
+[C   ]  584,2235 t='' d='' id=
+[    ]  584,2235 t='' d='History' id=
+[C   ]  727,2235 t='' d='' id=
+[    ]  727,2235 t='' d='Explore' id=
+[L   ]  905,2235 t='' d='' id=
+[    ]  905,2235 t='' d='Continue reading' id=
+[CL  ]  905,2235 t='' d='' id=
