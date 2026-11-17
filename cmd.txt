@@ -334,3 +334,25 @@ tap 889 201
 sleep 2
 tapt ^Update library$|^Update$
 sleep 60
+=== Y377827
+stop eu.kanade.tachiyomi.nightlyYokai
+launch eu.kanade.tachiyomi.nightlyYokai
+sleep 8
+tap 180 2242
+sleep 3
+tapt ^Mieruko-chan
+sleep 8
+shot Y3_s10_entry
+up
+sleep 2
+shot Y3_s13_chapters
+tapt ^Download$ 0
+tapt ^Download$ 2
+tapt ^Download$ 4
+tapt ^Download$ 6
+tapt ^Download$ 8
+sleep 2
+shot Y3_s13b_chapters_downloading
+longt ^Vol.14 Ch.68
+sleep 2
+shot Y3_s14_chapter_longpress
