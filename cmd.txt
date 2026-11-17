@@ -71,3 +71,24 @@ shot D3_s20h_feed_swipe_left
 longt ^Blue Lock|^Kumo|^Tensei|^Chiyu
 sleep 2
 shot D3_s20i_feed_longpress
+=== D375175
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 8
+tapt ^History$
+sleep 4
+shot D3_s21_history
+up
+sleep 2
+shot D3_s21a_history_scrolled
+tapt ^More$
+sleep 2
+shot D3_s21m_history_menu
+tapt ^Display options$|^List options$
+sleep 3
+shot D3_s21o_history_options
+back
+sleep 1
+tapt ^New chapters$|^On device$
+sleep 3
+shot D3_s21f_history_chip
