@@ -1,0 +1,51 @@
+# block AZ78882  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:31:50
+! tapt 'Settings' at 367,1426
+! tapt 'Backup' at 258,1332
+! tapt 'Restore backup' at 187,864
+! tapt 'Show roots' at 73,191
+! tapt 'tour' at 221,738
+! tapt 'seed2.tachibk' at 798,1809
+! tapt 'RESTORE' at 866,1554
+! tapt 'RESTORE' at 866,1532
+! NOT FOUND: ^CLOSE$|^OK$
+! tapt 'More options' at 1027,201
+! tapt 'Update library' at 812,222
+[CL  ]   73,201  t='' d='navigationIcon' id=
+[    ]  274,201  t='Library' d='' id=
+[C   ]  784,201  t='' d='Search' id=action_search
+[C   ]  911,201  t='' d='Filter' id=action_filter
+[CL  ] 1027,201  t='' d='More options' id=
+[    ]  109,338  t='' d='Reading' id=
+[    ]  109,337  t='READING' d='' id=
+[C   ]  377,338  t='' d='Plan to read' id=
+[    ]  377,337  t='PLAN TO READ' d='' id=
+[S   ]  540,1369 t='' d='' id=library_pager
+[S   ]  540,1369 t='' d='' id=library_grid
+[CL  ]  276,785  t='' d='' id=
+[    ]   52,460  t='6' d='' id=unread_text
+[C   ]  463,490  t='' d='' id=play_layout
+[    ]  463,490  t='' d='Start reading' id=play_button
+[    ]  276,1081 t='Akuyaku Reijou Level 99 ~Watashi wa Ura Boss desuga Maou de wa Arimasen~' d='' id=title
+[CL  ]  803,785  t='' d='' id=
+[    ]  579,460  t='6' d='' id=unread_text
+[C   ]  990,490  t='' d='' id=play_layout
+[    ]  990,490  t='' d='Start reading' id=play_button
+[    ]  803,1081 t='Haimiya-senpai wa Kowakute Kawaii' d='' id=title
+[CL  ]  276,1527 t='' d='' id=
+[    ]   52,1202 t='6' d='' id=unread_text
+[C   ]  463,1232 t='' d='' id=play_layout
+[    ]  463,1232 t='' d='Start reading' id=play_button
+[    ]  276,1823 t='Kage no Jitsuryokusha ni Naritakute!' d='' id=title
+[CL  ]  803,1527 t='' d='' id=
+[    ]  579,1202 t='6' d='' id=unread_text
+[C   ]  990,1232 t='' d='' id=play_layout
+[    ]  990,1232 t='' d='Start reading' id=play_button
+[    ]  803,1841 t='Kaoru Hana wa Rin to Saku' d='' id=title
+[CL  ]  276,2117 t='' d='' id=
+[    ]   52,1944 t='7' d='' id=unread_text
+[C   ]  463,1974 t='' d='' id=play_layout
+[    ]  463,1974 t='' d='Start reading' id=play_button
+[CL  ]  803,2117 t='' d='' id=
+[    ]  579,1944 t='6' d='' id=unread_text
+[C   ]  990,1974 t='' d='' id=play_layout
+[    ]  990,1974 t='' d='Start reading' id=play_button
