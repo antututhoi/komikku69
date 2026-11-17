@@ -169,3 +169,18 @@ shot D3_s13b_pages
 tapt ^Bookmarks$|^Bookmarks
 sleep 3
 shot D3_s13c_bookmarks
+=== D375181
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 8
+tapt ^Downloads$
+sleep 4
+shot D3_s31_downloads
+tapt ^More options$
+sleep 2
+shot D3_s31b_downloads_menu
+back
+sleep 1
+longt ^Mairimashita
+sleep 2
+shot D3_s31c_downloads_selection
