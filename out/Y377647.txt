@@ -1,0 +1,19 @@
+# block Y377647  focus: eu.kanade.tachiyomi.nightlyYokai/eu.kanade.tachiyomi.nightlyYokai.MainActivityDefaultDummy  time: 01:08:38
+! 
+! 
+! tapt 'Grant' at 887,886
+! tapt 'Get started' at 540,2253
+! tapt 'Settings' at 715,478
+! tapt 'Data and storage' at 353,1760
+! tapt 'Restore backup' at 788,954
+! tapt 'Show roots' at 73,191
+! tapt 'tour' at 221,738
+! tapt 'seed2.tachibk' at 798,1809
+[    ]  400,905  t='Restore backup' d='' id=
+[    ]  540,1201 t='Data from the backup file will be restored.
+
+You will need to install any missin' d='' id=
+[C   ]  801,1540 t='' d='' id=
+[    ]  801,1539 t='Restore' d='' id=
+[C   ]  595,1540 t='' d='' id=
+[    ]  595,1539 t='Cancel' d='' id=
