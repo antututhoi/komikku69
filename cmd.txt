@@ -38,3 +38,8 @@ sleep 8
 tapt ^Feed
 sleep 4
 shot D4_x
+=== D493280
+tap 91 199
+sleep 3
+tapt ^Backup and restore$
+sleep 3
