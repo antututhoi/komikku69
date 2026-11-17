@@ -573,3 +573,15 @@ tapt ^More options$
 sleep 2
 tapt ^Update library$
 sleep 80
+=== AZ78883
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tap 73 201
+sleep 2
+tapt ^Recent updates$
+sleep 5
+shot AZ_s20_updates
+longt ^Ch|^Vol
+sleep 2
+shot AZ_s20s_updates_selection
