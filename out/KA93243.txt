@@ -1,0 +1,66 @@
+# block KA93243  focus: com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity  time: 05:33:53
+! NOT FOUND: ^Download$|^Confirm$|^OK$|^Start$
+[C   ]  540,289  t='' d='' id=backdrop_click_area
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  434,212  t='Mairimashita! Iruma-kun' d='' id=
+[C   ]  784,211  t='' d='Favorite this' id=action_favourite
+[C   ]  911,211  t='' d='Share' id=action_share
+[CL  ] 1027,211  t='' d='More options' id=
+[S   ]  540,1348 t='' d='' id=scrollView
+[C   ]  204,342  t='' d='' id=imageView_cover
+[C   ]  563,333  t='Reading' d='' id=chip_favorite
+[    ]  162,517  t='Source' d='' id=textView_source_label
+[C   ]  200,562  t='MangaDex' d='' id=textView_source
+[    ]  693,517  t='Translation' d='' id=textView_translation_label
+[    ]  701,562  t='English' d='' id=textView_translation
+[    ]  160,659  t='Author' d='' id=textView_author_label
+[    ]  222,704  t='Nishi Osamu' d='' id=textView_author
+[    ]  649,659  t='State' d='' id=textView_state_label
+[    ]  679,704  t='Ongoing' d='' id=textView_state
+[    ]  178,801  t='Chapters' d='' id=textView_chapters_label
+[    ]  325,846  t='527 chapters (29 h 16 m)' d='' id=textView_chapters
+[    ]  177,943  t='Progress' d='' id=textView_progress_label
+[    ]  484,1088 t='Description' d='' id=textView_description_title
+[C   ] 1003,1090 t='More' d='' id=button_description_more
+[    ]  540,1265 t='Hopeless pushover Iruma Suzuki has found himself in a devil of a predicament... ' d='' id=textView_description
+[CL  ]  175,1458 t='School Life' d='' id=
+[CL  ]  415,1458 t='Magic' d='' id=
+[CL  ]  640,1458 t='Romance' d='' id=
+[CL  ]  864,1458 t='Isekai' d='' id=
+[CL  ]  202,1558 t='Crossdressing' d='' id=
+[CL  ]  487,1558 t='Comedy' d='' id=
+[CL  ]  706,1558 t='Action' d='' id=
+[CL  ]  925,1558 t='Demons' d='' id=
+[CL  ]  148,1658 t='Fantasy' d='' id=
+[CL  ]  390,1658 t='Monsters' d='' id=
+[    ]  437,1768 t='Local recommendations · Beta' d='' id=textView_related_title
+[C   ]  956,1769 t='Show all' d='' id=button_related_more
+[S   ]  540,2116 t='' d='' id=recyclerView_related
+[CL  ]   13,2100 t='' d='' id=
+[    ]    5,2242 t='Star Ocean - Blue Sphere' d='' id=textView_title
+[C   ]    5,2326 t='Similar genres' d='' id=textView_recommendation_reason
+[CL  ]  171,2100 t='' d='' id=
+[    ]  171,2242 t='Blue' d='' id=textView_title
+[C   ]  171,2326 t='Similar genres' d='' id=textView_recommendation_reason
+[CL  ]  449,2118 t='' d='' id=
+[    ]  449,2242 t='Jeonjijeok Dokja Sijeom' d='' id=textView_title
+[C   ]  449,2347 t='Because you saved Jeonjijeok Dokja Sijeom' d='' id=textView_recommendation_reason
+[CL  ]  727,2100 t='' d='' id=
+[    ]  727,2242 t='BLUE' d='' id=textView_title
+[C   ]  727,2326 t='Similar genres' d='' id=textView_recommendation_reason
+[CL  ]  975,2100 t='' d='' id=
+[    ]  983,2242 t='Blue Sky Men' d='' id=textView_title
+[C   ]  983,2326 t='Similar genres' d='' id=textView_recommendation_reason
+[C   ]  540,2221 t='' d='' id=container_bottom_sheet
+[C   ]  540,2106 t='' d='Collapsed. Drag handle' id=sh_dragHandle
+[C   ]  232,2253 t='' d='' id=
+[C   ]  359,2253 t='' d='' id=
+[C   ]  806,2253 t='Read' d='' id=button_read
+[Ck  ]  995,2253 t='' d='Show menu' id=button_read_menu
+[S   ]  540,2368 t='' d='' id=pager
+[S   ]  540,2368 t='' d='' id=
+[S   ]  540,2368 t='' d='' id=scrollView_filter
+[CLxk]  183,2371 t='English  527' d='' id=
+[CL  ]  496,2371 t='Deutsch  1' d='' id=
+[CL  ]  804,2371 t='English (1)  38' d='' id=
+[CL  ] 1032,2371 t='English (2)  1' d='' id=
