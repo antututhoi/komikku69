@@ -418,3 +418,7 @@ sh pm grant eu.kanade.tachiyomi.az android.permission.POST_NOTIFICATIONS
 launch eu.kanade.tachiyomi.az
 sleep 10
 shot AZ_a
+=== AZ78254
+tap 73 201
+sleep 2
+shot AZ_b
