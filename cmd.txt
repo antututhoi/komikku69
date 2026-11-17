@@ -444,3 +444,28 @@ tapt ^tour$
 sleep 3
 tapt ^seed2.tachibk$
 sleep 6
+=== AZ78407
+tapt ^RESTORE$
+sleep 30
+tapt ^CLOSE$|^OK$|^Close$
+sleep 2
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tap 73 201
+sleep 2
+tapt ^Extensions$
+sleep 4
+tapt ^TRUST$|^Trust$
+sleep 2
+tapt ^TRUST$|^Trust$|^OK$
+sleep 4
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+shot AZ_s01_library
+tapt ^More options$
+sleep 2
+shot AZ_s04_library_menu
+tapt ^Update library$|^Update
+sleep 90
