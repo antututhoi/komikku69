@@ -1,0 +1,6 @@
+# block KA93241  focus: com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity  time: 05:32:34
+! NOT FOUND: ^More options$
+! tapt 'Reading' at 364,191
+! longt 'Mairimashita! Iruma-kun' at 540,1100
+! tapt 'More options' at 1017,222
+[    ]  812,243  t='Clear search history' d='' id=title
