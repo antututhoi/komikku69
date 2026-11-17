@@ -380,3 +380,19 @@ sleep 1
 swipe 540 2090 540 600 300
 sleep 3
 shot Y3_s31_download_queue
+=== Y377829
+stop eu.kanade.tachiyomi.nightlyYokai
+launch eu.kanade.tachiyomi.nightlyYokai
+sleep 8
+tap 540 2242
+sleep 4
+tapt ^History$
+sleep 3
+longt ^Vol|^Ch
+sleep 2
+shot Y3_s21s_history_longpress
+back
+sleep 1
+swipe 300 900 900 900 300
+sleep 2
+shot Y3_s21w_history_swipe
