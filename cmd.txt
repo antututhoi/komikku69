@@ -155,3 +155,23 @@ shot F3_s02_selection
 tapt ^More options$
 sleep 2
 shot F3_s03_selection_menu
+=== F375178
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 8
+tap 405 2260
+sleep 4
+tapt ^Mairimashita
+sleep 9
+shot F3_s10_details
+up
+sleep 2
+shot F3_s10a_details_scrolled
+tapt ^More options$
+sleep 2
+shot F3_s11_details_menu
+back
+sleep 1
+tapt ^Download$
+sleep 3
+shot F3_s18_download_dialog
