@@ -36,3 +36,30 @@ host adb root >/dev/null 2>&1; sleep 2; echo SU5TRVJUIElOVE8gdHJhY2tfbG9ncyhtYW5
 launch io.github.landwarderer.futon.nightly
 sleep 8
 shot F3_x
+=== F375048
+tapt ^Allow$
+sleep 2
+tap 474 552
+sleep 2
+tap 718 291
+sleep 3
+tapt ^Manga$
+sleep 3
+tap 970 291
+sleep 2
+tapt ^Settings$
+sleep 3
+tapt ^Backup and restore$
+sleep 3
+tapt ^Restore from backup$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed_kotatsu2.zip$
+sleep 6
+tapt ^Restore$
+sleep 15
