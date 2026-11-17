@@ -486,3 +486,15 @@ sleep 1
 tapt ^More options$
 sleep 2
 shot AZ_s20m_updates_menu
+=== AZ78409
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tap 73 201
+sleep 2
+tapt ^Recently read$
+sleep 5
+shot AZ_s21_history
+tapt ^More options$
+sleep 2
+shot AZ_s21m_history_menu
