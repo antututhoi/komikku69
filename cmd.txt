@@ -1,0 +1,32 @@
+=== F374675
+sh pm clear io.github.landwarderer.futon.nightly
+sh appops set io.github.landwarderer.futon.nightly MANAGE_EXTERNAL_STORAGE allow
+sh appops set io.github.landwarderer.futon.nightly REQUEST_INSTALL_PACKAGES allow
+launch io.github.landwarderer.futon.nightly
+sleep 9
+tapt ^Skip$
+sleep 4
+tap 474 552
+sleep 2
+tap 718 291
+sleep 3
+tapt ^Manga$
+sleep 3
+tap 970 291
+sleep 2
+tapt ^Settings$
+sleep 3
+tapt ^Backup and restore$
+sleep 3
+tapt ^Restore from backup$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed_kotatsu2.zip$
+sleep 6
+tapt ^Restore$
+sleep 15
