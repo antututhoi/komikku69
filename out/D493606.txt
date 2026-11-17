@@ -1,0 +1,2 @@
+# block D493606  focus: ?  time: 05:39:57
+! NOT FOUND: ^Download$|^Confirm$|^OK$|^Start$
