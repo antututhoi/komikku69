@@ -469,3 +469,20 @@ sleep 2
 shot AZ_s04_library_menu
 tapt ^Update library$|^Update
 sleep 90
+=== AZ78408
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tap 73 201
+sleep 2
+tapt ^Recent updates$
+sleep 5
+shot AZ_s20_updates
+longt ^Ch|^Vol
+sleep 2
+shot AZ_s20s_updates_selection
+back
+sleep 1
+tapt ^More options$
+sleep 2
+shot AZ_s20m_updates_menu
