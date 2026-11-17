@@ -1,0 +1,46 @@
+# block J376330  focus: eu.kanade.tachiyomi.j2k/eu.kanade.tachiyomi.ui.main.MainActivity  time: 00:46:07
+! tapt 'More' at 1016,201
+! tapt 'Stats' at 716,604
+[Ck  ]  784,640  t='View detailed statistics' d='' id=view_detail_layout
+[    ]   97,728  t='General' d='' id=
+[    ]  159,811  t='20' d='' id=stats_total_manga_text
+[    ]  159,895  t='Titles in library' d='' id=
+[    ]  413,811  t='1809' d='' id=stats_total_chapters_text
+[    ]  413,895  t='Total chapters' d='' id=
+[    ]  667,811  t='1706' d='' id=stats_chapters_read_text
+[    ]  667,895  t='Read chapters' d='' id=
+[    ]  920,811  t='None' d='' id=stats_manga_mean_score_text
+[    ]  921,916  t='Mean tracking score' d='' id=
+[    ]  158,1063 t='0' d='' id=stats_tracked_manga_text
+[    ]  159,1125 t='Tracked titles' d='' id=
+[    ]  412,1063 t='2' d='' id=stats_global_update_manga_text
+[    ]  413,1147 t='Titles in global update' d='' id=
+[    ]  666,1063 t='7' d='' id=stats_chapters_downloaded_text
+[    ]  667,1147 t='Downloaded chapters' d='' id=
+[    ]  920,1063 t='4h 41min' d='' id=stats_read_duration_text
+[    ]  920,1125 t='Read duration' d='' id=
+[    ]  158,1272 t='0' d='' id=stats_manga_local_text
+[    ]  158,1334 t='Local titles' d='' id=
+[    ]  413,1272 t='47' d='' id=stats_total_tags_text
+[    ]  413,1334 t='Tags' d='' id=
+[    ]  666,1272 t='2' d='' id=stats_sources_text
+[    ]  667,1334 t='Sources' d='' id=
+[    ]  920,1272 t='0' d='' id=stats_trackers_text
+[    ]  920,1334 t='Trackers' d='' id=
+[    ]  186,1459 t='Status distribution' d='' id=
+[    ]  682,1620 t='Ongoing' d='' id=legend_description_text
+[    ]  804,1620 t='20' d='' id=legend_value_text
+[    ]  704,1677 t='Completed' d='' id=legend_description_text
+[    ]  836,1677 t='0' d='' id=legend_value_text
+[    ]  688,1734 t='Licensed' d='' id=legend_description_text
+[    ]  804,1734 t='0' d='' id=legend_value_text
+[    ]  769,1791 t='Publishing finished' d='' id=legend_description_text
+[    ]  966,1791 t='0' d='' id=legend_value_text
+[    ]  695,1848 t='Cancelled' d='' id=legend_description_text
+[    ]  818,1848 t='0' d='' id=legend_value_text
+[    ]  691,1905 t='On hiatus' d='' id=legend_description_text
+[    ]  810,1905 t='0' d='' id=legend_value_text
+[C   ]  540,201  t='' d='' id=toolbar
+[C   ]   73,201  t='' d='' id=
+[    ]  267,201  t='Statistics' d='' id=toolbar_title
+[    ]  540,468  t='Statistics' d='' id=big_title
