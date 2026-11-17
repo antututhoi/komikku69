@@ -244,3 +244,10 @@ shot J3_s30_more_menu
 tapt ^Stats$|^Statistics$
 sleep 4
 shot J3_s33_stats
+=== Y376331
+home
+sh pm clear eu.kanade.tachiyomi.nightlyYokai
+sh appops set eu.kanade.tachiyomi.nightlyYokai MANAGE_EXTERNAL_STORAGE allow
+launch eu.kanade.tachiyomi.nightlyYokai
+sleep 10
+shot Y3_a
