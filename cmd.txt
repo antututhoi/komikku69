@@ -260,3 +260,6 @@ shot Y3_b
 === Y377427
 tapt ^Next$
 sleep 3
+=== Y377428
+tapt ^Select a folder$|^Next$
+sleep 3
