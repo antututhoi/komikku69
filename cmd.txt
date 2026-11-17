@@ -42,3 +42,8 @@ tap 1016 201
 sleep 2
 tapt ^Settings$
 sleep 3
+=== J375049
+tapt ^Data and storage$
+sleep 3
+tapt ^Restore backup$
+sleep 4
