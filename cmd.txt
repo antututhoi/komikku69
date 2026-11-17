@@ -323,3 +323,14 @@ stop eu.kanade.tachiyomi.nightlyYokai
 launch eu.kanade.tachiyomi.nightlyYokai
 sleep 8
 shot Y3_s01_library
+=== Y377826
+stop eu.kanade.tachiyomi.nightlyYokai
+launch eu.kanade.tachiyomi.nightlyYokai
+sleep 8
+tap 180 2242
+sleep 4
+shot Y3_s01_library
+tap 889 201
+sleep 2
+tapt ^Update library$|^Update$
+sleep 60
