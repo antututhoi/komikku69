@@ -1,0 +1,63 @@
+# block J376134  focus: eu.kanade.tachiyomi.j2k/eu.kanade.tachiyomi.ui.main.MainActivity  time: 00:42:55
+! NOT FOUND: ^Welcome to Demon|^Mairimashita
+! NOT FOUND: ^More options$|^More$
+[S   ]  540,1200 t='' d='' id=library_grid_recycler
+[CL  ]  540,156  t='' d='' id=main_header_layout
+[C   ]  540,156  t='' d='' id=category_header_layout
+[    ]   52,150  t='' d='Select all' id=collapse_arrow
+[CL  ]  164,150  t='Reading' d='' id=category_title
+[C   ]  869,150  t='Title' d='' id=category_sort
+[C   ] 1012,151  t='' d='Update' id=update_button
+[CL  ]  188,497  t='' d='' id=manga_layout
+[    ]   44,240  t='6' d='' id=unread_text
+[CL  ]  282,626  t='' d='' id=play_layout
+[    ]  292,636  t='' d='Start reading' id=play_button
+[    ]  188,732  t='An Archdemon's Dilemma: How to Love Your Elf Bride' d='' id=title
+[CL  ]  539,497  t='' d='' id=manga_layout
+[    ]  395,240  t='6' d='' id=unread_text
+[CL  ]  633,626  t='' d='' id=play_layout
+[    ]  643,636  t='' d='Start reading' id=play_button
+[    ]  539,732  t='Haimiya Is Scary Cute' d='' id=title
+[CL  ]  891,497  t='' d='' id=manga_layout
+[    ]  746,240  t='6' d='' id=unread_text
+[CL  ]  985,628  t='' d='' id=play_layout
+[    ]  995,638  t='' d='Start reading' id=play_button
+[    ]  891,715  t='Mieruko-chan' d='' id=title
+[    ]  891,754  t='Izumi Tomoki' d='' id=subtitle
+[CL  ]  188,1074 t='' d='' id=manga_layout
+[    ]   44,817  t='6' d='' id=unread_text
+[CL  ]  282,1203 t='' d='' id=play_layout
+[    ]  292,1213 t='' d='Start reading' id=play_button
+[    ]  188,1309 t='She's Likely Aiming for My Older Brother' d='' id=title
+[CL  ]  539,1074 t='' d='' id=manga_layout
+[    ]  395,817  t='6' d='' id=unread_text
+[CL  ]  633,1203 t='' d='' id=play_layout
+[    ]  643,1213 t='' d='Start reading' id=play_button
+[    ]  539,1309 t='So I’m a Spider, So What?' d='' id=title
+[CL  ]  891,1074 t='' d='' id=manga_layout
+[    ]  891,1292 t='SPY×FAMILY' d='' id=title
+[    ]  891,1331 t='Endou Tatsuya' d='' id=subtitle
+[CL  ]  188,1651 t='' d='' id=manga_layout
+[    ]  188,1886 t='That Time I Got Reincarnated as a Slime' d='' id=title
+[CL  ]  539,1651 t='' d='' id=manga_layout
+[    ]  395,1394 t='6' d='' id=unread_text
+[CL  ]  633,1780 t='' d='' id=play_layout
+[    ]  643,1790 t='' d='Start reading' id=play_button
+[    ]  539,1886 t='The Eminence in Shadow' d='' id=title
+[CL  ]  891,1651 t='' d='' id=manga_layout
+[    ]  746,1394 t='6' d='' id=unread_text
+[CL  ]  985,1782 t='' d='' id=play_layout
+[    ]  995,1792 t='' d='Start reading' id=play_button
+[    ]  891,1888 t='The Fragrant Flower Blooms with Dignity' d='' id=title
+[CL  ]  188,2170 t='' d='' id=manga_layout
+[    ]   44,1971 t='7' d='' id=unread_text
+[CL  ]  282,2346 t='' d='' id=play_layout
+[    ]  292,2364 t='' d='Start reading' id=play_button
+[CL  ]  539,2170 t='' d='' id=manga_layout
+[    ]  395,1971 t='6' d='' id=unread_text
+[CL  ]  633,2346 t='' d='' id=play_layout
+[    ]  643,2364 t='' d='Start reading' id=play_button
+[CL  ]  891,2170 t='' d='' id=manga_layout
+[    ]  746,1971 t='6' d='' id=unread_text
+[CL  ]  985,2347 t='' d='' id=play_layout
+[    ]  995,2365 t='' d='Start reading' id=play_button
