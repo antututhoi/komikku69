@@ -115,3 +115,11 @@ stop eu.kanade.tachiyomi.j2k
 launch eu.kanade.tachiyomi.j2k
 sleep 7
 shot J3_s01_library
+=== J375458
+stop eu.kanade.tachiyomi.j2k
+launch eu.kanade.tachiyomi.j2k
+sleep 7
+tapt ^Tensei Shitara Slime
+sleep 8
+down
+sleep 10
