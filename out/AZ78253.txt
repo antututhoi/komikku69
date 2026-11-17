@@ -1,0 +1,32 @@
+# block AZ78253  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:17:55
+! Success
+
+! 
+! 
+! 
+[    ]  274,364  t='Changelog' d='' id=md_text_title
+[S   ]  540,1257 t='' d='' id=
+[    ]  540,525  t='Version v8.9.1-AZ' d='' id=chg_headerVersion
+[    ]  114,688  t='•' d='' id=chg_textbullet
+[    ]  570,688  t='bring back android 5 support as a separate version (new extensions probably won'' d='' id=chg_text
+[    ]  114,867  t='•' d='' id=chg_textbullet
+[    ]  570,867  t='port the app to iOS (the mihon people won't let me advertise this though, look i' d='' id=chg_text
+[    ]  114,1025 t='•' d='' id=chg_textbullet
+[    ]  570,1025 t='some minor changes for better extension lib 1.6 support' d='' id=chg_text
+[    ]  114,1161 t='•' d='' id=chg_textbullet
+[    ]  570,1161 t='support adding extension repos with the mihon:// intent url' d='' id=chg_text
+[    ]  114,1297 t='•' d='' id=chg_textbullet
+[    ]  570,1297 t='fix old 1.2/1.3 extlib extensions crashing due to missing gson dependency' d='' id=chg_text
+[    ]  114,1433 t='•' d='' id=chg_textbullet
+[    ]  570,1433 t='fix some old downloaded chapters not being marked as downloaded' d='' id=chg_text
+[    ]  114,1569 t='•' d='' id=chg_textbullet
+[    ]  570,1569 t='improve cloudflare interceptor and update default user agent' d='' id=chg_text
+[    ]  114,1700 t='•' d='' id=chg_textbullet
+[    ]  570,1700 t='add a bunch of new trackers' d='' id=chg_text
+[    ]  114,1831 t='•' d='' id=chg_textbullet
+[    ]  570,1831 t='add option to update trackers when marking chapters as read' d='' id=chg_text
+[    ]  114,1962 t='•' d='' id=chg_textbullet
+[    ]  570,1962 t='add option to invert tapping in reader' d='' id=chg_text
+[    ]  114,2044 t='•' d='' id=chg_textbullet
+[    ]  570,2044 t='fix reader sometimes breaking after ~64 pages' d='' id=chg_text
+[C   ]  889,2131 t='CLOSE' d='' id=md_button_positive
