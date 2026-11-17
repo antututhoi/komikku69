@@ -1,0 +1,47 @@
+# block Y377428  focus: com.google.android.documentsui/com.android.documentsui.picker.PickActivity  time: 01:04:14
+! tapt 'Select a folder' at 540,1179
+[S   ]  540,1264 t='' d='' id=
+[    ]  242,317  t='sdk_gphone64_x86_64' d='' id=breadcrumb_text
+[    ]  476,459  t='Files on sdk_gphone64_x86_64' d='' id=header_title
+[C   ]  953,459  t='' d='List view' id=sub_menu_list
+[    ]  312,190  t='sdk_gphone64_x86_64' d='' id=
+[C   ]  763,191  t='' d='New folder' id=option_menu_create_dir
+[C   ]  890,191  t='' d='Sort by...' id=option_menu_sort
+[CL  ] 1017,191  t='' d='More options' id=
+[S   ]  540,1264 t='' d='' id=dir_list
+[    ]  398,609  t='Can’t use this folder' d='' id=message_title
+[    ]  535,659  t='To protect your privacy, choose another folder' d='' id=message_subtitle
+[C   ]  742,770  t='CREATE NEW FOLDER' d='' id=action_button
+[C   ]  296,918  t='' d='' id=item_root
+[    ]  246,918  t='Alarms' d='' id=title
+[C   ]  783,918  t='' d='' id=item_root
+[    ]  739,918  t='Android' d='' id=title
+[C   ]  296,1067 t='' d='' id=item_root
+[    ]  286,1067 t='Audiobooks' d='' id=title
+[C   ]  783,1067 t='' d='' id=item_root
+[    ]  720,1067 t='DCIM' d='' id=title
+[C   ]  296,1216 t='' d='' id=item_root
+[    ]  281,1216 t='Documents' d='' id=title
+[C   ]  783,1216 t='' d='' id=item_root
+[    ]  757,1216 t='Download' d='' id=title
+[C   ]  296,1365 t='' d='' id=item_root
+[    ]  247,1365 t='Movies' d='' id=title
+[C   ]  783,1365 t='' d='' id=item_root
+[    ]  724,1365 t='Music' d='' id=title
+[C   ]  296,1514 t='' d='' id=item_root
+[    ]  292,1514 t='Notifications' d='' id=title
+[C   ]  783,1514 t='' d='' id=item_root
+[    ]  742,1514 t='Pictures' d='' id=title
+[C   ]  296,1663 t='' d='' id=item_root
+[    ]  265,1663 t='Podcasts' d='' id=title
+[C   ]  783,1663 t='' d='' id=item_root
+[    ]  768,1663 t='Recordings' d='' id=title
+[C   ]  296,1812 t='' d='' id=item_root
+[    ]  270,1812 t='Ringtones' d='' id=title
+[C   ]  783,1812 t='' d='' id=item_root
+[    ]  791,1812 t='TachiyomiJ2K' d='' id=title
+[C   ]  296,2149 t='' d='' id=item_root
+[C   ]  466,1961 t='' d='Preview the file u.xml' id=preview_icon
+[    ]  240,2392 t='u.xml' d='' id=title
+[C   ]  540,2274 t='' d='' id=pick_button_overlay
+[C   ]  540,2274 t='USE THIS FOLDER' d='' id=button1
