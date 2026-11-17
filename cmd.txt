@@ -425,3 +425,8 @@ shot AZ_b
 === AZ78299
 tap 73 201
 sleep 2
+=== AZ78300
+tapt ^Settings$
+sleep 3
+tapt ^Backup|^Data
+sleep 3
