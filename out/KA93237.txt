@@ -1,0 +1,19 @@
+# block KA93237  focus: com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity  time: 05:28:26
+! NOT FOUND: ^More options$
+! tapt 'Reading' at 171,68
+[S   ]  540,1200 t='' d='' id=
+[CL  ]  171,68   t='Reading' d='' id=
+[CL  ]  481,68   t='Plan to read' d='' id=
+[    ]  477,181  t='Today' d='' id=textView_title
+[C   ]  540,331  t='' d='' id=
+[    ]  613,308  t='Kage no Jitsuryokusha ni Naritakute!' d='' id=textView_title
+[    ]  613,358  t='2 new chapters' d='' id=textView_summary
+[C   ]  540,520  t='' d='' id=
+[    ]  613,497  t='Osoraku Kanojo wa Ore no Aniki o Neratteru' d='' id=textView_title
+[    ]  613,547  t='2 new chapters' d='' id=textView_summary
+[C   ]  540,709  t='' d='' id=
+[    ]  613,686  t='Kumo desu ga, Nani ka?' d='' id=textView_title
+[    ]  613,736  t='2 new chapters' d='' id=textView_summary
+[C   ]  540,898  t='' d='' id=
+[    ]  613,875  t='Blue Lock' d='' id=textView_title
+[    ]  613,925  t='2 new chapters' d='' id=textView_summary
