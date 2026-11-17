@@ -1,0 +1,24 @@
+# block D493451  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.details.ui.DetailsExpressiveActivity  time: 05:33:09
+! tapt 'Favorites' at 245,2235
+! tapt 'Mairimashita! Iruma-kun' at 540,1854
+[C   ]  203,567  t='' d='' id=
+[C   ]  713,390  t='Mairimashita! Iruma-kun' d='' id=
+[C   ]  524,514  t='Nishi Osamu' d='' id=
+[    ]  507,613  t='Ongoing' d='' id=
+[C   ]  793,613  t='' d='' id=
+[    ]  821,613  t='MangaDex' d='' id=
+[C   ]  713,757  t='' d='' id=
+[    ]  749,757  t='Reading' d='' id=
+[    ]  535,943  t='No chapters' d='' id=
+[    ]  930,942  t='42%' d='' id=
+[    ]  234,1195 t='Description' d='' id=
+[CL  ]  540,1278 t='' d='' id=
+[    ]  540,1278 t='No description' d='' id=
+[C   ]  747,2225 t='' d='' id=
+[    ]  805,2225 t='Read' d='' id=
+[C   ]  963,2225 t='' d='' id=
+[    ]  960,2225 t='' d='Show menu' id=
+[CL  ]   99,209  t='' d='Navigate up' id=
+[C   ]  761,209  t='' d='Download' id=action_save
+[C   ]  873,209  t='' d='Share' id=action_share
+[CL  ]  985,209  t='' d='More options' id=
