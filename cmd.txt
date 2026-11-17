@@ -1,2 +1,26 @@
 === KB91642
 host cd $GITHUB_WORKSPACE && git show HEAD:.maestro69/apps.txt | grep -i "^Kaisoku" > .maestro69/apps.txt && mkdir -p /tmp/old && mv apks/*.apk /tmp/old/ ; bash .maestro69/get_apks.sh 2>&1 | tail -3; ls apks; for f in apks/*.apk; do adb install -r -g $f; done
+=== KA91683
+sh pm clear io.github.glitch228.kaisoku
+sh appops set io.github.glitch228.kaisoku MANAGE_EXTERNAL_STORAGE allow
+sh appops set io.github.glitch228.kaisoku REQUEST_INSTALL_PACKAGES allow
+launch io.github.glitch228.kaisoku
+sleep 9
+tapt ^Allow$
+sleep 3
+up
+sleep 2
+tapt ^Restore from backup$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed_kotatsu2.zip$
+sleep 6
+tapt ^Restore$
+sleep 15
+tapt ^Done$|^OK$|^Close$
+sleep 2
