@@ -1,0 +1,14 @@
+# block KA93246  focus: com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity  time: 05:37:36
+! tapt 'Mairimashita! Iruma-kun' at 540,1704
+! tapt 'Continue' at 806,2253
+! tapt 'More options' at 1027,211
+[S   ]  540,1200 t='' d='' id=pager
+[S   ]  540,1200 t='' d='' id=
+[C   ]   73,211  t='' d='Navigate up' id=
+[    ]  472,183  t='Mairimashita! Iruma-kun' d='' id=
+[    ]  412,250  t='Iruma-kun's Demon School' d='' id=
+[CL  ] 1027,211  t='' d='More options' id=
+[CL  ]   95,2221 t='' d='Previous chapter' id=button_prev
+[CL  ]  733,2221 t='' d='Next chapter' id=button_next
+[CL  ]  859,2221 t='' d='Chapters' id=button_pages_thumbs
+[CL  ]  985,2221 t='' d='Options' id=button_options
