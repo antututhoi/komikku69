@@ -1,0 +1,21 @@
+# block Y377578  focus: eu.kanade.tachiyomi.nightlyYokai/eu.kanade.tachiyomi.nightlyYokai.MainActivityDefaultDummy  time: 01:07:00
+! NOT FOUND: ^Next$|^Allow$
+[    ]  228,453  t='Welcome!' d='' id=
+[    ]  540,580  t='Let's pick some defaults. You can always change these things later in the settin' d='' id=
+[    ]  195,754  t='Required' d='' id=
+[    ]  317,859  t='Install apps permission' d='' id=
+[    ]  330,917  t='To install the app on updates.' d='' id=
+[C   ]  887,887  t='' d='' id=
+[    ]  887,886  t='Grant' d='' id=
+[    ]  429,1059 t='Optional but recommended' d='' id=
+[    ]  318,1159 t='Notification permission' d='' id=
+[    ]  410,1244 t='Get notified for library updates and more.' d='' id=
+[C   ]  887,1192 t='' d='' id=
+[    ]  887,1191 t='Grant' d='' id=
+[    ]  345,1391 t='Background battery usage' d='' id=
+[    ]  410,1502 t='Avoid interruptions to long-running library updates, downloads, and backup resto' d='' id=
+[C   ]  887,1424 t='' d='' id=
+[    ]  887,1423 t='Grant' d='' id=
+[C   ]  540,2254 t='' d='' id=
+[    ]  540,2253 t='Get started' d='' id=
+[C   ]  540,2368 t='' d='' id=bottom_view
