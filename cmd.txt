@@ -227,3 +227,20 @@ sleep 2
 tap 540 2242
 sleep 4
 shot J3_s20_recents_with_downloads
+=== J376330
+swipe 540 2090 540 600 300
+sleep 3
+shot J3_s31_download_queue
+tapt ^More options$|^More$
+sleep 2
+shot J3_s31b_download_queue_menu
+back
+sleep 1
+back
+sleep 1
+tap 1016 201
+sleep 2
+shot J3_s30_more_menu
+tapt ^Stats$|^Statistics$
+sleep 4
+shot J3_s33_stats
