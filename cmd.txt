@@ -196,3 +196,18 @@ shot F3_s13b_pages
 tapt ^Bookmarks$|^Bookmarks
 sleep 3
 shot F3_s13c_bookmarks
+=== F375181
+stop io.github.landwarderer.futon.nightly
+launch io.github.landwarderer.futon.nightly
+sleep 8
+tapt ^Downloads$
+sleep 4
+shot F3_s31_downloads
+tapt ^More options$
+sleep 2
+shot F3_s31b_downloads_menu
+back
+sleep 1
+longt ^Mairimashita
+sleep 2
+shot F3_s31c_downloads_selection
