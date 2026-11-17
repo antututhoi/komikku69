@@ -1,0 +1,12 @@
+# block D493450  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.settings.SettingsActivity  time: 05:32:03
+! tapt 'Backup and restore' at 433,1633
+! tapt 'Restore backup' at 391,788
+! tapt 'Show roots' at 73,191
+! tapt 'tour' at 221,738
+! tapt 'seed_kotatsu2.zip' at 832,1186
+[    ]  540,1214 t='Migrated 20 manga onto your installed extensions.' d='' id=
+[C   ]  540,1384 t='' d='' id=
+[    ]  540,1384 t='OK' d='' id=
+[    ]  527,1067 t='Migration finished' d='' id=
+[C   ]  900,1068 t='' d='' id=
+[    ]  901,1069 t='' d='Cancel' id=
