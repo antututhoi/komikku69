@@ -1,0 +1,17 @@
+# block D493246  focus: org.haziffe.dropsauce/org.koitharu.kotatsu.main.ui.MainActivity  time: 05:27:52
+! tapt 'Feed' at 559,2235
+[C   ]   91,199  t='' d='Settings' id=button_settings
+[C   ]  540,199  t='Search anything' d='' id=search_bar
+[    ]  540,199  t='Search anything' d='' id=open_search_bar_text_view
+[C   ]  989,199  t='' d='More' id=button_overflow
+[CL  ]  156,372  t='Unread' d='' id=
+[    ]  540,1256 t='Nothing new to read' d='' id=textPrimary
+[    ]  540,1388 t='New chapters of what you are reading are shown here' d='' id=textSecondary
+[C   ]  272,2235 t='' d='' id=
+[    ]  272,2235 t='' d='Favorites' id=
+[    ]  469,2235 t='' d='Feed' id=
+[    ]  509,2235 t='Feed' d='' id=
+[C   ]  665,2235 t='' d='' id=
+[    ]  665,2235 t='' d='History' id=
+[C   ]  808,2235 t='' d='' id=
+[    ]  808,2235 t='' d='Explore' id=
