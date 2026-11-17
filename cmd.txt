@@ -684,3 +684,29 @@ shot AZ_s40_reader_menu
 tapt ^Settings$|^More options$
 sleep 3
 shot AZ_s42_reader_settings
+=== AZ91838
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tapt ^Kage no
+sleep 8
+tapt ^CHAPTERS$|^Chapters$
+sleep 3
+tapt ^More options$ 0
+sleep 2
+tapt ^Download$
+sleep 2
+shot AZ_s18_download_menu
+tapt ^Next 10|^Download next 10|^All|^Unread
+sleep 3
+stop eu.kanade.tachiyomi.az
+launch eu.kanade.tachiyomi.az
+sleep 8
+tap 73 201
+sleep 2
+tapt ^Download queue$
+sleep 5
+shot AZ_s31_download_queue
+tapt ^More options$
+sleep 2
+shot AZ_s31b_download_queue_menu
