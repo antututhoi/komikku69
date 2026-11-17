@@ -146,3 +146,20 @@ shot D3_s18_download_dialog
 tapt ^Download$|^Confirm$|^OK$|^Start$
 sleep 4
 shot D3_s18b_after_download
+=== D391784
+stop org.haziffe.dropsauce
+launch org.haziffe.dropsauce
+sleep 8
+tapt ^Favorites$
+sleep 4
+tapt ^Mairimashita
+sleep 9
+swipe 540 2150 540 500 300
+sleep 3
+shot D3_s13_chapters
+tapt ^Pages$|^Pages
+sleep 5
+shot D3_s13b_pages
+tapt ^Bookmarks$|^Bookmarks
+sleep 3
+shot D3_s13c_bookmarks
