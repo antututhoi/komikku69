@@ -213,3 +213,5 @@ shot D3_s23_source_list
 tapt ^Filter$|^Filter
 sleep 3
 shot D3_s24_source_filter
+=== D392565
+shot D3_alive
