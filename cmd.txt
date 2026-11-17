@@ -350,3 +350,19 @@ sleep 3
 up
 sleep 2
 shot KA_b
+=== KA77427
+tapt ^Restore from backup$
+sleep 4
+tapt ^Show roots$
+sleep 2
+tap 441 642
+sleep 2
+tapt ^tour$
+sleep 3
+tapt ^seed_kotatsu2.zip$
+sleep 6
+tapt ^Restore$
+sleep 15
+shot KA_c
+tapt ^Done$|^OK$|^Close$
+sleep 2
