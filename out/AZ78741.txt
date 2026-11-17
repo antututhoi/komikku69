@@ -1,0 +1,15 @@
+# block AZ78741  focus: eu.kanade.tachiyomi.az/eu.kanade.tachiyomi.ui.main.MainActivity  time: 01:27:47
+! tapt 'Settings' at 367,1426
+! tapt 'Backup' at 258,1332
+! tapt 'Restore backup' at 187,864
+! tapt 'Show roots' at 73,191
+! tapt 'tour' at 221,738
+! tapt 'seed2.tachibk' at 798,1809
+! tapt 'RESTORE' at 866,1554
+[CL  ]   73,201  t='' d='navigationIcon' id=
+[    ]  274,201  t='Library' d='' id=
+[C   ]  784,201  t='' d='Search' id=action_search
+[C   ]  911,201  t='' d='Filter' id=action_filter
+[CL  ] 1027,201  t='' d='More options' id=
+[    ]  540,1216 t='ಥ_ಥ' d='' id=text_face
+[    ]  540,1390 t='Your library is empty, add series to your library from Browse.' d='' id=text_label
